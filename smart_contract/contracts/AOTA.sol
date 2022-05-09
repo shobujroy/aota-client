@@ -58,17 +58,6 @@ contract AOTA is ERC721Enumerable, Ownable {
         _tokenIds.increment();
     }
 
-    function tokensOfOwner(address _owner) external view returns (uint[] memory) {
-
-        uint tokenCount = balanceOf(_owner);
-        uint[] memory tokensId = new uint256[](tokenCount);
-
-        for (uint i = 0; i < tokenCount; i++) {
-            tokensId[i] = tokenOfOwnerByIndex(_owner, i);
-        }
-        return tokensId;
-    }
-
     function withdraw() public payable onlyOwner {
         uint balance = address(this).balance;
         require(balance > 0, "No ether left to withdraw");
