@@ -9,9 +9,6 @@ async function main() {
     await contract.deployed();
     console.log("Contract deployed to:", contract.address);
 
-    let tokens = await contract.tokensOfOwner(owner.address)
-    console.log("Owner has tokens: ", tokens);
-
 }
 
 main()
