@@ -1,0 +1,38 @@
+.contactInfoCard {
+    margin-bottom: 10px;
+    display: flex;
+}
+
+.iconWrapper {
+    border-radius: 5rem;
+    height: 4rem;
+    width: 4rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #7a5ea7;
+    position: relative;
+    margin-right: 10px;
+}
+
+.iconWrapper:before {
+    content: "";
+    position: absolute;
+    left: 7px;
+    background: rgba(217, 217, 217, 0.62);
+    display: inline-block;
+    height: 3rem;
+    width: 3rem;
+    min-width: 3rem;
+    border-radius: 6.25rem;
+    opacity: 0.5;
+}
+
+.iconWrapper .icon {
+    position: absolute;
+    top: 19px;
+    left: 23px;
+    right: 0px;
+    bottom: 0px;
+    color: black;
+}

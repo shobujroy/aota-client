@@ -1,0 +1,13 @@
+.aboutWrapper h1 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    margin-top: 15px;
+}
+
+.aboutWrapper p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    margin-top: 10px;
+}

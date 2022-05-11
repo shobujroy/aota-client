@@ -2,7 +2,9 @@ import React from 'react'
 
 function ContactForm() {
   return (
-    <div>ContactForm</div>
+    <div>
+      
+    </div>
   )
 }
 
