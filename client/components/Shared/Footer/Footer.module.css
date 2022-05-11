@@ -1,0 +1,53 @@
+.copyRight p {
+    padding: 30px 0px;
+    margin-bottom: 0;
+    text-align: center;
+    font-weight: bold;
+    color: #fff;
+}
+
+.copyRight div h5 {
+    margin: 30px 0px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15.4764px;
+    font-feature-settings: "salt" on, "liga" off;
+    color: #d9dbe1;
+}
+
+.copyRight {
+    border-top: 1px solid #ffffff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.touchIcon svg {
+    width: 16px;
+    color: #778beb;
+}
+
+.touchIcon {
+    background-color: #fff;
+    padding: 8px 10px;
+    margin-right: 10px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.contactDetails {
+    font-size: 15px;
+    margin: 10px 0px;
+    color: #fff;
+}
+
+.socialIcon {
+    font-size: 30px;
+}
+
+.socialIcon i {
+    border: 3px solid #fff;
+    border-radius: 50%;
+    margin: 5px;
+    color: #fff;
+}

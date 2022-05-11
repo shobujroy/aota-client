@@ -1,0 +1,52 @@
+.textWhite {
+    color: red;
+}
+
+.searchInput {
+    background: #2c2f33;
+    border-radius: 30px;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 30px;
+    color: #ffffe5;
+    width: 350px;
+}
+
+.navContainer {
+    width: 95%;
+    margin: 0 auto;
+}
+
+.connectWalletBtn {
+    background: #7a5ea7;
+    border-radius: 30px;
+    color: #fff;
+    padding: 5px 30px;
+    border: 1px solid #7a5ea7;
+    transition: 0.5s;
+}
+
+.connectWalletBtn:hover {
+    color: #7a5ea7;
+    background: #fff;
+    border: 1px solid #7a5ea7;
+}
+
+.navLink {
+    font-style: normal;
+    font-size: 18px;
+    /* identical to box height, or 600% */
+
+    color: #dbdada !important;
+    transition: 0.5s;
+}
+
+.navLink:hover {
+    font-style: normal;
+    font-size: 18px;
+    /* identical to box height, or 600% */
+
+    color: #7a5ea7 !important;
+}

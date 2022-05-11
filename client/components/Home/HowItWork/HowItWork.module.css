@@ -1,0 +1,17 @@
+.card {
+    background: #33363a;
+    padding: 20px 24px;
+    font-size: 19px;
+    width: max-content;
+    margin: 0 auto;
+}
+
+.cardWrapper h3 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    padding: 15px 0px;
+    text-transform: capitalize;
+
+    color: #75ba87;
+}
