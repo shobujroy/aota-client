@@ -1,0 +1,17 @@
+.title {
+    color: #fff;
+    font-weight: bold;
+}
+
+.FooterLogo {
+    width: 90px;
+}
+
+.items {
+    color: #fff;
+    padding: 10px 0px;
+}
+
+.items :hover {
+    color: #fff;
+}

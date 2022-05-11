@@ -1,8 +1,16 @@
+import Image from 'next/image'
 import React from 'react'
 
 function SliderCard() {
   return (
-    <div>SliderCard</div>
+    <>
+      <Image
+        src="/images/seiderImg.png"
+        width={444}
+        height={444}
+        className={`img-fit rounded-3`}
+      />
+    </>
   )
 }
 

@@ -1,0 +1,67 @@
+.newItemCard {
+    background: #26292d;
+    border-radius: 16px;
+    box-sizing: border-box;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    filter: drop-shadow(11px 11px 62px rgba(0, 0, 0, 0.25));
+}
+
+.newItemCardImg {
+    margin-top: -30px !important;
+    border-radius: 9px;
+    padding: 0px;
+}
+
+.newItemCardBody {
+    padding: 5px 0px;
+}
+
+.newItemCardTitleWrapper h5 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.newItemCardTitleWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.newItemCardActionsBTNWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.newItemCardActionsBTNWrapper h5 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    color: #7a5ea7;
+}
+
+.newItemCardActionsBTNWrapper h4 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    color: #505356;
+}
+
+.newItemCardActionsBTNWrapper h4 span {
+    color: #fff;
+}
+
+.newItemCardDesc h5 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    color: #9c9c9c;
+}
+
+.newItemCardDesc h5 span {
+    color: #fff;
+}
