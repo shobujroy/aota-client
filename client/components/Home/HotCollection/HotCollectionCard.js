@@ -11,14 +11,14 @@ function HotCollectionCard() {
         height={150}
         className={`img-fit rounded-3`}
       />
-      <div className={styles.authorPicWrapper}>
+      {/* <div className={styles.authorPicWrapper}>
         <Image
           src={`/images/propic.jpg`}
           width={70}
           height={70}
           className={`img-fit rounded-circle z-index-100`}
         />
-      </div>
+      </div> */}
       <div className={styles.hotCollectionCardBody}>
         <h5>Abstraction</h5>
         <p>ERC-192</p>

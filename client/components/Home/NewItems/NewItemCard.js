@@ -7,12 +7,12 @@ function NewItemCard() {
     <div style={{ width: '18rem' }} className={styles.newItemCard}>
       <div>
         <div className="ms-2">
-          <Image
+          {/* <Image
             src="/images/propic.jpg"
             width={50}
             height={50}
             className={`img-fit rounded-circle z-index-100`}
-          />
+          /> */}
         </div>
         <div className={`${ styles.newItemCardImg }`}>
           <Image
@@ -32,7 +32,7 @@ function NewItemCard() {
           <h5>0.08 ETH <span>1/20</span></h5>
         </div>
         <div className={styles.newItemCardActionsBTNWrapper}>
-          <h5>Place a bid</h5>
+          <h5></h5>
           <h4>
             <i className="fa-solid fa-heart me-2"></i>
             <span>80</span>

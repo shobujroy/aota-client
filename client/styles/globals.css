@@ -40,3 +40,12 @@ a {
 .img-fit {
   object-fit: cover;
 }
+
+/* bootstrap css overwrite */
+
+.form-control.contact-form {
+  background-color: transparent;
+  border-radius: 0px;
+}
+
+

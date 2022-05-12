@@ -9,7 +9,7 @@ function CallToAction() {
         <div className="row">
           <div className="col-md-6">
             <Image
-              src={`/images/calltoaction.png`}
+              src={`/images/Subscribe image.jpg`}
               width={700}
               height={250}
               className={`img-fit rounded-3`}

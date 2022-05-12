@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
+import Link from 'next/link';
 import Styles from './Navbar.module.css';
 
 function Navbar() {
@@ -26,15 +27,21 @@ function Navbar() {
                         {/* <button className="btn btn-outline-success" type="submit">Search</button> */}
                     </form>
                     <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li className="nav-item ms-md-5">
-                            <a className={"nav-link " + Styles.navLink} aria-current="page" href="#">Home</a>
-                        </li>
-                        <li className="nav-item ms-md-5">
-                            <a className={"nav-link " + Styles.navLink} aria-current="page" href="#">About Us</a>
-                        </li>
-                        <li className="nav-item ms-md-5">
-                            <a className={"nav-link " + Styles.navLink} aria-current="page" href="#">Contact</a>
-                        </li>
+                        <Link href={'/'}>
+                            <li className="nav-item ms-md-5">
+                                <a className={"nav-link " + Styles.navLink} aria-current="page" href="#">Home</a>
+                            </li>
+                        </Link>
+                        <Link href={'/about'}>
+                            <li className="nav-item ms-md-5">
+                                <a className={"nav-link " + Styles.navLink} aria-current="page" href="#">About Us</a>
+                            </li>
+                        </Link>
+                        <Link href={'/contact'}>
+                            <li className="nav-item ms-md-5">
+                                <a className={"nav-link " + Styles.navLink} aria-current="page" href="#">Contact</a>
+                            </li>
+                        </Link>
                         <li className="nav-item ms-md-5 d-flex align-items-center justify-content-end">
                             <button className={"btn " + Styles.connectWalletBtn} aria-current="page" href="#">Connect Wallet</button>
                         </li>
