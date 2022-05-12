@@ -6,6 +6,7 @@ import HotCollection from '../components/Home/HotCollection/HotCollection';
 import HowItWork from '../components/Home/HowItWork/HowItWork';
 import CallToAction from '../components/Home/CallToAction/CallToAction'
 import Footer from '../components/Shared/Footer/Footer';
+import RoadMap from '../components/Home/RoadMap/RoadMap';
 
 function Home() {
   return (
@@ -15,6 +16,7 @@ function Home() {
       <NewItems />
       <HotCollection />
       <HowItWork />
+      <RoadMap />
       <CallToAction />
       <Footer />
     </div>

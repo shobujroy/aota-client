@@ -10,7 +10,7 @@ function Header() {
           <Carousel
             cols={3}
             rows={1}
-            gap={10}
+            gap={5}
             loop={true}
             infinity={true}
             autoplay={5000}

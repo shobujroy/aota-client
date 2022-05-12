@@ -6,8 +6,8 @@ function SliderCard() {
     <>
       <Image
         src="/images/seiderImg.png"
-        width={444}
-        height={444}
+        width={500}
+        height={500}
         className={`img-fit rounded-3`}
       />
     </>
