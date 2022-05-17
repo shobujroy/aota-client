@@ -1,55 +1,21 @@
 import React from 'react'
 import SliderCard from './SliderCard'
 import Carousel from 'react-grid-carousel';
+import Navbar from '../../Shared/Navbar/Navbar';
+import styles from './Header.module.css';
 
 function Header() {
   return (
-    <div className='container-fluid pb-3'>
-      <div className="row">
-        <div className="col-md-12">
-          <Carousel
-            cols={3}
-            rows={1}
-            gap={5}
-            loop={true}
-            infinity={true}
-            autoplay={5000}
-            containerClassName='mt-4'
-            hideArrow={false}
-            responsiveLayout={[
-              {
-                breakpoint: 1200,
-                cols: 3,
-              },
-              {
-                breakpoint: 990,
-                cols: 2
-              }
-            ]}
-            mobileBreakpoint={670}
-          >
-            <Carousel.Item>
-              <SliderCard />
-            </Carousel.Item>
-            <Carousel.Item>
-              <SliderCard />
-            </Carousel.Item>
-            <Carousel.Item>
-              <SliderCard />
-            </Carousel.Item>
-            <Carousel.Item>
-              <SliderCard />
-            </Carousel.Item>
-            <Carousel.Item>
-              <SliderCard />
-            </Carousel.Item>
-            <Carousel.Item>
-              <SliderCard />
-            </Carousel.Item>
-            <Carousel.Item>
-              <SliderCard />
-            </Carousel.Item>
-          </Carousel>
+    <div className={styles.headerWrapper}>
+      <Navbar />
+      <div className={styles.headerContentWrapper}>
+        <div className="container">
+          <div className="row">
+            <div className={`col-md-6 ${ styles.headerContent }`}>
+              <h1>ALIENS ON <br /> THE AVE</h1>
+              <button>MINT</button>
+            </div>
+          </div>
         </div>
       </div>
     </div>
