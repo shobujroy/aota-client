@@ -16,12 +16,12 @@ a {
 }
 
 .bg-primary {
-  background-color: #24272b !important;
+  background-color: #1d1e3a !important;
   color: white;
 }
 
 .bg-secondary {
-  background-color: #212428 !important;
+  background-color: #1a1b36 !important;
   color: white;
 }
 
@@ -57,13 +57,13 @@ a {
 }
 
 .accordion-item {
-  background-color: #24272b;
+  background-color: #1d1e3a;
   border: none;
 }
 
 .accordion-button,
 .accordion-button:not(.collapsed) {
-  background-color: #24272b;
+  background-color: #1d1e3a;
   color: white;
 }
 

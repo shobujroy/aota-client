@@ -3,21 +3,11 @@ import styles from './Gallery.module.css';
 import Image from 'next/image';
 
 function Gallery() {
-    function scrollCategoriesPrev() {
-        document.getElementById("gallery").scrollBy(-500, -0);
-    }
-    function scrollCategoriesNext() {
-        document.getElementById("gallery").scrollBy(2000, 0);
-    }
-    function scrollGallerySlider(e) {
-        document.getElementById("__next").click();
-    }
-    const [scrollY, setScrollY] = useState(0);
     const [scrollValue, setscrollValue] = useState(0);
 
     useEffect(() => {
         document.getElementById("gallery1").scrollBy(0, 0);
-        document.getElementById("gallery2").scrollBy(2500, 0);
+        document.getElementById("gallery2").scrollBy(1500, 0);
         document.getElementById("gallery3").scrollBy(0, 0);
     }, []);
 
@@ -71,8 +61,8 @@ function Gallery() {
                             <Image
                                 src="/images/gallery/1.PNG"
                                 alt="Gallery Image"
-                                width={500}
-                                height={500}
+                                width={300}
+                                height={300}
                                 className='img-fit rounded-3'
                             />
                         </div>
@@ -80,8 +70,8 @@ function Gallery() {
                             <Image
                                 src="/images/gallery/2.PNG"
                                 alt="Gallery Image"
-                                width={500}
-                                height={500}
+                                width={300}
+                                height={300}
                                 className='img-fit rounded-3'
                             />
                         </div>
@@ -89,8 +79,8 @@ function Gallery() {
                             <Image
                                 src="/images/gallery/3.PNG"
                                 alt="Gallery Image"
-                                width={500}
-                                height={500}
+                                width={300}
+                                height={300}
                                 className='img-fit rounded-3'
                             />
                         </div>
@@ -98,8 +88,8 @@ function Gallery() {
                             <Image
                                 src="/images/gallery/4.PNG"
                                 alt="Gallery Image"
-                                width={500}
-                                height={500}
+                                width={300}
+                                height={300}
                                 className='img-fit rounded-3'
                             />
                         </div>
@@ -107,8 +97,8 @@ function Gallery() {
                             <Image
                                 src="/images/gallery/6.PNG"
                                 alt="Gallery Image"
-                                width={500}
-                                height={500}
+                                width={300}
+                                height={300}
                                 className='img-fit rounded-3'
                             />
                         </div>
@@ -116,8 +106,8 @@ function Gallery() {
                             <Image
                                 src="/images/gallery/7.PNG"
                                 alt="Gallery Image"
-                                width={500}
-                                height={500}
+                                width={300}
+                                height={300}
                                 className='img-fit rounded-3'
                             />
                         </div>
@@ -125,8 +115,8 @@ function Gallery() {
                             <Image
                                 src="/images/gallery/8.PNG"
                                 alt="Gallery Image"
-                                width={500}
-                                height={500}
+                                width={300}
+                                height={300}
                                 className='img-fit rounded-3'
                             />
                         </div>
@@ -136,8 +126,8 @@ function Gallery() {
                             <Image
                                 src="/images/gallery/1.PNG"
                                 alt="Gallery Image"
-                                width={500}
-                                height={500}
+                                width={300}
+                                height={300}
                                 className='img-fit rounded-3'
                             />
                         </div>
@@ -145,8 +135,8 @@ function Gallery() {
                             <Image
                                 src="/images/gallery/2.PNG"
                                 alt="Gallery Image"
-                                width={500}
-                                height={500}
+                                width={300}
+                                height={300}
                                 className='img-fit rounded-3'
                             />
                         </div>
@@ -154,8 +144,8 @@ function Gallery() {
                             <Image
                                 src="/images/gallery/3.PNG"
                                 alt="Gallery Image"
-                                width={500}
-                                height={500}
+                                width={300}
+                                height={300}
                                 className='img-fit rounded-3'
                             />
                         </div>
@@ -163,8 +153,8 @@ function Gallery() {
                             <Image
                                 src="/images/gallery/4.PNG"
                                 alt="Gallery Image"
-                                width={500}
-                                height={500}
+                                width={300}
+                                height={300}
                                 className='img-fit rounded-3'
                             />
                         </div>
@@ -172,8 +162,8 @@ function Gallery() {
                             <Image
                                 src="/images/gallery/6.PNG"
                                 alt="Gallery Image"
-                                width={500}
-                                height={500}
+                                width={300}
+                                height={300}
                                 className='img-fit rounded-3'
                             />
                         </div>
@@ -181,8 +171,8 @@ function Gallery() {
                             <Image
                                 src="/images/gallery/7.PNG"
                                 alt="Gallery Image"
-                                width={500}
-                                height={500}
+                                width={300}
+                                height={300}
                                 className='img-fit rounded-3'
                             />
                         </div>
@@ -190,8 +180,8 @@ function Gallery() {
                             <Image
                                 src="/images/gallery/8.PNG"
                                 alt="Gallery Image"
-                                width={500}
-                                height={500}
+                                width={300}
+                                height={300}
                                 className='img-fit rounded-3'
                             />
                         </div>
@@ -201,8 +191,8 @@ function Gallery() {
                             <Image
                                 src="/images/gallery/1.PNG"
                                 alt="Gallery Image"
-                                width={500}
-                                height={500}
+                                width={300}
+                                height={300}
                                 className='img-fit rounded-3'
                             />
                         </div>
@@ -210,8 +200,8 @@ function Gallery() {
                             <Image
                                 src="/images/gallery/2.PNG"
                                 alt="Gallery Image"
-                                width={500}
-                                height={500}
+                                width={300}
+                                height={300}
                                 className='img-fit rounded-3'
                             />
                         </div>
@@ -219,8 +209,8 @@ function Gallery() {
                             <Image
                                 src="/images/gallery/3.PNG"
                                 alt="Gallery Image"
-                                width={500}
-                                height={500}
+                                width={300}
+                                height={300}
                                 className='img-fit rounded-3'
                             />
                         </div>
@@ -228,8 +218,8 @@ function Gallery() {
                             <Image
                                 src="/images/gallery/4.PNG"
                                 alt="Gallery Image"
-                                width={500}
-                                height={500}
+                                width={300}
+                                height={300}
                                 className='img-fit rounded-3'
                             />
                         </div>
@@ -237,8 +227,8 @@ function Gallery() {
                             <Image
                                 src="/images/gallery/6.PNG"
                                 alt="Gallery Image"
-                                width={500}
-                                height={500}
+                                width={300}
+                                height={300}
                                 className='img-fit rounded-3'
                             />
                         </div>
@@ -246,8 +236,8 @@ function Gallery() {
                             <Image
                                 src="/images/gallery/7.PNG"
                                 alt="Gallery Image"
-                                width={500}
-                                height={500}
+                                width={300}
+                                height={300}
                                 className='img-fit rounded-3'
                             />
                         </div>
@@ -255,8 +245,8 @@ function Gallery() {
                             <Image
                                 src="/images/gallery/8.PNG"
                                 alt="Gallery Image"
-                                width={500}
-                                height={500}
+                                width={300}
+                                height={300}
                                 className='img-fit rounded-3'
                             />
                         </div>
