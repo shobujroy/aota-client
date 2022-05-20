@@ -9,7 +9,7 @@ function Navbar() {
             <div className="container">
                 <a className="navbar-brand" href="#">
                     <Image
-                        src="/logo.png"
+                        src="/LOGO (Black) - V3.svg"
                         width={128}
                         height={40}
                         className={"img-fluid"}
