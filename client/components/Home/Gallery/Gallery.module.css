@@ -1,0 +1,31 @@
+.galleryImageWrapper {
+    overflow: scroll;
+    white-space: nowrap;
+    scroll-behavior: smooth;
+}
+
+/* width */
+.galleryImageWrapper::-webkit-scrollbar {
+    display: none;
+}
+/* Track */
+.galleryImageWrapper::-webkit-scrollbar-track {
+    /* box-shadow: inset 0 0 2px grey; */
+    border-radius: 5px;
+}
+
+/* Handle */
+.galleryImageWrapper::-webkit-scrollbar-thumb {
+    background: #179bd7;
+    border-radius: 5px;
+}
+/* Handle on hover */
+.galleryImageWrapper::-webkit-scrollbar-thumb:hover {
+    background: #179bd7;
+}
+
+.galleryImage {
+    border-radius: 5px;
+    margin-right: 10px;
+    display: inline-block;
+}

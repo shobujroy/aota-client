@@ -1,0 +1,31 @@
+.headerWrapper {
+    background-color: #85b98b;
+}
+
+.headerContentWrapper {
+    background-image: url("../../../public/images/Banners/PC\ .png");
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 87vh;
+    padding-top: 2rem;
+}
+
+.headerContent h1 {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 115px;
+    color: #251f3a;
+    padding-bottom: 30px;
+}
+
+.headerContent button {
+    background: #e2dd96;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    color: #212237;
+    padding: 10px 40px;
+    border: none;
+    margin-left: 8rem;
+}

@@ -16,13 +16,21 @@ a {
 }
 
 .bg-primary {
-  background-color: #212428 !important;
+  background-color: #24272b !important;
   color: white;
 }
 
 .bg-secondary {
-  background-color: #121a21 !important;
+  background-color: #212428 !important;
   color: white;
+}
+
+.text-primary {
+  color: #45c78c !important;
+}
+
+.text-secondary {
+  color: #e2dd96 !important;
 }
 
 .z-index-100 {
@@ -48,4 +56,24 @@ a {
   border-radius: 0px;
 }
 
+.accordion-item {
+  background-color: #24272b;
+  border: none;
+}
 
+.accordion-button,
+.accordion-button:not(.collapsed) {
+  background-color: #24272b;
+  color: white;
+}
+
+.accordion-button:focus {
+  border: none;
+  outline: none;
+}
+
+.accordion-button:focus,
+.accordion-button:not(.collapsed)::after {
+  background-image: none;
+  box-shadow: none !important;
+}
