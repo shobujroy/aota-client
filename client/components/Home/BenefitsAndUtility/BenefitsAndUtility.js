@@ -6,25 +6,25 @@ function BenefitsAndUtility() {
     const benefitsAndUtilities = [
         {
             imgLeft: true,
-            image: '/images/undraw_xmas_surprise_-57-p1.svg',
+            image: '/images/roadmap/Box_perspective_matte.png',
             title: 'Polygon Airdrops',
             p: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
         },
         {
             imgLeft: false,
-            image: '/images/undraw_xmas_surprise_-57-p1.svg',
+            image: '/images/roadmap/perspective_matte.png',
             title: 'Creative Story Dao',
             p: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
         },
         {
             imgLeft: true,
-            image: '/images/undraw_xmas_surprise_-57-p1.svg',
+            image: '/images/roadmap/Yoga.png',
             title: 'Weekly Yoga',
             p: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
         },
         {
             imgLeft: false,
-            image: '/images/undraw_xmas_surprise_-57-p1.svg',
+            image: '/images/roadmap/Quick Story.png',
             title: 'Quick Story',
             p: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
         }

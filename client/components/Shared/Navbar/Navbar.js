@@ -10,8 +10,8 @@ function Navbar() {
                 <a className="navbar-brand" href="#">
                     <Image
                         src="/logo.png"
-                        width={208}
-                        height={60}
+                        width={128}
+                        height={40}
                         className={"img-fluid"}
                     />
                 </a>
