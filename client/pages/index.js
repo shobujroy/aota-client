@@ -10,6 +10,9 @@ import RoadMap from '../components/Home/RoadMap/RoadMap';
 import PressAbout from '../components/Home/PressAbout/PressAbout';
 import BenefitsAndUtility from '../components/Home/BenefitsAndUtility/BenefitsAndUtility';
 import Gallery from './../components/Home/Gallery/Gallery';
+import Team from '../components/Home/Team/Team';
+import Partners from '../components/Home/Partners/Partners';
+import Faq from '../components/Home/Faq/Faq';
 
 function Home() {
   return (
@@ -23,7 +26,10 @@ function Home() {
       {/* <HowItWork /> */}
       <RoadMap />
       <Gallery />
-      <CallToAction />
+      <Team />
+      <Partners />
+      <Faq />
+      {/* <CallToAction /> */}
       <Footer />
     </div>
   )

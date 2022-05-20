@@ -56,3 +56,24 @@ a {
   border-radius: 0px;
 }
 
+.accordion-item {
+  background-color: #24272b;
+  border: none;
+}
+
+.accordion-button,
+.accordion-button:not(.collapsed) {
+  background-color: #24272b;
+  color: white;
+}
+
+.accordion-button:focus {
+  border: none;
+  outline: none;
+}
+
+.accordion-button:focus,
+.accordion-button:not(.collapsed)::after {
+  background-image: none;
+  box-shadow: none !important;
+}
