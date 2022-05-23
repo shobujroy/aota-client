@@ -30,7 +30,7 @@ function Home() {
       <Partners />
       <Faq />
       {/* <CallToAction /> */}
-      <Footer />
+      <Footer bg={'bg-secondary'} />
     </div>
   )
 }

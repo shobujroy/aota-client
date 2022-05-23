@@ -3,10 +3,10 @@ import Image from 'next/image'
 import Link from 'next/link';
 import Styles from './Navbar.module.css';
 
-function Navbar() {
+function Navbar({ BorderBottom }) {
     return (
         <nav className={`navbar navbar-expand-lg navbar-dark bg-transparent pb-3 ${ Styles.navContainer }`}>
-            <div className="container">
+            <div className={`container  ${ BorderBottom && Styles.BorderBottom }`}>
                 <a className="navbar-brand" href="#">
                     <Image
                         src="/LOGO (Black) - V3.svg"

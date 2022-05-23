@@ -4,11 +4,11 @@ import Link from "next/link";
 import styles from "./Footer.module.css";
 import FooterCol from "./FooterCol";
 
-function Footer() {
+function Footer({ bg }) {
 
 
   return (
-    <footer className="footer-area bg-secondary clear-both">
+    <footer className={`footer-area  clear-both ${ bg }`}>
       <div className="container pt-5 pb-5">
         <div className="row">
           <div className={`d-flex flex-wrap justify-content-between align-items-center ${ styles.footerContectWrapper }`}>
@@ -19,7 +19,7 @@ function Footer() {
                 <button className={`btn ${ styles.btnSubmit }`}>Submit</button>
               </div>
             </div>
-            <div className="text-end text-white">
+            <div className="text-end">
               <div className="d-flex flex-row justify-content-end mb-3">
                 <span className='fs-4 me-3'><i class="fa-brands fa-instagram"></i></span>
                 <span className='fs-4 me-3'><i class="fa-brands fa-reddit"></i></span>

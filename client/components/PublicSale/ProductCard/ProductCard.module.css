@@ -1,0 +1,42 @@
+.card {
+    filter: drop-shadow(16px 16px 89px rgba(0, 0, 0, 0.12));
+    background: #fcfbfb;
+    border-radius: 16px;
+    padding: 50px 50px;
+}
+
+.imageWrapper {
+    box-shadow: -15px -15px #a4bbc4;
+    border-radius: 0.3rem;
+}
+
+.quantityWrapper span {
+    background: #eaeaea;
+    border-radius: 20px;
+    padding: 5px 20px;
+}
+
+.quantityWrapper {
+    background: #e2e2e2;
+    border-radius: 20px;
+    padding: 0px 2px;
+}
+
+.quantityWrapper p {
+    margin: 2px 10px;
+    font-weight: 800;
+}
+
+.mintBtn {
+    background: #7a5ea7;
+    padding: 10px 45px;
+    color: #fff;
+    border-radius: 0px;
+}
+
+.statusBar {
+    background: #7a5ea7;
+    border-radius: 35px;
+    padding: 10px 15px;
+    color: #fff;
+}
