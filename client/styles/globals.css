@@ -25,6 +25,16 @@ a {
   color: white;
 }
 
+.bg-third {
+  background-color: #fdfdfd !important;
+  color: #464646;
+}
+
+.footer-bg-secondary {
+  background-color: #f5f5f5 !important;
+  color: #464646;
+}
+
 .text-primary {
   color: #45c78c !important;
 }

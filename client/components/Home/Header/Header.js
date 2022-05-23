@@ -8,8 +8,8 @@ function Header() {
   return (
     <div className={styles.headerWrapper}>
       <Navbar />
-      <div className={styles.headerContentWrapper}>
-        <div className="container">
+      <div className="container">
+        <div className={styles.headerContentWrapper}>
           <div className="row">
             <div className={`col-md-6 ${ styles.headerContent }`}>
               <h1>ALIENS ON <br /> THE AVE</h1>

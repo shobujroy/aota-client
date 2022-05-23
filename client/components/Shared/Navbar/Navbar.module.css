@@ -50,3 +50,8 @@
 
     color: #7a5ea7 !important;
 }
+
+.BorderBottom {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #9a9aa9 !important;
+}
