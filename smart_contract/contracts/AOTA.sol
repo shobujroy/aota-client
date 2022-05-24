@@ -13,7 +13,8 @@ contract AOTA is ERC721Enumerable, Ownable {
     Counters.Counter private _tokenIds;
 
     uint public constant MAX_SUPPLY = 7145;
-    uint public constant PRICE = 0.07 ether;
+    uint public constant PUB_PRICE = 0.07 ether;
+    uint public constant PRI_PRICE = 0.09 ether;
     uint public constant MAX_PER_MINT = 40;
 
     string public baseTokenURI;
@@ -40,12 +41,24 @@ contract AOTA is ERC721Enumerable, Ownable {
         baseTokenURI = _baseTokenURI;
     }
 
-    function mintNFTs(uint _count) public payable {
+    function mintPubNFTs(uint _count) public payable {
         uint totalMinted = _tokenIds.current();
 
         require(totalMinted.add(_count) <= MAX_SUPPLY, "Not enough NFTs left!");
         require(_count >0 && _count <= MAX_PER_MINT, "Cannot mint specified number of NFTs.");
-        require(msg.value >= PRICE.mul(_count), "Not enough ether to purchase NFTs.");
+        require(msg.value >= PUB_PRICE.mul(_count), "Not enough ether to purchase NFTs.");
+
+        for (uint i = 0; i < _count; i++) {
+            _mintSingleNFT();
+        }
+    }
+
+    function mintPriNFTs(uint _count) public payable {
+        uint totalMinted = _tokenIds.current();
+
+        require(totalMinted.add(_count) <= MAX_SUPPLY, "Not enough NFTs left!");
+        require(_count >0 && _count <= MAX_PER_MINT, "Cannot mint specified number of NFTs.");
+        require(msg.value >= PRI_PRICE.mul(_count), "Not enough ether to purchase NFTs.");
 
         for (uint i = 0; i < _count; i++) {
             _mintSingleNFT();
@@ -56,6 +69,17 @@ contract AOTA is ERC721Enumerable, Ownable {
         uint newTokenID = _tokenIds.current();
         _safeMint(msg.sender, newTokenID);
         _tokenIds.increment();
+    }
+
+    function tokensOfOwner(address _owner) external view returns (uint[] memory) {
+
+        uint tokenCount = balanceOf(_owner);
+        uint[] memory tokensId = new uint256[](tokenCount);
+
+        for (uint i = 0; i < tokenCount; i++) {
+            tokensId[i] = tokenOfOwnerByIndex(_owner, i);
+        }
+        return tokensId;
     }
 
     function withdraw() public payable onlyOwner {
