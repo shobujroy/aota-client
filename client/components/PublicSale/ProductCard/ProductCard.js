@@ -45,12 +45,12 @@ function ProductCard() {
         if (typeof window.ethereum !== "undefined") {
           try {
             const provider = await web3Modal.connect();
-            const web3 = new Web3(provider);
-            setIsConnected(true);
             console.log("provider");
             console.log(provider);
+            const web3 = new Web3(provider);
             console.log("web3");
             console.log(web3);
+            setIsConnected(true);
             setSign((await web3.eth.getAccounts())[0]);
             console.log(sign);
           } catch (e) {
