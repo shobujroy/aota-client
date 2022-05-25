@@ -5,7 +5,7 @@ import Footer from './../components/Shared/Footer/Footer';
 function success() {
     return (
         <div className='bg-third'>
-            <Navbar BorderBottom={true} />
+            <Navbar BorderBottom={true} wallet={true} />
             <div className="container pt-3 pb-5">
                 <div className="row">
                     <div className='w-100 border-black rounded-3 h-500 d-flex flex-column justify-content-center align-items-center'>

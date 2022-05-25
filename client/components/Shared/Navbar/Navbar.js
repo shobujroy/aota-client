@@ -3,7 +3,7 @@ import Image from 'next/image'
 import Link from 'next/link';
 import Styles from './Navbar.module.css';
 
-function Navbar({ BorderBottom }) {
+function Navbar({ BorderBottom, wallet }) {
     return (
         <nav className={`navbar navbar-expand-lg navbar-dark bg-transparent pb-3 ${ Styles.navContainer }`}>
             <div className={`container  ${ BorderBottom && Styles.BorderBottom }`}>
@@ -27,49 +27,66 @@ function Navbar({ BorderBottom }) {
                         <button className="btn btn-outline-success" type="submit">Search</button>
                     </form> */}
                     <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
-                        {/* <Link href={'/'}>
+                        {
+                            wallet
+                                ? (
+                                    <>
+                                        <li className="nav-item ms-md-5">
+                                            <p className='mt-1 fw-bold'>00000000....00000</p>
+                                        </li>
+                                        <li className="nav-item ms-md-4">
+                                            <button className={"btn " + Styles.connectWalletBtn} aria-current="page" href="#">Connect Wallet</button>
+                                        </li>
+                                    </>
+                                )
+                                : (
+                                    <>
+                                        {/* <Link href={'/'}>
                             <li className="nav-item ms-md-5">
                                 <a className={"nav-link " + Styles.navLink} aria-current="page" href="#">Home</a>
                             </li>
                         </Link> */}
-                        <Link href={'/about'}>
-                            <li className="nav-item ms-md-5">
-                                <a className={"nav-link " + Styles.navLink} aria-current="page" href="#">ABOUT</a>
-                            </li>
-                        </Link>
-                        <Link href={'/about'}>
-                            <li className="nav-item ms-md-5">
-                                <a className={"nav-link " + Styles.navLink} aria-current="page" href="#">UTILITY</a>
-                            </li>
-                        </Link>
-                        <Link href={'/about'}>
-                            <li className="nav-item ms-md-5">
-                                <a className={"nav-link " + Styles.navLink} aria-current="page" href="#">ROAD MAP</a>
-                            </li>
-                        </Link>
-                        <Link href={'/contact'}>
-                            <li className="nav-item ms-md-5">
-                                <a className={"nav-link " + Styles.navLink} aria-current="page" href="#">GALLERY</a>
-                            </li>
-                        </Link>
-                        <Link href={'/contact'}>
-                            <li className="nav-item ms-md-5">
-                                <a className={"nav-link " + Styles.navLink} aria-current="page" href="#">TEAM</a>
-                            </li>
-                        </Link>
-                        <Link href={'/contact'}>
-                            <li className="nav-item ms-md-5">
-                                <a className={"nav-link " + Styles.navLink} aria-current="page" href="#">PARTNERS</a>
-                            </li>
-                        </Link>
-                        {/* <Link href={'/contact'}>
+                                        <Link href={'/about'}>
+                                            <li className="nav-item ms-md-5">
+                                                <a className={"nav-link " + Styles.navLink} aria-current="page" href="#">ABOUT</a>
+                                            </li>
+                                        </Link>
+                                        <Link href={'/about'}>
+                                            <li className="nav-item ms-md-5">
+                                                <a className={"nav-link " + Styles.navLink} aria-current="page" href="#">UTILITY</a>
+                                            </li>
+                                        </Link>
+                                        <Link href={'/about'}>
+                                            <li className="nav-item ms-md-5">
+                                                <a className={"nav-link " + Styles.navLink} aria-current="page" href="#">ROAD MAP</a>
+                                            </li>
+                                        </Link>
+                                        <Link href={'/contact'}>
+                                            <li className="nav-item ms-md-5">
+                                                <a className={"nav-link " + Styles.navLink} aria-current="page" href="#">GALLERY</a>
+                                            </li>
+                                        </Link>
+                                        <Link href={'/contact'}>
+                                            <li className="nav-item ms-md-5">
+                                                <a className={"nav-link " + Styles.navLink} aria-current="page" href="#">TEAM</a>
+                                            </li>
+                                        </Link>
+                                        <Link href={'/contact'}>
+                                            <li className="nav-item ms-md-5">
+                                                <a className={"nav-link " + Styles.navLink} aria-current="page" href="#">PARTNERS</a>
+                                            </li>
+                                        </Link>
+                                        {/* <Link href={'/contact'}>
                             <li className="nav-item ms-md-5">
                                 <a className={"nav-link " + Styles.navLink} aria-current="page" href="#">Contact</a>
                             </li>
                         </Link> */}
-                        {/* <li className="nav-item ms-md-5 d-flex align-items-center justify-content-end">
+                                        {/* <li className="nav-item ms-md-5 d-flex align-items-center justify-content-end">
                             <button className={"btn " + Styles.connectWalletBtn} aria-current="page" href="#">Connect Wallet</button>
                         </li> */}
+                                    </>
+                                )
+                        }
                     </ul>
                 </div>
             </div>
