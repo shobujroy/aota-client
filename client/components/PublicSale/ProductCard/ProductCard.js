@@ -11,8 +11,9 @@ let web3Modal;
 const add = "0x23ed5b7CdaB7c4C5500F5Ba993e83D84E0f9F00D";
 
 
-function ProductCard({ isConnected, setIsConnected, hasMetamask, setHasMetamask, sign, setSign }) {
-  const [pubPrice, setPubPrice] = useState(undefined);
+
+function ProductCard({ isConnected, setIsConnected, hasMetamask, setHasMetamask, sign, setSign}) {
+  const [pubPrice, setPubPrice] = useState(0);
   const [quantity, setQuantity] = useState(1);
 
   useEffect(() => {
@@ -69,19 +70,19 @@ function ProductCard({ isConnected, setIsConnected, hasMetamask, setHasMetamask,
       console.log(PUB_PRICE);
 
       let price = web3.utils.fromWei(PUB_PRICE.toString(), "ether");
-      console.log("calculated total price from pubMint function of product card");
+      console.log("calculated price in ether from pubMint function of product card");
       console.log(price);
 
-      let total = count * price;
+      price = count * price;
       console.log("calculated total price from pubMint function of product card");
-      console.log(total);
+      console.log(price);
 
       setPubPrice(price);
       console.log("pubPrice from pubMint function in product card");
       console.log(pubPrice);
 
       try {
-        await Cont.methods.mintPubNFTs().send({ from: sign, value: total }, function (err, txHash) {
+        await Cont.methods.mintPubNFTs(count).send({ from: sign, value: PUB_PRICE }, function (err, txHash) {
           if (err) {
             console.log("error from results of send transaction of pubMint function in product card");
             console.log(err);
