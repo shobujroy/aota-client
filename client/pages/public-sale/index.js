@@ -2,11 +2,24 @@ import React from 'react'
 import Navbar from '../../components/Shared/Navbar/Navbar';
 import Footer from '../../components/Shared/Footer/Footer';
 import ProductCard from '../../components/PublicSale/ProductCard/ProductCard';
+import { useState, useEffect } from "react";
 
-function index() {
+function Index() {
+    const [isConnected, setIsConnected] = useState(false);
+    const [hasMetamask, setHasMetamask] = useState(false);
+    const [sign, setSign] = useState(undefined);
+
+    useEffect(() => {
+        if (typeof window.ethereum !== "undefined") {
+          setHasMetamask(true);
+          console.log("hasMetamask from useEffect of index.js of public-sale page");
+        }
+      }, [hasMetamask]);
+
     return (
         <div className='bg-third'>
-            <Navbar BorderBottom={true} wallet={true} />
+            <Navbar BorderBottom={true} wallet={true} isConnected={isConnected} setIsConnected={setIsConnected} 
+                hasMetamask={hasMetamask} setHasMetamask={setHasMetamask} sign={sign} setSign={setSign}/>
             <div className="container pt-3 pb-5">
                 <div className="row">
                     <h6 className='d-flex flex-row align-items-center'>
@@ -14,7 +27,8 @@ function index() {
                         Back
                     </h6>
                     <div className='mt-3 d-flex justify-content-center'>
-                        <ProductCard />
+                        <ProductCard isConnected={isConnected} setIsConnected={setIsConnected} 
+                hasMetamask={hasMetamask} setHasMetamask={setHasMetamask} sign={sign} setSign={setSign}/>
                     </div>
                 </div>
             </div>
@@ -23,4 +37,4 @@ function index() {
     )
 }
 
-export default index
+export default Index
