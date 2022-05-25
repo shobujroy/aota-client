@@ -2,8 +2,83 @@ import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link';
 import Styles from './Navbar.module.css';
+import Web3 from "web3";
+import WalletConnectProvider from "@walletconnect/web3-provider";
+import Web3Modal from "web3modal";
+import { useState, useEffect } from "react";
 
-function Navbar({ BorderBottom, wallet }) {
+let web3Modal;
+
+const providerOptions = {
+        walletconnect: {
+            package: WalletConnectProvider,
+            options: {
+              infuraId: "29a4aa8775aa42caace0437559c37bb4"
+            }
+          }
+    };
+
+function Navbar({ BorderBottom, wallet,  isConnected, setIsConnected, hasMetamask, setHasMetamask, sign, setSign}) {
+
+    if (typeof window !== "undefined") {
+        web3Modal = new Web3Modal({
+          cacheProvider: false,
+          providerOptions, // required
+        });
+      }
+
+    useEffect(() => {
+        console.log("isConnected and hasMetamask from useEffect of Navbar");
+        console.log(isConnected);
+        console.log(hasMetamask);
+      }, [hasMetamask, isConnected]);
+
+    async function connectwallet() { 
+        if (typeof window.ethereum !== "undefined") {
+            try {
+              const provider = await web3Modal.connect();
+              console.log("provider from connectwallet function in Navbar");
+              console.log(provider);
+      
+              const web3 = new Web3(provider);
+              console.log("web3 from connectwallet function in Navbar");
+              console.log(web3);
+      
+              setIsConnected(true);
+              console.log("isConnected from connectwallet function in Navbar");
+              console.log(isConnected);
+      
+              setSign((await web3.eth.getAccounts())[0]);
+              console.log("sign from connectwallet function in Navbar");
+              console.log(sign);
+            } catch (e) {
+              console.log("error from connectwallet function in Navbar");
+              console.log(e);
+            }
+          } else {
+            setIsConnected(false);
+            console.log("isConnected from connectwallet function in Navbar");
+            console.log(isConnected);
+          }
+        //var provider = await web3Modal.connect();
+        //var web3 = new Web3(provider); 
+        //setSign((await web3.eth.getAccounts())[0]);
+        //setIsConnected(true);
+    }
+
+    async function disconnectwallet() {
+        await web3Modal.clearCachedProvider();
+
+        setSign(undefined);
+        console.log("sign from disconnectwallet function in Navbar");
+        console.log(sign);
+
+        setIsConnected(false);
+        console.log("isConnected from disconnectwallet function in Navbar");
+        console.log(isConnected);
+        //setHasMetamask(false);
+    }
+
     return (
         <nav className={`navbar navbar-expand-lg navbar-dark bg-transparent pb-3 ${ Styles.navContainer }`}>
             <div className={`container  ${ BorderBottom && Styles.BorderBottom }`}>
@@ -32,10 +107,12 @@ function Navbar({ BorderBottom, wallet }) {
                                 ? (
                                     <>
                                         <li className="nav-item ms-md-5">
-                                            <p className='mt-1 fw-bold'>00000000....00000</p>
+                                            <p className='mt-1 fw-bold'>{sign}</p>
                                         </li>
                                         <li className="nav-item ms-md-4">
-                                            <button className={"btn " + Styles.connectWalletBtn} aria-current="page" href="#">Connect Wallet</button>
+                                        {hasMetamask ? (isConnected ? (<button className={"btn " + Styles.connectWalletBtn} onClick={() => disconnectwallet()} aria-current="page" href="#">Disonnect Wallet</button>) 
+                                        : (<button className={"btn " + Styles.connectWalletBtn} onClick={() => connectwallet()} aria-current="page" href="#">Connect Wallet</button>)) 
+                                        : (<button className={"btn " + Styles.connectWalletBtn} onClick={() => connectwallet()} aria-current="page" href="#">Connect Wallet</button>)}
                                         </li>
                                     </>
                                 )
