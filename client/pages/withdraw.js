@@ -8,7 +8,7 @@ import Image from 'next/image';
 function withdraw() {
   return (
     <div className='bg-third'>
-      <Navbar BorderBottom={true} />
+      <Navbar BorderBottom={true} wallet={true} />
       <div className="container pt-3 pb-5">
         <div className="row">
           <div className='mt-3 d-flex justify-content-center'>
