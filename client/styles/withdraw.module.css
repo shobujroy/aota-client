@@ -3,9 +3,9 @@
     background: #fcfbfb;
     border-radius: 16px;
     padding: 50px 50px;
+    width: 100%;
+    max-width: 600px;
 }
-
-
 
 .imageWrapper {
     box-shadow: -15px -15px #a4bbc4;
@@ -31,6 +31,13 @@
 
 .mintBtn {
     background: #7a5ea7;
+    padding: 10px 52px;
+    color: #fff;
+    border-radius: 0px;
+}
+
+.withdrawBtn {
+    background: #d41515;
     padding: 10px 45px;
     color: #fff;
     border-radius: 0px;
