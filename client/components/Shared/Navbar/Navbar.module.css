@@ -20,18 +20,18 @@
 }
 
 .connectWalletBtn {
-    background: #7a5ea7;
+    background: #037dd6;
     border-radius: 30px;
     color: #fff;
     padding: 5px 30px;
-    border: 1px solid #7a5ea7;
+    border: 1px solid #037DD6;
     transition: 0.5s;
 }
 
 .connectWalletBtn:hover {
-    color: #7a5ea7;
+    color: #037DD6;
     background: #fff;
-    border: 1px solid #7a5ea7;
+    border: 1px solid #037DD6;
 }
 
 .navLink {

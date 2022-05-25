@@ -6,7 +6,7 @@ import ProductCard from '../../components/PublicSale/ProductCard/ProductCard';
 function index() {
     return (
         <div className='bg-third'>
-            <Navbar BorderBottom={true} />
+            <Navbar BorderBottom={true} wallet={true} />
             <div className="container pt-3 pb-5">
                 <div className="row">
                     <h6 className='d-flex flex-row align-items-center'>
