@@ -32,14 +32,14 @@ function ProductCard() {
     const [isConnected, setIsConnected] = useState(false);
     const [hasMetamask, setHasMetamask] = useState(false);
     const [sign, setSign] = useState(undefined);
-    const [pubPrice, setPubPrice] = useState(undefined);
+    const [pubPrice, setPubPrice] = useState("");
 
     useEffect(() => {
         if (typeof window.ethereum !== "undefined") {
           setHasMetamask(true);
           console.log("window.ethereum !== undefined");
         }
-      });
+      }, []);
     
       async function connect() {
         if (typeof window.ethereum !== "undefined") {
