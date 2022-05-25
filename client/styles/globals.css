@@ -59,6 +59,14 @@ a {
   object-fit: cover;
 }
 
+.h-500 {
+  height: 500px;
+}
+
+.border-black {
+  border: 1px solid #000 !important;
+}
+
 /* bootstrap css overwrite */
 
 .form-control.contact-form {
