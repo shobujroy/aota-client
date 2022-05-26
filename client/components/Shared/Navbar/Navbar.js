@@ -51,7 +51,7 @@ function Navbar({ BorderBottom, wallet, isConnected, setIsConnected, hasMetamask
                 console.log("web3 from connectwallet function in Navbar");
                 console.log(web3);
 
-                setIsConnected(true);
+                setLocalStorage(isConnected, true);
                 console.log("isConnected from connectwallet function in Navbar");
                 console.log(isConnected);
 
@@ -64,7 +64,7 @@ function Navbar({ BorderBottom, wallet, isConnected, setIsConnected, hasMetamask
             }
         } else {
             console.log("coming point 3")
-            setIsConnected(false);
+            setLocalStorage(isConnected, false);
             console.log("isConnected from connectwallet function in Navbar");
             console.log(isConnected);
         }
@@ -76,12 +76,12 @@ function Navbar({ BorderBottom, wallet, isConnected, setIsConnected, hasMetamask
 
     async function disconnectwallet() {
         await web3Modal.clearCachedProvider();
-
-        setSign(undefined);
+        setLocalStorage(setSign, undefined);
+        //setSign(undefined);
         console.log("sign from disconnectwallet function in Navbar");
         console.log(sign);
 
-        setIsConnected(false);
+        setLocalStorage(isConnected, false);
         console.log("isConnected from disconnectwallet function in Navbar");
         console.log(isConnected);
         //setHasMetamask(false);
