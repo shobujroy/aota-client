@@ -11,7 +11,7 @@ function success() {
                     <div className='w-100 border-black rounded-3 h-500 d-flex flex-column justify-content-center align-items-center'>
                         <span className="fs-1 text-success"><i class="fa-solid fa-circle-check"></i></span>
                         <p className="fs-1">You have successfully minted.</p>
-                        <p>Please visit this link for <span style={{ color: "#7A5EA7" }}><i>the NFT</i></span> </p>
+                        <p>Please visit this link for <span style={{ color: "#7A5EA7" }}><i>"https://testnets.opensea.io/collection/aliens-on-the-ave"</i></span> </p>
                     </div>
                 </div>
             </div>

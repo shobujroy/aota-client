@@ -25,7 +25,7 @@ function ProductCard({ isConnected, setIsConnected, hasMetamask, setHasMetamask,
 
   if (typeof window !== "undefined") {
     web3Modal = new Web3Modal({
-      cacheProvider: false,
+      cacheProvider: true,
       providerOptions,
     });
     console.log("web3Modal from product card");
@@ -85,20 +85,24 @@ function ProductCard({ isConnected, setIsConnected, hasMetamask, setHasMetamask,
       console.log("reading pub_price from pubMint function in product card");
       console.log(PUB_PRICE);
 
-      let price = web3.utils.fromWei(PUB_PRICE.toString(), "ether");
+      let total = count*PUB_PRICE
+      console.log("total");
+      console.log(total);
+
+      let price = web3.utils.fromWei(total.toString(), "ether");
       console.log("calculated price in ether from pubMint function of product card");
       console.log(price);
 
-      price = count * price;
-      console.log("calculated total price from pubMint function of product card");
-      console.log(price);
+      //price = count * price;
+      //console.log("calculated total price from pubMint function of product card");
+      //console.log(price);
 
       setPubPrice(price);
       console.log("pubPrice from pubMint function in product card");
       console.log(pubPrice);
 
       try {
-        await Cont.methods.mintPubNFTs(count).send({ from: sign, value: PUB_PRICE }, function (err, txHash) {
+        await Cont.methods.mintPubNFTs(count).send({ from: sign, value: total }, function (err, txHash) {
           if (err) {
             console.log("error from results of send transaction of pubMint function in product card");
             console.log(err);
@@ -135,7 +139,7 @@ function ProductCard({ isConnected, setIsConnected, hasMetamask, setHasMetamask,
         "Please install metamask")}
     </div><div className={styles.card}>
         <h1 className="text-center fs-3">Public Sale</h1>
-        <p className="text-center">0x3AF66e490A19b1b9C395ee21409E3ac39af69426</p>
+        <p className="text-center">0x23ed5b7CdaB7c4C5500F5Ba993e83D84E0f9F00D</p>
 
         <div className='d-flex justify-content-between flex-row pt-5'>
           <div>
