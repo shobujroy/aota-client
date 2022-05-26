@@ -26,8 +26,10 @@ function Navbar({ BorderBottom, wallet, isConnected, setIsConnected, hasMetamask
 
     if (typeof window !== "undefined") {
         web3Modal = new Web3Modal({
+
             cacheProvider: true,
             providerOptions,
+
         });
     }
 

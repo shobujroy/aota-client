@@ -12,7 +12,7 @@ contract AOTA is ERC721Enumerable, Ownable {
 
     Counters.Counter private _tokenIds;
 
-    uint public constant MAX_SUPPLY = 7145;
+    uint public constant MAX_SUPPLY = 7146;
     uint public constant PUB_PRICE = 0.07 ether;
     uint public constant PRI_PRICE = 0.09 ether;
     uint public constant MAX_PER_MINT = 40;
@@ -21,6 +21,14 @@ contract AOTA is ERC721Enumerable, Ownable {
 
     constructor(string memory baseURI) ERC721("Aliens On The Ave", "AOTA") {
         setBaseURI(baseURI);
+    }
+
+    function pubPrice() public pure returns(uint) {
+        return PUB_PRICE;
+    }
+
+    function priPrice() public pure returns(uint) {
+        return PRI_PRICE;
     }
 
     function reserveNFTs() public onlyOwner {
@@ -69,17 +77,6 @@ contract AOTA is ERC721Enumerable, Ownable {
         uint newTokenID = _tokenIds.current();
         _safeMint(msg.sender, newTokenID);
         _tokenIds.increment();
-    }
-
-    function tokensOfOwner(address _owner) external view returns (uint[] memory) {
-
-        uint tokenCount = balanceOf(_owner);
-        uint[] memory tokensId = new uint256[](tokenCount);
-
-        for (uint i = 0; i < tokenCount; i++) {
-            tokensId[i] = tokenOfOwnerByIndex(_owner, i);
-        }
-        return tokensId;
     }
 
     function withdraw() public payable onlyOwner {
