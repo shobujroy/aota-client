@@ -1,25 +1,16 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import Navbar from '../../components/Shared/Navbar/Navbar';
 import Footer from '../../components/Shared/Footer/Footer';
 import ProductCard from '../../components/PublicSale/ProductCard/ProductCard';
 import { useState, useEffect } from "react";
+import { MintContext } from './../../context/MintContext';
 
 function Index() {
-    const [isConnected, setIsConnected] = useState(false);
-    const [hasMetamask, setHasMetamask] = useState(false);
-    const [sign, setSign] = useState(undefined);
-
-    useEffect(() => {
-        if (typeof window.ethereum !== "undefined") {
-          setLocalStorage(hasMetamask, false);
-          console.log("hasMetamask from useEffect of index.js of public-sale page");
-        }
-      }, [hasMetamask]);
+    const { isConnected, hasMetamask, sign, } = useContext(MintContext);
 
     return (
         <div className='bg-third'>
-            <Navbar BorderBottom={true} wallet={true} isConnected={isConnected} setIsConnected={setIsConnected} 
-                hasMetamask={hasMetamask} setHasMetamask={setHasMetamask} sign={sign} setSign={setSign}/>
+            <Navbar BorderBottom={true} wallet={true}  />
             <div className="container pt-3 pb-5">
                 <div className="row">
                     <h6 className='d-flex flex-row align-items-center'>
@@ -27,8 +18,7 @@ function Index() {
                         Back
                     </h6>
                     <div className='mt-3 d-flex justify-content-center'>
-                        <ProductCard isConnected={isConnected} setIsConnected={setIsConnected} 
-                hasMetamask={hasMetamask} setHasMetamask={setHasMetamask} sign={sign} setSign={setSign}/>
+                        <ProductCard />
                     </div>
                 </div>
             </div>
