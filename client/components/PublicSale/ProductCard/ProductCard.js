@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import React from 'react';
+import React, { useContext } from 'react';
 import styles from './ProductCard.module.css';
 import Web3 from "web3";
 import WalletConnectProvider from "@walletconnect/web3-provider";
@@ -7,133 +7,19 @@ import Web3Modal from "web3modal";
 import { useState, useEffect } from "react";
 import AOTA from "../../../contracts/AOTA.json";
 import { setLocalStorage } from '../../../utils';
+import { MintContext } from '../../../context/MintContext';
 
-let web3Modal;
-const add = "0x23ed5b7CdaB7c4C5500F5Ba993e83D84E0f9F00D";
 
-const providerOptions = {
-  walletconnect: {
-    package: WalletConnectProvider,
-    options: {
-      infuraId: "29a4aa8775aa42caace0437559c37bb4",
-    }
-  }
-};
 
-function ProductCard({ isConnected, setIsConnected, hasMetamask, setHasMetamask, sign, setSign}) {
+function ProductCard({ }) {
   const [pubPrice, setPubPrice] = useState(0.07);
   const [quantity, setQuantity] = useState(1);
+  const { pubMint, isConnected, hasMetamask, sign, trxHash } = useContext(MintContext);
 
-  
-  
-  useEffect(() => {
-    console.log("isConnected and hasMetamask from useEffect of product card");
-    console.log(isConnected);
-    console.log(hasMetamask);
-  }, [hasMetamask, isConnected]);
-
-  /*async function connectwallet() {
-    if (typeof window.ethereum !== "undefined") {
-      try {
-        const provider = await web3Modal.connect();
-        console.log("provider from connectwallet function in product card");
-        console.log(provider);
-
-        const web3 = new Web3(provider);
-        console.log("web3 from connectwallet function in product card");
-        console.log(web3);
-
-        setIsConnected(true);
-        console.log("isConnected from connectwallet function in product card");
-        console.log(isConnected);
-
-        setSign((await web3.eth.getAccounts())[0]);
-        console.log("sign from connectwallet function in product card");
-        console.log(sign);
-      } catch (e) {
-        console.log("error from connectwallet function in product card");
-        console.log(e);
-      }
-    } else {
-      setIsConnected(false);
-      console.log("isConnected from connectwallet function in product card");
-      console.log(isConnected);
-    }
-  }*/
-
-  async function pubMint(count) {
-    if (typeof window.ethereum !== "undefined") {
-      web3Modal = new Web3Modal({
-        cacheProvider: true,
-        providerOptions,
-      });
-      const provider = await web3Modal.connect();
-      console.log("provider from connect function in product card");
-      console.log(provider);
-
-      const web3 = new Web3(provider);
-      console.log("web3 from connect function in product card");
-      console.log(web3);
-
-      const Cont = new web3.eth.Contract(AOTA.abi, add, sign);
-      console.log("contruct intance from pubMint function in product card");
-      console.log(Cont);
-
-      const PUB_PRICE = await Cont.methods.pubPrice().call();
-      console.log("reading pub_price from pubMint function in product card");
-      console.log(PUB_PRICE);
-
-      let total = count*PUB_PRICE
-      console.log("total");
-      console.log(total);
-
-      let price = web3.utils.fromWei(total.toString(), "ether");
-      console.log("calculated price in ether from pubMint function of product card");
-      console.log(price);
-
-      //price = count * price;
-      //console.log("calculated total price from pubMint function of product card");
-      //console.log(price);
-
-      setPubPrice(price);
-      console.log("pubPrice from pubMint function in product card");
-      console.log(pubPrice);
-
-      try {
-        await Cont.methods.mintPubNFTs(count).send({ from: sign, value: total }, function (err, txHash) {
-          if (err) {
-            console.log("error from results of send transaction of pubMint function in product card");
-            console.log(err);
-          } else {
-            console.log("txHash from pubMint function in product card");
-            console.log(txHash);
-          }
-        });
-      } catch (error) {
-        console.log("error from mint transaction of pubMint function in product card");
-        console.log(error);
-      }
-    } else {
-      console.log("Please have the right amount of money");
-    }
-  }
-
-  async function disconnectwallet() {
-    await web3Modal.clearCachedProvider();
-
-    setSign(undefined);
-    console.log("sign from disconnectwallet function in Navbar");
-    console.log(sign);
-
-    setLocalStorage(isConnected, false);
-    console.log("isConnected from disconnectwallet function in Navbar");
-    console.log(isConnected);
-    //setHasMetamask(false);
-  }
 
   return (
     <><div>
-      
+
     </div><div className={styles.card}>
         <h1 className="text-center fs-3">Public Sale</h1>
         <p className="text-center">0x23ed5b7CdaB7c4C5500F5Ba993e83D84E0f9F00D</p>
@@ -164,13 +50,13 @@ function ProductCard({ isConnected, setIsConnected, hasMetamask, setHasMetamask,
               }}><i class="fa-solid fa-minus"></i></span>
             </div>
             <h5 className='fw-bold mt-3'>Total</h5>
-            <h3 className='fw-bold fs-2'> { quantity*pubPrice } ETH</h3>
+            <h3 className='fw-bold fs-2'> {quantity * pubPrice} ETH</h3>
             {isConnected ? <button className={`btn ${ styles.mintBtn }`} onClick={() => pubMint(quantity)}>MINT</button>
               : "Please connect wallet"}
           </div>
         </div>
         <div className="mt-5">
-          <p className={styles.statusBar}>Status.....minting</p>
+          <p className={styles.statusBar}>{trxHash}</p>
         </div>
       </div></>
 
