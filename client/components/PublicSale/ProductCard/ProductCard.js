@@ -10,28 +10,12 @@ import AOTA from "../../../contracts/AOTA.json";
 let web3Modal;
 const add = "0x23ed5b7CdaB7c4C5500F5Ba993e83D84E0f9F00D";
 
-const providerOptions = {
-  walletconnect: {
-    package: WalletConnectProvider,
-    options: {
-      infuraId: "29a4aa8775aa42caace0437559c37bb4",
-    }
-  }
-};
+
 
 function ProductCard({ isConnected, setIsConnected, hasMetamask, setHasMetamask, sign, setSign}) {
   const [pubPrice, setPubPrice] = useState(0);
   const [quantity, setQuantity] = useState(1);
-
-  if (typeof window !== "undefined") {
-    web3Modal = new Web3Modal({
-      cacheProvider: true,
-      providerOptions,
-    });
-    console.log("web3Modal from product card");
-    console.log(web3Modal);
-  }
-
+  
   useEffect(() => {
     console.log("isConnected and hasMetamask from useEffect of product card");
     console.log(isConnected);
@@ -131,7 +115,7 @@ function ProductCard({ isConnected, setIsConnected, hasMetamask, setHasMetamask,
     console.log("isConnected from disconnectwallet function in Navbar");
     console.log(isConnected);
     //setHasMetamask(false);
-}
+  }
 
   return (
     <><div>

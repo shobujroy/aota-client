@@ -7,59 +7,67 @@ import WalletConnectProvider from "@walletconnect/web3-provider";
 import Web3Modal from "web3modal";
 import { useState, useEffect } from "react";
 
+import AOTA from "../../../contracts/AOTA.json";
+
+const add = "0x23ed5b7CdaB7c4C5500F5Ba993e83D84E0f9F00D";
+
 let web3Modal;
 
 const providerOptions = {
-        walletconnect: {
-            package: WalletConnectProvider,
-            options: {
-              infuraId: "29a4aa8775aa42caace0437559c37bb4"
-            }
-          }
-    };
+    walletconnect: {
+        package: WalletConnectProvider,
+        options: {
+            infuraId: "29a4aa8775aa42caace0437559c37bb4"
+        }
+    }
+};
 
-function Navbar({ BorderBottom, wallet,  isConnected, setIsConnected, hasMetamask, setHasMetamask, sign, setSign}) {
+function Navbar({ BorderBottom, wallet, isConnected, setIsConnected, hasMetamask, setHasMetamask, sign, setSign }) {
 
     if (typeof window !== "undefined") {
         web3Modal = new Web3Modal({
-          cacheProvider: true,
-          providerOptions,
+
+            cacheProvider: true,
+            providerOptions,
+
         });
-      }
+    }
 
     useEffect(() => {
         console.log("isConnected and hasMetamask from useEffect of Navbar");
         console.log(isConnected);
         console.log(hasMetamask);
-      }, [hasMetamask, isConnected]);
+    }, [hasMetamask, isConnected]);
 
-    async function connectwallet() { 
+    async function connectwallet() {
+        console.log(typeof window.ethereum !== "undefined", "worigi")
         if (typeof window.ethereum !== "undefined") {
             try {
-              const provider = await web3Modal.connect();
-              console.log("provider from connectwallet function in Navbar");
-              console.log(provider);
-      
-              const web3 = new Web3(provider);
-              console.log("web3 from connectwallet function in Navbar");
-              console.log(web3);
-      
-              setIsConnected(true);
-              console.log("isConnected from connectwallet function in Navbar");
-              console.log(isConnected);
-      
-              setSign((await web3.eth.getAccounts())[0]);
-              console.log("sign from connectwallet function in Navbar");
-              console.log(sign);
+                const provider = await web3Modal.connect();
+                console.log("provider from connectwallet function in Navbar");
+                console.log(provider);
+
+                const web3 = new Web3(provider);
+                console.log("web3 from connectwallet function in Navbar");
+                console.log(web3);
+
+                setIsConnected(true);
+                console.log("isConnected from connectwallet function in Navbar");
+                console.log(isConnected);
+
+                setSign((await web3.eth.getAccounts())[0]);
+                console.log("sign from connectwallet function in Navbar");
+                console.log(sign);
             } catch (e) {
-              console.log("error from connectwallet function in Navbar");
-              console.log(e);
+                console.log("error from connectwallet function in Navbar");
+                console.log(e);
             }
-          } else {
+        } else {
+            console.log("coming point 3")
             setIsConnected(false);
             console.log("isConnected from connectwallet function in Navbar");
             console.log(isConnected);
-          }
+        }
         //var provider = await web3Modal.connect();
         //var web3 = new Web3(provider); 
         //setSign((await web3.eth.getAccounts())[0]);
@@ -110,9 +118,9 @@ function Navbar({ BorderBottom, wallet,  isConnected, setIsConnected, hasMetamas
                                             <p className='mt-1 fw-bold'>{sign}</p>
                                         </li>
                                         <li className="nav-item ms-md-4">
-                                        {hasMetamask ? (isConnected ? (<button className={"btn " + Styles.connectWalletBtn} onClick={() => disconnectwallet()} aria-current="page" href="#">Disonnect Wallet</button>) 
-                                        : (<button className={"btn " + Styles.connectWalletBtn} onClick={() => connectwallet()} aria-current="page" href="#">Connect Wallet</button>)) 
-                                        : (<button className={"btn " + Styles.connectWalletBtn} onClick={() => connectwallet()} aria-current="page" href="#">Connect Wallet</button>)}
+                                            {hasMetamask ? (isConnected ? (<button className={"btn " + Styles.connectWalletBtn} onClick={() => disconnectwallet()} aria-current="page" href="#">Disonnect Wallet</button>)
+                                                : (<button className={"btn " + Styles.connectWalletBtn} onClick={() => connectwallet()} >Connect Wallet</button>))
+                                                : (<button className={"btn " + Styles.connectWalletBtn} onClick={() => connectwallet()} >Connect Wallet</button>)}
                                         </li>
                                     </>
                                 )
