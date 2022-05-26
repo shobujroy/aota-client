@@ -25,23 +25,18 @@ const providerOptions = {
 
 function withdraw({ isConnected, setIsConnected, hasMetamask, setHasMetamask, sign, setSign}) {
 
-  if (typeof window !== "undefined") {
-    web3Modal = new Web3Modal({
-      cacheProvider: true,
-      providerOptions,
-    });
-    console.log("web3Modal from product card");
-    console.log(web3Modal);
-  }
-
   useEffect(() => {
     console.log("isConnected and hasMetamask from useEffect of product card");
     console.log(isConnected);
     console.log(hasMetamask);
   }, [hasMetamask, isConnected]);
 
-  async function connectwallet() {
+  /*async function connectwallet() {
     if (typeof window.ethereum !== "undefined") {
+      web3Modal = new Web3Modal({
+        cacheProvider: true,
+        providerOptions,
+      });
       try {
         const provider = await web3Modal.connect();
         console.log("provider from connectwallet function in product card");
@@ -67,10 +62,14 @@ function withdraw({ isConnected, setIsConnected, hasMetamask, setHasMetamask, si
       console.log("isConnected from connectwallet function in product card");
       console.log(isConnected);
     }
-  }
+  }*/
 
   async function withdraw() {
     if (typeof window.ethereum !== "undefined") {
+      web3Modal = new Web3Modal({
+        cacheProvider: true,
+        providerOptions,
+      });
       const provider = await web3Modal.connect();
       console.log("provider from connect function in product card");
       console.log(provider);
@@ -142,7 +141,7 @@ function withdraw({ isConnected, setIsConnected, hasMetamask, setHasMetamask, si
     console.log("sign from disconnectwallet function in Navbar");
     console.log(sign);
 
-    setIsConnected(false);
+    setLocalStorage(isConnected, false);
     console.log("isConnected from disconnectwallet function in Navbar");
     console.log(isConnected);
     //setHasMetamask(false);

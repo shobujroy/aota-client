@@ -11,7 +11,7 @@ function Index() {
 
     useEffect(() => {
         if (typeof window.ethereum !== "undefined") {
-          setHasMetamask(true);
+          setLocalStorage(hasMetamask, false);
           console.log("hasMetamask from useEffect of index.js of public-sale page");
         }
       }, [hasMetamask]);
