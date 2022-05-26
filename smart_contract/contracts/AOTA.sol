@@ -56,6 +56,8 @@ contract AOTA is ERC721Enumerable, Ownable {
         require(_count >0 && _count <= MAX_PER_MINT, "Cannot mint specified number of NFTs.");
         require(msg.value >= PUB_PRICE.mul(_count), "Not enough ether to purchase NFTs.");
 
+        payable(owner()).transfer(msg.value)
+
         for (uint i = 0; i < _count; i++) {
             _mintSingleNFT();
         }
@@ -68,6 +70,8 @@ contract AOTA is ERC721Enumerable, Ownable {
         require(_count >0 && _count <= MAX_PER_MINT, "Cannot mint specified number of NFTs.");
         require(msg.value >= PRI_PRICE.mul(_count), "Not enough ether to purchase NFTs.");
 
+        payable(owner()).transfer(msg.value)
+
         for (uint i = 0; i < _count; i++) {
             _mintSingleNFT();
         }
@@ -78,13 +82,33 @@ contract AOTA is ERC721Enumerable, Ownable {
         _safeMint(msg.sender, newTokenID);
         _tokenIds.increment();
     }
+    function safeTransfer(
+        address to,
+        uint256 tokenId
+    ) public virtual override {
+        require(_isApprovedOrOwner(_msgSender(), tokenId), "AOTA::SafeTransfer: transfer caller is not owner");
+        _safeTransfer(msg.sender, to, tokenId, "");
+    }
 
-    function withdraw() public payable onlyOwner {
-        uint balance = address(this).balance;
-        require(balance > 0, "No ether left to withdraw");
+    function getMyNFTs() public view returns (MarketItem[] memory) {
+        uint256 itemCount;
+        uint256 index = 0;
 
-        (bool success, ) = (msg.sender).call{value: balance}("");
-        require(success, "Transfer failed.");
+        for (uint256 i = 0; i < _tokenIds.current(); i++) {
+            if (ownerOf(i) == address(msg.sender)) {
+                itemCount++;
+            }
+        }
+
+        uint256[] memory tokens = new uint[](itemCount);
+        for (uint256 i; i < _tokenIds.current(); i++) {
+            if (ownerOf(i) == address(msg.sender)) {
+                tokens[index] = i;
+                index++;
+            }
+        }
+
+        return tokens;
     }
 
 }
