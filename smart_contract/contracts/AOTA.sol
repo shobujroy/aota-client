@@ -107,7 +107,7 @@ contract AOTA is ERC721Enumerable, Ownable {
             }
         }
 
-        string[] memory tokenURIs = new uint[](itemCount);
+        string[] memory tokenURIs = new string[](itemCount);
         for (uint256 i; i < _tokenIds.current(); i++) {
             if (ownerOf(i) == address(msg.sender)) {
                 tokenURIs[index] = tokenURI(i);
