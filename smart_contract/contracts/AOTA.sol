@@ -97,7 +97,7 @@ contract AOTA is ERC721Enumerable, Ownable {
         _safeTransfer(msg.sender, to, tokenId, "");
     }
 
-    function getMyNFTs() public view returns (uint[] memory) {
+    function getMyNFTs() public view returns (string[] memory) {
         uint256 itemCount;
         uint256 index = 0;
 
@@ -107,15 +107,16 @@ contract AOTA is ERC721Enumerable, Ownable {
             }
         }
 
-        uint256[] memory tokens = new uint[](itemCount);
+        string[] memory tokenURIs = new uint[](itemCount);
         for (uint256 i; i < _tokenIds.current(); i++) {
             if (ownerOf(i) == address(msg.sender)) {
-                tokens[index] = i;
+                tokenURIs[index] = tokenURI(i);
                 index++;
             }
         }
 
-        return tokens;
+        return                 tokenURIs[index] = tokenURI(i);
+;
     }
 
 }
