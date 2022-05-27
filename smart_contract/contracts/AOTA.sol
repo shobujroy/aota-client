@@ -92,10 +92,6 @@ contract AOTA is ERC721Enumerable, Ownable {
         _safeTransfer(msg.sender, to, tokenId, "");
     }
 
-    function getMyNFTs() public view returns (MarketItem[] memory) {
-        uint256 itemCount;
-        uint256 index = 0;
-
     function safeTransfer(address to, uint256 tokenId) public {
         require(_isApprovedOrOwner(_msgSender(), tokenId), "AOTA::SafeTransfer: transfer caller is not owner");
         _safeTransfer(msg.sender, to, tokenId, "");
