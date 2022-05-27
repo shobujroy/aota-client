@@ -56,7 +56,8 @@ contract AOTA is ERC721Enumerable, Ownable {
         require(_count >0 && _count <= MAX_PER_MINT, "Cannot mint specified number of NFTs.");
         require(msg.value >= PUB_PRICE.mul(_count), "Not enough ether to purchase NFTs.");
 
-        payable(owner()).transfer(msg.value)
+        payable(owner()).transfer(msg.value);
+
 
         for (uint i = 0; i < _count; i++) {
             _mintSingleNFT();
@@ -70,7 +71,8 @@ contract AOTA is ERC721Enumerable, Ownable {
         require(_count >0 && _count <= MAX_PER_MINT, "Cannot mint specified number of NFTs.");
         require(msg.value >= PRI_PRICE.mul(_count), "Not enough ether to purchase NFTs.");
 
-        payable(owner()).transfer(msg.value)
+        payable(owner()).transfer(msg.value);
+
 
         for (uint i = 0; i < _count; i++) {
             _mintSingleNFT();
@@ -91,6 +93,15 @@ contract AOTA is ERC721Enumerable, Ownable {
     }
 
     function getMyNFTs() public view returns (MarketItem[] memory) {
+        uint256 itemCount;
+        uint256 index = 0;
+
+    function safeTransfer (address to, uint256 tokenId) public {
+        require(_isApprovedOrOwner(_msgSender(), tokenId), "AOTA::SafeTransfer: transfer caller is not owner");
+        _safeTransfer(msg.sender, to, tokenId, "");
+    }
+
+    function getMyNFTs() public view returns (uint[] memory) {
         uint256 itemCount;
         uint256 index = 0;
 
