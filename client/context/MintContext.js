@@ -323,8 +323,8 @@ export const MintProvider = ({ children }) => {
             console.log(Cont);
 
             try {
-                const nftURI = await Cont.methods.getMyNFTs().call();
-                console.log(nftURI, 'nftURI');
+                const nftURI = await Cont.methods.getMyNFTs().call({ from: sign });
+                console.log('nftURI', nftURI);
             } catch (error) {
                 console.log(error);
             }

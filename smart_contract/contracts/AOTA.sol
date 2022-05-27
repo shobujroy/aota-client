@@ -84,13 +84,6 @@ contract AOTA is ERC721Enumerable, Ownable {
         _safeMint(msg.sender, newTokenID);
         _tokenIds.increment();
     }
-    function safeTransfer(
-        address to,
-        uint256 tokenId
-    ) public virtual override {
-        require(_isApprovedOrOwner(_msgSender(), tokenId), "AOTA::SafeTransfer: transfer caller is not owner");
-        _safeTransfer(msg.sender, to, tokenId, "");
-    }
 
     function safeTransfer(address to, uint256 tokenId) public {
         require(_isApprovedOrOwner(_msgSender(), tokenId), "AOTA::SafeTransfer: transfer caller is not owner");
