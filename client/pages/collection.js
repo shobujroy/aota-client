@@ -4,11 +4,11 @@ import Navbar from './../components/Shared/Navbar/Navbar';
 import Footer from './../components/Shared/Footer/Footer';
 
 function Collection() {
-    const { getMyNfts, collection, } = useContext(MintContext);
+    const { myNFTs, collection, } = useContext(MintContext);
 
-    // useEffect(async () => {
-    //     getMyNfts();
-    // }, []);
+    useEffect(() => {
+        myNFTs();
+    }, []);
     return (
         <div className='bg-third'>
             <Navbar BorderBottom={true} wallet={true} />

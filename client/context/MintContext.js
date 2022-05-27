@@ -7,7 +7,7 @@ export const MintContext = React.createContext();
 
 let web3Modal;
 
-const add = "0x77110748a09E7039fB22A2a7f1CAF086e1c25685";
+const add = "0x9BD8716cf1905991aeE24da610cb537Ef5866c62";
 
 import AOTA from '../contracts/AOTA.json';
 
@@ -33,6 +33,7 @@ export const MintProvider = ({ children }) => {
     const [sign, setSign] = useState(undefined);
     const [pubPrice, setPubPrice] = useState(0.07);
     const [trxHash, setTrxHash] = useState('0x60fab96fec783a370d544209cf4b33b27daa01f5571a16c3761f4bd1c4b1b59e');
+    const [collection, setCollection] = useState([]);
 
     // connect wallet
     async function connectwallet() {
@@ -321,9 +322,13 @@ export const MintProvider = ({ children }) => {
             console.log("contruct intance from pubMint function in product card");
             console.log(Cont);
 
-            let nftIds = await Cont.methods.getMyNFTs().call();
-            
-            return nftIds;
+            try {
+                const nftURI = await Cont.methods.getMyNFTs().call();
+                console.log(nftURI, 'nftURI');
+            } catch (error) {
+                console.log(error);
+            }
+        };
     }
 
     useEffect(() => {
@@ -333,7 +338,7 @@ export const MintProvider = ({ children }) => {
         }
     }, [hasMetamask]);
     return (
-        <MintContext.Provider value={{ trxHash, isConnected, hasMetamask, sign, pubMint, disconnectwallet, connectwallet, reserve, withdraw, pubPrice }}>
+        <MintContext.Provider value={{ myNFTs, collection, trxHash, isConnected, hasMetamask, sign, pubMint, disconnectwallet, connectwallet, reserve, withdraw, pubPrice }}>
             {children}
         </MintContext.Provider>
     )
