@@ -21,14 +21,14 @@ function Navbar({ BorderBottom, wallet }) {
     return (
         <nav className={`navbar navbar-expand-lg navbar-dark bg-transparent pb-3 ${ Styles.navContainer }`}>
             <div className={`container  ${ BorderBottom && Styles.BorderBottom }`}>
-                <a className="navbar-brand" href="#">
+                <Link className="navbar-brand" href="/">
                     <Image
                         src="/LOGO (Black) - V3.svg"
                         width={128}
                         height={40}
                         className={"img-fluid"}
                     />
-                </a>
+                </Link>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon text-white"></span>
                 </button>
@@ -50,13 +50,15 @@ function Navbar({ BorderBottom, wallet }) {
                                                 <a className={"nav-link " + Styles.navLink} aria-current="page" href="#">Collection</a>
                                             </li>
                                         </Link>
-                                        <Link href={'/withdraw'}>
-                                            <li className="nav-item ms-md-5">
-                                                <a className={"nav-link " + Styles.navLink} aria-current="page" href="#">Admin</a>
-                                            </li>
-                                        </Link>
+                                        {sign === '0x0D8444f2d3f93AB117392d461e84D22F2A638C12' &&
+                                            <Link href={'/withdraw'}>
+                                                <li className="nav-item ms-md-5">
+                                                    <a className={"nav-link " + Styles.navLink} aria-current="page" href="#">Admin</a>
+                                                </li>
+                                            </Link>
+                                        }
                                         <li className="nav-item ms-md-5">
-                                            <p className='mt-1 fw-bold'>{sign}</p>
+                                            <p className='pt-2 fw-bold'>{sign}</p>
                                         </li>
                                         <li className="nav-item ms-md-4">
                                             {isConnected ? (<button className={"btn " + Styles.connectWalletBtn} onClick={() => disconnectwallet()} aria-current="page" href="#">Disonnect Wallet</button>)

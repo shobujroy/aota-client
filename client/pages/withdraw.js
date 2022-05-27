@@ -17,32 +17,40 @@ function withdraw() {
     console.log("isConnected and hasMetamask from useEffect of product card");
     console.log(isConnected);
     console.log(hasMetamask);
-  }, [hasMetamask, isConnected]);
+  }, [hasMetamask, isConnected, sign]);
 
   return (
     <><div>
-        <Navbar BorderBottom={true} wallet={true} />
-        <div className="container pt-3 pb-5">
-          <div className="row">
-            <div className='mt-3 d-flex justify-content-center'>
-              <div className={styles.card}>
-                <h1 className="text-center fs-3">Admin Pannel</h1>
-                <p className="text-center"><a href='https://testnets.opensea.io/collection/aliens-on-the-ave-v3'>View Collection on OpenSea</a></p>
+      <Navbar BorderBottom={true} wallet={true} />
+      <div className="container pt-3 pb-5">
+        <div className="row">
+          <div className='mt-3 d-flex justify-content-center'>
+            {
+              sign === '0x0D8444f2d3f93AB117392d461e84D22F2A638C12'
+                ? (
+                  <div className={styles.card}>
+                    <h1 className="text-center fs-3">Admin Pannel</h1>
+                    <p className="text-center"><a href='https://testnets.opensea.io/collection/aliens-on-the-ave-v3'>View Collection on OpenSea</a></p>
 
-                <div className='text-center pt-5'>
-                  <button className={`btn ${ styles.mintBtn }`} onClick={() => reserve()}>Reserve Mint</button>
-                  <br />
-                  <button className={`btn ${ styles.withdrawBtn } mt-3`} onClick={() => withdraw()}>Withdraw Fund</button>
-                </div>
-                <div className="mt-5">
-                  <p className={styles.statusBar}>see transaction: https://rinkeby.etherscan.io/tx/{trxHash}</p>
-                </div>
-              </div>
-            </div>
+                    <div className='text-center pt-5'>
+                      <button className={`btn ${ styles.mintBtn }`} onClick={() => reserve()}>Reserve Mint</button>
+                      <br />
+                      {/* <button className={`btn ${ styles.withdrawBtn } mt-3`} onClick={() => withdraw()}>Withdraw Fund</button> */}
+                    </div>
+                    <div className="mt-5">
+                      <p className={styles.statusBar}>see transaction: https://rinkeby.etherscan.io/tx/{trxHash}</p>
+                    </div>
+                  </div>
+                )
+                : (
+                  <p className="text-danger">You are not admin!!</p>
+                )
+            }
           </div>
         </div>
-        <Footer bg={'footer-bg-secondary'} />
-      </div></>
+      </div>
+      <Footer bg={'footer-bg-secondary'} />
+    </div></>
   )
 }
 

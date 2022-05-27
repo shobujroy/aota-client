@@ -2,13 +2,15 @@ import React, { useContext, useEffect } from 'react'
 import { MintContext } from './../context/MintContext';
 import Navbar from './../components/Shared/Navbar/Navbar';
 import Footer from './../components/Shared/Footer/Footer';
+import NFTcard from './../components/Collection/NFTcard';
 
 function Collection() {
-    const { myNFTs, collection, } = useContext(MintContext);
+    const { myNFTs, collection, isConnected } = useContext(MintContext);
+
 
     useEffect(() => {
         myNFTs();
-    }, []);
+    }, [isConnected]);
     return (
         <div className='bg-third'>
             <Navbar BorderBottom={true} wallet={true} />
@@ -17,7 +19,9 @@ function Collection() {
                     <h1 className='fw-bold'>Collection</h1>
                     <div className='mt-3 d-flex justify-content-between flex-wrap'>
                         {collection.map((item, index) => {
-                            console.log(item);
+                            return (
+                                <NFTcard api={item} />
+                            )
                         })}
                     </div>
                 </div>
