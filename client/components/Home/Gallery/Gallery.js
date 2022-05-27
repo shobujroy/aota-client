@@ -151,7 +151,7 @@ function Gallery() {
                         </div>
                         <div className={styles.galleryImage}>
                             <Image
-                                src="/images/gallery/4.PNG"
+                                src="/images/gallery/4.png"
                                 alt="Gallery Image"
                                 width={300}
                                 height={300}
@@ -216,7 +216,7 @@ function Gallery() {
                         </div>
                         <div className={styles.galleryImage}>
                             <Image
-                                src="/images/gallery/4.PNG"
+                                src="/images/gallery/4.png"
                                 alt="Gallery Image"
                                 width={300}
                                 height={300}
