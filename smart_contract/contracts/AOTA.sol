@@ -115,8 +115,7 @@ contract AOTA is ERC721Enumerable, Ownable {
             }
         }
 
-        return                 tokenURIs[index] = tokenURI(i);
-;
+        return tokenURIs;
     }
 
 }
