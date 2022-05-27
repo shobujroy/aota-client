@@ -22,13 +22,13 @@ function ProductCard({ }) {
 
     </div><div className={styles.card}>
         <h1 className="text-center fs-3">Public Sale</h1>
-        <p className="text-center">0x23ed5b7CdaB7c4C5500F5Ba993e83D84E0f9F00D</p>
+        <p className="text-center"><a href='https://testnets.opensea.io/collection/aliens-on-the-ave-v3'>View Collection on OpenSea</a></p>
 
         <div className='d-flex justify-content-between flex-row pt-5'>
           <div>
             <div className={styles.imageWrapper}>
               <Image
-                src="/images/gallery/3.PNG"
+                src="/images/gallery/AOTA.gif"
                 alt="Gallery Image"
                 width={200}
                 height={200}

@@ -6,7 +6,9 @@ import Web3Modal from "web3modal";
 export const MintContext = React.createContext();
 
 let web3Modal;
+
 const add = "0x77110748a09E7039fB22A2a7f1CAF086e1c25685";
+
 import AOTA from '../contracts/AOTA.json';
 
 const providerOptions = {
@@ -30,7 +32,7 @@ export const MintProvider = ({ children }) => {
     const [hasMetamask, setHasMetamask] = useState(false);
     const [sign, setSign] = useState(undefined);
     const [pubPrice, setPubPrice] = useState(0.07);
-    const [trxHash, setTrxHash] = useState('');
+    const [trxHash, setTrxHash] = useState('0x60fab96fec783a370d544209cf4b33b27daa01f5571a16c3761f4bd1c4b1b59e');
 
     // connect wallet
     async function connectwallet() {
@@ -62,10 +64,6 @@ export const MintProvider = ({ children }) => {
             console.log("isConnected from connectwallet function in Navbar");
             console.log(isConnected);
         }
-        //var provider = await web3Modal.connect();
-        //var web3 = new Web3(provider); 
-        //setSign((await web3.eth.getAccounts())[0]);
-        //setIsConnected(true);
     }
 
     // disconnect wallet

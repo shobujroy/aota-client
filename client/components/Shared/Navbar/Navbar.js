@@ -45,6 +45,16 @@ function Navbar({ BorderBottom, wallet }) {
                             wallet
                                 ? (
                                     <>
+                                        <Link href={'/collection'}>
+                                            <li className="nav-item ms-md-5">
+                                                <a className={"nav-link " + Styles.navLink} aria-current="page" href="#">Collection</a>
+                                            </li>
+                                        </Link>
+                                        <Link href={'/withdraw'}>
+                                            <li className="nav-item ms-md-5">
+                                                <a className={"nav-link " + Styles.navLink} aria-current="page" href="#">Admin</a>
+                                            </li>
+                                        </Link>
                                         <li className="nav-item ms-md-5">
                                             <p className='mt-1 fw-bold'>{sign}</p>
                                         </li>

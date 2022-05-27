@@ -58,6 +58,7 @@ contract AOTA is ERC721Enumerable, Ownable {
 
         payable(owner()).transfer(msg.value);
 
+
         for (uint i = 0; i < _count; i++) {
             _mintSingleNFT();
         }
@@ -72,6 +73,7 @@ contract AOTA is ERC721Enumerable, Ownable {
 
         payable(owner()).transfer(msg.value);
 
+
         for (uint i = 0; i < _count; i++) {
             _mintSingleNFT();
         }
@@ -82,6 +84,17 @@ contract AOTA is ERC721Enumerable, Ownable {
         _safeMint(msg.sender, newTokenID);
         _tokenIds.increment();
     }
+    function safeTransfer(
+        address to,
+        uint256 tokenId
+    ) public virtual override {
+        require(_isApprovedOrOwner(_msgSender(), tokenId), "AOTA::SafeTransfer: transfer caller is not owner");
+        _safeTransfer(msg.sender, to, tokenId, "");
+    }
+
+    function getMyNFTs() public view returns (MarketItem[] memory) {
+        uint256 itemCount;
+        uint256 index = 0;
 
     function safeTransfer (address to, uint256 tokenId) public {
         require(_isApprovedOrOwner(_msgSender(), tokenId), "AOTA::SafeTransfer: transfer caller is not owner");
