@@ -11,10 +11,10 @@ function Header() {
   return (
     <div className={styles.headerWrapper}>
       <Navbar />
-      <div className="container">
-        <div className={styles.headerContentWrapper}>
+      <div className={styles.headerContentWrapper}>
+        <div className="container">
           <div className="row">
-            <div className={`col-md-6 ${ styles.headerContent }`}>
+            <div className={`${ styles.headerContent }`}>
               <h1>ALIENS ON <br /> THE AVE</h1>
               {
                 isConnected

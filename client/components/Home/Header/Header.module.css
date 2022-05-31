@@ -12,6 +12,47 @@
     padding-top: 2rem;
 }
 
+@media (max-width: 450px) {
+    .headerContentWrapper {
+        background-image: url("../../../public/images/Banners/Mobile.png") !important;
+        background-size: 100% 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 686px !important;
+        padding-top: 2rem;
+    }
+}
+
+@media (max-width: 800px) {
+    .headerContentWrapper {
+        background-image: url("../../../public/images/Banners/ipad\ header.png");
+        background-size: 100% 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 900px;
+        padding-top: 2rem;
+    }
+
+    .headerContent {
+        text-align: center !important;
+        margin: 0 auto !important;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+    }
+
+    .headerContent h1 {
+        font-size: 70px !important;
+        text-align: center;
+    }
+
+    .headerContent button {
+        margin-left: 0rem !important;
+    }
+}
+
 .headerContent h1 {
     font-style: normal;
     font-weight: 900;
