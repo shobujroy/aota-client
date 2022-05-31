@@ -19,7 +19,7 @@ function Navbar({ BorderBottom, wallet }) {
     }, [isConnected, hasMetamask]);
 
     return (
-        <nav className={`navbar navbar-expand-lg navbar-dark bg-transparent pb-3 ${ Styles.navContainer }`}>
+        <nav className={`navbar navbar-expand-lg ${ wallet ? "navbar-light" : "navbar-dark" } bg-transparent pb-3 ${ Styles.navContainer }`}>
             <div className={`container  ${ BorderBottom && Styles.BorderBottom }`}>
                 <Link className="navbar-brand" href="/">
                     <Image

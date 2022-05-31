@@ -25,7 +25,14 @@ function NFTcard({ api, src, title }) {
         <>
             {nft && (
                 <div class="card" style={{ width: "18rem", marginTop: "15px" }}>
-                    <Image src={`https://ipfs.io/ipfs/${nft.image.split('/')[2]}/${nft.image.split('/')[3]}`} width={300} height={300} class="card-img-top img-fit" alt={title} />
+                    <Image
+                        src={`https://ipfs.io/ipfs/${ nft.image.split('/')[2] }/${ nft.image.split('/')[3] }`}
+                        width={300}
+                        height={300}
+                        class="card-img-top img-fit"
+                        alt={title}
+                        priority
+                    />
                     <div class="card-body">
                         <h5 class="card-title">{nft.name}</h5>
                     </div>

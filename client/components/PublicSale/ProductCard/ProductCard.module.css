@@ -5,8 +5,6 @@
     padding: 50px 50px;
 }
 
-
-
 .imageWrapper {
     box-shadow: -15px -15px #a4bbc4;
     border-radius: 0.3rem;
@@ -41,4 +39,5 @@
     border-radius: 35px;
     padding: 10px 15px;
     color: #fff;
+    width: 100%;
 }
