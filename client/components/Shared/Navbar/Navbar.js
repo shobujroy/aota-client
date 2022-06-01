@@ -73,32 +73,32 @@ function Navbar({ BorderBottom, wallet }) {
                                 <a className={"nav-link " + Styles.navLink} aria-current="page" href="#">Home</a>
                             </li>
                         </Link> */}
-                                        <Link href={'/about'}>
+                                        <Link href={'/#about'}>
                                             <li className="nav-item ms-md-5">
                                                 <a className={"nav-link " + Styles.navLink} aria-current="page" href="#">ABOUT</a>
                                             </li>
                                         </Link>
-                                        <Link href={'/about'}>
+                                        <Link href={'/#utility'}>
                                             <li className="nav-item ms-md-5">
                                                 <a className={"nav-link " + Styles.navLink} aria-current="page" href="#">UTILITY</a>
                                             </li>
                                         </Link>
-                                        <Link href={'/about'}>
+                                        <Link href={'/#road-map'}>
                                             <li className="nav-item ms-md-5">
                                                 <a className={"nav-link " + Styles.navLink} aria-current="page" href="#">ROAD MAP</a>
                                             </li>
                                         </Link>
-                                        <Link href={'/contact'}>
+                                        <Link href={'/#gallery'}>
                                             <li className="nav-item ms-md-5">
                                                 <a className={"nav-link " + Styles.navLink} aria-current="page" href="#">GALLERY</a>
                                             </li>
                                         </Link>
-                                        <Link href={'/contact'}>
+                                        <Link href={'/#team'}>
                                             <li className="nav-item ms-md-5">
                                                 <a className={"nav-link " + Styles.navLink} aria-current="page" href="#">TEAM</a>
                                             </li>
                                         </Link>
-                                        <Link href={'/contact'}>
+                                        <Link href={'/#partners'}>
                                             <li className="nav-item ms-md-5">
                                                 <a className={"nav-link " + Styles.navLink} aria-current="page" href="#">PARTNERS</a>
                                             </li>

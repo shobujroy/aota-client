@@ -45,7 +45,7 @@ function Gallery() {
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
     return (
-        <div id='galleryWrapper' className="bg-secondary">
+        <div id='galleryWrapper gallery' className="bg-secondary">
             <div className="container pt-5 pb-5">
                 <div className="row">
                     <h1 className="fs-4 text-primary text-center mb-3">Gallery</h1>

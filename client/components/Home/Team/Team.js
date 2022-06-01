@@ -4,7 +4,7 @@ import styles from './Team.module.css';
 
 function Team() {
     return (
-        <div className='bg-secondary'>
+        <div id='team' className='bg-secondary'>
             <div className="container pt-5 pb-5">
                 <div className="row">
                     <h1 className="fs-5 text-center text-primary">Team</h1>
