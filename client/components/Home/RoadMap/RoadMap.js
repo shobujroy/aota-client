@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 function RoadMap() {
   return (
-    <div className="bg-secondary">
+    <div id='road-map' className="bg-secondary">
       <div className="container pt-4 pb-5">
         <div className="row">
           <h1 className='text-center text-primary fs-4 mb-3'>Road Map</h1>

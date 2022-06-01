@@ -4,7 +4,7 @@ import styles from './Partners.module.css';
 
 function Partners() {
     return (
-        <div className="bg-secondary">
+        <div id='partners' className="bg-secondary">
             <div className="container pb-5">
                 <div className="row">
                     <h1 className='text-secondary ls-3 text-uppercase fw-normal'>Partners</h1>

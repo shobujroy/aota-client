@@ -2,7 +2,7 @@ import React from 'react'
 
 function PressAbout() {
     return (
-        <div className="bg-primary">
+        <div id='about' className="bg-primary">
             <div className="container pb-5">
                 <div className="row">
                     <h5 className="text-primary text-center mt-5 mb-5">Press About Us</h5>
