@@ -34,10 +34,10 @@ function BenefitsAndUtility() {
             <div className="container pt-5 pb-5">
                 <div className="row">
                     <div className={styles.headingWrapper}>
-                        <h1 className='text-secondary mb-3'>AOTA BENEFITS & UTILITY</h1>
-                        <p>
+                        <h1 className='text-secondary mb-3'>ABOUT</h1>
+                        {/* <p>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tortor eu mauris consectetur maecenas commodo tincidunt. Accumsan diam neque tempus nisi morbi velit at. Interdum ni
-                        </p>
+                        </p> */}
                     </div>
                 </div>
                 <div className="mt-5">

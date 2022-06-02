@@ -19,7 +19,7 @@ function Home() {
     <div>
       {/* <Navbar /> */}
       <Header />
-      <PressAbout />
+      {/* <PressAbout /> */}
       <BenefitsAndUtility />
       {/* <NewItems /> */}
       {/* <HotCollection /> */}

@@ -12,7 +12,7 @@ function Header() {
     <div className={styles.headerWrapper}>
       <Navbar />
       <div className={styles.headerContentWrapper}>
-        <div className="container">
+        <div className="container-fluid">
           <div className="row">
             <div className={`${ styles.headerContent }`}>
               <h1>ALIENS ON <br /> THE AVE</h1>
@@ -24,7 +24,7 @@ function Header() {
                     </Link>
                   )
                   : (
-                    <button onClick={() => connectwallet()}>Connect Wallet</button>
+                    <button onClick={() => connectwallet()}>CONNECT WALLET</button>
                   )
               }
             </div>

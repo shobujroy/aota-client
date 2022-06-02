@@ -20,10 +20,10 @@ function Navbar({ BorderBottom, wallet }) {
 
     return (
         <nav className={`navbar navbar-expand-lg ${ wallet ? "navbar-light" : "navbar-dark" } bg-transparent pb-3 ${ Styles.navContainer }`}>
-            <div className={`container  ${ BorderBottom && Styles.BorderBottom }`}>
+            <div className={`${wallet ? "container" : "container-fluid"}  ${ BorderBottom && Styles.BorderBottom }`}>
                 <Link className="navbar-brand" href="/">
                     <Image
-                        src="/LOGO (Black) - V3.svg"
+                        src="/AOTA LOGO (Final V).svg"
                         width={128}
                         height={40}
                         className={"img-fluid"}
