@@ -4,32 +4,11 @@ import Image from 'next/image';
 function BenefitsAndUtilityCard({ imgLeft, image, title, p }) {
     return (
         <div className='row mb-3'>
-            <div className="col-md-6">
-                <div className="card p-4 bg-transparent text-center">
-                    <h5>{title}</h5>
-                    <div>
-                        <Image
-                            src={image}
-                            width={200}
-                            height={200}
-                            alt={title}
-                            className='img-fluid img-fit' />
-                    </div>
-                </div>
-            </div>
-            <div className="col-md-6">
-                <div className="card h-auto bg-transparent p-5">
-                    <p>{p}</p>
-                </div>
-            </div>
-        </div>
-    )
-}
-
-{/* <div className={imgLeft ? 'col-md-3' : "col-md-9"}>
+            <div className={imgLeft ? 'col-md-3' : "col-md-9"}>
                 {
                     imgLeft
-                        ? <div className="text-start">
+                        ? <div className="text-center">
+                            <h5 className='text-center fn-futura fn-normal text-uppercase mb-2'>{title}</h5>
                             <Image
                                 src={image}
                                 width={200}
@@ -38,15 +17,15 @@ function BenefitsAndUtilityCard({ imgLeft, image, title, p }) {
                                 className='img-fluid img-fit' />
                         </div>
                         : <div className='d-flex flex-column h-100 justify-content-center'>
-                            <h5 className='text-primary mb-2'>{title}</h5>
-                            <p>{p}</p>
+                            <p className='fn-futura'>{p}</p>
                         </div>
                 }
             </div>
             <div className={!imgLeft ? 'col-md-3' : "col-md-9"}>
                 {
                     !imgLeft
-                        ? <div className="text-end">
+                        ? <div className="text-center">
+                            <h5 className='text-center fn-normal fn-futura text-uppercase mb-2'>{title}</h5>
                             <Image
                                 src={image}
                                 width={200}
@@ -55,10 +34,14 @@ function BenefitsAndUtilityCard({ imgLeft, image, title, p }) {
                                 className='img-fluid img-fit' />
                         </div>
                         : <div className='d-flex flex-column h-100 justify-content-center'>
-                            <h5 className='text-primary mb-2'>{title}</h5>
-                            <p>{p}</p>
+                            <p className='fn-futura'>{p}</p>
                         </div>
                 }
-            </div> */}
+            </div>
+        </div>
+    )
+}
+
+
 
 export default BenefitsAndUtilityCard

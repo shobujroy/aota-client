@@ -4,7 +4,7 @@ function Questions({ questionNum, question, answer, index, collapsed, setCollaps
 
     return (
         <div class="accordion-item">
-            <h2 class="accordion-header" id={`flush-headingOne${ questionNum }`}>
+            <h2 class="accordion-header fn-montserrat" id={`flush-headingOne${ questionNum }`}>
                 <button onClick={() => {
                     if (questionNum === collapsed) {
                         setCollapsed(null)
@@ -21,7 +21,7 @@ function Questions({ questionNum, question, answer, index, collapsed, setCollaps
                 </button>
             </h2>
             <div id={`flush-collapseOne${ questionNum }`} class="accordion-collapse collapse" aria-labelledby={`flush-headingOne${ questionNum }`} data-bs-parent="#accordionFlushExample">
-                <div class="accordion-body ps-5">
+                <div class="accordion-body fn-futura ps-5">
                     {answer}
                 </div>
             </div>

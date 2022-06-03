@@ -19,11 +19,11 @@ function Navbar({ BorderBottom, wallet }) {
     }, [isConnected, hasMetamask]);
 
     return (
-        <nav className={`navbar navbar-expand-lg ${ wallet ? "navbar-light" : "navbar-dark" } bg-transparent pb-3 ${ Styles.navContainer }`}>
-            <div className={`${wallet ? "container" : "container-fluid"}  ${ BorderBottom && Styles.BorderBottom }`}>
+        <nav className={`navbar navbar-expand-lg fn-montserrat ${ wallet ? "navbar-light" : "navbar-dark" } bg-transparent pb-3 ${ Styles.navContainer }`}>
+            <div className={`${ wallet ? "container" : "container" }  ${ BorderBottom && Styles.BorderBottom }`}>
                 <Link className="navbar-brand" href="/">
                     <Image
-                        src="/AOTA LOGO (Final V).svg"
+                        src="/Logo fi.svg"
                         width={128}
                         height={40}
                         className={"img-fluid"}
@@ -46,18 +46,18 @@ function Navbar({ BorderBottom, wallet }) {
                                 ? (
                                     <>
                                         <Link href={'/collection'}>
-                                            <li className="nav-item ms-md-5">
+                                            <li className="nav-item ms-md-4">
                                                 <a className={"nav-link " + Styles.navLink} aria-current="page" href="#">Collection</a>
                                             </li>
                                         </Link>
                                         {sign === '0x0D8444f2d3f93AB117392d461e84D22F2A638C12' &&
                                             <Link href={'/withdraw'}>
-                                                <li className="nav-item ms-md-5">
+                                                <li className="nav-item ms-md-4">
                                                     <a className={"nav-link " + Styles.navLink} aria-current="page" href="#">Admin</a>
                                                 </li>
                                             </Link>
                                         }
-                                        <li className="nav-item ms-md-5">
+                                        <li className="nav-item ms-md-4">
                                             <p className='pt-2 fw-bold'>{sign}</p>
                                         </li>
                                         <li className="nav-item ms-md-4">
@@ -69,46 +69,46 @@ function Navbar({ BorderBottom, wallet }) {
                                 : (
                                     <>
                                         {/* <Link href={'/'}>
-                            <li className="nav-item ms-md-5">
+                            <li className="nav-item ms-md-4">
                                 <a className={"nav-link " + Styles.navLink} aria-current="page" href="#">Home</a>
                             </li>
                         </Link> */}
                                         <Link href={'/#about'}>
-                                            <li className="nav-item ms-md-5">
+                                            <li className="nav-item ms-md-4">
                                                 <a className={"nav-link " + Styles.navLink} aria-current="page" href="#">ABOUT</a>
                                             </li>
                                         </Link>
-                                        <Link href={'/#utility'}>
-                                            <li className="nav-item ms-md-5">
+                                        {/* <Link href={'/#utility'}>
+                                            <li className="nav-item ms-md-4">
                                                 <a className={"nav-link " + Styles.navLink} aria-current="page" href="#">UTILITY</a>
                                             </li>
-                                        </Link>
+                                        </Link> */}
                                         <Link href={'/#road-map'}>
-                                            <li className="nav-item ms-md-5">
+                                            <li className="nav-item ms-md-4">
                                                 <a className={"nav-link " + Styles.navLink} aria-current="page" href="#">ROAD MAP</a>
                                             </li>
                                         </Link>
                                         <Link href={'/#gallery'}>
-                                            <li className="nav-item ms-md-5">
+                                            <li className="nav-item ms-md-4">
                                                 <a className={"nav-link " + Styles.navLink} aria-current="page" href="#">GALLERY</a>
                                             </li>
                                         </Link>
                                         <Link href={'/#team'}>
-                                            <li className="nav-item ms-md-5">
+                                            <li className="nav-item ms-md-4">
                                                 <a className={"nav-link " + Styles.navLink} aria-current="page" href="#">TEAM</a>
                                             </li>
                                         </Link>
                                         <Link href={'/#partners'}>
-                                            <li className="nav-item ms-md-5">
+                                            <li className="nav-item ms-md-4">
                                                 <a className={"nav-link " + Styles.navLink} aria-current="page" href="#">PARTNERS</a>
                                             </li>
                                         </Link>
                                         {/* <Link href={'/contact'}>
-                            <li className="nav-item ms-md-5">
+                            <li className="nav-item ms-md-4">
                                 <a className={"nav-link " + Styles.navLink} aria-current="page" href="#">Contact</a>
                             </li>
                         </Link> */}
-                                        {/* <li className="nav-item ms-md-5 d-flex align-items-center justify-content-end">
+                                        {/* <li className="nav-item ms-md-4 d-flex align-items-center justify-content-end">
                             <button className={"btn " + Styles.connectWalletBtn} aria-current="page" href="#">Connect Wallet</button>
                         </li> */}
                                     </>
