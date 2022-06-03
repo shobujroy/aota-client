@@ -1,9 +1,32 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap"); */
+@font-face {
+  font-family: "Montserrat-Black";
+  src: url("../public/fonts/Montserrat/Montserrat-Black.ttf") format("truetype");
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "futura";
+  src: url("../public/fonts/futura/futura\ medium\ bt.ttf") format("truetype");
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "manic";
+  src: url("../public/fonts/MANIC/Web/MANIC-Regular.woff") format("woff");
+  font-style: normal;
+  font-display: swap;
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
-    Helvetica Neue, sans-serif;
+  /* font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
+  Helvetica Neue, sans-serif; */
+  scroll-behavior: smooth;
 }
 
 a {
@@ -13,6 +36,18 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+.fn-montserrat {
+  font-family: "Montserrat-Black" !important;
+}
+
+.fn-futura {
+  font-family: "futura" !important;
+}
+
+.fn-manic {
+  font-family: "manic" !important;
 }
 
 .bg-primary {
@@ -28,6 +63,11 @@ a {
 .bg-third {
   background-color: #fdfdfd !important;
   color: #464646;
+}
+
+.bg-main {
+  background-color: #85b98b !important;
+  color: #251f3a !important;
 }
 
 .footer-bg-secondary {
@@ -67,6 +107,12 @@ a {
   border: 1px solid #000 !important;
 }
 
+@media screen and (max-width: 600px) {
+  .d-xs-none {
+    display: none !important;
+  }
+}
+
 /* bootstrap css overwrite */
 
 .form-control.contact-form {
@@ -75,14 +121,14 @@ a {
 }
 
 .accordion-item {
-  background-color: #1d1e3a;
+  background-color: transparent;
   border: none;
 }
 
 .accordion-button,
 .accordion-button:not(.collapsed) {
-  background-color: #1d1e3a;
-  color: white;
+  background-color: transparent;
+  color: #251f3a;
 }
 
 .accordion-button:focus {
@@ -95,5 +141,3 @@ a {
   background-image: none;
   box-shadow: none !important;
 }
-
-

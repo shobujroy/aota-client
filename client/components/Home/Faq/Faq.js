@@ -55,10 +55,10 @@ function Faq() {
 
     }, [collapsed]);
     return (
-        <div className='bg-primary'>
+        <div className='bg-main'>
             <div className="container pt-5 pb-5">
                 <div className="row">
-                    <h1 className="text-secondary">FREQUENTLY ASKED QUESTIONS</h1>
+                    <h1 className="fn-futura">FREQUENTLY ASKED QUESTIONS</h1>
                     <div className="mt-3">
                         <div class="accordion accordion-flush" id="accordionFlushExample">
                             {

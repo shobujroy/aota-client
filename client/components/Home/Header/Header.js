@@ -5,6 +5,7 @@ import Navbar from '../../Shared/Navbar/Navbar';
 import styles from './Header.module.css';
 import { MintContext } from './../../../context/MintContext';
 import Link from 'next/link';
+import Image from 'next/image';
 
 function Header() {
   const { isConnected, connectwallet } = useContext(MintContext);
@@ -12,21 +13,34 @@ function Header() {
     <div className={styles.headerWrapper}>
       <Navbar />
       <div className={styles.headerContentWrapper}>
-        <div className="container-fluid">
+        <div className="container fn-montserrat">
           <div className="row">
-            <div className={`${ styles.headerContent }`}>
-              <h1>ALIENS ON <br /> THE AVE</h1>
-              {
-                isConnected
-                  ? (
-                    <Link href={'/public-sale'}>
-                      <button>MINT</button>
-                    </Link>
-                  )
-                  : (
-                    <button onClick={() => connectwallet()}>CONNECT WALLET</button>
-                  )
-              }
+            <div className="col-md-6 pt-5 pb-5">
+              <div className={`${ styles.headerContent }`}>
+                <h1 className=''>ALIENS ON <br /> THE AVE</h1>
+                {
+                  isConnected
+                    ? (
+                      <Link href={'/public-sale'}>
+                        <button>MINT</button>
+                      </Link>
+                    )
+                    : (
+                      <button onClick={() => connectwallet()}>CONNECT WALLET</button>
+                    )
+                }
+              </div>
+            </div>
+            <div className="col-md-6 pt-5 pb-5  d-sm-none d-xs-none d-md-block ">
+              <div className="text-center">
+                <Image
+                  src={'/images/PC.png'}
+                  width={700}
+                  height={400}
+                  className="img-fit img-fluid"
+                  priority
+                />
+              </div>
             </div>
           </div>
         </div>
