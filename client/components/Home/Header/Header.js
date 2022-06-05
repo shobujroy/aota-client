@@ -15,7 +15,7 @@ function Header() {
       <div className={styles.headerContentWrapper}>
         <div className="container fn-montserrat">
           <div className="row">
-            <div className="col-md-6 pt-5 pb-5">
+            <div className="col-lg-6 col-md-12 pt-5 pb-5">
               <div className={`${ styles.headerContent }`}>
                 <h1 className=''>ALIENS ON <br /> THE AVE</h1>
                 {
@@ -31,7 +31,7 @@ function Header() {
                 }
               </div>
             </div>
-            <div className="col-md-6 pt-5 pb-5  d-sm-none d-xs-none d-md-block ">
+            <div className="col-lg-6 col-md-12 pt-5 pb-5  d-sm-none d-md-block ">
               <div className="text-center">
                 <Image
                   src={'/images/PC.png'}

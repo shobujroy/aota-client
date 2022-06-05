@@ -11,7 +11,7 @@ function MemberCard() {
                     <p className='fn-futura'>FOUNDER/ARTIST</p>
                 </div>
                 <div>
-                    <i class="fa-brands fa-instagram fs-3"></i>
+                    <i className="fa-brands fa-instagram fs-3"></i>
                 </div>
             </div>
         </div>

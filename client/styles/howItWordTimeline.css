@@ -49,7 +49,7 @@
 }
 
 /* .timeline-steps .timeline-content .inner-circle:before {
-    content: "<i class=" fa-regular fa-wallet "></i>";
+    content: "<i className=" fa-regular fa-wallet "></i>";
     background-color: #3b82f6;
     display: inline-block;
     height: 3rem;
