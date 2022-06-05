@@ -21,10 +21,10 @@ function Footer({ bg }) {
             </div>
             <div className="fn-futura text-end">
               <div className="d-flex flex-row justify-content-end mb-3">
-                <span className='fs-4 me-3'><i class="fa-brands fa-instagram"></i></span>
-                <span className='fs-4 me-3'><i class="fa-brands fa-reddit"></i></span>
-                <span className='fs-4 me-3'><i class="fa-brands fa-twitter"></i></span>
-                <span className='fs-4 me-3'><i class="fa-brands fa-pinterest"></i></span>
+                <span className='fs-4 me-3'><i className="fa-brands fa-instagram"></i></span>
+                <span className='fs-4 me-3'><i className="fa-brands fa-reddit"></i></span>
+                <span className='fs-4 me-3'><i className="fa-brands fa-twitter"></i></span>
+                <span className='fs-4 me-3'><i className="fa-brands fa-pinterest"></i></span>
               </div>
               <h6>AOTA All Rights Reserved 2022</h6>
               <h6>Terms and Conditions</h6>

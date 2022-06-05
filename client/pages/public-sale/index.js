@@ -14,7 +14,7 @@ function Index() {
             <div className="container pt-3 pb-5">
                 <div className="row">
                     <h6 className='d-flex flex-row align-items-center'>
-                        <i class="fa-solid fa-arrow-left-long me-2"></i>
+                        <i className="fa-solid fa-arrow-left-long me-2"></i>
                         Back
                     </h6>
                     <div className='mt-3 d-flex justify-content-center'>

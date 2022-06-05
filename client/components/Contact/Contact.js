@@ -10,7 +10,7 @@ function Contact() {
           <div className={styles.contactInfoCard}>
             <div className={styles.iconWrapper}>
               <div className={styles.icon}>
-                <i class="fa-solid fa-phone"></i>
+                <i className="fa-solid fa-phone"></i>
               </div>
             </div>
             <div className={styles.contactInfo}>
@@ -22,7 +22,7 @@ function Contact() {
           <div className={styles.contactInfoCard}>
             <div className={styles.iconWrapper}>
               <div className={styles.icon}>
-                <i class="fa-solid fa-envelope"></i>
+                <i className="fa-solid fa-envelope"></i>
               </div>
             </div>
             <div className={styles.contactInfo}>
@@ -34,7 +34,7 @@ function Contact() {
           <div className={styles.contactInfoCard}>
             <div className={styles.iconWrapper}>
               <div className={styles.icon}>
-                <i class="fa-solid fa-globe"></i>
+                <i className="fa-solid fa-globe"></i>
               </div>
             </div>
             <div className={styles.contactInfo}>

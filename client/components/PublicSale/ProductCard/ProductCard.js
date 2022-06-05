@@ -40,13 +40,13 @@ function ProductCard({ }) {
                 if (quantity >= 1) {
                   setQuantity(quantity + 1);
                 }
-              }}><i class="fa-solid fa-plus"></i></span>
+              }}><i className="fa-solid fa-plus"></i></span>
               <p className="ml-2">{quantity}</p>
               <span onClick={() => {
                 if (quantity > 1) {
                   setQuantity(quantity - 1);
                 }
-              }}><i class="fa-solid fa-minus"></i></span>
+              }}><i className="fa-solid fa-minus"></i></span>
             </div>
             <h5 className='fw-bold mt-3'>Total</h5>
             <h3 className='fw-bold fs-2'> {quantity * pubPrice} ETH</h3>

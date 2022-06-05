@@ -60,7 +60,7 @@ function Faq() {
                 <div className="row">
                     <h1 className="fn-futura">FREQUENTLY ASKED QUESTIONS</h1>
                     <div className="mt-3">
-                        <div class="accordion accordion-flush" id="accordionFlushExample">
+                        <div className="accordion accordion-flush" id="accordionFlushExample">
                             {
                                 faq?.map((q, i) => {
                                     return (
