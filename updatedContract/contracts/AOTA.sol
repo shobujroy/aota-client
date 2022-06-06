@@ -1,10 +1,10 @@
 //SPDX-License-Identifier: MIT
 pragma solidity ^0.8.4;
 
-import "@openzeppelin/contracts/utils/Counters.sol";
-import "@openzeppelin/contracts/access/Ownable.sol";
-import "@openzeppelin/contracts/utils/math/SafeMath.sol";
-import "@openzeppelin/contracts/token/ERC721/extensions/ERC721Enumerable.sol";
+import "../node_modules/@openzeppelin/contracts/utils/Counters.sol";
+import "../node_modules/@openzeppelin/contracts/access/Ownable.sol";
+import "../node_modules/@openzeppelin/contracts/utils/math/SafeMath.sol";
+import "../node_modules/@openzeppelin/contracts/token/ERC721/extensions/ERC721Enumerable.sol";
 
 contract AOTA is ERC721Enumerable, Ownable {
     using SafeMath for uint256;
@@ -47,7 +47,11 @@ contract AOTA is ERC721Enumerable, Ownable {
     }
 
     function _baseURI() internal view virtual override returns (string memory) {
-        return baseTokenURI;
+        if (block.timestamp > _deployBlockTimestamp + 2 weeks){
+            return baseTokenURI;
+        }else{
+            return _mockImageLink;
+        }
     }
 
     function setBaseURI(string memory _baseTokenURI) public onlyOwner {
