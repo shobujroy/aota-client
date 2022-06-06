@@ -18,7 +18,7 @@ contract AOTA is ERC721Enumerable, Ownable {
     uint public constant MAX_SUPPLY = 7146;
     uint public constant PUB_PRICE = 0.07 ether;
     uint public constant PRI_PRICE = 0.09 ether;
-    uint public constant MAX_PER_MINT = 40;
+    uint public constant MAX_PER_MINT = 146;
 
     string public baseTokenURI;
 
@@ -39,9 +39,9 @@ contract AOTA is ERC721Enumerable, Ownable {
     function reserveNFTs() public onlyOwner {
         uint totalMinted = _tokenIds.current();
 
-        require(totalMinted.add(40) < MAX_SUPPLY, "Not enough NFTs left to reserve");
+        require(totalMinted.add(146) < MAX_SUPPLY, "Not enough NFTs left to reserve");
 
-        for (uint i = 0; i < 40; i++) {
+        for (uint i = 0; i < 146; i++) {
             _mintSingleNFT();
         }
     }
