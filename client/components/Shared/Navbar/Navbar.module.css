@@ -1,59 +1,69 @@
 .textWhite {
-    color: red;
+  color: red;
 }
 
 .searchInput {
-    background: #2c2f33;
-    border-radius: 30px;
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 30px;
-    color: #ffffe5;
-    width: 350px;
+  background: #2c2f33;
+  border-radius: 30px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 30px;
+  color: #ffffe5;
+  width: 350px;
 }
 
 .navContainer {
-    /* width: 95%; */
-    margin: 0 auto;
+  /* width: 95%; */
+  margin: 0 auto;
 }
 
 .connectWalletBtn {
-    background: #037dd6;
-    border-radius: 30px;
-    color: #fff;
-    padding: 5px 30px;
-    border: 1px solid #037dd6;
-    transition: 0.5s;
+  background: #75ba87;
+  color: #fff;
+  padding: 5px 30px;
+  border: 1px solid #75ba87;
+  transition: 0.5s;
 }
 
 .connectWalletBtn:hover {
-    color: #037dd6;
-    background: #fff;
-    border: 1px solid #037dd6;
+  color: #75ba87;
+  background: #fff;
+  border: 1px solid #75ba87;
 }
 
 .navLink {
-    font-family: "montserrat", sans-serif !important;
-    font-weight: 500;
-    font-style: normal;
-    font-size: 18px;
-    /* identical to box height, or 600% */
+  font-family: "montserrat", sans-serif !important;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 18px;
+  /* identical to box height, or 600% */
 
-    color: #1e0966 !important;
-    transition: 0.5s;
+  color: #a3a3a3 !important;
+  transition: 0.5s;
+}
+
+.socialIcon {
+  font-family: "montserrat", sans-serif !important;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 18px;
+  /* identical to box height, or 600% */
+  margin-top: 4px;
+  color: #fafafa !important;
+  transition: 0.5s;
 }
 
 .navLink:hover {
-    font-style: normal;
-    font-size: 18px;
-    /* identical to box height, or 600% */
+  font-style: normal;
+  font-size: 18px;
+  /* identical to box height, or 600% */
 
-    color: #251f3a !important;
+  color: #ffffff !important;
 }
 
 .BorderBottom {
-    padding-bottom: 20px;
-    border-bottom: 1px solid #9a9aa9 !important;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #9a9aa9 !important;
 }
