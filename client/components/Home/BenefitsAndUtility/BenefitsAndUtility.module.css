@@ -1,3 +1,7 @@
 .headingWrapper p {
-    max-width: 900px;
+  max-width: 900px;
+}
+
+.benefitsCard:hover {
+  border: 1px solid #45c78c !important;
 }

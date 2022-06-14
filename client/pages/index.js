@@ -18,12 +18,12 @@ import BorderLine from '../components/Home/BorderLine/BorderLine';
 function Home() {
   return (
     <div>
-      {/* <Navbar /> */}
+      <Navbar />
       <Header />
-      <BorderLine />
-      {/* <PressAbout /> */}
+      {/* <BorderLine /> */}
+      <PressAbout />
       <BenefitsAndUtility />
-      <BorderLine />
+      {/* <BorderLine /> */}
       {/* <NewItems /> */}
       {/* <HotCollection /> */}
       {/* <HowItWork /> */}

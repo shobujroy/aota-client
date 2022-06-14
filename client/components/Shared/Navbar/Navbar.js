@@ -19,8 +19,8 @@ function Navbar({ BorderBottom, wallet }) {
     }, [isConnected, hasMetamask]);
 
     return (
-        <nav className={`navbar navbar-expand-lg fn-montserrat ${ wallet ? "navbar-light" : "navbar-dark" } bg-transparent pb-3 ${ Styles.navContainer }`}>
-            <div className={`${ wallet ? "container" : "container" }  ${ BorderBottom && Styles.BorderBottom }`}>
+        <nav className={`navbar navbar-expand-lg fn-montserrat ${wallet ? "navbar-light" : "navbar-dark"} bg-primary pb-3 ${Styles.navContainer}`}>
+            <div className={`${wallet ? "container" : "container"}  ${BorderBottom && Styles.BorderBottom}`}>
                 <Link className="navbar-brand" href="/">
                     <Image
                         src="/Logo fi.svg"
@@ -40,7 +40,7 @@ function Navbar({ BorderBottom, wallet }) {
                             aria-label="Search" />
                         <button className="btn btn-outline-success" type="submit">Search</button>
                     </form> */}
-                    <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                         {
                             wallet
                                 ? (
@@ -68,24 +68,14 @@ function Navbar({ BorderBottom, wallet }) {
                                 )
                                 : (
                                     <>
-                                        {/* <Link href={'/'}>
-                            <li className="nav-item ms-md-4">
-                                <a className={"nav-link " + Styles.navLink} aria-current="page" href="#">Home</a>
-                            </li>
-                        </Link> */}
+                                        <Link href={'/'}>
+                                            <li className="nav-item ms-md-4">
+                                                <a className={"nav-link " + Styles.navLink} aria-current="page" href="#">Home</a>
+                                            </li>
+                                        </Link>
                                         <Link href={'/#about'}>
                                             <li className="nav-item ms-md-4">
                                                 <a className={"nav-link " + Styles.navLink} aria-current="page" href="#">ABOUT</a>
-                                            </li>
-                                        </Link>
-                                        {/* <Link href={'/#utility'}>
-                                            <li className="nav-item ms-md-4">
-                                                <a className={"nav-link " + Styles.navLink} aria-current="page" href="#">UTILITY</a>
-                                            </li>
-                                        </Link> */}
-                                        <Link href={'/#road-map'}>
-                                            <li className="nav-item ms-md-4">
-                                                <a className={"nav-link " + Styles.navLink} aria-current="page" href="#">ROAD MAP</a>
                                             </li>
                                         </Link>
                                         <Link href={'/#gallery'}>
@@ -93,27 +83,46 @@ function Navbar({ BorderBottom, wallet }) {
                                                 <a className={"nav-link " + Styles.navLink} aria-current="page" href="#">GALLERY</a>
                                             </li>
                                         </Link>
+                                        <Link href={'/#road-map'}>
+                                            <li className="nav-item ms-md-4">
+                                                <a className={"nav-link " + Styles.navLink} aria-current="page" href="#">ROAD MAP</a>
+                                            </li>
+                                        </Link>
                                         <Link href={'/#team'}>
                                             <li className="nav-item ms-md-4">
-                                                <a className={"nav-link " + Styles.navLink} aria-current="page" href="#">TEAM</a>
+                                                <a className={"nav-link " + Styles.navLink} aria-current="page" href="#">Mainfesto</a>
                                             </li>
                                         </Link>
                                         <Link href={'/#partners'}>
                                             <li className="nav-item ms-md-4">
-                                                <a className={"nav-link " + Styles.navLink} aria-current="page" href="#">PARTNERS</a>
+                                                <a className={"nav-link " + Styles.navLink} aria-current="page" href="#">The ave</a>
                                             </li>
                                         </Link>
-                                        {/* <Link href={'/contact'}>
-                            <li className="nav-item ms-md-4">
-                                <a className={"nav-link " + Styles.navLink} aria-current="page" href="#">Contact</a>
-                            </li>
-                        </Link> */}
-                                        {/* <li className="nav-item ms-md-4 d-flex align-items-center justify-content-end">
-                            <button className={"btn " + Styles.connectWalletBtn} aria-current="page" href="#">Connect Wallet</button>
-                        </li> */}
                                     </>
                                 )
                         }
+                    </ul>
+                    <ul className="navbar-nav ml-auto">
+                        <li className='nav-item'>
+                            <a className={"nav-link " + Styles.navLink} href="https://www.facebook.com/ave.io/">
+                                <button className={`${Styles.connectWalletBtn}`}>Connect Wallet</button>
+                            </a>
+                        </li>
+                        <li className="nav-item">
+                            <a className={"nav-link " + Styles.socialIcon} aria-current="page" href="#">
+                                <i className="fab fa-twitter mt-2"></i>
+                            </a>
+                        </li>
+                        <li className="nav-item">
+                            <a className={"nav-link " + Styles.socialIcon} aria-current="page" href="#">
+                                <i className="fab fa-instagram mt-2"></i>
+                            </a>
+                        </li>
+                        <li className="nav-item">
+                            <a className={"nav-link " + Styles.socialIcon} aria-current="page" href="#">
+                                <i className="fab fa-discord mt-2"></i>
+                            </a>
+                        </li>
                     </ul>
                 </div>
             </div>
