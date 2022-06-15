@@ -169,5 +169,98 @@
 
 .CoWorking{
     background: #17271B;
-    padding: 50px 0px;
+    width: 1180px;
+    margin-left: 100px;
+    margin-top: 50px;
+    
 }
+
+
+.CoWorkingPart{
+    background: #203024;
+    text-align: center;
+    padding: 26px;
+    margin-left: 32px;
+}
+
+
+.CoWorkingPart p{
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 40px;
+    font-family: "Montserrat";
+    color: #FFFFFF;
+    width: 617px;
+    margin: auto;
+
+}
+
+
+.CoWorkingPart .BackIcon{
+    text-align: left;
+}
+
+
+.CoWorkingPart .Pasicon{
+    text-align: right;
+    margin-right: 100px;
+}
+
+
+.CoWorkingImage{
+    width: 30%;
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 600px) {
+    .AveBannerText h1 {
+      font-size: 24px;
+    }
+
+    .AveBannerText p{
+        font-size: 16px;
+        width: 288px;
+      }
+
+      .AveBannerImage{
+        width: 100%;
+      }
+
+
+      .AveBannerPhoto{
+        display: flex;
+        margin-top: 30px;
+      }
+
+
+      .TheAveImage{
+        width: 100%;
+      }
+
+
+
+      .TheAvePhoto{
+        width: 100%;
+        display: flex;
+      }
+
+      .AveThePhotoText h1{
+        font-size: 18px;
+      }
+
+      .AvePhotoText h1{
+        font-size: 18px;
+      }
+
+
+  }
+
+
+
+
+

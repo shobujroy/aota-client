@@ -86,7 +86,7 @@ function Navbar({ BorderBottom, wallet }) {
                                                 <a className={"nav-link " + Styles.navLink} aria-current="page" href="#">ROAD MAP</a>
                                             </li>
                                         </Link>
-                                        <Link href={'/#team'}>
+                                        <Link href={'/team'}>
                                             <li style={{ lineHeight: "40px" }} className="nav-item ms-md-4">
                                                 <a className={"nav-link " + Styles.navLink} aria-current="page" href="#">Mainfesto</a>
                                             </li>

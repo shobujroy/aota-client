@@ -3,15 +3,10 @@ import React from 'react';
 import styles from './TheAveBanner.module.css';
 import Image from 'next/image';
 
-import manifesto from '../../../public/images/Frame 174.png';
-import Afrojack from '../../../public/images/Frame 175.png';
-import Frame from '../../../public/images/Frame 176.png';
+import Footer from '../../Shared/Footer/Footer';
 
 
 
-import image1 from '../../../public/images/image 20.png';
-import image2 from '../../../public/images/image 21.png';
-import image3 from '../../../public/images/image 22.png';
 
 
 
@@ -21,25 +16,25 @@ const TheAveBanner = () => {
         <div className={styles.AveBanner}>
             <div className="container pb-4 pt-4">
                 <div className="row">
-                    <div className={`col-md-12 ${styles.AveBannerText}`}>
+                    <div className={`col-md-12  col-sm-12 ${styles.AveBannerText}`}>
                         <h1>Creative Haven-yoga-Meditation-common-space</h1>
                         <p>CREATIVE HAVEN - Y0GA - MEDITATION - COMMON SPACE</p>
 
 
                         <div className="row">
-                            <div className={`col-md-6 ${styles.AveBannerImage}`}>
+                            <div className={`col-md-6 col-sm-12 ${styles.AveBannerImage}`}>
 
-                                <Image src={manifesto} />
+                                <Image width={675} height={534} src={"/images/Frame 174.png"} />
 
                             </div>
 
                             <div className={`col-md-6 ${styles.AveBannerPhoto}`}>
 
-                                <div className={styles.PhotoOne}>
-                                    <Image src={Afrojack} />
+                                <div className={`${styles.PhotoOne}`}>
+                                    <Image width={470} height={212} src={"/images/Frame 175.png"}   />
                                 </div>
                                 <div className={styles.PhotoTwo}>
-                                    <Image src={Frame} />
+                                    <Image width={470} height={284} src={"/images/Frame 176.png"} />
                                 </div>
 
                             </div>
@@ -70,17 +65,18 @@ const TheAveBanner = () => {
 
 
                     <div className="row">
-                        <div className={`col-md-6 ${styles.TheAveImage}`}>
+                        <div className={`col-md-6 col-sm-12 ${styles.TheAveImage}`}>
 
-                            <Image height={535} src={image1} />
+                            <Image width={675} height={535} src={"/images/image 20.png"}  />
+
                             <div className={styles.AveTextOne}>
                                 <h1>Creative Haven</h1>
                             </div>
                         </div>
-                        <div className={`col-md-6 ${styles.TheAvePhoto}`}>
+                        <div className={`col-md-6 col-sm-12 ${styles.TheAvePhoto}`}>
 
                             <div className={styles.AvePhoto}>
-                                <Image src={image2} />
+                                <Image  width={472} height={212} src={"/images/image 21.png"}  />
 
                                 <div className={styles.AvePhotoText}>
                                     <h1>Yoga with River</h1>
@@ -88,7 +84,7 @@ const TheAveBanner = () => {
 
                             </div>
                             <div className={styles.AveThePhoto}>
-                                <Image src={image3} />
+                                <Image width={472} height={284} src={"/images/image 22.png"} />
 
 
                                 <div className={styles.AveThePhotoText}>
@@ -115,15 +111,24 @@ const TheAveBanner = () => {
             <>
                 <div className={`container pb-4 pt-4 ${styles.CoWorking}`}>
                     <div className="row">
-                        <div className={`col-md-9 ${styles.CoWorkingPart}`}>
+                        <div className={`col-md-8 ${styles.CoWorkingPart}`}>
 
+                            <div className={styles.BackIcon}>
+                            <Image width={65} height={70} src={"/images/“.png"} />
+                            </div>
+
+                            <p>We see Co-working Space Differently, we see lush Greenery, we see natural wood, Mood lighting Luxurious, &amp;  working in Harmony</p>
+
+                            <div className={styles.Pasicon}>                            
+                            <Image width={65} height={70} src={"/images/”.png"} />
+                            </div>
 
                         </div>
 
 
-                        <div className={`col-md-3 ${styles.CoWorkingPart}`}>
+                        <div className={`col-md-4 ${styles.CoWorkingImage}`}>
 
-
+                        <Image  width={400} height={425} src={"/images/Photographer 2@2x.png"} />
                         </div>
 
 
@@ -132,6 +137,9 @@ const TheAveBanner = () => {
 
 
             </>
+
+
+            <Footer />
         </div>
     );
 };

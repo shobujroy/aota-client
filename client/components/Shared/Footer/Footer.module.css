@@ -1,3 +1,7 @@
+.footer-area{
+    background: #333341;
+}
+
 
 
 .touchIcon svg {
@@ -43,13 +47,56 @@
 }
 
 .emailInput {
-    border: 1px solid rgba(237, 237, 237, 0.36) !important;
-    background: #333341;
+    background: #1D2D21;
     border-radius: 0px !important;
+    border: none;
+    padding: 18px 16px;
+    font-size: 16px;
+    font-family: "Jost";
+    font-weight: 500;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    outline: 0px;
+    width: 240px;
 }
 
 .btnSubmit {
     border-radius: 0px;
-    background: #e2dd96;
-    border: 1px solid rgba(237, 237, 237, 0.36);
+    background: #75BA87;
+    border: none;
+    padding: 14px 16px;
+    font-size: 16px;
+    height: 58px;
+    width: 130px;
+    margin-top: 20px;
 }
+
+
+.footerContectWrapper h5{
+    color: #FFFFFF;
+    font-size: 24px;
+    font-weight: 500;
+    font-family: "Montserrat";
+    line-height: 24px;
+}
+
+
+.FooterLastText h6{
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 30px;
+    font-family: "Montserrat";
+    color: #FFFFFF;
+    margin: 0px;
+}
+
+
+.FooterLastText p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    font-family: "Jost";
+    color: #FFFFFF;
+    margin-top: 32px;
+}
+

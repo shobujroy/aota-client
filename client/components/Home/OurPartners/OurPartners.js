@@ -3,10 +3,7 @@ import styles from './OurPartners.module.css';
 
 import Image from 'next/image';
 
-import GivePower from "../../../public/images/Ourpanter/GivePower-Logo 1 (1).png";
-import GivePower1 from "../../../public/images/Ourpanter/GivePower-Logo 1.png";
-import Onetreeplanted from "../../../public/images/Ourpanter/Onetreeplanted_logo 1 (1).png";
-import Onetreeplanted_logo from "../../../public/images/Ourpanter/Onetreeplanted_logo 1.png";
+
 
 const OurPartners = () => {
     return (
@@ -17,7 +14,7 @@ const OurPartners = () => {
             <h1>Our Partners</h1>
 
             <div className={styles.Partners}>
-           <Image src={GivePower}           
+           <Image src={"/images/Ourpanter/GivePower-Logo 1 (1).png"}           
            height={150}
            width={170}
            
@@ -27,19 +24,21 @@ const OurPartners = () => {
 
 
 
-<Image src={Onetreeplanted}           
+<Image src={"/images/Ourpanter/Onetreeplanted_logo 1 (1).png"}          
            height={150}
+           width={275}
+           />
+
+<Image  src={"/images/Ourpanter/GivePower-Logo 1 (1).png"}         
+           height={150}
+           width={170}
            
            />
 
-<Image src={GivePower1}           
-           height={150}
            
-           />
-
-           
-<Image src={Onetreeplanted_logo}           
-           height={150}
+<Image src={"/images/Ourpanter/Onetreeplanted_logo 1.png"}           
+          height={150}
+          width={275}
            
            />
 

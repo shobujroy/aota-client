@@ -1,0 +1,30 @@
+.imageWrapper {
+  position: relative;
+  height: 600px;
+}
+
+.imageWrapper::after {
+  content: "";
+  position: absolute;
+  top: 150px;
+  left: 200px;
+  width: 300px;
+  height: 400px;
+  background-image: url("../../public/images/manifesto.png");
+  object-fit: cover;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+
+.AboutText h6{
+  margin-bottom: 20px;
+
+}
+
+.AboutText h1{
+  margin-bottom: 20px;
+
+}
