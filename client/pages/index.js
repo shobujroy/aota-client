@@ -9,40 +9,53 @@ import Footer from '../components/Shared/Footer/Footer';
 import RoadMap from '../components/Home/RoadMap/RoadMap';
 import PressAbout from '../components/Home/PressAbout/PressAbout';
 import BenefitsAndUtility from '../components/Home/BenefitsAndUtility/BenefitsAndUtility';
-import Gallery from './../components/Home/Gallery/Gallery';
-import Team from '../components/Home/Team/Team';
-import Partners from '../components/Home/Partners/Partners';
-import Faq from '../components/Home/Faq/Faq';
+
+// import Faq from '../components/Home/Faq/Faq';
 import BorderLine from '../components/Home/BorderLine/BorderLine';
 import MeetOurTeam from '../components/Home/MeetOurTeam/MeetOurTeam';
 import OurPartners from '../components/Home/OurPartners/OurPartners';
+import FaqAota from '../components/Home/FaqAota/FaqAota';
 
 function Home() {
-  return (
+
+
+  
+return (
     <div style={{overflowX: "hidden"}}>
+
+
       <Navbar />
-      <Header />
-      {/* <BorderLine /> */}
+      <Header />      
       <PressAbout />
-      <BenefitsAndUtility />
-      {/* <BorderLine /> */}
-      {/* <NewItems /> */}
-      {/* <HotCollection /> */}
-      {/* <HowItWork /> */}
+      <BenefitsAndUtility />     
       <MeetOurTeam />
       <OurPartners />
+      <FaqAota />
+      {/* <Faq /> */}
+      <Footer bg={'bg-main'} />
+      
 
-      <RoadMap />
+
+
+
+
+
+      {/* <BorderLine /> */}
+      {/* <BorderLine /> */}
+      {/* <NewItems /> */}
+      {/* <HotCollection /> 
+      <Partners />
+      <BorderLine />
+      */}
+      {/* <HowItWork /> */}
+      {/* <RoadMap />
       <BorderLine />
       <Gallery />
       <BorderLine />
       <Team />
-      <BorderLine />
-      <Partners />
-      <BorderLine />
-      <Faq />
+      <BorderLine /> */}
       {/* <CallToAction /> */}
-      <Footer bg={'bg-main'} />
+     
     </div>
   )
 }
