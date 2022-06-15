@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState } from 'react';
 
-function Questions({ questionNum, question, answer, index, collapsed, setCollapsed }) {
+function QuestionsAns({ questionNum, question, answer, index, collapsed, setCollapsed }) {
 
     return (
         <div className="accordion-item">
@@ -29,4 +29,4 @@ function Questions({ questionNum, question, answer, index, collapsed, setCollaps
     )
 }
 
-export default Questions
+export default QuestionsAns;
