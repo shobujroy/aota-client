@@ -41,8 +41,12 @@
   }
 
   .headerContent h1 {
-    font-size: 70px !important;
+    font-size: 72px !important;
     text-align: center !important;
+    line-height: 97px;
+    font-weight: 600;
+    font-family: "Montserrat";
+    color: #E3F1E7;
   }
 
   .headerContent button {
@@ -63,20 +67,32 @@
 }
 
 .headerContent h1 {
-  font-style: normal;
-  font-weight: 900;
-  font-size: 72px;
-  color: #e3f1e7;
-  padding-bottom: 30px;
-  text-align: center;
+    font-size: 72px !important;
+    text-align: center !important;
+    line-height: 97px;
+    font-weight: 600;
+    font-family: "Montserrat";
+    color: #E3F1E7;
+    margin-bottom: 30px;
+}
+
+
+.headerContent p {
+    font-size: 18px !important;
+    text-align: center !important;
+    line-height: 23px;
+    font-weight: 400;
+    font-family: "Jost";
+    color: #FFFFFF;
+    margin-bottom: 30px;
 }
 
 .headerContent button {
   background: #75ba87;
-  font-style: normal;
+  font-family: "Jost";
   font-weight: 500;
-  font-size: 28px;
-  color: #212237;
-  padding: 10px 40px;
+  font-size: 16px;
+  color: #1A1A1A;
+  padding: 18px 24px;
   border: none;
 }

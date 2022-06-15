@@ -19,16 +19,9 @@ function Navbar({ BorderBottom, wallet }) {
     }, [isConnected, hasMetamask]);
 
     return (
-        <nav className={`navbar navbar-expand-lg fn-montserrat ${wallet ? "navbar-light" : "navbar-dark"} bg-primary pb-3 ${Styles.navContainer}`}>
-            <div className={`${wallet ? "container" : "container"}  ${BorderBottom && Styles.BorderBottom}`}>
-                <Link className="navbar-brand" href="/">
-                    <Image
-                        src="/Logo fi.svg"
-                        width={128}
-                        height={40}
-                        className={"img-fluid"}
-                    />
-                </Link>
+        <nav style={{display: "block", padding: "35px"}} className={`navbar navbar-expand-lg fn-montserrat ${wallet ? "navbar-light" : "navbar-dark"} bg-primary pb-3`}>
+            <div className={`${wallet}  ${BorderBottom && Styles.BorderBottom}`}>
+               
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon text-white"></span>
                 </button>
@@ -68,33 +61,38 @@ function Navbar({ BorderBottom, wallet }) {
                                 )
                                 : (
                                     <>
+
+<Link className="navbar-brand" href="/">
+                            <Image
+                                src="/image 8.png"
+                                width={200}
+                                height={56}
+                                className={"img-fluid"}
+                            />
+                        </Link>
                                         <Link href={'/'}>
-                                            <li className="nav-item ms-md-4">
+                                            <li style={{marginLeft: "70px !important", lineHeight: "40px"}} className="nav-item ms-md-4">
                                                 <a className={"nav-link " + Styles.navLink} aria-current="page" href="#">Home</a>
                                             </li>
                                         </Link>
-                                        <Link href={'/#about'}>
-                                            <li className="nav-item ms-md-4">
-                                                <a className={"nav-link " + Styles.navLink} aria-current="page" href="#">ABOUT</a>
-                                            </li>
-                                        </Link>
+                                       
                                         <Link href={'/#gallery'}>
-                                            <li className="nav-item ms-md-4">
+                                            <li style={{lineHeight: "40px"}} className="nav-item ms-md-4">
                                                 <a className={"nav-link " + Styles.navLink} aria-current="page" href="#">GALLERY</a>
                                             </li>
                                         </Link>
                                         <Link href={'/#road-map'}>
-                                            <li className="nav-item ms-md-4">
+                                            <li style={{lineHeight: "40px"}} className="nav-item ms-md-4">
                                                 <a className={"nav-link " + Styles.navLink} aria-current="page" href="#">ROAD MAP</a>
                                             </li>
                                         </Link>
                                         <Link href={'/#team'}>
-                                            <li className="nav-item ms-md-4">
+                                            <li style={{lineHeight: "40px"}} className="nav-item ms-md-4">
                                                 <a className={"nav-link " + Styles.navLink} aria-current="page" href="#">Mainfesto</a>
                                             </li>
                                         </Link>
                                         <Link href={'/#partners'}>
-                                            <li className="nav-item ms-md-4">
+                                            <li style={{lineHeight: "40px"}} className="nav-item ms-md-4">
                                                 <a className={"nav-link " + Styles.navLink} aria-current="page" href="#">The ave</a>
                                             </li>
                                         </Link>
@@ -103,22 +101,22 @@ function Navbar({ BorderBottom, wallet }) {
                         }
                     </ul>
                     <ul className="navbar-nav ml-auto">
-                        <li className='nav-item'>
+                        <li  className='nav-item'>
                             <a className={"nav-link " + Styles.navLink} href="https://www.facebook.com/ave.io/">
                                 <button className={`${Styles.connectWalletBtn}`}>Connect Wallet</button>
                             </a>
                         </li>
-                        <li className="nav-item">
+                        <li style={{lineHeight: "50px"}} className="nav-item">
                             <a className={"nav-link " + Styles.socialIcon} aria-current="page" href="#">
                                 <i className="fab fa-twitter mt-2"></i>
                             </a>
                         </li>
-                        <li className="nav-item">
+                        <li style={{lineHeight: "50px"}} className="nav-item">
                             <a className={"nav-link " + Styles.socialIcon} aria-current="page" href="#">
                                 <i className="fab fa-instagram mt-2"></i>
                             </a>
                         </li>
-                        <li className="nav-item">
+                        <li style={{lineHeight: "50px"}} className="nav-item">
                             <a className={"nav-link " + Styles.socialIcon} aria-current="page" href="#">
                                 <i className="fab fa-discord mt-2"></i>
                             </a>

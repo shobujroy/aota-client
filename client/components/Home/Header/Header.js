@@ -7,18 +7,30 @@ import { MintContext } from './../../../context/MintContext';
 import Link from 'next/link';
 import Image from 'next/image';
 
+import bannerShap from '../../../public/images/Bannershap.png';
+
 function Header() {
   const { isConnected, connectwallet } = useContext(MintContext);
   return (
+ 
     <div className='bg-primary'>
-      <div className="container fn-montserrat">
+      <div className="fn-montserrat">
+
+<div style={{position: "absolute", top: "70px", left: "-290px"}}>
+    <Image
+    src={bannerShap}
+    width={610}
+    height={710}
+    
+    />
+    </div>
         <div className='row'>
           <div className="col-12 pt-5 pb-5  d-sm-none d-md-block ">
             <div className="text-center">
-              <Image
-                src={'/images/PC.png'}
-                width={700}
-                height={400}
+              <Image             
+                src={'/images/banner.png'}
+                width={1308}
+                height={598}
                 className="img-fit img-fluid"
                 priority
               />
@@ -29,7 +41,7 @@ function Header() {
           <div className="col-md-12 pt-5 pb-5">
             <div className={`${styles.headerContent}`}>
               <h1 className=''>We’re Aliens on the ave</h1>
-              <p className='text-center'>
+              <p>
                 we’re Brainging crreative co-working to the Metaverse.
               </p>
               <div className='text-center'>

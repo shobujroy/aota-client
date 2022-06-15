@@ -4,7 +4,7 @@ import style from './BenefitsAndUtility.module.css'
 
 function BenefitsAndUtilityCard({ imgLeft, image, title, p }) {
     return (
-        <div className={`card p-3 mb-4 ${style.benefitsCard}`} style={{ width: '100%', border: '1px solid #fff' }}>
+        <div className={`card p-3 mb-4 ${style.benefitsCard}`} style={{ width: '650px', border: '1px solid #fff' }}>
             <div className='shadow w-max p-1 pt-2'>
                 <Image
                     src={image}

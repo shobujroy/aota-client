@@ -14,10 +14,12 @@ import Team from '../components/Home/Team/Team';
 import Partners from '../components/Home/Partners/Partners';
 import Faq from '../components/Home/Faq/Faq';
 import BorderLine from '../components/Home/BorderLine/BorderLine';
+import MeetOurTeam from '../components/Home/MeetOurTeam/MeetOurTeam';
+import OurPartners from '../components/Home/OurPartners/OurPartners';
 
 function Home() {
   return (
-    <div>
+    <div style={{overflowX: "hidden"}}>
       <Navbar />
       <Header />
       {/* <BorderLine /> */}
@@ -27,6 +29,9 @@ function Home() {
       {/* <NewItems /> */}
       {/* <HotCollection /> */}
       {/* <HowItWork /> */}
+      <MeetOurTeam />
+      <OurPartners />
+
       <RoadMap />
       <BorderLine />
       <Gallery />
