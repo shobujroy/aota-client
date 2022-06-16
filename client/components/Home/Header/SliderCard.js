@@ -24,29 +24,35 @@ function SliderCard() {
         <Carousel.Item>
           <div className={Styles.imagediv}>
             {" "}
-            <Image src={"/images/PC  1.png"} width={1308} height={598}></Image>
+            {/*
+             */}
+            <Image src={"/images/PC  1.png"} width={1046} height={478}></Image>
+            <h1 className="">We’re Aliens on the ave</h1>
+            <p>we’re Brainging crreative co-working to the Metaverse.</p>
           </div>
         </Carousel.Item>
-        
+
         <Carousel.Item>
           <div className={Styles.imagediv}>
             {" "}
-            <Image src={"/images/PC  1.png"} width={1308} height={598}></Image>
+            {/*
+             */}
+            <Image src={"/images/PC  1.png"} width={1046} height={478}></Image>
+            <h1 className="">We’re Aliens on the ave</h1>
+            <p>we’re Brainging crreative co-working to the Metaverse.</p>
           </div>
         </Carousel.Item>
         <Carousel.Item>
           <div className={Styles.imagediv}>
             {" "}
-            <Image src={"/images/PC  1.png"} width={1308} height={598}></Image>
+            {/*
+             */}
+            <Image src={"/images/PC  1.png"} width={1046} height={478}></Image>
+            <h1 className="">We’re Aliens on the ave</h1>
+            <p>we’re Brainging crreative co-working to the Metaverse.</p>
           </div>
         </Carousel.Item>
       </Carousel>
-      {/* <Image
-        src="/images/seiderImg.png"
-        width={500}
-        height={500}
-        className={`img-fit rounded-3`}
-      /> */}
     </div>
   );
 }
