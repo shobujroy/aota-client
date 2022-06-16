@@ -29,7 +29,7 @@ function Navbar({ BorderBottom, wallet }) {
       >
         <Link className="navbar-brand" href="/">
           <Image
-            src="/Logo fi.svg"
+            src="/image 8.png"
             width={128}
             height={40}
             className={"img-fluid"}
@@ -117,17 +117,7 @@ function Navbar({ BorderBottom, wallet }) {
                     </a>
                   </li>
                 </Link>
-                <Link href={"/#about"}>
-                  <li className="nav-item ms-md-4">
-                    <a
-                      className={"nav-link " + Styles.navLink}
-                      aria-current="page"
-                      href="#"
-                    >
-                      ABOUT
-                    </a>
-                  </li>
-                </Link>
+                
                 <Link href={"/gallery"}>
                   <li className="nav-item ms-md-4">
                     <a

@@ -3,7 +3,7 @@ import Image from 'next/image';
 import styles from './RoadMap.module.css';
 import { Carousel } from 'react-bootstrap';
 
-import next from '../../public/images/Polygon 111.png';
+
 
 const directionButtons = (direction) => {
   return (
