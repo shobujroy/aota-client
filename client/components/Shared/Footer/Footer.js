@@ -4,7 +4,7 @@ import Link from "next/link";
 import styles from "./Footer.module.css";
 import FooterCol from "./FooterCol";
 
-function Footer({ bg }) {
+function Footer() {
 
 
   return (
@@ -19,7 +19,7 @@ function Footer({ bg }) {
               <Image width={610} height={640} src={"/images/Polygon 2.png"} />
               </div>
 
-    <footer style={{backgroundImage: "linear-gradient(#0C1F11, #051509)"}} className={`footer-area  clear-both ${ bg }`}>
+    <footer  className={`footer-area  clear-both`}>
       <div className="container pt-5 pb-5">
         <div className="row">
           <div className={`d-flex flex-wrap justify-content-between align-items-center ${ styles.footerContectWrapper }`}>

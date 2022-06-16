@@ -8,8 +8,8 @@ function BenefitsAndUtilityCard({ imgLeft, image, title, p }) {
             <div className='shadow w-max p-1 pt-2'>
                 <Image
                     src={image}
-                    width={50}
-                    height={50}
+                    width={80}
+                    height={80}
                 />
             </div>
             <h6 className='pt-2 pb-2'>{title}</h6>

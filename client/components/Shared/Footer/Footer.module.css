@@ -132,7 +132,8 @@
 
 .FooterMain{
     position: relative;
-    overflow: hidden;
+    overflow: hidden;    
+    background:linear-gradient(#0c1f11, #051509) !important;
 }
 
 

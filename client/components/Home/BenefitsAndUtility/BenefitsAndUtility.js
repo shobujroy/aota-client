@@ -8,25 +8,25 @@ function BenefitsAndUtility() {
     const benefitsAndUtilities = [
         {
             imgLeft: true,
-            image: '/images/Servise/image 12.png',
+            image: '/images/Service/image 12.png',
             title: 'POLYGON AIRDROPS',
             p: 'AOTA holders will receive free airdrops for as long as they hold. Our team actively exploring ways to expand the AOTAverse.'
         },
         {
             imgLeft: false,
-            image: '/images/roadmap/perspective_matte.png',
+            image: '/images/Service/image 12 (1).png',
             title: 'THE CREATIVE HAVEN',
             p: 'AOTA is your key to our exclusive co-working space, break free from the mundane, and create your best work.  We’re really excited about this.'
         },
         {
             imgLeft: true,
-            image: '/images/roadmap/Yoga.png',
+            image: '/images/Service/image 12 (2).png',
             title: 'EXCLUSIVE MERCH',
             p: 'AOTA holders will have access to exclusive merchandise designed by us.  We’re talking apparel, art, accessories,  & more.'
         },
         {
             imgLeft: false,
-            image: '/images/roadmap/Quick Story.png',
+            image: '/images/Service/image 12 (3).png',
             title: 'COMMERCIAL USAGE',
             p: 'Ownership and commercial usage rights are given directly to the consumer for as long as they hold onto it. '
         }
@@ -34,8 +34,8 @@ function BenefitsAndUtility() {
     return (
         <div id='about'>
 
-            <div className="container pt-5 pb-5">
-                <div className="row">
+            <div className={`container pt-5 pb-5`}>
+                <div className={`row ${styles.AboutService}`}>
                     <div className="col-md-7 mt-5">
                         {
                             benefitsAndUtilities?.map((benefit, index) => {
@@ -60,8 +60,12 @@ function BenefitsAndUtility() {
                                 height={365}
                             />
                         </div>
+
+                        <div className={styles.textMainText}>
+
                         <h1>Aotaverse Perks &amp; Utility</h1>
                         <p>When you buy an AOTA. You’re not Simply buying a rare pice of Art. You’re gaining membership access to the Aotaverse with the following benefits. Additonally you helping you us plant threes, providing water, &amp; Enegy to regions all over the world.</p>
+                        </div>
                     </div>
                 </div>
             </div>
