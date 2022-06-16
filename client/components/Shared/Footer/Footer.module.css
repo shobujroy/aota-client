@@ -33,7 +33,7 @@
     color: #fff;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
     .footerContectWrapper {
         justify-content: center !important;
     }
@@ -44,6 +44,30 @@
         justify-content: center !important;
         margin-top: 15px;
     }
+
+    .footer-area{
+        text-align: center;
+    }
+
+    .footerContectWrapper h5{
+        text-align: center;
+    }
+
+    .FooterLastText p{
+        text-align: center;
+    }
+
+    .FooterShapOne{
+        display: none;
+    }
+
+    .FooterShapTwo{
+        right: -366px !important;
+        top: -100px !important;
+        z-index: 2 !important;
+    }
+
+
 }
 
 .emailInput {
@@ -81,6 +105,11 @@
 }
 
 
+.FooterLastText{
+    z-index: 2;
+}
+
+
 .FooterLastText h6{
     font-size: 24px;
     font-weight: 500;
@@ -100,3 +129,23 @@
     margin-top: 32px;
 }
 
+
+.FooterMain{
+    position: relative;
+    overflow: hidden;
+}
+
+
+.FooterShapOne{
+    position: absolute;
+    right: -336px;
+    top: -80px;
+    z-index: 2;
+}
+
+.FooterShapTwo{
+    position: absolute;
+    right: -366px;
+    top: -360px;
+    z-index: 2;
+}

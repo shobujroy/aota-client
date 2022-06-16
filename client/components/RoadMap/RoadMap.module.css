@@ -1,0 +1,167 @@
+.RoadMapMain{    
+    background: rgb(5,21,9) !important;
+    background: linear-gradient(90deg, rgba(5,21,9,1) 51%, rgba(23,47,29,1) 100%) !important;
+    height: 1000px;
+
+}
+
+
+
+
+.RoadMapSlider{
+    background: rgb(5,21,9) !important;
+    background: linear-gradient(90deg, rgba(5,21,9,1) 51%, rgba(23,47,29,1) 100%) !important;
+    padding: 50px 0px;
+}
+
+.RoadMapBanner{
+    position: relative;
+}
+
+
+.RoadMapBanner .RoadMapText h1{
+    font-size: 56px;
+    font-weight: 600;
+    line-height: 70px;
+    font-family: "Montserrat";
+    color: #FAFAFA;
+    width: 490px;
+    position: absolute;
+    top: 250px;
+    left: 0px;
+
+}
+
+
+
+
+.RoadMapMan{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+
+.RoadMapShap {
+    position: absolute;
+    top: 540px;
+    left: 60px;
+}
+
+
+
+
+
+
+
+.RoadMapCarousel .RoadMapCarouselItam{
+    display: flex;
+    justify-content: flex-end;
+    align-content: flex-start;
+    margin-bottom: 200px;
+    margin-left: 100px !important;
+}
+
+
+
+
+
+
+
+
+.RoadMapCarouselItam .CarouselItam h3{
+    color: #FFFFFF;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 40px;
+    font-family: "Montserrat";
+    margin-bottom: 20px;
+
+}
+
+
+
+
+.CarouselItam ul li{
+    font-size: 18px;
+    font-weight: 400;
+    font-family: "Jost";
+    line-height: 23px;
+    color: #C8E3CF;
+    margin-bottom: 16px;
+}
+     
+
+/* Media Query for Mobile Devices */
+@media (max-width: 637px) { 
+    .RoadMapBanner .RoadMapText h1{
+        font-size: 32px;
+        font-weight: 600;
+        line-height: 70px;
+        font-family: "Montserrat";
+        color: #FAFAFA;
+        width: 316px;
+        position: absolute;
+        top: 55px;
+        left: 10px;    
+    }
+
+
+    .RoadMapMan{
+        position: absolute;
+        top: 200px;
+        right: 0px;
+    }
+
+
+    .RoadMapShap {
+        position: absolute;
+        top: 800px;
+        left: 60px;
+    }
+    
+    
+
+
+}
+
+
+
+
+
+/* Media Query for low resolution  Tablets, Ipads */
+@media (min-width: 640px) and (max-width: 1040px) {
+    .RoadMapBanner .RoadMapText h1{
+        font-size: 48px;
+        font-weight: 600;
+        line-height: 70px;
+        font-family: "Montserrat";
+        color: #FAFAFA;
+        width: 453px;
+        position: absolute;
+        top: 55px;
+        left: 10px;    
+    }
+
+    .RoadMapMan{
+        position: absolute;
+        top: 200px;
+        right: 0px;
+    }
+
+
+    .RoadMapShap {
+        position: absolute;
+        top: 1000px;
+        left: 150px;
+    }
+
+    .RoadMapMain{    
+        height: 1300px;
+    
+    }
+    
+    
+
+
+}

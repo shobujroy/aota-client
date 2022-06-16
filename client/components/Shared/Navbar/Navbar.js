@@ -81,7 +81,7 @@ function Navbar({ BorderBottom, wallet }) {
                                                 <a className={"nav-link " + Styles.navLink} aria-current="page" href="#">GALLERY</a>
                                             </li>
                                         </Link>
-                                        <Link href={'/#road-map'}>
+                                        <Link href={'/roadMap'}>
                                             <li style={{ lineHeight: "40px" }} className="nav-item ms-md-4">
                                                 <a className={"nav-link " + Styles.navLink} aria-current="page" href="#">ROAD MAP</a>
                                             </li>

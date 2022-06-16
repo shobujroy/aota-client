@@ -8,6 +8,17 @@ function Footer({ bg }) {
 
 
   return (
+
+<div className={styles.FooterMain}>
+
+<div className={styles.FooterShapOne}>
+                <Image width={610} height={640} src={"/images/Polygon 111.png"} />
+              </div>
+
+              <div className={styles.FooterShapTwo}>
+              <Image width={610} height={640} src={"/images/Polygon 2.png"} />
+              </div>
+
     <footer style={{backgroundImage: "linear-gradient(#0C1F11, #051509)"}} className={`footer-area  clear-both ${ bg }`}>
       <div className="container pt-5 pb-5">
         <div className="row">
@@ -31,12 +42,15 @@ function Footer({ bg }) {
              
               <h6>ALIENS ON THE AVE</h6>
               <p>We respect your privacy.</p>
+
+              
               
             </div>
           </div>
         </div>
       </div>
     </footer>
+    </div>
   );
 }
 

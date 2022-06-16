@@ -109,9 +109,9 @@ const TheAveBanner = () => {
 
 
             <>
-                <div className={`container pb-4 pt-4 ${styles.CoWorking}`}>
-                    <div className="row">
-                        <div className={`col-md-8 ${styles.CoWorkingPart}`}>
+                <div style={{marginBottom: "50px"}} className={`container pb-4 pt-4 ${styles.CoWorking}`}>
+                    <div className={styles.row}>
+                        <div className={`${styles.CoWorkingPart}`}>
 
                             <div className={styles.BackIcon}>
                             <Image width={65} height={70} src={"/images/“.png"} />
@@ -126,7 +126,7 @@ const TheAveBanner = () => {
                         </div>
 
 
-                        <div className={`col-md-4 ${styles.CoWorkingImage}`}>
+                        <div className={`${styles.CoWorkingImage}`}>
 
                         <Image  width={400} height={425} src={"/images/Photographer 2@2x.png"} />
                         </div>
