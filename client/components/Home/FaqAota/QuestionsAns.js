@@ -1,32 +1,49 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState } from "react";
+import Styles from "./FaqAota.module.css";
+import Image from "next/image";
+function QuestionsAns({
+  questionNum,
+  question,
+  answer,
+  index,
+  collapsed,
+  setCollapsed,
+}) {
+  const [modalOpen, setModalOpen] = useState(null);
+  const toggle = (index) => {
+    if (modalOpen === index) {
+      return setModalOpen(null);
+    }
 
-function QuestionsAns({ questionNum, question, answer, index, collapsed, setCollapsed }) {
-
-    return (
-        <div className="accordion-item">
-            <h2 className="accordion-header fn-montserrat" id={`flush-headingOne${ questionNum }`}>
-                <button onClick={() => {
-                    if (questionNum === collapsed) {
-                        setCollapsed(null)
-                        return;
-                    }
-                    setCollapsed(questionNum);
-                }} className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target={`#flush-collapseOne${ questionNum }`} aria-expanded="false" aria-controls={`flush-collapseOne${ questionNum }`}>
-                    {
-                        questionNum === collapsed
-                            ? <span className='me-3'><i className="fa-solid fa-minus"></i></span>
-                            : <span className='me-3'><i className="fa-solid fa-plus"></i></span>
-                    }
-                    {question}
-                </button>
-            </h2>
-            <div id={`flush-collapseOne${ questionNum }`} className="accordion-collapse collapse" aria-labelledby={`flush-headingOne${ questionNum }`} data-bs-parent="#accordionFlushExample">
-                <div className="accordion-body fn-futura ps-5">
-                    {answer}
-                </div>
-            </div>
+    setModalOpen(index);
+  };
+  return (
+    <div className={Styles.qaSection}>
+      <div className={Styles.questions}>
+        <p>{question}</p>
+        <div className={Styles.plusIcon} onClick={() => toggle(index)}>
+          {modalOpen === index ? (
+            <Image
+              src={"/images/x.png"}
+              layout="fill"
+              objectFit="cover"
+              alt=""
+            ></Image>
+          ) : (
+            <Image
+              src={"/images/Plus.png"}
+              layout="fill"
+              objectFit="cover"
+              alt=""
+            ></Image>
+          )}
         </div>
-    )
+      </div>
+      {modalOpen === index ? (
+        <p className={Styles.answerPara}>{answer}</p>
+      ) : null}
+    </div>
+  );
 }
 
 export default QuestionsAns;

@@ -1,0 +1,14 @@
+.slider {
+  width: 1180px;
+  height: 600px;
+
+  margin: 0 auto;
+}
+.imagediv {
+  width: 90%;
+  height: 600px;
+  margin-left: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

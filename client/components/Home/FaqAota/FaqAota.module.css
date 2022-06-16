@@ -1,41 +1,55 @@
-.FaqAota{
-    background-image: linear-gradient(#0C1F11, #051509);
-    padding: 50px 0px;
+.FaqAota {
+  background-image: linear-gradient(#0c1f11, #051509);
+  padding: 50px 0px;
 }
 
-
-.FaqPrime h1{
-    color: #75BA87;
-    font-size: 24px;
-    font-family: "Montserrat";
-    font-weight: 500;
-    line-height: 30px;
-
+.FaqPrime h1 {
+  color: #75ba87;
+  font-size: 24px;
+  font-family: 'Montserrat';
+  font-weight: 500;
+  line-height: 30px;
 }
 
-
-
-.FaqPrime h3{
-    color: #FAFAFA;
-    font-size: 48px;
-    font-family: "Montserrat";
-    font-weight: 500;
-    line-height: 60px;
-    margin-top: 10px;
-    margin-bottom: 20px;
-
+.FaqPrime h3 {
+  color: #fafafa;
+  font-size: 48px;
+  font-family: 'Montserrat';
+  font-weight: 500;
+  line-height: 60px;
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
 
-
-
-.FaqPrime p{
-    color: #FAFAFA;
-    font-size: 16px;
-    font-family: "Montserrat";
-    font-weight: 500;
-    line-height: 20px;
-
+.FaqPrime p {
+  color: #fafafa;
+  font-size: 16px;
+  font-family: 'Montserrat';
+  font-weight: 500;
+  line-height: 20px;
 }
 
-
-
+.qaSection {
+  width: 675px;
+  padding: 10px;
+  border-bottom: 1px solid white;
+}
+.questions {
+  justify-content: space-between;
+  display: flex;
+}
+.plusIcon {
+  height: 30px;
+  width: 30px;
+  position: relative;
+  cursor: pointer;
+}
+.questions p {
+  font-size: 24px;
+  color: #ffffff;
+}
+.answerPara {
+  font-weight: 500;
+  font-size: 16px;
+  color: #fafafa;
+}

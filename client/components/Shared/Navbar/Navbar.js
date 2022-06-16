@@ -128,7 +128,7 @@ function Navbar({ BorderBottom, wallet }) {
                     </a>
                   </li>
                 </Link>
-                <Link href={"/#gallery"}>
+                <Link href={"/gallery"}>
                   <li className="nav-item ms-md-4">
                     <a
                       className={"nav-link " + Styles.navLink}
@@ -177,11 +177,11 @@ function Navbar({ BorderBottom, wallet }) {
           </ul>
           <ul className="navbar-nav ml-auto">
             <li className="nav-item">
-              <a
-                className={"nav-link " + Styles.navLink}
-                href="https://www.facebook.com/ave.io/"
-              >
-                <button className={`${Styles.connectWalletBtn}`}>
+              <a className={"nav-link " + Styles.navLink}>
+                <button
+                  className={`${Styles.connectWalletBtn}`}
+                  onClick={connectwallet}
+                >
                   Connect Wallet
                 </button>
               </a>
