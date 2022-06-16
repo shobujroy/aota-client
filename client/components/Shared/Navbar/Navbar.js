@@ -128,7 +128,7 @@ function Navbar({ BorderBottom, wallet }) {
                     </a>
                   </li>
                 </Link>
-                <Link href={"/#gallery"}>
+                <Link href={"/gallery"}>
                   <li className="nav-item ms-md-4">
                     <a
                       className={"nav-link " + Styles.navLink}
