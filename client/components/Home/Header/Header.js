@@ -19,10 +19,8 @@ function Header() {
         </div>
         <SliderCard />
         <div className="row">
-          <div className="col-md-12 pt-5 pb-5">
+          <div className={styles.hello}>
             <div className={`${styles.headerContent}`}>
-              <h1 className="">We’re Aliens on the ave</h1>
-              <p>we’re Brainging crreative co-working to the Metaverse.</p>
               <div className="text-center">
                 {isConnected ? (
                   <Link href={"/public-sale"}>

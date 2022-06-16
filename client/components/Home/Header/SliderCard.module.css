@@ -1,3 +1,8 @@
+@font-face {
+  font-family: Monessirate;
+  src: url('../../../public/fonts/Montserrat/Montserrat-Light.ttf');
+}
+
 .slider {
   width: 1180px;
   height: 600px;
@@ -6,9 +11,29 @@
 }
 .imagediv {
   width: 90%;
-  height: 600px;
+  height: 750px;
   margin-left: 5%;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+
+  margin-bottom: 0px;
+}
+.imagediv h1 {
+  font-weight: 600;
+  font-size: 72px;
+  font-style: normal;
+  margin-top: 30px;
+  font-family: Monessirate;
+}
+.imagediv p {
+  font-family: Monessirate;
+  font-weight: 400;
+  font-size: 18px;
+  margin-top: 20px;
+}
+.sliderImage {
+  width: 1046px;
+  height: 400px;
 }
