@@ -16,9 +16,4 @@ const team = () => {
 
 export default team;
 
-const Team = () => {
-  return <div></div>;
-};
-
-export default Team;
 
