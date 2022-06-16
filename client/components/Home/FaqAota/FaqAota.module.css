@@ -34,6 +34,9 @@
   padding: 10px;
   border-bottom: 1px solid white;
 }
+.qaSection:last-child {
+  border-bottom: none;
+}
 .questions {
   justify-content: space-between;
   display: flex;
