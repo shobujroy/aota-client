@@ -76,8 +76,9 @@ a {
 }
 
 .bg-main {
-  background-color: #75ba87 !important;
-  color: #251f3a !important;
+  background: rgb(5,21,9) !important;
+  background: linear-gradient(90deg, rgba(5,21,9,1) 51%, rgba(23,47,29,1) 100%) !important;
+  
 }
 
 .footer-bg-secondary {

@@ -1,9 +1,9 @@
 import React from 'react';
 import Image from 'next/image'
-import mypic from '../../../public/images/TeamMet/image 18.png';
+
 import styles from './MeetOurTeam.module.css';
 
-
+import mypic from '../../../public/images/TeamMet/image 18.png';
 import facebook from '../../../public/images/icon/TeamMet/facebook.png';
 import instagram from '../../../public/images/icon/TeamMet/instagram (1).png';
 import linkedin from '../../../public/images/icon/TeamMet/linkedin.png';
@@ -40,7 +40,7 @@ const MeetOurTeam = () => {
                 <div className={styles.MemberCardTwo}>
                   <Image
                     style={{ marginTop: "10px" }}
-                    src={mypic}
+                    src={"/images/TeamMet/image 18.png"}
                     alt="Picture of the author"
                     width={400}
                     height={405}
@@ -59,7 +59,7 @@ const MeetOurTeam = () => {
                 <div className={styles.MemberCardIcons}>
                   <Image
 
-                    src={facebook}
+                    src={"/images/icon/TeamMet/facebook.png"}
                     alt="facebook"
                     width={30}
                     height={30}
@@ -67,7 +67,7 @@ const MeetOurTeam = () => {
 
                   <Image
 
-                    src={instagram}
+                    src={"/images/icon/TeamMet/instagram (1).png"}
                     alt="instagram"
                     width={30}
                     height={30}
@@ -76,7 +76,7 @@ const MeetOurTeam = () => {
 
                   <Image
 
-                    src={linkedin}
+                    src={"/images/icon/TeamMet/linkedin.png"}
                     alt="linkedin"
                     width={30}
                     height={30}
@@ -85,7 +85,7 @@ const MeetOurTeam = () => {
 
                   <Image
 
-                    src={twitter}
+                    src={"/images/icon/TeamMet/twitter (1).png"}
                     alt="twitter"
                     width={30}
                     height={30}
