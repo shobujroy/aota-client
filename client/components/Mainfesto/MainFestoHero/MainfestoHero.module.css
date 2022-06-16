@@ -1,0 +1,82 @@
+@font-face {
+  font-family: MontserratRegular;
+  src: url('../../../public/fonts/Montserrat/Montserrat-Regular.ttf');
+}
+.mainfestoHero {
+  width: 1180px;
+  height: 820px;
+  margin: 0 auto;
+
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.maiFestoHeroLeft {
+  width: 573px;
+  height: 620px;
+  position: relative;
+}
+.mainFestoHeroRight {
+  width: 575px;
+  height: 384px;
+}
+.mainFestoHeroRight h6 {
+  font-family: MontserratRegular;
+  color: #75ba87;
+  font-weight: 400;
+  font-size: 18px;
+}
+.mainFestoHeroRight h1 {
+  font-family: MontserratRegular;
+  font-weight: 600;
+  font-size: 56px;
+  color: #e3f1e7;
+  margin-top: 20px;
+}
+.mainFestoHeroRight p {
+  font-family: MontserratRegular;
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 1040px) {
+  .mainfestoHero {
+    width: 767px;
+    height: 577px;
+  }
+  .maiFestoHeroLeft {
+    width: 405px;
+    height: 432px;
+  }
+  .mainFestoHeroRight {
+    width: 342px;
+    height: 383px;
+  }
+  .mainFestoHeroRight h1 {
+    font-size: 32px;
+  }
+  .mainFestoHeroRight p {
+    margin-right: 20px;
+  }
+  .mainFestoHeroRight p {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 637px) {
+  .mainfestoHero {
+    width: 374px;
+    flex-direction: column;
+    height: 100%;
+  }
+  .maiFestoHeroLeft {
+    width: 354px;
+    height: 384px;
+    margin-top: 20px;
+  }
+  .mainFestoHeroRight {
+    margin-top: 30px;
+  }
+}
