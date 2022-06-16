@@ -1,3 +1,4 @@
+
 import React from 'react';
 import Mainfesto from '../components/Mainfesto/Mainfesto';
 import Footer from '../components/Shared/Footer/Footer';
@@ -14,3 +15,10 @@ const team = () => {
 };
 
 export default team;
+
+const Team = () => {
+  return <div></div>;
+};
+
+export default Team;
+
