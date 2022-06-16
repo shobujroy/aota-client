@@ -19,10 +19,12 @@
   margin: 0 auto;
 }
 
+
+
 .connectWalletBtn {
   background: #75ba87;
   color: #fff;
-  padding: 5px 30px;
+  padding: 18px 24px;
   border: 1px solid #75ba87;
   transition: 0.5s;
 }
@@ -66,4 +68,10 @@
 .BorderBottom {
   padding-bottom: 20px;
   border-bottom: 1px solid #9a9aa9 !important;
+}
+
+
+
+.navbar{
+  display: block !important;
 }

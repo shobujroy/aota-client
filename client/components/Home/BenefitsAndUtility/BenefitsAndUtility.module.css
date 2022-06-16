@@ -5,3 +5,92 @@
 .benefitsCard:hover {
   border: 1px solid #45c78c !important;
 }
+
+
+.textcenter {
+    margin-top: -70px;
+    margin-left: 0px;
+    margin-bottom: 70px;
+}
+
+
+.benefitsCard p{
+  font-size: 16px;
+  font-weight: 400px;
+  color: #767676;
+  line-height: 20px;
+ 
+}
+
+
+.benefitsCard h6{
+  color: #1A1A1A;
+  font-size: 32px;
+  line-height: 40px;
+  font-weight: 500;
+  font-family: "Montserrat";
+}
+
+
+.textCard h1{
+  color: #051509;
+  font-weight: 600;
+  font-family: "Montserrat";
+  font-size: 56px;
+  line-height: 70px;
+  width: 470px;
+  
+}
+
+
+.textCard p{
+  color: #484848;
+  font-weight: 500;
+  font-family: "Jost";
+  font-size: 16px;
+  line-height: 20px;
+  width: 460px;
+  margin-top: 20px;
+  
+}
+
+
+.Donations h1{
+  color: #051509;
+  font-weight: 600;
+  font-family: "Montserrat";
+  font-size: 56px;
+  line-height: 100px;
+  border-bottom: 1px solid #D1D1D1;
+  
+}
+
+
+.DonationsCard{
+  margin-top: 60px;
+}
+
+
+.DonationsCard h4{
+  color: #051509;
+  font-weight: 500;
+  font-family: "Montserrat";
+  font-size: 32px;
+  line-height: 40px;
+  width: 528px;
+  margin-bottom: 20px;
+ 
+}
+
+
+
+.DonationsCard p{
+  color: #767676;
+  font-weight: 400;
+  font-family: "Jost";
+  font-size: 16px;
+  line-height: 20px;
+  width: 1080px;
+
+ 
+}
