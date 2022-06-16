@@ -24,19 +24,20 @@ function SliderCard() {
         <Carousel.Item>
           <div className={Styles.imagediv}>
             {" "}
-            <Image src={"/images/PC  1.png"} width={900} height={400}></Image>
+            <Image src={"/images/PC  1.png"} width={1308} height={598}></Image>
+          </div>
+        </Carousel.Item>
+        
+        <Carousel.Item>
+          <div className={Styles.imagediv}>
+            {" "}
+            <Image src={"/images/PC  1.png"} width={1308} height={598}></Image>
           </div>
         </Carousel.Item>
         <Carousel.Item>
           <div className={Styles.imagediv}>
             {" "}
-            <Image src={"/images/PC  1.png"} width={900} height={400}></Image>
-          </div>
-        </Carousel.Item>
-        <Carousel.Item>
-          <div className={Styles.imagediv}>
-            {" "}
-            <Image src={"/images/PC  1.png"} width={900} height={400}></Image>
+            <Image src={"/images/PC  1.png"} width={1308} height={598}></Image>
           </div>
         </Carousel.Item>
       </Carousel>

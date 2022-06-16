@@ -1,16 +1,21 @@
 import React from 'react';
 import Image from 'next/image'
+import { Carousel } from "react-bootstrap";
 
 import styles from './MeetOurTeam.module.css';
 
-import mypic from '../../../public/images/TeamMet/image 18.png';
-import facebook from '../../../public/images/icon/TeamMet/facebook.png';
-import instagram from '../../../public/images/icon/TeamMet/instagram (1).png';
-import linkedin from '../../../public/images/icon/TeamMet/linkedin.png';
-import twitter from '../../../public/images/icon/TeamMet/twitter (1).png';
 
 
-
+const directionButtons = (direction) => {
+  return (
+    <span
+      aria-hidden="true"
+      className={direction === "Next" ? "button-next" : "button-prev"}
+    >
+      {direction}
+    </span>
+  );
+};
 
 
 
@@ -100,7 +105,102 @@ const MeetOurTeam = () => {
           <div className={`col-md-7 mt-0 ${styles.MeetMember}`}>
             <h1>Meet Our Team</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nec porttitor urna, arcu congue neque enim quis auctor ut. Non, duis malesuada blandit suspendisse posuere aliquam elementum. Hac curabitur mi sit habitant.</p>
+            <div  className={styles.RoadMapSlider}>
+            <div className="container pt-0 pb-0">
+                <div className="row">
+        <div className={`col-md-12 col-sm-12 ${styles.MeetMemberCarousel}`}>
 
+        <Carousel              
+        
+        nextIcon={directionButtons(<Image width={48} height={48} src={"/images/Group 3.png"} 
+        className={styles.nextIcon} />)}
+        prevIcon={directionButtons(<Image width={48} height={48} src={"/images/Group 4.png"} />)}>
+  <Carousel.Item>
+       
+        <div className={styles.MeetMemberCarouselItam}>
+        <div className={styles.CarouselItam}> 
+
+      <Image width={280} height={400} src={"/images/image 14.png"} />
+        <h3>Jacob Jones</h3>
+        <p>Illustrator</p>
+      
+
+        </div>
+
+        
+
+        <div className={styles.CarouselItam}>          
+      <Image width={280} height={400} src={"/images/image 15.png"} />
+        <h3>Marvin McKinney</h3>
+        <p>Events</p>
+
+        </div>
+
+
+
+        <div className={styles.CarouselItam}>          
+      <Image width={280} height={400} src={"/images/image 16.png"} />
+        <h3>Leslie Alexander</h3>
+        <p>Founder/Artist</p>    
+
+        </div>
+        </div>
+
+
+     
+
+    <Carousel.Caption>
+  
+    </Carousel.Caption>
+  </Carousel.Item>
+
+
+  <Carousel.Item>
+       
+        <div className={styles.MeetMemberCarouselItam}>
+        <div className={styles.CarouselItam}> 
+
+      <Image width={280} height={400} src={"/images/image 14.png"} />
+        <h3>Jacob Jones</h3>
+        <p>Illustrator</p>
+      
+
+        </div>
+
+        
+
+        <div className={styles.CarouselItam}>          
+      <Image width={280} height={400} src={"/images/image 15.png"} />
+        <h3>Marvin McKinney</h3>
+        <p>Events</p>
+
+        </div>
+
+
+
+        <div className={styles.CarouselItam}>          
+      <Image width={280} height={400} src={"/images/image 16.png"} />
+        <h3>Leslie Alexander</h3>
+        <p>Founder/Artist</p>    
+
+        </div>
+        </div>
+
+
+     
+
+    <Carousel.Caption>
+  
+    </Carousel.Caption>
+  </Carousel.Item>
+
+  
+</Carousel>
+
+</div>
+</div>
+</div>
+</div>
 
 
 
