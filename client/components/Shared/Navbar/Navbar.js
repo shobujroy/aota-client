@@ -17,6 +17,7 @@ function Navbar({ BorderBottom, wallet }) {
   useEffect(() => {}, [isConnected, hasMetamask]);
 
   return (
+
     <nav style={{display: "block", padding: "20px 20px"}}
       className={`navbar navbar-expand-lg fn-montserrat ${
         wallet ? "navbar-light" : "navbar-dark"
@@ -27,18 +28,43 @@ function Navbar({ BorderBottom, wallet }) {
           BorderBottom && Styles.BorderBottom
         }`}
       >
-        
+
+
+
+        <div className={Styles.MobileLogoButton}>
+
         <button
-          className="navbar-toggler"
+          className={`navbar-toggler ${Styles.MobileNabButton}`}
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent"
           aria-expanded="false"
           aria-label="Toggle navigation"
+          
         >
-          <span className="navbar-toggler-icon text-white"></span>
+          <Image src={"/image/Menu (2 lines).svg"} width={20} height={15}  className="navbar-toggler-icon text-white"/>
         </button>
+
+
+              <Link className="navbar-brand" href="/">
+          <Image
+            src="/image 8.png"
+            width={83}
+            height={23}
+            className={"img-fluid"}
+          />
+        </Link>
+
+        <button
+                  className={`${Styles.MobileButton}`}
+                  onClick={connectwallet}
+                >
+                  Connect Wallet
+                </button>
+
+                </div>
+        
         <div className={`collapse navbar-collapse ${Styles.NavbarItam}`} id="navbarSupportedContent">
           {/* <form className="d-flex ms-md-4">
                         <input className={`form-control me-2 ${ Styles.searchInput }`}
@@ -99,17 +125,22 @@ function Navbar({ BorderBottom, wallet }) {
               </>
             ) : (
               <>
-              <Link className="navbar-brand" href="/">
+
+
+              
+              <Link className={"navbar-brand"} href="/">
           <Image
             src="/image 8.png"
             width={230}
             height={56}
-            className={"img-fluid"}
+            className={`img-fluid ${Styles.PCImage}`}
           />
         </Link>
 
+                
+
                 <Link  href={"/"}>
-                  <li style={{marginLeft: "72px !important"}} className="nav-item ms-md-4">
+                  <li className={`nav-item ms-md-4 ${Styles.Muneleft}`}>
                     <a
                       className={"nav-link " + Styles.navLink}
                       aria-current="page"
@@ -167,7 +198,7 @@ function Navbar({ BorderBottom, wallet }) {
               </>
             )}
           </ul>
-          <ul  className="navbar-nav ml-auto">
+          <ul  className={`navbar-nav ml-auto $`}>
             <li className="nav-item">
               <a className={"nav-link " + Styles.navLink}>
                 <button
@@ -178,7 +209,8 @@ function Navbar({ BorderBottom, wallet }) {
                 </button>
               </a>
             </li>
-            <li style={{lineHeight: "60px", marginLeft: "20px"}} className="nav-item">
+            <div className={Styles.SocailMedIcon}>
+            <li  className="nav-item">
               <a
                 className={"nav-link " + Styles.socialIcon}
                 aria-current="page"
@@ -187,7 +219,7 @@ function Navbar({ BorderBottom, wallet }) {
                 <i className="fab fa-twitter mt-2"></i>
               </a>
             </li>
-            <li style={{lineHeight: "60px", marginLeft: "20px"}} className="nav-item">
+            <li  className="nav-item">
               <a
                 className={"nav-link " + Styles.socialIcon}
                 aria-current="page"
@@ -196,7 +228,7 @@ function Navbar({ BorderBottom, wallet }) {
                 <i className="fab fa-instagram mt-2"></i>
               </a>
             </li>
-            <li style={{lineHeight: "60px", marginLeft: "20px"}} className="nav-item">
+            <li  className="nav-item">
               <a
                 className={"nav-link " + Styles.socialIcon}
                 aria-current="page"
@@ -205,6 +237,7 @@ function Navbar({ BorderBottom, wallet }) {
                 <i className="fab fa-discord mt-2"></i>
               </a>
             </li>
+            </div>
           </ul>
         </div>
       </div>
