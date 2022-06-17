@@ -79,3 +79,85 @@
 .navbar{
   display: block !important;
 }
+
+
+
+.MobileLogoButton{
+  display: none;
+}
+
+
+.SocailMedIcon{
+  display: flex;
+}
+
+
+.SocailMedIcon li{
+   margin-left: 20px;
+   line-height: 60px;
+}
+
+
+.NavbarItam .Muneleft{
+  margin-left: 75px !important;
+}
+
+
+
+
+ /* Media Query for Mobile Devices */
+@media (max-width: 600px) {
+  .MobileLogoButton{
+    display: block;
+    display: flex;
+
+  }
+
+
+
+  .MobileButton{
+    margin-left: auto;
+    padding: 18 24px;
+    background: #75BA87;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    font-family: "Jost";
+  }
+
+
+  .NavbarItam .PCImage{
+    display: none !important;
+  }
+
+ 
+
+
+ 
+
+
+  .SocailMedIcon .SocailMedIcon{
+    display: flex;
+  }
+
+
+
+  .SocailMedIcon .SocailMedIcon li{
+    margin-right: 32px;
+  }
+
+
+  .MobileNabButton{
+    margin-right: 20px;
+  }
+
+
+
+  .NavbarItam .Muneleft{
+    margin-left: 0px !important;
+  }
+
+  .NavbarItam ul .connectWalletBtn{
+    display: none;
+  }
+}

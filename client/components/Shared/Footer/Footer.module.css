@@ -33,6 +33,10 @@
     color: #fff;
 }
 
+
+
+
+ /* Media Query for Mobile Devices */
 @media (max-width: 600px) {
     .footerContectWrapper {
         justify-content: center !important;

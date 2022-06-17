@@ -16,6 +16,9 @@
     height: 686px !important;
     padding-top: 2rem;
   }
+  .BannerShap{
+    z-index: -1;
+  }
 }
 
 @media (max-width: 1300px) {
@@ -99,3 +102,22 @@
   padding: 18px 24px;
   border: none;
 }
+
+
+
+.BannerShap {
+  position: absolute;
+  top: 70px;
+  left: -290px;
+}
+
+
+
+
+ /* Media Query for Mobile Devices */
+ @media (max-width: 600px) {
+  .BannerShap{
+    z-index: -1;
+  }
+
+ }
