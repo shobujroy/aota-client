@@ -1,21 +1,21 @@
 /* @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap"); */
 @font-face {
-  font-family: "Montserrat-Black";
-  src: url("../public/fonts/Montserrat/Montserrat-Black.ttf") format("truetype");
+  font-family: 'Montserrat-Black';
+  src: url('../public/fonts/Montserrat/Montserrat-Black.ttf') format('truetype');
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "futura";
-  src: url("../public/fonts/futura/futura\ medium\ bt.ttf") format("truetype");
+  font-family: 'futura';
+  src: url('../public/fonts/futura/futura\ medium\ bt.ttf') format('truetype');
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "manic";
-  src: url("../public/fonts/MANIC/Web/MANIC-Regular.woff") format("woff");
+  font-family: 'manic';
+  src: url('../public/fonts/MANIC/Web/MANIC-Regular.woff') format('woff');
   font-style: normal;
   font-display: swap;
 }
@@ -39,15 +39,15 @@ a {
 }
 
 .fn-montserrat {
-  font-family: "Montserrat-Black" !important;
+  font-family: 'Montserrat-Black' !important;
 }
 
 .fn-futura {
-  font-family: "futura" !important;
+  font-family: 'futura' !important;
 }
 
 .fn-manic {
-  font-family: "manic" !important;
+  font-family: 'manic' !important;
 }
 
 .bg-primary {
@@ -76,9 +76,12 @@ a {
 }
 
 .bg-main {
-  background: rgb(5,21,9) !important;
-  background: linear-gradient(90deg, rgba(5,21,9,1) 51%, rgba(23,47,29,1) 100%) !important;
-  
+  background: rgb(5, 21, 9) !important;
+  background: linear-gradient(
+    90deg,
+    rgba(5, 21, 9, 1) 51%,
+    rgba(23, 47, 29, 1) 100%
+  ) !important;
 }
 
 .footer-bg-secondary {
@@ -106,7 +109,7 @@ a {
   color: white !important;
 }
 
-.border-primary{
+.border-primary {
   border: 1px solid #45c78c !important;
 }
 
@@ -126,6 +129,27 @@ a {
   border: 1px solid #000 !important;
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: none;
+  border-radius: 10px;
+  background: none;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #75ba87;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #3b7c4c;
+}
 @media screen and (max-width: 900px) {
   .d-sm-none {
     display: none !important;
