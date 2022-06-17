@@ -6,44 +6,37 @@
   border: 1px solid #45c78c !important;
 }
 
-
 .textcenter {
-    margin-top: -70px;
-    margin-left: 0px;
-    margin-bottom: 70px;
+  margin-top: -70px;
+  margin-left: 0px;
+  margin-bottom: 70px;
 }
 
-
-.benefitsCard p{
+.benefitsCard p {
   font-size: 16px;
   font-weight: 400px;
   color: #767676;
   line-height: 20px;
- 
 }
 
-
-.benefitsCard h6{
-  color: #1A1A1A;
+.benefitsCard h6 {
+  color: #1a1a1a;
   font-size: 32px;
   line-height: 40px;
   font-weight: 500;
   font-family: "Montserrat";
 }
 
-
-.textCard h1{
+.textCard h1 {
   color: #051509;
   font-weight: 600;
   font-family: "Montserrat";
   font-size: 56px;
   line-height: 70px;
   width: 470px;
-  
 }
 
-
-.textCard p{
+.textCard p {
   color: #484848;
   font-weight: 500;
   font-family: "Jost";
@@ -51,27 +44,22 @@
   line-height: 20px;
   width: 460px;
   margin-top: 20px;
-  
 }
 
-
-.Donations h1{
+.Donations h1 {
   color: #051509;
   font-weight: 600;
   font-family: "Montserrat";
   font-size: 56px;
   line-height: 100px;
-  border-bottom: 1px solid #D1D1D1;
-  
+  border-bottom: 1px solid #d1d1d1;
 }
 
-
-.DonationsCard{
+.DonationsCard {
   margin-top: 60px;
 }
 
-
-.DonationsCard h4{
+.DonationsCard h4 {
   color: #051509;
   font-weight: 500;
   font-family: "Montserrat";
@@ -79,77 +67,63 @@
   line-height: 40px;
   width: 528px;
   margin-bottom: 20px;
- 
 }
 
-
-
-.DonationsCard p{
+.DonationsCard p {
   color: #767676;
   font-weight: 400;
   font-family: "Jost";
   font-size: 16px;
   line-height: 20px;
   width: 1080px;
-
- 
 }
 
 
+.benefitsCard .ImageShado{
+  padding: 12px 12px;
 
+}
 
- /* Media Query for Mobile Devices */
- @media (max-width: 637px) {
-      .AboutService{
-        flex-direction: column-reverse;
-
-      }
-
-
-      .textCard{
-        flex-direction: column-reverse !important;
-      }
-
-
-      .textMainText h1{
-        font-size: 24px !important;
-      }
-
-
-      .textcenter{
-        margin-top: 60px;
-        margin-left: 0px;    
-        transform: rotate(89deg);
-      }
-
-      .benefitsCard p{
-        width: 350px !important;
-        font-weight: 400;
-      }
-
-
-      .Donations h1{
-        font-size: 32px;
-      }
-
-
-      .DonationsCard h4{
-        font-size: 24px;
-        width: 382px;
-      }
-      
-
-
-      .DonationsCard p{
-        font-size: 16px;
-        width: 382px;
-      }
-
-
-
-      .benefitsCard{
-        width: 400px !important;
-        
-      }
-      
+/* Media Query for Mobile Devices */
+@media (max-width: 637px) {
+  .AboutService {
+    flex-direction: column-reverse;
   }
+
+  .textCard {
+    flex-direction: column-reverse !important;
+  }
+
+  .textMainText h1 {
+    font-size: 24px !important;
+  }
+
+  .textcenter {
+    margin-top: 60px;
+    margin-left: 0px;
+    transform: rotate(89deg);
+  }
+
+  .benefitsCard p {
+    width: 350px !important;
+    font-weight: 400;
+  }
+
+  .Donations h1 {
+    font-size: 32px;
+  }
+
+  .DonationsCard h4 {
+    font-size: 24px;
+    width: 382px;
+  }
+
+  .DonationsCard p {
+    font-size: 16px;
+    width: 382px;
+  }
+
+  .benefitsCard {
+    width: 400px !important;
+  }
+}

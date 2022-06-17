@@ -1,27 +1,23 @@
-.OurPartners{
-    padding: 100px 0px;
+.OurPartners {
+  padding: 100px 0px;
 }
 
-
-
-.OurPartners h1{
-    font-size: 56px;
-    line-height: 100px;
-    text-align: center;
-    font-family: "Montserrat";
-    font-weight: 600;
-    color: #75BA87;
-    border-bottom: 1px solid #D1D1D1;
+.OurPartners h1 {
+  font-size: 56px;
+  line-height: 100px;
+  text-align: center;
+  font-family: "Montserrat";
+  font-weight: 600;
+  color: #75ba87;
+  border-bottom: 1px solid #d1d1d1;
 }
 
-
-.Partners{
-    display: flex;
-    justify-content: space-between;
-    margin-top: 60px;
-
+.Partners {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 60px;
 }
 
-.Partners Image{
-    width: 170px !important;
+.Partners Image {
+  width: 170px !important;
 }
