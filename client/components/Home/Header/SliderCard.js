@@ -26,7 +26,7 @@ function SliderCard() {
             {" "}
             {/*
              */}
-            <Image src={"/images/PC  1.png"} width={1046} height={478}></Image>
+            <Image src={"/images/PC  1.png"} width={1046} height={678}></Image>
             <h1 className="">We’re Aliens on the ave</h1>
             <p>we’re Brainging crreative co-working to the Metaverse.</p>
           </div>

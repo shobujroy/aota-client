@@ -37,3 +37,29 @@
   width: 1046px;
   height: 400px;
 }
+@media screen and (max-width: 637px) {
+  .slider {
+    width: 100%;
+  }
+  .imagediv h1 {
+    font-size: 42px;
+    margin-top: 117px;
+    text-align: center !important;
+  }
+  .imagediv p {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 1040px) {
+  .slider {
+    width: 100%;
+  }
+  .imagediv h1 {
+    font-size: 42px;
+    margin-top: 117px;
+    text-align: center !important;
+  }
+  .imagediv p {
+    text-align: center;
+  }
+}

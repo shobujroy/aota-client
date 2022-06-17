@@ -56,3 +56,15 @@
   font-size: 16px;
   color: #fafafa;
 }
+@media screen and (max-width: 637px) {
+  .qaSection {
+    width: 382px;
+    border-bottom: 1px solid #75ba87;
+  }
+}
+@media screen and (max-width: 1040px) {
+  .qaSection {
+    width: 450px;
+    border-bottom: 1px solid #75ba87;
+  }
+}

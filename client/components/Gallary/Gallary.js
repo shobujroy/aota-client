@@ -7,7 +7,6 @@ const Gallary = () => {
     <div className={Styles.gallary}>
       <Navbar />
       <GalleryMain />
-      <Footer />
     </div>
   );
 };
