@@ -1,446 +1,358 @@
-.AveBanner{
-    background-image: linear-gradient(#0C1F11, #051509);
-    padding: 50px 0px 0px;
+.AveBanner {
+  background-image: linear-gradient(#0c1f11, #051509);
+  padding: 50px 0px 0px;
 }
 
-
-.AveBannerText h1{
-     font-size: 48px;
-     font-weight: 500;
-     font-family: "Montserrat";
-     line-height: 60px;
-     color: #FFFFFF;
-
+.AveBannerText h1 {
+  font-size: 48px;
+  font-weight: 500;
+  font-family: "Montserrat";
+  line-height: 60px;
+  color: #ffffff;
 }
 
-
-.AveBannerText p{
-     font-size: 16px;  
-     font-weight: 400;
-     font-family: "Jost";
-     line-height: 20px;
-     color: #75BA87;
-     margin-bottom: 53px;
-     margin-top: 15px;
-
+.AveBannerText p {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Jost";
+  line-height: 20px;
+  color: #75ba87;
+  margin-bottom: 53px;
+  margin-top: 15px;
 }
 
-
-.AveBannerImage{
-    background:#0B1B0F; 
-    height: 535px;
-    margin: 0px;
-    padding: 0px;
-    width: 50%;
+.AveBannerImage {
+  background: #0b1b0f;
+  height: 535px;
+  margin: 0px;
+  padding: 0px;
+  width: 50%;
 }
 
-
-.PhotoOne{
-    margin-bottom: 27px;
-    margin-left: 32px;
+.PhotoOne {
+  margin-bottom: 27px;
+  margin-left: 32px;
 }
 
-
-.PhotoTwo{    
-    margin-left: 32px;
+.PhotoTwo {
+  margin-left: 32px;
 }
 
+.TheAve .TheAveText h1 {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 30px;
+  color: #75ba87;
+  font-family: "Montserrat";
+}
 
+.TheAveText h4 {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 30px;
+  color: #ffffff;
+  font-family: "Montserrat";
+  margin-top: 20px;
+  margin-bottom: 32px;
+}
 
-.TheAve .TheAveText h1{
+.TheAveText p {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  color: #fafafa;
+  font-family: "Jost";
+  width: 1100px;
+  margin-bottom: 60px;
+}
+
+.TheAveImage {
+  position: relative;
+  width: 50%;
+  padding: 0px;
+  margin: 0px;
+  height: 535px;
+}
+
+.AveTextOne {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: #ffffff;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  font-size: 48px;
+  font-weight: 500;
+  font-family: "Montserrat";
+  line-height: 60px;
+}
+
+.AvePhotoText {
+  position: absolute;
+  top: 50%;
+  left: 41%;
+  color: #ffffff;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.AvePhotoText h1 {
+  font-size: 32px;
+  font-weight: 500;
+  font-family: "Montserrat";
+  line-height: 60px;
+  width: 253px;
+}
+
+.AveThePhotoText {
+  position: absolute;
+  top: 50%;
+  left: 41%;
+  color: #ffffff;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.AveThePhotoText h1 {
+  font-size: 32px;
+  font-weight: 500;
+  font-family: "Montserrat";
+  line-height: 60px;
+  width: 310px;
+}
+
+.TheAvePhoto .AvePhoto {
+  margin-bottom: 15px;
+  margin-left: 32px;
+  position: relative;
+}
+
+.TheAvePhoto .AveThePhoto {
+  margin-left: 32px;
+  position: relative;
+}
+
+.CoWorking {
+  background: #17271b;
+  width: 1180px;
+  margin-left: 100px;
+  margin-top: 50px;
+}
+
+.CoWorkingPart {
+  background: #203024;
+  text-align: center;
+  padding: 26px;
+  margin-left: 32px;
+}
+
+.CoWorkingPart p {
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 40px;
+  font-family: "Montserrat";
+  color: #ffffff;
+  width: 617px;
+  margin: auto;
+  padding: 20px 0px;
+}
+
+.CoWorkingPart .BackIcon {
+  text-align: left;
+}
+
+.CoWorkingPart .Pasicon {
+  text-align: right;
+  margin-right: 100px;
+}
+
+.CoWorkingImage {
+  width: 30%;
+}
+
+.row {
+  width: 100%;
+  display: flex;
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 637px) {
+  .AveBannerText h1 {
     font-size: 24px;
-    font-weight: 500;
-    line-height: 30px;
-    color: #75BA87;
-    font-family: "Montserrat";
+  }
 
-}
-
-
-
-
-.TheAveText h4{
-    font-size: 24px;
-    font-weight: 500;
-    line-height: 30px;
-    color: #FFFFFF;
-    font-family: "Montserrat";
-    margin-top: 20px;
-    margin-bottom: 32px;
-
-}
-
-
-
-
-.TheAveText p{
+  .AveBannerText p {
     font-size: 16px;
-    font-weight: 500;
-    line-height: 20px;
-    color: #FAFAFA;
-    font-family: "Jost";
-    width: 1100px;
-    margin-bottom: 60px;
-    
+    width: 288px;
+  }
 
-}
+  .AveBannerImage {
+    width: 100%;
+  }
 
+  .AveBannerPhoto {
+    display: flex;
+    margin-top: 30px;
+  }
 
+  .TheAveImage {
+    width: 100%;
+  }
 
-
-.TheAveImage{
-    position: relative;
-    width: 50%;
-    padding: 0px;
-    margin: 0px;
-    height: 535px;
-}
-
-
-.AveTextOne{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    color: #FFFFFF;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    font-size: 48px;
-    font-weight: 500;
-    font-family: "Montserrat";
-    line-height: 60px;
-}
-
-
-.AvePhotoText{
-    position: absolute;
-    top: 50%;
-    left: 41%;
-    color: #FFFFFF;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-}
-
-
-.AvePhotoText h1{
-    font-size: 32px;
-    font-weight: 500;
-    font-family: "Montserrat";
-    line-height: 60px;
-    width: 253px;
-}
-
-
-.AveThePhotoText{
-    position: absolute;
-    top: 50%;
-    left: 41%;
-    color: #FFFFFF;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    
-}
-
-
-.AveThePhotoText h1{
-    font-size: 32px;
-    font-weight: 500;
-    font-family: "Montserrat";
-    line-height: 60px;
-    width: 310px;
-}
-
-
-.TheAvePhoto .AvePhoto{
-    margin-bottom: 15px;
-    margin-left: 32px;
-    position: relative;
-}
-
-
-.TheAvePhoto .AveThePhoto{
-    margin-left: 32px;
-    position: relative;
-}
-
-
-
-
-
-
-.CoWorking{
-    background: #17271B;
-    width: 1180px;
-    margin-left: 100px;
-    margin-top: 50px;
-    
-}
-
-
-.CoWorkingPart{
-    background: #203024;
-    text-align: center;
-    padding: 26px;
-    margin-left: 32px;
-}
-
-
-.CoWorkingPart p{
-    font-size: 32px;
-    font-weight: 500;
-    line-height: 40px;
-    font-family: "Montserrat";
-    color: #FFFFFF;
-    width: 617px;
-    margin: auto;
-    padding: 20px 0px;
-
-}
-
-
-.CoWorkingPart .BackIcon{
-    text-align: left;
-}
-
-
-.CoWorkingPart .Pasicon{
-    text-align: right;
-    margin-right: 100px;
-}
-
-
-.CoWorkingImage{
-    width: 30%;
-}
-
-
-.row{
+  .TheAvePhoto {
     width: 100%;
     display: flex;
   }
 
-
-
- /* Media Query for Mobile Devices */
-@media (max-width: 637px) {
-    .AveBannerText h1 {
-      font-size: 24px;
-    }
-
-    .AveBannerText p{
-        font-size: 16px;
-        width: 288px;
-      }
-
-      .AveBannerImage{
-        width: 100%;
-      }
-
-
-      .AveBannerPhoto{
-        display: flex;
-        margin-top: 30px;
-      }
-
-
-      .TheAveImage{
-        width: 100%;
-      }
-
-
-
-      .TheAvePhoto{
-        width: 100%;
-        display: flex;
-      }
-
-      .AveThePhotoText h1{
-        font-size: 18px;
-      }
-
-
-      .AvePhotoText{
-        left: 70%;
-      }
-
-
-      .AveThePhotoText{
-        left: 80%;
-      }
-
-
-      .AveThePhoto img{
-        height: 110px !important;
-        width: 400px !important;
-      }
-
-      .AvePhotoText h1{
-        font-size: 18px;
-      }
-
-
-     
-
-
-      .row{
-        flex-direction: column-reverse;
-        width: 100%;
-        display: flex;
-      }
-
-
-      .CoWorkingImage img{
-        width: 684px !important;
-        height: 575px !important;
-        
-    }
-
-    .CoWorkingPart{
-        background: none;
-        text-align: center;
-        padding: 0px;
-        margin: 0px;
-    }
-      
-
-
-    .CoWorkingPart p{
-        font-size: 32px;
-        font-weight: 500;
-        line-height: 40px;
-        font-family: "Montserrat";
-        color: #FFFFFF;
-        width: 420px;
-        margin: 0px;
-        padding: 20px 0px;
-    
-    }
-
-
-    .CoWorkingPart .Pasicon{
-        text-align: left;
-        margin-left: 350px;
-    }
-
-
+  .AveThePhotoText h1 {
+    font-size: 18px;
   }
 
+  .AvePhotoText {
+    left: 70%;
+  }
 
+  .AveThePhotoText {
+    left: 80%;
+  }
 
+  .AveThePhoto img {
+    height: 110px !important;
+    width: 400px !important;
+  }
 
+  .AvePhotoText h1 {
+    font-size: 18px;
+  }
+
+  .row {
+    flex-direction: column-reverse;
+    width: 100%;
+    display: flex;
+  }
+
+  .CoWorkingImage img {
+    width: 684px !important;
+    height: 575px !important;
+  }
+
+  .CoWorkingPart {
+    background: none;
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+  }
+
+  .CoWorkingPart p {
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 40px;
+    font-family: "Montserrat";
+    color: #ffffff;
+    width: 420px;
+    margin: 0px;
+    padding: 20px 0px;
+  }
+
+  .CoWorkingPart .Pasicon {
+    text-align: left;
+    margin-left: 350px;
+  }
+}
 
 /* Media Query for low resolution  Tablets, Ipads */
 @media (min-width: 640px) and (max-width: 1040px) {
-    .AveBannerText h1 {
-        font-size: 32px;
-      }
-  
-      .AveBannerText p{
-          font-size: 16px;
-          width: 400px;
-        }
+  .AveBannerText h1 {
+    font-size: 32px;
+  }
 
-        
-        .AveBannerImage{
-          width: 50%;
-          height: 350px;
-        }
-  
+  .AveBannerText p {
+    font-size: 16px;
+    width: 400px;
+  }
 
+  .AveBannerImage {
+    width: 50%;
+    height: 350px;
+  }
 
-  
-        .AveBannerPhoto{
-          margin-bottom: 30px;
-        }
-  
+  .AveBannerPhoto {
+    margin-bottom: 30px;
+  }
 
-        .TheAveText p{
-            font-size: 16px;
-            font-weight: 500;
-            line-height: 20px;
-            color: #FAFAFA;
-            font-family: "Jost";
-            width: 700px;
-            margin-bottom: 40px;         
-        }
+  .TheAveText p {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    color: #fafafa;
+    font-family: "Jost";
+    width: 700px;
+    margin-bottom: 40px;
+  }
 
-  
-        .TheAveImage{
-          width: 50%;
-        }
+  .TheAveImage {
+    width: 50%;
+  }
 
-        .TheAveImage img{
-            height: 340px !important;
-        }
-        
-  
-        
-        .TheAvePhoto{
-          width: 50%;
-          
-        }
+  .TheAveImage img {
+    height: 340px !important;
+  }
 
+  .TheAvePhoto {
+    width: 50%;
+  }
 
-        .AveTextOne{
-            top: 35%;
-        }
+  .AveTextOne {
+    top: 35%;
+  }
 
-        .TheAveImage .AveTextOne h1{
-            font-size: 34px!important;
-            width: 270px;
-        }
+  .TheAveImage .AveTextOne h1 {
+    font-size: 34px !important;
+    width: 270px;
+  }
 
+  .row {
+    width: 100%;
+    display: flex;
+  }
 
-        .row{
-            width: 100%;
-            display: flex;
-          }
+  .CoWorkingPart {
+    width: 70%;
+  }
 
-          
+  .CoWorkingPart p {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 40px;
+    font-family: "Montserrat";
+    color: #ffffff;
+    width: 410px;
+    margin: auto;
+    padding: 10px;
+  }
 
-          .CoWorkingPart{
-            width: 70%;
-          }
+  .CoWorkingPart .Pasicon {
+    text-align: right;
+    margin-right: 50px;
+  }
 
+  .AvePhotoText {
+    left: 65%;
+  }
 
+  .AveThePhotoText {
+    left: 70%;
+  }
 
-          .CoWorkingPart p{
-            font-size: 18px;
-            font-weight: 500;
-            line-height: 40px;
-            font-family: "Montserrat";
-            color: #FFFFFF;
-            width: 410px;
-            margin: auto;
-            padding: 10px;
-          }
+  .AveThePhotoText h1 {
+    font-size: 18px;
+  }
 
+  .AvePhotoText h1 {
+    font-size: 18px;
+  }
 
-          .CoWorkingPart .Pasicon{
-            text-align: right;
-            margin-right: 50px;
-        }
-
-        .AvePhotoText{
-            left: 65%;
-        }
-
-
-        .AveThePhotoText{
-            left: 70%;
-        }
-        
-  
-        .AveThePhotoText h1{
-          font-size: 18px;
-        }
-  
-        .AvePhotoText h1{
-          font-size: 18px;
-        }
-
-
-        .CoWorkingImage img{
-            height: 400px !important;
-            
-        }
+  .CoWorkingImage img {
+    height: 400px !important;
+  }
 }

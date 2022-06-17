@@ -19,23 +19,21 @@
   margin: 0 auto;
 }
 
-
-
 .connectWalletBtn {
   background: #75ba87;
-  color: #1A1A1A;
+  color: #1a1a1a;
   padding: 18px 24px;
   border: 1px solid #75ba87;
   transition: 0.5s;
   font-weight: 500;
   font-family: "Jost";
   font-size: 16px;
-  width: 155px;
+  width: 160px;
 }
 
 .connectWalletBtn:hover {
   color: #75ba87;
-  color: #1A1A1A;
+  color: #1a1a1a;
   border: 1px solid #75ba87;
 }
 
@@ -74,90 +72,71 @@
   border-bottom: 1px solid #9a9aa9 !important;
 }
 
-
-
-.navbar{
+.navbar {
   display: block !important;
 }
 
-
-
-.MobileLogoButton{
+.MobileLogoButton {
   display: none;
 }
 
-
-.SocailMedIcon{
+.SocailMedIcon {
   display: flex;
 }
 
-
-.SocailMedIcon li{
-   margin-left: 20px;
-   line-height: 60px;
+.SocailMedIcon li {
+  margin-left: 20px;
+  line-height: 60px;
 }
 
-
-.NavbarItam .Muneleft{
+.NavbarItam .Muneleft {
   margin-left: 75px !important;
 }
 
-
-
-
- /* Media Query for Mobile Devices */
+/* Media Query for Mobile Devices */
 @media (max-width: 600px) {
-  .MobileLogoButton{
+  .MobileLogoButton {
     display: block;
     display: flex;
-
   }
 
-
-
-  .MobileButton{
+  .MobileButton {
     margin-left: auto;
-    padding: 18 24px;
-    background: #75BA87;
+    padding: 18px 24px !important;
+    background: #75ba87;
     font-size: 16px;
     font-weight: 500;
     line-height: 20px;
-    font-family: "Jost";
+    font-family: 'Jost', sans-serif;
+    border: 0px !important;
+    color: #1A1A1A;
+    width: 155px;
   }
 
-
-  .NavbarItam .PCImage{
+  .NavbarItam .PCImage {
     display: none !important;
   }
 
- 
-
-
- 
-
-
-  .SocailMedIcon .SocailMedIcon{
+  .SocailMedIcon .SocailMedIcon {
     display: flex;
   }
 
-
-
-  .SocailMedIcon .SocailMedIcon li{
+  .SocailMedIcon .SocailMedIcon li {
     margin-right: 32px;
   }
 
-
-  .MobileNabButton{
-    margin-right: 20px;
+  .MobileNabButton {
+    margin-right: 30px;
   }
 
-
-
-  .NavbarItam .Muneleft{
+  .NavbarItam .Muneleft {
     margin-left: 0px !important;
   }
 
-  .NavbarItam ul .connectWalletBtn{
+  .NavbarItam ul .connectWalletBtn {
     display: none;
   }
+
+
+ 
 }

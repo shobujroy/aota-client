@@ -1,12 +1,8 @@
-import React from 'react';
-import Navbar from '../../Shared/Navbar/Navbar';
+import React from "react";
+import Navbar from "../../Shared/Navbar/Navbar";
 
 const TheAveHome = () => {
-    return (
-        <div>
-           
-        </div>
-    );
+  return <div></div>;
 };
 
 export default TheAveHome;
