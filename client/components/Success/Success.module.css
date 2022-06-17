@@ -1,0 +1,63 @@
+.Success{
+   background-image: linear-gradient(#0c1f11, #051509);
+   padding: 50px 0px 100px;
+}
+
+
+.SuccessMain{
+    border: 1px solid #91C89F;
+    width: 1180px;
+    height: 722px;
+    margin: auto;
+    text-align: center;
+    padding: 205px 0px;
+}
+
+
+
+
+.SuccessMain h2{
+    font-size: 48px;
+    font-weight: 500;
+    font-family: "Montserrat";
+    line-height: 60px;
+    color: #FFFFFF;
+    margin-top: 32px;
+    margin-bottom: 45px;
+    
+}
+
+
+
+.SuccessMain p{
+    font-size: 24px;
+    font-weight: 500;
+    font-family: "Montserrat";
+    line-height: 30px;
+    color: #FFFFFF;
+    margin-bottom: 32px;
+
+}
+
+
+
+.SuccessButton{
+    padding: 18px 174px;
+    background: #75BA87;
+    border: none !important;
+    outline: 0px;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: "Jost";
+    line-height: 20px;
+    text-align: center;
+             
+}
+
+
+
+.SuccessButton:hover{
+    background: inherit;
+    border: 2px solid #75BA87 !important;
+    color: #FFFFFF;
+}

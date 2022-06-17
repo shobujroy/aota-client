@@ -9,7 +9,7 @@ function BenefitsAndUtility() {
     {
       imgLeft: true,
       image: "/images/Service/image 12.png",
-      title: "POLYGON AIRDROPS",
+      title: "Ethereum Airdrops",
       p: "AOTA holders will receive free airdrops for as long as they hold. Our team actively exploring ways to expand the AOTAverse.",
     },
     {
