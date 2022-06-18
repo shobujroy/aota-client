@@ -1,7 +1,8 @@
 import Image from "next/image";
-import React from "react";
+import React, { useContext } from "react";
 import Styles from "./SliderCard.module.css";
 import { Carousel } from "react-bootstrap";
+import { MintContext } from "./../../../context/MintContext";
 const directionButtons = (direction) => {
   return (
     <span
@@ -13,43 +14,55 @@ const directionButtons = (direction) => {
   );
 };
 function SliderCard() {
+  const { isConnected, connectwallet } = useContext(MintContext);
   return (
     <div className={Styles.slider}>
-      <Carousel
-        nextLabel={""}
-        prevLabel={""}
-        nextIcon={directionButtons("")}
-        prevIcon={directionButtons("")}
-      >
+      <Carousel controls={false}>
         <Carousel.Item>
-          <div className={Styles.imagediv}>
-            {" "}
-            {/*
-             */}
-            <Image src={"/images/PC  1.png"} width={1046} height={678}></Image>
-            <h1 className="">We’re Aliens on the ave</h1>
+          <div className={Styles.carouselItem}>
+            <h1>
+              We’re Aliens on <br /> the ave
+            </h1>
             <p>we’re Brainging crreative co-working to the Metaverse.</p>
-          </div>
-        </Carousel.Item>
-
-        <Carousel.Item>
-          <div className={Styles.imagediv}>
-            {" "}
-            {/*
-             */}
-            <Image src={"/images/PC  1.png"} width={1046} height={478}></Image>
-            <h1 className="">We’re Aliens on the ave</h1>
-            <p>we’re Brainging crreative co-working to the Metaverse.</p>
+            <div className={Styles.carousleButton}>
+              {isConnected ? (
+                <Link href={"/public-sale"}>
+                  <button>MINT</button>
+                </Link>
+              ) : (
+                <button onClick={() => connectwallet()}>CONNECT WALLET</button>
+              )}
+            </div>
           </div>
         </Carousel.Item>
         <Carousel.Item>
-          <div className={Styles.imagediv}>
-            {" "}
-            {/*
-             */}
-            <Image src={"/images/PC  1.png"} width={1046} height={478}></Image>
-            <h1 className="">We’re Aliens on the ave</h1>
+          <div className={Styles.carousleItemTwo}>
+            <div className={Styles.carousleButtonTwo}>
+              {isConnected ? (
+                <Link href={"/public-sale"}>
+                  <button>MINT</button>
+                </Link>
+              ) : (
+                <button onClick={() => connectwallet()}>CONNECT WALLET</button>
+              )}
+            </div>
+          </div>
+        </Carousel.Item>
+        <Carousel.Item>
+          <div className={Styles.carouselItemThree}>
+            <h1>
+              We’re Aliens on <br /> the ave
+            </h1>
             <p>we’re Brainging crreative co-working to the Metaverse.</p>
+            <div className={Styles.carousleButton}>
+              {isConnected ? (
+                <Link href={"/public-sale"}>
+                  <button>MINT</button>
+                </Link>
+              ) : (
+                <button onClick={() => connectwallet()}>CONNECT WALLET</button>
+              )}
+            </div>
           </div>
         </Carousel.Item>
       </Carousel>
@@ -58,3 +71,25 @@ function SliderCard() {
 }
 
 export default SliderCard;
+{
+  /* <div className={Styles.textArea}>
+<h1>We’re Aliens on the ave</h1>
+<p>we’re Brainging crreative co-working to the Metaverse.</p>
+<div className={Styles.buttonArea}>
+  {isConnected ? (
+    <Link href={"/public-sale"}>
+      <button>MINT</button>
+    </Link>
+  ) : (
+    <button onClick={() => connectwallet()}>CONNECT WALLET</button>
+  )}
+</div>
+</div>
+<div className={Styles.imageOne}>
+<Image
+  src={"/images/banner.png"}
+  layout="fill"
+  objectFit="cover"
+></Image>
+</div> */
+}

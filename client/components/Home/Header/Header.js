@@ -18,23 +18,6 @@ function Header() {
           <Image src={bannerShap} width={610} height={710} />
         </div>
         <SliderCard />
-        <div className="row">
-          <div className={styles.hello}>
-            <div className={`${styles.headerContent}`}>
-              <div className="text-center">
-                {isConnected ? (
-                  <Link href={"/public-sale"}>
-                    <button>MINT</button>
-                  </Link>
-                ) : (
-                  <button onClick={() => connectwallet()}>
-                    CONNECT WALLET
-                  </button>
-                )}
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
   );
