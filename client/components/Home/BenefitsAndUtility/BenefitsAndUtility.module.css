@@ -25,11 +25,13 @@
   line-height: 40px;
   font-weight: 500;
   font-family: "Montserrat";
+  text-transform: uppercase;
+  margin-top: 05px;
 }
 
 .textCard h1 {
   color: #051509;
-  font-weight: 600;
+  font-weight: 500;
   font-family: "Montserrat";
   font-size: 56px;
   line-height: 70px;
