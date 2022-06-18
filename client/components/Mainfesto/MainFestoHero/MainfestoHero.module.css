@@ -6,7 +6,6 @@
   width: 1180px;
   height: 820px;
   margin: 0 auto;
-
   position: relative;
   display: flex;
   align-items: center;
@@ -16,6 +15,7 @@
   width: 573px;
   height: 620px;
   position: relative;
+  margin-top: -140px;
 }
 .mainFestoHeroRight {
   width: 575px;
@@ -78,5 +78,8 @@
   }
   .mainFestoHeroRight {
     margin-top: 30px;
+    height: 500px !important;
   }
+
+
 }

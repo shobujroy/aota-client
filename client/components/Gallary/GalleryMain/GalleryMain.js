@@ -18,6 +18,8 @@ const GalleryMain = () => {
     <div className={Styles.galleryMain}>
       <div className={Styles.filerArea}>
         <h1>Gallery</h1>
+{/* serc */}
+{/* src */}
 
         {info.map((data, i) => {
           return (

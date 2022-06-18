@@ -6,7 +6,7 @@ const MainfestoHero = () => {
     <div className={Styles.mainfestoHero}>
       <div className={Styles.maiFestoHeroLeft}>
         <Image
-          src={"/images/Group 1.png"}
+          src={"/images/Afrojack 1.png"}
           layout="fill"
           objectFit="cover"
         ></Image>

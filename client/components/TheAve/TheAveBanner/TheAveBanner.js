@@ -16,21 +16,21 @@ const TheAveBanner = () => {
 
             <div className="row">
               <div className={`col-md-6 col-sm-12 ${styles.AveBannerImage}`}>
-                <Image width={675} height={534} src={"/images/Frame 174.png"} />
+                <Image width={750} height={700} src={"/images/Frame 174.png"} />
               </div>
 
               <div className={`col-md-6 ${styles.AveBannerPhoto}`}>
                 <div className={`${styles.PhotoOne}`}>
                   <Image
-                    width={470}
-                    height={212}
+                    width={550}
+                    height={300}
                     src={"/images/Frame 175.png"}
                   />
                 </div>
                 <div className={styles.PhotoTwo}>
                   <Image
-                    width={470}
-                    height={284}
+                    width={550}
+                    height={300}
                     src={"/images/Frame 176.png"}
                   />
                 </div>
