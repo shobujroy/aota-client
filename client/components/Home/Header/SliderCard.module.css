@@ -3,6 +3,10 @@
   src: url('../../../public/fonts/Montserrat/Montserrat-Light.ttf');
 }
 
+@font-face {
+  font-family: FuturaBold;
+  src: url('../../../public/fonts/futura/Futura\ Bold\ font.ttf');
+}
 .carouselItem {
   width: 100vw;
   height: 100vh;
@@ -15,12 +19,14 @@
   font-family: Monessirate;
 }
 .carouselItem h1 {
+  font-family: FuturaBold;
+  text-transform: uppercase;
   font-weight: 600;
   font-size: 72px;
   color: #e3f1e7;
   position: absolute;
   left: 30px;
-  top: 80px;
+  top: 40px;
 }
 .carouselItem p {
   font-family: Monessirate;
@@ -66,6 +72,17 @@
   font-weight: 700;
   color: white;
 }
+.carousleItemTwo h1 {
+  font-family: FuturaBold;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 72px;
+  color: #e3f1e7;
+
+  left: 230px;
+  top: 40px;
+  text-align: center;
+}
 
 .carousleButtonTwo button {
   width: 100%;
@@ -85,14 +102,47 @@
 }
 
 .carouselItemThree h1 {
+  font-family: FuturaBold;
+  text-transform: uppercase;
   font-weight: 600;
   font-size: 72px;
   color: #e3f1e7;
   position: absolute;
   left: 30px;
-  top: 80px;
+  top: 40px;
 }
 .carouselItemThree p {
+  font-family: Monessirate;
+  font-weight: 400;
+  font-size: 18px;
+  position: absolute;
+  left: 30px;
+  top: 250px;
+}
+
+.carouselItemFour {
+  width: 100vw;
+  height: 100vh;
+
+  position: relative;
+  background: url('../../../public/images/Yoga_River.png');
+  background-size: 60vw 100vh;
+  background-position: right top;
+  background-repeat: no-repeat;
+  font-family: Monessirate;
+}
+
+.carouselItemFour h1 {
+  font-family: FuturaBold;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 72px;
+  color: #e3f1e7;
+  position: absolute;
+  left: 30px;
+  top: 40px;
+}
+.carouselItemFour p {
   font-family: Monessirate;
   font-weight: 400;
   font-size: 18px;
@@ -163,6 +213,36 @@
     top: 280px;
   }
   .carouselItemThree .carousleButton {
+    top: 380px !important;
+  }
+
+  .carouselItemFour {
+    width: 100vw;
+    height: 100vh;
+
+    position: relative;
+    background: url('../../../public/images/Yoga_River.png');
+    background-size: 100vw 80vh;
+    background-position: right top;
+    background-repeat: no-repeat;
+    font-family: Monessirate;
+  }
+  .carouselItemFour h1 {
+    font-weight: 600;
+    font-size: 54px;
+    color: #e3f1e7;
+
+    position: absolute;
+    left: 30px;
+    top: 120px;
+  }
+  .carouselItemFour h1 br {
+    display: none;
+  }
+  .carouselItemFour p {
+    top: 280px;
+  }
+  .carouselItemFour .carousleButton {
     top: 380px !important;
   }
   .carousleItemTwo {

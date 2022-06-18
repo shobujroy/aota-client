@@ -50,6 +50,7 @@
 .questions p {
   font-size: 24px;
   color: #ffffff;
+  transition: all 0.9s ease;
 }
 .answerPara {
   font-weight: 500;

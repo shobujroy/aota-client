@@ -24,13 +24,13 @@
   font-size: 32px;
   line-height: 40px;
   font-weight: 500;
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
 }
 
 .textCard h1 {
   color: #051509;
   font-weight: 600;
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   font-size: 56px;
   line-height: 70px;
   width: 470px;
@@ -39,7 +39,7 @@
 .textCard p {
   color: #484848;
   font-weight: 500;
-  font-family: "Jost";
+  font-family: 'Jost';
   font-size: 16px;
   line-height: 20px;
   width: 460px;
@@ -49,7 +49,7 @@
 .Donations h1 {
   color: #051509;
   font-weight: 600;
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   font-size: 56px;
   line-height: 100px;
   border-bottom: 1px solid #d1d1d1;
@@ -62,7 +62,7 @@
 .DonationsCard h4 {
   color: #051509;
   font-weight: 500;
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   font-size: 32px;
   line-height: 40px;
   width: 528px;
@@ -72,16 +72,14 @@
 .DonationsCard p {
   color: #767676;
   font-weight: 400;
-  font-family: "Jost";
+  font-family: 'Jost';
   font-size: 16px;
   line-height: 20px;
   width: 1080px;
 }
 
-
-.benefitsCard .ImageShado{
-  padding: 12px 12px;
-
+.benefitsCard .ImageShado {
+  padding: 5px 5px;
 }
 
 /* Media Query for Mobile Devices */

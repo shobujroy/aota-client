@@ -2,9 +2,10 @@ import Styles from "./GalleryMain.module.css";
 import Image from "next/image";
 import { data } from "../data";
 import { useState } from "react";
-import Switch from '@mui/material/Switch';
+import Switch from "@mui/material/Switch";
+import { Item } from "./GallaryImage";
 
-const label = { inputProps: { 'aria-label': 'Switch demo' } };
+const label = { inputProps: { "aria-label": "Switch demo" } };
 
 const GalleryMain = () => {
   const [info, setInfo] = useState(data);
@@ -21,22 +22,18 @@ const GalleryMain = () => {
   return (
     <div className={Styles.galleryMain}>
       <div className={Styles.filerArea}>
-        <h1>Gallery</h1>
+        <h1>Filter</h1>
 
+        {/* <div className={Styles.GoldenOption}>
+          <Image width={24} height={24} src={"/images/gallery/goldbean.png"} />
+          <h3>Golden Mode</h3>
+          <Switch {...label} />
+        </div> */}
 
-        <div className={Styles.GoldenOption}> 
-
-        <Image width={24} height={24} src={"/images/gallery/goldbean.png"} />
-        <h3>Golden Mode</h3>
-        <Switch {...label} />
-        </div>
-
-        <div className={Styles.SearcOption}> 
-
-        <Image width={24} height={24} src={"/images/gallery/Search.png"} />
-        <input placeholder="Sort by serial..." id="searchbyid" type="text" />
-
-        </div>
+        {/* <div className={Styles.SearcOption}>
+          <Image width={24} height={24} src={"/images/gallery/Search.png"} />
+          <input placeholder="Sort by serial..." id="searchbyid" type="text" />
+        </div> */}
 
         <div className={Styles.optionArea}>
           {info.map((data, i) => {
@@ -44,8 +41,8 @@ const GalleryMain = () => {
               <>
                 <div className={Styles.filterOption}>
                   <div className={Styles.ImageAndIcon}>
-                  <Image width={20} height={15} src={data.image}/>
-                  <p>{data.name}</p>              
+                    <Image width={20} height={15} src={data.image} />
+                    <p>{data.name}</p>
                   </div>
 
                   <div className={Styles.plusIcon} onClick={() => toggle(i)}>
@@ -82,86 +79,18 @@ const GalleryMain = () => {
       </div>
 
       <div className={Styles.galleryItem}>
-        <div className={Styles.galleryImages}>
-          <Image
-            src={"/images/Frame 187.png"}
-            layout="fill"
-            objectFit="cover"
-            alt=""
-          ></Image>
-        </div>
-
-        <div className={Styles.galleryImages}>
-          <Image
-            src={"/images/Frame 184-1.png"}
-            layout="fill"
-            objectFit="cover"
-            alt=""
-          ></Image>
-        </div>
-
-        <div className={Styles.galleryImages}>
-          <Image
-            src={"/images/Frame 184-2.png"}
-            layout="fill"
-            objectFit="cover"
-            alt=""
-          ></Image>
-        </div>
-
-        <div className={Styles.galleryImages}>
-          <Image
-            src={"/images/Frame 187.png"}
-            layout="fill"
-            objectFit="cover"
-            alt=""
-          ></Image>
-        </div>
-
-        <div className={Styles.galleryImages}>
-          <Image
-            src={"/images/Frame 184-1.png"}
-            layout="fill"
-            objectFit="cover"
-            alt=""
-          ></Image>
-        </div>
-
-        <div className={Styles.galleryImages}>
-          <Image
-            src={"/images/Frame 184-2.png"}
-            layout="fill"
-            objectFit="cover"
-            alt=""
-          ></Image>
-        </div>
-
-        <div className={Styles.galleryImages}>
-          <Image
-            src={"/images/Frame 187.png"}
-            layout="fill"
-            objectFit="cover"
-            alt=""
-          ></Image>
-        </div>
-
-        <div className={Styles.galleryImages}>
-          <Image
-            src={"/images/Frame 184-1.png"}
-            layout="fill"
-            objectFit="cover"
-            alt=""
-          ></Image>
-        </div>
-
-        <div className={Styles.galleryImages}>
-          <Image
-            src={"/images/Frame 184-2.png"}
-            layout="fill"
-            objectFit="cover"
-            alt=""
-          ></Image>
-        </div>
+        {Item.map((data, i) => {
+          return (
+            <div className={Styles.galleryImages}>
+              <Image
+                src={data.item}
+                layout="fill"
+                objectFit="cover"
+                alt=""
+              ></Image>
+            </div>
+          );
+        })}
       </div>
     </div>
   );
