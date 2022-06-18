@@ -2,6 +2,10 @@ import Styles from "./GalleryMain.module.css";
 import Image from "next/image";
 import { data } from "../data";
 import { useState } from "react";
+import Switch from '@mui/material/Switch';
+
+const label = { inputProps: { 'aria-label': 'Switch demo' } };
+
 const GalleryMain = () => {
   const [info, setInfo] = useState(data);
   const [modalOpen, setModalOpen] = useState(null);
@@ -18,12 +22,32 @@ const GalleryMain = () => {
     <div className={Styles.galleryMain}>
       <div className={Styles.filerArea}>
         <h1>Gallery</h1>
+
+
+        <div className={Styles.GoldenOption}> 
+
+        <Image width={24} height={24} src={"/images/gallery/goldbean.png"} />
+        <h3>Golden Mode</h3>
+        <Switch {...label} />
+        </div>
+
+        <div className={Styles.SearcOption}> 
+
+        <Image width={24} height={24} src={"/images/gallery/Search.png"} />
+        <input placeholder="Sort by serial..." id="searchbyid" type="text" />
+
+        </div>
+
         <div className={Styles.optionArea}>
           {info.map((data, i) => {
             return (
               <>
                 <div className={Styles.filterOption}>
-                  <p>{data.name}</p>
+                  <div className={Styles.ImageAndIcon}>
+                  <Image width={20} height={15} src={data.image}/>
+                  <p>{data.name}</p>              
+                  </div>
+
                   <div className={Styles.plusIcon} onClick={() => toggle(i)}>
                     {modalOpen === i ? (
                       <Image

@@ -1,7 +1,19 @@
+import BackgroundImg from "../../public/images/gallery/image 24 (1).png";
+import SkinImg from "../../public/images/gallery/image 24.png";
+import TatsImg from "../../public/images/gallery/image 25.png";
+import EyesImg from "../../public/images/gallery/image 26.png";
+import MouthImg from "../../public/images/gallery/image 27.png";
+import ClothesImg from "../../public/images/gallery/image 28.png";
+import EyewareImg from "../../public/images/gallery/image 30.png";
+import JewerlyImg from "../../public/images/gallery/image 31.png";
+import HeadwareImg from "../../public/images/gallery/image 32.png";
+
 export const data = [
   {
     id: 1,
     name: "Background",
+    imgLeft: true,
+    image: '/images/gallery/image 24.png',
     options: [
       "Grey",
       "Cream",
@@ -18,6 +30,7 @@ export const data = [
   {
     id: 2,
     name: "Skin",
+    image: '/images/gallery/image 24 (1).png',
     options: [
       "Grey",
       "Cream",
@@ -34,6 +47,7 @@ export const data = [
   {
     id: 3,
     name: "Tats",
+    image: '/images/gallery/image 25.png',
     options: [
       "Grey",
       "Cream",
@@ -50,6 +64,7 @@ export const data = [
   {
     id: 4,
     name: "Eyes",
+    image: '/images/gallery/image 26.png',
     options: [
       "Grey",
       "Cream",
@@ -61,11 +76,13 @@ export const data = [
       "Coral",
       "Yellow",
       "Light Grey",
+
     ],
   },
   {
     id: 5,
     name: "Mouth",
+    image: '/images/gallery/image 27.png',
     options: [
       "Grey",
       "Cream",
@@ -82,6 +99,7 @@ export const data = [
   {
     id: 6,
     name: "Clothes",
+    image: '/images/gallery/image 28.png',
     options: [
       "Grey",
       "Cream",
@@ -98,6 +116,7 @@ export const data = [
   {
     id: 7,
     name: "Eyeware",
+    image: '/images/gallery/image 30.png',
     options: [
       "Grey",
       "Cream",
@@ -114,7 +133,8 @@ export const data = [
   {
     id: 8,
     name: "Jewerly",
-    options: [
+    image: '/images/gallery/image 31.png',
+      options: [
       "Grey",
       "Cream",
       "Grey",
@@ -130,6 +150,7 @@ export const data = [
   {
     id: 9,
     name: "Headware",
+    image: '/images/gallery/image 32.png',
     options: [
       "Grey",
       "Cream",
