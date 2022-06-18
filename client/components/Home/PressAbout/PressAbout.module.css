@@ -28,3 +28,30 @@
   margin-bottom: 20px;
 
 }
+
+
+/* Media Query for Mobile Devices */
+@media (max-width: 637px) { 
+  .imageWrapper  img {
+    width: 220px !important;
+  }
+
+  .imageWrapper::after {
+    content: "";
+    position: absolute;
+    top: 130px;
+    left: 110px;
+    width: 220px !important;
+    height: 300px !important;
+    background-image: url(/_next/static/media/6.36962dbb.PNG);
+    -o-object-fit: cover;
+    object-fit: cover;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+  }
+
+
+}
+
