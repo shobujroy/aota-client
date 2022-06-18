@@ -1,17 +1,8 @@
 import React from "react";
 import Image from "next/image";
 import styles from "./RoadMap.module.css";
-import { Carousel } from "react-bootstrap";
-const directionButtons = (direction) => {
-  return (
-    <span
-      aria-hidden="true"
-      className={direction === "Next" ? "button-next" : "button-prev"}
-    >
-      {direction}
-    </span>
-  );
-};
+
+import { useState } from "react";
 
 const RoadMap = () => {
 
