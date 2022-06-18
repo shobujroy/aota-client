@@ -1,151 +1,143 @@
-.footer-area{
-    background: #333341;
+.footer-area {
+  background: #333341;
 }
 
-
-
 .touchIcon svg {
-    width: 16px;
-    color: #778beb;
+  width: 16px;
+  color: #778beb;
 }
 
 .touchIcon {
-    background-color: #fff;
-    padding: 8px 10px;
-    margin-right: 10px;
-    border-radius: 50%;
-    text-align: center;
+  background-color: #fff;
+  padding: 8px 10px;
+  margin-right: 10px;
+  border-radius: 50%;
+  text-align: center;
 }
 
 .contactDetails {
-    font-size: 15px;
-    margin: 10px 0px;
+  font-size: 15px;
+  margin: 10px 0px;
 }
 
 .socialIcon {
-    font-size: 30px;
+  font-size: 30px;
 }
 
 .socialIcon i {
-    border: 3px solid #fff;
-    border-radius: 50%;
-    margin: 5px;
-    color: #fff;
+  border: 3px solid #fff;
+  border-radius: 50%;
+  margin: 5px;
+  color: #fff;
 }
 
+/* Media Query for Mobile Devices */
 @media (max-width: 600px) {
-    .footerContectWrapper {
-        justify-content: center !important;
-    }
-    .footerContectWrapper div h6 {
-        text-align: center !important;
-    }
-    .footerContectWrapper div div {
-        justify-content: center !important;
-        margin-top: 15px;
-    }
+  .footerContectWrapper {
+    justify-content: center !important;
+  }
+  .footerContectWrapper div h6 {
+    text-align: center !important;
+  }
+  .footerContectWrapper div div {
+    justify-content: center !important;
+    margin-top: 15px;
+  }
 
-    .footer-area{
-        text-align: center;
-    }
+  .footer-area {
+    text-align: center;
+  }
 
-    .footerContectWrapper h5{
-        text-align: center;
-    }
+  .footerContectWrapper h5 {
+    text-align: center;
+  }
 
-    .FooterLastText p{
-        text-align: center;
-    }
+  .FooterLastText p {
+    text-align: center;
+  }
 
-    .FooterShapOne{
-        display: none;
-    }
+  .FooterShapOne {
+    display: none;
+  }
 
-    .FooterShapTwo{
-        right: -366px !important;
-        top: -100px !important;
-        z-index: 2 !important;
-    }
-
-
+  .FooterShapTwo {
+    right: -366px !important;
+    top: -100px !important;
+    z-index: 2 !important;
+  }
 }
 
 .emailInput {
-    background: #1D2D21;
-    border-radius: 0px !important;
-    border: none;
-    padding: 18px 16px;
-    font-size: 16px;
-    font-family: "Jost";
-    font-weight: 500;
-    margin-bottom: 20px;
-    margin-top: 20px;
-    outline: 0px;
-    width: 240px;
+  background: #1d2d21;
+  border-radius: 0px !important;
+  border: none;
+  padding: 18px 16px;
+  font-size: 16px;
+  font-family: "Jost";
+  font-weight: 500;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  outline: 0px;
+  width: 240px;
 }
 
 .btnSubmit {
-    border-radius: 0px;
-    background: #75BA87;
-    border: none;
-    padding: 14px 16px;
-    font-size: 16px;
-    height: 58px;
-    width: 130px;
-    margin-top: 20px;
+  border-radius: 0px;
+  background: #75ba87;
+  border: none;
+  padding: 14px 16px;
+  font-size: 16px;
+  height: 58px;
+  width: 130px;
+  margin-top: 20px;
 }
 
-
-.footerContectWrapper h5{
-    color: #FFFFFF;
-    font-size: 24px;
-    font-weight: 500;
-    font-family: "Montserrat";
-    line-height: 24px;
+.footerContectWrapper h5 {
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 500;
+  font-family: "Montserrat";
+  line-height: 24px;
 }
 
-
-.FooterLastText{
-    z-index: 2;
+.FooterLastText {
+  z-index: 2;
 }
 
-
-.FooterLastText h6{
-    font-size: 24px;
-    font-weight: 500;
-    line-height: 30px;
-    font-family: "Montserrat";
-    color: #FFFFFF;
-    margin: 0px;
+.FooterLastText h6 {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 30px;
+  font-family: "Montserrat";
+  color: #ffffff;
+  margin: 0px;
 }
 
-
-.FooterLastText p{
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 20px;
-    font-family: "Jost";
-    color: #FFFFFF;
-    margin-top: 32px;
+.FooterLastText p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  font-family: "Jost";
+  color: #ffffff;
+  margin-top: 32px;
 }
 
-
-.FooterMain{
-    position: relative;
-    overflow: hidden;
+.FooterMain {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(#0c1f11, #051509) !important;
 }
 
-
-.FooterShapOne{
-    position: absolute;
-    right: -336px;
-    top: -80px;
-    z-index: 2;
+.FooterShapOne {
+  position: absolute;
+  right: -336px;
+  top: -80px;
+  z-index: 2;
 }
 
-.FooterShapTwo{
-    position: absolute;
-    right: -366px;
-    top: -360px;
-    z-index: 2;
+.FooterShapTwo {
+  position: absolute;
+  right: -366px;
+  top: -360px;
+  z-index: 2;
 }

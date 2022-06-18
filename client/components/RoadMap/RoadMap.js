@@ -5,11 +5,15 @@ import styles from "./RoadMap.module.css";
 import { useState } from "react";
 
 const RoadMap = () => {
-  let [margin, setMargin] = useState(0);
-  const increase = () => {
-    setMargin += 300;
-  };
-  console.log(margin);
+
+  function scrollRoadMapPrev() {
+    document.getElementById("roadMap").scrollBy(-500, -0);
+  }
+
+  function scrollRoadMapNext() {
+    document.getElementById("roadMap").scrollBy(500, 0);
+  }
+
   return (
     <>
       <div className={styles.RoadMapMain}>
@@ -20,7 +24,6 @@ const RoadMap = () => {
                 <div className={styles.RoadMapText}>
                   <h1>ROADMAP TO THE MOON</h1>
                 </div>
-
                 <div className={styles.RoadMapMan}>
                   <Image
                     width={842}
@@ -28,7 +31,6 @@ const RoadMap = () => {
                     src={"/images/RoadMap1.png"}
                   />
                 </div>
-
                 <div className={styles.RoadMapShap}>
                   <Image
                     width={433}
@@ -41,8 +43,31 @@ const RoadMap = () => {
           </div>
         </div>
       </div>
+      <div className={styles.rideMapWrapper}>
+        <div id="roadMap" className={styles.RoadMapSlider}>
+          <img
+            src={'/images/roadmap.svg'}
+            width={'200%'}
+            height={'100%'}
+            className={styles.RoadMapSliderImg}
+          />
+        </div>
+        <div onClick={() => scrollRoadMapNext()} className={`${styles.sliderNextBtn}`}>
+          <Image
+            src={'/images/Group 3.png'}
+            width={50}
+            height={50}
+          />
+        </div>
+        <div onClick={() => scrollRoadMapPrev()} className={`${styles.sliderPreviousBtn}`}>
+          <Image
+            src={'/images/Group 4.png'}
+            width={50}
+            height={50}
+          />
+        </div>
+      </div>
     </>
   );
 };
-
 export default RoadMap;

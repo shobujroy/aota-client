@@ -9,12 +9,15 @@
 
 @media (max-width: 450px) {
   .headerContentWrapper {
-    background-image: url('../../../public/images/Banners/Mobile.png') !important;
+    background-image: url("../../../public/images/Banners/Mobile.png") !important;
     background-size: 100% 100%;
     background-position: center;
     background-repeat: no-repeat;
     height: 686px !important;
     padding-top: 2rem;
+  }
+  .BannerShap {
+    z-index: -1;
   }
 }
 
@@ -26,7 +29,7 @@
 
 @media (max-width: 900px) {
   .headerContentWrapper {
-    background-image: url('../../../public/images/Banners/ipad\ header.png');
+    background-image: url("../../../public/images/Banners/ipad\ header.png");
     background-size: 100% 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -49,7 +52,7 @@
     text-align: center !important;
     line-height: 97px;
     font-weight: 600;
-    font-family: 'Montserrat';
+    font-family: "Montserrat";
     color: #e3f1e7;
   }
 
@@ -75,7 +78,7 @@
   text-align: center !important;
   line-height: 97px;
   font-weight: 600;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   color: #e3f1e7;
   margin-bottom: 30px;
 }
@@ -85,17 +88,30 @@
   text-align: center !important;
   line-height: 23px;
   font-weight: 400;
-  font-family: 'Jost';
+  font-family: "Jost";
   color: #ffffff;
   margin-bottom: 30px;
 }
 
 .headerContent button {
   background: #75ba87;
-  font-family: 'Jost';
+  font-family: "Jost";
   font-weight: 500;
   font-size: 16px;
   color: #1a1a1a;
   padding: 18px 24px;
   border: none;
+}
+
+.BannerShap {
+  position: absolute;
+  top: 70px;
+  left: -290px;
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 600px) {
+  .BannerShap {
+    z-index: -1;
+  }
 }
