@@ -12,3 +12,19 @@
   background: #75ba87;
   border-radius: 35px;
 }
+@media screen and (max-width: 637px) {
+  .carousel-indicators [data-bs-target] {
+    width: 10px !important;
+    height: 10px !important;
+    border: 1px solid transparent !important;
+    border-radius: 10px;
+    margin-top: -370px;
+    background: #2c4031;
+  }
+  .carousel-indicators .active {
+    width: 38px !important;
+    height: 10px;
+    background: #75ba87;
+    border-radius: 35px;
+  }
+}
