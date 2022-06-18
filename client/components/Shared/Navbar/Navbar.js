@@ -123,15 +123,16 @@ function Navbar({ BorderBottom, wallet }) {
             ) : (
               <>
                 <Link className={"navbar-brand"} href="/">
+                <div className={Styles.LogoImage}>
                   <Image
                     src="/image 8.png"
-                    width={230}
-                    height={56}
-                    className={`img-fluid ${Styles.PCImage}`}
+                    layout="fill"
+                    objectFit="cover"                    
                   />
+                </div>
                 </Link>
 
-                <Link href={"/"}>
+                {/* <Link href={"/"}>
                   <li className={`nav-item ms-md-4 ${Styles.Muneleft}`}>
                     <a
                       className={"nav-link " + Styles.navLink}
@@ -141,10 +142,10 @@ function Navbar({ BorderBottom, wallet }) {
                       Home
                     </a>
                   </li>
-                </Link>
+                </Link> */}
 
                 <Link href={"/gallery"}>
-                  <li className="nav-item ms-md-4">
+                  <li className={`nav-item ms-md-4 ${Styles.Muneleft}`}>
                     <a
                       className={"nav-link " + Styles.navLink}
                       aria-current="page"
