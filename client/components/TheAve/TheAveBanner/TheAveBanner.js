@@ -1,5 +1,5 @@
 import React from "react";
-
+import Link from "next/link";
 import styles from "./TheAveBanner.module.css";
 import Image from "next/image";
 
@@ -65,7 +65,9 @@ const TheAveBanner = () => {
               <Image width={675} height={535} src={"/images/image 20.png"} />
 
               <div className={styles.AveTextOne}>
+                <Link href={"/creativehaven"}>
                 <h1>Creative Haven</h1>
+                </Link>
               </div>
             </div>
             <div className={`col-md-6 col-sm-12 ${styles.TheAvePhoto}`}>
@@ -73,14 +75,18 @@ const TheAveBanner = () => {
                 <Image width={472} height={212} src={"/images/image 21.png"} />
 
                 <div className={styles.AvePhotoText}>
+                <Link href={"/onlineclasses"}>
                   <h1>Yoga with River</h1>
+                  </Link>
                 </div>
               </div>
               <div className={styles.AveThePhoto}>
                 <Image width={472} height={284} src={"/images/image 22.png"} />
 
                 <div className={styles.AveThePhotoText}>
+                <Link href={"/coching"}>
                   <h1>Creators Challenge</h1>
+                  </Link>
                 </div>
               </div>
             </div>

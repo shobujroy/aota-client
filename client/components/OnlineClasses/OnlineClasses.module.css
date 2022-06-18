@@ -133,6 +133,7 @@
   line-height: 40px;
   color: #75ba87;
   margin-bottom: 20px;
+  text-decoration: none !important;
 }
 
 .Lifetime p {
@@ -150,7 +151,7 @@
   margin: 20px -130px;
   margin-left: -76px;
   cursor: pointer;
-  overflow-y: hidden;
+  
 }
 
 .YogaBack li {
@@ -170,17 +171,91 @@ li .Icon {
 /* Media Query for Mobile Devices */
 @media (max-width: 637px) {
   
-
+  
 
   .OnlineClassesBanner {
-    background: url(../../public/images/OnlineClassesBanner.png);
+    background: url(../../public/images/image\ 21\ \(1\).png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 400px;
-    width: 600px;
+    width: 100%;
    
   }
+
+
+
+  .OnlineClassesText h2 {
+    position: absolute;
+    top: 250px;
+    left: 0px;
+    font-size: 56px;
+    font-weight: 600;
+    font-family: "Montserrat";
+    line-height: 70px;
+    color: #ffffff;
+  }
+
+
+
+  .OnlineMembership h1 {
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 60px;
+    font-family: "Montserrat";
+    color: #ffffff;
+    text-align: center;
+  }
+  
+  .OnlineMembership h4 {
+    font-size: 18px;
+    font-family: "Montserrat";
+    font-weight: 500;
+    line-height: 40px;
+    color: #75ba87;
+    margin-bottom: 60px;
+    margin-top: 20px;
+    text-decoration: underline;
+  }
+
+
+  
+.Lifetime h3 {
+  font-size: 20px;
+  font-family: "Montserrat";
+  font-weight: 500;
+  line-height: 40px;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.Lifetime h4 {
+  font-size: 18px;
+  font-family: "Montserrat";
+  font-weight: 500;
+  line-height: 40px;
+  color: #75ba87;
+  margin-bottom: 20px;
+}
+
+.Lifetime p {
+  font-size: 16px;
+  font-family: "Jost";
+  font-weight: 400;
+  line-height: 20px;
+  color: #e3f1e7;
+  margin-bottom: 20px;
+}
+
+
+.Lifetime {
+  text-align: center;
+  width: 350px;
+  margin-bottom: 0px !important;
+  margin-left: 0px !important; 
+  margin-left: -40px !important;
+}
+
   .CreativeHavenImage .HavenImage {
     position: absolute;
     top: 0px;
@@ -197,9 +272,18 @@ li .Icon {
 
   .OnlineMembership .Membership {
     background: #484848;
-    padding: 50px 50px;
+    padding: 0px 0px;
     display: block !important;
     justify-content: space-between;
+  }
+
+  .GoLink {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px -130px;
+    margin-left: 36px !important;
+    cursor: pointer;
+    
   }
 }
 
