@@ -62,10 +62,15 @@
     width: 382px;
     border-bottom: 1px solid #75ba87;
   }
+  .questions p {
+    font-size: 14px;
+    color: #ffffff;
+    transition: all 0.9s ease;
+  }
 }
 @media screen and (max-width: 1040px) {
   .qaSection {
-    width: 450px;
+    width: 350px;
     border-bottom: 1px solid #75ba87;
   }
 }

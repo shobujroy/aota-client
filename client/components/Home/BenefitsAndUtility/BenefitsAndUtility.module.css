@@ -24,9 +24,7 @@
   font-size: 32px;
   line-height: 40px;
   font-weight: 500;
-  font-family: "Montserrat";
-  text-transform: uppercase;
-  margin-top: 05px;
+  font-family: 'Montserrat';
 }
 
 .textCard h1 {
@@ -81,7 +79,7 @@
 }
 
 .benefitsCard .ImageShado {
-  padding: 5px 5px;
+  padding: 12px 12px;
 }
 
 /* Media Query for Mobile Devices */

@@ -186,6 +186,7 @@
   .carousleButton {
     top: 530px;
   }
+
   .carouselItemThree {
     width: 100vw;
     height: 100vh;
@@ -253,22 +254,60 @@
     justify-content: center;
     align-items: end;
     background: url('../../../public/images/Merch.png');
-    background-size: 100% 90%;
+    background-size: 200% 90%;
     background-position: right top;
     background-repeat: no-repeat;
     font-family: Monessirate;
   }
 }
-@media screen and (max-width: 1040px) {
+@media screen and (min-width: 767px) and (max-width: 1040px) {
   .slider {
     width: 100%;
   }
-  .imagediv h1 {
-    font-size: 42px;
-    margin-top: 117px;
-    text-align: center !important;
+  .carouselItem {
+    width: 100vw;
+    height: 70vh;
+
+    position: relative;
+    background: url('../../../public/images/banner.png');
+    background-size: 80vw 100%;
+    background-position: right top;
+    background-repeat: no-repeat;
+    font-family: Monessirate;
   }
-  .imagediv p {
-    text-align: center;
+  .carousleItemTwo {
+    width: 100vw;
+    height: 70vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    background: url('../../../public/images/Merch.png');
+    background-size: 100% 100%;
+    background-position: right top;
+    background-repeat: no-repeat;
+    font-family: Monessirate;
+  }
+  .carouselItemThree {
+    width: 100vw;
+    height: 70vh;
+
+    position: relative;
+    background: url('../../../public/images/creativehaven.png');
+    background-size: 60vw 100%;
+    background-position: right top;
+    background-repeat: no-repeat;
+    font-family: Monessirate;
+  }
+  .carouselItemFour {
+    width: 100vw;
+    height: 70vh;
+
+    position: relative;
+    background: url('../../../public/images/Yoga_River.png');
+    background-size: 60vw 100%;
+    background-position: right top;
+    background-repeat: no-repeat;
+    font-family: Monessirate;
   }
 }
