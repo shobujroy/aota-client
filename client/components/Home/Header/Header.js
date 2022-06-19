@@ -7,15 +7,13 @@ import { MintContext } from "./../../../context/MintContext";
 import Link from "next/link";
 import Image from "next/image";
 
-
-
 function Header() {
   const { isConnected, connectwallet } = useContext(MintContext);
   return (
     <div className="bg-primary">
       <div className="fn-montserrat">
         <div className={styles.BannerShap}>
-          <Image  src={"/images/Bannershap.png"} width={610} height={710} />
+          <Image src={"/images/Bannershap.png"} width={610} height={710} />
         </div>
         <SliderCard />
       </div>
