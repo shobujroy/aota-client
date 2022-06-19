@@ -161,11 +161,58 @@ li .Icon {
 
   .Membership {
     background: #484848;
-    padding: 50px 50px;
+    padding: 0px 0px;
     display: block !important;
     justify-content: space-between;
   }
+
+
+  .Lifetime h3 {
+    font-size:  18px;
+    font-family: "Montserrat";
+    font-weight: 500;
+    line-height: 40px;
+    color: #ffffff;
+    margin-bottom: 10px;
+  }
+  
+  .Lifetime h4 {
+    font-size: 18px;
+    font-family: "Montserrat";
+    font-weight: 500;
+    line-height: 40px;
+    color: #75ba87;
+    margin-bottom: 10px;
+  }
+
+  
+  .Lifetime p {
+    font-size: 16px;
+    font-family: "Jost";
+    font-weight: 400;
+    line-height: 20px;
+    color: #e3f1e7;
+    margin-bottom: 20px;
+    width: 240px;
+    margin: auto;
+    margin-bottom: 60px;
+  }
+
+
+  .CoWorkingTeam h1 {
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 60px;
+    font-family: "Montserrat";
+    color: #ffffff;
+    text-align: center;
+  }
+  
+  
 }
+
+
+
 
 @media (min-width: 640px) and (max-width: 1040px) {
 

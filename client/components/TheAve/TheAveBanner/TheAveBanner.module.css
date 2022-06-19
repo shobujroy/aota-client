@@ -85,6 +85,7 @@
   font-weight: 500;
   font-family: "Montserrat";
   line-height: 60px;
+  cursor: pointer;
 }
 
 .AvePhotoText {
@@ -94,6 +95,7 @@
   color: #ffffff;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+  cursor: pointer;
 }
 
 .AvePhotoText h1 {
@@ -111,6 +113,7 @@
   color: #ffffff;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+  cursor: pointer;
 }
 
 .AveThePhotoText h1 {
@@ -119,6 +122,7 @@
   font-family: "Montserrat";
   line-height: 60px;
   width: 310px;
+  
 }
 
 .TheAvePhoto .AvePhoto {
