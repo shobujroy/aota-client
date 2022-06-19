@@ -13,7 +13,7 @@ const OnlineClasses = () => {
         <div className="container pb-4 pt-4">
           <div className="row">
             <div className={`col-md-12  col-sm-12 ${styles.OnlineClassesText}`}>
-              <h2>Creative Haven</h2>
+              <h2>Online Classes</h2>
             </div>
           </div>
         </div>
@@ -126,6 +126,8 @@ const OnlineClasses = () => {
           </Link>
         </div>
       </div>
+
+      
     </>
   );
 };

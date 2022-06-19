@@ -159,12 +159,32 @@ li .Icon {
     margin-top: 100px;
   }
 
+
+  .CreativeHavenText h2{
+    z-index: 3;
+    font-size: 32px;
+    top: 230px !important;
+  }
+
+
+  .Lifetime {
+    text-align: center;
+    width: 300px;
+  }
+
+
   .Membership {
     background: #484848;
-    padding: 0px 0px;
+    padding: 0px 0px ;
     display: block !important;
     justify-content: space-between;
   }
+
+
+  .CreativeHaven {
+    height: 370px !important;
+  }
+  
 
 
   .Lifetime h3 {
