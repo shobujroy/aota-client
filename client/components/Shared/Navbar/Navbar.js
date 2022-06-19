@@ -254,7 +254,7 @@ function Navbar({ BorderBottom, wallet }) {
                   href="http://opensea.io/Aliensontheave/"
                   target="_blank"
                 >
-                  <Image src="/images/opensea.svg" width={20} height={20} />
+                  <Image src="/images/opensea 1.svg" width={20} height={20} />
                 </a>
               </li>
             </div>

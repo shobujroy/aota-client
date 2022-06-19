@@ -185,6 +185,7 @@
   align-items: center;
   justify-content: end;
 }
+
 .leftArrow {
   position: relative;
   width: 48px;
@@ -196,7 +197,7 @@
 .rightArrow {
   position: relative;
   width: 200px;
-
+  transform: rotate(180deg);
   height: 48px;
   cursor: pointer;
   /* margin-top: -500px;

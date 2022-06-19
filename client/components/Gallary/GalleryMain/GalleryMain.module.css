@@ -12,7 +12,6 @@
   justify-content: space-between;
 }
 .filerArea {
-  width: 30vw;
   height: 980px;
   background: linear-gradient(180deg, #081a0c 0%, #06170a 100%);
   display: flex;
@@ -26,7 +25,6 @@
   font-size: 48px;
   color: #ffffff;
   margin-top: 15px;
-  margin-bottom: 40px;
 }
 .plusIcon {
   height: 30px;
@@ -52,7 +50,7 @@
   width: 65vw;
   position: absolute;
   right: 20px;
-  height: 800px;
+  height: 780px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -81,8 +79,8 @@
   overflow-y: scroll;
 }
 .galleryImages {
-  width: 190px;
-  height: 180px;
+  width: 23%;
+  height: 30%;
   position: relative;
   margin-left: 10px;
   margin-top: 0;
@@ -90,7 +88,7 @@
   margin-right: 0;
 }
 .resetButton {
-  width: 325px;
+  width: 90%;
   height: 56px;
   background: #75ba87;
   margin-top: 20px;

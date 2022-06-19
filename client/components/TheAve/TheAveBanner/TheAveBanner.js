@@ -66,26 +66,38 @@ const TheAveBanner = () => {
 
               <div className={styles.AveTextOne}>
                 <Link href={"/creativehaven"}>
-                <h1>Creative Haven</h1>
+                  <h1>Creative Haven</h1>
                 </Link>
               </div>
             </div>
             <div className={`col-md-6 col-sm-12 ${styles.TheAvePhoto}`}>
               <div className={styles.AvePhoto}>
-                <Image width={472} height={212} src={"/images/image 21.png"} />
+                <div className={styles.yoga}>
+                  <Image
+                    layout="fill"
+                    objectFit="cover"
+                    src={"/images/image 21.png"}
+                  />
+                </div>
 
                 <div className={styles.AvePhotoText}>
-                <Link href={"/onlineclasses"}>
-                  <h1>Yoga with River</h1>
+                  <Link href={"/onlineclasses"}>
+                    <h1>Yoga with River</h1>
                   </Link>
                 </div>
               </div>
               <div className={styles.AveThePhoto}>
-                <Image width={472} height={284} src={"/images/image 22.png"} />
+                <div className={styles.yoga}>
+                  <Image
+                    layout="fill"
+                    objectFit="cover"
+                    src={"/images/image 22.png"}
+                  />
+                </div>
 
                 <div className={styles.AveThePhotoText}>
-                <Link href={"/coching"}>
-                  <h1>Creators Challenge</h1>
+                  <Link href={"/coching"}>
+                    <h1>Creators Challenge</h1>
                   </Link>
                 </div>
               </div>
@@ -102,7 +114,8 @@ const TheAveBanner = () => {
           <div className={styles.row}>
             <div className={`${styles.CoWorkingPart}`}>
               <div className={styles.BackIcon}>
-                <Image width={65} height={70} src={"/images/“.png"} />
+                <Image layout="fill"
+          objectFit="cover" src={"/images/“.png"} />
               </div>
 
               <p>
@@ -112,7 +125,8 @@ const TheAveBanner = () => {
               </p>
 
               <div className={styles.Pasicon}>
-                <Image width={65} height={70} src={"/images/”.png"} />
+                <Image layout="fill"
+          objectFit="cover" src={"/images/”.png"} />
               </div>
             </div>
 
