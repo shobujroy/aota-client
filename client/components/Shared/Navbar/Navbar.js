@@ -6,6 +6,7 @@ import Web3 from "web3";
 import WalletConnectProvider from "@walletconnect/web3-provider";
 import Web3Modal from "web3modal";
 import { useState, useEffect } from "react";
+import { useRouter } from "next/router";
 
 import AOTA from "../../../contracts/AOTA.json";
 import { MintContext } from "./../../../context/MintContext";
@@ -15,7 +16,7 @@ function Navbar({ BorderBottom, wallet }) {
     useContext(MintContext);
 
   useEffect(() => {}, [isConnected, hasMetamask]);
-
+  const router = useRouter();
   return (
     <nav
       style={{ display: "block", padding: "20px 20px" }}
@@ -123,13 +124,9 @@ function Navbar({ BorderBottom, wallet }) {
             ) : (
               <>
                 <Link className={"navbar-brand"} href="/">
-                <div className={Styles.LogoImage}>
-                  <Image
-                    src="/image 8.png"
-                    layout="fill"
-                    objectFit="cover"                    
-                  />
-                </div>
+                  <div className={Styles.LogoImage}>
+                    <Image src="/image 8.png" layout="fill" objectFit="cover" />
+                  </div>
                 </Link>
 
                 {/* <Link href={"/"}>
@@ -147,7 +144,11 @@ function Navbar({ BorderBottom, wallet }) {
                 <Link href={"/gallery"}>
                   <li className={`nav-item ms-md-4 ${Styles.Muneleft}`}>
                     <a
-                      className={"nav-link " + Styles.navLink}
+                      className={
+                        router.pathname == "/gallery"
+                          ? Styles.navLinkActive
+                          : "nav-link " + Styles.navLink
+                      }
                       aria-current="page"
                       href="#"
                     >
@@ -158,7 +159,11 @@ function Navbar({ BorderBottom, wallet }) {
                 <Link href={"/roadMap"}>
                   <li className="nav-item ms-md-4">
                     <a
-                      className={"nav-link " + Styles.navLink}
+                      className={
+                        router.pathname == "/roadMap"
+                          ? Styles.navLinkActive
+                          : "nav-link " + Styles.navLink
+                      }
                       aria-current="page"
                       href="#"
                     >
@@ -169,7 +174,11 @@ function Navbar({ BorderBottom, wallet }) {
                 <Link href={"/mainfesto"}>
                   <li className="nav-item ms-md-4">
                     <a
-                      className={"nav-link " + Styles.navLink}
+                      className={
+                        router.pathname == "/mainfesto"
+                          ? Styles.navLinkActive
+                          : "nav-link " + Styles.navLink
+                      }
                       aria-current="page"
                       href="#"
                     >
@@ -180,7 +189,11 @@ function Navbar({ BorderBottom, wallet }) {
                 <Link href={"/partners"}>
                   <li className="nav-item ms-md-4">
                     <a
-                      className={"nav-link " + Styles.navLink}
+                      className={
+                        router.pathname == "/partners"
+                          ? Styles.navLinkActive
+                          : "nav-link " + Styles.navLink
+                      }
                       aria-current="page"
                       href="#"
                     >
@@ -207,27 +220,41 @@ function Navbar({ BorderBottom, wallet }) {
                 <a
                   className={"nav-link " + Styles.socialIcon}
                   aria-current="page"
-                  href="#"
+                  href="http://instagram.com/aliensontheave"
+                  target="_blank"
                 >
-                  <i className="fab fa-twitter mt-2"></i>
+                  <Image src="/images/instagram.svg" width={20} height={20} />
                 </a>
               </li>
               <li className="nav-item">
                 <a
                   className={"nav-link " + Styles.socialIcon}
                   aria-current="page"
-                  href="#"
+                  href="https://discord.gg/xpsqJdKkZd"
+                  target="_blank"
                 >
-                  <i className="fab fa-instagram mt-2"></i>
+                  <Image src="/images/Discord.svg" width={20} height={20} />
+                </a>
+              </li>
+
+              <li className="nav-item">
+                <a
+                  className={"nav-link " + Styles.socialIcon}
+                  aria-current="page"
+                  href="http://twitter.com/AOTAnft/"
+                  target="_blank"
+                >
+                  <Image src="/images/twitter.svg" width={20} height={20} />
                 </a>
               </li>
               <li className="nav-item">
                 <a
                   className={"nav-link " + Styles.socialIcon}
                   aria-current="page"
-                  href="#"
+                  href="http://opensea.io/Aliensontheave/"
+                  target="_blank"
                 >
-                  <i className="fab fa-discord mt-2"></i>
+                  <Image src="/images/opensea.svg" width={20} height={20} />
                 </a>
               </li>
             </div>

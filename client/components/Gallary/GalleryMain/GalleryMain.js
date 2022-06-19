@@ -78,19 +78,38 @@ const GalleryMain = () => {
         <button className={Styles.resetButton}>Reset</button>
       </div>
 
-      <div className={Styles.galleryItem}>
-        {Item.map((data, i) => {
-          return (
-            <div className={Styles.galleryImages}>
-              <Image
-                src={data.item}
-                layout="fill"
-                objectFit="cover"
-                alt=""
-              ></Image>
-            </div>
-          );
-        })}
+      <div className={Styles.gallaryRight}>
+        <div className={Styles.gallaryBanner}>
+          <div className={Styles.bannerImage}>
+            <Image
+              src={"/images/Frame 185.png"}
+              layout="fill"
+              objectFit="cover"
+            ></Image>
+          </div>
+          <div className={Styles.bannerText}>
+            <h1>FIND YOUR AOTA</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
+              amet diam pharetra dui, venenatis adipiscing diam.
+            </p>
+            <button>Pair Now</button>
+          </div>
+        </div>
+        <div className={Styles.galleryItem}>
+          {Item.map((data, i) => {
+            return (
+              <div className={Styles.galleryImages}>
+                <Image
+                  src={data.item}
+                  layout="fill"
+                  objectFit="cover"
+                  alt=""
+                ></Image>
+              </div>
+            );
+          })}
+        </div>
       </div>
     </div>
   );
