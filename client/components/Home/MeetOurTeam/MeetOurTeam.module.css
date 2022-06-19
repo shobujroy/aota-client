@@ -41,7 +41,7 @@
   font-size: 32px;
   line-height: 40px;
   font-weight: 500;
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
 }
 
 .MemberCardText h6 {
@@ -49,7 +49,7 @@
   font-size: 18px;
   line-height: 23px;
   font-weight: 400;
-  font-family: "Jost";
+  font-family: 'Jost';
 }
 
 .MemberCardText p {
@@ -57,7 +57,7 @@
   font-size: 16px !important;
   line-height: 20px !important;
   font-weight: 400 !important;
-  font-family: "Jost" !important;
+  font-family: 'Jost' !important;
   width: 440px !important;
   margin: auto !important;
   text-align: center !important;
@@ -80,7 +80,7 @@
   text-align: right;
   font-size: 56px;
   line-height: 70px;
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   font-weight: 600;
   color: #ffffff;
 }
@@ -89,7 +89,7 @@
   text-align: right;
   font-size: 16px;
   line-height: 20px;
-  font-family: "Jost";
+  font-family: 'Jost';
   font-weight: 500;
   color: #fafafa;
   width: 460px;
@@ -148,7 +148,7 @@
   text-align: center;
   margin: auto;
   font-size: 14px;
-  font-family: "Jost";
+  font-family: 'Jost';
   font-weight: 400;
   line-height: 17px;
   width: 100px;
@@ -157,7 +157,7 @@
 .CarouselItam h3 {
   font-size: 16px;
   font-weight: 400;
-  font-family: "Jost";
+  font-family: 'Jost';
   color: #ffffff;
   line-height: 23px;
   text-align: center;
@@ -171,7 +171,74 @@
   background: inherit !important;
   border: none !important;
 }
+.RoadMapSlider {
+  width: 550px;
 
+  margin-left: 100px;
+  height: 500px;
+}
+.meetOurTeamSliderButtonArea {
+  height: 70px;
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.leftArrow {
+  position: relative;
+  width: 48px;
+  height: 48px;
+  cursor: pointer;
+  margin-top: -500px;
+  margin-right: 30px;
+}
+.rightArrow {
+  position: relative;
+  width: 200px;
+  transform: rotate(180deg);
+  height: 48px;
+  cursor: pointer;
+  /* margin-top: -500px;
+  margin-left: 400px; */
+  margin-top: -500px;
+  margin-top: -500px;
+  margin-left: 780px;
+  padding: 20px;
+}
+.carousleItemElement {
+  width: 100%;
+  height: 430px;
+
+  display: flex;
+  flex-wrap: wrap;
+}
+.teamImage {
+  position: relative;
+  width: 120px;
+  height: 120px;
+}
+.teamMemberContainer {
+  width: 120px;
+  margin-left: 10px;
+  height: 200px;
+  cursor: pointer;
+}
+.teamMemberContainer h3 {
+  font-family: 'Jost';
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 16px;
+  margin-top: 20px;
+  text-align: center;
+}
+.teamMemberContainer h4 {
+  font-size: 12px;
+  color: #a3a3a3;
+  text-align: center;
+  font-family: 'Jost';
+}
 /* Media Query for Mobile Devices */
 @media (max-width: 600px) {
   .MeetMember h1 {
@@ -190,5 +257,197 @@
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 10px;
     overflow: hidden;
+  }
+
+  .MemberProfil {
+    background: #1a2a1e;
+    width: 347px !important;
+    height: 735px;
+    text-align: center;
+    position: relative;
+  }
+  .MemberCardOne {
+    background: #3e4b41;
+    width: 324px !important ;
+    height: 338px !important;
+    text-align: center;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+  }
+  .MemberCardTwo {
+    background: #4a574d;
+    width: 302px !important;
+    height: 308px;
+    text-align: center;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+  }
+  .MemberCardText h2 {
+    margin-top: -100px;
+  }
+  .MemberCardText p {
+    color: #fafafa !important;
+    font-size: 16px !important;
+    line-height: 20px !important;
+    font-weight: 400 !important;
+    font-family: 'Jost' !important;
+    width: 296px !important;
+    margin: auto !important;
+    text-align: center !important;
+    margin-bottom: 51px !important;
+  }
+
+  .MeetMember h1 {
+    font-size: 39px;
+    line-height: 70px;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    color: #ffffff;
+    text-align: center !important
+    ;
+  }
+
+  .meetMemberPara {
+    text-align: center !important;
+    font-size: 16px;
+    line-height: 20px;
+    font-family: 'Jost';
+    font-weight: 500;
+    color: #fafafa;
+    width: 300px !important;
+    margin-left: auto;
+    margin-top: 20px;
+    margin-bottom: 50px;
+
+    margin-left: 34px !important;
+  }
+
+  .RoadMapSlider {
+    width: 100%;
+    margin-left: 0px;
+    height: 460px !important;
+    overflow: hidden;
+    padding-left: 40px;
+  }
+
+  .leftArrow {
+    position: relative;
+    width: 48px;
+    height: 48px;
+    cursor: pointer;
+    margin-top: 0px;
+    margin-right: 0px;
+    padding: 0px;
+  }
+  .rightArrow {
+    position: relative;
+    width: 48px;
+
+    height: 48px;
+    cursor: pointer;
+    /* margin-top: -500px;
+    margin-left: 400px; */
+    margin-top: 0px;
+
+    margin-left: -90px;
+    padding: 20px;
+  }
+}
+
+@media screen and (min-width: 767px) and (max-width: 1040px) {
+  .MemberProfil {
+    background: #1a2a1e;
+    width: 377px;
+    height: 646px !important;
+    text-align: center;
+    position: relative;
+  }
+
+  .MemberCardOne {
+    background: #3e4b41;
+    width: 357px;
+    height: 330px !important;
+    text-align: center;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+  }
+
+  .MemberCardTwo {
+    background: #4a574d;
+    width: 334px;
+    height: 362px;
+    text-align: center;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+  }
+
+  .MemberCardText {
+    padding-top: 383px;
+    color: aliceblue;
+  }
+  .MemberCardText p {
+    color: #fafafa !important;
+    font-size: 16px !important;
+    line-height: 20px !important;
+    font-weight: 400 !important;
+    font-family: 'Jost' !important;
+    width: 374px !important;
+    /* margin: auto !important; */
+    text-align: center !important;
+    margin-right: 78px !important;
+  }
+
+  .MeetMember h1 {
+    text-align: right;
+    font-size: 35px;
+    line-height: 70px;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    color: #ffffff;
+  }
+  .meetMemberPara {
+    text-align: center !important;
+    font-size: 16px;
+    line-height: 20px;
+    font-family: 'Jost';
+    font-weight: 500;
+    color: #fafafa;
+    width: 300px !important;
+    margin-left: 110px !important;
+    margin-top: 20px;
+    margin-bottom: 50px;
+  }
+  .RoadMapSlider {
+    width: 340px;
+    margin-left: 135px;
+    height: 460px !important;
+    overflow: hidden;
+  }
+
+  .leftArrow {
+    position: relative;
+    width: 48px;
+    height: 48px;
+    cursor: pointer;
+    margin-top: -520px;
+    margin-right: 60px;
+    padding: 20px;
+  }
+  .rightArrow {
+    position: relative;
+    width: 200px;
+
+    height: 48px;
+    cursor: pointer;
+    /* margin-top: -500px;
+    margin-left: 400px; */
+    margin-top: -520px;
+
+    margin-left: 370px;
+    padding: 20px;
   }
 }

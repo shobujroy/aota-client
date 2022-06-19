@@ -34,13 +34,53 @@ function Footer() {
 
                 <div className="d-flex flex-row ">
                   <span style={{ color: "#FAFAFA" }} className="fs-4 me-3">
-                    <i className="fa-brands fa-twitter"></i>
+                    <a
+                      className={"nav-link " + styles.socialIcon}
+                      aria-current="page"
+                      href="http://instagram.com/aliensontheave"
+                      target="_blank"
+                    >
+                      <Image
+                        src="/images/instagram.svg"
+                        width={30}
+                        height={30}
+                      />
+                    </a>
                   </span>
                   <span style={{ color: "#FAFAFA" }} className="fs-4 me-3">
-                    <i className="fa-brands fa-instagram"></i>
+                    <a
+                      className={"nav-link " + styles.socialIcon}
+                      aria-current="page"
+                      href="https://discord.gg/xpsqJdKkZd"
+                      target="_blank"
+                    >
+                      <Image src="/images/Discord.svg" width={30} height={30} />
+                    </a>
                   </span>
                   <span style={{ color: "#FAFAFA" }} className="fs-4 me-3">
-                    <i className="fa-brands fa-reddit"></i>
+                    <a
+                      className={"nav-link " + styles.socialIcon}
+                      aria-current="page"
+                      href="http://twitter.com/AOTAnft/"
+                      target="_blank"
+                    >
+                      <Image src="/images/twitter.svg" width={30} height={30} />
+                    </a>
+                  </span>
+
+                  <span style={{ color: "#FAFAFA" }} className="fs-4 me-3">
+                    <a
+                      className={"nav-link " + styles.socialIcon}
+                      aria-current="page"
+                      href="http://opensea.io/Aliensontheave/"
+                      target="_blank"
+                    >
+                      <Image
+                        src="/images/opensea 1.svg"
+                        width={30}
+                        height={30}
+                      />
+                    </a>
                   </span>
                 </div>
               </div>

@@ -1,7 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 import { Button, Carousel } from "react-bootstrap";
-
+import { Team } from "./TeamData";
 import styles from "./MeetOurTeam.module.css";
 
 const directionButtons = (direction) => {
@@ -16,14 +16,19 @@ const directionButtons = (direction) => {
 };
 
 const MeetOurTeam = () => {
+  const [name, setName] = useState("");
+  const [image, setImage] = useState("");
+  const [title, setTitle] = useState("");
+
+  let changeInfo = () => {};
+  console.log(image.length);
   function ControlledCarousel() {
-    const [index, setIndex] = useState(0);
+    const [number, setNumber] = useState(0);
 
     const handleSelect = (selectedIndex, e) => {
       setIndex(selectedIndex);
     };
   }
-
   return (
     <div className={styles.MeetOurTeam}>
       <div className="container pt-0 pb-5">
@@ -34,7 +39,7 @@ const MeetOurTeam = () => {
                 <div className={styles.MemberCardTwo}>
                   <Image
                     style={{ marginTop: "10px" }}
-                    src={"/images/TeamMet/image 18.png"}
+                    src={image.length < 2 ? "/images/Frame 184.png" : image}
                     alt="Picture of the author"
                     width={400}
                     height={405}
@@ -43,8 +48,8 @@ const MeetOurTeam = () => {
               </div>
 
               <div className={styles.MemberCardText}>
-                <h2>Leslie Alexander</h2>
-                <h6>Founder/Artist</h6>
+                <h2>{name}</h2>
+                <h6>{title}</h6>
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nec
                   porttitor urna, arcu congue neque enim quis auctor ut. Non,
@@ -87,295 +92,151 @@ const MeetOurTeam = () => {
 
           <div className={`col-md-7 mt-0 ${styles.MeetMember}`}>
             <h1>Meet Our Team</h1>
-            <p>
+            <p className={styles.meetMemberPara}>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nec
               porttitor urna, arcu congue neque enim quis auctor ut. Non, duis
               malesuada blandit suspendisse posuere aliquam elementum. Hac
               curabitur mi sit habitant.
             </p>
-            <div className={styles.RoadMapSlider}>
-              <div className="container pt-0 pb-0">
-                <div className="row">
-                  <div
-                    className={`col-md-12 col-sm-12 ${styles.MeetMemberCarousel}`}
-                  >
-                    <Carousel
-                      indicators={false}
-                      nextIcon={directionButtons("")}
-                      prevIcon={directionButtons("")}
-                    >
-                      <div className={styles.SlideIcon}>
-                        <Button prevLabel={directionButtons()}>
-                          {" "}
-                          <Image
-                            width={48}
-                            height={48}
-                            src={"/images/Group 4.png"}
-                          />{" "}
-                        </Button>
+            <div
+              className={styles.RoadMapSlider}
+              prevLabel={directionButtons()}
+            >
+              <div className={styles.meetOurTeamSliderButtonArea}></div>
+              <div className={styles.carouselAra}>
+                <Carousel
+                  wrap={false}
+                  interval={null}
+                  indicators={false}
+                  prevIcon={
+                    <div className={styles.rightArrow}>
+                      <Image
+                        src={"/images/Group 3.png"}
+                        layout="fill"
+                        objectFit="cover"
+                      ></Image>
+                    </div>
+                  }
+                  nextIcon={
+                    <div className={styles.leftArrow}>
+                      <Image
+                        src={"/images/Group 3.png"}
+                        layout="fill"
+                        objectFit="cover"
+                      ></Image>
+                    </div>
+                  }
+                >
+                  <Carousel.Item>
+                    <div className={styles.carousleItemElement}>
+                      {Team.slice(0, 8).map((item, i) => {
+                        return (
+                          <div
+                            className={styles.teamMemberContainer}
+                            onClick={() => {
+                              setName(item.name);
+                              setImage(item.image);
+                              setTitle(item.title);
+                            }}
+                          >
+                            <div className={styles.teamImage}>
+                              <Image
+                                src={item.image}
+                                layout="fill"
+                                objectFit="cover"
+                              ></Image>
+                            </div>
+                            <h3>{item.name}</h3>
+                            <h4>{item.title}</h4>
+                          </div>
+                        );
+                      })}
+                    </div>
+                  </Carousel.Item>
 
-                        <Button nextLabel={directionButtons()}>
-                          {" "}
-                          <Image
-                            width={48}
-                            height={48}
-                            src={"/images/Group 3.png"}
-                          />{" "}
-                        </Button>
-                      </div>
+                  <Carousel.Item>
+                    <div className={styles.carousleItemElement}>
+                      {Team.slice(0, 8).map((item, i) => {
+                        return (
+                          <div
+                            className={styles.teamMemberContainer}
+                            onClick={() => {
+                              setName(item.name);
+                              setImage(item.image);
+                              setTitle(item.title);
+                            }}
+                          >
+                            <div className={styles.teamImage}>
+                              <Image
+                                src={item.image}
+                                layout="fill"
+                                objectFit="cover"
+                              ></Image>
+                            </div>
+                            <h3>{item.name}</h3>
+                            <h4>{item.title}</h4>
+                          </div>
+                        );
+                      })}
+                    </div>
+                  </Carousel.Item>
 
-                      <Carousel.Item>
-                        <div className={styles.MeetMemberCarouselItam}>
-                          <div className={styles.CarouselItam}>
-                            <Image
-                              width={180}
-                              height={200}
-                              src={"/images/image 14.png"}
-                            />
-                            <h3>Jacob Jones</h3>
-                            <p>Illustrator</p>
+                  <Carousel.Item>
+                    <div className={styles.carousleItemElement}>
+                      {Team.slice(0, 8).map((item, i) => {
+                        return (
+                          <div
+                            className={styles.teamMemberContainer}
+                            onClick={() => {
+                              setName(item.name);
+                              setImage(item.image);
+                              setTitle(item.title);
+                            }}
+                          >
+                            <div className={styles.teamImage}>
+                              <Image
+                                src={item.image}
+                                layout="fill"
+                                objectFit="cover"
+                              ></Image>
+                            </div>
+                            <h3>{item.name}</h3>
+                            <h4>{item.title}</h4>
                           </div>
+                        );
+                      })}
+                    </div>
+                  </Carousel.Item>
+                  {/* <Carousel.Item>
+                    <img
+                      className="d-block w-100"
+                      src="holder.js/800x400?text=Second slide&bg=282c34"
+                      alt="Second slide"
+                    />
 
-                          <div className={styles.CarouselItam}>
-                            <Image
-                              width={180}
-                              height={200}
-                              src={"/images/image 15.png"}
-                            />
-                            <h3>Marvin McKinney</h3>
-                            <p>Events</p>
-                          </div>
+                    <Carousel.Caption>
+                      <h3>Second slide label</h3>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      </p>
+                    </Carousel.Caption>
+                  </Carousel.Item>
+                  <Carousel.Item>
+                    <img
+                      className="d-block w-100"
+                      src="holder.js/800x400?text=Third slide&bg=20232a"
+                      alt="Third slide"
+                    />
 
-                          <div className={styles.CarouselItam}>
-                            <Image
-                              width={180}
-                              height={200}
-                              src={"/images/image 16.png"}
-                            />
-                            <h3>Leslie Alexander</h3>
-                            <p>Founder/Artist</p>
-                          </div>
-
-                          <div className={styles.CarouselItam}>
-                            <Image
-                              width={180}
-                              height={200}
-                              src={"/images/image 16.png"}
-                            />
-                            <h3>Leslie Alexander</h3>
-                            <p>Founder/Artist</p>
-                          </div>
-
-                          <div className={styles.CarouselItam}>
-                            <Image
-                              width={180}
-                              height={200}
-                              src={"/images/image 14.png"}
-                            />
-                            <h3>Jacob Jones</h3>
-                            <p>Illustrator</p>
-                          </div>
-
-                          <div className={styles.CarouselItam}>
-                            <Image
-                              width={180}
-                              height={200}
-                              src={"/images/image 15.png"}
-                            />
-                            <h3>Marvin McKinney</h3>
-                            <p>Events</p>
-                          </div>
-
-                          <div className={styles.CarouselItam}>
-                            <Image
-                              width={180}
-                              height={200}
-                              src={"/images/image 16.png"}
-                            />
-                            <h3>Leslie Alexander</h3>
-                            <p>Founder/Artist</p>
-                          </div>
-
-                          <div className={styles.CarouselItam}>
-                            <Image
-                              width={180}
-                              height={200}
-                              src={"/images/image 16.png"}
-                            />
-                            <h3>Leslie Alexander</h3>
-                            <p>Founder/Artist</p>
-                          </div>
-                        </div>
-                      </Carousel.Item>
-
-                      <Carousel.Item>
-                        <div className={styles.MeetMemberCarouselItam}>
-                          <div className={styles.CarouselItam}>
-                            <Image
-                              width={180}
-                              height={200}
-                              src={"/images/image 14.png"}
-                            />
-                            <h3>Jacob Jones</h3>
-                            <p>Illustrator</p>
-                          </div>
-                          <div className={styles.CarouselItam}>
-                            <Image
-                              width={180}
-                              height={200}
-                              src={"/images/image 15.png"}
-                            />
-                            <h3>Marvin McKinney</h3>
-                            <p>Events</p>
-                          </div>
-                          <div className={styles.CarouselItam}>
-                            <Image
-                              width={180}
-                              height={200}
-                              src={"/images/image 16.png"}
-                            />
-                            <h3>Leslie Alexander</h3>
-                            <p>Founder/Artist</p>
-                          </div>
-
-                          <div className={styles.CarouselItam}>
-                            <Image
-                              width={180}
-                              height={200}
-                              src={"/images/image 16.png"}
-                            />
-                            <h3>Leslie Alexander</h3>
-                            <p>Founder/Artist</p>
-                          </div>
-
-                          <div className={styles.CarouselItam}>
-                            <Image
-                              width={180}
-                              height={200}
-                              src={"/images/image 14.png"}
-                            />
-                            <h3>Jacob Jones</h3>
-                            <p>Illustrator</p>
-                          </div>
-
-                          <div className={styles.CarouselItam}>
-                            <Image
-                              width={180}
-                              height={200}
-                              src={"/images/image 15.png"}
-                            />
-                            <h3>Marvin McKinney</h3>
-                            <p>Events</p>
-                          </div>
-
-                          <div className={styles.CarouselItam}>
-                            <Image
-                              width={180}
-                              height={200}
-                              src={"/images/image 16.png"}
-                            />
-                            <h3>Leslie Alexander</h3>
-                            <p>Founder/Artist</p>
-                          </div>
-
-                          <div className={styles.CarouselItam}>
-                            <Image
-                              width={180}
-                              height={200}
-                              src={"/images/image 16.png"}
-                            />
-                            <h3>Leslie Alexander</h3>
-                            <p>Founder/Artist</p>
-                          </div>
-                        </div>
-                      </Carousel.Item>
-
-                      <Carousel.Item>
-                        <div className={styles.MeetMemberCarouselItam}>
-                          <div className={styles.CarouselItam}>
-                            <Image
-                              width={180}
-                              height={200}
-                              src={"/images/image 14.png"}
-                            />
-                            <h3>Jacob Jones</h3>
-                            <p>Illustrator</p>
-                          </div>
-
-                          <div className={styles.CarouselItam}>
-                            <Image
-                              width={180}
-                              height={200}
-                              src={"/images/image 15.png"}
-                            />
-                            <h3>Marvin McKinney</h3>
-                            <p>Events</p>
-                          </div>
-
-                          <div className={styles.CarouselItam}>
-                            <Image
-                              width={180}
-                              height={200}
-                              src={"/images/image 16.png"}
-                            />
-                            <h3>Leslie Alexander</h3>
-                            <p>Founder/Artist</p>
-                          </div>
-
-                          <div className={styles.CarouselItam}>
-                            <Image
-                              width={180}
-                              height={200}
-                              src={"/images/image 16.png"}
-                            />
-                            <h3>Leslie Alexander</h3>
-                            <p>Founder/Artist</p>
-                          </div>
-
-                          <div className={styles.CarouselItam}>
-                            <Image
-                              width={180}
-                              height={200}
-                              src={"/images/image 14.png"}
-                            />
-                            <h3>Jacob Jones</h3>
-                            <p>Illustrator</p>
-                          </div>
-
-                          <div className={styles.CarouselItam}>
-                            <Image
-                              width={180}
-                              height={200}
-                              src={"/images/image 15.png"}
-                            />
-                            <h3>Marvin McKinney</h3>
-                            <p>Events</p>
-                          </div>
-
-                          <div className={styles.CarouselItam}>
-                            <Image
-                              width={180}
-                              height={200}
-                              src={"/images/image 16.png"}
-                            />
-                            <h3>Leslie Alexander</h3>
-                            <p>Founder/Artist</p>
-                          </div>
-
-                          <div className={styles.CarouselItam}>
-                            <Image
-                              width={180}
-                              height={200}
-                              src={"/images/image 16.png"}
-                            />
-                            <h3>Leslie Alexander</h3>
-                            <p>Founder/Artist</p>
-                          </div>
-                        </div>
-                      </Carousel.Item>
-                    </Carousel>
-                  </div>
-                </div>
+                    <Carousel.Caption>
+                      <h3>Third slide label</h3>
+                      <p>
+                        Praesent commodo cursus magna, vel scelerisque nisl
+                        consectetur.
+                      </p>
+                    </Carousel.Caption>
+                  </Carousel.Item> */}
+                </Carousel>
               </div>
             </div>
           </div>

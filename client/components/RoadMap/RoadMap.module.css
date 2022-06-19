@@ -69,7 +69,7 @@
   font-size: 56px;
   font-weight: 600;
   line-height: 70px;
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   color: #fafafa;
   width: 490px;
   position: absolute;
@@ -102,14 +102,14 @@
   font-size: 32px;
   font-weight: 500;
   line-height: 40px;
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   margin-bottom: 20px;
 }
 
 .CarouselItam ul li {
   font-size: 18px;
   font-weight: 400;
-  font-family: "Jost";
+  font-family: 'Jost';
   line-height: 23px;
   color: #c8e3cf;
   margin-bottom: 16px;
@@ -121,7 +121,7 @@
     font-size: 32px;
     font-weight: 600;
     line-height: 70px;
-    font-family: "Montserrat";
+    font-family: 'Montserrat';
     color: #fafafa;
     width: 316px;
     position: absolute;
@@ -140,6 +140,9 @@
     top: 800px;
     left: 60px;
   }
+  .RoadMapMain {
+    height: 700px;
+  }
 }
 /* Media Query for low resolution  Tablets, Ipads */
 @media (min-width: 640px) and (max-width: 1040px) {
@@ -147,7 +150,7 @@
     font-size: 48px;
     font-weight: 600;
     line-height: 70px;
-    font-family: "Montserrat";
+    font-family: 'Montserrat';
     color: #fafafa;
     width: 453px;
     position: absolute;

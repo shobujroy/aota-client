@@ -33,7 +33,7 @@ function BenefitsAndUtility() {
   ];
   return (
     <div id="about">
-      <div className={`container pt-5 pb-5`}>
+      <div className={`container pt-0 pb-0`}>
         <div className={`row ${styles.AboutService}`}>
           <div className="col-md-7 mt-5">
             {benefitsAndUtilities?.map((benefit, index) => {

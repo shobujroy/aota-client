@@ -2,6 +2,7 @@ import Image from "next/image";
 import React, { useContext } from "react";
 import Styles from "./SliderCard.module.css";
 import { Carousel } from "react-bootstrap";
+import Link from "next/link";
 import { MintContext } from "./../../../context/MintContext";
 const directionButtons = (direction) => {
   return (
@@ -50,6 +51,24 @@ function SliderCard() {
         </Carousel.Item>
         <Carousel.Item>
           <div className={Styles.carouselItemThree}>
+            <h1>
+              We’re Aliens on <br /> the ave
+            </h1>
+            <p>we’re Brainging crreative co-working to the Metaverse.</p>
+            <div className={Styles.carousleButton}>
+              {isConnected ? (
+                <Link href={"/public-sale"}>
+                  <button>MINT</button>
+                </Link>
+              ) : (
+                <button onClick={() => connectwallet()}>CONNECT WALLET</button>
+              )}
+            </div>
+          </div>
+        </Carousel.Item>
+
+        <Carousel.Item>
+          <div className={Styles.carouselItemFour}>
             <h1>
               We’re Aliens on <br /> the ave
             </h1>

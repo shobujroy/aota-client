@@ -1,26 +1,30 @@
+@font-face {
+  font-family: Monessirate;
+  src: url('../../../public/fonts/Montserrat/Montserrat-Regular.ttf');
+}
 .galleryMain {
-  width: 1180px;
-  height: 1104px;
+  width: 100%;
+  height: 1124px;
   margin: 40px auto;
   margin-bottom: 0;
-
+  position: relative;
   display: flex;
   justify-content: space-between;
 }
 .filerArea {
-  width: 373px;
   height: 980px;
   background: linear-gradient(180deg, #081a0c 0%, #06170a 100%);
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: absolute;
+  left: 20px;
 }
 .filerArea h1 {
   font-weight: 500;
   font-size: 48px;
   color: #ffffff;
   margin-top: 15px;
-  margin-bottom: 40px;
 }
 .plusIcon {
   height: 30px;
@@ -43,11 +47,15 @@
   color: white;
 }
 .galleryItem {
-  width: 777px;
-
-  height: 900px;
+  width: 65vw;
+  position: absolute;
+  right: 20px;
+  height: 780px;
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
+  overflow-y: scroll;
+  top: 320px;
 }
 .options {
   width: 100%;
@@ -71,14 +79,16 @@
   overflow-y: scroll;
 }
 .galleryImages {
-  width: 246px;
-  height: 280px;
+  width: 23%;
+  height: 30%;
   position: relative;
   margin-left: 10px;
   margin-top: 0;
+  margin-bottom: 20px;
+  margin-right: 0;
 }
 .resetButton {
-  width: 325px;
+  width: 90%;
   height: 56px;
   background: #75ba87;
   margin-top: 20px;
@@ -88,15 +98,11 @@
   color: #1a1a1a;
 }
 
-
-
-.filterOption .ImageAndIcon{
+.filterOption .ImageAndIcon {
   display: flex;
   height: 30px;
   margin: 5px 0px;
 }
-
-
 
 .SearcOption {
   width: 90%;
@@ -106,10 +112,7 @@
   margin-top: 20px;
 }
 
-
-
-
-.SearcOption input{
+.SearcOption input {
   outline: none;
   background: inherit;
   color: #ffffff;
@@ -117,11 +120,8 @@
   margin-left: 10px !important;
 }
 
-
-
-
 .GoldenOption h3 {
-  background: linear-gradient(-45deg,#ffd580,#f0a925,#ffe56f,#f6b547);
+  background: linear-gradient(-45deg, #ffd580, #f0a925, #ffe56f, #f6b547);
   background-size: 200% 200%;
   -webkit-animation: GalleryMain_gradient__udfMF 2s linear infinite;
   animation: GalleryMain_gradient__udfMF 2s linear infinite;
@@ -143,41 +143,87 @@
   cursor: pointer;
 }
 
-
-
-.SearcOption img{
+.SearcOption img {
   width: 24px !important;
 }
 
-
-
-.ImageAndIcon img{
+.ImageAndIcon img {
   width: 24px !important;
   height: 68px !important;
   margin-top: 5px !important;
-  padding: 5px 3px !important;  
+  padding: 5px 3px !important;
 }
 
-
-.ImageAndIcon p{
+.ImageAndIcon p {
   margin-left: 10px;
 }
 
+.gallaryBanner {
+  width: 65vw;
+  position: absolute;
+  right: 20px;
+  height: 293px;
+  top: 0;
+  border-radius: 30px;
+  overflow: hidden;
+  display: flex;
+  background: #1d2e21;
+}
+.bannerImage {
+  width: 302px;
+  height: 344px;
+  position: relative;
+}
+.bannerText {
+  width: 600px;
+}
+.bannerText h1 {
+  font-family: Monessirate;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 60px;
+  color: #dbdadf;
+  margin-left: 20px;
+}
+.bannerText p {
+  font-family: 'Jost';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  color: #dbdadf;
+  margin: 25px;
+}
+.bannerText button {
+  width: 113px;
+  height: 56px;
+  background: #75ba87;
+  border: none;
+  margin-left: 25px;
+  font-family: 'Jost';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  color: #1a1a1a;
+}
 
 @media screen and (max-width: 1040px) {
+  .resetButton {
+    width: 252px;
+  }
   .galleryMain {
     width: 834px;
     height: 1104px;
     margin: 40px auto;
     margin-bottom: 0;
-
+    position: relative;
     display: flex;
     justify-content: space-between;
   }
   .galleryItem {
-    width: 454px;
-
-    height: 400px;
+    width: 542px;
+    position: absolute;
+    top: 305px;
+    height: 654px;
     display: flex;
     flex-wrap: wrap;
   }
@@ -186,35 +232,89 @@
     height: 119px;
     position: relative;
     margin-left: 10px;
-    margin-top: 0;
+    margin-top: 10px;
+  }
+  .bannerText h1 {
+    font-size: 43px;
   }
 }
 @media screen and (max-width: 637px) {
   .galleryMain {
     width: 100%;
-    height: 100% !important;
+    height: 3400px !important;
     margin: 40px auto;
     margin-bottom: 0;
     align-items: center;
     display: flex;
     flex-direction: column;
     overflow: hidden;
+    position: relative;
+    align-items: center;
+    left: 0;
+  }
+  .filerArea {
+    width: 100vw;
+    height: 980px;
+    background: linear-gradient(180deg, #081a0c 0%, #06170a 100%);
+    display: flex;
+    flex-direction: column !important;
+    align-items: center;
+    position: absolute;
+
+    top: 10px;
+    left: 0;
   }
   .galleryItem {
     width: 100%;
-    margin-top: 20px;
-    height: 3800px;
-    overflow: hidden;
+    position: absolute;
+    right: 20px;
+    height: 1760px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    overflow: hidden;
+    top: 1400px;
+    left: 5px;
   }
   .galleryImages {
+    width: 94%;
     height: 400px;
-    width: 340.716064453125px;
     position: relative;
-    margin-left: 10px;
-    margin-top: 0;
+  }
+  .gallaryBanner {
+    width: 90vw;
+    position: absolute;
+    right: 20px;
+    height: 250px;
+    top: 1000px;
+    border-radius: 30px;
+    overflow: hidden;
+    display: flex;
+    background: #1d2e21;
+  }
+  .bannerImage {
+    width: 40vw;
+    height: 100%;
+    position: relative;
+  }
+  .bannerText {
+    width: 60vw;
+  }
+  .bannerText h1 {
+    font-family: Monessirate;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    color: #dbdadf;
+    margin-left: 20px;
     margin-top: 10px;
+  }
+  .bannerText p {
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    color: #dbdadf;
+    margin: 20px;
   }
 }
