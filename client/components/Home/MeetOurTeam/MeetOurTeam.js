@@ -16,20 +16,19 @@ const directionButtons = (direction) => {
 };
 
 const MeetOurTeam = () => {
-  function ControlledCarousel() {
-    const [index, setIndex] = useState(0);
-
-    const handleSelect = (selectedIndex, e) => {
-      setIndex(selectedIndex);
-    };
-  }
-
   const [name, setName] = useState("");
   const [image, setImage] = useState("");
   const [title, setTitle] = useState("");
 
   let changeInfo = () => {};
   console.log(image.length);
+  function ControlledCarousel() {
+    const [number, setNumber] = useState(0);
+
+    const handleSelect = (selectedIndex, e) => {
+      setIndex(selectedIndex);
+    };
+  }
   return (
     <div className={styles.MeetOurTeam}>
       <div className="container pt-0 pb-5">
@@ -106,11 +105,13 @@ const MeetOurTeam = () => {
               <div className={styles.meetOurTeamSliderButtonArea}></div>
               <div className={styles.carouselAra}>
                 <Carousel
+                  wrap={false}
+                  interval={null}
                   indicators={false}
                   prevIcon={
                     <div className={styles.rightArrow}>
                       <Image
-                        src={"/images/Group 4.png"}
+                        src={"/images/Group 3.png"}
                         layout="fill"
                         objectFit="cover"
                       ></Image>

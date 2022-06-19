@@ -21,7 +21,7 @@ const GalleryMain = () => {
 
   return (
     <div className={Styles.galleryMain}>
-      <div className={Styles.filerArea}>
+      <div className={`col-md-3 ${Styles.filerArea}`}>
         <h1>Filter</h1>
 
         {/* <div className={Styles.GoldenOption}>
@@ -78,7 +78,7 @@ const GalleryMain = () => {
         <button className={Styles.resetButton}>Reset</button>
       </div>
 
-      <div className={Styles.gallaryRight}>
+      <div className={`col-md-8 ${Styles.gallaryRight}`}>
         <div className={Styles.gallaryBanner}>
           <div className={Styles.bannerImage}>
             <Image

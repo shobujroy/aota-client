@@ -46,11 +46,15 @@
   font-weight: 700;
   color: white;
 }
+.carouselAra button {
+}
 .carousleButton button {
   width: 100%;
   height: 100%;
   background: transparent;
   border: none;
+  font-weight: 900 !important;
+  font-family: FuturaBold !important;
 }
 .carousleItemTwo {
   width: 100vw;
@@ -71,6 +75,8 @@
   background: #75ba87;
   font-weight: 700;
   color: white;
+  font-weight: 900 !important;
+  font-family: FuturaBold !important;
 }
 .carousleItemTwo h1 {
   font-family: FuturaBold;
