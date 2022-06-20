@@ -70,7 +70,7 @@ const TheAveBanner = () => {
                 </Link>
               </div>
             </div>
-            <div className={`col-md-6 col-sm-12 ${styles.TheAvePhoto}`}>
+            <div className={`col-md-6 col-sm-6 ${styles.TheAvePhoto}`}>
               <div className={styles.AvePhoto}>
                 <div className={styles.yoga}>
                   <Image
