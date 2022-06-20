@@ -165,18 +165,9 @@ li .Icon {
   margin-right: 10px;
 }
 
-
-
-.GoLink .YogaBack .Lifetime h5{
+.GoLink .YogaBack .Lifetime h5 {
   color: #ffffff;
 }
-
-
-
-
-
-
-
 
 @media (min-width: 640px) and (max-width: 1040px) {
   .CreativeHavenText h2 {
@@ -196,7 +187,6 @@ li .Icon {
     grid-template-columns: repeat(1, 1fr);
     text-align: center;
     margin-top: 100px;
-    
   }
 
   .Membership {
@@ -206,7 +196,6 @@ li .Icon {
     justify-content: space-between;
     margin-left: 40px;
   }
-
 
   .Lifetime {
     text-align: center;
@@ -219,17 +208,6 @@ li .Icon {
     margin-left: -30px !important;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
 
 /* Media Query for Mobile Devices */
 @media (max-width: 637px) {
@@ -252,9 +230,7 @@ li .Icon {
     font-size: 48px !important;
   }
 
-
-
-  .CoWorkingText p{
+  .CoWorkingText p {
     margin-bottom: 0px !important;
     width: 306px;
   }
@@ -317,7 +293,6 @@ li .Icon {
     color: #e3f1e7;
     margin-bottom: 20px;
     width: 200px !important;
-    
   }
 
   .Lifetime {
