@@ -114,8 +114,7 @@ const TheAveBanner = () => {
           <div className={styles.row}>
             <div className={`${styles.CoWorkingPart}`}>
               <div className={styles.BackIcon}>
-                <Image layout="fill"
-          objectFit="cover" src={"/images/“.png"} />
+                <Image layout="fill" objectFit="cover" src={"/images/“.png"} />
               </div>
 
               <p>
@@ -125,11 +124,8 @@ const TheAveBanner = () => {
               </p>
 
               <div className={styles.Pasicon}>
-                <Image layout="fill"
-          objectFit="cover" src={"/images/”.png"} />
+                <Image layout="fill" objectFit="cover" src={"/images/”.png"} />
               </div>
-
-              
             </div>
 
             <div className={`${styles.CoWorkingImage}`}>

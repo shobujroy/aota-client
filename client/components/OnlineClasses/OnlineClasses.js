@@ -107,7 +107,6 @@ const OnlineClasses = () => {
         </div>
 
         <div className={styles.GoLink}>
-          
           <Link href={"/creativehaven"}>
             <div className={styles.YogaBack}>
               <li className={styles.Lifetime}>
@@ -127,8 +126,6 @@ const OnlineClasses = () => {
           </Link>
         </div>
       </div>
-
-      
     </>
   );
 };
