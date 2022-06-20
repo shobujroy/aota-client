@@ -137,7 +137,7 @@
 
 .CoWorking {
   background: #17271b;
-  width: 1180px;
+  width: 1300px;
   margin-left: 100px;
   margin-top: 50px;
 }
@@ -147,6 +147,7 @@
   text-align: center;
   padding: 26px;
   margin-left: 32px;
+  width: 70%;
 }
 .TheAveText p {
   width: 350px;
@@ -196,6 +197,17 @@
 
 /* Media Query for Mobile Devices */
 @media (max-width: 637px) {
+  .AveTextOne{
+    left: 50%;
+    top: 35%;
+  }
+
+
+  .AveTextOne h1{
+    font-size: 24px;
+  }
+  
+  
   .AveTextOne p {
     text-align: center;
     margin-top: -145px;
@@ -223,21 +235,33 @@
     width: 100%;
   }
 
+
+
+ 
   .TheAvePhoto {
     width: 100%;
     display: flex;
   }
 
   .AveThePhotoText h1 {
-    font-size: 18px;
+    font-size: 10px !important;
+  }
+
+
+
+  .AvePhotoText h1{
+    font-size: 15px !important;
   }
 
   .AvePhotoText {
-    left: 70%;
+    left: 60%;
+    top: 25%;
   }
 
   .AveThePhotoText {
-    left: 80%;
+    left: 109%;
+    top: 21%;
+
   }
 
   .AveThePhoto img {
@@ -268,19 +292,19 @@
   }
 
   .CoWorkingPart p {
-    font-size: 32px;
+    font-size: 18px;
     font-weight: 500;
     line-height: 40px;
     font-family: 'Montserrat';
     color: #ffffff;
-    width: 420px;
+    width: 370px;
     margin: 0px;
     padding: 20px 0px;
   }
 
   .CoWorkingPart .Pasicon {
     text-align: left;
-    margin-left: 350px;
+    margin-left: 300px;
   }
   .TheAvePhoto .AvePhoto {
     height: 250px;
@@ -293,6 +317,11 @@
     width: 150px;
     margin-left: -30px;
     position: relative;
+  }
+
+
+  .CoWorking{
+    margin: 0 !important;
   }
 }
 

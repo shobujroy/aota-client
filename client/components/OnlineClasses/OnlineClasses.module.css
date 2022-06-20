@@ -171,6 +171,16 @@ li .Icon {
  
 }
 
+
+
+.GoLink .YogaBack .Lifetime h5{
+  color: #ffffff;
+  padding: 0px 10px;
+}
+
+
+
+
 /* Media Query for Mobile Devices */
 @media (max-width: 637px) {
   
@@ -324,8 +334,13 @@ li .Icon {
 
     .Membership {
       background: #484848;
-      padding: 50px 150px;
+      padding: 0px 0px !important;
       display: block !important;
       justify-content: space-between;
+    }
+
+
+    .Lifetime {
+      margin-left: 40px !important;
     }
 }

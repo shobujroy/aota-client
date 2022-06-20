@@ -107,11 +107,12 @@ const OnlineClasses = () => {
         </div>
 
         <div className={styles.GoLink}>
+          
           <Link href={"/creativehaven"}>
             <div className={styles.YogaBack}>
               <li className={styles.Lifetime}>
                 <KeyboardArrowLeftIcon className={styles.Icon} />{" "}
-                <p>Creative Haven</p>
+                <h5>Creative Haven</h5>
               </li>
             </div>
           </Link>
@@ -119,7 +120,7 @@ const OnlineClasses = () => {
           <Link href={"coching"}>
             <div className={styles.YogaBack}>
               <li className={styles.Lifetime}>
-                <p>Creators Challenge</p>{" "}
+                <h5>Creators Challenge</h5>{" "}
                 <KeyboardArrowRightIcon className={styles.Icon} />
               </li>
             </div>

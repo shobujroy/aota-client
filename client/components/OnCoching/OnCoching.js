@@ -92,7 +92,7 @@ const OnCoching = () => {
             <div className={styles.YogaBack}>
               <li className={styles.Lifetime}>
                 <KeyboardArrowLeftIcon className={styles.Icon} />{" "}
-                <p>Yoga with River</p>
+                <h5>Yoga with River</h5>
               </li>
             </div>
           </Link>
