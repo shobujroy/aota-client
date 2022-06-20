@@ -145,12 +145,16 @@
   margin-bottom: 20px;
 }
 
-.GoLink {
+.GoLink {  
   display: flex;
   justify-content: space-between;
-  margin: 20px -130px;
-  margin-left: -76px;
   cursor: pointer;
+  background: rgb(5, 21, 9);
+  background: linear-gradient(
+    90deg,
+    rgba(5, 21, 9, 1) 100%,
+    rgba(22, 46, 28, 1) 100%
+  );
   
 }
 
@@ -164,9 +168,18 @@ li .Icon {
   height: 26px;
   border-radius: 50%;
   text-align: center;
-  margin-left: 10px;
-  margin-right: 10px;
+ 
 }
+
+
+
+.GoLink .YogaBack .Lifetime h5{
+  color: #ffffff;
+  padding: 0px 10px;
+}
+
+
+
 
 /* Media Query for Mobile Devices */
 @media (max-width: 637px) {
@@ -184,12 +197,19 @@ li .Icon {
   }
 
 
+  .OnlineMembership {
+    text-align: center;
+    background: #484848;
+    padding: 0px 0px !important;
+  }
+
+
 
   .OnlineClassesText h2 {
     position: absolute;
     top: 250px;
     left: 0px;
-    font-size: 56px;
+    font-size: 40px;
     font-weight: 600;
     font-family: "Montserrat";
     line-height: 70px;
@@ -239,12 +259,14 @@ li .Icon {
 }
 
 .Lifetime p {
-  font-size: 16px;
-  font-family: "Jost";
-  font-weight: 400;
-  line-height: 20px;
-  color: #e3f1e7;
-  margin-bottom: 20px;
+    font-size: 16px;
+    font-family: "Jost";
+    font-weight: 400;
+    line-height: 20px;
+    color: #e3f1e7;
+    width: 200px;
+    margin: auto;
+    margin-bottom: 20px;
 }
 
 
@@ -279,9 +301,7 @@ li .Icon {
 
   .GoLink {
     display: flex;
-    justify-content: space-between;
-    margin: 20px -130px;
-    margin-left: 36px !important;
+    justify-content: space-between;    
     cursor: pointer;
     
   }
@@ -314,8 +334,13 @@ li .Icon {
 
     .Membership {
       background: #484848;
-      padding: 50px 150px;
+      padding: 0px 0px !important;
       display: block !important;
       justify-content: space-between;
+    }
+
+
+    .Lifetime {
+      margin-left: 40px !important;
     }
 }

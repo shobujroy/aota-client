@@ -11,7 +11,7 @@ const OnCoching = () => {
         <div className="container pb-4 pt-4">
           <div className="row">
             <div className={`col-md-12  col-sm-12 ${styles.OnlineClassesText}`}>
-              <h2>Creative Haven</h2>
+              <h2>1-On-1 Coching</h2>
             </div>
           </div>
         </div>
@@ -92,7 +92,7 @@ const OnCoching = () => {
             <div className={styles.YogaBack}>
               <li className={styles.Lifetime}>
                 <KeyboardArrowLeftIcon className={styles.Icon} />{" "}
-                <p>Yoga with River</p>
+                <h5>Yoga with River</h5>
               </li>
             </div>
           </Link>

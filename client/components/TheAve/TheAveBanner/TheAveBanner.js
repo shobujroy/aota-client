@@ -128,6 +128,8 @@ const TheAveBanner = () => {
                 <Image layout="fill"
           objectFit="cover" src={"/images/”.png"} />
               </div>
+
+              
             </div>
 
             <div className={`${styles.CoWorkingImage}`}>
