@@ -207,12 +207,16 @@ function Navbar({ BorderBottom, wallet }) {
           <ul className={`navbar-nav ml-auto $`}>
             <li className="nav-item">
               <a className={"nav-link " + Styles.navLink}>
-                <button
-                  className={`${Styles.connectWalletBtn}`}
-                  onClick={connectwallet}
-                >
-                  Connect Wallet
-                </button>
+                {!isConnected ? (
+                  <button
+                    className={`${Styles.connectWalletBtn}`}
+                    onClick={connectwallet}
+                  >
+                    Connect Wallet
+                  </button>
+                ) : (
+                  <button className={`${Styles.connectWalletBtn}`}>Mint</button>
+                )}
               </a>
             </li>
             <div className={Styles.SocailMedIcon}>
