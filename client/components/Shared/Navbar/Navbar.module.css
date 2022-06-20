@@ -199,7 +199,7 @@
   }
 
   .SocailMedIcon .SocailMedIcon li {
-    margin-right: 32px;
+    margin-right: 32px !important;
   }
 
   .MobileNabButton {
@@ -217,4 +217,15 @@
   .LogoImage {
     display: none;
   }
+
+  .NavbarItam ul li{
+    margin-left: 0px !important;
+  }
+
+
+  .SocailMedIcon .SocailMedIcon li {
+    margin-right: 32px;
+  }
+
+
 }
