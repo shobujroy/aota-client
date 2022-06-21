@@ -5,8 +5,10 @@
     rgba(5, 21, 9, 1) 51%,
     rgba(23, 47, 29, 1) 100%
   ) !important;
-  height: 1000px;
+  min-height: 800px;
 }
+
+
 
 .RoadMapSlider {
   background: rgb(5, 21, 9) !important;
@@ -19,11 +21,64 @@
   width: 100%;
 }
 
+
+
 .RoadMapSlider {
   overflow: auto;
   white-space: nowrap;
   scroll-behavior: smooth;
 }
+
+
+.RoadWrapper{
+  position: relative;
+}
+
+
+.Roadimage{
+  position: absolute;
+  top: 475px;
+  left: 170px;
+}
+
+
+.RoadWrapper h1{
+    font-size: 56px;
+    font-weight: 600;
+    line-height: 70px;
+    font-family: "Montserrat";
+    color: #FAFAFA;
+    margin-top: 200px;
+    width: 488px;
+}
+
+
+.RoadWrapper .Photo{
+  margin-top: 108px !important;
+    margin-left: 50px !important;
+    position: relative;
+    width: 433px;
+    height: 203px;
+}
+
+
+
+
+.MapWrapper .imageWrapper::after {
+  content: "";
+  position: absolute;
+  top: 350px;
+  right: 90px;
+  width: 360px;
+  height: 557px;
+  background-image: url("../../public/images/manifesto (1).png");
+  object-fit: cover;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
 
 .rideMapWrapper {
   position: relative;
@@ -31,13 +86,13 @@
 
 .sliderPreviousBtn {
   position: absolute;
-  top: 24.5rem;
+  top: 20rem;
   cursor: pointer;
 }
 
 .sliderNextBtn {
   position: absolute;
-  top: 24.5rem;
+  top: 20rem;
   right: 0;
   cursor: pointer;
 }
@@ -61,33 +116,10 @@
   background: #179bd7;
 }
 
-.RoadMapBanner {
-  position: relative;
-}
 
-.RoadMapBanner .RoadMapText h1 {
-  font-size: 56px;
-  font-weight: 600;
-  line-height: 70px;
-  font-family: 'Montserrat';
-  color: #fafafa;
-  width: 490px;
-  position: absolute;
-  top: 250px;
-  left: 0px;
-}
 
-.RoadMapMan {
-  position: absolute;
-  top: 0px;
-  right: 0px;
-}
 
-.RoadMapShap {
-  position: absolute;
-  top: 540px;
-  left: 60px;
-}
+
 
 .RoadMapCarousel .RoadMapCarouselItam {
   display: flex;
@@ -115,8 +147,26 @@
   margin-bottom: 16px;
 }
 
+
+
+
+.RoadMapphoto  .photo{
+    width: 396px !important;
+    height: 567px !important;
+}
+
+
+
+.RoadMapphoto .image{
+  width: 396px !important;
+  height: 567px !important; 
+  
+}
+
+
 /* Media Query for Mobile Devices */
 @media (max-width: 637px) {
+
   .RoadMapBanner .RoadMapText h1 {
     font-size: 32px;
     font-weight: 600;
@@ -136,6 +186,7 @@
     width: 100px;
     position: relative;
   }
+
   .RoadMapMan {
     position: absolute;
     top: 200px;
@@ -148,8 +199,32 @@
     left: 60px;
   }
   .RoadMapMain {
-    height: 700px;
+    height: 950px;
   }
+
+  .RoadWrapper h1{
+    font-size: 37px;
+    font-weight: 600;
+    line-height: 70px;
+    font-family: "Montserrat";
+    color: #FAFAFA;
+    margin-top: 0px;
+    width: 488px;
+}
+
+
+.MapWrapper .imageWrapper::after{
+  display: none !important;
+}
+
+.Roadimage{
+  position: absolute;
+  top: 700px;
+  left: 0px;
+}
+
+
+
 }
 /* Media Query for low resolution  Tablets, Ipads */
 @media (min-width: 640px) and (max-width: 1040px) {
@@ -180,4 +255,31 @@
   .RoadMapMain {
     height: 1300px;
   }
+
+
+  .RoadWrapper h1{
+    font-size: 37px;
+    font-weight: 600;
+    line-height: 70px;
+    font-family: "Montserrat";
+    color: #FAFAFA;
+    margin-top: 0px;
+    width: 488px;
+}
+
+
+.col-md-6{
+  width: 100% !important;
+}
+
+
+.Roadimage{
+  position: absolute;
+  top: 770px;
+  left: 70px;
+}
+
+
+
+
 }
