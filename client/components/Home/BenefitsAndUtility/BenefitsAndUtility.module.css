@@ -135,4 +135,44 @@
   .benefitsCard {
     width: 400px !important;
   }
+
+  
+}
+
+
+/* Media Query for low resolution  Tablets, Ipads */
+@media (min-width: 640px) and (max-width: 1040px) {
+  .textMainText h1 {
+    font-size: 24px !important;
+  }
+
+ 
+
+  .benefitsCard p {
+    width: 350px !important;
+    font-weight: 400;
+  }
+
+  .Donations h1 {
+    font-size: 32px;
+  }
+
+  .DonationsCard h4 {
+    font-size: 24px;
+    width: 382px;
+  }
+
+  .DonationsCard p {
+    font-size: 16px;
+    width: 382px;
+  }
+
+  .benefitsCard {
+    width: 400px !important;
+  }
+
+
+  .textCard .textMainText p{
+    width: 300px;
+  }
 }
