@@ -1,17 +1,17 @@
-import React from 'react';
+import React from "react";
 import Link from "next/link";
 import styles from "./OnCoching.module.css";
 import KeyboardArrowLeftIcon from "@mui/icons-material/KeyboardArrowLeft";
 import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
 
 const OnCoching = () => {
-    return (
-        <>
+  return (
+    <>
       <div className={styles.OnlineClassesBanner}>
         <div className="container pb-4 pt-4">
           <div className="row">
             <div className={`col-md-12  col-sm-12 ${styles.OnlineClassesText}`}>
-              <h2>Creative Haven</h2>
+              <h2>1-On-1 Coching</h2>
             </div>
           </div>
         </div>
@@ -79,9 +79,6 @@ const OnCoching = () => {
                     sessions.
                   </p>
                 </div>
-
-               
-
               </div>
             </div>
           </div>
@@ -92,16 +89,14 @@ const OnCoching = () => {
             <div className={styles.YogaBack}>
               <li className={styles.Lifetime}>
                 <KeyboardArrowLeftIcon className={styles.Icon} />{" "}
-                <p>Yoga with River</p>
+                <h5>Yoga with River</h5>
               </li>
             </div>
           </Link>
-
-          
         </div>
       </div>
     </>
-    );
+  );
 };
 
 export default OnCoching;

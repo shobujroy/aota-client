@@ -70,7 +70,7 @@ const TheAveBanner = () => {
                 </Link>
               </div>
             </div>
-            <div className={`col-md-6 col-sm-12 ${styles.TheAvePhoto}`}>
+            <div className={`col-md-6 col-sm-6 ${styles.TheAvePhoto}`}>
               <div className={styles.AvePhoto}>
                 <div className={styles.yoga}>
                   <Image
@@ -114,8 +114,7 @@ const TheAveBanner = () => {
           <div className={styles.row}>
             <div className={`${styles.CoWorkingPart}`}>
               <div className={styles.BackIcon}>
-                <Image layout="fill"
-          objectFit="cover" src={"/images/“.png"} />
+                <Image layout="fill" objectFit="cover" src={"/images/“.png"} />
               </div>
 
               <p>
@@ -125,8 +124,7 @@ const TheAveBanner = () => {
               </p>
 
               <div className={styles.Pasicon}>
-                <Image layout="fill"
-          objectFit="cover" src={"/images/”.png"} />
+                <Image layout="fill" objectFit="cover" src={"/images/”.png"} />
               </div>
             </div>
 

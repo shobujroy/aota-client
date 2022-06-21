@@ -5,7 +5,7 @@
 .searchInput {
   background: #2c2f33;
   border-radius: 30px;
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
@@ -41,7 +41,7 @@
 }
 
 .navLink {
-  font-family: 'Jost', sans-serif !important;
+  font-family: "Jost", sans-serif !important;
   font-weight: 400;
   font-style: normal;
   font-size: 16px;
@@ -52,7 +52,7 @@
 }
 
 .navLinkActive {
-  font-family: 'Jost', sans-serif !important;
+  font-family: "Jost", sans-serif !important;
   font-weight: 400;
   font-style: normal;
   font-size: 16px;
@@ -67,7 +67,7 @@
 }
 
 .socialIcon {
-  font-family: 'montserrat', sans-serif !important;
+  font-family: "montserrat", sans-serif !important;
   font-weight: 500;
   font-style: normal;
   font-size: 18px;
@@ -134,7 +134,7 @@
     font-size: 16px;
     font-weight: 500;
     line-height: 20px;
-    font-family: 'Jost', sans-serif;
+    font-family: "Jost", sans-serif;
     border: 0px !important;
     color: #1a1a1a;
     width: 155px;
@@ -167,9 +167,69 @@
   }
 
   .LogoImage {
-    position: relative;
-    height: 20px !important;
-    width: 20px !important;
-    margin-top: 0px !important;
+    display: none;
   }
+}
+
+/* Media Query for low resolution  Tablets, Ipads */
+@media (min-width: 640px) and (max-width: 1040px) {
+  .MobileLogoButton {
+    display: block;
+    display: flex;
+    height: 30px !important;
+  }
+
+  .MobileButton {
+    margin-left: auto;
+    padding: 10px 24px !important;
+    background: #75ba87;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    font-family: "Jost", sans-serif;
+    border: 0px !important;
+    color: #1a1a1a;
+    width: 155px;
+    height: 45px;
+    margin-top: -10px;
+  }
+
+  .NavbarItam .PCImage {
+    display: none !important;
+  }
+
+  .SocailMedIcon .SocailMedIcon {
+    display: flex;
+  }
+
+  .SocailMedIcon .SocailMedIcon li {
+    margin-right: 32px !important;
+  }
+
+  .MobileNabButton {
+    margin-right: 30px;
+  }
+
+  .NavbarItam .Muneleft {
+    margin-left: 0px !important;
+  }
+
+  .NavbarItam ul .connectWalletBtn {
+    display: none;
+  }
+
+  .LogoImage {
+    display: none;
+  }
+
+  .NavbarItam ul li{
+    margin-left: 0px !important;
+  }
+
+
+  .SocailMedIcon .SocailMedIcon li {
+    margin-right: 32px;
+  }
+
+
 }
