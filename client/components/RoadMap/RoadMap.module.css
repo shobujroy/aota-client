@@ -166,7 +166,26 @@
 
 /* Media Query for Mobile Devices */
 @media (max-width: 637px) {
-  
+
+  .RoadMapBanner .RoadMapText h1 {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 70px;
+    font-family: 'Montserrat';
+    color: #fafafa;
+    width: 316px;
+    position: absolute;
+    top: 55px;
+    left: 10px;
+  }
+  .roadmapImages {
+    border: 1px solid red;
+  }
+  .firstIMage {
+    height: 100px;
+    width: 100px;
+    position: relative;
+  }
 
   .RoadMapMan {
     position: absolute;
