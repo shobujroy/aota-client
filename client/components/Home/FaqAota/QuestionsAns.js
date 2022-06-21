@@ -6,6 +6,10 @@ function QuestionsAns({
   question,
   answer,
   index,
+  ansewerTwo,
+  answerThree,
+  answerFour,
+  answerFIve,
   collapsed,
   setCollapsed,
 }) {
@@ -40,7 +44,13 @@ function QuestionsAns({
         </div>
       </div>
       {modalOpen === index ? (
-        <p className={Styles.answerPara}>{answer}</p>
+        <>
+          <p className={Styles.answerPara}>{answer}</p>
+          <p className={Styles.answerPara}>{ansewerTwo}</p>
+          <p className={Styles.answerPara}>{answerThree}</p>
+          <p className={Styles.answerPara}>{answerFour}</p>
+          <p className={Styles.answerPara}>{answerFIve}</p>
+        </>
       ) : null}
     </div>
   );

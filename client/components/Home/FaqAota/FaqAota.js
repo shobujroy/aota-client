@@ -8,32 +8,41 @@ const FaqAota = () => {
     {
       no: 1,
       q: "What is Aliens on the ave?",
-      a: "Aliens on the Ave or AOTA (aye-Oh-tuh) Is a collection of 7,146 Unique Alien & characters living on the Ethereum Blockchain.  Owning an AOTA grants you exclusive access into the Creative Haven. A place where imagination thrives and creativity is explored.",
+      a: "Aliens on the Ave or AOTA (aye-Oh-tuh)",
+      b: "Is a collection of 7,146 Unique Alien & characters living on the Ethereum Blockchain.  Owning an AOTA grants you exclusive access into the Creative Haven. A place where imagination thrives and creativity is explored.",
     },
     {
       no: 2,
       q: "How can I get access to the creative haven?",
       a: "Own an AOTA. ",
+      b: "",
     },
     {
       no: 3,
       q: "What plans are there for AOTA?",
       a: "Roadmap is dialed in & we have already been actively working on them.  Stay tuned.  .",
+      b: "",
     },
     {
       no: 4,
       q: "What are AOTA?",
-      a: "Aliens on the Ave is an algorithmically generated collection ot 7,146 aliens living on the Ethereum Blockchain.  Each AOTA is the result of combining 12 hand drawn images across over 400 attributes.Each AOTA is an original art piece with various rarities amongst the entire collection. Some are more rare than others, and some are completely hand drawn 1 of 1’s.",
+      a: "Aliens on the Ave is an algorithmically generated collection ot 7,146 aliens living on the Ethereum Blockchain.  Each AOTA is the result of combining 12 hand drawn images across over 400 attributes.",
+      b: "Each AOTA is an original art piece with various rarities amongst the entire collection. Some are more rare than others, and some are completely hand drawn 1 of 1’s.",
     },
     {
       no: 5,
       q: "Will there ever be more Aliens added to the collection?",
       a: "There will never be another alien added to this collection, we do however plan on adding to the universe of AOTA.",
+      b: "AOTA : the Greys Vol. 1",
+      c: "AOTA : ????? Vol.2",
+      d: "AOTA : ????? Vol.3",
+      e: "AOTA : ????? Vol.4",
     },
     {
       no: 6,
       q: "Do I own the rights to my AOTA?",
-      a: "You own the commercial rights to your AOTA after purchase for as long as you retain ownership.",
+      a: "You own the commercial rights to your AOTA",
+      b: " after purchase for as long as you retain ownership.",
     },
   ];
 
@@ -60,6 +69,10 @@ const FaqAota = () => {
                   questionNum={q.no}
                   question={q.q}
                   answer={q.a}
+                  ansewerTwo={q.b}
+                  answerThree={q.c}
+                  answerFour={q.d}
+                  answerFIve={q.e}
                   index={i}
                   setCollapsed={setCollapsed}
                   collapsed={collapsed}
