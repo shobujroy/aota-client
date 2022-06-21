@@ -74,3 +74,8 @@
     border-bottom: 1px solid #75ba87;
   }
 }
+@media screen and (min-width: 983px) and (max-width: 1040px) {
+  .qaSection {
+    width: 500px;
+  }
+}
