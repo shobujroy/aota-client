@@ -128,7 +128,14 @@
     top: 55px;
     left: 10px;
   }
-
+  .roadmapImages {
+    border: 1px solid red;
+  }
+  .firstIMage {
+    height: 100px;
+    width: 100px;
+    position: relative;
+  }
   .RoadMapMan {
     position: absolute;
     top: 200px;
