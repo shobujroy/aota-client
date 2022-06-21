@@ -19,6 +19,7 @@ const RoadMap = () => {
         
           <div className="container pt-5 pb-5">
             <div className="row">
+
               <div className={`col-lg-6 col-md-12 col-sm-12 ${styles.RoadWrapper}`}>
               <h1>ROADMAP TO THE MOON</h1>
               <div className={styles.Roadimage}>
@@ -28,6 +29,7 @@ const RoadMap = () => {
                 height={203}                
               />
               </div>
+
               </div>
 
               <div className={`col-lg-6 col-md-12 col-sm-12 ${styles.MapWrapper}`}>

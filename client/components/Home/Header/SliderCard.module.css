@@ -322,7 +322,7 @@
     font-family: Monessirate;
   }
 }
-@media screen and (min-width: 983px) and (max-width: 1440px) {
+@media screen and (min-width: 1440px) and (max-width: 2560px) {
   .carouselItem {
     width: 100vw;
     height: 100vh;
@@ -342,7 +342,10 @@
     color: #e3f1e7;
     position: absolute;
     left: 30px;
-    top: 80px;
+    top: 280px;
+  }
+  .carouselItem p {
+    top: 450px;
   }
   .carousleItemTwo h1 {
     font-family: FuturaBold;
@@ -352,8 +355,11 @@
     color: #e3f1e7;
 
     left: 230px;
-    top: 80px;
+    top: 280px;
     text-align: center;
+  }
+  .carousleItemTwo p {
+    top: 450px;
   }
   .carouselItemThree h1 {
     font-family: FuturaBold;
@@ -363,7 +369,10 @@
     color: #e3f1e7;
     position: absolute;
     left: 30px;
-    top: 80px;
+    top: 280px;
+  }
+  .carouselItemThree p {
+    top: 450px;
   }
   .carouselItemFour h1 {
     font-family: FuturaBold;
@@ -373,6 +382,12 @@
     color: #e3f1e7;
     position: absolute;
     left: 30px;
-    top: 80px;
+    top: 280px;
+  }
+  .carouselItemFour p {
+    top: 450px;
+  }
+  .carousleButton {
+    top: 500px;
   }
 }
