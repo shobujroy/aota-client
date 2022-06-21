@@ -264,3 +264,15 @@
 
 
 }
+
+
+@media (min-width: 2000px) and (max-width: 2600px) {
+
+  .MapWrapper .imageWrapper::after{
+    position: absolute;
+    top: 350px;
+    right: 600px;
+  }
+
+
+}
