@@ -375,7 +375,7 @@
   }
 }
 
-@media screen and (min-width: 767px) and (max-width: 1040px) {
+@media screen and (min-width: 767px) and (max-width: 983px) {
   .MemberProfil {
     background: #1a2a1e;
     width: 377px;
@@ -491,5 +491,24 @@
     margin-left: 10px;
     height: 230px;
     cursor: pointer;
+  }
+}
+
+@media screen and (min-width: 983px) and (max-width: 1040px) {
+  .RoadMapSlider {
+    width: 440px;
+    margin-left: 135px;
+    height: 460px !important;
+    overflow: hidden;
+  }
+  .teamMemberContainer {
+    width: 30%;
+    margin-left: 10px;
+    height: 230px;
+    cursor: pointer;
+  }
+  .meetMemberPara {
+    border: 2px solid transparent;
+    width: 380px;
   }
 }
