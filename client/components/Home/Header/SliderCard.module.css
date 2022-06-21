@@ -5,7 +5,11 @@
 
 @font-face {
   font-family: FuturaBold;
-  src: url('../../../public/fonts/futura/Futura\ Bold\ font.ttf');
+  src: url('../../../public/fonts/futura/futura\ medium\ condensed\ bt.ttf');
+}
+@font-face {
+  font-family: FuturaLight;
+  src: url('../../../public/fonts/futura/Futura\ Light\ font.ttf');
 }
 .carouselItem {
   width: 100vw;
@@ -30,11 +34,11 @@
 }
 .carouselItem p {
   font-family: Monessirate;
-  font-weight: 400;
+  font-weight: 700;
   font-size: 18px;
   position: absolute;
   left: 30px;
-  top: 250px;
+  top: 270px;
 }
 .carousleButton {
   width: 200px;
@@ -53,8 +57,9 @@
   height: 100%;
   background: transparent;
   border: none;
-  font-weight: 900 !important;
-  font-family: FuturaBold !important;
+  font-family: 'Jost', sans-serif !important;
+  font-size: 16px;
+  font-weight: 400;
 }
 .carousleItemTwo {
   width: 100vw;
@@ -75,8 +80,8 @@
   background: #75ba87;
   font-weight: 700;
   color: white;
-  font-weight: 900 !important;
-  font-family: FuturaBold !important;
+  font-weight: 400 !important;
+  font-family: 'Jost', sans-serif !important;
 }
 .carousleItemTwo h1 {
   font-family: FuturaBold;
@@ -315,5 +320,59 @@
     background-position: right top;
     background-repeat: no-repeat;
     font-family: Monessirate;
+  }
+}
+@media screen and (min-width: 983px) and (max-width: 1440px) {
+  .carouselItem {
+    width: 100vw;
+    height: 100vh;
+
+    position: relative;
+    background: url('../../../public/images/banner.png');
+    background-size: 80vw 80%;
+    background-position: right top;
+    background-repeat: no-repeat;
+    font-family: Monessirate;
+  }
+  .carouselItem h1 {
+    font-family: FuturaBold;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 72px;
+    color: #e3f1e7;
+    position: absolute;
+    left: 30px;
+    top: 80px;
+  }
+  .carousleItemTwo h1 {
+    font-family: FuturaBold;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 72px;
+    color: #e3f1e7;
+
+    left: 230px;
+    top: 80px;
+    text-align: center;
+  }
+  .carouselItemThree h1 {
+    font-family: FuturaBold;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 72px;
+    color: #e3f1e7;
+    position: absolute;
+    left: 30px;
+    top: 80px;
+  }
+  .carouselItemFour h1 {
+    font-family: FuturaBold;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 72px;
+    color: #e3f1e7;
+    position: absolute;
+    left: 30px;
+    top: 80px;
   }
 }

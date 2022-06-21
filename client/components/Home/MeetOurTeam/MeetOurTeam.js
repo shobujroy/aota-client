@@ -38,11 +38,11 @@ const MeetOurTeam = () => {
               <div className={styles.MemberCardOne}>
                 <div className={styles.MemberCardTwo}>
                   <Image
-                    style={{ marginTop: "10px" }}
+                    style={{ marginTop: "30px" }}
                     src={image.length < 2 ? "/images/Frame 184.png" : image}
                     alt="Picture of the author"
-                    width={400}
-                    height={405}
+                    width={380}
+                    height={380}
                   />
                 </div>
               </div>
@@ -90,7 +90,7 @@ const MeetOurTeam = () => {
             </div>
           </div>
 
-          <div className={`col-md-7 mt-0 ${styles.MeetMember}`}>
+          <div className={`col-md-6 mt-0 ${styles.MeetMemberRight}`}>
             <h1>Meet Our Team</h1>
             <p className={styles.meetMemberPara}>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nec

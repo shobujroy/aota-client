@@ -78,7 +78,7 @@ const GalleryMain = () => {
         <button className={Styles.resetButton}>Reset</button>
       </div>
 
-      <div className={`col-md-8 ${Styles.gallaryRight}`}>
+      <div className={`col-md-9 ${Styles.gallaryRight}`}>
         <div className={Styles.gallaryBanner}>
           <div className={Styles.bannerImage}>
             <Image
