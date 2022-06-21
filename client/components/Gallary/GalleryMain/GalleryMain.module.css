@@ -27,8 +27,8 @@
   margin-top: 15px;
 }
 .plusIcon {
-  height: 30px;
-  width: 30px;
+  height: 20px;
+  width: 20px;
   position: relative;
   cursor: pointer;
 }
@@ -43,11 +43,12 @@
 }
 .filterOption p {
   font-weight: 500;
-  font-size: 24px;
+  font-size: 16px;
   color: white;
+  margin-top: 5px;
 }
 .galleryItem {
-  width: 65vw;
+  width: 70vw;
   position: absolute;
   right: 20px;
   height: 780px;
@@ -55,7 +56,7 @@
   flex-wrap: wrap;
   justify-content: space-between;
   overflow-y: scroll;
-  top: 320px;
+  top: 220px;
 }
 .options {
   width: 100%;
@@ -159,10 +160,10 @@
 }
 
 .gallaryBanner {
-  width: 65vw;
+  width: 70vw;
   position: absolute;
   right: 20px;
-  height: 293px;
+  height: 200px;
   top: 0;
   border-radius: 30px;
   overflow: hidden;
@@ -170,8 +171,8 @@
   background: #1d2e21;
 }
 .bannerImage {
-  width: 302px;
-  height: 344px;
+  width: 240px;
+  height: 200px;
   position: relative;
 }
 .bannerText {
@@ -181,9 +182,10 @@
   font-family: Monessirate;
   font-style: normal;
   font-weight: 600;
-  font-size: 60px;
+  font-size: 45px;
   color: #dbdadf;
   margin-left: 20px;
+  margin-top: 10px;
 }
 .bannerText p {
   font-family: 'Jost';
@@ -191,11 +193,12 @@
   font-weight: 500;
   font-size: 16px;
   color: #dbdadf;
-  margin: 25px;
+  margin-left: 25px;
+  margin-top: 0;
 }
 .bannerText button {
   width: 113px;
-  height: 56px;
+  height: 40px;
   background: #75ba87;
   border: none;
   margin-left: 25px;
