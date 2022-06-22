@@ -108,9 +108,8 @@
 
 .Lifetime {
   text-align: center;
-  width: 350px;
   margin-bottom: 50px;
-  margin-left: 110px;
+  margin-left: 50px;
 }
 
 .Lifetime h3 {
@@ -163,11 +162,42 @@ li .Icon {
   height: 26px;
   border-radius: 50%;
   text-align: center;
+  background: no-repeat;
 }
 
 .GoLink .YogaBack .Lifetime h5 {
   color: #ffffff;
-  padding: 0px 10px;
+  margin-top: 12px;
+  margin-right: 4px;
+}
+
+
+
+.GoLink {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  align-items: center;
+  margin-left: 30px;
+}
+
+
+.GoLink .YogaBack .Lifetimes h5 {
+  font-size: 18px;
+  font-family: "Jost";
+  font-weight: 400;
+  line-height: 20px;
+  color: #e3f1e7;
+  margin-top: 12px;
+  margin-right: 4px;
+  margin-left: 4px;
+}
+
+.GoLink .Lifetimes {
+  text-align: center;
+  margin-bottom: 0px !important;
+  margin-left: 0px !important;
+  margin-left: -40px !important;
 }
 
 /* Media Query for Mobile Devices */
@@ -180,7 +210,9 @@ li .Icon {
     height: 400px;
     width: 100%;
   }
-
+  .GoLink{
+    padding: 13px 0px;
+  }
 
   .CoWorkingTeam h1 {
     font-size: 24px;
@@ -194,6 +226,15 @@ li .Icon {
 
   .CoWorkingAndMembership{
     padding: 0px !important;
+  }
+
+  .Lifetime{
+    margin-left:0px !important;
+    text-align: center;
+    /* width: 350px; */
+    margin-bottom: 50px;
+    margin-left: 110px;
+    padding: 0px 50px 0px;
   }
 
 
@@ -265,24 +306,8 @@ li .Icon {
     margin-bottom: 5px;
   }
 
-  .Lifetime p {
-    font-size: 16px;
-    font-family: "Jost";
-    font-weight: 400;
-    line-height: 20px;
-    color: #e3f1e7;
-    width: 200px;
-    margin: auto;
-    margin-bottom: 20px;
-  }
 
-  .Lifetime {
-    text-align: center;
-    width: 350px;
-    margin-bottom: 0px !important;
-    margin-left: 0px !important;
-    margin-left: -40px !important;
-  }
+
 
   .CreativeHavenImage .HavenImage {
     position: absolute;
@@ -306,11 +331,9 @@ li .Icon {
     justify-content: space-between;
   }
 
-  .GoLink {
-    display: flex;
-    justify-content: space-between;
-    cursor: pointer;
-  }
+
+
+  
 }
 
 @media (min-width: 640px) and (max-width: 1040px) {
