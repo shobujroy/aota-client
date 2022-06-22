@@ -6,6 +6,7 @@
     rgba(23, 47, 29, 1) 100%
   ) !important;
   min-height: 800px;
+  width: 100%;
 }
 
 
@@ -165,7 +166,7 @@
 
 
 /* Media Query for Mobile Devices */
-@media (max-width: 637px) {
+@media  (max-width: 637px) {
 
   .RoadMapBanner .RoadMapText h1 {
     font-size: 32px;
@@ -203,13 +204,13 @@
   }
 
   .RoadWrapper h1{
-    font-size: 37px;
+    font-size: 24px;
     font-weight: 600;
-    line-height: 70px;
+    line-height: 32px;
     font-family: "Montserrat";
     color: #FAFAFA;
     margin-top: 0px;
-    width: 488px;
+    width: 200px !important;
 }
 
 

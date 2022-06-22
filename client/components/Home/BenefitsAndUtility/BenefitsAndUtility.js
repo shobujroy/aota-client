@@ -35,7 +35,7 @@ function BenefitsAndUtility() {
     <div id="about">
       <div className={`container pt-0 pb-0`}>
         <div className={`row ${styles.AboutService}`}>
-          <div className="col-md-7 mt-5">
+          <div className={`col-md-7 mt-5 ${styles.AboutServiceAll}`}>
             {benefitsAndUtilities?.map((benefit, index) => {
               return (
                 <BenefitsAndUtilityCard
@@ -48,8 +48,10 @@ function BenefitsAndUtility() {
               );
             })}
           </div>
+
+
           <div
-            className={`col-md-5  d-flex flex-column justify-content-center ${styles.textCard}`}
+            className={`col-md-5 d-flex flex-column ${styles.textCard}`}
           >
             <div className={styles.textcenter}>
               <Image src={"/images/Vector 1.png"} width={362} height={365} />
@@ -65,6 +67,28 @@ function BenefitsAndUtility() {
               </p>
             </div>
           </div>
+
+
+ <div
+            className={`col-sm-12  d-flex flex-column ${styles.Smallcard}`}
+          >
+            
+            <div className={styles.textMainText}>
+              <h1>Aotaverse Perks &amp; Utility</h1>
+              <p>
+                When you buy an AOTA. You’re not Simply buying a rare pice of
+                Art. You’re gaining membership access to the Aotaverse with the
+                following benefits. Additonally you helping you us plant threes,
+                providing water, &amp; Enegy to regions all over the world.
+              </p>
+            </div>
+
+            <div className={styles.textSmall}>
+              <Image src={"/images/Vector 1 (1).png"} width={139} height={231} />
+            </div>
+
+          </div>
+
         </div>
       </div>
       <div className="container pt-0 pb-5">
