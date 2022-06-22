@@ -187,6 +187,7 @@ li .Icon {
     grid-template-columns: repeat(1, 1fr);
     text-align: center;
     margin-top: 100px;
+    gap: 0px;
   }
 
   .Membership {
@@ -330,5 +331,6 @@ li .Icon {
     margin: 20px -130px;
     margin-left: 36px !important;
     cursor: pointer;
+    
   }
 }
