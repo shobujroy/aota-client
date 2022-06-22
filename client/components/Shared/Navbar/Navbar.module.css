@@ -5,7 +5,7 @@
 .searchInput {
   background: #2c2f33;
   border-radius: 30px;
-  font-family: "Roboto";
+  font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
@@ -41,7 +41,7 @@
 }
 
 .navLink {
-  font-family: "Jost", sans-serif !important;
+  font-family: 'Jost', sans-serif !important;
   font-weight: 400;
   font-style: normal;
   font-size: 16px;
@@ -52,7 +52,7 @@
 }
 
 .navLinkActive {
-  font-family: "Jost", sans-serif !important;
+  font-family: 'Jost', sans-serif !important;
   font-weight: 400;
   font-style: normal;
   font-size: 16px;
@@ -67,7 +67,7 @@
 }
 
 .socialIcon {
-  font-family: "montserrat", sans-serif !important;
+  font-family: 'montserrat', sans-serif !important;
   font-weight: 500;
   font-style: normal;
   font-size: 18px;
@@ -78,10 +78,6 @@
 }
 
 .navLink:hover {
-  font-style: normal;
-  font-size: 18px;
-  /* identical to box height, or 600% */
-
   color: #ffffff !important;
 }
 
@@ -134,7 +130,7 @@
     font-size: 16px;
     font-weight: 500;
     line-height: 20px;
-    font-family: "Jost", sans-serif;
+    font-family: 'Jost', sans-serif;
     border: 0px !important;
     color: #1a1a1a;
     width: 155px;
@@ -186,7 +182,7 @@
     font-size: 16px;
     font-weight: 500;
     line-height: 20px;
-    font-family: "Jost", sans-serif;
+    font-family: 'Jost', sans-serif;
     border: 0px !important;
     color: #1a1a1a;
     width: 155px;
@@ -222,14 +218,11 @@
     display: none;
   }
 
-  .NavbarItam ul li{
+  .NavbarItam ul li {
     margin-left: 0px !important;
   }
-
 
   .SocailMedIcon .SocailMedIcon li {
     margin-right: 32px;
   }
-
-
 }
