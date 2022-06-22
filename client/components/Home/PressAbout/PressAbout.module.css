@@ -46,3 +46,30 @@
     background-repeat: no-repeat;
   }
 }
+
+
+@media (max-width: 768px) and  (max-width: 1040px){
+
+  .imageWrapper img {
+    width: 220px !important;
+    margin-top: 78px !important;
+  }
+
+
+  .imageWrapper::after {
+    content: '';
+    position: absolute;
+    top: 210px;
+    left: 90px;
+    width: 220px !important;
+    height: 300px !important;
+    background-image: url(/_next/static/media/6.36962dbb.PNG);
+    -o-object-fit: cover;
+    object-fit: cover;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+
+}

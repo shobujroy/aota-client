@@ -89,7 +89,7 @@
 
 .Lifetime {
   text-align: center;
-  width: 350px;
+  width: 100%;
 }
 
 .Lifetime h3 {
@@ -125,8 +125,7 @@
 
 .YogaBack li {
   display: flex;
-  margin-left: auto;
-  margin-right: -150px;
+  justify-content: end;
 }
 
 li .Icon {
@@ -227,6 +226,11 @@ li .Icon {
     color: #ffffff;
     text-align: center;
   }
+
+  .YogaBack li{
+    display: flex;
+    justify-content: end;
+  }
   
   
 }
@@ -253,6 +257,7 @@ li .Icon {
         grid-template-columns: repeat(1, 1fr);
         text-align: center;
         margin-top: 100px;
+        gap: 0px;
       }
     
 
@@ -262,4 +267,7 @@ li .Icon {
         display: block !important;
         justify-content: space-between;
       }
+
+
+
 }

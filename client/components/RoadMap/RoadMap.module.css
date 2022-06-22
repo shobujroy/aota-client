@@ -204,13 +204,13 @@
   }
 
   .RoadWrapper h1{
-    font-size: 24px;
+    font-size: 32px;
     font-weight: 600;
-    line-height: 32px;
+    line-height: 50px;
     font-family: "Montserrat";
     color: #FAFAFA;
     margin-top: 0px;
-    width: 200px !important;
+    width: 100% !important;
 }
 
 
@@ -294,5 +294,50 @@
     right: 600px;
   }
 
+
+  
+
+}
+
+
+
+/* Media Query for low resolution  Tablets, Ipads */
+@media (min-width: 896px) and (max-width: 1024px) {
+
+  .MapWrapper .imageWrapper::after {
+    content: "";
+    position: absolute;
+    top: 350px;
+    right: 0px;
+    width: 360px;
+    height: 557px;
+    background-image: url("../../public/images/manifesto (1).png");
+    object-fit: cover;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .Roadimage{
+    position: absolute;
+    top: 430px;
+    left: 70px;
+  }
+
+
+  .RoadWrapper h1{
+    font-size: 56px;
+    font-weight: 600;
+    line-height: 70px;
+    font-family: "Montserrat";
+    color: #FAFAFA;
+    margin-top: 200px;
+    width: 488px;
+}
+
+.RoadMapMain {
+  height: 800px !important;
+}
+  
 
 }
