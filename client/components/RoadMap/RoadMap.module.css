@@ -200,7 +200,9 @@
     left: 60px;
   }
   .RoadMapMain {
-    height: 950px;
+    height: 941px;
+    overflow: hidden;
+
   }
 
   .RoadWrapper h1{
@@ -254,7 +256,7 @@
   }
 
   .RoadMapMain {
-    height: 1300px;
+    height: 1150px;
   }
 
 
@@ -280,13 +282,25 @@
   left: 70px;
 }
 
+.sliderPreviousBtn {
+  position: absolute;
+  top: 11rem;
+  cursor: pointer;
+}
+
+.sliderNextBtn {
+  position: absolute;
+  top: 11rem;
+  right: 0;
+  cursor: pointer;
+}
 
 
 
 }
 
 
-@media (min-width: 2000px) and (max-width: 2600px) {
+@media (min-width: 2000px) and (max-width: 2800px) {
 
   .MapWrapper .imageWrapper::after{
     position: absolute;
@@ -294,6 +308,20 @@
     right: 600px;
   }
 
+
+  
+.sliderPreviousBtn {
+  position: absolute;
+  top: 32.5rem;
+  cursor: pointer;
+}
+
+.sliderNextBtn {
+  position: absolute;
+  top: 32.5rem;
+  right: 0;
+  cursor: pointer;
+}
 
   
 
@@ -309,7 +337,7 @@
     position: absolute;
     top: 350px;
     right: 0px;
-    width: 360px;
+    width: 231px;
     height: 557px;
     background-image: url("../../public/images/manifesto (1).png");
     object-fit: cover;
@@ -338,6 +366,12 @@
 .RoadMapMain {
   height: 800px !important;
 }
+
+
+
+
   
 
 }
+
+
