@@ -21,18 +21,18 @@ const TheAveBanner = () => {
 
               <div className={`col-md-6 ${styles.AveBannerPhoto}`}>
                 <div className={`${styles.PhotoOne}`}>
-                  <Image
-                    width={550}
-                    height={300}
-                    src={"/images/Frame 175.png"}
-                  />
-                </div>
-                <div className={styles.PhotoTwo}>
-                  <Image
+                <Image
                     width={550}
                     height={300}
                     src={"/images/Frame 176.png"}
-                  />
+                  /> 
+                </div>
+                <div className={styles.PhotoTwo}>
+                  <Image
+                  width={550}
+                  height={300}
+                  src={"/images/Frame 175.png"}
+                />
                 </div>
               </div>
             </div>
@@ -70,37 +70,29 @@ const TheAveBanner = () => {
                 </Link>
               </div>
             </div>
-            <div className={`col-md-6 col-lg-6 col-sm-6 ${styles.TheAvePhoto}`}>
-              <div className={styles.AvePhoto}>
-                <div className={styles.yoga}>
-                  <Image
-                    layout="fill"
-                    objectFit="cover"
-                    src={"/images/image 21.png"}
-                  />
-                </div>
 
+            <div className={`col-md-6 col-sm-12 col-lg-6 ${styles.TheAvePhoto}`}>
+
+              <div className={styles.AvePhoto}>
+                <div className={styles.yoga}>                 
+                </div>
                 <div className={styles.AvePhotoText}>
                   <Link href={"/onlineclasses"}>
                     <h1>Yoga with River</h1>
                   </Link>
                 </div>
               </div>
-              <div className={styles.AveThePhoto}>
-                <div className={styles.yoga}>
-                  <Image
-                    layout="fill"
-                    objectFit="cover"
-                    src={"/images/image 22.png"}
-                  />
-                </div>
 
+              <div className={styles.AveThePhoto}>
+                <div className={styles.yoga}>                 
+                </div>
                 <div className={styles.AveThePhotoText}>
                   <Link href={"/coching"}>
                     <h1>Creators Challenge</h1>
                   </Link>
-                </div>
+                </div>                
               </div>
+
             </div>
           </div>
         </div>

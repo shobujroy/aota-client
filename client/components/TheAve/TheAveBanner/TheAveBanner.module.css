@@ -29,6 +29,27 @@
   width: 50%;
 }
 
+ 
+.TheAvePhoto .AvePhoto .yoga{
+  background-image: url("../../../public/images/image 21.png");
+  height: 218px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;  
+}
+
+
+.TheAvePhoto .AveThePhoto .yoga{
+  background-image: url("../../../public/images/image 22.png");
+  height: 284px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;  
+}
+
+
 .PhotoOne {
   margin-bottom: 10px;
   margin-left: 10px;
@@ -56,15 +77,17 @@
   margin-bottom: 32px;
 }
 
+
 .TheAveText p {
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 20px;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 22px;
   color: #fafafa;
   font-family: "Jost";
-  width: 1110px !important;
+  width: 1200px !important;
   margin-bottom: 60px;
 }
+
 
 .TheAveImage {
   position: relative;
@@ -126,12 +149,12 @@
 
 .TheAvePhoto .AvePhoto {
   margin-bottom: 15px;
-  margin-left: 32px;
+  margin-left: 20px;
   position: relative;
 }
 
 .TheAvePhoto .AveThePhoto {
-  margin-left: 32px;
+  margin-left: 20px;
   position: relative;
 }
 
@@ -149,9 +172,7 @@
   margin-left: 32px;
   width: 70%;
 }
-.TheAveText p {
-  width: 350px;
-}
+
 .CoWorkingPart p {
   font-size: 32px;
   font-weight: 500;
@@ -207,6 +228,41 @@
     font-size: 24px;
   }
 
+
+  .TheAvePhoto{
+    display: flex;    
+    gap: 10px;
+  }
+
+  .TheAvePhoto .AvePhoto{
+    margin-left: 0px !important;
+  }
+
+
+  .TheAvePhoto .AvePhoto .yoga{
+    background-image: url("../../../public/images/image 21.png");
+    height: 118px;
+    width: 196px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;  
+    
+  }
+  
+  
+  .TheAvePhoto .AveThePhoto .yoga{
+    background-image: url("../../../public/images/image 22.png");
+    height: 118px;
+    width: 196px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;  
+  }
+
+
+  .TheAveText p {
+    width: 350px !important;
+  }
   .AveTextOne p {
     text-align: center;
     margin-top: -145px;
@@ -214,6 +270,9 @@
   }
   .AveBannerText h1 {
     font-size: 24px;
+    margin-top: -52px;
+    margin-bottom: 20px;
+    line-height: 30px;
   }
 
   .AveBannerText p {
@@ -223,18 +282,21 @@
   
   .AveBannerImage {
     width: 100%;
+    height: 350px;;
     
   }
 
 
 
   .AvePhoto{
-    width: 100% !important;
+    width: 196px !important;
+    height: 118px !important;
   }
 
 
   .AveThePhoto{
-    width: 100% !important;
+    width: 196px !important;
+    height: 118px !important;
   }
 
 
@@ -243,9 +305,14 @@
     margin-top: 30px;
   }
 
-  .TheAveImage {
-    width: 100%;
+  .TheAveImage{
+    width: 100% !important;
     height: 350px !important;
+  }
+
+  .TheAveImage img {
+    width: 414px !important;
+    height: 328px !important;
   }
 
   .TheAvePhoto {
@@ -263,12 +330,12 @@
 
   .AvePhotoText {
     left: 75%;
-    top: 64%;
+    top: 50%;
   }
 
   .AveThePhotoText {
     left: 100%;
-    top: 55%;
+    top: 50%;
   }
 
   .AveThePhoto img {
@@ -277,7 +344,7 @@
   }
 
   .AvePhotoText h1 {
-    font-size: 18px;
+    font-size: 12px !important;
   }
 
   .row {
@@ -324,7 +391,7 @@
     margin-left: 0px;
     height: 100px !important;
     width: 150px;
-    margin-left: -30px;
+    margin-left: 0px !important;
     position: relative;
   }
 
@@ -338,6 +405,11 @@
     position: relative;
     height: 30px;
     width: 40px;
+  }
+
+  .TheAvePhoto .AveThePhoto {
+    margin-left: 0px !important;
+    
   }
 
 
@@ -371,6 +443,28 @@
     margin-bottom: 20px;
   }
 
+
+  .TheAvePhoto .AvePhoto .yoga{
+    background-image: url("../../../public/images/image 21.png");
+    height: 155px;
+    width: 450px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+  }
+  
+  
+  .TheAvePhoto .AveThePhoto .yoga{
+    background-image: url("../../../public/images/image 22.png");
+    height: 165px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;  
+  }
+
+
   
   .TheAveText p {
     font-size: 16px;
@@ -378,7 +472,7 @@
     line-height: 20px;
     color: #fafafa;
     font-family: "Jost";
-    width: 700px;
+    width: 700px !important;
     margin-bottom: 40px;
   }
 
@@ -390,6 +484,7 @@
 
   .TheAveImage img {
     height: 340px !important;
+    width: 680px !important;
   }
 
   .TheAvePhoto {
@@ -466,6 +561,13 @@
 }
 
 
+/* 
+@media (min-width: 1041px) and (max-width: 1479px) {
+
+
+
+
+} */
 
 @media (min-width: 1480px) and (max-width: 2800px) {
 
@@ -486,6 +588,12 @@
     font-size: 32px;
   }
 
+  .TheAveImage img{
+    height: 521px !important;
+    width: 701px !important;
+  }
+   
+
   .AveBannerText p {
     font-size: 16px;
     width: 400px;
@@ -502,7 +610,7 @@
 
 
   .yoga {
-    width: 328px;
+    width: 100%;
     height: 161px;
     margin-bottom: 20px;
   }
@@ -524,10 +632,7 @@
 
   }
 
-  .TheAveImage img {
-    height: 340px !important;
-    width: 600px !important;
-  }
+  
 
   .TheAvePhoto {
     width: 50%;
