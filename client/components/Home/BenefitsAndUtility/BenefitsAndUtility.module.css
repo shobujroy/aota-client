@@ -11,7 +11,7 @@
 }
 
 .textcenter {
-  margin-top: -70px;
+  margin-top: 0px;
   margin-left: 0px;
   margin-bottom: 70px;
 }
@@ -93,30 +93,77 @@
   padding: 12px 12px;
 }
 
+
+.textCard{
+  margin-top: 170px !important;
+}
+
+
+
+.Smallcard{
+  display: none !important;
+}
+
+
 /* Media Query for Mobile Devices */
 @media (max-width: 637px) {
+  .AboutServiceAll{
+    margin: 0px !important;
+  }
+  
+  
+  .Smallcard{
+    display: block !important;
+  }
+  
+
   .AboutService {
     flex-direction: column-reverse;
   }
 
-  .textCard {
+  .Smallcard {
     flex-direction: column-reverse !important;
+  }
+
+
+  
+
+
+  .textMainText {
+    margin-top: 30px;
   }
 
   .textMainText h1 {
     font-size: 24px !important;
   }
 
-  .textcenter {
-    margin-top: 60px;
-    margin-left: 0px;
-    transform: rotate(89deg);
+
+  .textCard p{
+    width: 360px !important;
+  }
+
+.textCard{
+  display: none !important;
+}
+
+
+  .textSmall {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 10px !important;
+    
   }
 
   .benefitsCard p {
     width: 350px !important;
     font-weight: 400;
   }
+
+
+  .benefitsCard h6{
+    font-size: 24px !important;
+  }
+
 
   .Donations h1 {
     font-size: 32px;

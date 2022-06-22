@@ -61,7 +61,7 @@ const TheAveBanner = () => {
           </div>
 
           <div className="row">
-            <div className={`col-md-6 col-sm-12 ${styles.TheAveImage}`}>
+            <div className={`col-md-6 col-lg-6 col-sm-12 ${styles.TheAveImage}`}>
               <Image width={675} height={535} src={"/images/image 20.png"} />
 
               <div className={styles.AveTextOne}>
@@ -70,7 +70,7 @@ const TheAveBanner = () => {
                 </Link>
               </div>
             </div>
-            <div className={`col-md-6 col-sm-6 ${styles.TheAvePhoto}`}>
+            <div className={`col-md-6 col-lg-6 col-sm-6 ${styles.TheAvePhoto}`}>
               <div className={styles.AvePhoto}>
                 <div className={styles.yoga}>
                   <Image
@@ -111,7 +111,7 @@ const TheAveBanner = () => {
           style={{ marginBottom: "50px" }}
           className={`container pb-4 pt-4 ${styles.CoWorking}`}
         >
-          <div className={styles.row}>
+          <div className={`col-lg-12 col-sm-12- col-md-12 ${styles.row}`}>
             <div className={`${styles.CoWorkingPart}`}>
               <div className={styles.BackIcon}>
                 <Image layout="fill" objectFit="cover" src={"/images/“.png"} />

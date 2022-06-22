@@ -197,7 +197,7 @@
 }
 
 /* Media Query for Mobile Devices */
-@media (max-width: 637px) {
+@media screen and (max-width: 637px) {
   .AveTextOne {
     left: 50%;
     top: 50%;
@@ -454,10 +454,8 @@
 
 
   .CoWorking {
-    background: #17271b;
-    width: 1300px;
-    margin-left: 30px !important;
-    margin-top: 50px;
+    margin: 0 auto !important;
+    margin-bottom: 50px !important;
   }
 
   .CoWorkingImage {
@@ -469,13 +467,138 @@
 
 
 
-@media (min-width: 2000px) and (max-width: 2600px) {
+@media (min-width: 1480px) and (max-width: 2800px) {
 
 
   .CoWorking{
     margin: 0 auto !important;
+    margin-bottom: 50px !important;
    
   }
 
+
+}
+
+
+/* Media Query for low resolution  Tablets, Ipads */
+@media (min-width: 1041px) and (max-width: 1500px) {
+  .AveBannerText h1 {
+    font-size: 32px;
+  }
+
+  .AveBannerText p {
+    font-size: 16px;
+    width: 400px;
+  }
+
+  .AveBannerImage {
+    width: 50%;
+    height: 350px;
+  }
+
+  .AveBannerPhoto {
+    margin-bottom: 30px;
+  }
+
+
+  .yoga {
+    width: 328px;
+    height: 161px;
+    margin-bottom: 20px;
+  }
+
+  
+  .TheAveText p {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    color: #fafafa;
+    font-family: "Jost";
+    width: 700px;
+    margin-bottom: 40px;
+  }
+
+  .TheAveImage {
+    width: 50%;
+    height: 360px;
+
+  }
+
+  .TheAveImage img {
+    height: 340px !important;
+    width: 600px !important;
+  }
+
+  .TheAvePhoto {
+    width: 50%;
+  }
+
+  .AveTextOne {
+    top: 50%;
+  }
+
+  .TheAveImage .AveTextOne h1 {
+    font-size: 34px !important;
+    width: 270px;
+  }
+
+  .row {
+    width: 100%;
+    display: flex;
+  }
+
+  .CoWorkingPart {
+    width: 70%;
+    height: 330px;
+  }
+
+  .CoWorkingPart p {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 40px;
+    font-family: "Montserrat";
+    color: #ffffff;
+    width: 410px;
+    margin: auto;
+    padding: 20px;
+  }
+
+  .CoWorkingPart .Pasicon {
+    text-align: right;
+    margin-right: 30px;
+
+  }
+
+  .AvePhotoText {
+    left: 50%;
+  }
+
+  .AveThePhotoText {
+    left: 50%;
+  }
+
+  .AveThePhotoText h1 {
+    font-size: 32px;
+  }
+
+  .AvePhotoText h1 {
+    font-size: 32px;
+  }
+
+  .CoWorkingImage img {
+    height: 400px !important;
+  }
+
+
+  .CoWorking {
+    margin: 0 auto !important;
+    margin-bottom: 50px !important;
+  }
+
+  .CoWorkingImage {
+    width: 30%;
+    height: 169px;
+    margin-top: -50px;
+  }
 
 }
