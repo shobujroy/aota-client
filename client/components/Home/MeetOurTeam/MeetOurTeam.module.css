@@ -247,7 +247,7 @@
 /* Media Query for Mobile Devices */
 @media (max-width: 600px) {
   .MeetOurTeam {
-    height: 1580px;
+    height: 1700px;
   }
   .teamMemberContainer {
     width: 40%;
@@ -282,9 +282,10 @@
   .MemberProfil {
     background: #1a2a1e;
     width: 347px !important;
-    height: 632px;
+    height: 721px;
     text-align: center;
     position: relative;
+    margin: 0 auto;
   }
   .MemberCardOne {
     background: #3e4b41;
@@ -397,7 +398,7 @@
   .rightArrow {
   }
   .leftArrow {
-    margin-left: -50px;
+    margin-left: 50px;
   }
 }
 
