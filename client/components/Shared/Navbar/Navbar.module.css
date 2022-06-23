@@ -35,8 +35,7 @@
 }
 
 .connectWalletBtn:hover {
-  color: #75ba87;
-  color: #1a1a1a;
+  color: #e2dd96;  
   border: 1px solid #75ba87;
 }
 
@@ -96,6 +95,8 @@
 
 .SocailMedIcon {
   display: flex;
+  align-items: center;
+  margin-top: 9px;
 }
 
 .SocailMedIcon li {
