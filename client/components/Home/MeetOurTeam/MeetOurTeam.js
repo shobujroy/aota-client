@@ -29,6 +29,7 @@ const MeetOurTeam = () => {
       setIndex(selectedIndex);
     };
   }
+  const [imgActive, setImgActive] = useState(0)
   return (
     <div className={styles.MeetOurTeam}>
       <div className="container pt-0 pb-5">
@@ -137,9 +138,10 @@ const MeetOurTeam = () => {
                               setName(item.name);
                               setImage(item.image);
                               setTitle(item.title);
+                              setImgActive(i)
                             }}
                           >
-                            <div className={styles.teamImage}>
+                            <div style={imgActive === i ? {border:"3px solid #75BA87"}: {border:"none"}} className={styles.teamImage}>
                               <Image
                                 src={item.image}
                                 layout="fill"
@@ -164,9 +166,10 @@ const MeetOurTeam = () => {
                               setName(item.name);
                               setImage(item.image);
                               setTitle(item.title);
+                              setImgActive(i)
                             }}
                           >
-                            <div className={styles.teamImage}>
+                            <div  style={imgActive === i ? {border:"3px solid #75BA87"}: {border:"none"}} className={styles.teamImage}>
                               <Image
                                 src={item.image}
                                 layout="fill"
@@ -191,9 +194,10 @@ const MeetOurTeam = () => {
                               setName(item.name);
                               setImage(item.image);
                               setTitle(item.title);
+                              setImgActive(i)
                             }}
                           >
-                            <div className={styles.teamImage}>
+                            <div style={imgActive === i ? {border:"3px solid #75BA87"}: {border:"none"}} className={styles.teamImage}>
                               <Image
                                 src={item.image}
                                 layout="fill"
