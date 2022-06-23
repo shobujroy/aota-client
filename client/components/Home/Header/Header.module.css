@@ -25,6 +25,7 @@
   .headerContent h1 {
     font-size: 60px !important;
   }
+  
 }
 
 @media (max-width: 900px) {
@@ -35,6 +36,10 @@
     background-repeat: no-repeat;
     height: 900px;
     padding-top: 2rem;
+  }
+
+  .BannerShap {
+    z-index: -1;
   }
 
   .headerContent {
