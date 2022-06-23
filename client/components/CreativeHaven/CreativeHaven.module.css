@@ -23,7 +23,7 @@
   left: 0px;
   font-size: 56px;
   font-weight: 600;
-  font-family: "Montserrat-Regular";
+  font-family: 'Montserrat-Regular';
   line-height: 70px;
   color: #ffffff;
 }
@@ -38,7 +38,7 @@
   font-size: 48px;
   font-weight: 500;
   line-height: 60px;
-  font-family: "Montserrat-Regular";
+  font-family: 'Montserrat-Regular';
   color: #ffffff;
   text-align: center;
 }
@@ -64,7 +64,7 @@
 
 .CoWorkingText h2 {
   font-size: 31px;
-  font-family: "Montserrat-Regular";
+  font-family: 'Montserrat-Regular';
   font-weight: 500;
   line-height: 40px;
   color: #75ba87;
@@ -73,10 +73,10 @@
 
 .CoWorkingText p {
   font-size: 16px;
-  font-family: "Jost";
+  font-family: 'Jost';
   font-weight: 400;
   line-height: 20px;
-  color: #A3A3A3;
+  color: #a3a3a3;
   margin-bottom: 60px;
 }
 
@@ -94,7 +94,7 @@
 
 .Lifetime h3 {
   font-size: 32px;
-  font-family: "Montserrat-Regular";
+  font-family: 'Montserrat-Regular';
   font-weight: 500;
   line-height: 40px;
   color: #ffffff;
@@ -103,25 +103,22 @@
 
 .Lifetime h4 {
   font-size: 32px;
-  font-family: "Montserrat-Regular";
+  font-family: 'Montserrat-Regular';
   font-weight: 500;
   line-height: 40px;
   color: #75ba87;
   margin-bottom: 20px;
 }
 
-
-
 .Lifetime p {
   font-size: 16px;
-  font-family: "Jost";
+  font-family: 'Jost';
   font-weight: 400;
   line-height: 20px;
   color: #e3f1e7;
   width: 306px;
   margin: auto;
   margin-bottom: 20px;
-
 }
 
 .YogaBack {
@@ -143,13 +140,11 @@ li .Icon {
   margin-left: 10px;
   margin-right: 10px;
   background: no-repeat;
-  
 }
-
 
 .YogaBack .Lifetime h5 {
   font-size: 18px;
-  font-family: "Jost";
+  font-family: 'Jost';
   font-weight: 400;
   line-height: 20px;
   color: #ffffff;
@@ -171,11 +166,9 @@ li .Icon {
     z-index: 1;
   }
 
-
   .CoWorkingAndMembership {
     padding: 0px !important;
   }
-
 
   .CoWorkingTeam .CoWorking {
     display: grid;
@@ -185,56 +178,48 @@ li .Icon {
     gap: 0px;
   }
 
-
-  .CreativeHavenText h2{
+  .CreativeHavenText h2 {
     z-index: 3;
     font-size: 32px;
     top: 230px !important;
   }
 
-
   .Lifetime {
     text-align: center;
-    
   }
-
 
   .Membership {
     background: #484848;
-    padding: 0px 0px ;
+    padding: 0px 0px;
     display: block !important;
     justify-content: space-between;
   }
 
-
   .CreativeHaven {
     height: 370px !important;
   }
-  
-
 
   .Lifetime h3 {
-    font-size:  18px;
-    font-family: "Montserrat-Regular";
+    font-size: 18px;
+    font-family: 'Montserrat-Regular';
     font-weight: 500;
     line-height: 40px;
     color: #ffffff;
     margin-bottom: 10px;
   }
-  
+
   .Lifetime h4 {
     font-size: 18px;
-    font-family: "Montserrat-Regular";
+    font-family: 'Montserrat-Regular';
     font-weight: 500;
     line-height: 40px;
     color: #75ba87;
     margin-bottom: 10px;
   }
 
-  
   .Lifetime p {
     font-size: 16px;
-    font-family: "Jost";
+    font-family: 'Jost';
     font-weight: 400;
     line-height: 20px;
     color: #e3f1e7;
@@ -244,63 +229,50 @@ li .Icon {
     margin-bottom: 60px;
   }
 
-
   .CoWorkingTeam h1 {
     font-size: 32px;
     font-weight: 500;
     line-height: 60px;
-    font-family: "Montserrat-Regular";
+    font-family: 'Montserrat-Regular';
     color: #ffffff;
     text-align: center;
   }
 
-  .YogaBack li{
+  .YogaBack li {
     display: flex;
     justify-content: end;
   }
-  
-  
 }
 
-
-
-
 @media (min-width: 640px) and (max-width: 1040px) {
+  .CreativeHavenText h2 {
+    z-index: 3;
+    font-size: 47px;
+  }
 
-    .CreativeHavenText h2 {
-        z-index: 3;
-        font-size: 32px;
-      }
+  .CoWorkingAndMembership {
+    padding: 0px !important;
+  }
 
+  .CreativeHavenImage .HavenImage {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    z-index: 1;
+  }
 
-      .CoWorkingAndMembership {
-        padding: 0px !important;
-      }
-    
-    
-      .CreativeHavenImage .HavenImage {
-        position: absolute;
-        top: 0px;
-        right: 0px;
-        z-index: 1;
-      }
+  .CoWorkingTeam .CoWorking {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    text-align: center;
+    margin-top: 100px;
+    gap: 0px;
+  }
 
-      .CoWorkingTeam .CoWorking {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        text-align: center;
-        margin-top: 100px;
-        gap: 0px;
-      }
-    
-
-      .Membership {
-        background: #484848;
-        padding: 50px 150px;
-        display: block !important;
-        justify-content: space-between;
-      }
-
-
-
+  .Membership {
+    background: #484848;
+    padding: 50px 150px;
+    display: block !important;
+    justify-content: space-between;
+  }
 }
