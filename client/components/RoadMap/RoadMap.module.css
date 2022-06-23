@@ -7,6 +7,7 @@
   ) !important;
   min-height: 800px;
   width: 100%;
+  overflow: hidden;
 }
 
 .RoadMapSlider {
@@ -149,6 +150,7 @@
   background-position: left center;
   background-repeat: no-repeat;
   display: flex;
+  margin-top: -10px;
 }
 .SliderMainFirst {
   width: 393px;
@@ -198,6 +200,10 @@
 }
 /* Media Query for Mobile Devices */
 @media (max-width: 637px) {
+  .sliderMain {
+    width: 504%;
+  }
+
   .RoadMapBanner .RoadMapText h1 {
     font-size: 32px;
     font-weight: 600;
@@ -256,6 +262,9 @@
 }
 /* Media Query for low resolution  Tablets, Ipads */
 @media (min-width: 640px) and (max-width: 1040px) {
+  .sliderMain {
+    width: 286%;
+  }
   .RoadMapBanner .RoadMapText h1 {
     font-size: 48px;
     font-weight: 600;
@@ -326,13 +335,13 @@
 
   .sliderPreviousBtn {
     position: absolute;
-    top: 32.5rem;
+    top: 12.5rem;
     cursor: pointer;
   }
 
   .sliderNextBtn {
     position: absolute;
-    top: 32.5rem;
+    top: 12.5rem;
     right: 0;
     cursor: pointer;
   }
