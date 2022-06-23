@@ -39,11 +39,11 @@ const MeetOurTeam = () => {
               <div className={styles.MemberCardOne}>
                 <div className={styles.MemberCardTwo}>
                   <Image
-                    style={{ marginTop: "30px" }}
+                
                     src={image.length < 2 ? "/images/Frame 184.png" : image}
                     alt="Picture of the author"
-                    width={380}
-                    height={380}
+                    width={394}
+                    height={388}
                   />
                 </div>
               </div>

@@ -29,7 +29,7 @@
   position: absolute;
   left: 10px;
   top: 10px;
-  padding-top: 17px;
+  padding-top: 15px;
 }
 
 .MemberCardText {
@@ -377,12 +377,19 @@
     padding: 20px;
   }
 }
-@media screen and (min-width: 983px) and (max-width: 1040px) {
+@media screen and (min-width: 768px) and (max-width: 1040px) {
   .RoadMapSlider {
     width: 440px;
     margin-left: 135px;
     height: 460px !important;
     overflow: hidden;
+  }
+  .MemberProfil {
+    background: #1a2a1e;
+    width: 500px;
+    height: 735px;
+    text-align: center;
+    position: relative;
   }
   .teamMemberContainer {
     width: 30%;
@@ -405,7 +412,7 @@
   .MemberProfil {
     background: #1a2a1e;
     width: 377px;
-    height: 646px !important;
+    height: 735px !important;
     text-align: center;
     position: relative;
   }
