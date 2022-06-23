@@ -11,6 +11,9 @@
   font-family: FuturaLight;
   src: url('../../../public/fonts/futura/Futura\ Light\ font.ttf');
 }
+.carouselItem p {
+  color: gray !important;
+}
 .carouselItem {
   width: 100vw;
   height: 100vh;
@@ -50,6 +53,9 @@
   font-weight: 700;
   color: white;
 }
+.carousleButton:hover {
+  background: #e2dd96;
+}
 .carouselAra button {
 }
 .carousleButton button {
@@ -82,6 +88,9 @@
   color: white;
   font-weight: 400 !important;
   font-family: 'Jost', sans-serif !important;
+}
+.carousleButtonTwo:hover {
+  background: #e2dd96;
 }
 .carousleItemTwo h1 {
   font-family: FuturaBold;

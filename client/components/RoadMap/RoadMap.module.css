@@ -9,8 +9,6 @@
   width: 100%;
 }
 
-
-
 .RoadMapSlider {
   background: rgb(5, 21, 9) !important;
   background: linear-gradient(
@@ -22,64 +20,53 @@
   width: 100%;
 }
 
-
-
 .RoadMapSlider {
   overflow: auto;
   white-space: nowrap;
   scroll-behavior: smooth;
 }
 
-
-.RoadWrapper{
+.RoadWrapper {
   position: relative;
 }
 
-
-.Roadimage{
+.Roadimage {
   position: absolute;
   top: 475px;
   left: 170px;
 }
 
-
-.RoadWrapper h1{
-    font-size: 56px;
-    font-weight: 600;
-    line-height: 70px;
-    font-family: "Montserrat";
-    color: #FAFAFA;
-    margin-top: 200px;
-    width: 488px;
+.RoadWrapper h1 {
+  font-size: 56px;
+  font-weight: 600;
+  line-height: 70px;
+  font-family: 'Montserrat';
+  color: #fafafa;
+  margin-top: 200px;
+  width: 488px;
 }
 
-
-.RoadWrapper .Photo{
+.RoadWrapper .Photo {
   margin-top: 108px !important;
-    margin-left: 50px !important;
-    position: relative;
-    width: 433px;
-    height: 203px;
+  margin-left: 50px !important;
+  position: relative;
+  width: 433px;
+  height: 203px;
 }
-
-
-
 
 .MapWrapper .imageWrapper::after {
-  content: "";
+  content: '';
   position: absolute;
   top: 350px;
   right: 90px;
   width: 360px;
   height: 557px;
-  background-image: url("../../public/images/manifesto (1).png");
+  background-image: url('../../public/images/manifesto (1).png');
   object-fit: cover;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
-
-
 
 .rideMapWrapper {
   position: relative;
@@ -87,13 +74,13 @@
 
 .sliderPreviousBtn {
   position: absolute;
-  top: 20rem;
+  top: 13rem;
   cursor: pointer;
 }
 
 .sliderNextBtn {
   position: absolute;
-  top: 20rem;
+  top: 13rem;
   right: 0;
   cursor: pointer;
 }
@@ -116,11 +103,6 @@
 .RoadMapSlider::-webkit-scrollbar-thumb:hover {
   background: #179bd7;
 }
-
-
-
-
-
 
 .RoadMapCarousel .RoadMapCarouselItam {
   display: flex;
@@ -148,26 +130,74 @@
   margin-bottom: 16px;
 }
 
-
-
-
-.RoadMapphoto  .photo{
-    width: 396px !important;
-    height: 567px !important;
-}
-
-
-
-.RoadMapphoto .image{
+.RoadMapphoto .photo {
   width: 396px !important;
-  height: 567px !important; 
-  
+  height: 567px !important;
 }
 
+.RoadMapphoto .image {
+  width: 396px !important;
+  height: 567px !important;
+}
+.sliderMain {
+  width: 200%;
+  height: 100%;
 
+  justify-content: space-between;
+  background: url('../../public/images/Line\ 10.png');
+  background-size: 100% 2px;
+  background-position: left center;
+  background-repeat: no-repeat;
+  display: flex;
+}
+.SliderMainFirst {
+  width: 393px;
+  height: 377px;
+
+  margin-left: 60px;
+}
+.numbers {
+  width: 90px;
+  height: 90px;
+  background: url('../../public/images/Group\ 5.png');
+  background-size: 100% 100%;
+  background-position: left top;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+.numbers p {
+  font-family: 'Montserrat-Black';
+  font-weight: 800;
+  font-size: 24px;
+  color: #ffffff;
+  margin-top: 15px;
+}
+
+.SliderMainFirst h2 {
+  font-family: 'Montserrat-Regular';
+  font-weight: 500;
+  font-size: 32px;
+  color: #ffffff;
+}
+.SliderMainFirst li {
+  font-family: 'Montserrat-Regular';
+  font-weight: 400;
+  font-size: 18px;
+  color: #c8e3cf;
+  width: 80%;
+}
+#sliderMainSecond {
+  padding-top: 40px;
+}
+.numberStyle {
+  color: #e2dd96 !important;
+}
 /* Media Query for Mobile Devices */
-@media  (max-width: 637px) {
-
+@media (max-width: 637px) {
   .RoadMapBanner .RoadMapText h1 {
     font-size: 32px;
     font-weight: 600;
@@ -202,32 +232,27 @@
   .RoadMapMain {
     height: 941px;
     overflow: hidden;
-
   }
 
-  .RoadWrapper h1{
+  .RoadWrapper h1 {
     font-size: 32px;
     font-weight: 600;
     line-height: 50px;
-    font-family: "Montserrat";
-    color: #FAFAFA;
+    font-family: 'Montserrat';
+    color: #fafafa;
     margin-top: 0px;
     width: 100% !important;
-}
+  }
 
+  .MapWrapper .imageWrapper::after {
+    display: none !important;
+  }
 
-.MapWrapper .imageWrapper::after{
-  display: none !important;
-}
-
-.Roadimage{
-  position: absolute;
-  top: 700px;
-  left: 0px;
-}
-
-
-
+  .Roadimage {
+    position: absolute;
+    top: 700px;
+    left: 0px;
+  }
 }
 /* Media Query for low resolution  Tablets, Ipads */
 @media (min-width: 640px) and (max-width: 1040px) {
@@ -259,119 +284,93 @@
     height: 1150px;
   }
 
-
-  .RoadWrapper h1{
+  .RoadWrapper h1 {
     font-size: 37px;
     font-weight: 600;
     line-height: 70px;
-    font-family: "Montserrat";
-    color: #FAFAFA;
+    font-family: 'Montserrat';
+    color: #fafafa;
     margin-top: 0px;
     width: 488px;
+  }
+
+  .col-md-6 {
+    width: 100% !important;
+  }
+
+  .Roadimage {
+    position: absolute;
+    top: 770px;
+    left: 70px;
+  }
+
+  .sliderPreviousBtn {
+    position: absolute;
+
+    cursor: pointer;
+  }
+
+  .sliderNextBtn {
+    position: absolute;
+
+    cursor: pointer;
+  }
 }
-
-
-.col-md-6{
-  width: 100% !important;
-}
-
-
-.Roadimage{
-  position: absolute;
-  top: 770px;
-  left: 70px;
-}
-
-.sliderPreviousBtn {
-  position: absolute;
-  top: 11rem;
-  cursor: pointer;
-}
-
-.sliderNextBtn {
-  position: absolute;
-  top: 11rem;
-  right: 0;
-  cursor: pointer;
-}
-
-
-
-}
-
 
 @media (min-width: 2000px) and (max-width: 2800px) {
-
-  .MapWrapper .imageWrapper::after{
+  .MapWrapper .imageWrapper::after {
     position: absolute;
     top: 350px;
     right: 600px;
   }
 
+  .sliderPreviousBtn {
+    position: absolute;
+    top: 32.5rem;
+    cursor: pointer;
+  }
 
-  
-.sliderPreviousBtn {
-  position: absolute;
-  top: 32.5rem;
-  cursor: pointer;
+  .sliderNextBtn {
+    position: absolute;
+    top: 32.5rem;
+    right: 0;
+    cursor: pointer;
+  }
 }
-
-.sliderNextBtn {
-  position: absolute;
-  top: 32.5rem;
-  right: 0;
-  cursor: pointer;
-}
-
-  
-
-}
-
-
 
 /* Media Query for low resolution  Tablets, Ipads */
 @media (min-width: 896px) and (max-width: 1024px) {
-
   .MapWrapper .imageWrapper::after {
-    content: "";
+    content: '';
     position: absolute;
     top: 350px;
     right: 0px;
     width: 231px;
     height: 557px;
-    background-image: url("../../public/images/manifesto (1).png");
+    background-image: url('../../public/images/manifesto (1).png');
     object-fit: cover;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
   }
 
-  .Roadimage{
+  .Roadimage {
     position: absolute;
     top: 430px;
     left: 70px;
   }
 
-
-  .RoadWrapper h1{
+  .RoadWrapper h1 {
     font-size: 56px;
     font-weight: 600;
     line-height: 70px;
-    font-family: "Montserrat";
-    color: #FAFAFA;
+    font-family: 'Montserrat';
+    color: #fafafa;
     margin-top: 200px;
     width: 488px;
+  }
+
+  .RoadMapMain {
+    height: 800px !important;
+  }
 }
-
-.RoadMapMain {
-  height: 800px !important;
-}
-
-
-
-
-  
-
-}
-
-
