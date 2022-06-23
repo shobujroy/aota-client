@@ -23,7 +23,7 @@
 .filerArea h1 {
   font-weight: 400;
   font-size: 48px;
-  color: #ffffff;
+  color: #A3A3A3;
   margin-top: 15px;
 }
 .plusIcon {
@@ -44,7 +44,7 @@
 .filterOption p {
   font-weight: 500;
   font-size: 16px;
-  color: white;
+  color: #A3A3A3;
   margin-top: 5px;
 }
 .galleryItem {

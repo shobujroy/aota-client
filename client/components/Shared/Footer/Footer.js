@@ -41,7 +41,7 @@ function Footer() {
                       target="_blank"
                     >
                       <Image
-                        src="/images/instagram.svg"
+                        src="/images/icons/instagram.svg"
                         width={30}
                         height={30}
                       />
@@ -54,7 +54,7 @@ function Footer() {
                       href="https://discord.gg/xpsqJdKkZd"
                       target="_blank"
                     >
-                      <Image src="/images/Discord.svg" width={30} height={30} />
+                      <Image src="/images/icons/Discord.svg" width={30} height={30} />
                     </a>
                   </span>
                   <span style={{ color: "#FAFAFA" }} className="fs-4 me-3">
@@ -64,7 +64,7 @@ function Footer() {
                       href="http://twitter.com/AOTAnft/"
                       target="_blank"
                     >
-                      <Image src="/images/twitter.svg" width={30} height={30} />
+                      <Image src="/images/icons/twitter.svg" width={30} height={30} />
                     </a>
                   </span>
 
@@ -76,7 +76,7 @@ function Footer() {
                       target="_blank"
                     >
                       <Image
-                        src="/images/opensea 1.svg"
+                        src="/images/icons/opensea 2.svg"
                         width={30}
                         height={30}
                       />
