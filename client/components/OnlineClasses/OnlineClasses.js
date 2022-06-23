@@ -110,7 +110,7 @@ const OnlineClasses = () => {
           <Link href={"/creativehaven"}>
             <div className={styles.YogaBack}>
               <li className={styles.Lifetimes}>
-              <Image width={48} height={48} src={"/images/Group 4.png"} className={styles.Icon}  />
+              <Image width={48} height={48} src={"/images/Group 3.svg"} className={styles.Icon}  />
                 <h5>Creative Haven</h5>
               </li>
             </div>

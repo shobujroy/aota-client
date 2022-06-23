@@ -96,8 +96,14 @@
   font-size: 16px;
   color: #1a1a1a;
   border: none;
-  font-family: 'Montserrat-Regular';
+  transition: all linear .2;
 }
+
+
+.resetButton:hover{
+  background-color: #e2dd96 !important;  
+}
+
 
 .filterOption .ImageAndIcon {
   display: flex;
@@ -201,6 +207,9 @@
   margin-left: 25px;
   margin-top: 0;
 }
+
+
+
 .bannerText button {
   width: 113px;
   height: 40px;
@@ -212,7 +221,14 @@
   font-weight: 500;
   font-size: 16px;
   color: #1a1a1a;
+  transition: all linear .2;
 }
+
+
+.bannerText button:hover{
+  background-color: #e2dd96 !important;
+}
+
 
 @media screen and (min-width: 768px) and (max-width: 983px) {
   .resetButton {
