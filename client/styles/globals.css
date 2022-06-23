@@ -7,6 +7,13 @@
 }
 
 @font-face {
+  font-family: 'Montserrat-Regular';
+  src: url('../public/fonts/Montserrat/Montserrat-Regular.ttf')
+    format('truetype');
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
   font-family: 'futura';
   src: url('../public/fonts/futura/futura\ medium\ bt.ttf') format('truetype');
   font-style: normal;

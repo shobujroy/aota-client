@@ -48,7 +48,7 @@ const GalleryMain = () => {
                   <div className={Styles.plusIcon} onClick={() => toggle(i)}>
                     {modalOpen === i ? (
                       <Image
-                        src={"/images/x.png"}
+                        src={"/images/x.svg"}
                         layout="fill"
                         objectFit="cover"
                         alt=""

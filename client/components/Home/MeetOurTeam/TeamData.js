@@ -1,7 +1,7 @@
 export const Team = [
   {
     id: 1,
-    name: "Leslie Alexander",
+    name: "Jacob Flores",
     title: "Founder/Artist",
     image: "/images/Frame 184.png",
     about:
@@ -9,56 +9,56 @@ export const Team = [
   },
   {
     id: 2,
-    name: "Jacob Jones",
-    title: "Illustrator",
+    name: "Apex Dev",
+    title: "Blockchain Developers",
     image: "/images/Frame 184-1.png",
     about:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nec porttitor urna, arcu congue neque enim quis auctor ut. Non, duis malesuada blandit suspendisse posuere aliquam elementum. Hac curabitur mi sit habitant.",
   },
   {
     id: 3,
-    name: "Leslie Alexander",
-    title: "Founder/Artist",
+    name: "Marketing Guy",
+    title: "Marketing",
     image: "/images/Frame 184.png",
     about:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nec porttitor urna, arcu congue neque enim quis auctor ut. Non, duis malesuada blandit suspendisse posuere aliquam elementum. Hac curabitur mi sit habitant.",
   },
   {
     id: 4,
-    name: "Leslie Alexander",
-    title: "Founder/Artist",
+    name: "Eric Rivera",
+    title: "Events/ Relations",
     image: "/images/Frame 184.png",
     about:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nec porttitor urna, arcu congue neque enim quis auctor ut. Non, duis malesuada blandit suspendisse posuere aliquam elementum. Hac curabitur mi sit habitant.",
   },
   {
     id: 5,
-    name: "Leslie Alexander",
-    title: "Founder/Artist",
+    name: "Brittney Ludwig",
+    title: "Illustrator/ Animator",
     image: "/images/Frame 184.png",
     about:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nec porttitor urna, arcu congue neque enim quis auctor ut. Non, duis malesuada blandit suspendisse posuere aliquam elementum. Hac curabitur mi sit habitant.",
   },
   {
     id: 6,
-    name: "Leslie Alexander",
-    title: "Founder/Artist",
+    name: "River Galindo",
+    title: "Yoga Instructor",
     image: "/images/Frame 184.png",
     about:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nec porttitor urna, arcu congue neque enim quis auctor ut. Non, duis malesuada blandit suspendisse posuere aliquam elementum. Hac curabitur mi sit habitant.",
   },
   {
     id: 7,
-    name: "Leslie Alexander",
-    title: "Founder/Artist",
+    name: "Alex Zamora",
+    title: "Illustrator",
     image: "/images/Frame 184.png",
     about:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nec porttitor urna, arcu congue neque enim quis auctor ut. Non, duis malesuada blandit suspendisse posuere aliquam elementum. Hac curabitur mi sit habitant.",
   },
   {
     id: 8,
-    name: "Leslie Alexander",
-    title: "Founder/Artist",
+    name: "Joe Rivas",
+    title: "Copywriter",
     image: "/images/Frame 184.png",
     about:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nec porttitor urna, arcu congue neque enim quis auctor ut. Non, duis malesuada blandit suspendisse posuere aliquam elementum. Hac curabitur mi sit habitant.",
