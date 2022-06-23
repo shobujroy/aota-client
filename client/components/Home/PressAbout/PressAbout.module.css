@@ -21,8 +21,9 @@
   margin-bottom: 20px;
 }
 
-.AboutText h1 {
+.AboutText h1{
   margin-bottom: 20px;
+  color: #e2dd96;
 }
 
 /* Media Query for Mobile Devices */

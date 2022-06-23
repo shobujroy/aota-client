@@ -205,6 +205,51 @@ function Navbar({ BorderBottom, wallet }) {
             )}
           </ul>
           <ul className={`navbar-nav ml-auto $`}>
+            
+            <div className={Styles.SocailMedIcon}>
+              <li className="nav-item">
+                <a
+                  className={"nav-link " + Styles.socialIcon}
+                  aria-current="page"
+                  href="http://instagram.com/aliensontheave"
+                  target="_blank"
+                >
+                  <Image src="/images/icons/instagram.svg" width={24} height={24} />
+                </a>
+              </li>
+              <li className="nav-item">
+                <a
+                  className={"nav-link " + Styles.socialIcon}
+                  aria-current="page"
+                  href="https://discord.gg/xpsqJdKkZd"
+                  target="_blank"
+                >
+                  <Image src="/images/icons/Discord.svg" width={24} height={24} />
+                </a>
+              </li>
+
+              <li className="nav-item">
+                <a
+                  className={"nav-link " + Styles.socialIcon}
+                  aria-current="page"
+                  href="http://twitter.com/AOTAnft/"
+                  target="_blank"
+                >
+                  <Image src="/images/icons/twitter.svg" width={24} height={24} />
+                </a>
+              </li>
+              <li className="nav-item">
+                <a
+                  className={"nav-link " + Styles.socialIcon}
+                  aria-current="page"
+                  href="http://opensea.io/Aliensontheave/"
+                  target="_blank"
+                >
+                  <Image src="/images/icons/opensea 2.svg" width={24} height={24} />
+                </a>
+              </li>
+            </div>
+
             <li className="nav-item">
               <a className={"nav-link " + Styles.navLink}>
                 {!isConnected ? (
@@ -219,49 +264,6 @@ function Navbar({ BorderBottom, wallet }) {
                 )}
               </a>
             </li>
-            <div className={Styles.SocailMedIcon}>
-              <li className="nav-item">
-                <a
-                  className={"nav-link " + Styles.socialIcon}
-                  aria-current="page"
-                  href="http://instagram.com/aliensontheave"
-                  target="_blank"
-                >
-                  <Image src="/images/instagram.svg" width={20} height={20} />
-                </a>
-              </li>
-              <li className="nav-item">
-                <a
-                  className={"nav-link " + Styles.socialIcon}
-                  aria-current="page"
-                  href="https://discord.gg/xpsqJdKkZd"
-                  target="_blank"
-                >
-                  <Image src="/images/Discord.svg" width={20} height={20} />
-                </a>
-              </li>
-
-              <li className="nav-item">
-                <a
-                  className={"nav-link " + Styles.socialIcon}
-                  aria-current="page"
-                  href="http://twitter.com/AOTAnft/"
-                  target="_blank"
-                >
-                  <Image src="/images/twitter.svg" width={20} height={20} />
-                </a>
-              </li>
-              <li className="nav-item">
-                <a
-                  className={"nav-link " + Styles.socialIcon}
-                  aria-current="page"
-                  href="http://opensea.io/Aliensontheave/"
-                  target="_blank"
-                >
-                  <Image src="/images/opensea 1.svg" width={20} height={20} />
-                </a>
-              </li>
-            </div>
           </ul>
         </div>
       </div>
