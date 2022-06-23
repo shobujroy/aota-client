@@ -19,7 +19,7 @@
 .filerArea h1 {
   font-weight: 400;
   font-size: 48px;
-  color: #A3A3A3;
+  color: #ffffff;
   margin-top: 15px;
 }
 .plusIcon {
@@ -40,7 +40,7 @@
 .filterOption p {
   font-weight: 500;
   font-size: 16px;
-  color: #A3A3A3;
+  color: #a3a3a3;
   margin-top: 5px;
 }
 .galleryItem {
@@ -67,7 +67,7 @@
   color: #a3a3a3;
   cursor: pointer;
   margin-top: 20px;
-  font-family: 'Montserrat-Regular';
+  font-family: "Montserrat-Regular";
 }
 .options p:hover {
   color: white;
@@ -96,14 +96,12 @@
   font-size: 16px;
   color: #1a1a1a;
   border: none;
-  transition: all linear .2;
+  transition: all linear 0.2;
 }
 
-
-.resetButton:hover{
-  background-color: #e2dd96 !important;  
+.resetButton:hover {
+  background-color: #e2dd96 !important;
 }
-
 
 .filterOption .ImageAndIcon {
   display: flex;
@@ -111,7 +109,7 @@
   margin: 5px 0px;
 }
 .ImageAndIcon p {
-  font-family: 'Montserrat-Regular';
+  font-family: "Montserrat-Regular";
   font-weight: 500;
   color: gray;
 }
@@ -171,12 +169,11 @@
 }
 
 .gallaryBanner {
-  width: 70vw;
+  width: 69vw;
   position: absolute;
-  right: 20px;
+  right: 23px;
   height: 200px;
   top: 0;
-
   overflow: hidden;
   display: flex;
   background: #1d2e21;
@@ -190,16 +187,16 @@
   width: 600px;
 }
 .bannerText h1 {
-  font-family: 'Montserrat-Regular';
+  font-family: "Montserrat-Regular";
   font-style: normal;
   font-weight: 600;
   font-size: 45px;
-  color: #dbdadf;
+  color: #ffffff;
   margin-left: 20px;
   margin-top: 10px;
 }
 .bannerText p {
-  font-family: 'Montserrat-Regular';
+  font-family: "Montserrat-Regular";
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -208,27 +205,23 @@
   margin-top: 0;
 }
 
-
-
 .bannerText button {
   width: 113px;
   height: 40px;
   background: #75ba87;
   border: none;
   margin-left: 25px;
-  font-family: 'Montserrat-Regular';
+  font-family: "Montserrat-Regular";
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   color: #1a1a1a;
-  transition: all linear .2;
+  transition: all linear 0.2;
 }
 
-
-.bannerText button:hover{
+.bannerText button:hover {
   background-color: #e2dd96 !important;
 }
-
 
 @media screen and (min-width: 768px) and (max-width: 983px) {
   .resetButton {
@@ -328,7 +321,7 @@
     width: 60vw;
   }
   .bannerText h1 {
-    font-family: 'Montserrat-Regular';
+    font-family: "Montserrat-Regular";
     font-style: normal;
     font-weight: 600;
     font-size: 24px;
@@ -337,7 +330,7 @@
     margin-top: 10px;
   }
   .bannerText p {
-    font-family: 'Montserrat-Regular';
+    font-family: "Montserrat-Regular";
     font-style: normal;
     font-weight: 500;
     font-size: 12px;
