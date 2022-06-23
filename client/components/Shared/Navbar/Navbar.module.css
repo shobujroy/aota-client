@@ -35,7 +35,7 @@
 }
 
 .connectWalletBtn:hover {
-  color: #A3A3A3;  
+  color: #A3A3A3;
   border: 1px solid #75ba87;
 }
 
@@ -147,7 +147,7 @@
     display: flex;
   }
 
-  
+
 
   .MobileNabButton {
     margin-right: 30px;
@@ -172,11 +172,15 @@
 }
 
 /* Media Query for low resolution  Tablets, Ipads */
-@media (min-width: 640px) and (max-width: 1040px) {
+@media (min-width: 640px) and (max-width: 1080px) {
   .MobileLogoButton {
     display: block;
     display: flex;
     height: 30px !important;
+  }
+
+  .collapse {
+    display: none !important;
   }
 
   .MobileButton {

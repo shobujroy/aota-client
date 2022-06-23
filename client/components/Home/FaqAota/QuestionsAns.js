@@ -28,7 +28,7 @@ function QuestionsAns({
         <div className={Styles.plusIcon} onClick={() => toggle(index)}>
           {modalOpen === index ? (
             <Image
-              src={"/images/x.png"}
+              src={"/images/x.svg"}
               layout="fill"
               objectFit="cover"
               alt=""
