@@ -110,13 +110,18 @@
   margin-bottom: 20px;
 }
 
+
+
 .Lifetime p {
   font-size: 16px;
   font-family: "Jost";
   font-weight: 400;
   line-height: 20px;
   color: #e3f1e7;
+  width: 306px;
+  margin: auto;
   margin-bottom: 20px;
+
 }
 
 .YogaBack {
@@ -126,6 +131,7 @@
 .YogaBack li {
   display: flex;
   justify-content: end;
+  align-items: center;
 }
 
 li .Icon {
@@ -136,6 +142,20 @@ li .Icon {
   text-align: center;
   margin-left: 10px;
   margin-right: 10px;
+  background: no-repeat;
+  
+}
+
+
+.YogaBack .Lifetime h5 {
+  font-size: 18px;
+  font-family: "Jost";
+  font-weight: 400;
+  line-height: 20px;
+  color: #ffffff;
+  margin-top: 12px;
+  margin-right: 4px;
+  margin-left: 4px;
 }
 
 /* Media Query for Mobile Devices */
@@ -151,11 +171,18 @@ li .Icon {
     z-index: 1;
   }
 
+
+  .CoWorkingAndMembership {
+    padding: 0px !important;
+  }
+
+
   .CoWorkingTeam .CoWorking {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     text-align: center;
     margin-top: 100px;
+    gap: 0px;
   }
 
 
@@ -168,7 +195,7 @@ li .Icon {
 
   .Lifetime {
     text-align: center;
-    width: 300px;
+    
   }
 
 
@@ -244,6 +271,12 @@ li .Icon {
         z-index: 3;
         font-size: 32px;
       }
+
+
+      .CoWorkingAndMembership {
+        padding: 0px !important;
+      }
+    
     
       .CreativeHavenImage .HavenImage {
         position: absolute;

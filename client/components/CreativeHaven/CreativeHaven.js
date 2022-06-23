@@ -88,15 +88,18 @@ const CreativeHaven = () => {
             </div>
           </div>
         </div>
-
+        
+        <div className="container">
         <Link href={"/onlineclasses"}>
             <div className={styles.YogaBack}>
               <li className={styles.Lifetime}>
-                <p>Yoga with River</p>{" "}
-                <KeyboardArrowRightIcon className={styles.Icon} />
+                <h5>Yoga with River</h5>{" "}
+                <Image width={48} height={48} src={"/images/Group 3.png"} className={styles.Icon} />
               </li>
             </div>
           </Link>
+          </div>
+
       </div>
     </>
   );
