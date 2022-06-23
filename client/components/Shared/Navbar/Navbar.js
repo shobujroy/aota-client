@@ -54,7 +54,7 @@ function Navbar({ BorderBottom, wallet }) {
           </Link>
 
           <button className={`${Styles.MobileButton}`} onClick={connectwallet}>
-            Connect Wallet
+            {isConnected ? "Mint" : "Connect Wallet"}
           </button>
         </div>
 
@@ -240,67 +240,68 @@ function Navbar({ BorderBottom, wallet }) {
                   href="https://discord.gg/xpsqJdKkZd"
                   target="_blank"
                 >
-                 {
-                  active === 1 ?  <Image
-                  src="/images/navbar/Discord.svg"
-                  width={24}
-                  height={24}
-                />:
-                <Image
-                src="/images/icons/Discord.svg"
-                width={24}
-                height={24}
-              />
-                 }
+                  {active === 1 ? (
+                    <Image
+                      src="/images/navbar/Discord.svg"
+                      width={24}
+                      height={24}
+                    />
+                  ) : (
+                    <Image
+                      src="/images/icons/Discord.svg"
+                      width={24}
+                      height={24}
+                    />
+                  )}
                 </a>
               </li>
 
               <li className="nav-item">
                 <a
-                 onMouseOver={() => setActive(2)}
-                 onMouseOut={() => setActive(null)}
+                  onMouseOver={() => setActive(2)}
+                  onMouseOut={() => setActive(null)}
                   className={"nav-link " + Styles.socialIcon}
                   aria-current="page"
                   href="http://twitter.com/AOTAnft/"
                   target="_blank"
                 >
-                  {
-                    active === 2 ? <Image
-                    src="/images/navbar/twitter.svg"
-                    width={24}
-                    height={24}
-                  />
-                  :
-                  <Image
-                  src="/images/icons/twitter.svg"
-                  width={24}
-                  height={24}
-                />
-                  }
+                  {active === 2 ? (
+                    <Image
+                      src="/images/navbar/twitter.svg"
+                      width={24}
+                      height={24}
+                    />
+                  ) : (
+                    <Image
+                      src="/images/icons/twitter.svg"
+                      width={24}
+                      height={24}
+                    />
+                  )}
                 </a>
               </li>
               <li className="nav-item">
                 <a
-                onMouseOver={() => setActive(3)}
-                onMouseOut={() => setActive(null)}
+                  onMouseOver={() => setActive(3)}
+                  onMouseOut={() => setActive(null)}
                   className={"nav-link " + Styles.socialIcon}
                   aria-current="page"
                   href="http://opensea.io/Aliensontheave/"
                   target="_blank"
                 >
-                  {
-                    active === 3 ?
+                  {active === 3 ? (
                     <Image
-                    src="/images/navbar/opensea 1.svg"
-                    width={24}
-                    height={24}
-                  />:
-                  <Image
-                    src="/images/icons/opensea 2.svg"
-                    width={24}
-                    height={24}
-                  />
-                  }
+                      src="/images/navbar/opensea 1.svg"
+                      width={24}
+                      height={24}
+                    />
+                  ) : (
+                    <Image
+                      src="/images/icons/opensea 2.svg"
+                      width={24}
+                      height={24}
+                    />
+                  )}
                 </a>
               </li>
             </div>
