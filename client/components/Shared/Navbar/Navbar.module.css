@@ -124,6 +124,12 @@
     height: 30px !important;
   }
 
+
+  .SocailMedIcon li {
+    margin-right: 10px !important;
+    line-height: 60px !important;
+  }
+
   .MobileButton {
     margin-left: auto;
     padding: 10px 24px !important;
@@ -177,6 +183,14 @@
     display: block;
     display: flex;
     height: 30px !important;
+  }
+
+  .SocailMedIcon .SocailMedIcon li {
+    margin-right: 32px;
+  }
+
+  .socialIcon {
+    margin-right: 20px !important;
   }
 
   .collapse {
