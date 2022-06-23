@@ -1,7 +1,4 @@
-@font-face {
-  font-family: Monessirate;
-  src: url('../../../public/fonts/Montserrat/Montserrat-Light.ttf');
-}
+
 
 @font-face {
   font-family: FuturaBold;
@@ -23,7 +20,7 @@
   background-size: 80vw 100vh;
   background-position: right top;
   background-repeat: no-repeat;
-  font-family: Monessirate;
+  font-family: "Montserrat-Regular";
 }
 .carouselItem h1 {
   font-family: FuturaBold;
@@ -36,7 +33,7 @@
   top: 40px;
 }
 .carouselItem p {
-  font-family: Monessirate;
+  font-family: "Montserrat-Regular";
   font-weight: 700;
   font-size: 18px;
   position: absolute;
@@ -78,7 +75,7 @@
   background-size: 100% 100%;
   background-position: right top;
   background-repeat: no-repeat;
-  font-family: Monessirate;
+  font-family: "Montserrat-Regular";
 }
 .carousleButtonTwo {
   width: 200px;
@@ -118,7 +115,7 @@
   background-size: 60vw 100vh;
   background-position: right top;
   background-repeat: no-repeat;
-  font-family: Monessirate;
+  font-family: "Montserrat-Regular";
 }
 
 .carouselItemThree h1 {
@@ -132,7 +129,7 @@
   top: 40px;
 }
 .carouselItemThree p {
-  font-family: Monessirate;
+  font-family: "Montserrat-Regular";
   font-weight: 400;
   font-size: 18px;
   position: absolute;
@@ -149,7 +146,7 @@
   background-size: 60vw 100vh;
   background-position: right top;
   background-repeat: no-repeat;
-  font-family: Monessirate;
+  font-family: "Montserrat-Regular";
 }
 
 .carouselItemFour h1 {
@@ -163,7 +160,7 @@
   top: 40px;
 }
 .carouselItemFour p {
-  font-family: Monessirate;
+  font-family: "Montserrat-Regular";
   font-weight: 400;
   font-size: 18px;
   position: absolute;
@@ -216,7 +213,7 @@
     background-size: 100vw 100vh;
     background-position: right top;
     background-repeat: no-repeat;
-    font-family: Monessirate;
+    font-family: "Montserrat-Regular";
   }
   .carouselItemThree h1 {
     font-weight: 600;
@@ -246,7 +243,7 @@
     background-size: 100vw 80vh;
     background-position: right top;
     background-repeat: no-repeat;
-    font-family: Monessirate;
+    font-family: "Montserrat-Regular";
   }
   .carouselItemFour h1 {
     font-weight: 600;
@@ -277,7 +274,7 @@
     background-size: 200% 90%;
     background-position: right top;
     background-repeat: no-repeat;
-    font-family: Monessirate;
+    font-family: "Montserrat-Regular";
   }
 }
 @media screen and (min-width: 767px) and (max-width: 1040px) {
@@ -293,7 +290,7 @@
     background-size: 80vw 100%;
     background-position: right top;
     background-repeat: no-repeat;
-    font-family: Monessirate;
+    font-family: "Montserrat-Regular";
   }
   .carousleItemTwo {
     width: 100vw;
@@ -306,7 +303,7 @@
     background-size: 100% 100%;
     background-position: right top;
     background-repeat: no-repeat;
-    font-family: Monessirate;
+    font-family: "Montserrat-Regular";
   }
   .carouselItemThree {
     width: 100vw;
@@ -317,7 +314,7 @@
     background-size: 60vw 100%;
     background-position: right top;
     background-repeat: no-repeat;
-    font-family: Monessirate;
+    font-family: "Montserrat-Regular";
   }
   .carouselItemFour {
     width: 100vw;
@@ -328,7 +325,7 @@
     background-size: 60vw 100%;
     background-position: right top;
     background-repeat: no-repeat;
-    font-family: Monessirate;
+    font-family: "Montserrat-Regular";
   }
 }
 @media screen and (min-width: 1440px) and (max-width: 2560px) {
@@ -341,7 +338,7 @@
     background-size: 80vw 80%;
     background-position: right top;
     background-repeat: no-repeat;
-    font-family: Monessirate;
+    font-family: "Montserrat-Regular";
   }
   .carouselItem h1 {
     font-family: FuturaBold;

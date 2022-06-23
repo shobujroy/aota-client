@@ -42,7 +42,7 @@
   font-size: 32px;
   line-height: 40px;
   font-weight: 500;
-  font-family: 'Montserrat';
+  font-family: 'Montserrat-Regular';
 }
 
 .MemberCardText h6 {
@@ -83,7 +83,7 @@
   text-align: right;
   font-size: 56px;
   line-height: 70px;
-  font-family: 'Montserrat';
+  font-family: 'Montserrat-Regular';
   font-weight: 600;
   color: #ffffff;
 }
@@ -323,7 +323,7 @@
   .MeetMember h1 {
     font-size: 39px;
     line-height: 70px;
-    font-family: 'Montserrat';
+    font-family: 'Montserrat-Regular';
     font-weight: 600;
     color: #ffffff;
     text-align: center !important
@@ -467,7 +467,7 @@
     text-align: right;
     font-size: 35px;
     line-height: 70px;
-    font-family: 'Montserrat';
+    font-family: 'Montserrat-Regular';
     font-weight: 600;
     color: #ffffff;
   }

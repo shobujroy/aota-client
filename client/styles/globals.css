@@ -1,6 +1,6 @@
-/* @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap"); */
+/* @import url("https://fonts.googleapis.com/css2?family=Montserrat-Regular:wght@400;500&display=swap"); */
 @font-face {
-  font-family: 'Montserrat-Black';
+  font-family: 'Montserrat-Regular-Black';
   src: url('../public/fonts/Montserrat/Montserrat-Black.ttf') format('truetype');
   font-style: normal;
   font-display: swap;
@@ -45,8 +45,8 @@ a {
   box-sizing: border-box;
 }
 
-.fn-montserrat {
-  font-family: 'Montserrat-Black' !important;
+.fn-Montserrat-Regular {
+  font-family: 'Montserrat-Regular-Black' !important;
 }
 
 .fn-futura {

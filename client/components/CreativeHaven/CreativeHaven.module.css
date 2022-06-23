@@ -23,7 +23,7 @@
   left: 0px;
   font-size: 56px;
   font-weight: 600;
-  font-family: "Montserrat";
+  font-family: "Montserrat-Regular";
   line-height: 70px;
   color: #ffffff;
 }
@@ -38,7 +38,7 @@
   font-size: 48px;
   font-weight: 500;
   line-height: 60px;
-  font-family: "Montserrat";
+  font-family: "Montserrat-Regular";
   color: #ffffff;
   text-align: center;
 }
@@ -64,7 +64,7 @@
 
 .CoWorkingText h2 {
   font-size: 31px;
-  font-family: "Montserrat";
+  font-family: "Montserrat-Regular";
   font-weight: 500;
   line-height: 40px;
   color: #75ba87;
@@ -94,7 +94,7 @@
 
 .Lifetime h3 {
   font-size: 32px;
-  font-family: "Montserrat";
+  font-family: "Montserrat-Regular";
   font-weight: 500;
   line-height: 40px;
   color: #ffffff;
@@ -103,7 +103,7 @@
 
 .Lifetime h4 {
   font-size: 32px;
-  font-family: "Montserrat";
+  font-family: "Montserrat-Regular";
   font-weight: 500;
   line-height: 40px;
   color: #75ba87;
@@ -215,7 +215,7 @@ li .Icon {
 
   .Lifetime h3 {
     font-size:  18px;
-    font-family: "Montserrat";
+    font-family: "Montserrat-Regular";
     font-weight: 500;
     line-height: 40px;
     color: #ffffff;
@@ -224,7 +224,7 @@ li .Icon {
   
   .Lifetime h4 {
     font-size: 18px;
-    font-family: "Montserrat";
+    font-family: "Montserrat-Regular";
     font-weight: 500;
     line-height: 40px;
     color: #75ba87;
@@ -249,7 +249,7 @@ li .Icon {
     font-size: 32px;
     font-weight: 500;
     line-height: 60px;
-    font-family: "Montserrat";
+    font-family: "Montserrat-Regular";
     color: #ffffff;
     text-align: center;
   }

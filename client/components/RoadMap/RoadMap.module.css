@@ -40,7 +40,7 @@
   font-size: 56px;
   font-weight: 600;
   line-height: 70px;
-  font-family: 'Montserrat';
+  font-family: 'Montserrat-Regular';
   color: #fafafa;
   margin-top: 200px;
   width: 488px;
@@ -117,7 +117,7 @@
   font-size: 32px;
   font-weight: 500;
   line-height: 40px;
-  font-family: 'Montserrat';
+  font-family: 'Montserrat-Regular';
   margin-bottom: 20px;
 }
 
@@ -170,7 +170,7 @@
   margin-bottom: 30px;
 }
 .numbers p {
-  font-family: 'Montserrat-Black';
+  font-family: 'Montserrat-Regular-Black';
   font-weight: 800;
   font-size: 24px;
   color: #ffffff;
@@ -202,7 +202,7 @@
     font-size: 32px;
     font-weight: 600;
     line-height: 70px;
-    font-family: 'Montserrat';
+    font-family: 'Montserrat-Regular';
     color: #fafafa;
     width: 316px;
     position: absolute;
@@ -238,7 +238,7 @@
     font-size: 32px;
     font-weight: 600;
     line-height: 50px;
-    font-family: 'Montserrat';
+    font-family: 'Montserrat-Regular';
     color: #fafafa;
     margin-top: 0px;
     width: 100% !important;
@@ -260,7 +260,7 @@
     font-size: 48px;
     font-weight: 600;
     line-height: 70px;
-    font-family: 'Montserrat';
+    font-family: 'Montserrat-Regular';
     color: #fafafa;
     width: 453px;
     position: absolute;
@@ -288,7 +288,7 @@
     font-size: 37px;
     font-weight: 600;
     line-height: 70px;
-    font-family: 'Montserrat';
+    font-family: 'Montserrat-Regular';
     color: #fafafa;
     margin-top: 0px;
     width: 488px;
@@ -364,7 +364,7 @@
     font-size: 56px;
     font-weight: 600;
     line-height: 70px;
-    font-family: 'Montserrat';
+    font-family: 'Montserrat-Regular';
     color: #fafafa;
     margin-top: 200px;
     width: 488px;

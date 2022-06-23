@@ -13,7 +13,7 @@ function MemberCard() {
       />
       <div className="card-body d-flex flex-row justify-content-between align-items-center">
         <div>
-          <h5 className="card-title fn-montserrat">Jacob Flores</h5>
+          <h5 className="card-title fn-Montserrat-Regular">Jacob Flores</h5>
           <p className="fn-futura">FOUNDER/ARTIST</p>
         </div>
         <div>

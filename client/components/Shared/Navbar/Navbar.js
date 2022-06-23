@@ -21,7 +21,7 @@ function Navbar({ BorderBottom, wallet }) {
   return (
     <nav
       style={{ display: "block", padding: "20px 20px" }}
-      className={`navbar navbar-expand-lg fn-montserrat ${
+      className={`navbar navbar-expand-lg fn-Montserrat-Regular ${
         wallet ? "navbar-light" : "navbar-dark"
       } bg-primary pb-3`}
     >

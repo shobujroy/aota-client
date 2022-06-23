@@ -6,7 +6,7 @@
 .AveBannerText h1 {
   font-size: 48px;
   font-weight: 500;
-  font-family: "Montserrat";
+  font-family: "Montserrat-Regular";
   line-height: 60px;
   color: #ffffff;
 }
@@ -64,7 +64,7 @@
   font-weight: 500;
   line-height: 30px;
   color: #75ba87;
-  font-family: "Montserrat";
+  font-family: "Montserrat-Regular";
 }
 
 .TheAveText h4 {
@@ -72,7 +72,7 @@
   font-weight: 500;
   line-height: 30px;
   color: #ffffff;
-  font-family: "Montserrat";
+  font-family: "Montserrat-Regular";
   margin-top: 20px;
   margin-bottom: 32px;
 }
@@ -106,7 +106,7 @@
   transform: translate(-50%, -50%);
   font-size: 48px;
   font-weight: 500;
-  font-family: "Montserrat";
+  font-family: "Montserrat-Regular";
   line-height: 60px;
   cursor: pointer;
 }
@@ -124,7 +124,7 @@
 .AvePhotoText h1 {
   font-size: 32px;
   font-weight: 500;
-  font-family: "Montserrat";
+  font-family: "Montserrat-Regular";
   line-height: 60px;
   width: 253px;
 }
@@ -142,7 +142,7 @@
 .AveThePhotoText h1 {
   font-size: 32px;
   font-weight: 500;
-  font-family: "Montserrat";
+  font-family: "Montserrat-Regular";
   line-height: 60px;
   width: 310px;
 }
@@ -177,7 +177,7 @@
   font-size: 32px;
   font-weight: 500;
   line-height: 40px;
-  font-family: "Montserrat";
+  font-family: "Montserrat-Regular";
   color: #ffffff;
   width: 617px;
   margin: auto;
@@ -369,7 +369,7 @@
     font-size: 18px;
     font-weight: 500;
     line-height: 40px;
-    font-family: "Montserrat";
+    font-family: "Montserrat-Regular";
     color: #ffffff;
     width: 370px;
     margin: 0px;
@@ -514,7 +514,7 @@
     font-size: 18px;
     font-weight: 500;
     line-height: 40px;
-    font-family: "Montserrat";
+    font-family: "Montserrat-Regular";
     color: #ffffff;
     width: 410px;
     margin: auto;
@@ -661,7 +661,7 @@
     font-size: 18px;
     font-weight: 500;
     line-height: 40px;
-    font-family: "Montserrat";
+    font-family: "Montserrat-Regular";
     color: #ffffff;
     width: 410px;
     margin: auto;

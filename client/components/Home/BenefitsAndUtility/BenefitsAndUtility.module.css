@@ -35,13 +35,13 @@
   font-size: 32px;
   line-height: 40px;
   font-weight: 500;
-  font-family: 'Montserrat';
+  font-family: 'Montserrat-Regular';
 }
 
 .textCard h1 {
   color: #051509;
   font-weight: 500;
-  font-family: 'Montserrat';
+  font-family: 'Montserrat-Regular';
   font-size: 56px;
   line-height: 70px;
   width: 470px;
@@ -60,7 +60,7 @@
 .Donations h1 {
   color: #051509;
   font-weight: 600;
-  font-family: 'Montserrat';
+  font-family: 'Montserrat-Regular';
   font-size: 56px;
   line-height: 100px;
   border-bottom: 1px solid #d1d1d1;
@@ -73,7 +73,7 @@
 .DonationsCard h4 {
   color: #051509;
   font-weight: 500;
-  font-family: 'Montserrat';
+  font-family: 'Montserrat-Regular';
   font-size: 32px;
   line-height: 40px;
   width: 528px;
