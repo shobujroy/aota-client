@@ -5,7 +5,9 @@
 .headingWrapper p {
   max-width: 900px;
 }
-
+.benefitsCard {
+  background: #f6eae8;
+}
 .benefitsCard:hover {
   border: 1px solid #45c78c !important;
 }
@@ -93,29 +95,23 @@
   padding: 12px 12px;
 }
 
-
-.textCard{
+.textCard {
   margin-top: 170px !important;
 }
 
-
-
-.Smallcard{
+.Smallcard {
   display: none !important;
 }
 
-
 /* Media Query for Mobile Devices */
 @media (max-width: 637px) {
-  .AboutServiceAll{
+  .AboutServiceAll {
     margin: 0px !important;
   }
-  
-  
-  .Smallcard{
+
+  .Smallcard {
     display: block !important;
   }
-  
 
   .AboutService {
     flex-direction: column-reverse;
@@ -125,10 +121,6 @@
     flex-direction: column-reverse !important;
   }
 
-
-  
-
-
   .textMainText {
     margin-top: 30px;
   }
@@ -137,21 +129,18 @@
     font-size: 24px !important;
   }
 
-
-  .textCard p{
+  .textCard p {
     width: 360px !important;
   }
 
-.textCard{
-  display: none !important;
-}
-
+  .textCard {
+    display: none !important;
+  }
 
   .textSmall {
     text-align: center;
     margin-top: 30px;
     margin-bottom: 0px !important;
-    
   }
 
   .benefitsCard p {
@@ -159,11 +148,9 @@
     font-weight: 400;
   }
 
-
-  .benefitsCard h6{
+  .benefitsCard h6 {
     font-size: 24px !important;
   }
-
 
   .Donations h1 {
     font-size: 32px;
@@ -182,18 +169,13 @@
   .benefitsCard {
     width: 400px !important;
   }
-
-  
 }
-
 
 /* Media Query for low resolution  Tablets, Ipads */
 @media (min-width: 640px) and (max-width: 1040px) {
   .textMainText h1 {
     font-size: 24px !important;
   }
-
- 
 
   .benefitsCard p {
     width: 350px !important;
@@ -218,8 +200,7 @@
     width: 400px !important;
   }
 
-
-  .textCard .textMainText p{
+  .textCard .textMainText p {
     width: 300px;
   }
 }
