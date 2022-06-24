@@ -125,9 +125,14 @@
   }
 
 
+  .SocailMedIcon{
+    margin-top: 0px !important;
+  }
+
   .SocailMedIcon li {
-    margin-right: 10px !important;
+    margin-right: 20px !important;
     line-height: 60px !important;
+    margin-left: 0px !important;
   }
 
   .MobileButton {
@@ -186,6 +191,13 @@
     height: 30px !important;
   }
 
+
+  .SocailMedIcon{
+    margin-top: 0px !important;
+  }
+
+
+  
   .SocailMedIcon .SocailMedIcon li {
     margin-right: 32px;
   }
