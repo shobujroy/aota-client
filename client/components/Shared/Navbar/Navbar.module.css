@@ -132,17 +132,18 @@
 
   .MobileButton {
     margin-left: auto;
-    padding: 10px 24px !important;
+    padding: 10px 10px !important;
     background: #75ba87;
-    font-size: 16px;
+    font-size: 13px;
     font-weight: 500;
     line-height: 20px;
     font-family: 'Jost', sans-serif;
     border: 0px !important;
     color: #1a1a1a;
-    width: 155px;
+    width: 160px;
     height: 45px;
-    margin-top: -10px;
+    margin-top: -12px;
+    text-transform: uppercase;
   }
 
   .NavbarItam .PCImage {
@@ -156,7 +157,7 @@
 
 
   .MobileNabButton {
-    margin-right: 30px;
+    margin-right: 15px;
   }
 
   .NavbarItam .Muneleft {
@@ -199,7 +200,7 @@
 
   .MobileButton {
     margin-left: auto;
-    padding: 10px 24px !important;
+    padding: 10px 10px !important;
     background: #75ba87;
     font-size: 16px;
     font-weight: 500;
@@ -207,9 +208,11 @@
     font-family: 'Jost', sans-serif;
     border: 0px !important;
     color: #1a1a1a;
-    width: 155px;
+    width: 160px;
     height: 45px;
-    margin-top: -10px;
+    margin-top: -12px;
+    text-transform: uppercase;
+   
   }
 
   .NavbarItam .PCImage {
@@ -226,6 +229,7 @@
 
   .MobileNabButton {
     margin-right: 30px;
+   
   }
 
   .NavbarItam .Muneleft {

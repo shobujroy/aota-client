@@ -27,3 +27,31 @@
   display: flex !important;
   
 }
+
+
+
+
+
+
+
+@media (min-width: 640px) and (max-width: 1040px) {
+  .OurPartners {
+    padding: 0px 0px;
+   
+  }
+
+
+}
+
+
+
+/* Media Query for Mobile Devices */
+@media (max-width: 600px) {
+
+  .OurPartners {
+    padding: 0px 0px;
+   
+  }
+}
+
+

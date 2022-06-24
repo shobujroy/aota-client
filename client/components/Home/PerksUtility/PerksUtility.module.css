@@ -124,6 +124,16 @@
     margin: 0px;
   }
 
+  .PerksAndUtility .Perks h1{
+    color: #051509;
+    text-align: left;
+    font-size: 24px;
+    font-weight: 600;
+    font-family: "Montserrat-Regular";
+    line-height: 40px;
+    margin-bottom: 0px !important;
+  }
+
   .PerksAndUtility .Perks p {
     padding: 20px 0px !important;
   }
@@ -192,8 +202,10 @@
   .Perks .PerksCards {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
     gap: 30px;
-  }
+    margin-top: 40px;
+}
 
   .PerksAndUtility .Perks p {
     padding: 20px 0px !important;
@@ -205,11 +217,27 @@
     gap: 0px;
   }
 
+  .Utilitys {
+    border-top: 1px solid #d1d1d1;
+    margin: 0px 0px 50px;
+  }
+
   .HomeImg {
     position: absolute !important;
     top: 200px !important;
     left: 0px !important;
     z-index: 2 !important;
     width: 323px;
+  }
+
+
+  .Utilitys h1 {
+    font-size: 56px;
+    font-family: "Montserrat-Regular";
+    font-weight: 600;
+    line-height: 70px;
+    color: #051509;
+    text-align: center;
+    margin: 20px 0px 50px;
   }
 }
