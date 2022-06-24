@@ -176,7 +176,10 @@
   top: 0;
   overflow: hidden;
   display: flex;
-  background: #1d2e21;
+  background: url('../../../public/images/Gallery_Banner.jpg');
+  background-size: cover;
+  background-position: left top;
+  background-repeat: no-repeat;
 }
 .bannerImage {
   width: 240px;
@@ -310,7 +313,10 @@
 
     overflow: hidden;
     display: flex;
-    background: #1d2e21;
+    background: url('../../../public/images/Gallery_Banner.jpg');
+    background-size: cover;
+    background-position: left top;
+    background-repeat: no-repeat;
   }
   .bannerImage {
     width: 40vw;

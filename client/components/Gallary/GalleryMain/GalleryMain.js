@@ -80,13 +80,7 @@ const GalleryMain = () => {
 
       <div className={`col-md-9 ${Styles.gallaryRight}`}>
         <div className={Styles.gallaryBanner}>
-          <div className={Styles.bannerImage}>
-            <Image
-              src={"/images/Frame 185.png"}
-              layout="fill"
-              objectFit="cover"
-            ></Image>
-          </div>
+          
           <div className={Styles.bannerText}>
             <h1>FIND YOUR AOTA</h1>
             <p>
