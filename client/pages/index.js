@@ -1,63 +1,54 @@
-import React from 'react'
-import Navbar from '../components/Shared/Navbar/Navbar';
-import Header from '../components/Home/Header/Header';
-import NewItems from '../components/Home/NewItems/NewItems';
-import HotCollection from '../components/Home/HotCollection/HotCollection';
-import HowItWork from '../components/Home/HowItWork/HowItWork';
-import CallToAction from '../components/Home/CallToAction/CallToAction'
-import Footer from '../components/Shared/Footer/Footer';
-import RoadMap from '../components/Home/RoadMap/RoadMap';
-import PressAbout from '../components/Home/PressAbout/PressAbout';
-import BenefitsAndUtility from '../components/Home/BenefitsAndUtility/BenefitsAndUtility';
-
+import React from "react";
+// using components
+import Navbar from "../components/Shared/Navbar/Navbar";
+import Header from "../components/Home/Header/Header";
+import Footer from "../components/Shared/Footer/Footer";
+import MeetOurTeam from "../components/Home/MeetOurTeam/MeetOurTeam";
+import OurPartners from "../components/Home/OurPartners/OurPartners";
+import FaqAota from "../components/Home/FaqAota/FaqAota";
+import PerksUtility from "../components/Home/PerksUtility/PerksUtility";
+import PressAbout from "../components/Home/PressAbout/PressAbout";
+// un-using components
+// import NewItems from '../components/Home/NewItems/NewItems';
+// import HotCollection from '../components/Home/HotCollection/HotCollection';
+// import HowItWork from '../components/Home/HowItWork/HowItWork';
+// import CallToAction from '../components/Home/CallToAction/CallToAction'
+// import RoadMap from '../components/Home/RoadMap/RoadMap';
+// import BenefitsAndUtility from '../components/Home/BenefitsAndUtility/BenefitsAndUtility';
 // import Faq from '../components/Home/Faq/Faq';
-import BorderLine from '../components/Home/BorderLine/BorderLine';
-import MeetOurTeam from '../components/Home/MeetOurTeam/MeetOurTeam';
-import OurPartners from '../components/Home/OurPartners/OurPartners';
-import FaqAota from '../components/Home/FaqAota/FaqAota';
+// import BorderLine from '../components/Home/BorderLine/BorderLine';
 
 function Home() {
-
-
-  
-return (
-    <div style={{overflowX: "hidden"}}>
-
-
+  return (
+    <div style={{ overflowX: "hidden" }}>
       <Navbar />
-      <Header />      
+      <Header />
       <PressAbout />
-      <BenefitsAndUtility />     
+      <PerksUtility />
       <MeetOurTeam />
       <OurPartners />
       <FaqAota />
-      {/* <Faq /> */}
-      <Footer bg={'bg-main'} />
-      
+      <Footer bg={"bg-main"} />
 
-
-
-
-
-
-      {/* <BorderLine /> */}
-      {/* <BorderLine /> */}
-      {/* <NewItems /> */}
-      {/* <HotCollection /> 
+      {/* 
+      <Faq /> 
+      <BorderLine /> 
+      <BorderLine /> 
+      <NewItems /> 
+      <HotCollection /> 
       <Partners />
       <BorderLine />
-      */}
-      {/* <HowItWork /> */}
-      {/* <RoadMap />
+      <BenefitsAndUtility />      
+      <HowItWork />
+      <RoadMap />
       <BorderLine />
       <Gallery />
       <BorderLine />
       <Team />
-      <BorderLine /> */}
-      {/* <CallToAction /> */}
-     
+      <BorderLine />
+      <CallToAction /> */}
     </div>
-  )
+  );
 }
 
-export default Home
+export default Home;
