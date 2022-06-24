@@ -8,12 +8,12 @@ const RoadMap = () => {
   const [number, setNumber] = useState(1);
 
   function scrollRoadMapPrev() {
-    document.getElementById("roadMap").scrollBy(-500, -0);
+    document.getElementById("roadMap").scrollBy(-400, -0);
     setNumber(number - 1);
   }
 
   function scrollRoadMapNext() {
-    document.getElementById("roadMap").scrollBy(500, 0);
+    document.getElementById("roadMap").scrollBy(400, 0);
     setNumber(number + 1);
   }
 
@@ -185,7 +185,7 @@ const RoadMap = () => {
           onClick={() => scrollRoadMapPrev()}
           className={`${styles.sliderPreviousBtn}`}
         >
-          <Image src={"/images/Group 4.png"} width={50} height={50} />
+          <Image src={"/images/Group 3.png"} width={50} height={50} />
         </div>
       </div>
     </>
