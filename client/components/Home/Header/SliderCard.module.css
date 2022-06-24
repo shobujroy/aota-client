@@ -174,10 +174,11 @@
     width: 100%;
   }
   .carouselItem {
-    background: url('../../../public/images/pc1\ mob.png');
-    background-size: 100% 100%;
+    background: url('../../../public/images/Guitarist.png');
+    background-size: 139% 82%;
     background-position: right top;
     background-repeat: no-repeat;
+    background-position-x: -51px;
   }
   .carouselItem h1 {
     font-weight: 600;
@@ -286,11 +287,12 @@
     height: 70vh;
 
     position: relative;
-    background: url('../../../public/images/banner.png');
-    background-size: 80vw 100%;
+    background: url('../../../public/images/Guitarist.png');
+    background-size: 100vw 100%;
     background-position: right top;
     background-repeat: no-repeat;
     font-family: 'Montserrat-Regular';
+    background-position-x: 187px;
   }
   .carousleItemTwo {
     width: 100vw;
@@ -300,7 +302,7 @@
     justify-content: center;
     align-items: end;
     background: url('../../../public/images/Merch.png');
-    background-size: 100% 100%;
+    background-size: 216% 93%;
     background-position: right top;
     background-repeat: no-repeat;
     font-family: 'Montserrat-Regular';
@@ -311,7 +313,7 @@
 
     position: relative;
     background: url('../../../public/images/creativehaven.png');
-    background-size: 60vw 100%;
+    background-size: 100vw 100%;
     background-position: right top;
     background-repeat: no-repeat;
     font-family: 'Montserrat-Regular';

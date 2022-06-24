@@ -97,6 +97,7 @@
   color: #1a1a1a;
   border: none;
   transition: all linear 0.2;
+  text-transform: uppercase;
 }
 
 .resetButton:hover {
@@ -220,6 +221,7 @@
   font-size: 16px;
   color: #1a1a1a;
   transition: all linear 0.2;
+  text-transform: uppercase;
 }
 
 .bannerText button:hover {
@@ -245,17 +247,17 @@
   .galleryItem {
     width: 542px;
     position: absolute;
-    top: 305px;
+    top: 228px;
     height: 654px;
     display: flex;
     flex-wrap: wrap;
   }
   .galleryImages {
-    width: 129px;
-    height: 119px;
+    width: 162px;
+    height: 160px;
     position: relative;
     margin-left: 10px;
-    margin-top: 10px;
+    margin-top: 0px;
   }
   .bannerText h1 {
     font-size: 43px;
@@ -293,11 +295,12 @@
     right: 20px;
     height: 1760px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     overflow: scroll;
-    top: 1400px;
+    top: 1146px;
     left: 5px;
+    align-content: flex-start;
   }
   .galleryImages {
     width: 94%;
@@ -308,8 +311,8 @@
     width: 90vw;
     position: absolute;
     right: 20px;
-    height: 250px;
-    top: 1000px;
+    height: 204px;
+    top: 885px;
 
     overflow: hidden;
     display: flex;
