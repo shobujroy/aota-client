@@ -1,5 +1,6 @@
 .OurPartners {
   padding: 100px 0px;
+ 
 }
 
 .OurPartners h1 {
@@ -12,12 +13,17 @@
   border-bottom: 1px solid #d1d1d1;
 }
 
-.Partners {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 60px;
+
+
+.Partners{
+  width: 100% !important;
+  display: flex !important;
 }
 
-.Partners Image {
-  width: 170px !important;
+
+.Partner{
+  width: 100% !important; 
+  justify-content: space-between;
+  display: flex !important;
+  
 }
