@@ -168,8 +168,8 @@
 .CoWorkingPart {
   background: #203024;
   text-align: center;
-  padding: 26px;
-  margin-left: 32px;
+  padding: 30px;
+  margin-left: 10px;
   width: 70%;
 }
 
@@ -189,6 +189,7 @@
   position: relative;
   height: 47px;
   width: 60px;
+  margin-top: 30px;
 }
 
 .CoWorkingPart .Pasicon {
@@ -422,6 +423,10 @@
     font-size: 32px;
   }
 
+  .BackIcon{
+    margin-top: 0px !important;
+  }
+
   .AveBannerText p {
     font-size: 16px;
     width: 400px;
@@ -558,6 +563,9 @@
     height: 169px;
     margin-top: -50px;
   }
+
+
+
 }
 
 

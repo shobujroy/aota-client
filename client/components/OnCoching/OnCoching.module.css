@@ -198,9 +198,14 @@ li .Icon {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     text-align: center;
-    margin-top: 100px;
+    margin-top: 30px;
     gap: 0px;
   }
+
+
+
+ 
+
 
   .Membership {
     background: #484848;
@@ -220,6 +225,32 @@ li .Icon {
   .GoLink {
     margin-left: -30px !important;
   }
+
+  .CoWorkingTeam h1 {
+    font-size: 32px !important;
+    line-height: 40px;
+  }
+
+
+  .CoWorkingText p{    
+    font-size: 16px;
+    font-family: "Jost";
+    font-weight: 400;
+    line-height: 20px;
+    color: #A3A3A3;
+    width: 306px;
+    margin: auto;
+    margin-bottom: 30px;
+  }
+
+
+  .OnlineMembership {
+    text-align: center;
+    background: #484848;
+    padding: 20px 0px;
+  }
+  
+
 }
 
 /* Media Query for Mobile Devices */
@@ -233,9 +264,14 @@ li .Icon {
     width: 100%;
   }
 
+  .CoWorkingTeam h1 {
+    font-size: 32px !important;
+    line-height: 40px;
+  }
+
 
   .CoWorkingAndMembership{
-    padding: 0px !important;
+    padding: 0px 0px 20px !important;
   }
 
   .OnlineMembership {
@@ -245,11 +281,13 @@ li .Icon {
   }
 
   .CoWorkingText h2 {
-    font-size: 48px !important;
+    font-size: 24px !important;
   }
 
   .CoWorkingText p {
-    margin-bottom: 50px !important;
+    margin-bottom: 30px !important;
+    width: 306px;
+    margin: 0 auto;
     
   }
   .OnlineClassesText h2 {
@@ -331,7 +369,7 @@ li .Icon {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     text-align: center;
-    margin-top: 100px;
+    margin-top: 30px;
     gap: 0px;
   }
 
