@@ -19,7 +19,7 @@
 
 .CreativeHavenText h2 {
   position: absolute;
-  top: 317px;
+  top: 390px;
   left: 0px;
   font-size: 56px;
   font-weight: 600;
@@ -28,11 +28,18 @@
   color: #ffffff;
 }
 
-.CreativeHavenImage .HavenImage {
-  position: absolute;
-  top: 0px;
-  right: 0px;
+
+
+
+.CreativeHavenText {
+  width: 100%;
+  height: 550px;
+  background-image: url('../../public/images/CreativeHaven/Skater\ 2.png');
+  background-repeat: no-repeat;
+  background-size: 50% 100%;
+  background-position: right top;
 }
+
 
 .CoWorkingTeam h1 {
   font-size: 48px;
@@ -159,12 +166,15 @@ li .Icon {
     z-index: 3;
   }
 
-  .CreativeHavenImage .HavenImage {
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    z-index: 1;
+  .CreativeHavenText {
+    width: 100%;
+    height: 350px;
+    background-image: url('../../public/images/CreativeHaven/Skater 2 (1).png');
+    background-repeat: no-repeat;
+    background-size: 50% 100%;
+    background-position: center !important;
   }
+  
 
   .CoWorkingAndMembership {
     padding: 0px !important;
@@ -174,14 +184,16 @@ li .Icon {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     text-align: center;
-    margin-top: 100px;
+    margin-top: 50px;
     gap: 0px;
   }
 
   .CreativeHavenText h2 {
     z-index: 3;
     font-size: 32px;
-    top: 230px !important;
+    top: 255px !important;
+    left: 10px;
+  
   }
 
   .Lifetime {
@@ -254,12 +266,29 @@ li .Icon {
     padding: 0px !important;
   }
 
-  .CreativeHavenImage .HavenImage {
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    z-index: 1;
+  .CreativeHavenText {
+    width: 100%;
+    height: 596px;
+    background-image: url('../../public/images/CreativeHaven/Skater 2 (1).png');
+    background-repeat: no-repeat;
+    background-size: 50% 90%;
+    background-position: right top;
+    background-position-x: 300px;
   }
+
+
+
+  .CreativeHavenText h2 {
+    position: absolute;
+    top: 390px;
+    left: 0px;
+    font-size: 56px !important;
+    font-weight: 600;
+    font-family: 'Montserrat-Regular';
+    line-height: 70px;
+    color: #ffffff;
+  }
+  
 
   .CoWorkingTeam .CoWorking {
     display: grid;

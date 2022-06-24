@@ -10,20 +10,10 @@ const CreativeHaven = () => {
       <div className={styles.CreativeHaven}>
         <div className="container pb-4 pt-4">
           <div className="row">
-            <div className={`col-md-6  col-sm-12 ${styles.CreativeHavenText}`}>
+            <div className={`col-lg-12 col-md-12  col-sm-12 ${styles.CreativeHavenText}`}>
               <h2>Creative Haven</h2>
             </div>
-
-            <div className={`col-md-6  col-sm-12 ${styles.CreativeHavenImage}`}>
-              <div className={styles.HavenImage}>
-                <Image
-                  width={624}
-                  height={538}
-                  src={"/images/CreativeHaven/Skater 2.png"}
-                />
-              </div>
             </div>
-          </div>
         </div>
       </div>
 
