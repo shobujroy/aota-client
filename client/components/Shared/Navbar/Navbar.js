@@ -308,19 +308,19 @@ function Navbar({ BorderBottom, wallet }) {
 
             <li className="nav-item">
               <a className={"nav-link " + Styles.navLink}>
-                {!isConnected ? (
-                  <button
-                    className={`${Styles.connectWalletBtn}`}
-                    onClick={connectwallet}
-                  >
-                    Connect Wallet
-                  </button>
-                ) : (
+                {isConnected ? (
                   <Link href={"/public-sale"}>
                     <button className={`${Styles.connectWalletBtn}`}>
-                      Mint
-                    </button>{" "}
+                      MINT
+                    </button>
                   </Link>
+                ) : (
+                  <button
+                    onClick={() => connectwallet()}
+                    className={`${Styles.connectWalletBtn}`}
+                  >
+                    CONNECT WALLET
+                  </button>
                 )}
               </a>
             </li>
