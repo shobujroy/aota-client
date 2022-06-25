@@ -4,6 +4,7 @@ import Footer from "../../components/Shared/Footer/Footer";
 import ProductCard from "../../components/PublicSale/ProductCard/ProductCard";
 import { useState, useEffect } from "react";
 import { MintContext } from "./../../context/MintContext";
+import Link from "next/link";
 
 function Index() {
   const { isConnected, hasMetamask, sign } = useContext(MintContext);
@@ -13,9 +14,9 @@ function Index() {
       <Navbar BorderBottom={true} wallet={true} />
       <div className="container pt-3 pb-5">
         <div className="row">
-          <h6 className="d-flex flex-row align-items-center">
+          <h6 style={{color: "#FFFFFF"}} className="d-flex flex-row align-items-center">
             <i className="fa-solid fa-arrow-left-long me-2"></i>
-            Back
+             <Link  href={"/"} >Back</Link>  
           </h6>
           <div className="mt-3 d-flex justify-content-center">
             <ProductCard />
