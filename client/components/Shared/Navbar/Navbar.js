@@ -316,7 +316,11 @@ function Navbar({ BorderBottom, wallet }) {
                     Connect Wallet
                   </button>
                 ) : (
-                  <button className={`${Styles.connectWalletBtn}`}>Mint</button>
+                  <Link href={"/public-sale"}>
+                    <button className={`${Styles.connectWalletBtn}`}>
+                      Mint
+                    </button>{" "}
+                  </Link>
                 )}
               </a>
             </li>
