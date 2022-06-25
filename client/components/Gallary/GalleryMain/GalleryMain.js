@@ -80,7 +80,6 @@ const GalleryMain = () => {
 
       <div className={`col-md-9 ${Styles.gallaryRight}`}>
         <div className={Styles.gallaryBanner}>
-          
           <div className={Styles.bannerText}>
             <h1>FIND YOUR AOTA</h1>
             <p>
@@ -91,7 +90,7 @@ const GalleryMain = () => {
           </div>
         </div>
         <div className={Styles.galleryItem}>
-          {Item.map((data, i) => {
+          {/* {Item.map((data, i) => {
             return (
               <div className={Styles.galleryImages}>
                 <Image
@@ -102,7 +101,14 @@ const GalleryMain = () => {
                 ></Image>
               </div>
             );
-          })}
+          })} */}
+          <div className={Styles.gallaryDemoIMage}>
+            <Image
+              src={"/images/Skin_&_Background_.png"}
+              layout="fill"
+              objectFit="cover"
+            ></Image>
+          </div>
         </div>
       </div>
     </div>
