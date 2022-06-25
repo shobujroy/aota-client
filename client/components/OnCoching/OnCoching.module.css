@@ -223,7 +223,7 @@ li .Icon {
   }
 
   .GoLink {
-    margin-left: -30px !important;
+    margin-left: -10px !important;
   }
 
   .CoWorkingTeam h1 {
@@ -383,8 +383,7 @@ li .Icon {
   .GoLink {
     display: flex;
     justify-content: space-between;
-    margin: 20px -130px;
-    margin-left: 36px !important;
+    margin: 0px !important;
     cursor: pointer;
     
   }
