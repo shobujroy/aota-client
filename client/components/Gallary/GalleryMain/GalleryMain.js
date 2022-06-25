@@ -104,7 +104,7 @@ const GalleryMain = () => {
           })} */}
           <div className={Styles.gallaryDemoIMage}>
             <Image
-              src={"/images/Skin_&_Background_.png"}
+              src={"/images/Skin_&_Background_.PNG"}
               layout="fill"
               objectFit="cover"
             ></Image>
