@@ -17,75 +17,103 @@ const directionButtons = (direction) => {
 function SliderCard() {
   const { isConnected, connectwallet } = useContext(MintContext);
   return (
-    <div className={Styles.slider}>
-      <Carousel controls={false}>
-        <Carousel.Item>
-          <div className={Styles.carouselItem}>
-            <h1>
-              We’re Aliens on <br /> the ave
-            </h1>
-            <p>we’re Brainging crreative co-working to the Metaverse.</p>
-            <div className={Styles.carousleButton}>
-              {isConnected ? (
-                <Link href={"/public-sale"}>
-                  <button>MINT</button>
-                </Link>
-              ) : (
-                <button onClick={() => connectwallet()}>CONNECT WALLET</button>
-              )}
+    <>
+      <div className={Styles.slider}>
+        <Carousel controls={false}>
+          <Carousel.Item>
+            <div className={Styles.carouselItem}>
+              <h1>
+                We’re Aliens on <br /> the ave
+              </h1>
+              <p>we’re Brainging crreative co-working to the Metaverse.</p>
+              <div className={Styles.carousleButton}>
+                {isConnected ? (
+                  <Link href={"/public-sale"}>
+                    <button>MINT</button>
+                  </Link>
+                ) : (
+                  <button onClick={() => connectwallet()}>
+                    CONNECT WALLET
+                  </button>
+                )}
+              </div>
             </div>
-          </div>
-        </Carousel.Item>
-        <Carousel.Item>
-          <div className={Styles.carousleItemTwo}>
-            <div className={Styles.carousleButtonTwo}>
-              {isConnected ? (
-                <Link href={"/public-sale"}>
-                  <button>MINT</button>
-                </Link>
-              ) : (
-                <button onClick={() => connectwallet()}>CONNECT WALLET</button>
-              )}
+          </Carousel.Item>
+          <Carousel.Item className={Styles.two}>
+            <div className={Styles.carousleItemTwo}>
+              <div className={Styles.carousleButtonTwo}>
+                {isConnected ? (
+                  <Link href={"/public-sale"}>
+                    <button>MINT</button>
+                  </Link>
+                ) : (
+                  <button onClick={() => connectwallet()}>
+                    CONNECT WALLET
+                  </button>
+                )}
+              </div>
             </div>
-          </div>
-        </Carousel.Item>
-        <Carousel.Item>
-          <div className={Styles.carouselItemThree}>
-            <h1>
-              We’re Aliens on <br /> the ave
-            </h1>
-            <p>we’re Brainging crreative co-working to the Metaverse.</p>
-            <div className={Styles.carousleButton}>
-              {isConnected ? (
-                <Link href={"/public-sale"}>
-                  <button>MINT</button>
-                </Link>
-              ) : (
-                <button onClick={() => connectwallet()}>CONNECT WALLET</button>
-              )}
+          </Carousel.Item>
+          <Carousel.Item className={Styles.two}>
+            <div className={Styles.carouselItemThree}>
+              <h1>
+                We’re Aliens on <br /> the ave
+              </h1>
+              <p>we’re Brainging crreative co-working to the Metaverse.</p>
+              <div className={Styles.carousleButton}>
+                {isConnected ? (
+                  <Link href={"/public-sale"}>
+                    <button>MINT</button>
+                  </Link>
+                ) : (
+                  <button onClick={() => connectwallet()}>
+                    CONNECT WALLET
+                  </button>
+                )}
+              </div>
             </div>
-          </div>
-        </Carousel.Item>
+          </Carousel.Item>
 
-        <Carousel.Item>
-          <div className={Styles.carouselItemFour}>
-            <h1>
-              We’re Aliens on <br /> the ave
-            </h1>
-            <p>we’re Brainging crreative co-working to the Metaverse.</p>
-            <div className={Styles.carousleButton}>
-              {isConnected ? (
-                <Link href={"/public-sale"}>
-                  <button>MINT</button>
-                </Link>
-              ) : (
-                <button onClick={() => connectwallet()}>CONNECT WALLET</button>
-              )}
+          <Carousel.Item className={Styles.two}>
+            <div className={Styles.carouselItemFour}>
+              <h1>
+                We’re Aliens on <br /> the ave
+              </h1>
+              <p>we’re Brainging crreative co-working to the Metaverse.</p>
+              <div className={Styles.carousleButton}>
+                {isConnected ? (
+                  <Link href={"/public-sale"}>
+                    <button>MINT</button>
+                  </Link>
+                ) : (
+                  <button onClick={() => connectwallet()}>
+                    CONNECT WALLET
+                  </button>
+                )}
+              </div>
             </div>
+          </Carousel.Item>
+        </Carousel>
+      </div>
+      <div className={Styles.mobileSLide}>
+        <div className={Styles.heroMob}>
+          <Image
+            src={"/images/RoadMap1.png"}
+            layout="fill"
+            objectFit="cover"
+          ></Image>
+          <div className={Styles.mobConnectwallbutton}>
+            {isConnected ? (
+              <Link href={"/public-sale"}>
+                <button>MINT</button>
+              </Link>
+            ) : (
+              <button onClick={() => connectwallet()}>CONNECT WALLET</button>
+            )}
           </div>
-        </Carousel.Item>
-      </Carousel>
-    </div>
+        </div>
+      </div>
+    </>
   );
 }
 

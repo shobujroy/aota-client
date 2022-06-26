@@ -13,6 +13,14 @@
   font-style: normal;
   font-display: swap;
 }
+
+@font-face {
+  font-family: 'Montserrat-Medium';
+  src: url('../public/fonts/Montserrat/Montserrat-Medium.ttf')
+    format('truetype');
+  font-style: normal;
+  font-display: swap;
+}
 @font-face {
   font-family: 'futura';
   src: url('../public/fonts/futura/futura\ medium\ bt.ttf') format('truetype');

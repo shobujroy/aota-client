@@ -21,8 +21,48 @@ const GalleryMain = () => {
 
   return (
     <div className={Styles.galleryMain}>
-      <div className={`col-md-3 ${Styles.filerArea}`}>
-        <h1>Filter</h1>
+      <div className={Styles.filterMob}>
+        <div className={Styles.filterQuan}>
+          <p>
+            Filter <span>0</span>
+          </p>
+        </div>
+        <div className={Styles.filterIcons}>
+          <div className={Styles.filterIMAG}>
+            <Image
+              src={"/images/refresh right.svg"}
+              layout="fill"
+              objectFit="cover"
+            ></Image>
+          </div>
+          <div
+            className={Styles.filterIMAG}
+            onClick={() => {
+              document.getElementById("filterArea").style.display = "block";
+            }}
+          >
+            <Image
+              src={"/images/Filter 2.svg"}
+              layout="fill"
+              objectFit="cover"
+            ></Image>
+          </div>
+        </div>
+      </div>
+      <div className={`col-md-3 ${Styles.filerArea}`} id="filterArea">
+        <h1 className={Styles.filterHello}>Filter</h1>
+        <div className={Styles.filterMOBVErsion}>
+          <h1>Filter</h1>
+          <Image
+            src={"/images/x.svg"}
+            width={20}
+            height={20}
+            alt=""
+            onClick={() => {
+              document.getElementById("filterArea").style.display = "none";
+            }}
+          ></Image>
+        </div>
 
         {/* <div className={Styles.GoldenOption}>
           <Image width={24} height={24} src={"/images/gallery/goldbean.png"} />
@@ -81,16 +121,16 @@ const GalleryMain = () => {
       <div className={`col-md-9 ${Styles.gallaryRight}`}>
         <div className={Styles.gallaryBanner}>
           <div className={Styles.bannerText}>
-            <h1>FIND YOUR AOTA</h1>
-            <p>
+            <h1>Gallary</h1>
+            {/* <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
               amet diam pharetra dui, venenatis adipiscing diam.
             </p>
-            <button>Pair Now</button>
+            <button>Pair Now</button> */}
           </div>
         </div>
         <div className={Styles.galleryItem}>
-          {/* {Item.map((data, i) => {
+          {Item.map((data, i) => {
             return (
               <div className={Styles.galleryImages}>
                 <Image
@@ -101,14 +141,7 @@ const GalleryMain = () => {
                 ></Image>
               </div>
             );
-          })} */}
-          <div className={Styles.gallaryDemoIMage}>
-            <Image
-              src={"/images/Skin_&_Background_.png"}
-              layout="fill"
-              objectFit="cover"
-            ></Image>
-          </div>
+          })}
         </div>
       </div>
     </div>
