@@ -36,8 +36,8 @@ const RoadMap = () => {
             >
               <div className={styles.imageWrapper}>
                 <Image
-                  src={"/images/manifesto222.png"}
-                  width={396}
+                  src={"/images/Crystal.png"}
+                  width={436}
                   height={567}
                   className={`img-fit img-fluid ${styles.image}`}
                 />

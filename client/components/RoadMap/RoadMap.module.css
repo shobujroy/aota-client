@@ -260,6 +260,12 @@
     top: 700px;
     left: 0px;
   }
+  .sliderNextBtn {
+    display: none;
+  }
+  .sliderPreviousBtn {
+    display: none;
+  }
 }
 /* Media Query for low resolution  Tablets, Ipads */
 @media (min-width: 640px) and (max-width: 1040px) {
