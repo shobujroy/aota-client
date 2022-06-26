@@ -29,7 +29,7 @@ const MeetOurTeam = () => {
       setIndex(selectedIndex);
     };
   }
-  const [imgActive, setImgActive] = useState(0)
+  const [imgActive, setImgActive] = useState(0);
   return (
     <div className={styles.MeetOurTeam}>
       <div className="container pt-0 pb-5">
@@ -39,7 +39,6 @@ const MeetOurTeam = () => {
               <div className={styles.MemberCardOne}>
                 <div className={styles.MemberCardTwo}>
                   <Image
-                
                     src={image.length < 2 ? "/images/Frame 184.png" : image}
                     alt="Picture of the author"
                     width={394}
@@ -60,29 +59,27 @@ const MeetOurTeam = () => {
 
                 <div className={styles.MemberCardIcons}>
                   <Image
-                    src={"/images/icon/TeamMet/facebook.png"}
+                    src={"/images/Facebook.svg"}
                     alt="facebook"
                     width={30}
                     height={30}
                   />
 
                   <Image
-                    src={"/images/icon/TeamMet/instagram (1).png"}
+                    src={"/images/instagram.svg"}
                     alt="instagram"
                     width={30}
                     height={30}
                   />
-
                   <Image
-                    src={"/images/icon/TeamMet/linkedin.png"}
-                    alt="linkedin"
+                    src={"/images/twitter.svg"}
+                    alt="twitter"
                     width={30}
                     height={30}
                   />
-
                   <Image
-                    src={"/images/icon/TeamMet/twitter (1).png"}
-                    alt="twitter"
+                    src={"/images/linkedin.svg"}
+                    alt="linkedin"
                     width={30}
                     height={30}
                   />
@@ -138,10 +135,17 @@ const MeetOurTeam = () => {
                               setName(item.name);
                               setImage(item.image);
                               setTitle(item.title);
-                              setImgActive(i)
+                              setImgActive(i);
                             }}
                           >
-                            <div style={imgActive === i ? {border:"3px solid #75BA87"}: {border:"none"}} className={styles.teamImage}>
+                            <div
+                              style={
+                                imgActive === i
+                                  ? { border: "3px solid #75BA87" }
+                                  : { border: "none" }
+                              }
+                              className={styles.teamImage}
+                            >
                               <Image
                                 src={item.image}
                                 layout="fill"
@@ -166,10 +170,17 @@ const MeetOurTeam = () => {
                               setName(item.name);
                               setImage(item.image);
                               setTitle(item.title);
-                              setImgActive(i)
+                              setImgActive(i);
                             }}
                           >
-                            <div  style={imgActive === i ? {border:"3px solid #75BA87"}: {border:"none"}} className={styles.teamImage}>
+                            <div
+                              style={
+                                imgActive === i
+                                  ? { border: "3px solid #75BA87" }
+                                  : { border: "none" }
+                              }
+                              className={styles.teamImage}
+                            >
                               <Image
                                 src={item.image}
                                 layout="fill"
@@ -194,10 +205,17 @@ const MeetOurTeam = () => {
                               setName(item.name);
                               setImage(item.image);
                               setTitle(item.title);
-                              setImgActive(i)
+                              setImgActive(i);
                             }}
                           >
-                            <div style={imgActive === i ? {border:"3px solid #75BA87"}: {border:"none"}} className={styles.teamImage}>
+                            <div
+                              style={
+                                imgActive === i
+                                  ? { border: "3px solid #75BA87" }
+                                  : { border: "none" }
+                              }
+                              className={styles.teamImage}
+                            >
                               <Image
                                 src={item.image}
                                 layout="fill"
