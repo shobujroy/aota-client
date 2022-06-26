@@ -1,20 +1,27 @@
 .galleryMain {
   width: 100%;
   height: 1124px;
-  margin: 40px auto;
+  margin: 10px auto;
   margin-bottom: 0;
   position: relative;
   display: flex;
   justify-content: space-between;
 }
+.filterMOBVErsion {
+  display: none;
+}
 .filerArea {
-  height: 980px;
+  height: 580px;
   background: linear-gradient(180deg, #081a0c 0%, #06170a 100%);
   display: flex;
   flex-direction: column;
   align-items: center;
   position: absolute;
   left: 20px;
+  display: block;
+}
+.filterHello {
+  margin-left: 20px;
 }
 .filerArea h1 {
   font-weight: 400;
@@ -30,12 +37,12 @@
 }
 .filterOption {
   width: 90%;
-  padding: 6px 0px;
+  padding: px 0px;
   border-bottom: 1px solid #374b3c;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 20px;
+  margin-top: 0px;
 }
 .filterOption p {
   font-weight: 500;
@@ -74,7 +81,7 @@
 }
 .optionArea {
   width: 100%;
-  margin-left: 40px;
+  margin-left: 16px;
   overflow-y: scroll;
 }
 .galleryImages {
@@ -98,6 +105,7 @@
   border: none;
   transition: all linear 0.2;
   text-transform: uppercase;
+  margin-left: 15px;
 }
 
 .resetButton:hover {
@@ -188,7 +196,10 @@
   position: relative;
 }
 .bannerText {
-  width: 600px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .bannerText h1 {
   font-family: 'Montserrat-Regular';
@@ -198,6 +209,7 @@
   color: #ffffff;
   margin-left: 20px;
   margin-top: 10px;
+  text-transform: uppercase;
 }
 .bannerText p {
   font-family: 'Montserrat-Regular';
@@ -233,6 +245,10 @@
   position: relative;
   margin-left: 10px;
 }
+.filterMob {
+  display: none;
+}
+
 @media screen and (min-width: 768px) and (max-width: 983px) {
   .resetButton {
     width: 96%;
@@ -269,6 +285,37 @@
   }
 }
 @media screen and (max-width: 637px) {
+  .filterHello {
+    display: none;
+  }
+  .filterIcons {
+    display: flex;
+  }
+  .filterIMAG {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    margin-right: 20px;
+    margin-top: -15px;
+    cursor: pointer;
+  }
+  .filterMob {
+    width: 90%;
+    height: 5vh;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .filterQuan p {
+    font-family: 'Montserrat-Regular';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    color: #dbdadf;
+
+    margin-top: 0;
+  }
   .gallaryDemoIMage {
     height: 20%;
     width: 90%;
@@ -277,7 +324,7 @@
   }
   .galleryMain {
     width: 100%;
-    height: 1562px !important;
+    height: 2974px !important;
     margin: 40px auto;
     margin-bottom: 0;
     align-items: center;
@@ -289,33 +336,36 @@
     left: 0;
   }
   .filerArea {
-    width: 100vw;
-    height: 980px;
+    width: 90vw;
+    height: 580px;
     background: linear-gradient(180deg, #081a0c 0%, #06170a 100%);
     display: flex;
     flex-direction: column !important;
     align-items: center;
-    position: absolute;
 
+    display: none;
     top: 10px;
-    left: 0;
+    left: 5%;
+    position: none;
+    z-index: 55555;
   }
   .galleryItem {
     width: 100%;
-    position: absolute;
+    position: none;
     right: 20px;
     height: 1760px;
     display: flex;
     flex-direction: row;
     align-items: center;
     overflow: scroll;
-    top: 1146px;
+    top: 88px;
     left: 5px;
     align-content: flex-start;
+    z-index: 0;
   }
   .galleryImages {
-    width: 94%;
-    height: 400px;
+    width: 47%;
+    height: 200px;
     position: relative;
   }
   .gallaryBanner {
@@ -331,6 +381,7 @@
     background-size: cover;
     background-position: left top;
     background-repeat: no-repeat;
+    display: none;
   }
   .bannerImage {
     width: 40vw;
@@ -356,5 +407,28 @@
     font-size: 12px;
     color: #dbdadf;
     margin: 20px;
+  }
+  .filterOption {
+    width: 74%;
+  }
+  .resetButton {
+    margin-left: 21px;
+  }
+  .filerArea h1 {
+    margin-left: 40px;
+  }
+  .options {
+    width: 71%;
+  }
+  .xIcon {
+    margin-top: 50px;
+  }
+  .filterMOBVErsion {
+    width: 90%;
+    display: flex;
+    height: 100px;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 55555;
   }
 }
