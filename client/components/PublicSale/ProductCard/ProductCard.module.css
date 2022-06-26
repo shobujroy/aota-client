@@ -29,9 +29,9 @@
 }
 
 .mintBtn {
-  background: #7a5ea7;
+  background: #75ba87;;
   padding: 10px 45px;
-  color: #fff;
+  color:  #1a1a1a;
   border-radius: 0px;
 }
 
@@ -41,4 +41,56 @@
   padding: 10px 15px;
   color: #fff;
   width: 100%;
+}
+
+.statusBtn {
+  background: #75ba87;;
+  padding: 10px 100px;
+  color:  #1a1a1a;
+  border-radius: 0px;
+  text-align: center;
+  width: 400px;
+}
+
+
+.mintBtn:hover {
+  background-color: #e2dd96 !important;  
+  border: 1px solid #75ba87 !important;
+  
+}
+
+
+
+
+
+.statusBtn:hover {
+  background-color: #e2dd96 !important;  
+  border: 1px solid #75ba87 !important;
+  
+}
+
+
+
+/* Media Query for Mobile Devices */
+@media (max-width: 600px) {
+  .statusBtn {
+    width: 100% !important;
+    padding: 10px 30px !important;
+  }
+
+  .card{
+    padding: 50px 20px !important;
+    margin: 0 auto !important;
+  }
+
+
+  .imageRespn{
+    margin: auto;
+  }
+
+
+  .quantityRespon{
+    margin: auto;
+    align-items: center !IMPORTANT;
+  }
 }

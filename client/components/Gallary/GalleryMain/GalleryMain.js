@@ -141,7 +141,9 @@ const GalleryMain = () => {
                 ></Image>
               </div>
             );
+
           })}
+
         </div>
       </div>
     </div>
