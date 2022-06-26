@@ -409,7 +409,8 @@
     margin: 20px;
   }
   .filterOption {
-    width: 74%;
+    width: 82%;
+    margin-left: 6%;
   }
   .resetButton {
     margin-left: 21px;
