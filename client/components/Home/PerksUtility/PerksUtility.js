@@ -18,13 +18,16 @@ const PerksUtility = () => {
 
             <div className={styles.PerksCards}>
               <div className={styles.CardItam}>
-                <Image
-                  src={"/images/image 34.svg"}
-                  width={64}
-                  height={64}
-                  className={styles.CardImg}
-                />
-                <h3>Ethereum Airdrops</h3>
+                <div className={styles.mobileRespon}>
+                  <Image
+                    src={"/images/image 34.svg"}
+                    width={64}
+                    height={64}
+                    className={styles.CardImg}
+                  />
+                  <h3>Ethereum Airdrops</h3>
+                </div>
+
                 <p>
                   AOTA holders will receive free airdrops for as long as they
                   hold. Our team actively exploring ways to expand the
@@ -33,13 +36,15 @@ const PerksUtility = () => {
               </div>
 
               <div className={styles.CardItam}>
-                <Image
-                  src={"/images/image 35.svg"}
-                  width={64}
-                  height={64}
-                  className={styles.CardImg}
-                />
-                <h3>THE CREATIVE HAVEN</h3>
+                <div className={styles.mobileRespon}>
+                  <Image
+                    src={"/images/image 35.svg"}
+                    width={64}
+                    height={64}
+                    className={styles.CardImg}
+                  />
+                  <h3>THE CREATIVE HAVEN</h3>
+                </div>
                 <p>
                   AOTA holders will receive free airdrops for as long as they
                   hold. Our team actively exploring ways to expand the
@@ -48,13 +53,15 @@ const PerksUtility = () => {
               </div>
 
               <div className={styles.CardItam}>
-                <Image
-                  src={"/images/image 36.svg"}
-                  width={64}
-                  height={64}
-                  className={styles.CardImg}
-                />
-                <h3>EXCLUSIVE MERCH</h3>
+                <div className={styles.mobileRespon}>
+                  <Image
+                    src={"/images/image 36.svg"}
+                    width={64}
+                    height={64}
+                    className={styles.CardImg}
+                  />
+                  <h3>EXCLUSIVE MERCH</h3>
+                </div>
                 <p>
                   AOTA holders will receive free airdrops for as long as they
                   hold. Our team actively exploring ways to expand the
@@ -63,13 +70,15 @@ const PerksUtility = () => {
               </div>
 
               <div className={styles.CardItam}>
-                <Image
-                  src={"/images/image 37.svg"}
-                  width={64}
-                  height={64}
-                  className={styles.CardImg}
-                />
-                <h3>COMMERCIAL USAGE</h3>
+                <div className={styles.mobileRespon}>
+                  <Image
+                    src={"/images/image 37.svg"}
+                    width={64}
+                    height={64}
+                    className={styles.CardImg}
+                  />
+                  <h3>COMMERCIAL USAGE</h3>
+                </div>
                 <p>
                   AOTA holders will receive free airdrops for as long as they
                   hold. Our team actively exploring ways to expand the
@@ -80,9 +89,7 @@ const PerksUtility = () => {
           </div>
 
           <div className={`col-lg-12 col-sm-12 col-md-12 ${styles.Utilitys}`}>
-
             <h1>Non- Profit Donations</h1>
-
             <div className={styles.UtilityAllText}>
               <div className={styles.UtilityText}>
                 <h2>THE GIVE POWER FOUNDATION</h2>
@@ -102,59 +109,61 @@ const PerksUtility = () => {
                 </p>
               </div>
               <div className={styles.UtilityImage}>
-                   
-              <div className={styles.ChildImg}>
-                    <Image
-                     src={"/images/image 337.png"}
-                     width={352}
-                     height={194}                     
-                    />
-</div>
-
-<div className={styles.HomeImg}>
-                    <Image
-                     src={"/images/image 336.png"}
-                     width={338}
-                     height={189}                    
-                    />
-                    </div>
-
+                <div className={styles.ChildImg}>
+                  <Image
+                    src={"/images/image 337.png"}
+                    width={352}
+                    height={194}
+                  />
+                </div>
+                <div className={styles.HomeImg}>
+                  <Image
+                    src={"/images/image 336.png"}
+                    width={338}
+                    height={189}
+                  />
+                </div>
               </div>
             </div>
-
-
-
-            <div style={{marginTop: "100px"}}  className={styles.UtilityAllText}>
-            <div className={styles.UtilityImage}>
-                   
-                   <div className={styles.ChildImg}>
-                         <Image
-                          src={"/images/image 339.png"}
-                          width={352}
-                          height={194}                     
-                         />
-     </div>
-     
-     <div className={styles.HomeImg}>
-                         <Image
-                          src={"/images/image 338.png"}
-                          width={338}
-                          height={189}                         
-                         />
-                         </div>
-     
-                   </div>
+            <div
+              style={{ marginTop: "100px" }}
+              className={styles.UtilityAllText}
+            >
+              <div className={styles.UtilityImage}>
+                <div className={styles.ChildImg}>
+                  <Image
+                    src={"/images/image 339.png"}
+                    width={352}
+                    height={194}
+                  />
+                </div>
+                <div className={styles.HomeImg}>
+                  <Image
+                    src={"/images/image 338.png"}
+                    width={338}
+                    height={189}
+                  />
+                </div>
+              </div>
               <div className={styles.UtilityText}>
                 <h2 className={styles.MarginTop}>ONE TREE PLANTED</h2>
                 <p>
-                One Tree Planted is a global reforestation charity that plants trees around the world! We want to make it simple for anyone to help the environment by planting trees. Since 2014, One Tree Planted has more than doubled the number of trees planted each year, and is working with partners across 43+ countries in North America, Latin America, Africa, Asia, Europe and the Pacific.
+                  One Tree Planted is a global reforestation charity that plants
+                  trees around the world! We want to make it simple for anyone
+                  to help the environment by planting trees. Since 2014, One
+                  Tree Planted has more than doubled the number of trees planted
+                  each year, and is working with partners across 43+ countries
+                  in North America, Latin America, Africa, Asia, Europe and the
+                  Pacific.
                 </p>
                 <p>
-                Together with your support, we're on a mission to restore forests, create habitat for biodiversity, and make a positive social impact around the world. Every dollar donated plants one tree.   
+                  Together with your support, we're on a mission to restore
+                  forests, create habitat for biodiversity, and make a positive
+                  social impact around the world. Every dollar donated plants
+                  one tree.
                 </p>
               </div>
             </div>
-
           </div>
         </div>
       </div>

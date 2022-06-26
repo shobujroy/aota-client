@@ -27,6 +27,15 @@ function Navbar({ BorderBottom, wallet }) {
     >
       <div className={`${wallet}  ${BorderBottom && Styles.BorderBottom}`}>
         <div className={Styles.MobileLogoButton}>
+          <Link className={`navbar-brand ${Styles.MobileNabImage}`} href="/">
+            <Image
+              src="/image 8.png"
+              width={100}
+              height={20}
+              className={`img-fluid`}
+            />
+          </Link>
+
           <button
             className={`navbar-toggler ${Styles.MobileNabButton}`}
             type="button"
@@ -42,19 +51,6 @@ function Navbar({ BorderBottom, wallet }) {
               height={15}
               className="navbar-toggler-icon text-white"
             />
-          </button>
-
-          <Link className={`navbar-brand ${Styles.MobileNabImage}`} href="/">
-            <Image
-              src="/image 8.png"
-              width={100}
-              height={20}
-              className={`img-fluid`}
-            />
-          </Link>
-
-          <button className={`${Styles.MobileButton}`} onClick={connectwallet}>
-            {isConnected ? "Mint" : "Connect Wallet"}
           </button>
         </div>
 
@@ -141,67 +137,68 @@ function Navbar({ BorderBottom, wallet }) {
                     </a>
                   </li>
                 </Link> */}
-
-                <Link href={"/gallery"}>
-                  <li className={`nav-item ms-md-4 ${Styles.Muneleft}`}>
-                    <a
-                      className={
-                        router.pathname == "/gallery"
-                          ? Styles.navLinkActive
-                          : "nav-link " + Styles.navLink
-                      }
-                      aria-current="page"
-                      href="#"
-                    >
-                      Gallery
-                    </a>
-                  </li>
-                </Link>
-                <Link href={"/roadMap"}>
-                  <li className="nav-item ms-md-4">
-                    <a
-                      className={
-                        router.pathname == "/roadMap"
-                          ? Styles.navLinkActive
-                          : "nav-link " + Styles.navLink
-                      }
-                      aria-current="page"
-                      href="#"
-                    >
-                      Roadmap
-                    </a>
-                  </li>
-                </Link>
-                <Link href={"/mainfesto"}>
-                  <li className="nav-item ms-md-4">
-                    <a
-                      className={
-                        router.pathname == "/mainfesto"
-                          ? Styles.navLinkActive
-                          : "nav-link " + Styles.navLink
-                      }
-                      aria-current="page"
-                      href="#"
-                    >
-                      Mainfesto
-                    </a>
-                  </li>
-                </Link>
-                <Link href={"/partners"}>
-                  <li className="nav-item ms-md-4">
-                    <a
-                      className={
-                        router.pathname == "/partners"
-                          ? Styles.navLinkActive
-                          : "nav-link " + Styles.navLink
-                      }
-                      aria-current="page"
-                      href="#"
-                    >
-                      The ave
-                    </a>
-                  </li>
-                </Link>
+                <div className={Styles.menuAll}>
+                  <Link href={"/gallery"}>
+                    <li className={`nav-item ms-md-4 ${Styles.Muneleft}`}>
+                      <a
+                        className={
+                          router.pathname == "/gallery"
+                            ? Styles.navLinkActive
+                            : "nav-link " + Styles.navLink
+                        }
+                        aria-current="page"
+                        href="#"
+                      >
+                        Gallery
+                      </a>
+                    </li>
+                  </Link>
+                  <Link href={"/roadMap"}>
+                    <li className="nav-item ms-md-4">
+                      <a
+                        className={
+                          router.pathname == "/roadMap"
+                            ? Styles.navLinkActive
+                            : "nav-link " + Styles.navLink
+                        }
+                        aria-current="page"
+                        href="#"
+                      >
+                        Roadmap
+                      </a>
+                    </li>
+                  </Link>
+                  <Link href={"/mainfesto"}>
+                    <li className="nav-item ms-md-4">
+                      <a
+                        className={
+                          router.pathname == "/mainfesto"
+                            ? Styles.navLinkActive
+                            : "nav-link " + Styles.navLink
+                        }
+                        aria-current="page"
+                        href="#"
+                      >
+                        Mainfesto
+                      </a>
+                    </li>
+                  </Link>
+                  <Link href={"/partners"}>
+                    <li className="nav-item ms-md-4">
+                      <a
+                        className={
+                          router.pathname == "/partners"
+                            ? Styles.navLinkActive
+                            : "nav-link " + Styles.navLink
+                        }
+                        aria-current="page"
+                        href="#"
+                      >
+                        The ave
+                      </a>
+                    </li>
+                  </Link>
+                </div>
               </>
             )}
           </ul>
@@ -280,6 +277,7 @@ function Navbar({ BorderBottom, wallet }) {
                   )}
                 </a>
               </li>
+
               <li className="nav-item">
                 <a
                   onMouseOver={() => setActive(3)}
@@ -305,6 +303,13 @@ function Navbar({ BorderBottom, wallet }) {
                 </a>
               </li>
             </div>
+
+            <button
+              className={`${Styles.MobileButton}`}
+              onClick={connectwallet}
+            >
+              {isConnected ? "Mint" : "Connect Wallet"}
+            </button>
 
             <li className="nav-item">
               <a className={"nav-link " + Styles.navLink}>
