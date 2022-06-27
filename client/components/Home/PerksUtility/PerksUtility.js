@@ -108,7 +108,9 @@ const PerksUtility = () => {
                   person access to safe drinking water for at least 20 years
                 </p>
               </div>
+
               <div className={styles.UtilityImage}>
+              <div className={styles.UtilityReverse}>
                 <div className={styles.ChildImg}>
                   <Image
                     src={"/images/image 337.png"}
@@ -124,6 +126,8 @@ const PerksUtility = () => {
                   />
                 </div>
               </div>
+              </div>
+
             </div>
             <div
               style={{ marginTop: "100px" }}
@@ -164,7 +168,11 @@ const PerksUtility = () => {
                 </p>
               </div>
             </div>
+
+
           </div>
+
+
         </div>
       </div>
     </div>
