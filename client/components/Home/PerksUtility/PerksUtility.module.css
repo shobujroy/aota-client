@@ -8,9 +8,11 @@
   text-align: center;
   font-size: 56px;
   font-weight: 600;
-  font-family: "Montserrat-Regular";
+
   line-height: 70px;
   margin-bottom: 20px;
+  font-family: 'futura-bold';
+  text-transform: uppercase;
 }
 
 .PerksAndUtility .Perks p {
@@ -18,7 +20,7 @@
   text-align: center;
   font-size: 15px;
   font-weight: 500;
-  font-family: "Jost";
+  font-family: 'Montserrat-Regular';
   line-height: 20px;
   padding: 0px 200px;
 }
@@ -51,12 +53,14 @@
 }
 
 .CardItam h3 {
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 400;
-  font-family: "Jost";
+  font-family: 'Montserrat-Light';
+  letter-spacing: 0.2px;
   color: #1a1a1a;
   margin-top: 20px;
   margin-bottom: 16px;
+  text-transform: uppercase;
 }
 
 .Utilitys {
@@ -66,12 +70,13 @@
 
 .Utilitys h1 {
   font-size: 56px;
-  font-family: "Montserrat-Regular";
+  font-family: 'futura-bold';
   font-weight: 600;
   line-height: 70px;
   color: #051509;
   text-align: center;
   margin: 20px 0px 120px;
+  text-transform: uppercase;
 }
 
 .Utilitys .UtilityAllText {
@@ -87,7 +92,8 @@
 .UtilityText h2 {
   font-size: 32px;
   font-weight: 500;
-  font-family: "Montserrat-Regular";
+  font-family: 'Montserrat-Medium';
+  text-transform: uppercase;
   line-height: 40px;
   color: #051509;
 }
@@ -95,7 +101,7 @@
 .UtilityText p {
   font-size: 16px;
   font-weight: 400;
-  font-family: "Jost";
+  font-family: 'Montserrat-Regular';
   line-height: 20px;
   color: #484848;
 }
@@ -149,7 +155,7 @@
     text-align: center;
     font-size: 56px;
     font-weight: 600;
-    font-family: "Montserrat-Regular";
+    font-family: 'Montserrat-Regular';
     line-height: 70px;
     margin-bottom: 20px;
   }
@@ -168,7 +174,7 @@
 
   .Utilitys h1 {
     font-size: 28px;
-    font-family: "Montserrat-Regular";
+    font-family: 'Montserrat-Regular';
     font-weight: 600;
     line-height: -5px;
     color: #051509;
@@ -259,7 +265,7 @@
 
   .Utilitys h1 {
     font-size: 56px;
-    font-family: "Montserrat-Regular";
+    font-family: 'Montserrat-Regular';
     font-weight: 600;
     line-height: 70px;
     color: #051509;

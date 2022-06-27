@@ -5,7 +5,7 @@
     rgba(5, 21, 9, 1) 51%,
     rgba(23, 47, 29, 1) 100%
   ) !important;
-  min-height: 800px;
+  min-height: 600px;
   width: 100%;
   overflow: hidden;
 }
@@ -41,7 +41,8 @@
   font-size: 56px;
   font-weight: 600;
   line-height: 70px;
-  font-family: 'Montserrat-Regular';
+  font-family: 'futura-bold';
+  text-transform: uppercase;
   color: #fafafa;
   margin-top: 200px;
   width: 488px;
@@ -53,20 +54,6 @@
   position: relative;
   width: 433px;
   height: 203px;
-}
-
-.MapWrapper .imageWrapper::after {
-  content: '';
-  position: absolute;
-  top: 350px;
-  right: 90px;
-  width: 360px;
-  height: 557px;
-  background-image: url('../../public/images/manifesto (1).png');
-  object-fit: cover;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
 }
 
 .rideMapWrapper {
@@ -237,7 +224,7 @@
     left: 60px;
   }
   .RoadMapMain {
-    height: 941px;
+    height: 541px;
     overflow: hidden;
   }
 
@@ -245,7 +232,8 @@
     font-size: 32px;
     font-weight: 600;
     line-height: 50px;
-    font-family: 'Montserrat-Regular';
+    font-family: 'futura-bold';
+    text-transform: uppercase;
     color: #fafafa;
     margin-top: 0px;
     width: 100% !important;
@@ -304,7 +292,8 @@
     font-size: 37px;
     font-weight: 600;
     line-height: 70px;
-    font-family: 'Montserrat-Regular';
+    font-family: 'futura-bold';
+    text-transform: uppercase;
     color: #fafafa;
     margin-top: 0px;
     width: 488px;
@@ -356,20 +345,6 @@
 
 /* Media Query for low resolution  Tablets, Ipads */
 @media (min-width: 896px) and (max-width: 1024px) {
-  .MapWrapper .imageWrapper::after {
-    content: '';
-    position: absolute;
-    top: 350px;
-    right: 0px;
-    width: 231px;
-    height: 557px;
-    background-image: url('../../public/images/manifesto (1).png');
-    object-fit: cover;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-
   .Roadimage {
     position: absolute;
     top: 430px;
@@ -380,13 +355,14 @@
     font-size: 56px;
     font-weight: 600;
     line-height: 70px;
-    font-family: 'Montserrat-Regular';
+    font-family: 'futura-bold';
+    text-transform: uppercase;
     color: #fafafa;
     margin-top: 200px;
     width: 488px;
   }
 
   .RoadMapMain {
-    height: 800px !important;
+    height: 600px !important;
   }
 }

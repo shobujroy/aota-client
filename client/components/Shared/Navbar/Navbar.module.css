@@ -1,6 +1,7 @@
 .menuAll {
   display: flex;
-  width: 900px;
+  width: 600px;
+
   justify-content: end;
 }
 
@@ -40,42 +41,36 @@
   text-transform: uppercase;
 }
 
-.connectWalletBtn:hover {
-  background-color: #e2dd96 !important;
-
-  border: 1px solid #e2dd96 !important;
-}
-
 .navLink {
   font-family: 'Montserrat-Medium' !important;
-}
-
-.navLink {
-  font-family: 'Jost', sans-serif !important;
   font-weight: 400;
   font-style: normal;
   font-size: 16px;
-  /* identical to box height, or 600% */
+  width: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   color: #a3a3a3 !important;
   transition: 0.5s;
   text-transform: uppercase;
+  height: 56px;
 }
 
 .navLinkActive {
   font-family: 'Montserrat-Medium' !important;
-
-  font-family: 'Jost', sans-serif !important;
   font-weight: 400;
   font-style: normal;
   font-size: 16px;
-  /* identical to box height, or 600% */
+  width: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   color: white !important;
   transition: 0.5s;
   text-transform: uppercase;
-  height: 55px;
-
-  display: flex;
-  align-items: center;
+  height: 56px;
 }
 
 .socialIcon {
@@ -115,10 +110,6 @@
 .SocailMedIcon li {
   margin-left: 15px;
   line-height: 60px;
-}
-
-.NavbarItam .Muneleft {
-  margin-left: 75px !important;
 }
 
 .LogoImage {
@@ -190,14 +181,6 @@
 
   .SocailMedIcon .SocailMedIcon {
     display: flex;
-  }
-
-  .MobileNabButton {
-    margin-left: auto;
-  }
-
-  .NavbarItam .Muneleft {
-    margin-left: 0px !important;
   }
 
   .NavbarItam ul .connectWalletBtn {
@@ -276,16 +259,6 @@
 
   .SocailMedIcon .SocailMedIcon li {
     margin-right: 32px !important;
-  }
-
-  .MobileNabButton {
-    margin-right: 30px;
-
-    margin-left: auto;
-  }
-
-  .NavbarItam .Muneleft {
-    margin-left: 0px !important;
   }
 
   .NavbarItam ul .connectWalletBtn {

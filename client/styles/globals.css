@@ -21,13 +21,25 @@
   font-style: normal;
   font-display: swap;
 }
+
+@font-face {
+  font-family: 'Montserrat-Light';
+  src: url('../public/fonts/Montserrat/Montserrat-Light.ttf') format('truetype');
+  font-style: normal;
+  font-display: swap;
+}
 @font-face {
   font-family: 'futura';
   src: url('../public/fonts/futura/futura\ medium\ bt.ttf') format('truetype');
   font-style: normal;
   font-display: swap;
 }
-
+@font-face {
+  font-family: 'futura-bold';
+  src: url('../public/fonts/futura/Futura\ Bold\ font.ttf') format('truetype');
+  font-style: normal;
+  font-display: swap;
+}
 @font-face {
   font-family: 'manic';
   src: url('../public/fonts/MANIC/Web/MANIC-Regular.woff') format('woff');

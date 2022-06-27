@@ -6,7 +6,8 @@
   font-size: 56px;
   line-height: 100px;
   text-align: center;
-  font-family: "Montserrat-Regular";
+  font-family: 'futura-bold';
+  text-transform: uppercase;
   font-weight: 600;
   color: #75ba87;
   border-bottom: 1px solid #d1d1d1;
@@ -19,7 +20,7 @@
 }
 
 .PartnerBrangerine {
-  background-image: url("../../../public/images/PartnerLogos/Brangerine_symbol.svg");
+  background-image: url('../../../public/images/Brangerine_symbol\ 1.svg');
   background-position: center;
   background-size: revert;
   background-repeat: no-repeat;
@@ -30,7 +31,7 @@
 }
 
 .PartnerOneTree {
-  background-image: url("../../../public/images/PartnerLogos/One Tree Planted_symbol.svg");
+  background-image: url('../../../public/images/One\ Tree\ Planted_symbol\ 1.svg');
   background-position: center;
   background-size: revert;
   background-repeat: no-repeat;
@@ -41,9 +42,9 @@
 }
 
 .PartnerBikeRentals {
-  background-image: url("../../../public/images/PartnerLogos/BakersfieldBikeRentals_symbol.svg");
+  background-image: url('../../../public/images/BakersfieldBikeRentals_symbol\ 1.svg');
   background-position: center;
-  background-size: revert;
+  background-size: 71% 100%;
   background-repeat: no-repeat;
   width: 100%;
   height: 200px;
@@ -52,7 +53,7 @@
 }
 
 .PartnerGivepower {
-  background-image: url("../../../public/images/PartnerLogos/givepower_symbol.svg");
+  background-image: url('../../../public/images/givepower_symbol\ 1.svg');
   background-position: center;
   background-size: revert;
   background-repeat: no-repeat;
@@ -63,7 +64,7 @@
 }
 
 .PartnerBrangerine:hover {
-  background-image: url("../../../public/images/PartnerLogos/Brangerine.svg");
+  background-image: url('../../../public/images/Brangerine\ 1.svg');
   background-position: center;
   background-size: revert;
   background-repeat: no-repeat;
@@ -72,25 +73,25 @@
 }
 
 .PartnerOneTree:hover {
-  background-image: url("../../../public/images/PartnerLogos/One Tree Planted.svg");
+  background-image: url('../../../public/images/One\ Tree\ Planted\ 1.svg');
   background-position: center;
-  background-size: revert;
+  background-size: 100%;
   background-repeat: no-repeat;
   width: 100%;
   height: 200px;
 }
 
 .PartnerBikeRentals:hover {
-  background-image: url("../../../public/images/PartnerLogos/BakersfieldBikeRentals.svg");
+  background-image: url('../../../public/images/BakersfieldBikeRentals\ 1.svg');
   background-position: center;
-  background-size: revert;
+  background-size: 71% 100%;
   background-repeat: no-repeat;
   width: 100%;
   height: 200px;
 }
 
 .PartnerGivepower:hover {
-  background-image: url("../../../public/images/PartnerLogos/givepower.svg");
+  background-image: url('../../../public/images/givepower\ 1.svg');
   background-position: center;
   background-size: revert;
   background-repeat: no-repeat;

@@ -126,17 +126,6 @@ function Navbar({ BorderBottom, wallet }) {
                   </div>
                 </Link>
 
-                {/* <Link href={"/"}>
-                  <li className={`nav-item ms-md-4 ${Styles.Muneleft}`}>
-                    <a
-                      className={"nav-link " + Styles.navLink}
-                      aria-current="page"
-                      href="#"
-                    >
-                      Home
-                    </a>
-                  </li>
-                </Link> */}
                 <div className={Styles.menuAll}>
                   <Link href={"/gallery"}>
                     <li className={`nav-item ms-md-4 ${Styles.Muneleft}`}>
@@ -312,7 +301,7 @@ function Navbar({ BorderBottom, wallet }) {
             </button>
 
             <li className="nav-item">
-              <a className={"nav-link " + Styles.navLink}>
+              <a className={"nav-link " + Styles.navLinkTooo}>
                 {isConnected ? (
                   <Link href={"/public-sale"}>
                     <button className={`${Styles.connectWalletBtn}`}>

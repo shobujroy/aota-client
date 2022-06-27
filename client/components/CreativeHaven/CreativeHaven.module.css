@@ -23,13 +23,12 @@
   left: 0px;
   font-size: 56px;
   font-weight: 600;
-  font-family: 'Montserrat-Regular';
+  font-family: 'futura-bold';
+  text-transform: uppercase;
+
   line-height: 70px;
   color: #ffffff;
 }
-
-
-
 
 .CreativeHavenText {
   width: 100%;
@@ -40,12 +39,12 @@
   background-position: right top;
 }
 
-
 .CoWorkingTeam h1 {
   font-size: 48px;
   font-weight: 500;
   line-height: 60px;
-  font-family: 'Montserrat-Regular';
+  font-family: 'Montserrat-Medium';
+  text-transform: uppercase;
   color: #ffffff;
   text-align: center;
 }
@@ -70,8 +69,10 @@
 }
 
 .CoWorkingText h2 {
-  font-size: 31px;
-  font-family: 'Montserrat-Regular';
+  font-size: 25px;
+  font-family: 'Montserrat-Light';
+  text-transform: uppercase;
+  letter-spacing: 0.2px;
   font-weight: 500;
   line-height: 40px;
   color: #75ba87;
@@ -101,7 +102,9 @@
 
 .Lifetime h3 {
   font-size: 32px;
-  font-family: 'Montserrat-Regular';
+  font-family: 'Montserrat-Light';
+  text-transform: uppercase;
+  letter-spacing: 0.2px;
   font-weight: 500;
   line-height: 40px;
   color: #ffffff;
@@ -119,7 +122,7 @@
 
 .Lifetime p {
   font-size: 16px;
-  font-family: 'Jost';
+  font-family: 'Montserrat-Regular';
   font-weight: 400;
   line-height: 20px;
   color: #e3f1e7;
@@ -174,7 +177,6 @@ li .Icon {
     background-size: 50% 100%;
     background-position: center !important;
   }
-  
 
   .CoWorkingAndMembership {
     padding: 0px 0pc 20px !important;
@@ -193,11 +195,10 @@ li .Icon {
     font-size: 32px;
     top: 255px !important;
     left: 10px;
-  
   }
 
   .Lifetime {
-    text-align: center;    
+    text-align: center;
   }
 
   .Membership {
@@ -232,7 +233,7 @@ li .Icon {
 
   .Lifetime p {
     font-size: 16px;
-    font-family: 'Jost';
+    font-family: 'Montserrat-Regular';
     font-weight: 400;
     line-height: 20px;
     color: #e3f1e7;
@@ -246,7 +247,8 @@ li .Icon {
     font-size: 32px;
     font-weight: 500;
     line-height: 40px;
-    font-family: 'Montserrat-Regular';
+    font-family: 'Montserrat-Medium';
+    text-transform: uppercase;
     color: #ffffff;
     text-align: center;
   }
@@ -256,13 +258,11 @@ li .Icon {
     justify-content: end;
   }
 
-
-  .CoWorkingText h2{
+  .CoWorkingText h2 {
     font-size: 24px !important;
   }
 
-
-  .CoWorkingText p{
+  .CoWorkingText p {
     font-size: 16px;
     font-family: 'Jost';
     font-weight: 400;
@@ -272,7 +272,6 @@ li .Icon {
     margin-bottom: 30px;
     width: 306px;
   }
- 
 }
 
 @media (min-width: 640px) and (max-width: 1040px) {
@@ -281,16 +280,15 @@ li .Icon {
     font-size: 47px;
   }
 
-
   .CoWorkingTeam h1 {
     font-size: 32px !important;
     font-weight: 500;
     line-height: 60px;
-    font-family: 'Montserrat-Regular';
+    font-family: 'Montserrat-Medium';
+    text-transform: uppercase;
     color: #ffffff;
     text-align: center;
   }
-
 
   .CoWorkingText p {
     width: 306px;
@@ -302,8 +300,6 @@ li .Icon {
     margin: 0 auto;
     margin-bottom: 30px !important;
   }
- 
-
 
   .CoWorkingAndMembership {
     padding: 0px 0px 20px !important;
@@ -319,19 +315,18 @@ li .Icon {
     background-position-x: 300px;
   }
 
-
-
   .CreativeHavenText h2 {
     position: absolute;
     top: 390px;
     left: 0px;
     font-size: 56px !important;
     font-weight: 600;
-    font-family: 'Montserrat-Regular';
+    font-family: 'futura-bold';
+    text-transform: uppercase;
+
     line-height: 70px;
     color: #ffffff;
   }
-  
 
   .CoWorkingTeam .CoWorking {
     display: grid;
