@@ -121,7 +121,7 @@ const GalleryMain = () => {
       <div className={`col-md-9 ${Styles.gallaryRight}`}>
         <div className={Styles.gallaryBanner}>
           <div className={Styles.bannerText}>
-            <h1>Gallary</h1>
+            <h1>Gallery</h1>
             {/* <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
               amet diam pharetra dui, venenatis adipiscing diam.
@@ -141,9 +141,7 @@ const GalleryMain = () => {
                 ></Image>
               </div>
             );
-
           })}
-
         </div>
       </div>
     </div>

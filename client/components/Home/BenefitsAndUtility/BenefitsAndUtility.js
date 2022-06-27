@@ -49,16 +49,13 @@ function BenefitsAndUtility() {
             })}
           </div>
 
-
-          <div
-            className={`col-md-5 d-flex flex-column ${styles.textCard}`}
-          >
+          <div className={`col-md-5 d-flex flex-column ${styles.textCard}`}>
             <div className={styles.textcenter}>
               <Image src={"/images/Vector 1.png"} width={362} height={365} />
             </div>
 
             <div className={styles.textMainText}>
-              <h1>Aotaverse Perks &amp; Utility</h1>
+              <h1> Perks &amp; Utility</h1>
               <p>
                 When you buy an AOTA. You’re not Simply buying a rare pice of
                 Art. You’re gaining membership access to the Aotaverse with the
@@ -68,11 +65,7 @@ function BenefitsAndUtility() {
             </div>
           </div>
 
-
- <div
-            className={`col-sm-12  d-flex flex-column ${styles.Smallcard}`}
-          >
-            
+          <div className={`col-sm-12  d-flex flex-column ${styles.Smallcard}`}>
             <div className={styles.textMainText}>
               <h1>Aotaverse Perks &amp; Utility</h1>
               <p>
@@ -84,11 +77,13 @@ function BenefitsAndUtility() {
             </div>
 
             <div className={styles.textSmall}>
-              <Image src={"/images/Vector 1 (1).png"} width={139} height={231} />
+              <Image
+                src={"/images/Vector 1 (1).png"}
+                width={139}
+                height={231}
+              />
             </div>
-
           </div>
-
         </div>
       </div>
       <div className="container pt-0 pb-5">

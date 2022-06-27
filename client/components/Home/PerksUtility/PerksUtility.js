@@ -8,7 +8,7 @@ const PerksUtility = () => {
       <div className="container pt-5 pb-5">
         <div className="row">
           <div className={`col-lg-12 col-sm-12 col-md-12 ${styles.Perks}`}>
-            <h1>Aotaverse Perks &#38; Utility</h1>
+            <h1> Perks &#38; Utility</h1>
             <p>
               When you buy an AOTA. You’re not Simply buying a rare pice of Art.
               You’re gaining membership access to the Aotaverse with the

@@ -14,7 +14,9 @@
 .FaqPrime h3 {
   color: #fafafa;
   font-size: 48px;
-  font-family: 'Montserrat-Regular';
+  font-family: 'Montserrat-Light';
+  text-transform: uppercase;
+  letter-spacing: 0.2px;
   font-weight: 500;
   line-height: 60px;
   margin-top: 10px;

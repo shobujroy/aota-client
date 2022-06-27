@@ -108,10 +108,6 @@
   margin-left: 15px;
 }
 
-.resetButton:hover {
-  background-color: #e2dd96 !important;
-}
-
 .filterOption .ImageAndIcon {
   display: flex;
   height: 30px;
@@ -202,14 +198,14 @@
   justify-content: center;
 }
 .bannerText h1 {
-  font-family: 'Montserrat-Regular';
+  font-family: 'futura-bold';
+  text-transform: uppercase;
   font-style: normal;
   font-weight: 600;
   font-size: 45px;
   color: #ffffff;
   margin-left: 20px;
   margin-top: 10px;
-  text-transform: uppercase;
 }
 .bannerText p {
   font-family: 'Montserrat-Regular';

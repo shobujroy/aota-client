@@ -26,33 +26,10 @@ function SliderCard() {
                 We’re Aliens on <br /> the ave
               </h1>
               <p>we’re Brainging crreative co-working to the Metaverse.</p>
-              <div className={Styles.carousleButton}>
-                {isConnected ? (
-                  <Link href={"/public-sale"}>
-                    <button>MINT</button>
-                  </Link>
-                ) : (
-                  <button onClick={() => connectwallet()}>
-                    CONNECT WALLET
-                  </button>
-                )}
-              </div>
             </div>
           </Carousel.Item>
           <Carousel.Item className={Styles.two}>
-            <div className={Styles.carousleItemTwo}>
-              <div className={Styles.carousleButtonTwo}>
-                {isConnected ? (
-                  <Link href={"/public-sale"}>
-                    <button>MINT</button>
-                  </Link>
-                ) : (
-                  <button onClick={() => connectwallet()}>
-                    CONNECT WALLET
-                  </button>
-                )}
-              </div>
-            </div>
+            <div className={Styles.carousleItemTwo}></div>
           </Carousel.Item>
           <Carousel.Item className={Styles.two}>
             <div className={Styles.carouselItemThree}>
@@ -60,17 +37,6 @@ function SliderCard() {
                 We’re Aliens on <br /> the ave
               </h1>
               <p>we’re Brainging crreative co-working to the Metaverse.</p>
-              <div className={Styles.carousleButton}>
-                {isConnected ? (
-                  <Link href={"/public-sale"}>
-                    <button>MINT</button>
-                  </Link>
-                ) : (
-                  <button onClick={() => connectwallet()}>
-                    CONNECT WALLET
-                  </button>
-                )}
-              </div>
             </div>
           </Carousel.Item>
 
@@ -80,17 +46,6 @@ function SliderCard() {
                 We’re Aliens on <br /> the ave
               </h1>
               <p>we’re Brainging crreative co-working to the Metaverse.</p>
-              <div className={Styles.carousleButton}>
-                {isConnected ? (
-                  <Link href={"/public-sale"}>
-                    <button>MINT</button>
-                  </Link>
-                ) : (
-                  <button onClick={() => connectwallet()}>
-                    CONNECT WALLET
-                  </button>
-                )}
-              </div>
             </div>
           </Carousel.Item>
         </Carousel>
