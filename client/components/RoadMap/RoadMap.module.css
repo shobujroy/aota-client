@@ -62,14 +62,14 @@
 
 .sliderPreviousBtn {
   position: absolute;
-  top: 13rem;
+  top: 12.4rem;
   cursor: pointer;
   transform: rotate(180deg);
 }
 
 .sliderNextBtn {
   position: absolute;
-  top: 13rem;
+  top: 12.6rem;
   right: 0;
   cursor: pointer;
 }
