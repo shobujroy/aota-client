@@ -88,14 +88,16 @@
   font-size: 48px;
   font-weight: 500;
   line-height: 60px;
-  font-family: 'Montserrat-Regular';
+  font-family: 'futura-bold';
+  text-transform: uppercase;
   color: #ffffff;
   text-align: center;
 }
 
 .OnlineMembership h4 {
   font-size: 32px;
-  font-family: 'Montserrat-Regular';
+  font-family: 'Montserrat-Medium';
+  text-transform: uppercase;
   font-weight: 500;
   line-height: 40px;
   color: #75ba87;
@@ -118,7 +120,9 @@
 
 .Lifetime h3 {
   font-size: 31px;
-  font-family: 'Montserrat-Regular';
+  font-family: 'Montserrat-Light';
+  text-transform: uppercase;
+  letter-spacing: 0.2px;
   font-weight: 500;
   line-height: 40px;
   color: #ffffff;
@@ -137,7 +141,7 @@
 
 .Lifetime p {
   font-size: 16px;
-  font-family: 'Jost';
+  font-family: 'Montserrat-Regular';
   font-weight: 400;
   line-height: 20px;
   color: #e3f1e7;
