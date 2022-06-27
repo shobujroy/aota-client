@@ -28,6 +28,8 @@
   font-size: 48px;
   color: #ffffff;
   margin-top: 15px;
+  font-family: 'futura-bold';
+  text-transform: uppercase;
 }
 .plusIcon {
   height: 20px;

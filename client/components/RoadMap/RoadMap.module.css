@@ -160,15 +160,17 @@
   margin-bottom: 30px;
 }
 .numbers p {
-  font-family: 'Montserrat-Regular-Black';
-  font-weight: 800;
+  font-family: 'futura-bold';
+  text-transform: uppercase;
+  font-weight: 500;
   font-size: 24px;
   color: #ffffff;
   margin-top: 15px;
 }
 
 .SliderMainFirst h2 {
-  font-family: 'Montserrat-Regular';
+  font-family: 'futura-bold';
+  text-transform: uppercase;
   font-weight: 500;
   font-size: 32px;
   color: #ffffff;
