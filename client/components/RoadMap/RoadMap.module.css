@@ -368,3 +368,17 @@
     height: 600px !important;
   }
 }
+@media (min-width: 1024px) and (max-width: 1725px) {
+  .sliderPreviousBtn {
+    position: absolute;
+    top: 12.3rem;
+    cursor: pointer;
+  }
+
+  .sliderNextBtn {
+    position: absolute;
+    top: 12.6rem;
+    right: 0;
+    cursor: pointer;
+  }
+}
