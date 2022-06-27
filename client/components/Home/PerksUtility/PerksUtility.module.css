@@ -134,6 +134,12 @@
     margin: 0px;
   }
 
+
+  .UtilityImage {
+    position: relative !important;
+    height: 330px !important;
+  }
+
   .CardItam .mobileRespon {
     display: flex !important;
     flex-direction: row-reverse;
@@ -219,16 +225,22 @@
   }
 
   .UtilityAllText:last-child {
-    margin-top: 150px !important;
+    margin-top: 100px !important;
+    display: flex;
+    flex-direction: column-reverse;
   }
 
   .UtilityText .MarginTop {
-    margin-top: 90px !important;
+    margin-top: 50px !important;
   }
 
   .CardItam h3 {
     font-size: 18px !important;
   }
+
+
+
+  
 }
 
 @media (min-width: 640px) and (max-width: 1040px) {
