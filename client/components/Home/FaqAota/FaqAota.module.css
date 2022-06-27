@@ -6,7 +6,8 @@
 .FaqPrime h1 {
   color: #75ba87;
   font-size: 24px;
-  font-family: 'Montserrat-Regular';
+  font-family: 'futura-bold';
+  text-transform: uppercase;
   font-weight: 500;
   line-height: 30px;
 }
@@ -14,7 +15,8 @@
 .FaqPrime h3 {
   color: #fafafa;
   font-size: 48px;
-  font-family: 'Montserrat-Light';
+  font-family: 'Montserrat-Medium';
+
   text-transform: uppercase;
   letter-spacing: 0.2px;
   font-weight: 500;

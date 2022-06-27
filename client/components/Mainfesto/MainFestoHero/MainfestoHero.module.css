@@ -18,7 +18,8 @@
   height: 384px;
 }
 .mainFestoHeroRight h6 {
-  font-family: 'Montserrat-Regular';
+  font-family: 'Montserrat-Medium';
+  text-transform: uppercase;
 
   color: #75ba87;
   font-weight: 400;
