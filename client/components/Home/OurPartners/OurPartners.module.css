@@ -22,34 +22,34 @@
 .PartnerBrangerine {
   background-image: url('../../../public/images/Brangerine_symbol\ 1.svg');
   background-position: center;
-  background-size: 71% 100%;
+  background-size: 71% 60%;
   background-repeat: no-repeat;
   width: 100%;
   height: 200px;
   cursor: pointer;
-  transition: all linear 1s;
+  transition: all linear 0.8s;
 }
 
 .PartnerOneTree {
   background-image: url('../../../public/images/One\ Tree\ Planted_symbol\ 1.svg');
   background-position: center;
-  background-size: 71% 100%;
+  background-size: 71% 60%;
   background-repeat: no-repeat;
   width: 100%;
   height: 200px;
   cursor: pointer;
-  transition: all linear 1s;
+  transition: all linear 0.8s;
 }
 
 .PartnerBikeRentals {
   background-image: url('../../../public/images/BakersfieldBikeRentals_symbol\ 1.svg');
   background-position: center;
-  background-size: 97% 100%;
+  background-size: 71% 60%;
   background-repeat: no-repeat;
   width: 100%;
   height: 200px;
   cursor: pointer;
-  transition: all linear 1s;
+  transition: all linear 0.8s;
 }
 
 .PartnerGivepower {
@@ -60,7 +60,7 @@
   width: 100%;
   height: 200px;
   cursor: pointer;
-  transition: all linear 1s;
+  transition: all linear 0.8s;
 }
 
 .PartnerBrangerine:hover {
