@@ -101,7 +101,7 @@
 }
 
 .SocailMedIcon li {
-  margin-left: 15px;
+  margin: 0px 7.5px;
   line-height: 60px;
 }
 
@@ -125,7 +125,7 @@
 @media (min-width: 1600px) and (max-width: 3000px) {
   .menuAll {
     display: flex !important;
-    width: 2000px !important;
+    width: 2005px !important;
     margin-top: -3px !important;
   }
 }
