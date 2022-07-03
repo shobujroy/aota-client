@@ -11,7 +11,7 @@
   width: 573px;
   height: 620px;
   position: relative;
-  margin-top: -140px;
+  margin-top: -32px;
 }
 .mainFestoHeroRight {
   width: 575px;
@@ -22,13 +22,13 @@
   text-transform: uppercase;
 
   color: #75ba87;
-  font-weight: 400;
+  font-weight: 800;
   font-size: 18px;
 }
 .mainFestoHeroRight h1 {
   font-family: 'futura-bold';
   text-transform: uppercase;
-  font-weight: 600;
+  font-weight: 800;
   font-size: 56px;
   color: #e3f1e7;
   margin-top: 20px;

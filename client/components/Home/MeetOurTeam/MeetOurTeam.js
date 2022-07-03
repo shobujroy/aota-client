@@ -42,7 +42,7 @@ const MeetOurTeam = () => {
                     <Image
                       src={image.length < 2 ? "/images/Frame 184.png" : image}
                       alt="Picture of the author"
-                      width={394}
+                      width={388}
                       height={388}
                     />
                   </div>
@@ -286,7 +286,7 @@ const MeetOurTeam = () => {
                         src={`${data.image}`}
                         alt="Picture of the author"
                         width={"320px"}
-                        height={"360px"}
+                        height={"320px"}
                       />
                     </div>
                   </div>
