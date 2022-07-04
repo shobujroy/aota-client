@@ -11,7 +11,7 @@
 
   line-height: 70px;
   margin-bottom: 20px;
-  font-family: 'futura-bold';
+  font-family: 'Montserrat-Medium';
   text-transform: uppercase;
 }
 
@@ -70,7 +70,7 @@
 
 .Utilitys h1 {
   font-size: 56px;
-  font-family: 'futura-bold';
+  font-family: 'Montserrat-Medium';
   font-weight: 600;
   line-height: 70px;
   color: #051509;
@@ -92,10 +92,11 @@
 .UtilityText h2 {
   font-size: 32px;
   font-weight: 500;
-  font-family: 'Montserrat-Medium';
+  font-family: 'Montserrat-Light';
   text-transform: uppercase;
-  line-height: 40px;
+  line-height: 45px;
   color: #051509;
+  margin-bottom: 21px;
 }
 
 .UtilityText p {
@@ -159,9 +160,9 @@
   .PerksAndUtility .Perks h1 {
     color: #051509;
     text-align: center;
-    font-size: 56px;
+    font-size: 32px;
     font-weight: 600;
-    font-family: 'Montserrat-Regular';
+    font-family: 'Montserrat-Medium';
     line-height: 70px;
     margin-bottom: 20px;
   }
@@ -185,7 +186,7 @@
     line-height: -5px;
     color: #051509;
     text-align: center;
-    margin: 0px;
+    margin-bottom: 20px;
   }
 
   .Utilitys {
@@ -236,6 +237,7 @@
 
   .CardItam h3 {
     font-size: 18px !important;
+    font-family: 'Montserrat-Regular' !important;
   }
 
 

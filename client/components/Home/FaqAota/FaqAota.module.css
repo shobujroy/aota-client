@@ -72,6 +72,9 @@
     color: #ffffff;
     transition: all 0.9s ease;
   }
+  .FaqPrime h3 {
+    font-size: 32px !important;
+  }
 }
 @media screen and (max-width: 1040px) {
   .questions p {

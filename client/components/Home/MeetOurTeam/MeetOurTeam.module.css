@@ -230,7 +230,7 @@
 .teamMemberContainer {
   width: 23%;
   margin-left: 10px;
-  height: 230px;
+  height: 38%;
   cursor: pointer;
 }
 .teamMemberContainer h3 {
@@ -277,7 +277,7 @@
     font-weight: 400;
     font-family: 'Montserrat-Regular';
     line-height: 20px;
-    color: #484848;
+    color: #fafafa !important;
     text-align: center;
     margin: 40px 20px;
   }
@@ -309,7 +309,7 @@
   }
   .cardSLiderOne {
     width: 80vw;
-    height: 380px;
+    height: 340px;
 
     margin-left: 5vw;
     margin-top: 5vw;
@@ -317,7 +317,7 @@
   }
   .cardSLiderTwo {
     width: 75vw;
-    height: 360px;
+    height: 320px;
 
     margin-left: 2.5vw;
     margin-top: 2.5vw;
