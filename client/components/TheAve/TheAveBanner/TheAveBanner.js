@@ -110,9 +110,7 @@ const TheAveBanner = () => {
               </div>
 
               <p>
-                We see Co-working Space Differently, we see lush Greenery, we
-                see natural wood, Mood lighting Luxurious, &amp; working in
-                Harmony
+              Work with our creative team, collaborate with a member, get a yoga session in, meditate, get inspired, participate in a creative challenge to.  Kick it on the Ave we're just getting started.  Join the collective today.
               </p>
 
               <div className={styles.Pasicon}>

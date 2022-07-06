@@ -25,18 +25,22 @@ function SliderCard() {
               <h1>
                 We’re Aliens on <br /> the ave
               </h1>
-              <p>we’re Brainging crreative co-working to the Metaverse.</p>
+              <p>We're bringing creative coworking to the Metaverse.</p>
             </div>
           </Carousel.Item>
           <Carousel.Item className={Styles.two}>
             <div className={Styles.carousleItemTwo}></div>
+               {/* <h1>
+                We’re Aliens on <br /> the ave
+              </h1>
+              <p>EXCLUSIVE MERCH Show off the Ave in style</p> */}
           </Carousel.Item>
           <Carousel.Item className={Styles.two}>
             <div className={Styles.carouselItemThree}>
               <h1>
                 We’re Aliens on <br /> the ave
               </h1>
-              <p>we’re Brainging crreative co-working to the Metaverse.</p>
+              <p>ACCESS THE CREATIVE HAVEN Coworking built by creatives for creatives</p>
             </div>
           </Carousel.Item>
 
@@ -45,7 +49,7 @@ function SliderCard() {
               <h1>
                 We’re Aliens on <br /> the ave
               </h1>
-              <p>we’re Brainging crreative co-working to the Metaverse.</p>
+              <p>YOGA & MEDITATION A healthy mind & body is a creative one.</p>
             </div>
           </Carousel.Item>
         </Carousel>
