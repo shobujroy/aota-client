@@ -54,7 +54,8 @@ const FaqAota = () => {
       <div className="container pb-4 pt-4">
         <div className="row">
           <div className={`col-md-5 ${styles.FaqPrime}`}>
-            <h1>FAQ AOTA</h1>
+            <h3>FREQUENTLY ASKED QUESTIONS</h3>
+            <h1>FAQ</h1>
             <h3>Prime AOTA NFT’s</h3>
             <p>
               Lorem Ipsum is simply dummy text of the printing and typesetting
