@@ -11,7 +11,7 @@
 
   line-height: 70px;
   margin-bottom: 20px;
-  font-family: 'Montserrat-Medium';
+  font-family: 'futura-bold';
   text-transform: uppercase;
 }
 
@@ -56,7 +56,7 @@
   font-size: 20px;
   font-weight: 400;
   font-family: 'Montserrat-Light';
-  letter-spacing: 0.2px;
+  letter-spacing: 0.2em;
   color: #1a1a1a;
   margin-top: 20px;
   margin-bottom: 16px;
@@ -70,7 +70,7 @@
 
 .Utilitys h1 {
   font-size: 56px;
-  font-family: 'Montserrat-Medium';
+  font-family: 'futura-bold';
   font-weight: 600;
   line-height: 70px;
   color: #051509;
@@ -151,6 +151,7 @@
   .mobileRespon h3 {
     margin-right: 0px;
     text-align: left;
+    letter-spacing: 0.2em;
   }
 
   .mobileRespon img {
@@ -162,7 +163,7 @@
     text-align: center;
     font-size: 32px;
     font-weight: 600;
-    font-family: 'Montserrat-Medium';
+    font-family: 'futura-bold';
     line-height: 70px;
     margin-bottom: 20px;
   }
@@ -181,7 +182,7 @@
 
   .Utilitys h1 {
     font-size: 28px;
-    font-family: 'Montserrat-Regular';
+    font-family: 'futura-bold';
     font-weight: 600;
     line-height: -5px;
     color: #051509;
@@ -279,7 +280,7 @@
 
   .Utilitys h1 {
     font-size: 56px;
-    font-family: 'Montserrat-Regular';
+    font-family: 'futura-bold';
     font-weight: 600;
     line-height: 70px;
     color: #051509;
