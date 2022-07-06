@@ -108,6 +108,7 @@
   line-height: 40px;
   font-family: 'Montserrat-Regular';
   margin-bottom: 20px;
+  letter-spacing: 0.2em;
 }
 
 .CarouselItam ul li {
@@ -198,7 +199,7 @@
     font-size: 32px;
     font-weight: 600;
     line-height: 70px;
-    font-family: 'Montserrat-Regular';
+    font-family: 'futura-bold';
     color: #fafafa;
     width: 316px;
     position: absolute;
@@ -266,7 +267,7 @@
     font-size: 48px;
     font-weight: 600;
     line-height: 70px;
-    font-family: 'Montserrat-Regular';
+    font-family: 'futura-bold';
     color: #fafafa;
     width: 453px;
     position: absolute;

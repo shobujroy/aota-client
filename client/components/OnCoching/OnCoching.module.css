@@ -115,7 +115,7 @@
   font-size: 31px;
   font-family: 'Montserrat-Light';
   text-transform: uppercase;
-  letter-spacing: 0.2px;
+  letter-spacing: 0.2em;
   font-weight: 500;
   line-height: 40px;
   color: #ffffff;
@@ -225,6 +225,7 @@ li .Icon {
   .CoWorkingTeam h1 {
     font-size: 32px !important;
     line-height: 40px;
+    font-family: 'futura-bold';
   }
 
   .CoWorkingText p {
@@ -258,6 +259,7 @@ li .Icon {
   .CoWorkingTeam h1 {
     font-size: 32px !important;
     line-height: 40px;
+    font-family: 'futura-bold';
   }
 
   .CoWorkingAndMembership {
@@ -295,7 +297,7 @@ li .Icon {
     font-size: 32px;
     font-weight: 500;
     line-height: 45px;
-    font-family: 'Montserrat-Regular';
+    font-family: 'futura-bold';
     color: #ffffff;
     text-align: center;
   }
@@ -319,6 +321,7 @@ li .Icon {
     color: #ffffff;
     margin-bottom: 20px;
     margin: 0px !important;
+    letter-spacing: 0.2em;
   }
 
   .Lifetime h4 {

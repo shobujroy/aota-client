@@ -43,7 +43,7 @@
   font-size: 48px;
   font-weight: 500;
   line-height: 60px;
-  font-family: 'Montserrat-Medium';
+  font-family: 'futura-bold';
   text-transform: uppercase;
   color: #ffffff;
   text-align: center;
@@ -104,7 +104,7 @@
   font-size: 32px;
   font-family: 'Montserrat-Light';
   text-transform: uppercase;
-  letter-spacing: 0.2px;
+  letter-spacing: 0.2em;
   font-weight: 500;
   line-height: 40px;
   color: #ffffff;
@@ -220,6 +220,7 @@ li .Icon {
     color: #ffffff;
     margin-bottom: 10px;
     margin-top: 20px;
+    letter-spacing: 0.2em;
   }
 
   .Lifetime h4 {
@@ -247,7 +248,7 @@ li .Icon {
     font-size: 32px;
     font-weight: 500;
     line-height: 40px;
-    font-family: 'Montserrat-Medium';
+    font-family: 'futura-bold';
     text-transform: uppercase;
     color: #ffffff;
     text-align: center;
@@ -284,7 +285,7 @@ li .Icon {
     font-size: 32px !important;
     font-weight: 500;
     line-height: 60px;
-    font-family: 'Montserrat-Medium';
+    font-family: 'futura-bold';
     text-transform: uppercase;
     color: #ffffff;
     text-align: center;

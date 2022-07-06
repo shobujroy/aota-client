@@ -33,7 +33,7 @@
   font-size: 48px;
   font-weight: 500;
   line-height: 60px;
-  font-family: 'Montserrat-Medium';
+  font-family: 'futura-bold';
   text-transform: uppercase;
   color: #ffffff;
   text-align: center;
@@ -122,7 +122,7 @@
   font-size: 31px;
   font-family: 'Montserrat-Light';
   text-transform: uppercase;
-  letter-spacing: 0.2px;
+  letter-spacing: 0.2em;
   font-weight: 500;
   line-height: 40px;
   color: #ffffff;
@@ -222,7 +222,7 @@ li .Icon {
     font-size: 24px;
     font-weight: 500;
     line-height: 60px;
-    font-family: 'Montserrat-Medium';
+    font-family: 'futura-bold';
     text-transform: uppercase;
     color: #ffffff;
     text-align: center;
@@ -275,7 +275,7 @@ li .Icon {
     font-size: 32px;
     font-weight: 500;
     line-height: 35px;
-    font-family: 'Montserrat-Regular';
+    font-family: 'futura-bold';
     color: #ffffff;
     text-align: center;
     margin: 20px 20px;
@@ -298,6 +298,7 @@ li .Icon {
     line-height: 40px;
     color: #ffffff;
     margin-bottom: 10px !important;
+    letter-spacing: 0.2em;
   }
 
   .Lifetime h4 {
@@ -425,7 +426,7 @@ li .Icon {
     font-size: 32px;
     font-weight: 500;
     line-height: 40px;
-    font-family: 'Montserrat-Regular';
+    font-family: 'futura-bold';
     color: #ffffff;
     text-align: center;
   }
@@ -443,5 +444,6 @@ li .Icon {
   .CoWorkingTeam h1 {
     font-size: 32px;
     line-height: 40px;
+    font-family: 'futura-bold';
   }
 }
