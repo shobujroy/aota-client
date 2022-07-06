@@ -90,7 +90,7 @@ const MeetOurTeam = () => {
             </div>
 
             <div className={`col-md-6 mt-0 ${styles.MeetMemberRight}`}>
-              <h1>Meet Our Team</h1>
+              <h1>Team</h1>
               <p className={styles.meetMemberPara}>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nec
                 porttitor urna, arcu congue neque enim quis auctor ut. Non, duis
