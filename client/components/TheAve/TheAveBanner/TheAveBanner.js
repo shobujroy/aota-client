@@ -61,38 +61,43 @@ const TheAveBanner = () => {
           </div>
 
           <div className="row">
+          <Link href={"/creativehaven"}>
             <div className={`col-md-6 col-lg-6 col-sm-12 ${styles.TheAveImage}`}>
-              <Image width={675} height={535} src={"/images/image 20.png"} />
+              <Image width={675} height={535} src={"/images/image 20.png"} className={styles.aveImages}/>
 
               <div className={styles.AveTextOne}>
-                <Link href={"/creativehaven"}>
+                
                   <h1>Creative Haven</h1>
-                </Link>
+                
               </div>
             </div>
-
+            </Link>
+            
             <div className={`col-md-6 col-sm-12 col-lg-6 ${styles.TheAvePhoto}`}>
-
+            <Link href={"/onlineclasses"}>
               <div className={styles.AvePhoto}>
                 <div className={styles.yoga}>                 
                 </div>
+                
                 <div className={styles.AvePhotoText}>
-                  <Link href={"/onlineclasses"}>
+                 
                     <h1>Yoga with River</h1>
-                  </Link>
+                  
                 </div>
+             
               </div>
-
+              </Link>
+              <Link href={"/coching"}>
               <div className={styles.AveThePhoto}>
                 <div className={styles.yoga}>                 
                 </div>
                 <div className={styles.AveThePhotoText}>
-                  <Link href={"/coching"}>
+                 
                     <h1>Creators Challenge</h1>
-                  </Link>
+                
                 </div>                
               </div>
-
+              </Link>
             </div>
           </div>
         </div>
@@ -110,7 +115,8 @@ const TheAveBanner = () => {
               </div>
 
               <p>
-              Work with our creative team, collaborate with a member, get a yoga session in, meditate, get inspired, participate in a creative challenge to.  Kick it on the Ave we're just getting started.  Join the collective today.
+              Work with our creative team, collaborate with a member, get a yoga session in, meditate, get inspired,
+ participate in a creative challenge to.  Kick it on the Ave we're just getting started.  Join the collective today.
               </p>
 
               <div className={styles.Pasicon}>
