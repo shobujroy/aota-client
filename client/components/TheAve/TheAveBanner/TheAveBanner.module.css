@@ -450,7 +450,9 @@
     background-position: center;
     background-repeat: no-repeat;
   }
-
+.AvePhoto:hover .yoga{
+  background: #0b1b0f;
+}
   .TheAvePhoto .AveThePhoto .yoga {
     background-image: url('../../../public/images/image 22.png');
     height: 165px;
