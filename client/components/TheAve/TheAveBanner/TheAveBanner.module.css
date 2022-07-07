@@ -50,6 +50,7 @@
   background-repeat: no-repeat;
 }
 
+
 .PhotoOne {
   margin-bottom: 10px;
   margin-left: 10px;
@@ -188,19 +189,21 @@
 .BackIcon {
   text-align: left;
   position: relative;
-  height: 47px;
-  width: 60px;
-  margin-top: 30px;
+  height: 32px;
+  width: 42px;
+  margin-top: 7px;
 }
 
 .CoWorkingPart .Pasicon {
   text-align: right;
   position: relative;
-  width: 64px;
+
   margin-left: auto;
-  height: 50px;
+  width: 43px;
+
+  height: 33px;
   margin-right: 50px;
-  margin-top: -25px;
+  margin-top: -10px;
 }
 
 .CoWorkingImage {
@@ -215,7 +218,15 @@
   width: 328px;
   height: 250px;
 }
-
+.TheAveImage:hover .aveImages{
+ opacity: 0.2 !important;
+}
+.TheAveImage:hover .AveTextOne h1{
+  opacity: 1 !important;
+ }
+.AveTextOne h1{
+  opacity: 0.6;
+}
 /* Media Query for Mobile Devices */
 @media screen and (max-width: 637px) {
   .AveTextOne {

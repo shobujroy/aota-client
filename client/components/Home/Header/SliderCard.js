@@ -38,18 +38,18 @@ function SliderCard() {
           <Carousel.Item className={Styles.two}>
             <div className={Styles.carouselItemThree}>
               <h1>
-                We’re Aliens on <br /> the ave
+              ACCESS THE CREATIVE <br /> HAVEN
               </h1>
-              <p>ACCESS THE CREATIVE HAVEN Coworking built by creatives for creatives</p>
+              <p>Coworking built by creatives for creatives</p>
             </div>
           </Carousel.Item>
 
           <Carousel.Item className={Styles.two}>
             <div className={Styles.carouselItemFour}>
               <h1>
-                We’re Aliens on <br /> the ave
+              YOGA &  MEDITATION
               </h1>
-              <p>YOGA & MEDITATION A healthy mind & body is a creative one.</p>
+              <p>A healthy mind & body is a creative one.</p>
             </div>
           </Carousel.Item>
         </Carousel>
