@@ -19,7 +19,7 @@ const MeetOurTeam = () => {
   const [name, setName] = useState("");
   const [image, setImage] = useState("");
   const [title, setTitle] = useState("");
-
+  const [description, setDescription] = useState("");
   let changeInfo = () => {};
   console.log(image.length);
   function ControlledCarousel() {
@@ -52,10 +52,7 @@ const MeetOurTeam = () => {
                   <h2>{name}</h2>
                   <h6>{title}</h6>
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nec
-                    porttitor urna, arcu congue neque enim quis auctor ut. Non,
-                    duis malesuada blandit suspendisse posuere aliquam
-                    elementum. Hac curabitur mi sit habitant.
+                    {description}
                   </p>
 
                   <div className={styles.MemberCardIcons}>
@@ -136,6 +133,7 @@ const MeetOurTeam = () => {
                                 setName(item.name);
                                 setImage(item.image);
                                 setTitle(item.title);
+                                setDescription(item.about);
                                 setImgActive(i);
                               }}
                             >
