@@ -29,9 +29,8 @@ const PerksUtility = () => {
                 </div>
 
                 <p>
-                  AOTA holders will receive free airdrops for as long as they
-                  hold. Our team actively exploring ways to expand the
-                  AOTAverse.
+                AOTA holders will receive free airdrops (just cover the gas) for as long as they hold. Our team is
+actively exploring ways to expand the AOTAverse.
                 </p>
               </div>
 
@@ -43,12 +42,10 @@ const PerksUtility = () => {
                     height={64}
                     className={styles.CardImg}
                   />
-                  <h3>THE CREATIVE HAVEN</h3>
+                  <h3>CREATIVE <br /> HAVEN</h3>
                 </div>
                 <p>
-                  AOTA holders will receive free airdrops for as long as they
-                  hold. Our team actively exploring ways to expand the
-                  AOTAverse.
+                AOTA will grant access to The Creative Haven a creative coworking space built for the creators of the cosmos.
                 </p>
               </div>
 
@@ -63,9 +60,8 @@ const PerksUtility = () => {
                   <h3>EXCLUSIVE MERCH</h3>
                 </div>
                 <p>
-                  AOTA holders will receive free airdrops for as long as they
-                  hold. Our team actively exploring ways to expand the
-                  AOTAverse.
+                Members will have access to merch exclusive to the community.  Various products to show off, designed to 
+be the center of attention.  Unique just like you.
                 </p>
               </div>
 
@@ -80,9 +76,7 @@ const PerksUtility = () => {
                   <h3>COMMERCIAL USAGE</h3>
                 </div>
                 <p>
-                  AOTA holders will receive free airdrops for as long as they
-                  hold. Our team actively exploring ways to expand the
-                  AOTAverse.
+                Commericial rights are directly granted to holders.  Your NFT is yours to use for for as long as you own it.  
                 </p>
               </div>
             </div>
