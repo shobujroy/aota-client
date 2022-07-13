@@ -108,7 +108,7 @@
   transform: translate(-50%, -50%);
   font-size: 48px;
   font-weight: 500;
-  font-family: 'Montserrat-Regular';
+  font-family: 'futura-bold';
   line-height: 60px;
   cursor: pointer;
 }
@@ -128,7 +128,7 @@
   font-weight: 500;
   font-family: 'futura-bold';
   line-height: 60px;
-  width: 253px;
+
 }
 
 .AveThePhotoText {
@@ -146,7 +146,7 @@
   font-weight: 500;
   font-family: 'futura-bold';
   line-height: 60px;
-  width: 310px;
+ 
 }
 
 .TheAvePhoto .AvePhoto {
@@ -625,7 +625,7 @@
 
   .TheAveImage .AveTextOne h1 {
     font-size: 34px !important;
-    width: 270px;
+
   }
 
   .row {
