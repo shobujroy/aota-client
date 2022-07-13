@@ -49,10 +49,10 @@ const MeetOurTeam = () => {
                 </div>
 
                 <div className={styles.MemberCardText}>
-                  <h2>{name}</h2>
-                  <h6>{title}</h6>
+                  <h2>{name.length < 2 ? "Jacob Flores" : name}</h2>
+                  <h6>{title.length < 2 ? "Founder/Artist" : title}</h6>
                   <p>
-                    {description}
+                  {description.length < 2 ? "Jacob has an extensive background in digital arts, marketing, sales.  While working as a Solar Energy Consultant for SolarCity he discovered a passion for the environment and the impact businesses have on the planet.  He believes the future of tech is green and DLT's will lead the change.  His passion for growth has inspired many to make a difference." : description}
                   </p>
 
                   <div className={styles.MemberCardIcons}>
