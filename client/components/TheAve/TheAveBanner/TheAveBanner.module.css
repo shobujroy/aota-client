@@ -127,7 +127,7 @@
   font-size: 32px;
   font-weight: 500;
   font-family: 'futura-bold';
-  line-height: 60px;
+  line-height: 28px;
 
 }
 
@@ -145,7 +145,7 @@
   font-size: 32px;
   font-weight: 500;
   font-family: 'futura-bold';
-  line-height: 60px;
+  line-height: 33px;
  
 }
 
@@ -250,7 +250,7 @@
   .TheAvePhoto .AvePhoto .yoga {
     background-image: url('../../../public/images/image 21.png');
     height: 118px;
-    width: 196px;
+   
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -259,7 +259,7 @@
   .TheAvePhoto .AveThePhoto .yoga {
     background-image: url('../../../public/images/image 22.png');
     height: 118px;
-    width: 196px;
+  
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -321,7 +321,7 @@
   }
 
   .AveThePhotoText h1 {
-    font-size: 10px !important;
+    font-size: 21px  !important;
   }
 
   .AvePhotoText h1 {
@@ -329,12 +329,12 @@
   }
 
   .AvePhotoText {
-    left: 75%;
+  
     top: 50%;
   }
 
   .AveThePhotoText {
-    left: 100%;
+   
     top: 50%;
   }
 
@@ -344,7 +344,7 @@
   }
 
   .AvePhotoText h1 {
-    font-size: 12px !important;
+    font-size: 21px !important;
   }
 
   .row {
@@ -445,7 +445,8 @@
   .TheAvePhoto .AvePhoto .yoga {
     background-image: url('../../../public/images/image 21.png');
     height: 155px;
-    width: 450px;
+    width: 316px;
+    background-size: 100% 100%;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -507,9 +508,9 @@
   }
 
   .CoWorkingPart p {
-    font-size: 18px;
+    font-size: 16.5px;
     font-weight: 500;
-    line-height: 40px;
+    line-height: 30px;
     font-family: 'Montserrat-Regular';
     color: #ffffff;
     width: 410px;
@@ -523,19 +524,19 @@
   }
 
   .AvePhotoText {
-    left: 65%;
+    left: 54%;
   }
 
   .AveThePhotoText {
-    left: 70%;
+    left:53%;
   }
 
   .AveThePhotoText h1 {
-    font-size: 18px;
+    font-size: 26px;
   }
 
   .AvePhotoText h1 {
-    font-size: 18px;
+    font-size: 24px;
   }
 
   .CoWorkingImage img {
