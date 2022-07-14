@@ -87,7 +87,7 @@
   line-height: 70px;
   font-family: 'futura-bold';
   text-transform: uppercase;
-
+  margin-bottom: 160px;
   font-weight: 600;
   color: #ffffff;
 }
@@ -464,7 +464,7 @@
   .MemberProfil {
     background: #1a2a1e;
     width: 500px;
-    height: 735px;
+    height: 780px;
     text-align: center;
     position: relative;
   }
