@@ -1,6 +1,6 @@
 .menuAll {
   display: flex;
-  width: 900px;
+  width: 1336px;
   justify-content: end;
 }
 
@@ -122,12 +122,13 @@
 }
 
 /* Media Query for Mobile Devices */
+
 @media (min-width: 1600px) and (max-width: 3000px) {
-  .menuAll {
+  /* .menuAll {
     display: flex !important;
     width: 2005px !important;
     margin-top: -3px !important;
-  }
+  } */
 }
 
 /* Media Query for Mobile Devices */
@@ -306,3 +307,12 @@
     margin-top: 10px !important;
   }
 }
+
+@media (min-width: 1081px) and (max-width: 1440px) {
+  .menuAll {
+    display: flex !important;
+    width: 800px !important;
+    justify-content: end !important;
+  }
+}
+
