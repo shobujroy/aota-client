@@ -13,12 +13,14 @@ const directionButtons = (direction) => {
       {direction}
     </span>
   );
+  
 };
 
 const MeetOurTeam = () => {
   const [name, setName] = useState("");
   const [image, setImage] = useState("");
   const [title, setTitle] = useState("");
+  const [about, setAbout] = useState("");
 
   let changeInfo = () => {};
   console.log(image.length);
@@ -52,10 +54,7 @@ const MeetOurTeam = () => {
                   <h2>{name}</h2>
                   <h6>{title}</h6>
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nec
-                    porttitor urna, arcu congue neque enim quis auctor ut. Non,
-                    duis malesuada blandit suspendisse posuere aliquam
-                    elementum. Hac curabitur mi sit habitant.
+                    {about}
                   </p>
 
                   <div className={styles.MemberCardIcons}>
@@ -136,6 +135,7 @@ const MeetOurTeam = () => {
                                 setName(item.name);
                                 setImage(item.image);
                                 setTitle(item.title);
+                                setAbout(item.about)
                                 setImgActive(i);
                               }}
                             >
@@ -155,6 +155,7 @@ const MeetOurTeam = () => {
                               </div>
                               <h3>{item.name}</h3>
                               <h4>{item.title}</h4>
+
                             </div>
                           );
                         })}
@@ -293,10 +294,7 @@ const MeetOurTeam = () => {
                   <h2>{data.name}</h2>
                   <h5>{data.title}</h5>
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nec
-                    porttitor urna, arcu congue neque enim quis auctor ut. Non,
-                    duis malesuada blandit suspendisse posuere aliquam
-                    elementum. Hac curabitur mi sit habitant.
+                  {data.about}
                   </p>
                   <div className={styles.MemberCardIcons}>
                     <Image
