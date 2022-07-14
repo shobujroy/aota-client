@@ -48,7 +48,7 @@
 .plusIcon {
   height: 28px;
   width: 28px;
-  margin-left: 20px;
+
   position: relative;
   cursor: pointer;
 }
@@ -61,6 +61,12 @@
   font-weight: 500;
   font-size: 16px;
   color: #a3a3a3;
+} .plusMinusIcon{
+  width: 20%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
 }
 @media screen and (max-width: 637px) {
   .qaSection {
@@ -75,18 +81,40 @@
   .FaqPrime h3 {
     font-size: 32px !important;
   }
+  .plusMinusIcon{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+  }
 }
 @media screen and (max-width: 1040px) {
   .questions p {
     font-size: 15px;
+    width: 80%;
   }
   .qaSection {
-    width: 350px;
+    width: 98%;
     border-bottom: 1px solid #75ba87;
+  }
+  .plusMinusIcon{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
   }
 }
 @media screen and (min-width: 983px) and (max-width: 1040px) {
   .qaSection {
     width: 500px;
+  }
+  .plusMinusIcon{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
   }
 }
