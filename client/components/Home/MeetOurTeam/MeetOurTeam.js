@@ -161,7 +161,7 @@ const MeetOurTeam = () => {
                       </div>
                     </Carousel.Item>
 
-                    {/* <Carousel.Item>
+                    <Carousel.Item>
                       <div className={styles.carousleItemElement}>
                         {Team.slice(0, 8).map((item, i) => {
                           return (
@@ -195,43 +195,45 @@ const MeetOurTeam = () => {
                           );
                         })}
                       </div>
+                    </Carousel.Item>
+{/* 
+                    <Carousel.Item className={styles.carousleItemElementExtra} >
+                        <div className={styles.carousleItemElement}>
+                          {Team.slice(4, 8).map((item, i) => {
+                            return (
+                              <div
+                                className={styles.teamMemberContainer}
+                                onClick={() => {
+                                  setName(item.name);
+                                  setImage(item.image);
+                                  setTitle(item.title);
+                                  setDescription(item.about);
+                                  setImgActive(i);
+                                }}
+                              >
+                                <div
+                                  style={
+                                    imgActive === i
+                                      ? { border: "3px solid #75BA87" }
+                                      : { border: "none" }
+                                  }
+                                  className={styles.teamImage}
+                                >
+                                  <Image
+                                    src={item.image}
+                                    layout="fill"
+                                    objectFit="cover"
+                                  ></Image>
+                                </div>
+                                <h3>{item.name}</h3>
+                                <h4>{item.title}</h4>
+                              </div>
+                            );
+                          })}
+                        </div>
+                      
                     </Carousel.Item> */}
 
-                    {/* <Carousel.Item>
-                      <div className={styles.carousleItemElement}>
-                        {Team.slice(0, 8).map((item, i) => {
-                          return (
-                            <div
-                              className={styles.teamMemberContainer}
-                              onClick={() => {
-                                setName(item.name);
-                                setImage(item.image);
-                                setTitle(item.title);
-                                setDescription(item.about);
-                                setImgActive(i);
-                              }}
-                            >
-                              <div
-                                style={
-                                  imgActive === i
-                                    ? { border: "3px solid #75BA87" }
-                                    : { border: "none" }
-                                }
-                                className={styles.teamImage}
-                              >
-                                <Image
-                                  src={item.image}
-                                  layout="fill"
-                                  objectFit="cover"
-                                ></Image>
-                              </div>
-                              <h3>{item.name}</h3>
-                              <h4>{item.title}</h4>
-                            </div>
-                          );
-                        })}
-                      </div>
-                    </Carousel.Item> */}
                     {/* <Carousel.Item>
                     <img
                       className="d-block w-100"
@@ -268,14 +270,123 @@ const MeetOurTeam = () => {
           </div>
         </div>
       </div>
+
+      {/* <div className={styles.meetOurTeamTab}>
+      <div
+                className={styles.meetOurTeamTab}
+                prevLabel={directionButtons()}
+              >
+                <div className={styles.meetOurTeamSliderButtonArea}></div>
+                <div className={styles.carouselAra}>
+                  <Carousel
+                    wrap={false}
+                    interval={null}
+                    indicators={false}
+                    prevIcon={
+                      <div className={styles.rightArrow}>
+                        <Image
+                          src={"/images/Group 3.png"}
+                          layout="fill"
+                          objectFit="cover"
+                        ></Image>
+                      </div>
+                    }
+                    nextIcon={
+                      <div className={styles.leftArrow}>
+                        <Image
+                          src={"/images/Group 3.png"}
+                          layout="fill"
+                          objectFit="cover"
+                        ></Image>
+                      </div>
+                    }
+                  >
+                    <Carousel.Item>
+                      <div className={styles.carousleItemElement}>
+                        {Team.slice(0, 4).map((item, i) => {
+                          return (
+                            <div
+                              className={styles.teamMemberContainer}
+                              onClick={() => {
+                                setName(item.name);
+                                setImage(item.image);
+                                setTitle(item.title);
+                                setDescription(item.about);
+                                setImgActive(i);
+                              }}
+                            >
+                              <div
+                                style={
+                                  imgActive === i
+                                    ? { border: "3px solid #75BA87" }
+                                    : { border: "none" }
+                                }
+                                className={styles.teamImage}
+                              >
+                                <Image
+                                  src={item.image}
+                                  layout="fill"
+                                  objectFit="cover"
+                                ></Image>
+                              </div>
+                              <h3>{item.name}</h3>
+                              <h4>{item.title}</h4>
+
+                            </div>
+                          );
+                        })}
+                      </div>
+                    </Carousel.Item>
+
+                    <Carousel.Item>
+                      <div className={styles.carousleItemElement}>
+                        {Team.slice(4, 8).map((item, i) => {
+                          return (
+                            <div
+                              className={styles.teamMemberContainer}
+                              onClick={() => {
+                                setName(item.name);
+                                setImage(item.image);
+                                setTitle(item.title);
+                                setDescription(item.about);
+                                setImgActive(i);
+                              }}
+                            >
+                              <div
+                                style={
+                                  imgActive === i
+                                    ? { border: "3px solid #75BA87" }
+                                    : { border: "none" }
+                                }
+                                className={styles.teamImage}
+                              >
+                                <Image
+                                  src={item.image}
+                                  layout="fill"
+                                  objectFit="cover"
+                                ></Image>
+                              </div>
+                              <h3>{item.name}</h3>
+                              <h4>{item.title}</h4>
+                            </div>
+                          );
+                        })}
+                      </div>
+                    </Carousel.Item>
+                  </Carousel>
+                </div>
+              </div>
+      </div> */}
+
+      
       <div className={styles.meetOurTeamMobile}>
-        <h1>Meet Our Team</h1>
-        <p>
+        <h1>Team</h1>
+        {/* <p>
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus
           facilis laboriosam magni possimus velit maiores natus nisi cum magnam
           rerum nobis quae voluptates quod laudantium et, quia eius! Minima,
           qui.
-        </p>
+        </p> */}
         {/* */}
         <Carousel indicators={false}>
           {Team.map((data) => {
