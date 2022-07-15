@@ -33,9 +33,9 @@
 .CreativeHavenText {
   width: 100%;
   height: 550px;
-  background-image: url('../../public/images/CreativeHaven/Skater 2 (1).png');
+  background-image: url('../../public/images/creativehaven.png');
   background-repeat: no-repeat;
-  background-size: 40% 100%;
+  background-size: 60% 100%;
   background-position: right top;
 }
 
@@ -172,9 +172,9 @@ li .Icon {
   .CreativeHavenText {
     width: 100%;
     height: 350px;
-    background-image: url('../../public/images/CreativeHaven/Skater 2 (1).png');
+    background-image: url('../../public/images/creativehaven.png');
     background-repeat: no-repeat;
-    background-size: 50% 100%;
+    background-size: 100% 100%;
     background-position: center !important;
   }
 
@@ -309,11 +309,11 @@ li .Icon {
   .CreativeHavenText {
     width: 100%;
     height: 596px;
-    background-image: url('../../public/images/CreativeHaven/Skater 2 (1).png');
+    background-image: url('../../public/images/creativehaven.png');
     background-repeat: no-repeat;
-    background-size: 50% 90%;
+    background-size: 70% 90%;
     background-position: right top;
-    background-position-x: 300px;
+    background-position-x: 200px;
   }
 
   .CreativeHavenText h2 {

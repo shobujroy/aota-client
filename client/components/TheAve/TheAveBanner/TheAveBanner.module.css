@@ -152,7 +152,7 @@
 
 .TheAvePhoto .AvePhoto {
   margin-bottom: 15px;
-  margin-left: 20px;
+  margin-left: 70px;
   position: relative;
   cursor: pointer;
 }
@@ -329,6 +329,17 @@
     margin-top: 30px;
   }
 
+
+  .PhotoOne img{
+    height: 150px !important;
+    width: 450px !important;
+  }
+
+  .PhotoTwo img{
+    height: 150px !important;
+    width: 450px !important;
+  }
+
   .TheAveImage {
     width: 100% !important;
     height: 350px !important;
@@ -360,8 +371,7 @@
     top: 50%;
   }
 
-  .AveThePhotoText {
-   
+  .AveThePhotoText {   
     top: 50%;
   }
 
@@ -381,8 +391,8 @@
   }
 
   .CoWorkingImage img {
-    width: 684px !important;
-    height: 575px !important;
+    width: 326px !important;
+    height: 450px !important;
   }
 
   .CoWorkingPart {
@@ -437,6 +447,10 @@
   .TheAvePhoto .AveThePhoto {
     margin-left: 0px !important;
   }
+
+
+
+ 
 }
 
 
