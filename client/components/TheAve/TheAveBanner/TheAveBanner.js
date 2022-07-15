@@ -62,8 +62,8 @@ const TheAveBanner = () => {
 
           <div className="row">
           <Link href={"/creativehaven"}>
-            <div className={`col-md-6 col-lg-6 col-sm-12 ${styles.TheAveImage}`}>
-              <Image width={675} height={535} src={"/images/image 20.png"} className={styles.aveImages}/>
+            <div className={`col-md-6 col-lg-6 col-sm-12 h-full ${styles.TheAveImage}`}>
+              <Image width={675} height={540}  src={"/images/image 20.png"} className={styles.aveImages}/>
 
               <div className={styles.AveTextOne}>
                 
@@ -73,13 +73,14 @@ const TheAveBanner = () => {
             </div>
             </Link>
             
-            <div className={`col-md-6 col-sm-12 col-lg-6 ${styles.TheAvePhoto}`}>
+            <div className={`col-md-6 col-sm-12 col-lg-6 h-full ${styles.TheAvePhoto}`}>
+              
             <Link href={"/onlineclasses"}>
               <div className={styles.AvePhoto}>
-                <div className={styles.yoga}>                 
-                </div>
-                
-                <div className={styles.AvePhotoText}>
+              <Image width={675} height={276}  src={"/images/image 21.png"} className={styles.aveImages}/>
+                {/* <div className={styles.yoga}>                 
+                </div> */}
+                <div className={styles.AveTextOne}>
                  
                     <h1>Yoga with River</h1>
                   
@@ -89,9 +90,10 @@ const TheAveBanner = () => {
               </Link>
               <Link href={"/coching"}>
               <div className={styles.AveThePhoto}>
-                <div className={styles.yoga}>                 
-                </div>
-                <div className={styles.AveThePhotoText}>
+              <Image width={675} height={276}  src={"/images/image 22.png"} className={styles.aveImages}/>
+                {/* <div className={styles.yoga}>                 
+                </div> */}
+                <div className={styles.AveTextOne}>
                  
                     <h1>Creators Challenge</h1>
                 
@@ -106,7 +108,7 @@ const TheAveBanner = () => {
       <>
         <div
           style={{ marginBottom: "50px" }}
-          className={`container pb-4 pt-4 ${styles.CoWorking}`}
+          className={`container ${styles.CoWorking}`}
         >
           <div className={`col-lg-12 col-sm-12- col-md-12 ${styles.row}`}>
             <div className={`${styles.CoWorkingPart}`}>
