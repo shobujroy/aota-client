@@ -13,6 +13,7 @@ const directionButtons = (direction) => {
       {direction}
     </span>
   );
+  
 };
 
 const MeetOurTeam = () => {
@@ -88,12 +89,12 @@ const MeetOurTeam = () => {
 
             <div className={`col-md-6 mt-0 ${styles.MeetMemberRight}`}>
               <h1>Team</h1>
-              <p className={styles.meetMemberPara}>
+              {/* <p className={styles.meetMemberPara}>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nec
                 porttitor urna, arcu congue neque enim quis auctor ut. Non, duis
                 malesuada blandit suspendisse posuere aliquam elementum. Hac
                 curabitur mi sit habitant.
-              </p>
+              </p> */}
               <div
                 className={styles.RoadMapSlider}
                 prevLabel={directionButtons()}
@@ -153,6 +154,7 @@ const MeetOurTeam = () => {
                               </div>
                               <h3>{item.name}</h3>
                               <h4>{item.title}</h4>
+
                             </div>
                           );
                         })}

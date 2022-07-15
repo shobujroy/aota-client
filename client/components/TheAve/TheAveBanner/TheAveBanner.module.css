@@ -164,7 +164,7 @@
 
 .CoWorking {
   background: #17271b;
-  width: 1300px;
+  width: 100%;
   margin-left: 100px;
   margin-top: 50px;
 }
@@ -252,6 +252,13 @@
     top: 50%;
   }
 
+
+  .CoWorkingImage {
+    width: 100%;
+  }  
+
+
+
   .AveTextOne h1 {
     font-size: 24px;
   }
@@ -267,8 +274,7 @@
 
   .TheAvePhoto .AvePhoto .yoga {
     background-image: url('../../../public/images/image 21.png');
-    height: 118px;
-   
+    height: 118px;   
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -389,9 +395,9 @@
     line-height: 40px;
     font-family: 'Montserrat-Regular';
     color: #ffffff;
-    width: 370px;
+    width: 365px;
     margin: 0px;
-    padding: 20px 0px;
+    padding: 20px 20px;
   }
 
   .CoWorkingPart .Pasicon {
@@ -447,6 +453,8 @@
 
   .BackIcon {
     margin-top: 0px !important;
+    width: 30px;
+    height: 23px;
   }
 
   .AveBannerText p {
@@ -542,12 +550,14 @@
     color: #ffffff;
     width: 410px;
     margin: auto;
-    padding: 20px;
+    padding: 0px 0px 0px 20px;
   }
 
   .CoWorkingPart .Pasicon {
     text-align: right;
     margin-right: 30px;
+    width: 30px;
+    height: 23px;
   }
 
   .AvePhotoText {
