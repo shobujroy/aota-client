@@ -32,23 +32,23 @@
   width: 50%;
 }
 
-.TheAvePhoto .AvePhoto .yoga {
+/* .TheAvePhoto .AvePhoto .yoga {
   background-image: url('../../../public/images/image 21.png');
   height: 218px;
   width: 100%;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-}
+} */
 
-.TheAvePhoto .AveThePhoto .yoga {
+/* .TheAvePhoto .AveThePhoto .yoga {
   background-image: url('../../../public/images/image 22.png');
   height: 284px;
   width: 100%;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-}
+} */
 
 
 .PhotoOne {
@@ -97,6 +97,7 @@
   padding: 0px;
   margin: 0px;
   height: 535px;
+  cursor: pointer;
 }
 
 .AveTextOne {
@@ -153,6 +154,7 @@
   margin-bottom: 15px;
   margin-left: 20px;
   position: relative;
+  cursor: pointer;
 }
 
 .TheAvePhoto .AveThePhoto {
@@ -221,7 +223,19 @@
 .TheAveImage:hover .aveImages{
  opacity: 0.2 !important;
 }
+.AvePhoto:hover .aveImages{
+ opacity: 0.2 !important;
+}
+.AveThePhoto:hover .aveImages{
+ opacity: 0.2 !important;
+}
 .TheAveImage:hover .AveTextOne h1{
+  opacity: 1 !important;
+ }
+.AvePhoto:hover .AveTextOne h1{
+  opacity: 1 !important;
+ }
+.AveThePhoto:hover .AveTextOne h1{
   opacity: 1 !important;
  }
 .AveTextOne h1{
@@ -229,6 +243,10 @@
 }
 /* Media Query for Mobile Devices */
 @media screen and (max-width: 637px) {
+
+  .AvePhoto  img{
+    height: 110px !important;
+  }
   .AveTextOne {
     left: 50%;
     top: 50%;
@@ -413,6 +431,15 @@
 
 /* Media Query for low resolution  Tablets, Ipads */
 @media (min-width: 640px) and (max-width: 1040px) {
+
+  .AvePhoto  img{
+    height: 156px !important;
+  }
+
+  .AveThePhoto  img{
+    height: 163px !important;
+  }
+
   .AveBannerText h1 {
     font-size: 32px;
     font-family: 'futura-bold';
