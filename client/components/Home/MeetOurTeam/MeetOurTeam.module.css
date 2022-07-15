@@ -87,7 +87,7 @@
   line-height: 70px;
   font-family: 'futura-bold';
   text-transform: uppercase;
-
+  margin-bottom: 160px;
   font-weight: 600;
   color: #ffffff;
 }
@@ -562,8 +562,8 @@ margin-right: -23px;
     border: 2px solid transparent;
     width: 380px;
   }
-  .rightArrow {
-  }
+  /* .rightArrow {
+  } */
   .leftArrow {
     margin-left: 50px;
   }

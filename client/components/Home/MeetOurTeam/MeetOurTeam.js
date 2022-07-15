@@ -13,6 +13,7 @@ const directionButtons = (direction) => {
       {direction}
     </span>
   );
+  
 };
 
 const MeetOurTeam = () => {
@@ -153,6 +154,7 @@ const MeetOurTeam = () => {
                               </div>
                               <h3>{item.name}</h3>
                               <h4>{item.title}</h4>
+
                             </div>
                           );
                         })}
