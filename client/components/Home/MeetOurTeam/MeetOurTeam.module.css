@@ -321,17 +321,24 @@
     margin-top: 20px;
   }
   .cardSLiderOne {
-    width: 80vw;
-    height: 40vh;
-
-    margin-left: 5vw;
-    margin-top: 5vw;
+    width: 57vw;
+    height: 40vh;    
     background: #3e4b41;
+    margin: auto;
   }
+
+
+  .cardSLiderTwo img{
+    height: 200px !important;
+    width: 100% !important;
+    margin: auto !important;
+    text-align: center;
+  }
+
+
   .cardSLiderTwo {
     width: 75vw;
     height: 0px;
-
     margin-left: 2.5vw;
     margin-top: 2.5vw;
     background: #4a574d;
@@ -481,13 +488,13 @@
 
 @media (max-width: 500px){
   .cardSLiderOne{
-    height: 40vh;
+    height: 26vh;
   }
 }
 
 @media (max-width: 400px){
   .cardSLiderOne{
-    height: 36vh;
+    height: 26vh;
   }
 }
 

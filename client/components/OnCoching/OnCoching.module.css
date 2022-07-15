@@ -1,10 +1,12 @@
 .OnlineClassesBanner {
-  background: url('../../public/images/image\ 22.png');
+  background: url('../../public/images/Merch.png');
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 70% 100%;
+  background-position: right top;
   height: 500px;
   width: 100%;
+  background-color: rgb(5, 21, 9) !important;
 }
 
 .OnlineClassesText {
