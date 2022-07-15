@@ -25,7 +25,8 @@ function QuestionsAns({
     <div className={Styles.qaSection}>
       <div className={Styles.questions}>
         <p>{question}</p>
-        <div className={Styles.plusIcon} onClick={() => toggle(index)}>
+       <div className={Styles.plusMinusIcon}>
+       <div className={Styles.plusIcon} onClick={() => toggle(index)}>
           {modalOpen === index ? (
             <Image
               src={"/images/x.svg"}
@@ -42,6 +43,7 @@ function QuestionsAns({
             ></Image>
           )}
         </div>
+       </div>
       </div>
       {modalOpen === index ? (
         <>

@@ -9,6 +9,13 @@
 .mobileSLide {
   display: none;
 }
+
+
+.IpadSLide{
+  display: none;
+}
+
+
 .carouselItem p {
   color: gray !important;
 }
@@ -179,7 +186,7 @@
     background: #75ba87;
     font-weight: 700;
     color: white;
-    margin-top: 70vh;
+    margin-top: 100vh;
     margin-left: 30%;
     margin-right: auto;
     z-index: 5555;
@@ -195,7 +202,7 @@
   }
   .mobileSLide {
     width: 100%;
-    height: 100vh;
+    height: 110vh;
     display: block;
     display: flex;
     flex-direction: column;
@@ -204,7 +211,7 @@
   .heroMob {
     position: relative;
     width: 100%;
-    height: 65vh;
+    height: 100vh;
     margin-left: 0px;
     z-index: 2;
   }
@@ -319,6 +326,29 @@
   }
 }
 
+
+
+
+@media screen and (max-width: 400px) {
+  .heroMob {
+    position: relative;
+    width: 100%;
+    height: 70vh;
+    margin-left: 0px;
+    z-index: 2;
+  }
+
+  .mobileSLide{
+    height: 85vh;
+  }
+
+  .mobConnectwallbutton{
+    margin-top: 75vh;
+    margin-left: 22%;
+  }
+
+
+}
 @media screen and (min-width: 767px) and (max-width: 1040px) {
   .mobileSLide {
     display: none;

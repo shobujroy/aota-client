@@ -38,26 +38,48 @@ function SliderCard() {
           <Carousel.Item className={Styles.two}>
             <div className={Styles.carouselItemThree}>
               <h1>
-                We’re Aliens on <br /> the ave
+              ACCESS THE CREATIVE <br /> HAVEN
               </h1>
-              <p>ACCESS THE CREATIVE HAVEN Coworking built by creatives for creatives</p>
+              <p>Coworking built by creatives for creatives</p>
             </div>
           </Carousel.Item>
 
           <Carousel.Item className={Styles.two}>
             <div className={Styles.carouselItemFour}>
               <h1>
-                We’re Aliens on <br /> the ave
+              YOGA &  MEDITATION
               </h1>
-              <p>YOGA & MEDITATION A healthy mind & body is a creative one.</p>
+              <p>A healthy mind & body is a creative one.</p>
             </div>
           </Carousel.Item>
         </Carousel>
       </div>
+
+      <div className={Styles.IpadSLide}>
+        <div className={Styles.heroMob}>
+          <Image
+            src={"/images/ipad header png.png"}
+            layout="fill"
+            objectFit="cover"
+          ></Image>
+          <div className={Styles.mobConnectwallbutton}>
+            {isConnected ? (
+              <Link href={"/public-sale"}>
+                <button>MINT</button>
+              </Link>
+            ) : (
+              <button onClick={() => connectwallet()}>CONNECT WALLET</button>
+            )}
+          </div>
+        </div>
+      </div>
+
+
+
       <div className={Styles.mobileSLide}>
         <div className={Styles.heroMob}>
           <Image
-            src={"/images/RoadMap1.png"}
+            src={"/images/MobileBanner png.png"}
             layout="fill"
             objectFit="cover"
           ></Image>

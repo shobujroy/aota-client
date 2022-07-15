@@ -8,7 +8,7 @@
 .MemberProfil {
   background: #1a2a1e;
   width: 500px;
-  height: 790px;
+  height: 785px;
   text-align: center;
   position: relative;
 }
@@ -250,6 +250,7 @@
   font-family: 'Jost';
 }
 /* Media Query for Mobile Devices */
+
 @media (max-width: 600px) {
   .MeetOurTeam {
     height: 1700px;
@@ -275,7 +276,7 @@
     color: #ffffff;
   }
   .meetOurTeamMobile p {
-    font-size: 16px;
+    font-size: 12px;
     font-weight: 400;
     font-family: 'Montserrat-Regular';
     line-height: 20px;
@@ -285,7 +286,7 @@
   }
   .cardSlider {
     width: 90vw;
-    height: 800px;
+    height: 718px;
 
     background: #1a2a1e;
     margin-left: 5vw;
@@ -295,10 +296,10 @@
   .cardSlider h2 {
     font-family: 'Montserrat-Medium';
     text-transform: uppercase;
-    font-size: 32px;
+    font-size: 27px;
     color: #ffffff;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 14px;
   }
   .meetOurTeamMobile h5 {
     font-size: 20px;
@@ -311,7 +312,7 @@
   }
   .cardSLiderOne {
     width: 80vw;
-    height: 340px;
+    height: 40vh;
 
     margin-left: 5vw;
     margin-top: 5vw;
@@ -319,7 +320,7 @@
   }
   .cardSLiderTwo {
     width: 75vw;
-    height: 320px;
+    height: 0px;
 
     margin-left: 2.5vw;
     margin-top: 2.5vw;
@@ -454,7 +455,54 @@
     padding: 20px;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1040px) {
+@media (max-width: 500px){
+  .cardSLiderOne{
+    height: 40vh;
+  }
+}
+
+@media (max-width: 400px){
+  .cardSLiderOne{
+    height: 36vh;
+  }
+}
+@media screen and (min-width: 983px) and (max-width: 1040px) {
+
+  .rightArrow {
+    position: relative;
+    width: 200px;
+    transform: rotate(180deg);
+    height: 48px;
+    cursor: pointer;
+    /* margin-top: -500px;
+    margin-left: 400px; */
+    margin-top: -630px;
+  
+    margin-left: 605px;
+    padding: 20px;
+  }
+  .leftArrow {
+    position: relative;
+    width: 48px;
+    height: 48px;
+    cursor: pointer;
+    
+    margin-top: -630px;
+    margin-right: -2px;
+    margin-left: -15px !important;
+
+  }
+  .MeetMemberRight p{
+    padding: 0px 22px
+;
+margin-right: -23px;
+  }
+  .teamMemberContainer h4{
+    font-size: 9px;
+  }
+  .teamMemberContainer h3{
+    font-size: 13px;
+  }
   .RoadMapSlider {
     width: 440px;
     margin-left: 135px;
@@ -464,28 +512,36 @@
   .MemberProfil {
     background: #1a2a1e;
     width: 500px;
-    height: 780px;
+    height: 797px;
     text-align: center;
     position: relative;
   }
   .teamMemberContainer {
     width: 30%;
     margin-left: 10px;
-    height: 230px;
+    height: 195px;
     cursor: pointer;
   }
   .meetMemberPara {
     border: 2px solid transparent;
     width: 380px;
   }
-  .rightArrow {
-  }
+  /* .rightArrow {
+  } */
   .leftArrow {
     margin-left: 50px;
   }
 }
 
+
+
 @media screen and (min-width: 767px) and (max-width: 983px) {
+  .teamMemberContainer h3{
+    font-size: 13px;
+  }
+  .teamImage{
+    height: 61%;
+  }
   .MemberProfil {
     background: #1a2a1e;
     width: 377px;
@@ -537,7 +593,7 @@
     width: 374px !important;
     /* margin: auto !important; */
     text-align: center !important;
-    margin-right: 78px !important;
+    margin-right: 78px !important;padding: 16px 20px;
   }
 
   .MeetMember h1 {
@@ -603,7 +659,7 @@
   .teamMemberContainer {
     width: 40%;
     margin-left: 10px;
-    height: 230px;
+    height: 216px;
     cursor: pointer;
   }
 }

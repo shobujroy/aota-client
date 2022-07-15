@@ -20,8 +20,7 @@ const MeetOurTeam = () => {
   const [name, setName] = useState("");
   const [image, setImage] = useState("");
   const [title, setTitle] = useState("");
-  const [about, setAbout] = useState("");
-
+  const [description, setDescription] = useState("");
   let changeInfo = () => {};
   console.log(image.length);
   function ControlledCarousel() {
@@ -51,10 +50,10 @@ const MeetOurTeam = () => {
                 </div>
 
                 <div className={styles.MemberCardText}>
-                  <h2>{name}</h2>
-                  <h6>{title}</h6>
+                  <h2>{name.length < 2 ? "Jacob Flores" : name}</h2>
+                  <h6>{title.length < 2 ? "Founder/Artist" : title}</h6>
                   <p>
-                    {about}
+                  {description.length < 2 ? "Jacob has an extensive background in digital arts, marketing, sales.  While working as a Solar Energy Consultant for SolarCity he discovered a passion for the environment and the impact businesses have on the planet.  He believes the future of tech is green and DLT's will lead the change.  His passion for growth has inspired many to make a difference." : description}
                   </p>
 
                   <div className={styles.MemberCardIcons}>
@@ -135,7 +134,7 @@ const MeetOurTeam = () => {
                                 setName(item.name);
                                 setImage(item.image);
                                 setTitle(item.title);
-                                setAbout(item.about)
+                                setDescription(item.about);
                                 setImgActive(i);
                               }}
                             >
@@ -172,6 +171,7 @@ const MeetOurTeam = () => {
                                 setName(item.name);
                                 setImage(item.image);
                                 setTitle(item.title);
+                                setDescription(item.about);
                                 setImgActive(i);
                               }}
                             >
@@ -207,6 +207,7 @@ const MeetOurTeam = () => {
                                 setName(item.name);
                                 setImage(item.image);
                                 setTitle(item.title);
+                                setDescription(item.about);
                                 setImgActive(i);
                               }}
                             >
@@ -297,27 +298,27 @@ const MeetOurTeam = () => {
                   {data.about}
                   </p>
                   <div className={styles.MemberCardIcons}>
-                    <Image
-                      src={"/images/Facebook.svg"}
+                  <Image
+                      src={"/images/discordmeet.svg"}
                       alt="facebook"
                       width={30}
                       height={30}
                     />
 
                     <Image
-                      src={"/images/instagram.svg"}
+                      src={"/images/instagram-seeklogo.com.svg"}
                       alt="instagram"
                       width={30}
                       height={30}
                     />
                     <Image
-                      src={"/images/twitter.svg"}
+                      src={"/images/iconmonstr-twitter-1.svg"}
                       alt="twitter"
                       width={30}
                       height={30}
                     />
                     <Image
-                      src={"/images/linkedin.svg"}
+                      src={"/images/iconmonstr-linkedin-3.svg"}
                       alt="linkedin"
                       width={30}
                       height={30}

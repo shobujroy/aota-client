@@ -50,6 +50,7 @@
   background-repeat: no-repeat;
 }
 
+
 .PhotoOne {
   margin-bottom: 10px;
   margin-left: 10px;
@@ -107,7 +108,7 @@
   transform: translate(-50%, -50%);
   font-size: 48px;
   font-weight: 500;
-  font-family: 'Montserrat-Regular';
+  font-family: 'futura-bold';
   line-height: 60px;
   cursor: pointer;
 }
@@ -126,8 +127,8 @@
   font-size: 32px;
   font-weight: 500;
   font-family: 'futura-bold';
-  line-height: 60px;
-  width: 253px;
+  line-height: 28px;
+
 }
 
 .AveThePhotoText {
@@ -144,8 +145,8 @@
   font-size: 32px;
   font-weight: 500;
   font-family: 'futura-bold';
-  line-height: 60px;
-  width: 310px;
+  line-height: 33px;
+ 
 }
 
 .TheAvePhoto .AvePhoto {
@@ -161,7 +162,7 @@
 
 .CoWorking {
   background: #17271b;
-  width: 1300px;
+  width: 100%;
   margin-left: 100px;
   margin-top: 50px;
 }
@@ -188,19 +189,21 @@
 .BackIcon {
   text-align: left;
   position: relative;
-  height: 47px;
-  width: 60px;
-  margin-top: 30px;
+  height: 32px;
+  width: 42px;
+  margin-top: 7px;
 }
 
 .CoWorkingPart .Pasicon {
   text-align: right;
   position: relative;
-  width: 64px;
+
   margin-left: auto;
-  height: 50px;
+  width: 43px;
+
+  height: 33px;
   margin-right: 50px;
-  margin-top: -25px;
+  margin-top: -10px;
 }
 
 .CoWorkingImage {
@@ -215,13 +218,28 @@
   width: 328px;
   height: 250px;
 }
-
+.TheAveImage:hover .aveImages{
+ opacity: 0.2 !important;
+}
+.TheAveImage:hover .AveTextOne h1{
+  opacity: 1 !important;
+ }
+.AveTextOne h1{
+  opacity: 0.6;
+}
 /* Media Query for Mobile Devices */
 @media screen and (max-width: 637px) {
   .AveTextOne {
     left: 50%;
     top: 50%;
   }
+
+
+  .CoWorkingImage {
+    width: 100%;
+  }  
+
+
 
   .AveTextOne h1 {
     font-size: 24px;
@@ -238,8 +256,7 @@
 
   .TheAvePhoto .AvePhoto .yoga {
     background-image: url('../../../public/images/image 21.png');
-    height: 118px;
-    width: 196px;
+    height: 118px;   
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -248,7 +265,7 @@
   .TheAvePhoto .AveThePhoto .yoga {
     background-image: url('../../../public/images/image 22.png');
     height: 118px;
-    width: 196px;
+  
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -310,7 +327,7 @@
   }
 
   .AveThePhotoText h1 {
-    font-size: 10px !important;
+    font-size: 21px  !important;
   }
 
   .AvePhotoText h1 {
@@ -318,12 +335,12 @@
   }
 
   .AvePhotoText {
-    left: 75%;
+  
     top: 50%;
   }
 
   .AveThePhotoText {
-    left: 100%;
+   
     top: 50%;
   }
 
@@ -333,7 +350,7 @@
   }
 
   .AvePhotoText h1 {
-    font-size: 12px !important;
+    font-size: 21px !important;
   }
 
   .row {
@@ -436,12 +453,15 @@
   .TheAvePhoto .AvePhoto .yoga {
     background-image: url('../../../public/images/image 21.png');
     height: 155px;
-    width: 450px;
+    width: 316px;
+    background-size: 100% 100%;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
   }
-
+.AvePhoto:hover .yoga{
+  background: #0b1b0f;
+}
   .TheAvePhoto .AveThePhoto .yoga {
     background-image: url('../../../public/images/image 22.png');
     height: 165px;
@@ -496,9 +516,9 @@
   }
 
   .CoWorkingPart p {
-    font-size: 18px;
+    font-size: 16.5px;
     font-weight: 500;
-    line-height: 40px;
+    line-height: 30px;
     font-family: 'Montserrat-Regular';
     color: #ffffff;
     width: 410px;
@@ -514,19 +534,19 @@
   }
 
   .AvePhotoText {
-    left: 65%;
+    left: 54%;
   }
 
   .AveThePhotoText {
-    left: 70%;
+    left:53%;
   }
 
   .AveThePhotoText h1 {
-    font-size: 18px;
+    font-size: 26px;
   }
 
   .AvePhotoText h1 {
-    font-size: 18px;
+    font-size: 24px;
   }
 
   .CoWorkingImage img {
@@ -616,7 +636,7 @@
 
   .TheAveImage .AveTextOne h1 {
     font-size: 34px !important;
-    width: 270px;
+
   }
 
   .row {
