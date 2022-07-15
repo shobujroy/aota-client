@@ -164,7 +164,7 @@
 
 .CoWorking {
   background: #17271b;
-  width: 1300px;
+  width: 1320px;
   margin-left: 100px;
   margin-top: 50px;
 }
@@ -326,6 +326,9 @@
   .TheAveImage {
     width: 100% !important;
     height: 350px !important;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
   }
 
   .TheAveImage img {

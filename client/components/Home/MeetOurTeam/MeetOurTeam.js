@@ -88,12 +88,12 @@ const MeetOurTeam = () => {
 
             <div className={`col-md-6 mt-0 ${styles.MeetMemberRight}`}>
               <h1>Team</h1>
-              <p className={styles.meetMemberPara}>
+              {/* <p className={styles.meetMemberPara}>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nec
                 porttitor urna, arcu congue neque enim quis auctor ut. Non, duis
                 malesuada blandit suspendisse posuere aliquam elementum. Hac
                 curabitur mi sit habitant.
-              </p>
+              </p> */}
               <div
                 className={styles.RoadMapSlider}
                 prevLabel={directionButtons()}
@@ -159,7 +159,7 @@ const MeetOurTeam = () => {
                       </div>
                     </Carousel.Item>
 
-                    <Carousel.Item>
+                    {/* <Carousel.Item>
                       <div className={styles.carousleItemElement}>
                         {Team.slice(0, 8).map((item, i) => {
                           return (
@@ -193,9 +193,9 @@ const MeetOurTeam = () => {
                           );
                         })}
                       </div>
-                    </Carousel.Item>
+                    </Carousel.Item> */}
 
-                    <Carousel.Item>
+                    {/* <Carousel.Item>
                       <div className={styles.carousleItemElement}>
                         {Team.slice(0, 8).map((item, i) => {
                           return (
@@ -229,7 +229,7 @@ const MeetOurTeam = () => {
                           );
                         })}
                       </div>
-                    </Carousel.Item>
+                    </Carousel.Item> */}
                     {/* <Carousel.Item>
                     <img
                       className="d-block w-100"
