@@ -57,11 +57,7 @@ function SliderCard() {
 
       <div className={Styles.IpadSLide}>
         <div className={Styles.heroMob}>
-          <Image
-            src={"/images/ipad header png.png"}
-            layout="fill"
-            objectFit="cover"
-          ></Image>
+          
           <div className={Styles.mobConnectwallbutton}>
             {isConnected ? (
               <Link href={"/public-sale"}>
@@ -78,11 +74,7 @@ function SliderCard() {
 
       <div className={Styles.mobileSLide}>
         <div className={Styles.heroMob}>
-          <Image
-            src={"/images/MobileBanner png.png"}
-            layout="fill"
-            objectFit="cover"
-          ></Image>
+          
           <div className={Styles.mobConnectwallbutton}>
             {isConnected ? (
               <Link href={"/public-sale"}>
