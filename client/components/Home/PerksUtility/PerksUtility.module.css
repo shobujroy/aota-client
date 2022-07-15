@@ -341,4 +341,13 @@
     /* margin-left: 67px; */
     text-align: start;
   }
+
+ 
+}
+
+
+@media screen and (max-width: 770px) {
+  .mobileRespon span{
+    display: block;
+  }
 }
