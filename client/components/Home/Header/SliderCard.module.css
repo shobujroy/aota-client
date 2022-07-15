@@ -274,20 +274,18 @@
   }
   .carouselItem {
     width: 100vw;
-    height: 70vh;
-
+    height: 124vh;
     position: relative;
     background: url('../../../public/images/Guitarist.png');
     background-size: 100vw 100%;
     background-position: right top;
     background-repeat: no-repeat;
     font-family: 'Montserrat-Regular';
-    background-position-x: 187px;
+    background-position-x: 300px;
   }
   .carousleItemTwo {
     width: 100vw;
-    height: 70vh;
-
+    height: 150vh;
     display: flex;
     justify-content: center;
     align-items: end;
@@ -298,8 +296,8 @@
     font-family: 'Montserrat-Regular';
   }
   .carouselItemThree {
-    width: 100vw;
-    height: 70vh;
+    width: 99vw;
+    height: 85vh;
     position: relative;
     background: url('../../../public/images/creativehaven.png');
     background-size: 100vw 100%;
@@ -309,7 +307,7 @@
   }
   .carouselItemFour {
     width: 100vw;
-    height: 70vh;
+    height: 85vh;
     position: relative;
     background: url('../../../public/images/Yoga_River.png');
     background-size: 60vw 100%;

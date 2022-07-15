@@ -43,7 +43,7 @@ actively exploring ways to expand the AOTAverse.
                     className={styles.CardImg}
                     id={styles.cardImgTwo}
                   />
-                  <h3 id={styles.creativeHeaven}>CREATIVE <br /> HAVEN</h3>
+                  <h3 id={styles.creativeHeaven}>CREATIVE <span>HAVEN</span> </h3>
                 </div>
                 <p>
                 AOTA will grant access to The Creative Haven a creative coworking space built for the creators of the cosmos.

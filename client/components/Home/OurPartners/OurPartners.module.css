@@ -111,6 +111,9 @@
     grid-template-columns: repeat(4, 1fr);
     gap: 30px;
   }
+  .OurPartnersPart {
+    padding: 0px;
+  }
 }
 
 /* Media Query for Mobile Devices */

@@ -311,8 +311,12 @@
 @media (min-width: 1081px) and (max-width: 1440px) {
   .menuAll {
     display: flex !important;
-    width: 800px !important;
+    width: 870px !important;
     justify-content: end !important;
+  }
+
+  .SocailMedIcon li {
+    margin-left: 0px !important;
   }
 }
 
@@ -322,10 +326,10 @@
 
 
 /* Media Query for low resolution  Tablets, Ipads */
-@media (min-width: 1440px) and (max-width: 2000px) {
+@media (min-width: 1442px) and (max-width: 2000px) {
   .menuAll {
     display: flex !important;
-    width: 800px !important;
+    width: 950px !important;
     justify-content: end !important;
   }
 }
