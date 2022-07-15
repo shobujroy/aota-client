@@ -161,7 +161,7 @@ const MeetOurTeam = () => {
                       </div>
                     </Carousel.Item>
 
-                    <Carousel.Item>
+                    {/* <Carousel.Item>
                       <div className={styles.carousleItemElement}>
                         {Team.slice(0, 8).map((item, i) => {
                           return (
@@ -195,9 +195,9 @@ const MeetOurTeam = () => {
                           );
                         })}
                       </div>
-                    </Carousel.Item>
+                    </Carousel.Item> */}
 
-                    <Carousel.Item>
+                    {/* <Carousel.Item>
                       <div className={styles.carousleItemElement}>
                         {Team.slice(0, 8).map((item, i) => {
                           return (
@@ -231,7 +231,7 @@ const MeetOurTeam = () => {
                           );
                         })}
                       </div>
-                    </Carousel.Item>
+                    </Carousel.Item> */}
                     {/* <Carousel.Item>
                     <img
                       className="d-block w-100"

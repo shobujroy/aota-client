@@ -220,8 +220,10 @@
   width: 100%;
   height: 550px;
 
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 15px;
+  /* flex-wrap: wrap; */
 }
 .teamImage {
   position: relative;
@@ -229,9 +231,9 @@
   height: 70%;
 }
 .teamMemberContainer {
-  width: 23%;
+  width: 100%;
   margin-left: 10px;
-  height: 38%;
+  height: 100%;
   cursor: pointer;
 }
 .teamMemberContainer h3 {
@@ -286,7 +288,7 @@
   }
   .cardSlider {
     width: 90vw;
-    height: 718px;
+    height: 750px;
 
     background: #1a2a1e;
     margin-left: 5vw;
@@ -466,6 +468,29 @@
     height: 36vh;
   }
 }
+
+@media screen and (min-width: 768px) and (max-width: 1039px){
+  .carousleItemElement {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 5px;
+    height: 100%;
+  }
+  .teamMemberContainer {
+    width: 100% !important;
+    margin-left: 10px;
+    height: 265px;
+    cursor: pointer;
+  }
+  .meetOurTeamSliderButtonArea{
+    display: none;
+  }
+  .MeetOurTeam{
+    padding: 120px 0px;
+  }
+}
+
+
 @media screen and (min-width: 983px) and (max-width: 1040px) {
 
   .rightArrow {
@@ -506,7 +531,7 @@ margin-right: -23px;
   .RoadMapSlider {
     width: 440px;
     margin-left: 135px;
-    height: 460px !important;
+    /* height: 460px !important; */
     overflow: hidden;
   }
   .MemberProfil {
@@ -516,11 +541,22 @@ margin-right: -23px;
     text-align: center;
     position: relative;
   }
+  .carousleItemElement {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 5px;
+    /* flex-wrap: wrap; */
+  }
   .teamMemberContainer {
-    width: 30%;
+    width: 100%;
     margin-left: 10px;
-    height: 195px;
+    height: 265px;
     cursor: pointer;
+  }
+  .teamImage {
+    position: relative;
+    width: 100%;
+    height: 40%;
   }
   .meetMemberPara {
     border: 2px solid transparent;
@@ -531,6 +567,7 @@ margin-right: -23px;
   .leftArrow {
     margin-left: 50px;
   }
+  
 }
 
 
@@ -616,14 +653,14 @@ margin-right: -23px;
     margin-top: 20px;
     margin-bottom: 50px;
   }
-  .RoadMapSlider {
+  /* .RoadMapSlider {
     width: 340px;
     margin-left: 135px;
     height: 500px !important;
     overflow: hidden;
 
     margin-top: -60px;
-  }
+  } */
 
   .leftArrow {
     position: relative;
@@ -654,12 +691,12 @@ margin-right: -23px;
     margin-left: 24px !important;
   }
   .RoadMapSlider {
-    padding-left: 20px;
+    padding-left: 34px;
   }
   .teamMemberContainer {
     width: 40%;
     margin-left: 10px;
-    height: 216px;
+    height: 200px;
     cursor: pointer;
   }
 }
