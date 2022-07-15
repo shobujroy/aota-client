@@ -19,7 +19,7 @@
 .SuccessMain h2{
     font-size: 48px;
     font-weight: 500;
-    font-family: "Montserrat";
+    font-family: "Montserrat-Regular";
     line-height: 60px;
     color: #FFFFFF;
     margin-top: 32px;
@@ -32,7 +32,7 @@
 .SuccessMain p{
     font-size: 24px;
     font-weight: 500;
-    font-family: "Montserrat";
+    font-family: "Montserrat-Regular";
     line-height: 30px;
     color: #FFFFFF;
     margin-bottom: 32px;

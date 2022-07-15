@@ -29,6 +29,7 @@
     "slick-carousel": "^1.8.1",
     "styled-components": "^5.3.5",
     "sweetalert": "^2.1.2",
+    "swiper": "^8.2.4",
     "web3": "^1.7.3",
     "web3modal": "^1.9.7"
   },

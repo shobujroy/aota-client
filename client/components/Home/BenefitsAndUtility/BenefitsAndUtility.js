@@ -10,32 +10,32 @@ function BenefitsAndUtility() {
       imgLeft: true,
       image: "/images/Service/image 12.png",
       title: "Ethereum Airdrops",
-      p: "AOTA holders will receive free airdrops for as long as they hold. Our team actively exploring ways to expand the AOTAverse.",
+      p: "AOTA holders will receive free airdrops (just cover the gas) for as long as they hold. Our team is actively exploring ways to expand the AOTAverse.",
     },
     {
       imgLeft: false,
       image: "/images/Service/image 12 (1).png",
-      title: "THE CREATIVE HAVEN",
-      p: "AOTA is your key to our exclusive co-working space, break free from the mundane, and create your best work.  We’re really excited about this.",
+      title: "CREATIVE HAVEN",
+      p: "AOTA will grant access to The Creative Haven a creative coworking space built for the creators of the cosmos",
     },
     {
       imgLeft: true,
       image: "/images/Service/image 12 (2).png",
       title: "EXCLUSIVE MERCH",
-      p: "AOTA holders will have access to exclusive merchandise designed by us.  We’re talking apparel, art, accessories,  & more.",
+      p: "Members will have access to merch exclusive to the community.  Various products to show off, designed to be the center of attention.  Unique just like you.",
     },
     {
       imgLeft: false,
       image: "/images/Service/image 12 (3).png",
       title: "COMMERCIAL USAGE",
-      p: "Ownership and commercial usage rights are given directly to the consumer for as long as they hold onto it. ",
+      p: "Commercial rights are directly granted to holders.  Your NFT is yours to use for for as long as you own it.  ",
     },
   ];
   return (
     <div id="about">
       <div className={`container pt-0 pb-0`}>
         <div className={`row ${styles.AboutService}`}>
-          <div className="col-md-7 mt-5">
+          <div className={`col-md-7 mt-5 ${styles.AboutServiceAll}`}>
             {benefitsAndUtilities?.map((benefit, index) => {
               return (
                 <BenefitsAndUtilityCard
@@ -48,13 +48,21 @@ function BenefitsAndUtility() {
               );
             })}
           </div>
-          <div
-            className={`col-md-5  d-flex flex-column justify-content-center ${styles.textCard}`}
-          >
+
+          <div className={`col-md-5 d-flex flex-column ${styles.textCard}`}>
             <div className={styles.textcenter}>
               <Image src={"/images/Vector 1.png"} width={362} height={365} />
             </div>
 
+            <div className={styles.textMainText}>
+              <h1> Perks &amp; Utility</h1>
+              <p>
+              When you buy an AOTA. You’re not simply buying a rare pice of Art. You’re gaining membership access to the AOTAverse with the following benefits. Additonally you are planting trees, providing clean water &amp; energy to regions all over the world.
+              </p>
+            </div>
+          </div>
+
+          <div className={`col-sm-12  d-flex flex-column ${styles.Smallcard}`}>
             <div className={styles.textMainText}>
               <h1>Aotaverse Perks &amp; Utility</h1>
               <p>
@@ -63,6 +71,14 @@ function BenefitsAndUtility() {
                 following benefits. Additonally you helping you us plant threes,
                 providing water, &amp; Enegy to regions all over the world.
               </p>
+            </div>
+
+            <div className={styles.textSmall}>
+              <Image
+                src={"/images/Vector 1 (1).png"}
+                width={139}
+                height={231}
+              />
             </div>
           </div>
         </div>

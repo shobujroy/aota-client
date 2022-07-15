@@ -1,53 +1,59 @@
-@font-face {
-  font-family: Monessirate;
-  src: url('../../../public/fonts/Montserrat/Montserrat-Regular.ttf');
-}
 .galleryMain {
   width: 100%;
   height: 1124px;
-  margin: 40px auto;
+  margin: 10px auto;
   margin-bottom: 0;
   position: relative;
   display: flex;
   justify-content: space-between;
 }
+.filterMOBVErsion {
+  display: none;
+}
 .filerArea {
-  height: 980px;
+  height: 580px;
   background: linear-gradient(180deg, #081a0c 0%, #06170a 100%);
   display: flex;
   flex-direction: column;
   align-items: center;
   position: absolute;
   left: 20px;
+  display: block;
+}
+.filterHello {
+  margin-left: 20px;
 }
 .filerArea h1 {
-  font-weight: 500;
-  font-size: 48px;
+  font-weight: 800;
+  font-size: 32px;
   color: #ffffff;
   margin-top: 15px;
+  font-family: 'futura-bold';
+  text-transform: uppercase;
 }
 .plusIcon {
-  height: 30px;
-  width: 30px;
+  height: 20px;
+  width: 20px;
   position: relative;
   cursor: pointer;
 }
 .filterOption {
   width: 90%;
-  padding: 6px 0px;
+  padding: px 0px;
   border-bottom: 1px solid #374b3c;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 20px;
+  margin-top: 0px;
 }
 .filterOption p {
-  font-weight: 500;
-  font-size: 24px;
-  color: white;
+  font-weight: 800;
+  font-size: 16px;
+  color: #a3a3a3;
+  margin-top: 5px;
 }
 .galleryItem {
-  width: 65vw;
+  width: 70vw;
   position: absolute;
   right: 20px;
   height: 780px;
@@ -55,27 +61,29 @@
   flex-wrap: wrap;
   justify-content: space-between;
   overflow-y: scroll;
-  top: 320px;
+  top: 220px;
 }
 .options {
-  width: 100%;
-  height: 500px;
+  width: 96%;
+  height: 450px;
+  margin-bottom: 0;
   background: #07190b;
 }
 .options p {
   margin-left: 30px;
-  font-weight: 500;
+  font-weight: 800;
   font-size: 16px;
   color: #a3a3a3;
   cursor: pointer;
   margin-top: 20px;
+  font-family: 'Montserrat-Regular';
 }
 .options p:hover {
   color: white;
 }
 .optionArea {
   width: 100%;
-  margin-left: 40px;
+  margin-left: 16px;
   overflow-y: scroll;
 }
 .galleryImages {
@@ -93,15 +101,24 @@
   background: #75ba87;
   margin-top: 20px;
   cursor: pointer;
-  font-weight: 500;
+  font-weight: 800;
   font-size: 16px;
   color: #1a1a1a;
+  border: none;
+  transition: all linear 0.2;
+  text-transform: uppercase;
+  margin-left: 15px;
 }
 
 .filterOption .ImageAndIcon {
   display: flex;
   height: 30px;
   margin: 5px 0px;
+}
+.ImageAndIcon p {
+  font-family: 'Montserrat-Regular';
+  font-weight: 800;
+  color: gray;
 }
 
 .SearcOption {
@@ -132,6 +149,7 @@
   line-height: 24px;
   margin-top: 5px;
   margin-right: 90px !important;
+  letter-spacing: 0.2em;
 }
 
 .GoldenOption {
@@ -159,59 +177,120 @@
 }
 
 .gallaryBanner {
-  width: 65vw;
+  width: 69vw;
   position: absolute;
-  right: 20px;
-  height: 293px;
+  right: 23px;
+  height: 200px;
   top: 0;
-  border-radius: 30px;
   overflow: hidden;
   display: flex;
-  background: #1d2e21;
+  background: url('../../../public/images/Gallery_Banner.jpg');
+  background-size: cover;
+  background-position: left top;
+  background-repeat: no-repeat;
 }
 .bannerImage {
-  width: 302px;
-  height: 344px;
+  width: 240px;
+  height: 200px;
   position: relative;
 }
 .bannerText {
-  width: 600px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .bannerText h1 {
-  font-family: Monessirate;
+  font-family: 'futura-bold';
+  text-transform: uppercase;
   font-style: normal;
-  font-weight: 600;
-  font-size: 60px;
-  color: #dbdadf;
+  font-weight: 800;
+  font-size: 45px;
+  color: #ffffff;
   margin-left: 20px;
+  margin-top: 10px;
 }
 .bannerText p {
-  font-family: 'Jost';
+  font-family: 'Montserrat-Regular';
   font-style: normal;
-  font-weight: 500;
+  font-weight: 800;
   font-size: 16px;
   color: #dbdadf;
-  margin: 25px;
+  margin-left: 25px;
+  margin-top: 0;
 }
+
 .bannerText button {
   width: 113px;
-  height: 56px;
+  height: 40px;
   background: #75ba87;
   border: none;
   margin-left: 25px;
-  font-family: 'Jost';
+  font-family: 'Montserrat-Regular';
   font-style: normal;
-  font-weight: 500;
+  font-weight: 800;
   font-size: 16px;
   color: #1a1a1a;
+  transition: all linear 0.2;
+  text-transform: uppercase;
 }
 
-@media screen and (max-width: 1040px) {
+.bannerText button:hover {
+  background-color: #e2dd96 !important;
+}
+.gallaryDemoIMage {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  margin-left: 10px;
+}
+.filterMob {
+  display: none;
+}
+
+@media screen and (min-width: 1871px) and (max-width: 2560px) {
+  .galleryImages {
+    width: 23%;
+    height: 51%;
+    position: relative;
+    margin-left: 10px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1430px) {
+  .galleryImages {
+    width: 23%;
+    height: 22%;
+    position: relative;
+    margin-left: 10px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 1440px) and (max-width: 1871px) {
+  .galleryImages {
+    width: 23%;
+    height: 29%;
+    position: relative;
+    margin-left: 10px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    margin-right: 0;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 983px) {
   .resetButton {
-    width: 252px;
+    width: 96%;
+  }
+  .filerArea {
+    left: 0;
   }
   .galleryMain {
-    width: 834px;
+    width: 100%;
     height: 1104px;
     margin: 40px auto;
     margin-bottom: 0;
@@ -222,26 +301,64 @@
   .galleryItem {
     width: 542px;
     position: absolute;
-    top: 305px;
+    top: 228px;
     height: 654px;
     display: flex;
     flex-wrap: wrap;
   }
   .galleryImages {
-    width: 129px;
-    height: 119px;
+    width: 162px;
+    height: 160px;
     position: relative;
     margin-left: 10px;
-    margin-top: 10px;
+    margin-top: 0px;
   }
   .bannerText h1 {
     font-size: 43px;
+    font-family: 'futura-bold';
   }
 }
 @media screen and (max-width: 637px) {
+  .filterHello {
+    display: none;
+  }
+  .filterIcons {
+    display: flex;
+  }
+  .filterIMAG {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    margin-right: 20px;
+    margin-top: -15px;
+    cursor: pointer;
+  }
+  .filterMob {
+    width: 90%;
+    height: 5vh;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .filterQuan p {
+    font-family: 'Montserrat-Regular';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 22px;
+    color: #dbdadf;
+
+    margin-top: 0;
+  }
+  .gallaryDemoIMage {
+    height: 20%;
+    width: 90%;
+    position: relative;
+    margin-left: 22px;
+  }
   .galleryMain {
     width: 100%;
-    height: 3400px !important;
+    height: 1868px !important;
     margin: 40px auto;
     margin-bottom: 0;
     align-items: center;
@@ -253,44 +370,52 @@
     left: 0;
   }
   .filerArea {
-    width: 100vw;
-    height: 980px;
+    width: 90vw;
+    height: 580px;
     background: linear-gradient(180deg, #081a0c 0%, #06170a 100%);
     display: flex;
     flex-direction: column !important;
     align-items: center;
-    position: absolute;
 
+    display: none;
     top: 10px;
-    left: 0;
+    left: 5%;
+    position: none;
+    z-index: 55555;
   }
   .galleryItem {
     width: 100%;
-    position: absolute;
+    position: none;
     right: 20px;
     height: 1760px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    overflow: hidden;
-    top: 1400px;
+    overflow: scroll;
+    top: 88px;
     left: 5px;
+    align-content: flex-start;
+    z-index: 0;
   }
   .galleryImages {
-    width: 94%;
-    height: 400px;
+    width: 47%;
+    height: 200px;
     position: relative;
   }
   .gallaryBanner {
     width: 90vw;
     position: absolute;
     right: 20px;
-    height: 250px;
-    top: 1000px;
-    border-radius: 30px;
+    height: 204px;
+    top: 885px;
+
     overflow: hidden;
     display: flex;
-    background: #1d2e21;
+    background: url('../../../public/images/Gallery_Banner.jpg');
+    background-size: cover;
+    background-position: left top;
+    background-repeat: no-repeat;
+    display: none;
   }
   .bannerImage {
     width: 40vw;
@@ -301,20 +426,44 @@
     width: 60vw;
   }
   .bannerText h1 {
-    font-family: Monessirate;
+    font-family: 'futura-bold';
     font-style: normal;
-    font-weight: 600;
+    font-weight: 800;
     font-size: 24px;
     color: #dbdadf;
     margin-left: 20px;
     margin-top: 10px;
   }
   .bannerText p {
-    font-family: 'Jost';
+    font-family: 'Montserrat-Regular';
     font-style: normal;
-    font-weight: 500;
+    font-weight: 800;
     font-size: 12px;
     color: #dbdadf;
     margin: 20px;
+  }
+  .filterOption {
+    width: 82%;
+    margin-left: 6%;
+  }
+  .resetButton {
+    margin-left: 21px;
+  }
+  .filerArea h1 {
+    margin-left: 40px;
+  }
+  .options {
+    width: 71%;
+  }
+  .xIcon {
+    margin-top: 50px;
+  }
+  .filterMOBVErsion {
+    width: 90%;
+    display: flex;
+    height: 100px;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 55555;
   }
 }

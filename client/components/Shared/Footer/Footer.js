@@ -1,10 +1,12 @@
 //Footer Component
 import Image from "next/image";
 import Link from "next/link";
+import { useState } from "react";
 import styles from "./Footer.module.css";
 import FooterCol from "./FooterCol";
 
 function Footer() {
+  const [active, setActive] = useState(null);
   return (
     <div className={styles.FooterMain}>
       <div className={styles.FooterShapOne}>
@@ -35,51 +37,99 @@ function Footer() {
                 <div className="d-flex flex-row ">
                   <span style={{ color: "#FAFAFA" }} className="fs-4 me-3">
                     <a
+                      onMouseOver={() => setActive(0)}
+                      onMouseOut={() => setActive(null)}
                       className={"nav-link " + styles.socialIcon}
                       aria-current="page"
                       href="http://instagram.com/aliensontheave"
                       target="_blank"
                     >
-                      <Image
-                        src="/images/instagram.svg"
-                        width={30}
-                        height={30}
-                      />
+                      {active === 0 ? (
+                        <Image
+                          src="/images/navbar/instagram.svg"
+                          width={30}
+                          height={30}
+                        />
+                      ) : (
+                        <Image
+                          src="/images/icons/instagram.svg"
+                          width={30}
+                          height={30}
+                        />
+                      )}
                     </a>
                   </span>
                   <span style={{ color: "#FAFAFA" }} className="fs-4 me-3">
                     <a
+                      onMouseOver={() => setActive(1)}
+                      onMouseOut={() => setActive(null)}
                       className={"nav-link " + styles.socialIcon}
                       aria-current="page"
                       href="https://discord.gg/xpsqJdKkZd"
                       target="_blank"
                     >
-                      <Image src="/images/Discord.svg" width={30} height={30} />
+                      {active === 1 ? (
+                        <Image
+                          src="/images/navbar/Discord.svg"
+                          width={30}
+                          height={30}
+                        />
+                      ) : (
+                        <Image
+                          src="/images/icons/Discord.svg"
+                          width={30}
+                          height={30}
+                        />
+                      )}
                     </a>
                   </span>
                   <span style={{ color: "#FAFAFA" }} className="fs-4 me-3">
                     <a
+                      onMouseOver={() => setActive(2)}
+                      onMouseOut={() => setActive(null)}
                       className={"nav-link " + styles.socialIcon}
                       aria-current="page"
                       href="http://twitter.com/AOTAnft/"
                       target="_blank"
                     >
-                      <Image src="/images/twitter.svg" width={30} height={30} />
+                      {active === 2 ? (
+                        <Image
+                          src="/images/navbar/twitter.svg"
+                          width={30}
+                          height={30}
+                        />
+                      ) : (
+                        <Image
+                          src="/images/icons/twitter.svg"
+                          width={30}
+                          height={30}
+                        />
+                      )}
                     </a>
                   </span>
 
                   <span style={{ color: "#FAFAFA" }} className="fs-4 me-3">
                     <a
+                      onMouseOver={() => setActive(3)}
+                      onMouseOut={() => setActive(null)}
                       className={"nav-link " + styles.socialIcon}
                       aria-current="page"
                       href="http://opensea.io/Aliensontheave/"
                       target="_blank"
                     >
-                      <Image
-                        src="/images/opensea 1.svg"
-                        width={30}
-                        height={30}
-                      />
+                      {active === 3 ? (
+                        <Image
+                          src="/images/navbar/opensea 1.svg"
+                          width={30}
+                          height={30}
+                        />
+                      ) : (
+                        <Image
+                          src="/images/icons/opensea 2.svg"
+                          width={30}
+                          height={30}
+                        />
+                      )}
                     </a>
                   </span>
                 </div>

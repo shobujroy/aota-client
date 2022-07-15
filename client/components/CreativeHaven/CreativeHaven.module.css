@@ -19,26 +19,32 @@
 
 .CreativeHavenText h2 {
   position: absolute;
-  top: 317px;
+  top: 390px;
   left: 0px;
   font-size: 56px;
   font-weight: 600;
-  font-family: "Montserrat";
+  font-family: 'futura-bold';
+  text-transform: uppercase;
+
   line-height: 70px;
   color: #ffffff;
 }
 
-.CreativeHavenImage .HavenImage {
-  position: absolute;
-  top: 0px;
-  right: 0px;
+.CreativeHavenText {
+  width: 100%;
+  height: 550px;
+  background-image: url('../../public/images/CreativeHaven/Skater 2 (1).png');
+  background-repeat: no-repeat;
+  background-size: 40% 100%;
+  background-position: right top;
 }
 
 .CoWorkingTeam h1 {
   font-size: 48px;
   font-weight: 500;
   line-height: 60px;
-  font-family: "Montserrat";
+  font-family: 'futura-bold';
+  text-transform: uppercase;
   color: #ffffff;
   text-align: center;
 }
@@ -63,8 +69,10 @@
 }
 
 .CoWorkingText h2 {
-  font-size: 31px;
-  font-family: "Montserrat";
+  font-size: 25px;
+  font-family: 'Montserrat-Light';
+  text-transform: uppercase;
+  letter-spacing: 0.2px;
   font-weight: 500;
   line-height: 40px;
   color: #75ba87;
@@ -73,10 +81,10 @@
 
 .CoWorkingText p {
   font-size: 16px;
-  font-family: "Jost";
+  font-family: 'Montserrat-Regular';
   font-weight: 400;
   line-height: 20px;
-  color: #e3f1e7;
+  color: #a3a3a3;
   margin-bottom: 60px;
 }
 
@@ -89,12 +97,14 @@
 
 .Lifetime {
   text-align: center;
-  width: 350px;
+  width: 100%;
 }
 
 .Lifetime h3 {
   font-size: 32px;
-  font-family: "Montserrat";
+  font-family: 'Montserrat-Light';
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
   font-weight: 500;
   line-height: 40px;
   color: #ffffff;
@@ -103,7 +113,7 @@
 
 .Lifetime h4 {
   font-size: 32px;
-  font-family: "Montserrat";
+  font-family: 'Montserrat-Regular';
   font-weight: 500;
   line-height: 40px;
   color: #75ba87;
@@ -112,10 +122,12 @@
 
 .Lifetime p {
   font-size: 16px;
-  font-family: "Jost";
+  font-family: 'Montserrat-Regular';
   font-weight: 400;
   line-height: 20px;
   color: #e3f1e7;
+  width: 306px;
+  margin: auto;
   margin-bottom: 20px;
 }
 
@@ -125,8 +137,8 @@
 
 .YogaBack li {
   display: flex;
-  margin-left: auto;
-  margin-right: -150px;
+  justify-content: end;
+  align-items: center;
 }
 
 li .Icon {
@@ -137,6 +149,18 @@ li .Icon {
   text-align: center;
   margin-left: 10px;
   margin-right: 10px;
+  background: no-repeat;
+}
+
+.YogaBack .Lifetime h5 {
+  font-size: 18px;
+  font-family: 'Jost';
+  font-weight: 400;
+  line-height: 20px;
+  color: #ffffff;
+  margin-top: 12px;
+  margin-right: 4px;
+  margin-left: 4px;
 }
 
 /* Media Query for Mobile Devices */
@@ -145,121 +169,179 @@ li .Icon {
     z-index: 3;
   }
 
-  .CreativeHavenImage .HavenImage {
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    z-index: 1;
+  .CreativeHavenText {
+    width: 100%;
+    height: 350px;
+    background-image: url('../../public/images/CreativeHaven/Skater 2 (1).png');
+    background-repeat: no-repeat;
+    background-size: 50% 100%;
+    background-position: center !important;
+  }
+
+  .CoWorkingAndMembership {
+    padding: 0px 0pc 20px !important;
   }
 
   .CoWorkingTeam .CoWorking {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     text-align: center;
-    margin-top: 100px;
+    margin-top: 30px;
+    gap: 0px;
   }
 
-
-  .CreativeHavenText h2{
+  .CreativeHavenText h2 {
     z-index: 3;
     font-size: 32px;
-    top: 230px !important;
+    top: 255px !important;
+    left: 10px;
   }
-
 
   .Lifetime {
     text-align: center;
-    width: 300px;
   }
-
 
   .Membership {
     background: #484848;
-    padding: 0px 0px ;
+    padding: 30px 0px;
     display: block !important;
     justify-content: space-between;
   }
 
-
   .CreativeHaven {
     height: 370px !important;
   }
-  
-
 
   .Lifetime h3 {
-    font-size:  18px;
-    font-family: "Montserrat";
+    font-size: 24px;
+    font-family: 'Montserrat-Regular';
     font-weight: 500;
     line-height: 40px;
     color: #ffffff;
     margin-bottom: 10px;
+    margin-top: 20px;
+    letter-spacing: 0.2em;
   }
-  
+
   .Lifetime h4 {
-    font-size: 18px;
-    font-family: "Montserrat";
+    font-size: 24px;
+    font-family: 'Montserrat-Regular';
     font-weight: 500;
     line-height: 40px;
     color: #75ba87;
     margin-bottom: 10px;
   }
 
-  
   .Lifetime p {
     font-size: 16px;
-    font-family: "Jost";
+    font-family: 'Montserrat-Regular';
     font-weight: 400;
     line-height: 20px;
     color: #e3f1e7;
     margin-bottom: 20px;
     width: 240px;
     margin: auto;
-    margin-bottom: 60px;
+    margin-bottom: 10px;
   }
-
 
   .CoWorkingTeam h1 {
     font-size: 32px;
     font-weight: 500;
-    line-height: 60px;
-    font-family: "Montserrat";
+    line-height: 40px;
+    font-family: 'futura-bold';
+    text-transform: uppercase;
     color: #ffffff;
     text-align: center;
   }
-  
-  
+
+  .YogaBack li {
+    display: flex;
+    justify-content: end;
+  }
+
+  .CoWorkingText h2 {
+    font-size: 24px !important;
+  }
+
+  .CoWorkingText p {
+    font-size: 16px;
+    font-family: 'Jost';
+    font-weight: 400;
+    line-height: 20px;
+    color: #a3a3a3;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    width: 306px;
+  }
 }
 
-
-
-
 @media (min-width: 640px) and (max-width: 1040px) {
+  .CreativeHavenText h2 {
+    z-index: 3;
+    font-size: 47px;
+  }
 
-    .CreativeHavenText h2 {
-        z-index: 3;
-        font-size: 32px;
-      }
-    
-      .CreativeHavenImage .HavenImage {
-        position: absolute;
-        top: 0px;
-        right: 0px;
-        z-index: 1;
-      }
+  .CoWorkingTeam h1 {
+    font-size: 32px !important;
+    font-weight: 500;
+    line-height: 60px;
+    font-family: 'futura-bold';
+    text-transform: uppercase;
+    color: #ffffff;
+    text-align: center;
+  }
 
-      .CoWorkingTeam .CoWorking {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        text-align: center;
-        margin-top: 100px;
-      }
-    
+  .CoWorkingText p {
+    width: 306px;
+    font-size: 16px;
+    font-family: 'Jost';
+    font-weight: 400;
+    line-height: 20px;
+    color: #a3a3a3;
+    margin: 0 auto;
+    margin-bottom: 30px !important;
+  }
 
-      .Membership {
-        background: #484848;
-        padding: 50px 150px;
-        display: block !important;
-        justify-content: space-between;
-      }
+  .CoWorkingAndMembership {
+    padding: 0px 0px 20px !important;
+  }
+
+  .CreativeHavenText {
+    width: 100%;
+    height: 596px;
+    background-image: url('../../public/images/CreativeHaven/Skater 2 (1).png');
+    background-repeat: no-repeat;
+    background-size: 50% 90%;
+    background-position: right top;
+    background-position-x: 300px;
+  }
+
+  .CreativeHavenText h2 {
+    position: absolute;
+    top: 390px;
+    left: 0px;
+    font-size: 56px !important;
+    font-weight: 600;
+    font-family: 'futura-bold';
+    text-transform: uppercase;
+
+    line-height: 70px;
+    color: #ffffff;
+  }
+
+  .CoWorkingTeam .CoWorking {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    text-align: center;
+    margin-top: 32px;
+    grid-gap: 0px;
+    gap: 0px;
+  }
+
+  .Membership {
+    background: #484848;
+    padding: 50px 150px;
+    display: block !important;
+    justify-content: space-between;
+  }
 }

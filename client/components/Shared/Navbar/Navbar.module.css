@@ -1,3 +1,9 @@
+.menuAll {
+  display: flex;
+  width: 1336px;
+  justify-content: end;
+}
+
 .textWhite {
   color: red;
 }
@@ -5,7 +11,7 @@
 .searchInput {
   background: #2c2f33;
   border-radius: 30px;
-  font-family: "Roboto";
+  font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
@@ -25,25 +31,20 @@
   padding: 11px 0px;
   border: 1px solid #75ba87;
   transition: 0.5s;
-  font-weight: 500;
-  font-family: "Jost";
+  font-weight: 200;
+  font-family: 'Jost', sans-serif !important;
   font-size: 16px;
   width: 160px;
   height: 50px;
-  margin-top: 10px;
-}
-
-.connectWalletBtn:hover {
-  color: #75ba87;
-  color: #1a1a1a;
-  border: 1px solid #75ba87;
+  margin-top: 5px;
+  text-transform: uppercase;
 }
 
 .navLink {
-  font-family: "Jost", sans-serif !important;
+  font-family: 'Montserrat-Regular';
   font-weight: 400;
   font-style: normal;
-  font-size: 16px;
+  font-size: 15px;
   /* identical to box height, or 600% */
   color: #a3a3a3 !important;
   transition: 0.5s;
@@ -51,7 +52,7 @@
 }
 
 .navLinkActive {
-  font-family: "Jost", sans-serif !important;
+  font-family: 'Jost', sans-serif !important;
   font-weight: 400;
   font-style: normal;
   font-size: 16px;
@@ -59,11 +60,14 @@
   color: white !important;
   transition: 0.5s;
   text-transform: uppercase;
-  margin-top: 60px !important;
+  height: 55px;
+
+  display: flex;
+  align-items: center;
 }
 
 .socialIcon {
-  font-family: "montserrat", sans-serif !important;
+  font-family: 'Montserrat-Regular', sans-serif !important;
   font-weight: 500;
   font-style: normal;
   font-size: 18px;
@@ -74,10 +78,6 @@
 }
 
 .navLink:hover {
-  font-style: normal;
-  font-size: 18px;
-  /* identical to box height, or 600% */
-
   color: #ffffff !important;
 }
 
@@ -96,10 +96,12 @@
 
 .SocailMedIcon {
   display: flex;
+  align-items: center;
+  margin-top: 0px;
 }
 
 .SocailMedIcon li {
-  margin-left: 20px;
+  margin: 0px 7.5px;
   line-height: 60px;
 }
 
@@ -115,6 +117,20 @@
   cursor: pointer;
 }
 
+.MobileButton {
+  display: none;
+}
+
+/* Media Query for Mobile Devices */
+
+@media (min-width: 1600px) and (max-width: 3000px) {
+  /* .menuAll {
+    display: flex !important;
+    width: 2005px !important;
+    margin-top: -3px !important;
+  } */
+}
+
 /* Media Query for Mobile Devices */
 @media (max-width: 600px) {
   .MobileLogoButton {
@@ -123,19 +139,38 @@
     height: 30px !important;
   }
 
+  .menuAll {
+    display: block !important;
+    width: 100% !important;
+  }
+
   .MobileButton {
-    margin-left: auto;
-    padding: 10px 24px !important;
+    display: block !important;
+  }
+  .SocailMedIcon {
+    margin-top: 0px !important;
+  }
+
+  .SocailMedIcon li {
+    margin-right: 20px !important;
+    line-height: 60px !important;
+    margin-left: 0px !important;
+  }
+
+  .MobileButton {
+    margin: 0px !important;
+    padding: 10px 10px !important;
     background: #75ba87;
-    font-size: 16px;
+    font-size: 13px;
     font-weight: 500;
     line-height: 20px;
-    font-family: "Jost", sans-serif;
+    font-family: 'Jost', sans-serif;
     border: 0px !important;
     color: #1a1a1a;
-    width: 155px;
+    width: 160px;
     height: 45px;
-    margin-top: -10px;
+    margin-top: -12px;
+    text-transform: uppercase;
   }
 
   .NavbarItam .PCImage {
@@ -146,12 +181,8 @@
     display: flex;
   }
 
-  .SocailMedIcon .SocailMedIcon li {
-    margin-right: 32px;
-  }
-
   .MobileNabButton {
-    margin-right: 30px;
+    margin-left: auto;
   }
 
   .NavbarItam .Muneleft {
@@ -165,29 +196,59 @@
   .LogoImage {
     display: none;
   }
+
+  .SocailMedIcon .SocailMedIcon li {
+    margin-right: 32px;
+  }
 }
 
 /* Media Query for low resolution  Tablets, Ipads */
-@media (min-width: 640px) and (max-width: 1040px) {
+@media (min-width: 640px) and (max-width: 1080px) {
   .MobileLogoButton {
     display: block;
     display: flex;
     height: 30px !important;
   }
 
+  .menuAll {
+    display: block !important;
+    width: 100% !important;
+  }
+
   .MobileButton {
-    margin-left: auto;
-    padding: 10px 24px !important;
+    display: block !important;
+  }
+
+  .SocailMedIcon {
+    margin-top: 0px !important;
+  }
+
+  .SocailMedIcon .SocailMedIcon li {
+    margin-right: 32px;
+  }
+
+  .socialIcon {
+    margin-right: 20px !important;
+  }
+
+  .collapse {
+    display: none !important;
+  }
+
+  .MobileButton {
+    margin: 0px !important;
+    padding: 10px 10px !important;
     background: #75ba87;
     font-size: 16px;
     font-weight: 500;
     line-height: 20px;
-    font-family: "Jost", sans-serif;
+    font-family: 'Jost', sans-serif;
     border: 0px !important;
     color: #1a1a1a;
-    width: 155px;
+    width: 160px;
     height: 45px;
-    margin-top: -10px;
+    margin-top: -12px;
+    text-transform: uppercase;
   }
 
   .NavbarItam .PCImage {
@@ -203,7 +264,7 @@
   }
 
   .MobileNabButton {
-    margin-right: 30px;
+    margin-left: auto;
   }
 
   .NavbarItam .Muneleft {
@@ -218,12 +279,40 @@
     display: none;
   }
 
-  .NavbarItam ul li{
+  .NavbarItam ul li {
     margin-left: 0px !important;
   }
-
 
   .SocailMedIcon .SocailMedIcon li {
     margin-right: 32px;
   }
 }
+
+@media (min-width: 800px) and (max-width: 1080px) {
+  .MobileLogoButton {
+    display: none !important;
+  }
+
+  .LogoImage {
+    display: block !important;
+  }
+
+  .menuAll {
+    display: flex !important;
+    width: 400px !important;
+    margin-top: 0px !important;
+  }
+
+  .MobileButton {
+    margin-top: 10px !important;
+  }
+}
+
+@media (min-width: 1081px) and (max-width: 1440px) {
+  .menuAll {
+    display: flex !important;
+    width: 800px !important;
+    justify-content: end !important;
+  }
+}
+

@@ -1,13 +1,19 @@
+@font-face {
+  font-family: Manic;
+  src: url('../../../public/fonts/futura/Futura\ Book\ font.ttf');
+}
 .headingWrapper p {
   max-width: 900px;
 }
-
+.benefitsCard {
+  background: #f6eae8;
+}
 .benefitsCard:hover {
   border: 1px solid #45c78c !important;
 }
 
 .textcenter {
-  margin-top: -70px;
+  margin-top: 0px;
   margin-left: 0px;
   margin-bottom: 70px;
 }
@@ -15,8 +21,15 @@
 .benefitsCard p {
   font-size: 16px;
   font-weight: 400px;
-  color: #767676;
+  color: #766b6b;
   line-height: 20px;
+}
+.textMainText p {
+  font-weight: 200 !important;
+  font-family: sans-serif !important;
+  font-size: 14px !important;
+  letter-spacing: 1px !important;
+  color: #766b6b !important;
 }
 
 .benefitsCard h6 {
@@ -24,13 +37,13 @@
   font-size: 32px;
   line-height: 40px;
   font-weight: 500;
-  font-family: 'Montserrat';
+  font-family: 'Montserrat-Regular';
 }
 
 .textCard h1 {
   color: #051509;
   font-weight: 500;
-  font-family: "Montserrat";
+  font-family: 'futura-bold';
   font-size: 56px;
   line-height: 70px;
   width: 470px;
@@ -49,7 +62,7 @@
 .Donations h1 {
   color: #051509;
   font-weight: 600;
-  font-family: 'Montserrat';
+  font-family: 'futura-bold';
   font-size: 56px;
   line-height: 100px;
   border-bottom: 1px solid #d1d1d1;
@@ -62,7 +75,7 @@
 .DonationsCard h4 {
   color: #051509;
   font-weight: 500;
-  font-family: 'Montserrat';
+  font-family: 'Montserrat-Regular';
   font-size: 32px;
   line-height: 40px;
   width: 528px;
@@ -82,24 +95,86 @@
   padding: 12px 12px;
 }
 
+.textCard {
+  margin-top: 170px !important;
+}
+
+.Smallcard {
+  display: none !important;
+}
+
 /* Media Query for Mobile Devices */
 @media (max-width: 637px) {
+  .AboutServiceAll {
+    margin: 0px !important;
+  }
+
+  .Smallcard {
+    display: block !important;
+  }
+
   .AboutService {
     flex-direction: column-reverse;
   }
 
-  .textCard {
+  .Smallcard {
     flex-direction: column-reverse !important;
+  }
+
+  .textMainText {
+    margin-top: 30px;
   }
 
   .textMainText h1 {
     font-size: 24px !important;
   }
 
-  .textcenter {
-    margin-top: 60px;
-    margin-left: 0px;
-    transform: rotate(89deg);
+  .textCard p {
+    width: 360px !important;
+  }
+
+  .textCard {
+    display: none !important;
+  }
+
+  .textSmall {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 0px !important;
+  }
+
+  .benefitsCard p {
+    width: 350px !important;
+    font-weight: 400;
+  }
+
+  .benefitsCard h6 {
+    font-size: 24px !important;
+  }
+
+  .Donations h1 {
+    font-size: 32px;
+  }
+
+  .DonationsCard h4 {
+    font-size: 24px;
+    width: 382px;
+  }
+
+  .DonationsCard p {
+    font-size: 16px;
+    width: 100%;
+  }
+
+  .benefitsCard {
+    width: 400px !important;
+  }
+}
+
+/* Media Query for low resolution  Tablets, Ipads */
+@media (min-width: 640px) and (max-width: 1040px) {
+  .textMainText h1 {
+    font-size: 24px !important;
   }
 
   .benefitsCard p {
@@ -118,10 +193,14 @@
 
   .DonationsCard p {
     font-size: 16px;
-    width: 382px;
+    width: 100% !important;
   }
 
   .benefitsCard {
     width: 400px !important;
+  }
+
+  .textCard .textMainText p {
+    width: 300px;
   }
 }

@@ -17,7 +17,8 @@
   left: 0px;
   font-size: 56px;
   font-weight: 600;
-  font-family: "Montserrat";
+  font-family: 'futura-bold';
+  text-transform: uppercase;
   line-height: 70px;
   color: #ffffff;
 }
@@ -32,7 +33,8 @@
   font-size: 48px;
   font-weight: 500;
   line-height: 60px;
-  font-family: "Montserrat";
+  font-family: 'futura-bold';
+  text-transform: uppercase;
   color: #ffffff;
   text-align: center;
 }
@@ -57,8 +59,10 @@
 }
 
 .CoWorkingText h2 {
-  font-size: 31px;
-  font-family: "Montserrat";
+  font-size: 26px;
+  font-family: 'Montserrat-Light';
+  text-transform: uppercase;
+  letter-spacing: 0.2px;
   font-weight: 500;
   line-height: 40px;
   color: #75ba87;
@@ -67,10 +71,10 @@
 
 .CoWorkingText p {
   font-size: 16px;
-  font-family: "Jost";
+  font-family: 'Montserrat-Regular';
   font-weight: 400;
   line-height: 20px;
-  color: #e3f1e7;
+  color: #a3a3a3;
   margin-bottom: 60px;
 }
 
@@ -84,14 +88,16 @@
   font-size: 48px;
   font-weight: 500;
   line-height: 60px;
-  font-family: "Montserrat";
+  font-family: 'futura-bold';
+  text-transform: uppercase;
   color: #ffffff;
   text-align: center;
 }
 
 .OnlineMembership h4 {
   font-size: 32px;
-  font-family: "Montserrat";
+  font-family: 'Montserrat-Medium';
+  text-transform: uppercase;
   font-weight: 500;
   line-height: 40px;
   color: #75ba87;
@@ -108,14 +114,15 @@
 
 .Lifetime {
   text-align: center;
-  width: 350px;
   margin-bottom: 50px;
-  margin-left: 110px;
+  margin-left: 50px;
 }
 
 .Lifetime h3 {
   font-size: 31px;
-  font-family: "Montserrat";
+  font-family: 'Montserrat-Light';
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
   font-weight: 500;
   line-height: 40px;
   color: #ffffff;
@@ -124,7 +131,7 @@
 
 .Lifetime h4 {
   font-size: 32px;
-  font-family: "Montserrat";
+  font-family: 'Montserrat-Regular';
   font-weight: 500;
   line-height: 40px;
   color: #75ba87;
@@ -134,7 +141,7 @@
 
 .Lifetime p {
   font-size: 16px;
-  font-family: "Jost";
+  font-family: 'Montserrat-Regular';
   font-weight: 400;
   line-height: 20px;
   color: #e3f1e7;
@@ -163,22 +170,87 @@ li .Icon {
   height: 26px;
   border-radius: 50%;
   text-align: center;
+  background: no-repeat;
 }
 
 .GoLink .YogaBack .Lifetime h5 {
   color: #ffffff;
-  padding: 0px 10px;
+  margin-top: 12px;
+  margin-right: 4px;
+}
+
+.GoLink {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  align-items: center;
+  margin-left: 30px;
+}
+
+.GoLink .YogaBack .Lifetimes h5 {
+  font-size: 18px;
+  font-family: 'Jost';
+  font-weight: 400;
+  line-height: 20px;
+  color: #e3f1e7;
+  margin-top: 12px;
+  margin-right: 4px;
+  margin-left: 4px;
+}
+
+.GoLink .Lifetimes {
+  text-align: center;
+  margin-bottom: 0px !important;
+  margin-left: 0px !important;
+  margin-left: -40px !important;
 }
 
 /* Media Query for Mobile Devices */
 @media (max-width: 637px) {
   .OnlineClassesBanner {
-    background: url(../../public/images/image\ 21\ \(1\).png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 400px;
     width: 100%;
+  }
+  .GoLink {
+    padding: 13px 0px;
+  }
+
+  .CoWorkingTeam h1 {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 60px;
+    font-family: 'futura-bold';
+    text-transform: uppercase;
+    color: #ffffff;
+    text-align: center;
+    margin: 0px;
+  }
+
+  .CoWorkingAndMembership {
+    padding: 0px 0px 20px !important;
+  }
+
+  .Lifetime {
+    margin-left: 0px !important;
+    text-align: center;
+    /* width: 350px; */
+    margin-bottom: 0px;
+    margin-left: 110px;
+    padding: 0px 50px 0px;
+  }
+
+  .CoWorkingText h2 {
+    font-size: 20px;
+    font-family: 'Montserrat-Light';
+    text-transform: uppercase;
+    letter-spacing: 0.2px;
+    font-weight: 500;
+    line-height: 40px;
+    color: #75ba87;
+    margin-bottom: 20px;
   }
 
   .OnlineMembership {
@@ -190,10 +262,11 @@ li .Icon {
   .OnlineClassesText h2 {
     position: absolute;
     top: 250px;
-    left: 0px;
+    left: 10px;
     font-size: 40px;
     font-weight: 600;
-    font-family: "Montserrat";
+    font-family: 'futura-bold';
+    text-transform: uppercase;
     line-height: 70px;
     color: #ffffff;
   }
@@ -201,58 +274,40 @@ li .Icon {
   .OnlineMembership h1 {
     font-size: 32px;
     font-weight: 500;
-    line-height: 60px;
-    font-family: "Montserrat";
+    line-height: 35px;
+    font-family: 'futura-bold';
     color: #ffffff;
     text-align: center;
+    margin: 20px 20px;
   }
 
   .OnlineMembership h4 {
-    font-size: 18px;
-    font-family: "Montserrat";
+    font-size: 24px;
+    font-family: 'Montserrat-Regular';
     font-weight: 500;
     line-height: 40px;
     color: #75ba87;
-    margin-bottom: 60px;
-    margin-top: 20px;
+    margin-bottom: 20px;
     text-decoration: underline;
   }
 
   .Lifetime h3 {
     font-size: 20px;
-    font-family: "Montserrat";
+    font-family: 'Montserrat-Regular';
     font-weight: 500;
     line-height: 40px;
     color: #ffffff;
-    margin-bottom: 20px;
+    margin-bottom: 10px !important;
+    letter-spacing: 0.2em;
   }
 
   .Lifetime h4 {
-    font-size: 18px;
-    font-family: "Montserrat";
+    font-size: 24px;
+    font-family: 'Montserrat-Regular';
     font-weight: 500;
     line-height: 40px;
     color: #75ba87;
-    margin-bottom: 20px;
-  }
-
-  .Lifetime p {
-    font-size: 16px;
-    font-family: "Jost";
-    font-weight: 400;
-    line-height: 20px;
-    color: #e3f1e7;
-    width: 200px;
-    margin: auto;
-    margin-bottom: 20px;
-  }
-
-  .Lifetime {
-    text-align: center;
-    width: 350px;
-    margin-bottom: 0px !important;
-    margin-left: 0px !important;
-    margin-left: -40px !important;
+    margin: 0px;
   }
 
   .CreativeHavenImage .HavenImage {
@@ -266,7 +321,8 @@ li .Icon {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     text-align: center;
-    margin-top: 100px;
+    margin-top: 0px !important;
+    gap: 0px !important;
   }
 
   .OnlineMembership .Membership {
@@ -276,14 +332,47 @@ li .Icon {
     justify-content: space-between;
   }
 
-  .GoLink {
-    display: flex;
-    justify-content: space-between;
-    cursor: pointer;
+  .CoWorkingText p {
+    font-size: 16px;
+    font-family: 'Jost';
+    font-weight: 400;
+    line-height: 20px;
+    color: #a3a3a3;
+    width: 306px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+
+  .GoLink .YogaBack .Lifetimes h5 {
+    font-size: 15px;
+    font-family: 'Jost';
+    font-weight: 400;
+    line-height: 20px;
+    color: #e3f1e7;
+    margin-top: 15px;
+    margin-right: 4px;
+    margin-left: 4px;
   }
 }
 
 @media (min-width: 640px) and (max-width: 1040px) {
+  .OnlineClassesBanner {
+    background: url('../../public/images/image 2331 (2).png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 482px;
+    width: 100%;
+  }
+
+  .col-md-12 {
+    width: 100% !important;
+  }
+
+  .CoWorkingAndMembership {
+    padding: 0px 0px 20px !important;
+  }
+
   .CreativeHavenText h2 {
     z-index: 3;
     font-size: 32px;
@@ -296,11 +385,29 @@ li .Icon {
     z-index: 1;
   }
 
+  .OnlineMembership {
+    text-align: center;
+    background: #484848;
+    padding: 20px 0px;
+  }
+
+  .CoWorkingText p {
+    font-size: 16px;
+    font-family: 'Jost';
+    font-weight: 400;
+    line-height: 20px;
+    color: #a3a3a3;
+    width: 306px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+
   .CoWorkingTeam .CoWorking {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     text-align: center;
-    margin-top: 100px;
+    margin-top: 30px;
+    gap: 0px;
   }
 
   .Membership {
@@ -312,5 +419,31 @@ li .Icon {
 
   .Lifetime {
     margin-left: 40px !important;
+    margin-bottom: 30px;
+  }
+
+  .OnlineMembership h1 {
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 40px;
+    font-family: 'futura-bold';
+    color: #ffffff;
+    text-align: center;
+  }
+
+  .OnlineMembership h4 {
+    margin-bottom: 20px !important;
+  }
+
+  .Lifetime p {
+    width: 306px;
+    margin: 0 auto;
+    margin-bottom: 30px !important;
+  }
+
+  .CoWorkingTeam h1 {
+    font-size: 32px;
+    line-height: 40px;
+    font-family: 'futura-bold';
   }
 }

@@ -21,18 +21,18 @@ const TheAveBanner = () => {
 
               <div className={`col-md-6 ${styles.AveBannerPhoto}`}>
                 <div className={`${styles.PhotoOne}`}>
-                  <Image
-                    width={550}
-                    height={300}
-                    src={"/images/Frame 175.png"}
-                  />
-                </div>
-                <div className={styles.PhotoTwo}>
-                  <Image
+                <Image
                     width={550}
                     height={300}
                     src={"/images/Frame 176.png"}
-                  />
+                  /> 
+                </div>
+                <div className={styles.PhotoTwo}>
+                  <Image
+                  width={550}
+                  height={300}
+                  src={"/images/Frame 175.png"}
+                />
                 </div>
               </div>
             </div>
@@ -61,46 +61,45 @@ const TheAveBanner = () => {
           </div>
 
           <div className="row">
-            <div className={`col-md-6 col-sm-12 ${styles.TheAveImage}`}>
-              <Image width={675} height={535} src={"/images/image 20.png"} />
+          <Link href={"/creativehaven"}>
+            <div className={`col-md-6 col-lg-6 col-sm-12 h-full ${styles.TheAveImage}`}>
+              <Image width={675} height={540}  src={"/images/image 20.png"} className={styles.aveImages}/>
 
               <div className={styles.AveTextOne}>
-                <Link href={"/creativehaven"}>
+                
                   <h1>Creative Haven</h1>
-                </Link>
+                
               </div>
             </div>
-            <div className={`col-md-6 col-sm-6 ${styles.TheAvePhoto}`}>
+            </Link>
+            
+            <div className={`col-md-6 col-sm-12 col-lg-6 h-full ${styles.TheAvePhoto}`}>
+              
+            <Link href={"/onlineclasses"}>
               <div className={styles.AvePhoto}>
-                <div className={styles.yoga}>
-                  <Image
-                    layout="fill"
-                    objectFit="cover"
-                    src={"/images/image 21.png"}
-                  />
-                </div>
-
-                <div className={styles.AvePhotoText}>
-                  <Link href={"/onlineclasses"}>
+              <Image width={675} height={276}  src={"/images/image 21.png"} className={styles.aveImages}/>
+                {/* <div className={styles.yoga}>                 
+                </div> */}
+                <div className={styles.AveTextOne}>
+                 
                     <h1>Yoga with River</h1>
-                  </Link>
+                  
                 </div>
+             
               </div>
+              </Link>
+              <Link href={"/coching"}>
               <div className={styles.AveThePhoto}>
-                <div className={styles.yoga}>
-                  <Image
-                    layout="fill"
-                    objectFit="cover"
-                    src={"/images/image 22.png"}
-                  />
-                </div>
-
-                <div className={styles.AveThePhotoText}>
-                  <Link href={"/coching"}>
+              <Image width={675} height={276}  src={"/images/image 22.png"} className={styles.aveImages}/>
+                {/* <div className={styles.yoga}>                 
+                </div> */}
+                <div className={styles.AveTextOne}>
+                 
                     <h1>Creators Challenge</h1>
-                  </Link>
-                </div>
+                
+                </div>                
               </div>
+              </Link>
             </div>
           </div>
         </div>
@@ -109,18 +108,17 @@ const TheAveBanner = () => {
       <>
         <div
           style={{ marginBottom: "50px" }}
-          className={`container pb-4 pt-4 ${styles.CoWorking}`}
+          className={`container ${styles.CoWorking}`}
         >
-          <div className={styles.row}>
+          <div className={`col-lg-12 col-sm-12- col-md-12 ${styles.row}`}>
             <div className={`${styles.CoWorkingPart}`}>
               <div className={styles.BackIcon}>
                 <Image layout="fill" objectFit="cover" src={"/images/“.png"} />
               </div>
 
               <p>
-                We see Co-working Space Differently, we see lush Greenery, we
-                see natural wood, Mood lighting Luxurious, &amp; working in
-                Harmony
+              Work with our creative team, collaborate with a member, get a yoga session in, meditate, get inspired,
+ participate in a creative challenge to.  Kick it on the Ave we're just getting started.  Join the collective today.
               </p>
 
               <div className={styles.Pasicon}>

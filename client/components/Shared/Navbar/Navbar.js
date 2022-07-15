@@ -17,15 +17,25 @@ function Navbar({ BorderBottom, wallet }) {
 
   useEffect(() => {}, [isConnected, hasMetamask]);
   const router = useRouter();
+  const [active, setActive] = useState(null);
   return (
     <nav
       style={{ display: "block", padding: "20px 20px" }}
-      className={`navbar navbar-expand-lg fn-montserrat ${
+      className={`navbar navbar-expand-lg fn-Montserrat-Regular ${
         wallet ? "navbar-light" : "navbar-dark"
       } bg-primary pb-3`}
     >
       <div className={`${wallet}  ${BorderBottom && Styles.BorderBottom}`}>
         <div className={Styles.MobileLogoButton}>
+          <Link className={`navbar-brand ${Styles.MobileNabImage}`} href="/">
+            <Image
+              src="/image 8.png"
+              width={100}
+              height={20}
+              className={`img-fluid`}
+            />
+          </Link>
+
           <button
             className={`navbar-toggler ${Styles.MobileNabButton}`}
             type="button"
@@ -41,19 +51,6 @@ function Navbar({ BorderBottom, wallet }) {
               height={15}
               className="navbar-toggler-icon text-white"
             />
-          </button>
-
-          <Link className={`navbar-brand ${Styles.MobileNabImage}`} href="/">
-            <Image
-              src="/image 8.png"
-              width={100}
-              height={20}
-              className={`img-fluid`}
-            />
-          </Link>
-
-          <button className={`${Styles.MobileButton}`} onClick={connectwallet}>
-            Connect Wallet
           </button>
         </div>
 
@@ -129,135 +126,198 @@ function Navbar({ BorderBottom, wallet }) {
                   </div>
                 </Link>
 
-                {/* <Link href={"/"}>
-                  <li className={`nav-item ms-md-4 ${Styles.Muneleft}`}>
-                    <a
-                      className={"nav-link " + Styles.navLink}
-                      aria-current="page"
-                      href="#"
-                    >
-                      Home
-                    </a>
-                  </li>
-                </Link> */}
-
-                <Link href={"/gallery"}>
-                  <li className={`nav-item ms-md-4 ${Styles.Muneleft}`}>
-                    <a
-                      className={
-                        router.pathname == "/gallery"
-                          ? Styles.navLinkActive
-                          : "nav-link " + Styles.navLink
-                      }
-                      aria-current="page"
-                      href="#"
-                    >
-                      Gallery
-                    </a>
-                  </li>
-                </Link>
-                <Link href={"/roadMap"}>
-                  <li className="nav-item ms-md-4">
-                    <a
-                      className={
-                        router.pathname == "/roadMap"
-                          ? Styles.navLinkActive
-                          : "nav-link " + Styles.navLink
-                      }
-                      aria-current="page"
-                      href="#"
-                    >
-                      Roadmap
-                    </a>
-                  </li>
-                </Link>
-                <Link href={"/mainfesto"}>
-                  <li className="nav-item ms-md-4">
-                    <a
-                      className={
-                        router.pathname == "/mainfesto"
-                          ? Styles.navLinkActive
-                          : "nav-link " + Styles.navLink
-                      }
-                      aria-current="page"
-                      href="#"
-                    >
-                      Mainfesto
-                    </a>
-                  </li>
-                </Link>
-                <Link href={"/partners"}>
-                  <li className="nav-item ms-md-4">
-                    <a
-                      className={
-                        router.pathname == "/partners"
-                          ? Styles.navLinkActive
-                          : "nav-link " + Styles.navLink
-                      }
-                      aria-current="page"
-                      href="#"
-                    >
-                      The ave
-                    </a>
-                  </li>
-                </Link>
+                <div className={Styles.menuAll}>
+                  <Link href={"/gallery"}>
+                    <li className={`nav-item ms-md-4 ${Styles.Muneleft}`}>
+                      <a
+                        className={
+                          router.pathname == "/gallery"
+                            ? Styles.navLinkActive
+                            : "nav-link " + Styles.navLink
+                        }
+                        aria-current="page"
+                        href="#"
+                      >
+                        Gallery
+                      </a>
+                    </li>
+                  </Link>
+                  <Link href={"/roadMap"}>
+                    <li className="nav-item ms-md-4">
+                      <a
+                        className={
+                          router.pathname == "/roadMap"
+                            ? Styles.navLinkActive
+                            : "nav-link " + Styles.navLink
+                        }
+                        aria-current="page"
+                        href="#"
+                      >
+                        Roadmap
+                      </a>
+                    </li>
+                  </Link>
+                  <Link href={"/mainfesto"}>
+                    <li className="nav-item ms-md-4">
+                      <a
+                        className={
+                          router.pathname == "/mainfesto"
+                            ? Styles.navLinkActive
+                            : "nav-link " + Styles.navLink
+                        }
+                        aria-current="page"
+                        href="#"
+                      >
+                        Mainfesto
+                      </a>
+                    </li>
+                  </Link>
+                  <Link href={"/partners"}>
+                    <li className="nav-item ms-md-4">
+                      <a
+                        className={
+                          router.pathname == "/partners"
+                            ? Styles.navLinkActive
+                            : "nav-link " + Styles.navLink
+                        }
+                        aria-current="page"
+                        href="#"
+                      >
+                        The ave
+                      </a>
+                    </li>
+                  </Link>
+                </div>
               </>
             )}
           </ul>
           <ul className={`navbar-nav ml-auto $`}>
-            <li className="nav-item">
-              <a className={"nav-link " + Styles.navLink}>
-                <button
-                  className={`${Styles.connectWalletBtn}`}
-                  onClick={connectwallet}
-                >
-                  Connect Wallet
-                </button>
-              </a>
-            </li>
             <div className={Styles.SocailMedIcon}>
               <li className="nav-item">
                 <a
+                  onMouseOver={() => setActive(0)}
+                  onMouseOut={() => setActive(null)}
                   className={"nav-link " + Styles.socialIcon}
                   aria-current="page"
                   href="http://instagram.com/aliensontheave"
                   target="_blank"
                 >
-                  <Image src="/images/instagram.svg" width={20} height={20} />
+                  {active === 0 ? (
+                    <Image
+                      src="/images/navbar/instagram.svg"
+                      width={24}
+                      height={24}
+                    />
+                  ) : (
+                    <Image
+                      src="/images/icons/instagram.svg"
+                      width={24}
+                      height={24}
+                    />
+                  )}
                 </a>
               </li>
               <li className="nav-item">
                 <a
+                  onMouseOver={() => setActive(1)}
+                  onMouseOut={() => setActive(null)}
                   className={"nav-link " + Styles.socialIcon}
                   aria-current="page"
                   href="https://discord.gg/xpsqJdKkZd"
                   target="_blank"
                 >
-                  <Image src="/images/Discord.svg" width={20} height={20} />
+                  {active === 1 ? (
+                    <Image
+                      src="/images/navbar/Discord.svg"
+                      width={24}
+                      height={24}
+                    />
+                  ) : (
+                    <Image
+                      src="/images/icons/Discord.svg"
+                      width={24}
+                      height={24}
+                    />
+                  )}
                 </a>
               </li>
 
               <li className="nav-item">
                 <a
+                  onMouseOver={() => setActive(2)}
+                  onMouseOut={() => setActive(null)}
                   className={"nav-link " + Styles.socialIcon}
                   aria-current="page"
                   href="http://twitter.com/AOTAnft/"
                   target="_blank"
                 >
-                  <Image src="/images/twitter.svg" width={20} height={20} />
+                  {active === 2 ? (
+                    <Image
+                      src="/images/navbar/twitter.svg"
+                      width={24}
+                      height={24}
+                    />
+                  ) : (
+                    <Image
+                      src="/images/icons/twitter.svg"
+                      width={24}
+                      height={24}
+                    />
+                  )}
                 </a>
               </li>
+
               <li className="nav-item">
                 <a
+                  onMouseOver={() => setActive(3)}
+                  onMouseOut={() => setActive(null)}
                   className={"nav-link " + Styles.socialIcon}
                   aria-current="page"
                   href="http://opensea.io/Aliensontheave/"
                   target="_blank"
                 >
-                  <Image src="/images/opensea 1.svg" width={20} height={20} />
+                  {active === 3 ? (
+                    <Image
+                      src="/images/navbar/opensea 1.svg"
+                      width={24}
+                      height={24}
+                    />
+                  ) : (
+                    <Image
+                      src="/images/icons/opensea 2.svg"
+                      width={24}
+                      height={24}
+                    />
+                  )}
                 </a>
               </li>
             </div>
+
+            <button
+              className={`${Styles.MobileButton}`}
+              onClick={connectwallet}
+            >
+              {isConnected ? "Mint" : "Connect Wallet"}
+            </button>
+
+            <li className="nav-item">
+              <a className={"nav-link " + Styles.navLinkTooo}>
+                {isConnected ? (
+                  <Link href={"/public-sale"}>
+                    <button className={`${Styles.connectWalletBtn}`}>
+                      MINT
+                    </button>
+                  </Link>
+                ) : (
+                  <button
+                    onClick={() => connectwallet()}
+                    className={`${Styles.connectWalletBtn}`}
+                  >
+                    CONNECT WALLET
+                  </button>
+                )}
+              </a>
+            </li>
           </ul>
         </div>
       </div>

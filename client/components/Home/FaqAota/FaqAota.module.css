@@ -6,7 +6,9 @@
 .FaqPrime h1 {
   color: #75ba87;
   font-size: 24px;
-  font-family: 'Montserrat';
+  font-family: 'Montserrat-Medium';
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
   font-weight: 500;
   line-height: 30px;
 }
@@ -14,7 +16,9 @@
 .FaqPrime h3 {
   color: #fafafa;
   font-size: 48px;
-  font-family: 'Montserrat';
+  font-family: 'futura-bold';
+  text-transform: uppercase;
+
   font-weight: 500;
   line-height: 60px;
   margin-top: 10px;
@@ -22,9 +26,9 @@
 }
 
 .FaqPrime p {
-  color: #fafafa;
+  color: #a3a3a3;
   font-size: 16px;
-  font-family: 'Montserrat';
+  font-family: 'Montserrat-Regular';
   font-weight: 500;
   line-height: 20px;
 }
@@ -42,8 +46,9 @@
   display: flex;
 }
 .plusIcon {
-  height: 30px;
-  width: 30px;
+  height: 28px;
+  width: 28px;
+
   position: relative;
   cursor: pointer;
 }
@@ -55,7 +60,13 @@
 .answerPara {
   font-weight: 500;
   font-size: 16px;
-  color: #fafafa;
+  color: #a3a3a3;
+} .plusMinusIcon{
+  width: 20%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
 }
 @media screen and (max-width: 637px) {
   .qaSection {
@@ -67,10 +78,43 @@
     color: #ffffff;
     transition: all 0.9s ease;
   }
+  .FaqPrime h3 {
+    font-size: 32px !important;
+  }
+  .plusMinusIcon{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+  }
 }
 @media screen and (max-width: 1040px) {
+  .questions p {
+    font-size: 15px;
+    width: 80%;
+  }
   .qaSection {
-    width: 350px;
+    width: 98%;
     border-bottom: 1px solid #75ba87;
+  }
+  .plusMinusIcon{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+  }
+}
+@media screen and (min-width: 983px) and (max-width: 1040px) {
+  .qaSection {
+    width: 500px;
+  }
+  .plusMinusIcon{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
   }
 }

@@ -19,7 +19,7 @@ const MeetOurTeam = () => {
   const [name, setName] = useState("");
   const [image, setImage] = useState("");
   const [title, setTitle] = useState("");
-
+  const [description, setDescription] = useState("");
   let changeInfo = () => {};
   console.log(image.length);
   function ControlledCarousel() {
@@ -29,185 +29,208 @@ const MeetOurTeam = () => {
       setIndex(selectedIndex);
     };
   }
+  const [imgActive, setImgActive] = useState(0);
   return (
-    <div className={styles.MeetOurTeam}>
-      <div className="container pt-0 pb-5">
-        <div className="row">
-          <div className={`col-md-5 mt-0 ${styles.MeetMember}`}>
-            <div className={styles.MemberProfil}>
-              <div className={styles.MemberCardOne}>
-                <div className={styles.MemberCardTwo}>
-                  <Image
-                    style={{ marginTop: "10px" }}
-                    src={image.length < 2 ? "/images/Frame 184.png" : image}
-                    alt="Picture of the author"
-                    width={400}
-                    height={405}
-                  />
+    <>
+      <div className={styles.MeetOurTeam}>
+        <div className="container pt-0 pb-5">
+          <div className="row">
+            <div className={`col-md-5 mt-0 ${styles.MeetMember}`}>
+              <div className={styles.MemberProfil}>
+                <div className={styles.MemberCardOne}>
+                  <div className={styles.MemberCardTwo}>
+                    <Image
+                      src={image.length < 2 ? "/images/Frame 184.png" : image}
+                      alt="Picture of the author"
+                      width={388}
+                      height={388}
+                    />
+                  </div>
                 </div>
-              </div>
 
-              <div className={styles.MemberCardText}>
-                <h2>{name}</h2>
-                <h6>{title}</h6>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nec
-                  porttitor urna, arcu congue neque enim quis auctor ut. Non,
-                  duis malesuada blandit suspendisse posuere aliquam elementum.
-                  Hac curabitur mi sit habitant.
-                </p>
+                <div className={styles.MemberCardText}>
+                  <h2>{name.length < 2 ? "Jacob Flores" : name}</h2>
+                  <h6>{title.length < 2 ? "Founder/Artist" : title}</h6>
+                  <p>
+                  {description.length < 2 ? "Jacob has an extensive background in digital arts, marketing, sales.  While working as a Solar Energy Consultant for SolarCity he discovered a passion for the environment and the impact businesses have on the planet.  He believes the future of tech is green and DLT's will lead the change.  His passion for growth has inspired many to make a difference." : description}
+                  </p>
 
-                <div className={styles.MemberCardIcons}>
-                  <Image
-                    src={"/images/icon/TeamMet/facebook.png"}
-                    alt="facebook"
-                    width={30}
-                    height={30}
-                  />
+                  <div className={styles.MemberCardIcons}>
+                    <Image
+                      src={"/images/discordmeet.svg"}
+                      alt="facebook"
+                      width={30}
+                      height={30}
+                    />
 
-                  <Image
-                    src={"/images/icon/TeamMet/instagram (1).png"}
-                    alt="instagram"
-                    width={30}
-                    height={30}
-                  />
-
-                  <Image
-                    src={"/images/icon/TeamMet/linkedin.png"}
-                    alt="linkedin"
-                    width={30}
-                    height={30}
-                  />
-
-                  <Image
-                    src={"/images/icon/TeamMet/twitter (1).png"}
-                    alt="twitter"
-                    width={30}
-                    height={30}
-                  />
+                    <Image
+                      src={"/images/instagram-seeklogo.com.svg"}
+                      alt="instagram"
+                      width={30}
+                      height={30}
+                    />
+                    <Image
+                      src={"/images/iconmonstr-twitter-1.svg"}
+                      alt="twitter"
+                      width={30}
+                      height={30}
+                    />
+                    <Image
+                      src={"/images/iconmonstr-linkedin-3.svg"}
+                      alt="linkedin"
+                      width={30}
+                      height={30}
+                    />
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
 
-          <div className={`col-md-7 mt-0 ${styles.MeetMember}`}>
-            <h1>Meet Our Team</h1>
-            <p className={styles.meetMemberPara}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nec
-              porttitor urna, arcu congue neque enim quis auctor ut. Non, duis
-              malesuada blandit suspendisse posuere aliquam elementum. Hac
-              curabitur mi sit habitant.
-            </p>
-            <div
-              className={styles.RoadMapSlider}
-              prevLabel={directionButtons()}
-            >
-              <div className={styles.meetOurTeamSliderButtonArea}></div>
-              <div className={styles.carouselAra}>
-                <Carousel
-                  wrap={false}
-                  interval={null}
-                  indicators={false}
-                  prevIcon={
-                    <div className={styles.rightArrow}>
-                      <Image
-                        src={"/images/Group 3.png"}
-                        layout="fill"
-                        objectFit="cover"
-                      ></Image>
-                    </div>
-                  }
-                  nextIcon={
-                    <div className={styles.leftArrow}>
-                      <Image
-                        src={"/images/Group 3.png"}
-                        layout="fill"
-                        objectFit="cover"
-                      ></Image>
-                    </div>
-                  }
-                >
-                  <Carousel.Item>
-                    <div className={styles.carousleItemElement}>
-                      {Team.slice(0, 8).map((item, i) => {
-                        return (
-                          <div
-                            className={styles.teamMemberContainer}
-                            onClick={() => {
-                              setName(item.name);
-                              setImage(item.image);
-                              setTitle(item.title);
-                            }}
-                          >
-                            <div className={styles.teamImage}>
-                              <Image
-                                src={item.image}
-                                layout="fill"
-                                objectFit="cover"
-                              ></Image>
+            <div className={`col-md-6 mt-0 ${styles.MeetMemberRight}`}>
+              <h1>Team</h1>
+              <p className={styles.meetMemberPara}>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nec
+                porttitor urna, arcu congue neque enim quis auctor ut. Non, duis
+                malesuada blandit suspendisse posuere aliquam elementum. Hac
+                curabitur mi sit habitant.
+              </p>
+              <div
+                className={styles.RoadMapSlider}
+                prevLabel={directionButtons()}
+              >
+                <div className={styles.meetOurTeamSliderButtonArea}></div>
+                <div className={styles.carouselAra}>
+                  <Carousel
+                    wrap={false}
+                    interval={null}
+                    indicators={false}
+                    prevIcon={
+                      <div className={styles.rightArrow}>
+                        <Image
+                          src={"/images/Group 3.png"}
+                          layout="fill"
+                          objectFit="cover"
+                        ></Image>
+                      </div>
+                    }
+                    nextIcon={
+                      <div className={styles.leftArrow}>
+                        <Image
+                          src={"/images/Group 3.png"}
+                          layout="fill"
+                          objectFit="cover"
+                        ></Image>
+                      </div>
+                    }
+                  >
+                    <Carousel.Item>
+                      <div className={styles.carousleItemElement}>
+                        {Team.slice(0, 8).map((item, i) => {
+                          return (
+                            <div
+                              className={styles.teamMemberContainer}
+                              onClick={() => {
+                                setName(item.name);
+                                setImage(item.image);
+                                setTitle(item.title);
+                                setDescription(item.about);
+                                setImgActive(i);
+                              }}
+                            >
+                              <div
+                                style={
+                                  imgActive === i
+                                    ? { border: "3px solid #75BA87" }
+                                    : { border: "none" }
+                                }
+                                className={styles.teamImage}
+                              >
+                                <Image
+                                  src={item.image}
+                                  layout="fill"
+                                  objectFit="cover"
+                                ></Image>
+                              </div>
+                              <h3>{item.name}</h3>
+                              <h4>{item.title}</h4>
                             </div>
-                            <h3>{item.name}</h3>
-                            <h4>{item.title}</h4>
-                          </div>
-                        );
-                      })}
-                    </div>
-                  </Carousel.Item>
+                          );
+                        })}
+                      </div>
+                    </Carousel.Item>
 
-                  <Carousel.Item>
-                    <div className={styles.carousleItemElement}>
-                      {Team.slice(0, 8).map((item, i) => {
-                        return (
-                          <div
-                            className={styles.teamMemberContainer}
-                            onClick={() => {
-                              setName(item.name);
-                              setImage(item.image);
-                              setTitle(item.title);
-                            }}
-                          >
-                            <div className={styles.teamImage}>
-                              <Image
-                                src={item.image}
-                                layout="fill"
-                                objectFit="cover"
-                              ></Image>
+                    <Carousel.Item>
+                      <div className={styles.carousleItemElement}>
+                        {Team.slice(0, 8).map((item, i) => {
+                          return (
+                            <div
+                              className={styles.teamMemberContainer}
+                              onClick={() => {
+                                setName(item.name);
+                                setImage(item.image);
+                                setTitle(item.title);
+                                setDescription(item.about);
+                                setImgActive(i);
+                              }}
+                            >
+                              <div
+                                style={
+                                  imgActive === i
+                                    ? { border: "3px solid #75BA87" }
+                                    : { border: "none" }
+                                }
+                                className={styles.teamImage}
+                              >
+                                <Image
+                                  src={item.image}
+                                  layout="fill"
+                                  objectFit="cover"
+                                ></Image>
+                              </div>
+                              <h3>{item.name}</h3>
+                              <h4>{item.title}</h4>
                             </div>
-                            <h3>{item.name}</h3>
-                            <h4>{item.title}</h4>
-                          </div>
-                        );
-                      })}
-                    </div>
-                  </Carousel.Item>
+                          );
+                        })}
+                      </div>
+                    </Carousel.Item>
 
-                  <Carousel.Item>
-                    <div className={styles.carousleItemElement}>
-                      {Team.slice(0, 8).map((item, i) => {
-                        return (
-                          <div
-                            className={styles.teamMemberContainer}
-                            onClick={() => {
-                              setName(item.name);
-                              setImage(item.image);
-                              setTitle(item.title);
-                            }}
-                          >
-                            <div className={styles.teamImage}>
-                              <Image
-                                src={item.image}
-                                layout="fill"
-                                objectFit="cover"
-                              ></Image>
+                    <Carousel.Item>
+                      <div className={styles.carousleItemElement}>
+                        {Team.slice(0, 8).map((item, i) => {
+                          return (
+                            <div
+                              className={styles.teamMemberContainer}
+                              onClick={() => {
+                                setName(item.name);
+                                setImage(item.image);
+                                setTitle(item.title);
+                                setDescription(item.about);
+                                setImgActive(i);
+                              }}
+                            >
+                              <div
+                                style={
+                                  imgActive === i
+                                    ? { border: "3px solid #75BA87" }
+                                    : { border: "none" }
+                                }
+                                className={styles.teamImage}
+                              >
+                                <Image
+                                  src={item.image}
+                                  layout="fill"
+                                  objectFit="cover"
+                                ></Image>
+                              </div>
+                              <h3>{item.name}</h3>
+                              <h4>{item.title}</h4>
                             </div>
-                            <h3>{item.name}</h3>
-                            <h4>{item.title}</h4>
-                          </div>
-                        );
-                      })}
-                    </div>
-                  </Carousel.Item>
-                  {/* <Carousel.Item>
+                          );
+                        })}
+                      </div>
+                    </Carousel.Item>
+                    {/* <Carousel.Item>
                     <img
                       className="d-block w-100"
                       src="holder.js/800x400?text=Second slide&bg=282c34"
@@ -236,13 +259,76 @@ const MeetOurTeam = () => {
                       </p>
                     </Carousel.Caption>
                   </Carousel.Item> */}
-                </Carousel>
+                  </Carousel>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+      <div className={styles.meetOurTeamMobile}>
+        <h1>Meet Our Team</h1>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus
+          facilis laboriosam magni possimus velit maiores natus nisi cum magnam
+          rerum nobis quae voluptates quod laudantium et, quia eius! Minima,
+          qui.
+        </p>
+        {/* */}
+        <Carousel indicators={false}>
+          {Team.map((data) => {
+            return (
+              <Carousel.Item>
+                <div className={styles.cardSlider}>
+                  <div className={styles.cardSLiderOne}>
+                    <div className={styles.cardSLiderTwo}>
+                      <Image
+                        src={`${data.image}`}
+                        alt="Picture of the author"
+                        width={"320px"}
+                        height={"320px"}
+                      />
+                    </div>
+                  </div>
+                  <h2>{data.name}</h2>
+                  <h5>{data.title}</h5>
+                  <p>
+                  {data.about}
+                  </p>
+                  <div className={styles.MemberCardIcons}>
+                  <Image
+                      src={"/images/discordmeet.svg"}
+                      alt="facebook"
+                      width={30}
+                      height={30}
+                    />
+
+                    <Image
+                      src={"/images/instagram-seeklogo.com.svg"}
+                      alt="instagram"
+                      width={30}
+                      height={30}
+                    />
+                    <Image
+                      src={"/images/iconmonstr-twitter-1.svg"}
+                      alt="twitter"
+                      width={30}
+                      height={30}
+                    />
+                    <Image
+                      src={"/images/iconmonstr-linkedin-3.svg"}
+                      alt="linkedin"
+                      width={30}
+                      height={30}
+                    />
+                  </div>
+                </div>
+              </Carousel.Item>
+            );
+          })}
+        </Carousel>
+      </div>
+    </>
   );
 };
 

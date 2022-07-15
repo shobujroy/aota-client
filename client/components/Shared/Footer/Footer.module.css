@@ -41,7 +41,7 @@
   }
   .footerContectWrapper div div {
     justify-content: center !important;
-    margin-top: 15px;
+    margin: 20px 0px;
   }
 
   .footer-area {
@@ -73,7 +73,7 @@
   border: none;
   padding: 18px 16px;
   font-size: 16px;
-  font-family: "Jost";
+  font-family: 'Jost';
   font-weight: 500;
   margin-bottom: 20px;
   margin-top: 20px;
@@ -92,11 +92,15 @@
   margin-top: 20px;
 }
 
+.btnSubmit:hover {
+  background-color: #e2dd96 !important;
+}
+
 .footerContectWrapper h5 {
   color: #ffffff;
   font-size: 24px;
   font-weight: 500;
-  font-family: "Montserrat";
+  font-family: 'Montserrat-Regular';
   line-height: 24px;
 }
 
@@ -108,7 +112,7 @@
   font-size: 24px;
   font-weight: 500;
   line-height: 30px;
-  font-family: "Montserrat";
+  font-family: 'Montserrat-Regular';
   color: #ffffff;
   margin: 0px;
 }
@@ -117,9 +121,9 @@
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
-  font-family: "Jost";
-  color: #ffffff;
-  margin-top: 32px;
+  font-family: 'Jost';
+  color: #a3a3a3;
+  margin-top: 16px;
 }
 
 .FooterMain {

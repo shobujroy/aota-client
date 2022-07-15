@@ -1,8 +1,8 @@
 import React from "react";
 import Link from "next/link";
 import styles from "./OnCoching.module.css";
-import KeyboardArrowLeftIcon from "@mui/icons-material/KeyboardArrowLeft";
-import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
+import Image from "next/image";
+
 
 const OnCoching = () => {
   return (
@@ -84,16 +84,20 @@ const OnCoching = () => {
           </div>
         </div>
 
+        <div className="container">
         <div className={styles.GoLink}>
           <Link href={"/onlineclasses"}>
             <div className={styles.YogaBack}>
               <li className={styles.Lifetime}>
-                <KeyboardArrowLeftIcon className={styles.Icon} />{" "}
+              <Image width={48} height={48} src={"/images/Group 3.svg"} className={styles.Icon} />
                 <h5>Yoga with River</h5>
               </li>
             </div>
           </Link>
         </div>
+        </div>
+
+
       </div>
     </>
   );

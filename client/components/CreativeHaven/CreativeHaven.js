@@ -10,20 +10,10 @@ const CreativeHaven = () => {
       <div className={styles.CreativeHaven}>
         <div className="container pb-4 pt-4">
           <div className="row">
-            <div className={`col-md-6  col-sm-12 ${styles.CreativeHavenText}`}>
+            <div className={`col-lg-12 col-md-12  col-sm-12 ${styles.CreativeHavenText}`}>
               <h2>Creative Haven</h2>
             </div>
-
-            <div className={`col-md-6  col-sm-12 ${styles.CreativeHavenImage}`}>
-              <div className={styles.HavenImage}>
-                <Image
-                  width={624}
-                  height={538}
-                  src={"/images/CreativeHaven/Skater 2.png"}
-                />
-              </div>
             </div>
-          </div>
         </div>
       </div>
 
@@ -88,15 +78,18 @@ const CreativeHaven = () => {
             </div>
           </div>
         </div>
-
+        
+        <div className="container">
         <Link href={"/onlineclasses"}>
             <div className={styles.YogaBack}>
               <li className={styles.Lifetime}>
-                <p>Yoga with River</p>{" "}
-                <KeyboardArrowRightIcon className={styles.Icon} />
+                <h5>Yoga with River</h5>{" "}
+                <Image width={48} height={48} src={"/images/Group 3.png"} className={styles.Icon} />
               </li>
             </div>
           </Link>
+          </div>
+
       </div>
     </>
   );
