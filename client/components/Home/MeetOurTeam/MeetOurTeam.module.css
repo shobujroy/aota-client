@@ -226,12 +226,12 @@
 
   display: grid;
   grid-template-columns: repeat(4,1fr);
-  gap: 15px;
+  /* gap: 15px; */
   /* flex-wrap: wrap; */
 }
 .teamImage {
   position: relative;
-  width: 100%;
+  width: 92%;
   height: 70%;
 }
 .teamMemberContainer {
@@ -569,7 +569,7 @@ margin-right: -23px;
   .carousleItemElement {
     display: grid;
     grid-template-columns: repeat(4,1fr);
-    gap: 5px;
+    /* gap: 5px; */
     /* flex-wrap: wrap; */
   }
   .teamMemberContainer {
@@ -580,7 +580,7 @@ margin-right: -23px;
   }
   .teamImage {
     position: relative;
-    width: 100%;
+    width: 90%;
     height: 40%;
   }
   .meetMemberPara {
