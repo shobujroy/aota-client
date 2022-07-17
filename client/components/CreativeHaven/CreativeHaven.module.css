@@ -20,7 +20,7 @@
 .CreativeHavenText h2 {
   position: absolute;
   top: 390px;
-  left: 0px;
+  /* left: 0px; */
   font-size: 56px;
   font-weight: 600;
   font-family: 'futura-bold';
@@ -176,6 +176,8 @@ li .Icon {
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-position: center !important;
+    display: flex;
+    justify-content: center;
   }
 
   .CoWorkingAndMembership {
@@ -193,8 +195,8 @@ li .Icon {
   .CreativeHavenText h2 {
     z-index: 3;
     font-size: 32px;
-    top: 255px !important;
-    left: 10px;
+    top: 280px !important;
+    /* left: 10px; */
   }
 
   .Lifetime {
@@ -273,6 +275,7 @@ li .Icon {
     margin-bottom: 30px;
     width: 306px;
   }
+  
 }
 
 @media (min-width: 640px) and (max-width: 1040px) {
@@ -318,7 +321,7 @@ li .Icon {
 
   .CreativeHavenText h2 {
     position: absolute;
-    top: 390px;
+    top: 448px;
     left: 0px;
     font-size: 56px !important;
     font-weight: 600;
