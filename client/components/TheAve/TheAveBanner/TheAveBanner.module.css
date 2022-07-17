@@ -381,8 +381,9 @@
   }
 
   .CoWorkingImage img {
-    width: 684px !important;
-    height: 575px !important;
+    width: 100% !important;
+    height: 100% !important;
+    margin-left: -30px !important;
   }
 
   .CoWorkingPart {
@@ -457,6 +458,9 @@
 }
 
 /* Media Query for low resolution  Tablets, Ipads */
+
+
+
 @media (min-width: 640px) and (max-width: 1040px) {
 
   .AvePhoto  img{
@@ -599,7 +603,9 @@
   }
 
   .CoWorkingImage img {
-    height: 270px !important;
+    /* height: 270px !important; */
+    height: 100% !important;
+    width: 100% !important;
   }
 
   .CoWorking {
@@ -607,13 +613,34 @@
     margin-bottom: 50px !important;
   }
 
-  .CoWorkingImage {
-    width: 25%;
-    height: 294px;
+  /* .CoWorkingImage {
+    width: 40%;
+    height: 302px;
     margin-top: 0px;
     overflow: hidden;
+    margin-left: -46px;
+  } */
+}
+
+@media (min-width: 456px) and (max-width: 768px){
+  .CoWorkingImage {
+    width: 40%;
+    height: 302px;
+    margin-top: 0px;
+    overflow: hidden;
+    margin-left: -46px;
   }
 }
+
+@media (min-width: 769px) and (max-width: 1040px){
+  .CoWorkingImage {
+    width: 30%;
+    height: 302px;
+    margin-top: 0px;
+    overflow: hidden;
+    margin-left: 0px;
+  }
+} 
 
 /* 
 @media (min-width: 1041px) and (max-width: 1479px) {
