@@ -80,6 +80,13 @@
     grid-template-columns: repeat(1, 1fr) !important;
     gap: 30px !important;
   }
+  .imageRespn {
+    margin: auto;
+  }
+  .quantityRespon{
+    margin: auto;
+    align-items: center !important;
+  }
 }
 
 
@@ -103,6 +110,11 @@
     margin: 0 auto !important;
   }
 
+  .imageWrapper {
+  box-shadow: 0px 0px #18281c;
+  border-radius: 0.3rem;
+}
+
 
   .imageRespn{
     margin: auto;
@@ -111,6 +123,6 @@
 
   .quantityRespon{
     margin: auto;
-    align-items: center !IMPORTANT;
+    align-items: center !important;
   }
 }
