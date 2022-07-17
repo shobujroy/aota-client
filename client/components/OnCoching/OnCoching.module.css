@@ -11,12 +11,14 @@
 
 .OnlineClassesText {
   position: relative;
+  /* display: flex;
+  justify-content: center; */
 }
 
 .OnlineClassesText h2 {
   position: absolute;
-  top: 317px;
-  left: 0px;
+  top: 333px;
+  /* left: 0px; */
   font-size: 56px;
   font-weight: 600;
   font-family: 'futura-bold';
@@ -286,13 +288,14 @@ li .Icon {
   .OnlineClassesText h2 {
     position: absolute;
     top: 230px;
-    left: 10px;
-    font-size: 40px;
+    /* left: 10px; */
+    font-size: 32px;
     font-weight: 600;
     font-family: 'futura-bold';
     text-transform: uppercase;
     line-height: 70px;
     color: #ffffff;
+    text-align: center;
   }
 
   .OnlineMembership h1 {
@@ -380,4 +383,9 @@ li .Icon {
     margin: 0px !important;
     cursor: pointer;
   }
+  .OnlineClassesText {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
 }
