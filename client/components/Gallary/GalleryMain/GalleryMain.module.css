@@ -335,8 +335,7 @@
   }
   .filterMob {
     width: 90%;
-    height: 5vh;
-
+    height: 15vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -392,38 +391,37 @@
     flex-direction: row;
     align-items: center;
     overflow: scroll;
-    top: 88px;
+    top: 180px;
     left: 5px;
     align-content: flex-start;
     z-index: 0;
   }
   .galleryImages {
-    width: 47%;
+    width: 46%;
     height: 200px;
     position: relative;
   }
   .gallaryBanner {
-    width: 90vw;
+    width: 95.5vw;
     position: absolute;
-    right: 20px;
-    height: 204px;
-    top: 885px;
-
+    right: 4px;
+    height: 93px;
+    top: 75px;
     overflow: hidden;
     display: flex;
-    background: url('../../../public/images/Gallery_Banner.jpg');
+    background: url(/_next/static/media/Gallery_Banner.e41c74bc.jpg);
     background-size: cover;
     background-position: left top;
     background-repeat: no-repeat;
-    display: none;
   }
+
   .bannerImage {
     width: 40vw;
     height: 100%;
     position: relative;
   }
   .bannerText {
-    width: 60vw;
+    width: 100%;
   }
   .bannerText h1 {
     font-family: 'futura-bold';
@@ -467,3 +465,7 @@
     z-index: 55555;
   }
 }
+
+
+
+

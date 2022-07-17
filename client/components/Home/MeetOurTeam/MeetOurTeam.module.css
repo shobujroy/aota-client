@@ -259,8 +259,18 @@
 .carousleItemElementExtra{
   display: none;
 }
-/* Media Query for Mobile Devices */
 
+
+/* Media Query for Mobile Devices */
+@media  (max-width: 390px) {
+  .cardSLiderTwo{
+    height: 26vh;
+  }
+}
+
+
+
+/* Media Query for Mobile Devices */
 @media (max-width: 600px) {
   .MeetOurTeam {
     height: 1700px;
@@ -297,11 +307,11 @@
   .cardSlider {
     width: 90vw;
     height: 750px;
-
     background: #1a2a1e;
     margin-left: 5vw;
     display: flex;
     flex-direction: column;
+    padding: 20px 0px;
   }
   .cardSlider h2 {
     font-family: 'Montserrat-Medium';
@@ -320,22 +330,34 @@
     text-align: center;
     margin-top: 20px;
   }
-  .cardSLiderOne {
-    width: 80vw;
-    height: 40vh;
-
-    margin-left: 5vw;
-    margin-top: 5vw;
+  /* .cardSLiderOne {
+    width: 57vw;
+    height: 40vh;    
     background: #3e4b41;
-  }
-  .cardSLiderTwo {
-    width: 75vw;
-    height: 0px;
+    margin: auto;
+  } */
 
+
+  .cardSLiderTwo img{
+    height: auto !important;
+    width: 100px !important;
+    margin: auto !important;
+    text-align: center;
+  }
+
+
+  .cardSLiderTwo {
+    width: 26vh;
+    height: auto;    
+    background: #4a574d;
+    padding: 10px;
     margin-left: 2.5vw;
     margin-top: 2.5vw;
-    background: #4a574d;
+    margin: auto;
+    text-align: center;
   }
+
+
   .teamMemberContainer {
     width: 40%;
     margin-left: 10px;
@@ -479,17 +501,7 @@
   } */
 }
 
-@media (max-width: 500px){
-  .cardSLiderOne{
-    height: 40vh;
-  }
-}
 
-@media (max-width: 400px){
-  .cardSLiderOne{
-    height: 36vh;
-  }
-}
 
 @media screen and (min-width: 768px) and (max-width: 1039px){
   .carousleItemElement {
