@@ -336,7 +336,7 @@
   }
   .filterMob {
     width: 90%;
-    height: 15vh;
+    height: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -387,7 +387,7 @@
     width: 100%;
     position: none;
     right: 20px;
-    height: 1760px;
+    height: auto;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -396,6 +396,7 @@
     left: 5px;
     align-content: flex-start;
     z-index: 0;
+    padding: 0px 10px 0px 0px;
   }
   .galleryImages {
     width: 46%;
@@ -403,9 +404,9 @@
     position: relative;
   }
   .gallaryBanner {
-    width: 95.5vw;
-    position: absolute;
-    right: 4px;
+    width: 94vw;
+    right: 10px;
+    height: 93px;
     height: 93px;
     top: 75px;
     overflow: hidden;
