@@ -1,20 +1,18 @@
 @font-face {
   font-family: FuturaBold;
-  src: url('../../../public/fonts/futura/futura\ medium\ condensed\ bt.ttf');
+  src: url("../../../public/fonts/futura/futura\ medium\ condensed\ bt.ttf");
 }
 @font-face {
   font-family: FuturaLight;
-  src: url('../../../public/fonts/futura/Futura\ Light\ font.ttf');
+  src: url("../../../public/fonts/futura/Futura\ Light\ font.ttf");
 }
 .mobileSLide {
   display: none;
 }
 
-
-.IpadSLide{
+.IpadSLide {
   display: none;
 }
-
 
 .carouselItem p {
   color: gray !important;
@@ -24,11 +22,11 @@
   height: 100vh;
 
   position: relative;
-  background: url('../../../public/images/banner.png');
+  background: url("../../../public/images/banner.png");
   background-size: 80vw 100vh;
   background-position: right top;
   background-repeat: no-repeat;
-  font-family: 'Montserrat-Regular';
+  font-family: "Montserrat-Regular";
 }
 .carouselItem h1 {
   font-family: FuturaBold;
@@ -41,7 +39,7 @@
   top: 40px;
 }
 .carouselItem p {
-  font-family: 'Montserrat-Regular';
+  font-family: "Montserrat-Regular";
   font-weight: 700;
   font-size: 18px;
   position: absolute;
@@ -68,7 +66,7 @@
   height: 100%;
   background: transparent;
   border: none;
-  font-family: 'Jost', sans-serif !important;
+  font-family: "Jost", sans-serif !important;
   font-size: 16px;
   font-weight: 400;
 }
@@ -79,11 +77,11 @@
   display: flex;
   justify-content: center;
   align-items: end;
-  background: url('../../../public/images/Merch.png');
+  background: url("../../../public/images/Merch.png");
   background-size: 100% 100%;
   background-position: right top;
   background-repeat: no-repeat;
-  font-family: 'Montserrat-Regular';
+  font-family: "Montserrat-Regular";
 }
 .carousleButtonTwo {
   width: 200px;
@@ -92,7 +90,7 @@
   font-weight: 700;
   color: white;
   font-weight: 400 !important;
-  font-family: 'Jost', sans-serif !important;
+  font-family: "Jost", sans-serif !important;
 }
 .carousleButtonTwo:hover {
   background: #e2dd96;
@@ -119,11 +117,11 @@
   height: 100vh;
 
   position: relative;
-  background: url('../../../public/images/creativehaven.png');
+  background: url("../../../public/images/creativehaven.png");
   background-size: 60vw 100vh;
   background-position: right top;
   background-repeat: no-repeat;
-  font-family: 'Montserrat-Regular';
+  font-family: "Montserrat-Regular";
 }
 
 .carouselItemThree h1 {
@@ -137,7 +135,7 @@
   top: 40px;
 }
 .carouselItemThree p {
-  font-family: 'Montserrat-Regular';
+  font-family: "Montserrat-Regular";
   font-weight: 400;
   font-size: 18px;
   position: absolute;
@@ -150,11 +148,11 @@
   height: 100vh;
 
   position: relative;
-  background: url('../../../public/images/Yoga_River.png');
+  background: url("../../../public/images/Yoga_River.png");
   background-size: 60vw 100vh;
   background-position: right top;
   background-repeat: no-repeat;
-  font-family: 'Montserrat-Regular';
+  font-family: "Montserrat-Regular";
 }
 
 .carouselItemFour h1 {
@@ -168,7 +166,7 @@
   top: 40px;
 }
 .carouselItemFour p {
-  font-family: 'Montserrat-Regular';
+  font-family: "Montserrat-Regular";
   font-weight: 400;
   font-size: 18px;
   position: absolute;
@@ -179,14 +177,6 @@
   padding-bottom: 50px;
 }
 
-
-
-
-
-
-
-
-
 @media screen and (min-width: 1440px) and (max-width: 2560px) {
   .mobileSLide {
     display: none;
@@ -196,11 +186,11 @@
     height: 100vh;
 
     position: relative;
-    background: url('../../../public/images/banner.png');
+    background: url("../../../public/images/banner.png");
     background-size: 80vw 80%;
     background-position: right top;
     background-repeat: no-repeat;
-    font-family: 'Montserrat-Regular';
+    font-family: "Montserrat-Regular";
   }
   .carouselItem h1 {
     font-family: FuturaBold;
@@ -260,11 +250,6 @@
   }
 }
 
-
-
-
-
-
 @media screen and (min-width: 767px) and (max-width: 1040px) {
   .mobileSLide {
     display: none;
@@ -276,11 +261,11 @@
     width: 100vw;
     height: 124vh;
     position: relative;
-    background: url('../../../public/images/Guitarist.png');
+    background: url("../../../public/images/Guitarist.png");
     background-size: 100vw 100%;
     background-position: right top;
     background-repeat: no-repeat;
-    font-family: 'Montserrat-Regular';
+    font-family: "Montserrat-Regular";
     background-position-x: 300px;
   }
   .carousleItemTwo {
@@ -289,48 +274,47 @@
     display: flex;
     justify-content: center;
     align-items: end;
-    background: url('../../../public/images/Merch.png');
+    background: url("../../../public/images/Merch.png");
     background-size: 216% 93%;
     background-position: right top;
     background-repeat: no-repeat;
-    font-family: 'Montserrat-Regular';
+    font-family: "Montserrat-Regular";
   }
   .carouselItemThree {
     width: 99vw;
     height: 85vh;
     position: relative;
-    background: url('../../../public/images/creativehaven.png');
+    background: url("../../../public/images/creativehaven.png");
     background-size: 100vw 100%;
     background-position: right top;
     background-repeat: no-repeat;
-    font-family: 'Montserrat-Regular';
+    font-family: "Montserrat-Regular";
   }
   .carouselItemFour {
     width: 100vw;
     height: 85vh;
     position: relative;
-    background: url('../../../public/images/Yoga_River.png');
+    background: url("../../../public/images/Yoga_River.png");
     background-size: 60vw 100%;
     background-position: right top;
     background-repeat: no-repeat;
-    font-family: 'Montserrat-Regular';
+    font-family: "Montserrat-Regular";
   }
 }
-
-
 
 @media (min-width: 640px) and (max-width: 820px) {
   .slider {
     display: none;
   }
 
-  .IpadSLide{
+  .IpadSLide {
     width: 100%;
     height: 120vh;
     display: block;
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
   }
 
   .mobConnectwallbutton {
@@ -350,24 +334,20 @@
     height: 100%;
     background: transparent;
     border: none;
-    font-family: 'Jost', sans-serif !important;
+    font-family: "Jost", sans-serif !important;
     font-size: 16px;
     font-weight: 400;
   }
   .heroMob {
-    position: relative;
+    background: url(../../../public/images/ipad\ header\ png.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: auto;
     width: 100%;
-    height: 105vh;
-    margin-left: 0px;
-    z-index: 2;
   }
-
 }
-
-
-
-
-
 
 @media screen and (max-width: 637px) {
   .mobConnectwallbutton {
@@ -386,10 +366,12 @@
     height: 100%;
     background: transparent;
     border: none;
-    font-family: 'Jost', sans-serif !important;
+    font-family: "Jost", sans-serif !important;
     font-size: 16px;
     font-weight: 400;
   }
+
+
   .mobileSLide {
     width: 100%;
     height: 110vh;
@@ -398,12 +380,16 @@
     flex-direction: column;
     align-items: center;
   }
+
+
   .heroMob {
-    position: relative;
+    background: url(../../../public/images/MobileBanner\ png.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: auto;
     width: 100%;
-    height: 100vh;
-    margin-left: 0px;
-    z-index: 2;
   }
   .slider {
     display: none !important;
@@ -412,7 +398,7 @@
     width: 100%;
   }
   .carouselItem {
-    background: url('../../../public/images/Guitarist.png');
+    background: url("../../../public/images/Guitarist.png");
     background-size: 139% 82%;
     background-position: right top;
     background-repeat: no-repeat;
@@ -445,11 +431,11 @@
     width: 100vw;
     height: 100vh;
     position: relative;
-    background: url('../../../public/images/creativehaven.png');
+    background: url("../../../public/images/creativehaven.png");
     background-size: 150vw 100vh;
     background-position: right top;
     background-repeat: no-repeat;
-    font-family: 'Montserrat-Regular';
+    font-family: "Montserrat-Regular";
   }
   .carouselItemThree h1 {
     font-weight: 600;
@@ -475,11 +461,11 @@
     height: 100vh;
 
     position: relative;
-    background: url('../../../public/images/Yoga_River.png');
+    background: url("../../../public/images/Yoga_River.png");
     background-size: 100vw 80vh;
     background-position: right top;
     background-repeat: no-repeat;
-    font-family: 'Montserrat-Regular';
+    font-family: "Montserrat-Regular";
   }
   .carouselItemFour h1 {
     font-weight: 600;
@@ -505,35 +491,12 @@
     display: flex;
     justify-content: center;
     align-items: end;
-    background: url('../../../public/images/Merch.png');
+    background: url("../../../public/images/Merch.png");
     background-size: 400% 90%;
     background-position: right top;
     background-repeat: no-repeat;
-    font-family: 'Montserrat-Regular';
+    font-family: "Montserrat-Regular";
     background-position-x: -1100px;
   }
 }
 
-
-
-
-@media screen and (max-width: 400px) {
-  .heroMob {
-    position: relative;
-    width: 100%;
-    height: 70vh;
-    margin-left: 0px;
-    z-index: 2;
-  }
-
-  .mobileSLide{
-    height: 85vh;
-  }
-
-  .mobConnectwallbutton{
-    margin-top: 75vh;
-    margin-left: 22%;
-  }
-
-
-}
