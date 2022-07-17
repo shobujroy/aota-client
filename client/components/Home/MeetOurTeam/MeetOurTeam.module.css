@@ -278,7 +278,7 @@
   }
   .meetOurTeamMobile {
     width: 100%;
-    height: 940px;
+    height: 718px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -291,7 +291,7 @@
     line-height: 70px;
     font-family: 'futura-bold';
     text-transform: uppercase;
-    padding-top: 40px;
+    padding-top: 20px;
     font-weight: 600;
     color: #ffffff;
   }
@@ -306,7 +306,7 @@
   }
   .cardSlider {
     width: 90vw;
-    height: 750px;
+    height: 574px;
     background: #1a2a1e;
     margin-left: 5vw;
     display: flex;
@@ -347,10 +347,10 @@
 
 
   .cardSLiderTwo {
-    width: 26vh;
+    width: 16vh;
     height: auto;    
     background: #4a574d;
-    padding: 10px;
+    padding: 18px 8px 12px 8px;
     margin-left: 2.5vw;
     margin-top: 2.5vw;
     margin: auto;

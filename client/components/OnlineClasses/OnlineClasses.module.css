@@ -12,12 +12,14 @@
 
 .OnlineClassesText {
   position: relative;
+  /* display: flex;
+  justify-content: center; */
 }
 
 .OnlineClassesText h2 {
   position: absolute;
-  top: 317px;
-  left: 0px;
+  top: 333px;
+  /* left: 0px; */
   font-size: 56px;
   font-weight: 600;
   font-family: 'futura-bold';
@@ -209,6 +211,11 @@ li .Icon {
 }
 
 /* Media Query for Mobile Devices */
+@media (max-width: 320px) {
+  .OnlineClassesText h2 {
+    text-align: center;
+  }
+}
 @media (max-width: 637px) {
   .OnlineClassesBanner {
     background-position: center;
@@ -265,8 +272,8 @@ li .Icon {
   .OnlineClassesText h2 {
     position: absolute;
     top: 250px;
-    left: 10px;
-    font-size: 40px;
+    /* left: 10px; */
+    font-size: 32px;
     font-weight: 600;
     font-family: 'futura-bold';
     text-transform: uppercase;
@@ -355,6 +362,11 @@ li .Icon {
     margin-top: 15px;
     margin-right: 4px;
     margin-left: 4px;
+  }
+  .OnlineClassesText {
+  position: relative;
+  display: flex;
+  justify-content: center;
   }
 }
 
