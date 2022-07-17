@@ -23,7 +23,7 @@ function ProductCard({ }) {
         <h1 className="text-center fs-3">Public Sale</h1>
         <p className="text-center"><a href='https://testnets.opensea.io/collection/aliens-on-the-ave-v3'>View Collection on OpenSea</a></p>
 
-        <div className='d-flex justify-content-between flex-wrap flex-row pt-5'>
+        <div className={`d-flex justify-content-between flex-wrap flex-row pt-5 ${styles.mobileResp}`}>
           <div className={styles.imageRespn}>
             <div className={styles.imageWrapper}>
               <Image
@@ -35,7 +35,7 @@ function ProductCard({ }) {
             </div>
           </div>
           <div className={`d-flex flex-column justify-content-center align-items-start ps-md-5 ps-sm-2 mt-2 ${ styles.quantityRespon}`}>
-            <div className={`d-flex align-items-center ${ styles.quantityWrapper }`}>
+            <div className={`d-flex align-items-center ${styles.quantityWrapper}`}>
               <span onClick={() => {
                 if (quantity >= 1) {
                   setQuantity(quantity + 1);
