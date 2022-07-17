@@ -293,13 +293,7 @@ function Navbar({ BorderBottom, wallet }) {
               </li>
             </div>
 
-            <button
-              className={`${Styles.MobileButton}`}
-              onClick={connectwallet}
-            >
-              {isConnected ? "Mint" : "Connect Wallet"}
-            </button>
-
+          
             <li className="nav-item">
               <a className={"nav-link " + Styles.navLinkTooo}>
                 {isConnected ? (
