@@ -71,8 +71,28 @@
 
 
 
+
+
+/* Media Query for low resolution  Tablets, Ipads */
+@media (min-width: 640px) and (max-width: 1040px) {
+  .mobileResp{
+    display: grid !important;
+    grid-template-columns: repeat(1, 1fr) !important;
+    gap: 30px !important;
+  }
+}
+
+
+
 /* Media Query for Mobile Devices */
 @media (max-width: 600px) {
+
+.mobileResp{
+  display: grid !important;
+  grid-template-columns: repeat(1, 1fr) !important;
+  gap: 30px !important;
+}
+
   .statusBtn {
     width: 100% !important;
     padding: 10px 30px !important;

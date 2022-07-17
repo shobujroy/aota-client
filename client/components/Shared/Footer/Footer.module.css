@@ -124,6 +124,7 @@
   font-family: 'Jost';
   color: #a3a3a3;
   margin-top: 16px;
+  font-family: 'Montserrat-Regular';
 }
 
 .FooterMain {
@@ -144,4 +145,12 @@
   right: -366px;
   top: -360px;
   z-index: 2;
+}
+
+
+/* Media Query for Mobile Devices */
+@media (max-width: 637px) {
+  .emailInput{
+    width: 170px;
+  }
 }

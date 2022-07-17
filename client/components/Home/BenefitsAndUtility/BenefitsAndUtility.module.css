@@ -23,10 +23,11 @@
   font-weight: 400px;
   color: #766b6b;
   line-height: 20px;
+  font-family: 'Montserrat-Regular';
 }
 .textMainText p {
   font-weight: 200 !important;
-  font-family: sans-serif !important;
+  font-family: 'Montserrat-Regular';
   font-size: 14px !important;
   letter-spacing: 1px !important;
   color: #766b6b !important;
@@ -52,7 +53,7 @@
 .textCard p {
   color: #484848;
   font-weight: 500;
-  font-family: 'Jost';
+  font-family: 'Montserrat-Regular';
   font-size: 16px;
   line-height: 20px;
   width: 460px;
