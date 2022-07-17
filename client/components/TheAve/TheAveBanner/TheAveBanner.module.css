@@ -52,12 +52,26 @@
 
 
 .PhotoOne {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   margin-left: 10px;
+  background: url(../../../public/images/Frame\ 176.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: right top;
+  height: 320px;
+  width: 100%;
 }
 
 .PhotoTwo {
   margin-left: 10px;
+  background: url(../../../public/images/Frame\ 175.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: right top;
+  height: 320px;
+  width: 100%;
 }
 
 .TheAve .TheAveText h1 {
@@ -252,6 +266,7 @@
     top: 50%;
   }
 
+ 
 
   .CoWorkingImage {
     width: 100%;
@@ -311,9 +326,16 @@
 
   .AveBannerImage {
     width: 100%;
-    height: 350px;
+    height: auto;
+    text-align: center;
   }
 
+
+  .AveBannerImage  img{
+    height: 250px !important;
+    text-align: center;
+    padding: 10px 0px !important;
+  }
   .AvePhoto {
     width: 196px !important;
     height: 118px !important;
@@ -326,17 +348,19 @@
 
   .AveBannerPhoto {
     display: flex;
-    margin-top: 70px;
+    margin-top: 20px;
+    width: 100%;
   }
 
 
-  .PhotoOne img{
-    height: auto !important;
+  .PhotoOne {
+    height: 120px !important;
     width: 100%!important;
+    margin: 0px !important;
   }
 
-  .PhotoTwo img{
-    height: auto !important;
+  .PhotoTwo{
+    height: 120px !important;
     width: 100%!important;
   }
 
@@ -508,12 +532,16 @@
   }
 
   .AveBannerImage {
-    width: 50%;
-    height: 350px;
+    width: 100%;
+    height: auto;
+    text-align: center;
   }
 
   .AveBannerPhoto {
     margin-bottom: 30px;
+    width: 100% !important;
+    display: flex !important;
+    margin-top: 30px;
   }
 
   .yoga {
@@ -631,6 +659,24 @@
   .CoWorking {
     margin: 0 auto !important;
     margin-bottom: 50px !important;
+  }
+
+
+  .PhotoOne{
+    width: 50% !important;
+    height: 200px;
+    margin: 0px !important;
+  }
+
+  .PhotoTwo{
+    width: 50% !important;
+    height: 200px;
+  }
+
+
+
+  .AveBannerImage  img{
+    height: 250px !important;
   }
 
   /* .CoWorkingImage {

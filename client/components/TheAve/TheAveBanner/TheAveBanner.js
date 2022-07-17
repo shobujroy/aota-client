@@ -15,24 +15,16 @@ const TheAveBanner = () => {
             <p>CREATIVE HAVEN - Y0GA - MEDITATION - COMMON SPACE</p>
 
             <div className="row">
-              <div className={`col-md-6 col-sm-12 ${styles.AveBannerImage}`}>
+              <div className={`col-md-12 col-sm-12  col-lg-6 ${styles.AveBannerImage}`}>
                 <Image width={750} height={700} src={"/images/Frame 174.png"} />
               </div>
 
-              <div className={`col-md-6 ${styles.AveBannerPhoto}`}>
+              <div className={`col-md-12 col-lg-6 ${styles.AveBannerPhoto}`}>
                 <div className={`${styles.PhotoOne}`}>
-                <Image
-                    width={550}
-                    height={300}
-                    src={"/images/Frame 176.png"}
-                  /> 
+                
                 </div>
                 <div className={styles.PhotoTwo}>
-                  <Image
-                  width={550}
-                  height={300}
-                  src={"/images/Frame 175.png"}
-                />
+                  
                 </div>
               </div>
             </div>
@@ -88,6 +80,7 @@ const TheAveBanner = () => {
              
               </div>
               </Link>
+
               <Link href={"/coching"}>
               <div className={styles.AveThePhoto}>
               <Image width={675} height={276}  src={"/images/Merch.png"} className={styles.aveImages}/>

@@ -223,6 +223,7 @@
     left: 0px !important;
     z-index: 2 !important;
     text-align: center !important;
+    width: 100%;
   }
 
   .HomeImg img {
