@@ -245,7 +245,7 @@
 @media screen and (max-width: 637px) {
 
   .AvePhoto  img{
-    height: 110px !important;
+    height: 130px !important;
   }
   .AveTextOne {
     left: 50%;
@@ -349,8 +349,12 @@
   }
 
   .TheAveImage img {
-    width: 414px !important;
-    height: 328px !important;
+    /* width: 414px !important;
+    height: 328px !important; */
+    width: 305px !important;
+    height: 291px !important;
+    min-height: 0%;
+    margin-left: -20px !important;
   }
 
   .TheAvePhoto {
@@ -376,8 +380,8 @@
   }
 
   .AveThePhoto img {
-    height: 110px !important;
-    width: 400px !important;
+    height: 130px!important;
+    width: 100% !important;
   }
 
   .AvePhotoText h1 {
@@ -388,11 +392,14 @@
     flex-direction: column-reverse;
     width: 100%;
     display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .CoWorkingImage img {
-    width: 326px !important;
-    height: 450px !important;
+    width: 100% !important;
+    height: 100% !important;
+    margin-left: -30px !important;
   }
 
   .CoWorkingPart {
@@ -408,14 +415,14 @@
     line-height: 40px;
     font-family: 'Montserrat-Regular';
     color: #ffffff;
-    width: 365px;
+    width: 100%;
     margin: 0px;
-    padding: 20px 20px;
+    padding: 20px 0px;
   }
 
   .CoWorkingPart .Pasicon {
     text-align: left;
-    margin-left: 300px;
+    margin-left: 235px;
     height: 25px;
     width: 30px;
     margin-bottom: 20px;
@@ -448,9 +455,10 @@
     margin-left: 0px !important;
   }
 
+  .CoWorkingPart p {
+    
+}
 
-
- 
 }
 
 
@@ -458,7 +466,7 @@
 /* Media Query for Mobile Devices */
 @media screen and (max-width: 320px) {
   .CoWorkingPart .Pasicon {
-    margin-left: 250px  !important;
+    margin-left: 222px !important;
   }
   .CoWorkingPart p{
     width: 270px !important;
@@ -467,10 +475,14 @@
   .TheAveText p{
     width: 290px !important;
   }
+  .CoWorkingPart {
+  width: 87%;
+}
 
 }
 
 /* Media Query for low resolution  Tablets, Ipads */
+
 @media (min-width: 640px) and (max-width: 1040px) {
 
   .AvePhoto  img{
@@ -613,7 +625,9 @@
   }
 
   .CoWorkingImage img {
-    height: 270px !important;
+    /* height: 270px !important; */
+    height: 100% !important;
+    width: 100% !important;
   }
 
   .CoWorking {
@@ -621,13 +635,40 @@
     margin-bottom: 50px !important;
   }
 
-  .CoWorkingImage {
-    width: 25%;
-    height: 294px;
+  /* .CoWorkingImage {
+    width: 40%;
+    height: 302px;
     margin-top: 0px;
     overflow: hidden;
+    margin-left: -46px;
+  } */
+}
+
+@media (min-width: 456px) and (max-width: 768px){
+  .CoWorkingImage {
+    width: 40%;
+    height: 302px;
+    margin-top: 0px;
+    overflow: hidden;
+    margin-left: -46px;
   }
 }
+
+@media (min-width: 769px) and (max-width: 1040px){
+  .CoWorkingImage {
+    width: 30%;
+    height: 302px;
+    margin-top: 0px;
+    overflow: hidden;
+    margin-left: 0px;
+  }
+   .TheAveImage img {
+    /* width: 414px !important;
+    height: 328px !important; */
+    /* width: 312px !important;
+    height: 260px !important; */
+  }
+} 
 
 /* 
 @media (min-width: 1041px) and (max-width: 1479px) {
