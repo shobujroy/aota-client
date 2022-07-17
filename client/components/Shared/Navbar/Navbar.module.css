@@ -190,7 +190,7 @@
   }
 
   .NavbarItam ul .connectWalletBtn {
-    display: none;
+    display: block;
   }
 
   .LogoImage {
