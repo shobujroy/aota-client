@@ -25,7 +25,7 @@
   margin: 0 auto;
 }
 
-.connectWalletBtn {
+.connectWalletBtns {
   background: #75ba87;
   color: #1a1a1a;
   padding: 11px 0px;
@@ -131,8 +131,14 @@
   } */
 }
 
+
+
+
+
 /* Media Query for Mobile Devices */
 @media (max-width: 600px) {
+ 
+
   .MobileLogoButton {
     display: block;
     display: flex;
@@ -208,7 +214,7 @@
     display: block;
     display: flex;
     height: 30px !important;
-  }
+  } 
 
   .menuAll {
     display: block !important;
@@ -318,11 +324,22 @@
   .SocailMedIcon li {
     margin-left: 0px !important;
   }
+
+ 
+
+  
+ 
 }
 
 
 
-
+@media (min-width: 1070px) and (max-width: 1350px) {
+  .menuAll {
+    display: flex !important;
+    width: 100% !important;
+    justify-content: end !important;
+  }
+}
 
 
 /* Media Query for low resolution  Tablets, Ipads */

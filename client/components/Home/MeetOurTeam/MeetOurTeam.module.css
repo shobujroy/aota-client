@@ -751,3 +751,15 @@ margin-right: -23px;
     display: none !important;
   }
 }
+
+
+
+
+@media (min-width: 1030px) and (max-width: 1200px) {
+  .RoadMapSlider {
+    width: 90%;
+    position: absolute;
+    right: 0;
+    
+  }
+}

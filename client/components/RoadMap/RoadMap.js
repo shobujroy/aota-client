@@ -32,12 +32,7 @@ const RoadMap = () => {
               className={`col-lg-6 col-md-12 col-sm-12 ${styles.MapWrapper}`}
             >
               <div className={styles.imageWrapper}>
-                <Image
-                  src={"/images/Crystal.png"}
-                  width={700}
-                  height={567}
-                  className={`img-fit img-fluid ${styles.image}`}
-                />
+                
               </div>
             </div>
           </div>

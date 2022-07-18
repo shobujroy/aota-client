@@ -21,7 +21,7 @@ function Collection() {
             <i className="fa-solid fa-arrow-left-long me-2"></i>
              <Link  href={"/"} >Back</Link>  
           </h6>
-          <h1 className="fw-bold">Collection</h1>
+          <h1 style={{color: "#FFFFFF"}} className="fw-bold">Collection</h1>
           <div className="mt-3 d-flex justify-content-between flex-wrap justify-content-sm-center">
             {collection.map((item, index) => {
               return <NFTcard api={item} />;

@@ -298,14 +298,14 @@ function Navbar({ BorderBottom, wallet }) {
               <a className={"nav-link " + Styles.navLinkTooo}>
                 {isConnected ? (
                   <Link href={"/public-sale"}>
-                    <button className={`${Styles.connectWalletBtn}`}>
+                    <button className={`${Styles.connectWalletBtns}`}>
                       MINT
                     </button>
                   </Link>
                 ) : (
                   <button
                     onClick={() => connectwallet()}
-                    className={`${Styles.connectWalletBtn}`}
+                    className={`${Styles.connectWalletBtns}`}
                   >
                     CONNECT WALLET
                   </button>
