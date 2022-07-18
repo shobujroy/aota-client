@@ -153,10 +153,6 @@
 
 /* Media Query for Mobile Devices */
 @media (max-width: 600px) {
-<<<<<<< HEAD
- 
-=======
->>>>>>> 7fa746ddbd74b559110199d39a074573c67a94dd
 
   .MobileLogoButton {
     display: block;

@@ -305,22 +305,14 @@ function Navbar({ BorderBottom, wallet }) {
               <a className={"nav-link " + Styles.navLinkTooo}>
                 {isConnected ? (
                   <Link href={"/public-sale"}>
-<<<<<<< HEAD
-                    <button className={`${Styles.connectWalletBtns}`}>
-=======
                     <button className={`${Styles.connectWalletBtnS}`}>
->>>>>>> 7fa746ddbd74b559110199d39a074573c67a94dd
                       MINT
                     </button>
                   </Link>
                 ) : (
                   <button
                     onClick={() => connectwallet()}
-<<<<<<< HEAD
-                    className={`${Styles.connectWalletBtns}`}
-=======
                     className={`${Styles.connectWalletBtnS}`}
->>>>>>> 7fa746ddbd74b559110199d39a074573c67a94dd
                   >
                     CONNECT WALLET
                   </button>
