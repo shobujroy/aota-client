@@ -233,6 +233,7 @@
   }
   .NavbarItam ul .connectWalletBtnS {
     display: block;
+    width: 150px;
   }
   .navLinkTooo{
     display: block;
@@ -353,7 +354,7 @@
 
   .menuAll {
     display: flex !important;
-    width: 400px !important;
+    width: 590px !important;
     margin-top: 0px !important;
   }
 
