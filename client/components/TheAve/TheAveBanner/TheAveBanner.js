@@ -55,7 +55,7 @@ const TheAveBanner = () => {
           <div className="row">
           <Link href={"/creativehaven"}>
             <div className={`col-md-6 col-lg-6 col-sm-12 h-full ${styles.TheAveImage}`}>
-              <Image width={675} height={540}  src={"/images/creativehaven.png"} className={styles.aveImages}/>
+             
 
               <div className={styles.AveTextOne}>
                 
@@ -69,7 +69,7 @@ const TheAveBanner = () => {
               
             <Link href={"/onlineclasses"}>
               <div className={styles.AvePhoto}>
-              <Image width={350} height={276}  src={"/images/Yoga_River.png"} className={styles.aveImages}/>
+             
                 {/* <div className={styles.yoga}>                 
                 </div> */}
                 <div className={styles.AveTextOne}>
@@ -83,7 +83,7 @@ const TheAveBanner = () => {
 
               <Link href={"/coching"}>
               <div className={styles.AveThePhoto}>
-              <Image width={675} height={276}  src={"/images/Merch.png"} className={styles.aveImages}/>
+            
                 {/* <div className={styles.yoga}>                 
                 </div> */}
                 <div className={styles.AveTextOne}>
