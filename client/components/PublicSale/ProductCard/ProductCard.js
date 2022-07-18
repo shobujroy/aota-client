@@ -34,7 +34,7 @@ function ProductCard({ }) {
                 className='img-fit rounded-3' />
             </div>
           </div>
-          <div className={`d-flex flex-column justify-content-center align-items-start ps-md-5 ps-sm-2 mt-2 ${ styles.quantityRespon}`}>
+          <div className={`d-flex flex-column justify-content-center align-items-start mt-2 ${styles.quantityRespon}`}>
             <div className={`d-flex align-items-center ${styles.quantityWrapper}`}>
               <span onClick={() => {
                 if (quantity >= 1) {
@@ -50,14 +50,14 @@ function ProductCard({ }) {
             </div>
             <h5 className='fw-bold mt-3'>Total</h5>
             <h3 className='fw-bold fs-2'> {quantity * pubPrice} ETH</h3>
-            {isConnected ? <button className={`btn ${ styles.mintBtn }`} onClick={() => pubMint(quantity)}>MINT</button>
+            {isConnected ? <button className={`btn ${styles.mintBtn}`} onClick={() => pubMint(quantity)}>MINT</button>
               : "Please connect wallet"}
           </div>
 
 
         </div>
         <div className="mt-5">
-          <button className={`btn ${ styles.statusBtn }`}>Status Minting</button>
+          <button className={`btn ${styles.statusBtn}`}>Status Minting</button>
           {/* <p className={styles.statusBar}>{trxHash.slice(0, 30)} <br /> {trxHash.slice(31, 150)}</p> */}
         </div>
       </div></>

@@ -15,15 +15,14 @@ function Navbar({ BorderBottom, wallet }) {
   const { connectwallet, disconnectwallet, isConnected, hasMetamask, sign } =
     useContext(MintContext);
 
-  useEffect(() => {}, [isConnected, hasMetamask]);
+  useEffect(() => { }, [isConnected, hasMetamask]);
   const router = useRouter();
   const [active, setActive] = useState(null);
   return (
     <nav
       style={{ display: "block", padding: "20px 20px" }}
-      className={`navbar navbar-expand-lg fn-Montserrat-Regular ${
-        wallet ? "navbar-light" : "navbar-dark"
-      } bg-primary pb-3`}
+      className={`navbar navbar-expand-lg fn-Montserrat-Regular ${wallet ? "navbar-light" : "navbar-dark"
+        } bg-primary pb-3`}
     >
       <div className={`${wallet}  ${BorderBottom && Styles.BorderBottom}`}>
         <div className={Styles.MobileLogoButton}>
@@ -84,7 +83,7 @@ function Navbar({ BorderBottom, wallet }) {
                 </Link>
                 {sign === "0x0D8444f2d3f93AB117392d461e84D22F2A638C12" && (
                   <Link href={"/withdraw"}>
-                    <li className="nav-item ms-md-4">
+                    <li className="nav-item ms-md-4 " >
                       <a
                         className={"nav-link " + Styles.navLink}
                         aria-current="page"
@@ -96,26 +95,28 @@ function Navbar({ BorderBottom, wallet }) {
                   </Link>
                 )}
                 <li className="nav-item ms-md-4">
-                  <p className="pt-2 fw-bold">{sign}</p>
+                  <p className="pt-2 fw-bold" style={{ overflow: "hidden", wordWrap: "break-word", marginRight: "8px" }}>{sign}</p>
                 </li>
                 <li className="nav-item ms-md-4">
-                  {isConnected ? (
+                  {isConnected && (
                     <button
                       className={"btn " + Styles.connectWalletBtn}
                       onClick={() => disconnectwallet()}
                       aria-current="page"
                       href="#"
                     >
-                      Disonnect Wallet
+                      Disconnect Wallet
                     </button>
-                  ) : (
-                    <button
-                      className={"btn " + Styles.connectWalletBtn}
-                      onClick={() => connectwallet()}
-                    >
-                      Connect Wallet
-                    </button>
-                  )}
+                  )
+                    // : (
+                    //   <button
+                    //     className={"btn " + Styles.connectWalletBtn}
+                    //     onClick={() => connectwallet()}
+                    //   >
+                    //     Connect Wallet
+                    //   </button>
+                    // )
+                  }
                 </li>
               </>
             ) : (
@@ -293,19 +294,33 @@ function Navbar({ BorderBottom, wallet }) {
               </li>
             </div>
 
-          
+            {/* <button
+              className={`${Styles.MobileButton}`}
+              onClick={connectwallet}
+            >
+              {isConnected ? "Mint" : "Connect Wallet"}
+            </button> */}
+
             <li className="nav-item">
               <a className={"nav-link " + Styles.navLinkTooo}>
                 {isConnected ? (
                   <Link href={"/public-sale"}>
+<<<<<<< HEAD
                     <button className={`${Styles.connectWalletBtns}`}>
+=======
+                    <button className={`${Styles.connectWalletBtnS}`}>
+>>>>>>> 7fa746ddbd74b559110199d39a074573c67a94dd
                       MINT
                     </button>
                   </Link>
                 ) : (
                   <button
                     onClick={() => connectwallet()}
+<<<<<<< HEAD
                     className={`${Styles.connectWalletBtns}`}
+=======
+                    className={`${Styles.connectWalletBtnS}`}
+>>>>>>> 7fa746ddbd74b559110199d39a074573c67a94dd
                   >
                     CONNECT WALLET
                   </button>
