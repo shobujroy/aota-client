@@ -86,7 +86,7 @@ const GalleryMain = () => {
                   </div>
 
                   <div className={Styles.plusIcon} onClick={() => toggle(i)}>
-                    {modalOpen === i ? (
+                    {/* {modalOpen === i ? (
                       <Image
                         src={"/images/x.svg"}
                         layout="fill"
@@ -100,17 +100,17 @@ const GalleryMain = () => {
                         objectFit="cover"
                         alt=""
                       ></Image>
-                    )}
+                    )} */}
                   </div>
                 </div>
 
-                {modalOpen === i ? (
+                {/* {modalOpen === i ? (
                   <div className={Styles.options}>
                     {data.options.map((option) => {
                       return <p>{option}</p>;
                     })}
                   </div>
-                ) : null}
+                ) : null} */}
               </>
             );
           })}

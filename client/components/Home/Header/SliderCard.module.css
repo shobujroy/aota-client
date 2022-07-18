@@ -1,11 +1,8 @@
 @font-face {
-  font-family: FuturaBold;
-  src: url("../../../public/fonts/futura/futura\ medium\ condensed\ bt.ttf");
-}
-@font-face {
   font-family: FuturaLight;
   src: url("../../../public/fonts/futura/Futura\ Light\ font.ttf");
 }
+
 .mobileSLide {
   display: none;
 }
@@ -29,10 +26,10 @@
   font-family: "Montserrat-Regular";
 }
 .carouselItem h1 {
-  font-family: FuturaBold;
+  font-family: 'futura-bold';
   text-transform: uppercase;
   font-weight: 600;
-  font-size: 72px;
+  font-size: 52px;
   color: #e3f1e7;
   position: absolute;
   left: 30px;
@@ -73,7 +70,7 @@
 .carousleItemTwo {
   width: 100vw;
   height: 100vh;
-
+  margin-top: -50px;
   display: flex;
   justify-content: center;
   align-items: end;
@@ -96,12 +93,11 @@
   background: #e2dd96;
 }
 .carousleItemTwo h1 {
-  font-family: FuturaBold;
+  font-family: 'futura-bold';;
   text-transform: uppercase;
   font-weight: 600;
-  font-size: 72px;
+  font-size: 52px;
   color: #e3f1e7;
-
   left: 230px;
   top: 40px;
   text-align: center;
@@ -115,7 +111,7 @@
 .carouselItemThree {
   width: 100vw;
   height: 100vh;
-
+  margin-top: -50px;
   position: relative;
   background: url("../../../public/images/creativehaven.png");
   background-size: 60vw 100vh;
@@ -125,10 +121,10 @@
 }
 
 .carouselItemThree h1 {
-  font-family: FuturaBold;
+  font-family: 'futura-bold';
   text-transform: uppercase;
   font-weight: 600;
-  font-size: 72px;
+  font-size: 52px;
   color: #e3f1e7;
   position: absolute;
   left: 30px;
@@ -146,20 +142,20 @@
 .carouselItemFour {
   width: 100vw;
   height: 100vh;
-
   position: relative;
   background: url("../../../public/images/Yoga_River.png");
   background-size: 60vw 100vh;
   background-position: right top;
   background-repeat: no-repeat;
   font-family: "Montserrat-Regular";
+  margin-top: -50px;
 }
 
 .carouselItemFour h1 {
-  font-family: FuturaBold;
+  font-family: 'futura-bold';
   text-transform: uppercase;
   font-weight: 600;
-  font-size: 72px;
+  font-size: 52px;
   color: #e3f1e7;
   position: absolute;
   left: 30px;
@@ -193,10 +189,10 @@
     font-family: "Montserrat-Regular";
   }
   .carouselItem h1 {
-    font-family: FuturaBold;
+    font-family: 'futura-bold';
     text-transform: uppercase;
     font-weight: 600;
-    font-size: 72px;
+    font-size: 52px;
     color: #e3f1e7;
     position: absolute;
     left: 30px;
@@ -206,12 +202,11 @@
     top: 450px;
   }
   .carousleItemTwo h1 {
-    font-family: FuturaBold;
+    font-family: 'futura-bold';
     text-transform: uppercase;
     font-weight: 600;
-    font-size: 72px;
+    font-size: 52px;
     color: #e3f1e7;
-
     left: 230px;
     top: 280px;
     text-align: center;
@@ -220,10 +215,10 @@
     top: 450px;
   }
   .carouselItemThree h1 {
-    font-family: FuturaBold;
+    font-family: 'futura-bold';
     text-transform: uppercase;
     font-weight: 600;
-    font-size: 72px;
+    font-size: 52px;
     color: #e3f1e7;
     position: absolute;
     left: 30px;
@@ -233,17 +228,17 @@
     top: 450px;
   }
   .carouselItemFour h1 {
-    font-family: FuturaBold;
+    font-family: 'futura-bold';
     text-transform: uppercase;
     font-weight: 600;
-    font-size: 72px;
+    font-size: 52px;
     color: #e3f1e7;
     position: absolute;
     left: 30px;
     top: 280px;
   }
   .carouselItemFour p {
-    top: 450px;
+    top: 370px;
   }
   .carousleButton {
     top: 500px;
@@ -299,6 +294,19 @@
     background-position: right top;
     background-repeat: no-repeat;
     font-family: "Montserrat-Regular";
+  }
+
+
+  .carouselItem p{
+    top: 200px;
+  }
+
+  .carouselItemThree p{
+    top: 200px;
+  }
+
+  .carouselItemFour p {
+    top: 150px;
   }
 }
 

@@ -56,11 +56,11 @@ const FaqAota = () => {
           <div className={`col-md-5 ${styles.FaqPrime}`}>
            
             <h1>FAQ</h1>
-            <h3>Prime AOTA NFT’s</h3>
-            <p>
+            {/* <h3>FAQ</h3> */}
+            {/* <p>
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been.
-            </p>
+            </p> */}
           </div>
 
           <div className="col-md-7">

@@ -3,7 +3,7 @@
   padding: 50px 0px 0px;
 }
 
-.AveBannerText h1 {
+.AveBannerText h3 {
   font-size: 48px;
   font-weight: 500;
   font-family: 'futura-bold';
@@ -84,7 +84,7 @@
   font-size: 24px;
   font-weight: 500;
   line-height: 30px;
-  color: #75ba87;
+  color: #ffff;
   font-family: 'futura-bold';
   text-transform: uppercase;
 }
@@ -104,11 +104,9 @@
 .TheAveText p {
   font-size: 17px;
   font-weight: 400;
-  line-height: 22px;
+  line-height: 18px;
   color: #a3a3a3;
-  font-family: 'Jost';
-  width: 1200px !important;
-  margin-bottom: 60px;
+  font-family: 'Montserrat-Regular';
 }
 
 .TheAveImage {
@@ -303,7 +301,8 @@
   opacity: 1 !important;
  }
 .AveTextOne h1{
-  opacity: 0.6;
+  opacity: 1;
+  color: #75ba87;
 }
 /* Media Query for Mobile Devices */
 @media screen and (max-width: 637px) {
@@ -326,6 +325,7 @@
 
   .AveTextOne h1 {
     font-size: 13px;
+    color: #75ba87;
   }
 
   .TheAvePhoto {
@@ -623,12 +623,11 @@
   }
 
   .TheAveText p {
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 20px;
-    font-family: 'Jost';
-    width: 700px !important;
-    margin-bottom: 40px;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 18px;
+    color: #a3a3a3;
+    font-family: 'Montserrat-Regular';
   }
 
   .TheAveImage {
@@ -677,6 +676,7 @@
     font-size: 34px !important;
     width: 270px;
     font-family: 'futura-bold';
+    color: #75ba87;
   }
 
   .row {
@@ -836,12 +836,12 @@
   }
 
   .TheAveText p {
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 20px;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 18px;
+    color: #a3a3a3;    
     font-family: 'Montserrat-Regular';
-    width: 700px;
-    margin-bottom: 40px;
+    
   }
 
   .TheAveImage {
@@ -860,6 +860,7 @@
   .TheAveImage .AveTextOne h1 {
     font-size: 34px !important;
     margin-top: 150px;
+    color: #75ba87;
   }
 
   .row {
