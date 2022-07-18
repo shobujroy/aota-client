@@ -25,7 +25,7 @@ const RoadMap = () => {
             <div
               className={`col-lg-6 col-md-12 col-sm-12 ${styles.RoadWrapper}`}
             >
-              <h1>ROADMAP TO THE MOON</h1>
+              <h1>ROADMAP</h1>
             </div>
 
             <div
@@ -48,13 +48,13 @@ const RoadMap = () => {
               <li>Whitelist Price 0.07 ETH</li>
               <li>Public Price 0.09 ETH</li>
               <div className={styles.numbers}>
-                <p
+                <h3
                   className={
                     number == 1 ? styles.numberStyle : styles.numberStyleTwo
                   }
                 >
                   1
-                </p>
+                </h3>
               </div>
               <Image src={"/images/Phase_1.png"} width={162} height={72} />
             </div>
@@ -70,13 +70,13 @@ const RoadMap = () => {
               />
 
               <div className={styles.numbers}>
-                <p
+                <h3
                   className={
                     number == 2 ? styles.numberStyle : styles.numberStyleTwo
                   }
                 >
                   2
-                </p>
+                </h3>
               </div>
               <h2>Establish Communication</h2>
               <li>Develop Storyline</li>
@@ -90,13 +90,13 @@ const RoadMap = () => {
               <li>Airdrop 2</li>
 
               <div className={styles.numbers}>
-                <p
+                <h3
                   className={
                     number == 3 ? styles.numberStyle : styles.numberStyleTwo
                   }
                 >
                   3
-                </p>
+                </h3>
               </div>
               <Image src={"/images/Phase_3.png"} width={162} height={72} />
             </div>
@@ -112,13 +112,13 @@ const RoadMap = () => {
               />
 
               <div className={styles.numbers}>
-                <p
+                <h3
                   className={
                     number == 4 ? styles.numberStyle : styles.numberStyleTwo
                   }
                 >
                   4
-                </p>
+                </h3>
               </div>
 
               <h2>Co-Exist</h2>
@@ -131,13 +131,13 @@ const RoadMap = () => {
               <li>Introduce AOTA vol.2</li>
               <li>Givepower Trek: Kenya 2023</li>
               <div className={styles.numbers}>
-                <p
+                <h3
                   className={
                     number == 5 ? styles.numberStyle : styles.numberStyleTwo
                   }
                 >
                   5
-                </p>
+                </h3>
               </div>
               <Image src={"/images/Phase_5.png"} width={162} height={72} />
             </div>
@@ -153,13 +153,13 @@ const RoadMap = () => {
               />
 
               <div className={styles.numbers}>
-                <p
+                <h3
                   className={
                     number == 6 ? styles.numberStyle : styles.numberStyleTwo
                   }
                 >
                   6
-                </p>
+                </h3>
               </div>
               <h2>Adancements</h2>
               <li>Develop Metaverse Avatars</li>

@@ -10,10 +10,12 @@ const PerksUtility = () => {
           <div className={`col-lg-12 col-sm-12 col-md-12 ${styles.Perks}`}>
             <h1> Perks &#38; Utility</h1>
             <p>
-              When you buy an AOTA. You’re not Simply buying a rare pice of Art.
-              You’re gaining membership access to the Aotaverse with the
-              following benefits. Additonally you helping you us plant threes,
-              providing water, &#38; Enegy to regions all over the world.
+            
+
+When you buy an AOTA. You’re not Simply buying a rare pice of Art. You’re gaining 
+membership access to the Aotaverse with the following benefits. Additonally you are 
+helping to plant trees, provide water, &amp; enegy to regions all over the world."
+
             </p>
 
             <div className={styles.PerksCards}>

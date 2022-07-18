@@ -53,7 +53,7 @@
 }
 
 .navLinkActive {
-  font-family: 'Jost', sans-serif !important;
+  font-family: "Montserrat-Regular";
   font-weight: 400;
   font-style: normal;
   font-size: 16px;
@@ -62,7 +62,6 @@
   transition: 0.5s;
   text-transform: uppercase;
   height: 55px;
-
   display: flex;
   align-items: center;
 }
@@ -131,9 +130,9 @@
   font-weight: 200;
   font-family: 'Jost', sans-serif !important;
   font-size: 16px;
-  width: 158px;;
-  height: 70px;
-  margin-top: 5px;
+  width: 160px;
+  height: 55px;
+  margin-top: 0px;
   text-transform: uppercase;
 }
 

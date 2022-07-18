@@ -15,7 +15,7 @@
 }
 .mainFestoHeroRight {
   width: 575px;
-  height: 384px;
+  height: auto;
 }
 .mainFestoHeroRight h6 {
   font-family: 'Montserrat-Medium';
