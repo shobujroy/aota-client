@@ -49,7 +49,7 @@ function ProductCard({ }) {
               }}><i className="fa-solid fa-minus"></i></span>
             </div>
             <h5 className='fw-bold mt-3'>Total</h5>
-            <h3 className='fw-bold fs-2'> {quantity * pubPrice} ETH</h3>
+            <h3 className='fw-bold fs-2'> {(quantity * pubPrice)?.toFixed(4) } ETH</h3>
             {isConnected ? <button className={`btn ${styles.mintBtn}`} onClick={() => pubMint(quantity)}>MINT</button>
               : "Please connect wallet"}
           </div>

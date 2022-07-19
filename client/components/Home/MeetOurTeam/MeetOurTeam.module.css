@@ -52,7 +52,7 @@
   font-size: 18px;
   line-height: 23px;
   font-weight: 400;
-  font-family: 'Jost';
+  font-family: 'Montserrat-Regular';
 }
 
 .MemberCardText p {
@@ -159,7 +159,7 @@
   text-align: center;
   margin: auto;
   font-size: 14px;
-  font-family: 'Jost';
+  font-family: 'Montserrat-Regular';
   font-weight: 400;
   line-height: 17px;
   width: 100px;
@@ -168,7 +168,7 @@
 .CarouselItam h3 {
   font-size: 16px;
   font-weight: 400;
-  font-family: 'Jost';
+  font-family: 'Montserrat-Regular';
   color: #ffffff;
   line-height: 23px;
   text-align: center;
@@ -241,7 +241,7 @@
   cursor: pointer;
 }
 .teamMemberContainer h3 {
-  font-family: 'Jost';
+  font-family: 'Montserrat-Regular';
   color: #ffffff;
   font-weight: 400;
   font-size: 16px;
@@ -253,7 +253,7 @@
   font-size: 12px;
   color: #a3a3a3;
   text-align: center;
-  font-family: 'Jost';
+  font-family: 'Montserrat-Regular';
 }
 
 .carousleItemElementExtra{
@@ -423,7 +423,7 @@
     font-size: 16px !important;
     line-height: 20px !important;
     font-weight: 400 !important;
-    font-family: 'Jost' !important;
+    font-family: 'Montserrat-Regular';
     width: 296px !important;
     margin: auto !important;
     text-align: center !important;
@@ -444,7 +444,7 @@
     text-align: center !important;
     font-size: 16px;
     line-height: 20px;
-    font-family: 'Jost';
+    font-family: 'Montserrat-Regular';
     font-weight: 300 !important;
     color: #fafafa;
     width: 300px !important;
@@ -663,7 +663,7 @@ margin-right: -23px;
     font-size: 16px !important;
     line-height: 20px !important;
     font-weight: 400 !important;
-    font-family: 'Jost' !important;
+    font-family: 'Montserrat-Regular';
     width: 374px !important;
     /* margin: auto !important; */
     text-align: center !important;
@@ -682,7 +682,7 @@ margin-right: -23px;
     text-align: center !important;
     font-size: 16px;
     line-height: 20px;
-    font-family: 'Jost';
+    font-family: 'Montserrat-Regular';
     font-weight: 500;
     color: #fafafa;
     width: 300px !important;

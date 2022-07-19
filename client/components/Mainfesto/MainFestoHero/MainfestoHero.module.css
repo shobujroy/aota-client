@@ -70,13 +70,13 @@
   .mainfestoHero {
     width: 374px;
     flex-direction: column-reverse;
-    height: 120vh;
+    height: 145vh;
     justify-content: start;
   }
   .maiFestoHeroLeft {
     width: 354px;
     height: 384px;
-    margin-top: 30px;
+    margin-top: 215px;
   }
   .mainFestoHeroRight {
     margin-top: 30px;

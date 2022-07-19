@@ -5,12 +5,13 @@
 
 .FaqPrime h1 {
   color: #75ba87;
-  font-size: 24px;
-  font-family: 'Montserrat-Medium';
+  font-size: 56px;
+  font-family: 'futura-bold';
   text-transform: uppercase;
   letter-spacing: 0.2em;
   font-weight: 500;
   line-height: 30px;
+  margin-top: 15px;
 }
 
 .FaqPrime h3 {
