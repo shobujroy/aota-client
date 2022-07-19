@@ -1,0 +1,9 @@
+.text {
+    font-family: 'Montserrat-Regular';
+    color: #fff;
+    cursor: pointer;
+  }
+
+  .text:hover a{
+    color: #fff;
+  }

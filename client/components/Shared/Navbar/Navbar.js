@@ -94,13 +94,16 @@ function Navbar({ BorderBottom, wallet }) {
                     </li>
                   </Link>
                 )}
+               
                 <li className="nav-item ms-md-4">
-                  <p className="pt-2 fw-bold" style={{ overflow: "hidden", wordWrap: "break-word", marginRight: "8px" }}>{sign}</p>
+                {isConnected &&
+                  <p className="pt-2 fw-bold" style={{ overflow: "hidden", wordWrap: "break-word", marginRight: "8px" }}> {sign?.slice(0 , 4)}...{sign?.slice(-4)} </p>
+                }
                 </li>
                 <li className="nav-item ms-md-4">
                   {isConnected && (
                     <button
-                      className={"btn " + Styles.connectWalletBtn}
+                      className={"btn " + Styles.disWalletBtn}
                       onClick={() => disconnectwallet()}
                       aria-current="page"
                       href="#"
