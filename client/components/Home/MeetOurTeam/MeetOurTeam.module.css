@@ -44,7 +44,7 @@
   font-size: 32px;
   line-height: 40px;
   font-weight: 500;
-  font-family: 'Montserrat-Regular';
+  font-family: "Montserrat-Regular";
 }
 
 .MemberCardText h6 {
@@ -52,7 +52,7 @@
   font-size: 18px;
   line-height: 23px;
   font-weight: 400;
-  font-family: 'Montserrat-Regular';
+  font-family: "Montserrat-Regular";
 }
 
 .MemberCardText p {
@@ -60,7 +60,7 @@
   font-size: 16px !important;
   line-height: 20px !important;
   font-weight: 400 !important;
-  font-family: 'Montserrat-Regular' !important;
+  font-family: "Montserrat-Regular" !important;
   width: 440px !important;
   margin: auto !important;
   text-align: center !important;
@@ -75,7 +75,7 @@
   margin-top: 20px;
 }
 
-.meetOurTeamTab{
+.meetOurTeamTab {
   display: none;
 }
 
@@ -89,7 +89,7 @@
   text-align: right;
   font-size: 56px;
   line-height: 70px;
-  font-family: 'futura-bold';
+  font-family: "futura-bold";
   text-transform: uppercase;
   /* margin-bottom: 160px; */
   font-weight: 600;
@@ -100,7 +100,7 @@
   text-align: right;
   font-size: 16px;
   line-height: 20px;
-  font-family: 'Montserrat-Regular';
+  font-family: "Montserrat-Regular";
   font-weight: 500;
   color: #a3a3a3;
   width: 460px;
@@ -159,7 +159,7 @@
   text-align: center;
   margin: auto;
   font-size: 14px;
-  font-family: 'Montserrat-Regular';
+  font-family: "Montserrat-Regular";
   font-weight: 400;
   line-height: 17px;
   width: 100px;
@@ -168,11 +168,11 @@
 .CarouselItam h3 {
   font-size: 16px;
   font-weight: 400;
-  font-family: 'Montserrat-Regular';
+  font-family: "Montserrat-Regular";
   color: #ffffff;
   line-height: 23px;
   text-align: center;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.3em;
 }
 
 .MeetMemberCarousel .SlideIcon {
@@ -225,7 +225,7 @@
   height: 550px;
 
   display: grid;
-  grid-template-columns: repeat(4,1fr);
+  grid-template-columns: repeat(4, 1fr);
   /* gap: 15px; */
   /* flex-wrap: wrap; */
 }
@@ -241,34 +241,31 @@
   cursor: pointer;
 }
 .teamMemberContainer h3 {
-  font-family: 'Montserrat-Regular';
+  font-family: "Montserrat-Regular";
   color: #ffffff;
   font-weight: 400;
   font-size: 16px;
   margin-top: 20px;
   text-align: center;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.3em;
 }
 .teamMemberContainer h4 {
   font-size: 12px;
   color: #a3a3a3;
   text-align: center;
-  font-family: 'Montserrat-Regular';
+  font-family: "Montserrat-Regular";
 }
 
-.carousleItemElementExtra{
+.carousleItemElementExtra {
   display: none;
 }
 
-
 /* Media Query for Mobile Devices */
-@media  (max-width: 390px) {
-  .cardSLiderTwo{
+@media (max-width: 390px) {
+  .cardSLiderTwo {
     height: 26vh;
   }
 }
-
-
 
 /* Media Query for Mobile Devices */
 @media (max-width: 600px) {
@@ -289,7 +286,7 @@
     text-align: center;
     font-size: 56px;
     line-height: 70px;
-    font-family: 'futura-bold';
+    font-family: "futura-bold";
     text-transform: uppercase;
     padding-top: 20px;
     font-weight: 600;
@@ -298,7 +295,7 @@
   .meetOurTeamMobile p {
     font-size: 12px;
     font-weight: 400;
-    font-family: 'Montserrat-Regular';
+    font-family: "Montserrat-Regular";
     line-height: 20px;
     color: #fafafa !important;
     text-align: center;
@@ -314,7 +311,7 @@
     padding: 20px 0px;
   }
   .cardSlider h2 {
-    font-family: 'Montserrat-Medium';
+    font-family: "Montserrat-Medium";
     text-transform: uppercase;
     font-size: 27px;
     color: #ffffff;
@@ -324,7 +321,7 @@
   .meetOurTeamMobile h5 {
     font-size: 20px;
     font-weight: 400;
-    font-family: 'Montserrat-Regular';
+    font-family: "Montserrat-Regular";
     line-height: 20px;
     color: white;
     text-align: center;
@@ -337,18 +334,16 @@
     margin: auto;
   } */
 
-
-  .cardSLiderTwo img{
+  .cardSLiderTwo img {
     height: auto !important;
     width: 100px !important;
     margin: auto !important;
     text-align: center;
   }
 
-
   .cardSLiderTwo {
     width: 16vh;
-    height: auto;    
+    height: auto;
     background: #4a574d;
     padding: 18px 8px 12px 8px;
     margin-left: 2.5vw;
@@ -356,7 +351,6 @@
     margin: auto;
     text-align: center;
   }
-
 
   .teamMemberContainer {
     width: 40%;
@@ -423,7 +417,7 @@
     font-size: 16px !important;
     line-height: 20px !important;
     font-weight: 400 !important;
-    font-family: 'Montserrat-Regular';
+    font-family: "Montserrat-Regular";
     width: 296px !important;
     margin: auto !important;
     text-align: center !important;
@@ -433,7 +427,7 @@
   .MeetMember h1 {
     font-size: 39px;
     line-height: 70px;
-    font-family: 'futura-bold';
+    font-family: "futura-bold";
     font-weight: 600;
     color: #ffffff;
     text-align: center !important
@@ -444,7 +438,7 @@
     text-align: center !important;
     font-size: 16px;
     line-height: 20px;
-    font-family: 'Montserrat-Regular';
+    font-family: "Montserrat-Regular";
     font-weight: 300 !important;
     color: #fafafa;
     width: 300px !important;
@@ -486,14 +480,13 @@
     margin-left: -90px;
     padding: 20px;
   }
-  
 }
 
-@media screen and (min-width: 426px) and (max-width: 769px){
-  .meetOurTeamSliderButtonArea{
+@media screen and (min-width: 426px) and (max-width: 769px) {
+  .meetOurTeamSliderButtonArea {
     /* display: none; */
   }
-  .meetOurTeamTab{
+  .meetOurTeamTab {
     display: block;
   }
   /* .RoadMapSlider{
@@ -501,12 +494,10 @@
   } */
 }
 
-
-
-@media screen and (min-width: 768px) and (max-width: 1039px){
+@media screen and (min-width: 768px) and (max-width: 1039px) {
   .carousleItemElement {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 5px;
     height: 100%;
   }
@@ -516,20 +507,18 @@
     height: 265px;
     cursor: pointer;
   }
-  .meetOurTeamSliderButtonArea{
+  .meetOurTeamSliderButtonArea {
     /* display: none; */
   }
-  .MeetOurTeam{
+  .MeetOurTeam {
     padding: 20px 0px 40px 0px;
   }
-  .meetOurTeamTab{
+  .meetOurTeamTab {
     display: none;
   }
 }
 
-
 @media screen and (min-width: 983px) and (max-width: 1040px) {
-
   .rightArrow {
     position: relative;
     width: 200px;
@@ -547,21 +536,19 @@
     width: 48px;
     height: 48px;
     cursor: pointer;
-    
+
     margin-top: -630px;
     margin-right: -2px;
     margin-left: -15px !important;
-
   }
-  .MeetMemberRight p{
-    padding: 0px 22px
-;
-margin-right: -23px;
+  .MeetMemberRight p {
+    padding: 0px 22px;
+    margin-right: -23px;
   }
-  .teamMemberContainer h4{
+  .teamMemberContainer h4 {
     font-size: 9px;
   }
-  .teamMemberContainer h3{
+  .teamMemberContainer h3 {
     font-size: 13px;
   }
   .RoadMapSlider {
@@ -579,7 +566,7 @@ margin-right: -23px;
   }
   .carousleItemElement {
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(4, 1fr);
     /* gap: 5px; */
     /* flex-wrap: wrap; */
   }
@@ -603,16 +590,13 @@ margin-right: -23px;
   .leftArrow {
     margin-left: 50px;
   }
-  
 }
 
-
-
 @media screen and (min-width: 767px) and (max-width: 983px) {
-  .teamMemberContainer h3{
+  .teamMemberContainer h3 {
     font-size: 13px;
   }
-  .teamImage{
+  .teamImage {
     height: 61%;
   }
   .MemberProfil {
@@ -663,18 +647,19 @@ margin-right: -23px;
     font-size: 16px !important;
     line-height: 20px !important;
     font-weight: 400 !important;
-    font-family: 'Montserrat-Regular';
+    font-family: "Montserrat-Regular";
     width: 374px !important;
     /* margin: auto !important; */
     text-align: center !important;
-    margin-right: 78px !important;padding: 16px 20px;
+    margin-right: 78px !important;
+    padding: 16px 20px;
   }
 
   .MeetMember h1 {
     text-align: right;
     font-size: 35px;
     line-height: 70px;
-    font-family: 'futura-bold';
+    font-family: "futura-bold";
     font-weight: 600;
     color: #ffffff;
   }
@@ -682,7 +667,7 @@ margin-right: -23px;
     text-align: center !important;
     font-size: 16px;
     line-height: 20px;
-    font-family: 'Montserrat-Regular';
+    font-family: "Montserrat-Regular";
     font-weight: 500;
     color: #fafafa;
     width: 300px !important;
@@ -747,19 +732,15 @@ margin-right: -23px;
   .rightArrow {
     margin-left: 990px !important;
   }
-  .meetOurTeamTab{
+  .meetOurTeamTab {
     display: none !important;
   }
 }
-
-
-
 
 @media (min-width: 1030px) and (max-width: 1200px) {
   .RoadMapSlider {
     width: 90%;
     position: absolute;
     right: 0;
-    
   }
 }

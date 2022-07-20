@@ -1,7 +1,6 @@
 .PerksAndUtility {
   background-color: #e8e8ea;
   padding: 0px 0px;
-  
 }
 
 .PerksAndUtility .Perks h1 {
@@ -13,7 +12,7 @@
   justify-content: center;
   line-height: 70px;
   margin-bottom: 20px;
-  font-family: 'futura-bold';
+  font-family: "futura-bold";
   text-transform: uppercase;
 }
 
@@ -22,7 +21,7 @@
   text-align: center;
   font-size: 15px;
   font-weight: 500;
-  font-family: 'Montserrat-Regular';
+  font-family: "Montserrat-Regular";
   line-height: 20px;
   padding: 0px 200px;
 }
@@ -57,8 +56,8 @@
 .CardItam h3 {
   font-size: 20px;
   font-weight: 400;
-  font-family: 'Montserrat-Light';
-  letter-spacing: 0em;
+  font-family: "Montserrat-Light";
+  letter-spacing: 0.3em;
   color: #1a1a1a;
   margin-top: 20px;
   margin-bottom: 16px;
@@ -72,7 +71,7 @@
 
 .Utilitys h1 {
   font-size: 56px;
-  font-family: 'futura-bold';
+  font-family: "futura-bold";
   font-weight: 600;
   line-height: 40px;
   color: #051509;
@@ -94,7 +93,7 @@
 .UtilityText h2 {
   font-size: 32px;
   font-weight: 500;
-  font-family: 'Montserrat-Light';
+  font-family: "Montserrat-Light";
   text-transform: uppercase;
   line-height: 45px;
   color: #051509;
@@ -104,7 +103,7 @@
 .UtilityText p {
   font-size: 16px;
   font-weight: 400;
-  font-family: 'Montserrat-Regular';
+  font-family: "Montserrat-Regular";
   line-height: 20px;
   color: #484848;
 }
@@ -137,7 +136,6 @@
     margin: 0px;
   }
 
-
   .UtilityImage {
     position: relative !important;
     height: 330px !important;
@@ -153,23 +151,18 @@
   .mobileRespon h3 {
     margin-right: 0px;
     text-align: left;
-    letter-spacing: 0.2em;
+    letter-spacing: 0.3em;
   }
-
-
-
 
   .mobileRespon img {
     width: 70px !important;
   }
 
-
-#cardImgTwo {
+  #cardImgTwo {
     padding: 10px !important;
   }
 
-
-  .mobileRespon span{
+  .mobileRespon span {
     display: block;
   }
 
@@ -178,7 +171,7 @@
     text-align: center;
     font-size: 32px;
     font-weight: 600;
-    font-family: 'futura-bold';
+    font-family: "futura-bold";
     line-height: 70px;
     margin-bottom: 0px;
   }
@@ -197,7 +190,7 @@
 
   .Utilitys h1 {
     font-size: 24px;
-    font-family: 'futura-bold';
+    font-family: "futura-bold";
     font-weight: 600;
     line-height: -5px;
     color: #051509;
@@ -255,12 +248,9 @@
 
   .CardItam h3 {
     font-size: 13px !important;
-    font-family: 'Montserrat-Regular' !important;
+    font-family: "Montserrat-Regular" !important;
+    letter-spacing: 0.3em;
   }
-
-
-
-  
 }
 
 @media (min-width: 640px) and (max-width: 1040px) {
@@ -295,15 +285,13 @@
     width: 100%;
   }
 
-
-  .HomeImg img{
+  .HomeImg img {
     width: 350px !important;
   }
 
-
   .Utilitys h1 {
     font-size: 50px;
-    font-family: 'futura-bold';
+    font-family: "futura-bold";
     font-weight: 600;
     line-height: 70px;
     color: #051509;
@@ -332,27 +320,23 @@
     justify-content: space-between;
   }
 
-
   .mobileRespon h3 {
     margin-right: 20px;
     text-align: start;
-    letter-spacing: 0.2em;
+    letter-spacing: 0.3em;
   }
 
   .mobileRespon img {
     width: 50px !important;
   }
-  #creativeHeaven{
+  #creativeHeaven {
     /* margin-left: 67px; */
     text-align: start;
   }
-
- 
 }
 
-
 @media screen and (max-width: 770px) {
-  .mobileRespon span{
+  .mobileRespon span {
     display: block;
   }
 }

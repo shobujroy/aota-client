@@ -13,7 +13,7 @@ const FaqAota = () => {
     },
     {
       no: 2,
-      q: "How can I get access to the creative haven?",
+      q: "How can I get access to the Creative Haven?",
       a: "Own an AOTA. ",
       b: "",
     },

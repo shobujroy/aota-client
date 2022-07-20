@@ -6,16 +6,17 @@
 .AveBannerText h3 {
   font-size: 48px;
   font-weight: 500;
-  font-family: 'futura-bold';
+  font-family: "futura-bold";
   text-transform: uppercase;
   line-height: 60px;
   color: #ffffff;
+  letter-spacing: 0.2em;
 }
 
 .AveBannerText p {
   font-size: 16px;
   font-weight: 400;
-  font-family: 'Montserrat-Medium';
+  font-family: "Montserrat-Medium";
   text-transform: uppercase;
 
   line-height: 20px;
@@ -31,12 +32,6 @@
   padding: 0px;
   width: 50%;
 }
-
-
-
-
-
-
 
 /* .TheAvePhoto .AvePhoto .yoga {
   background-image: url('../../../public/images/image 21.png');
@@ -55,7 +50,6 @@
   background-position: center;
   background-repeat: no-repeat;
 } */
-
 
 .PhotoOne {
   margin-bottom: 20px;
@@ -85,7 +79,7 @@
   font-weight: 500;
   line-height: 30px;
   color: #ffff;
-  font-family: 'futura-bold';
+  font-family: "futura-bold";
   text-transform: uppercase;
 }
 
@@ -94,7 +88,7 @@
   font-weight: 500;
   line-height: 30px;
   color: #ffffff;
-  font-family: 'Montserrat-Light';
+  font-family: "Montserrat-Light";
   text-transform: uppercase;
   letter-spacing: 0.2px;
   margin-top: 20px;
@@ -106,7 +100,7 @@
   font-weight: 400;
   line-height: 18px;
   color: #a3a3a3;
-  font-family: 'Montserrat-Regular';
+  font-family: "Montserrat-Regular";
 }
 
 .TheAveImage {
@@ -121,10 +115,7 @@
   margin-top: 50px;
 }
 
-
-
-
-.AvePhoto{
+.AvePhoto {
   position: relative;
   width: 100%;
   background: url(../../../public/images/Yoga_River.png);
@@ -135,8 +126,7 @@
   height: 400px;
 }
 
-
-.AveThePhoto{
+.AveThePhoto {
   position: relative;
   width: 100%;
   background: url(../../../public/images/Merch.png);
@@ -147,19 +137,17 @@
   height: 400px;
 }
 
-
-
-.TheAveImage:hover{
+.TheAveImage:hover {
   opacity: 0.2 !important;
   cursor: pointer;
 }
 
-.AvePhoto:hover{
+.AvePhoto:hover {
   opacity: 0.2 !important;
   cursor: pointer;
 }
 
-.AveThePhoto:hover{
+.AveThePhoto:hover {
   opacity: 0.2 !important;
   cursor: pointer;
 }
@@ -173,7 +161,7 @@
   transform: translate(-50%, -50%);
   font-size: 48px;
   font-weight: 500;
-  font-family: 'futura-bold';
+  font-family: "futura-bold";
   line-height: 60px;
   cursor: pointer;
 }
@@ -191,9 +179,8 @@
 .AvePhotoText h1 {
   font-size: 32px;
   font-weight: 500;
-  font-family: 'futura-bold';
+  font-family: "futura-bold";
   line-height: 28px;
-
 }
 
 .AveThePhotoText {
@@ -209,9 +196,8 @@
 .AveThePhotoText h1 {
   font-size: 32px;
   font-weight: 500;
-  font-family: 'futura-bold';
+  font-family: "futura-bold";
   line-height: 33px;
- 
 }
 
 .TheAvePhoto .AvePhoto {
@@ -245,7 +231,7 @@
   font-size: 32px;
   font-weight: 500;
   line-height: 40px;
-  font-family: 'Montserrat-Regular';
+  font-family: "Montserrat-Regular";
   color: #ffffff;
   width: 617px;
   margin: auto;
@@ -291,23 +277,22 @@
 .AveThePhoto:hover .aveImages{
  opacity: 0.2 !important;
 } */
-.TheAveImage:hover .AveTextOne h1{
+.TheAveImage:hover .AveTextOne h1 {
   opacity: 1 !important;
- }
-.AvePhoto:hover .AveTextOne h1{
+}
+.AvePhoto:hover .AveTextOne h1 {
   opacity: 1 !important;
- }
-.AveThePhoto:hover .AveTextOne h1{
+}
+.AveThePhoto:hover .AveTextOne h1 {
   opacity: 1 !important;
- }
-.AveTextOne h1{
+}
+.AveTextOne h1 {
   opacity: 1;
   color: #75ba87;
 }
 /* Media Query for Mobile Devices */
 @media screen and (max-width: 637px) {
-
-  .AvePhoto  img{
+  .AvePhoto img {
     height: 130px !important;
   }
   .AveTextOne {
@@ -315,13 +300,13 @@
     top: 50%;
   }
 
- 
+  .AveBannerText h3 {
+    font-size: 42px;
+  }
 
   .CoWorkingImage {
     width: 100%;
-  }  
-
-
+  }
 
   .AveTextOne h1 {
     font-size: 13px;
@@ -338,16 +323,16 @@
   }
 
   .TheAvePhoto .AvePhoto .yoga {
-    background-image: url('../../../public/images/image 21.png');
-    height: 118px;   
+    background-image: url("../../../public/images/image 21.png");
+    height: 118px;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
   }
 
   .TheAvePhoto .AveThePhoto .yoga {
-    background-image: url('../../../public/images/image 22.png');
-    height: 118px;  
+    background-image: url("../../../public/images/image 22.png");
+    height: 118px;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -379,8 +364,7 @@
     text-align: center;
   }
 
-
-  .AveBannerImage  img{
+  .AveBannerImage img {
     height: 250px !important;
     text-align: center;
     padding: 10px 0px !important;
@@ -401,16 +385,15 @@
     width: 100%;
   }
 
-
   .PhotoOne {
     height: 120px !important;
-    width: 100%!important;
+    width: 100% !important;
     margin: 0px !important;
   }
 
-  .PhotoTwo{
+  .PhotoTwo {
     height: 120px !important;
-    width: 100%!important;
+    width: 100% !important;
   }
 
   .TheAveImage {
@@ -438,7 +421,7 @@
   }
 
   .AveThePhotoText h1 {
-    font-size: 21px  !important;
+    font-size: 21px !important;
   }
 
   .AvePhotoText h1 {
@@ -446,16 +429,15 @@
   }
 
   .AvePhotoText {
-  
     top: 50%;
   }
 
-  .AveThePhotoText {   
+  .AveThePhotoText {
     top: 50%;
   }
 
   .AveThePhoto img {
-    height: 130px!important;
+    height: 130px !important;
     width: 100% !important;
   }
 
@@ -488,7 +470,7 @@
     font-size: 18px;
     font-weight: 500;
     line-height: 40px;
-    font-family: 'Montserrat-Regular';
+    font-family: "Montserrat-Regular";
     color: #ffffff;
     width: 100%;
     margin: 0px;
@@ -529,46 +511,39 @@
   .TheAvePhoto .AveThePhoto {
     margin-left: 0px !important;
   }
-
-
-
 }
-
-
 
 /* Media Query for Mobile Devices */
 @media screen and (max-width: 320px) {
   .CoWorkingPart .Pasicon {
     margin-left: 222px !important;
   }
-  .CoWorkingPart p{
+  .CoWorkingPart p {
     width: 270px !important;
   }
 
-  .TheAveText p{
+  .TheAveText p {
     width: 290px !important;
   }
   .CoWorkingPart {
-  width: 87%;
-}
-
+    width: 87%;
+  }
 }
 
 /* Media Query for low resolution  Tablets, Ipads */
 
 @media (min-width: 640px) and (max-width: 1040px) {
-
-  .AvePhoto  img{
+  .AvePhoto img {
     height: 156px !important;
   }
 
-  .AveThePhoto  img{
+  .AveThePhoto img {
     height: 163px !important;
   }
 
   .AveBannerText h1 {
     font-size: 32px;
-    font-family: 'futura-bold';
+    font-family: "futura-bold";
   }
 
   .BackIcon {
@@ -602,7 +577,7 @@
   }
 
   .TheAvePhoto .AvePhoto .yoga {
-    background-image: url('../../../public/images/image 21.png');
+    background-image: url("../../../public/images/image 21.png");
     height: 155px;
     width: 316px;
     background-size: 100% 100%;
@@ -610,11 +585,11 @@
     background-position: center;
     background-repeat: no-repeat;
   }
-.AvePhoto:hover .yoga{
-  background: #0b1b0f;
-}
+  .AvePhoto:hover .yoga {
+    background: #0b1b0f;
+  }
   .TheAvePhoto .AveThePhoto .yoga {
-    background-image: url('../../../public/images/image 22.png');
+    background-image: url("../../../public/images/image 22.png");
     height: 165px;
     width: 100%;
     background-size: cover;
@@ -627,12 +602,12 @@
     font-weight: 400;
     line-height: 18px;
     color: #a3a3a3;
-    font-family: 'Montserrat-Regular';
+    font-family: "Montserrat-Regular";
   }
 
   .TheAveImage {
-    width: 50%;
-    height: 500px;
+    width: 47%;
+    height: 420px;
   }
 
   .TheAveImage img {
@@ -644,29 +619,27 @@
     width: 50%;
   }
 
-  
-.AvePhoto{
-  position: relative;
-  width: 100%;
-  background: url(../../../public/images/Yoga_River.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 75% 100%;
-  background-position: center;
-  height: 300px;
-}
+  .AvePhoto {
+    position: relative;
+    width: 100%;
+    background: url(../../../public/images/Yoga_River.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 75% 100%;
+    background-position: center;
+    height: 300px;
+  }
 
-
-.AveThePhoto{
-  position: relative;
-  width: 100%;
-  background: url(../../../public/images/Merch.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  background-position: right top;
-  height: 300px;
-}
+  .AveThePhoto {
+    position: relative;
+    width: 100%;
+    background: url(../../../public/images/Merch.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: right top;
+    height: 300px;
+  }
 
   .AveTextOne {
     top: 50%;
@@ -675,7 +648,7 @@
   .TheAveImage .AveTextOne h1 {
     font-size: 34px !important;
     width: 270px;
-    font-family: 'futura-bold';
+    font-family: "futura-bold";
     color: #75ba87;
   }
 
@@ -688,14 +661,13 @@
     width: 70%;
     height: 250px;
     margin-top: 25px;
-
   }
 
   .CoWorkingPart p {
     font-size: 16.5px;
     font-weight: 500;
     line-height: 30px;
-    font-family: 'Montserrat-Regular';
+    font-family: "Montserrat-Regular";
     color: #ffffff;
     width: 410px;
     margin: auto;
@@ -714,7 +686,7 @@
   }
 
   .AveThePhotoText {
-    left:53%;
+    left: 53%;
   }
 
   .AveThePhotoText h1 {
@@ -736,21 +708,18 @@
     margin-bottom: 50px !important;
   }
 
-
-  .PhotoOne{
+  .PhotoOne {
     width: 50% !important;
     height: 200px;
     margin: 0px !important;
   }
 
-  .PhotoTwo{
+  .PhotoTwo {
     width: 50% !important;
     height: 200px;
   }
 
-
-
-  .AveBannerImage  img{
+  .AveBannerImage img {
     height: 250px !important;
   }
 
@@ -763,7 +732,7 @@
   } */
 }
 
-@media (min-width: 456px) and (max-width: 768px){
+@media (min-width: 456px) and (max-width: 768px) {
   .CoWorkingImage {
     width: 40%;
     height: 302px;
@@ -773,7 +742,7 @@
   }
 }
 
-@media (min-width: 769px) and (max-width: 1040px){
+@media (min-width: 769px) and (max-width: 1040px) {
   .CoWorkingImage {
     width: 30%;
     height: 302px;
@@ -781,13 +750,13 @@
     overflow: hidden;
     margin-left: 0px;
   }
-   .TheAveImage img {
+  .TheAveImage img {
     /* width: 414px !important;
     height: 328px !important; */
     /* width: 312px !important;
     height: 260px !important; */
   }
-} 
+}
 
 /* 
 @media (min-width: 1041px) and (max-width: 1479px) {
@@ -839,14 +808,13 @@
     font-size: 17px;
     font-weight: 400;
     line-height: 18px;
-    color: #a3a3a3;    
-    font-family: 'Montserrat-Regular';
-    
+    color: #a3a3a3;
+    font-family: "Montserrat-Regular";
   }
 
   .TheAveImage {
     width: 50%;
-    height: 360px;
+    height: 598px;
   }
 
   .TheAvePhoto {
@@ -877,7 +845,7 @@
     font-size: 18px;
     font-weight: 500;
     line-height: 40px;
-    font-family: 'Montserrat-Regular';
+    font-family: "Montserrat-Regular";
     color: #ffffff;
     width: 550px;
     margin: auto;

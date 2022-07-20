@@ -1,5 +1,5 @@
-import Styles from "./MainfestoHero.module.css";
 import Image from "next/image";
+import Styles from "./MainfestoHero.module.css";
 
 const MainfestoHero = () => {
   return (
@@ -9,6 +9,13 @@ const MainfestoHero = () => {
           src={"/images/Blue Crystal.png"}
           layout="fill"
           objectFit="cover"
+          className={Styles.maniFestoImage1 }
+        ></Image>
+         <Image
+          src={"/images/Afrojack 1.png"}
+          layout="fill"
+          objectFit="cover"
+           className={Styles.maniFestoImage2 }
         ></Image>
       </div>
       <div className={Styles.mainFestoHeroRight}>
