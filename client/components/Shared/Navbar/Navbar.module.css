@@ -11,7 +11,7 @@
 .searchInput {
   background: #2c2f33;
   border-radius: 30px;
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
@@ -32,7 +32,7 @@
   border: 1px solid #75ba87;
   transition: 0.5s;
   font-weight: 200;
-  font-family: 'Montserrat-Regular';
+  font-family: "Montserrat-Regular";
   font-size: 16px;
   width: 174px;
   height: 50px;
@@ -40,15 +40,14 @@
   text-transform: uppercase;
 }
 
-
-.disWalletBtn{
+.disWalletBtn {
   background: #75ba87;
   color: #1a1a1a;
   padding: 11px 0px;
   border: 1px solid #75ba87;
   transition: 0.5s;
   font-weight: 200;
-  font-family: 'Montserrat-Regular';
+  font-family: "Montserrat-Regular";
   font-size: 16px;
   width: 200px;
   height: 50px;
@@ -56,9 +55,8 @@
   text-transform: uppercase;
 }
 
-
 .navLink {
-  font-family: 'Montserrat-Regular';
+  font-family: "Montserrat-Regular";
   font-weight: 400;
   font-style: normal;
   font-size: 15px;
@@ -83,7 +81,7 @@
 }
 
 .socialIcon {
-  font-family: 'Montserrat-Regular', sans-serif !important;
+  font-family: "Montserrat-Regular", sans-serif !important;
   font-weight: 500;
   font-style: normal;
   font-size: 18px;
@@ -137,14 +135,14 @@
   display: none;
 }
 
-.connectWalletBtnS{
+.connectWalletBtnS {
   background: #75ba87;
   color: #1a1a1a;
   padding: 11px 0px;
   border: 1px solid #75ba87;
   transition: 0.5s;
   font-weight: 200;
-  font-family: 'Montserrat-Regular';
+  font-family: "Montserrat-Regular";
   font-size: 16px;
   width: 160px;
   height: 55px;
@@ -162,13 +160,8 @@
   } */
 }
 
-
-
-
-
 /* Media Query for Mobile Devices */
 @media (max-width: 600px) {
-
   .MobileLogoButton {
     display: block;
     display: flex;
@@ -200,7 +193,7 @@
     font-size: 13px;
     font-weight: 500;
     line-height: 20px;
-    font-family: 'Montserrat-Regular';
+    font-family: "Montserrat-Regular";
     border: 0px !important;
     color: #1a1a1a;
     width: 160px;
@@ -236,38 +229,38 @@
   .SocailMedIcon .SocailMedIcon li {
     margin-right: 32px;
   }
-  .navLinkTooo{
+  .navLinkTooo {
     display: block;
   }
 }
 
 /* Media Query for low resolution  Tablets, Ipads */
-@media (min-width: 769px) and (max-width: 1080px){
+@media (min-width: 769px) and (max-width: 1080px) {
   .NavbarItam ul .connectWalletBtn {
     display: block;
   }
   .NavbarItam ul .connectWalletBtnS {
     display: block;
     width: 150px;
+    height: 68px;
   }
-  .navLinkTooo{
+  .navLinkTooo {
     display: block;
   }
   .SocailMedIcon li {
-  margin: 0px -22.5px;
-  line-height: 60px;
- }
- .MobileButton {
+    margin: 0px -22.5px;
+    line-height: 60px;
+  }
+  .MobileButton {
     display: none !important;
   }
-
 }
 @media (min-width: 640px) and (max-width: 1080px) {
   .MobileLogoButton {
     display: block;
     display: flex;
     height: 30px !important;
-  } 
+  }
 
   .menuAll {
     display: block !important;
@@ -301,7 +294,7 @@
     font-size: 16px;
     font-weight: 500;
     line-height: 20px;
-    font-family: 'Montserrat-Regular';
+    font-family: "Montserrat-Regular";
     border: 0px !important;
     color: #1a1a1a;
     width: 160px;
@@ -345,17 +338,16 @@
   .SocailMedIcon .SocailMedIcon li {
     margin-right: 32px;
   }
-  .navLinkTooo{
+  .navLinkTooo {
     display: block;
   }
-   .connectWalletBtnS{
+  .connectWalletBtnS {
     display: block;
     width: 170px;
   }
   .MobileButton {
     display: none !important;
   }
-  
 }
 
 @media (min-width: 825px) and (max-width: 1180px) {
@@ -388,14 +380,7 @@
   .SocailMedIcon li {
     margin-left: 0px !important;
   }
-
- 
-
-  
- 
 }
-
-
 
 @media (min-width: 1070px) and (max-width: 1350px) {
   .menuAll {
@@ -404,7 +389,6 @@
     justify-content: end !important;
   }
 }
-
 
 /* Media Query for low resolution  Tablets, Ipads */
 @media (min-width: 1442px) and (max-width: 2000px) {

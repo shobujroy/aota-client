@@ -1,5 +1,5 @@
 .OnlineClassesBanner {
-  background: url('../../public/images/Merch.png');
+  background: url("../../public/images/Merch.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: 70% 100%;
@@ -21,7 +21,7 @@
   /* left: 0px; */
   font-size: 56px;
   font-weight: 600;
-  font-family: 'futura-bold';
+  font-family: "futura-bold";
   text-transform: uppercase;
   line-height: 70px;
   color: #ffffff;
@@ -37,7 +37,7 @@
   font-size: 48px;
   font-weight: 500;
   line-height: 60px;
-  font-family: 'futura-bold';
+  font-family: "futura-bold";
   text-transform: uppercase;
   color: #ffffff;
   text-align: center;
@@ -64,7 +64,7 @@
 
 .CoWorkingText h2 {
   font-size: 25px;
-  font-family: 'Montserrat-Medium';
+  font-family: "Montserrat-Medium";
   text-transform: uppercase;
   font-weight: 500;
   line-height: 40px;
@@ -74,7 +74,7 @@
 
 .CoWorkingText p {
   font-size: 16px;
-  font-family: 'Montserrat-Regular';
+  font-family: "Montserrat-Regular";
   font-weight: 400;
   line-height: 20px;
   color: #a3a3a3;
@@ -91,7 +91,7 @@
   font-size: 48px;
   font-weight: 500;
   line-height: 60px;
-  font-family: 'futura-bold';
+  font-family: "futura-bold";
   text-transform: uppercase;
   color: #ffffff;
   text-align: center;
@@ -99,7 +99,7 @@
 
 .OnlineMembership h4 {
   font-size: 32px;
-  font-family: 'Montserrat-Medium';
+  font-family: "Montserrat-Medium";
   text-transform: uppercase;
   font-weight: 500;
   line-height: 40px;
@@ -117,9 +117,9 @@
 
 .Lifetime h3 {
   font-size: 31px;
-  font-family: 'Montserrat-Light';
+  font-family: "Montserrat-Light";
   text-transform: uppercase;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.3em;
   font-weight: 500;
   line-height: 40px;
   color: #ffffff;
@@ -128,7 +128,7 @@
 
 .Lifetime h4 {
   font-size: 32px;
-  font-family: 'Montserrat-Regular';
+  font-family: "Montserrat-Regular";
   font-weight: 500;
   line-height: 40px;
   color: #75ba87;
@@ -138,7 +138,7 @@
 
 .Lifetime p {
   font-size: 16px;
-  font-family: 'Montserrat-Regular';
+  font-family: "Montserrat-Regular";
   font-weight: 400;
   line-height: 20px;
   color: #e3f1e7;
@@ -166,7 +166,7 @@ li .Icon {
 .GoLink .YogaBack .Lifetime h5 {
   color: #ffffff;
   font-size: 18px;
-  font-family: 'Montserrat-Regular';
+  font-family: "Montserrat-Regular";
   font-weight: 400;
   line-height: 20px;
   color: #e3f1e7;
@@ -229,12 +229,12 @@ li .Icon {
   .CoWorkingTeam h1 {
     font-size: 32px !important;
     line-height: 40px;
-    font-family: 'futura-bold';
+    font-family: "futura-bold";
   }
 
   .CoWorkingText p {
     font-size: 16px;
-    font-family: 'Montserrat-Regular';
+    font-family: "Montserrat-Regular";
     font-weight: 400;
     line-height: 20px;
     color: #a3a3a3;
@@ -263,7 +263,7 @@ li .Icon {
   .CoWorkingTeam h1 {
     font-size: 32px !important;
     line-height: 40px;
-    font-family: 'futura-bold';
+    font-family: "futura-bold";
   }
 
   .CoWorkingAndMembership {
@@ -291,7 +291,7 @@ li .Icon {
     /* left: 10px; */
     font-size: 32px;
     font-weight: 600;
-    font-family: 'futura-bold';
+    font-family: "futura-bold";
     text-transform: uppercase;
     line-height: 70px;
     color: #ffffff;
@@ -302,14 +302,14 @@ li .Icon {
     font-size: 32px;
     font-weight: 500;
     line-height: 45px;
-    font-family: 'futura-bold';
+    font-family: "futura-bold";
     color: #ffffff;
     text-align: center;
   }
 
   .OnlineMembership h4 {
     font-size: 18px;
-    font-family: 'Montserrat-Regular';
+    font-family: "Montserrat-Regular";
     font-weight: 500;
     line-height: 40px;
     color: #75ba87;
@@ -320,18 +320,18 @@ li .Icon {
 
   .Lifetime h3 {
     font-size: 20px;
-    font-family: 'Montserrat-Regular';
+    font-family: "Montserrat-Regular";
     font-weight: 500;
     line-height: 40px;
     color: #ffffff;
     margin-bottom: 20px;
     margin: 0px !important;
-    letter-spacing: 0.2em;
+    letter-spacing: 0.3em;
   }
 
   .Lifetime h4 {
     font-size: 18px;
-    font-family: 'Montserrat-Regular';
+    font-family: "Montserrat-Regular";
     font-weight: 500;
     line-height: 40px;
     color: #75ba87;
@@ -341,7 +341,7 @@ li .Icon {
 
   .Lifetime p {
     font-size: 16px;
-    font-family: 'Montserrat-Regular';
+    font-family: "Montserrat-Regular";
     font-weight: 400;
     line-height: 20px;
     color: #e3f1e7;
@@ -384,8 +384,8 @@ li .Icon {
     cursor: pointer;
   }
   .OnlineClassesText {
-  position: relative;
-  display: flex;
-  justify-content: center;
-}
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
 }
