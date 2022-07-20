@@ -127,6 +127,101 @@
   z-index: 2 !important;
 }
 
+
+
+
+
+@media (min-width: 640px) and (max-width: 1040px) {
+  .Perks .PerksCards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+    gap: 50px;
+    margin-top: 40px;
+  }
+
+  .PerksAndUtility .Perks p {
+    padding: 20px 0px !important;
+  }
+
+  .Utilitys .UtilityAll {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 0px;
+  }
+
+  .Utilitys {
+    border-top: 1px solid #d1d1d1;
+    margin: 0px 0px 50px;
+  }
+
+  .HomeImg {
+    position: absolute !important;
+    top: 205px !important;
+    left: 0px !important;
+    z-index: 2 !important;
+    width: 100%;
+  }
+
+  .HomeImg img {
+    width: 350px !important;
+  }
+
+  .Utilitys h1 {
+    font-size: 50px;
+    font-family: "futura-bold";
+    font-weight: 600;
+    line-height: 70px;
+    color: #051509;
+    text-align: center;
+    margin: 20px 0px 50px;
+  }
+
+  .PerksAndUtility .Perks p {
+    padding: 10px 0px !important;
+    text-align: left;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .PerksAndUtility .Perks .CardItam p {
+    padding: 0px 0px 0px !important;
+    text-align: left;
+    font-size: 18px;
+    line-height: 25px;
+  }
+
+  .CardItam .mobileRespon {
+    display: flex !important;
+    flex-direction: row-reverse;
+    margin-bottom: 10px;
+    justify-content: space-between;
+  }
+
+  .mobileRespon h3 {
+    margin-right: 20px;
+    text-align: start;
+    letter-spacing: 0.3em;
+  }
+
+  .mobileRespon img {
+    width: 50px !important;
+  }
+  #creativeHeaven {
+    /* margin-left: 67px; */
+    text-align: start;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .mobileRespon span {
+    display: block;
+  }
+}
+
+
+
+
 /* Media Query for Mobile Devices */
 @media (max-width: 637px) {
   .Perks .PerksCards {
@@ -253,90 +348,15 @@
   }
 }
 
-@media (min-width: 640px) and (max-width: 1040px) {
-  .Perks .PerksCards {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 30px;
-    gap: 50px;
-    margin-top: 40px;
-  }
 
-  .PerksAndUtility .Perks p {
-    padding: 20px 0px !important;
-  }
 
-  .Utilitys .UtilityAll {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    gap: 0px;
-  }
+/* Media Query for Mobile Devices */
+@media (max-width: 320px) {
 
-  .Utilitys {
-    border-top: 1px solid #d1d1d1;
-    margin: 0px 0px 50px;
+  .CardItam h3 {
+    font-size: 13px !important;
+    font-family: "Montserrat-Regular" !important;
+    letter-spacing: 0.1em;
   }
-
-  .HomeImg {
-    position: absolute !important;
-    top: 205px !important;
-    left: 0px !important;
-    z-index: 2 !important;
-    width: 100%;
+  
   }
-
-  .HomeImg img {
-    width: 350px !important;
-  }
-
-  .Utilitys h1 {
-    font-size: 50px;
-    font-family: "futura-bold";
-    font-weight: 600;
-    line-height: 70px;
-    color: #051509;
-    text-align: center;
-    margin: 20px 0px 50px;
-  }
-
-  .PerksAndUtility .Perks p {
-    padding: 10px 0px !important;
-    text-align: left;
-    font-size: 20px;
-    line-height: 30px;
-  }
-
-  .PerksAndUtility .Perks .CardItam p {
-    padding: 0px 0px 0px !important;
-    text-align: left;
-    font-size: 18px;
-    line-height: 25px;
-  }
-
-  .CardItam .mobileRespon {
-    display: flex !important;
-    flex-direction: row-reverse;
-    margin-bottom: 10px;
-    justify-content: space-between;
-  }
-
-  .mobileRespon h3 {
-    margin-right: 20px;
-    text-align: start;
-    letter-spacing: 0.3em;
-  }
-
-  .mobileRespon img {
-    width: 50px !important;
-  }
-  #creativeHeaven {
-    /* margin-left: 67px; */
-    text-align: start;
-  }
-}
-
-@media screen and (max-width: 770px) {
-  .mobileRespon span {
-    display: block;
-  }
-}
