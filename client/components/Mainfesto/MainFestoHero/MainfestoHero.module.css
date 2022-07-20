@@ -108,3 +108,14 @@
     display: none !important;
   }
 }
+
+
+@media screen and (max-width: 320px) {
+  .mainFestoHeroRight p {
+    margin-right: 50px;
+  }
+
+  .maiFestoHeroLeft {
+    margin-top: 270px;
+  }
+}
