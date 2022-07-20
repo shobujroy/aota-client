@@ -1,8 +1,8 @@
-import React, { useState } from "react";
 import Image from "next/image";
-import { Button, Carousel } from "react-bootstrap";
-import { Team } from "./TeamData";
+import React, { useState } from "react";
+import { Carousel } from "react-bootstrap";
 import styles from "./MeetOurTeam.module.css";
+import { Team } from "./TeamData";
 
 const directionButtons = (direction) => {
   return (
@@ -21,6 +21,7 @@ const MeetOurTeam = () => {
   const [image, setImage] = useState("");
   const [title, setTitle] = useState("");
   const [description, setDescription] = useState("");
+  const [active, setActive] = useState(null);
   let changeInfo = () => {};
   console.log(image.length);
   function ControlledCarousel() {
@@ -57,14 +58,102 @@ const MeetOurTeam = () => {
                   </p>
 
                   <div className={styles.MemberCardIcons}>
-                    <Image
-                      src={"/images/discordmeet.svg"}
-                      alt="facebook"
-                      width={30}
-                      height={30}
-                    />
 
-                    <Image
+                    <a
+                        onMouseOver={() => setActive(1)}
+                        onMouseOut={() => setActive(null)}
+                        // className={"nav-link " + Styles.socialIcon}
+                        aria-current="page"
+                        href="https://discord.gg/xpsqJdKkZd"
+                        target="_blank"
+                      >
+                        {active === 1 ? (
+                          <Image
+                            src="/images/navbar/Discord.svg"
+                            width={24}
+                            height={24}
+                          />
+                        ) : (
+                          <Image
+                            src="/images/icons/Discord.svg"
+                            width={24}
+                            height={24}
+                          />
+                        )}
+                    </a>
+                    
+                     <a
+                        onMouseOver={() => setActive(0)}
+                        onMouseOut={() => setActive(null)}
+                        // className={"nav-link " + Styles.socialIcon}
+                        aria-current="page"
+                        href="http://instagram.com/aliensontheave"
+                        target="_blank"
+                      >
+                        {active === 0 ? (
+                          <Image
+                            src="/images/navbar/instagram.svg"
+                            width={24}
+                            height={24}
+                          />
+                        ) : (
+                          <Image
+                            src="/images/icons/instagram.svg"
+                            width={24}
+                            height={24}
+                          />
+                        )}
+                    </a>
+
+                     <a
+                        onMouseOver={() => setActive(2)}
+                        onMouseOut={() => setActive(null)}
+                        // className={"nav-link " + Styles.socialIcon}
+                        aria-current="page"
+                        href="http://twitter.com/AOTAnft/"
+                        target="_blank"
+                      >
+                        {active === 2 ? (
+                          <Image
+                            src="/images/navbar/twitter.svg"
+                            width={24}
+                            height={24}
+                          />
+                        ) : (
+                          <Image
+                            src="/images/icons/twitter.svg"
+                            width={24}
+                            height={24}
+                          />
+                        )}
+                    </a>
+                    
+                     <a
+                        onMouseOver={() => setActive(3)}
+                        onMouseOut={() => setActive(null)}
+                        // className={"nav-link " + Styles.socialIcon}
+                        aria-current="page"
+                        href="#"
+                        target="_blank"
+                      >
+                        {active === 3 ? (
+                          <Image
+                            src="/images/navbar/linkedin.svg"
+                            width={24}
+                            height={24}
+                          />
+                        ) : (
+                          <Image
+                            src="/images/icons/linkedin (3).svg"
+                            width={24}
+                            height={24}
+                          />
+                        )}
+                    </a>
+                    
+                    
+
+                    {/* <Image
                       src={"/images/instagram-seeklogo.com.svg"}
                       alt="instagram"
                       width={30}
@@ -81,7 +170,7 @@ const MeetOurTeam = () => {
                       alt="linkedin"
                       width={30}
                       height={30}
-                    />
+                    /> */}
                   </div>
                 </div>
               </div>
@@ -409,31 +498,97 @@ const MeetOurTeam = () => {
                   {data.about}
                   </p>
                   <div className={styles.MemberCardIcons}>
-                  <Image
-                      src={"/images/discordmeet.svg"}
-                      alt="facebook"
-                      width={30}
-                      height={30}
-                    />
+                                      <a
+                        onMouseOver={() => setActive(1)}
+                        onMouseOut={() => setActive(null)}
+                        // className={"nav-link " + Styles.socialIcon}
+                        aria-current="page"
+                        href="https://discord.gg/xpsqJdKkZd"
+                        target="_blank"
+                      >
+                        {active === 1 ? (
+                          <Image
+                            src="/images/navbar/Discord.svg"
+                            width={24}
+                            height={24}
+                          />
+                        ) : (
+                          <Image
+                            src="/images/icons/Discord.svg"
+                            width={24}
+                            height={24}
+                          />
+                        )}
+                    </a>
+                    
+                     <a
+                        onMouseOver={() => setActive(0)}
+                        onMouseOut={() => setActive(null)}
+                        // className={"nav-link " + Styles.socialIcon}
+                        aria-current="page"
+                        href="http://instagram.com/aliensontheave"
+                        target="_blank"
+                      >
+                        {active === 0 ? (
+                          <Image
+                            src="/images/navbar/instagram.svg"
+                            width={24}
+                            height={24}
+                          />
+                        ) : (
+                          <Image
+                            src="/images/icons/instagram.svg"
+                            width={24}
+                            height={24}
+                          />
+                        )}
+                    </a>
 
-                    <Image
-                      src={"/images/instagram-seeklogo.com.svg"}
-                      alt="instagram"
-                      width={30}
-                      height={30}
-                    />
-                    <Image
-                      src={"/images/iconmonstr-twitter-1.svg"}
-                      alt="twitter"
-                      width={30}
-                      height={30}
-                    />
-                    <Image
-                      src={"/images/iconmonstr-linkedin-3.svg"}
-                      alt="linkedin"
-                      width={30}
-                      height={30}
-                    />
+                     <a
+                        onMouseOver={() => setActive(2)}
+                        onMouseOut={() => setActive(null)}
+                        // className={"nav-link " + Styles.socialIcon}
+                        aria-current="page"
+                        href="http://twitter.com/AOTAnft/"
+                        target="_blank"
+                      >
+                        {active === 2 ? (
+                          <Image
+                            src="/images/navbar/twitter.svg"
+                            width={24}
+                            height={24}
+                          />
+                        ) : (
+                          <Image
+                            src="/images/icons/twitter.svg"
+                            width={24}
+                            height={24}
+                          />
+                        )}
+                    </a>
+                    
+                     <a
+                        onMouseOver={() => setActive(3)}
+                        onMouseOut={() => setActive(null)}
+                        // className={"nav-link " + Styles.socialIcon}
+                        aria-current="page"
+                        href="#"
+                        target="_blank"
+                      >
+                        {active === 3 ? (
+                          <Image
+                            src="/images/navbar/linkedin.svg"
+                            width={24}
+                            height={24}
+                          />
+                        ) : (
+                          <Image
+                            src="/images/icons/linkedin (3).svg"
+                            width={24}
+                            height={24}
+                          />
+                        )}
+                    </a>
                   </div>
                 </div>
               </Carousel.Item>
