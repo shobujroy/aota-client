@@ -49,11 +49,11 @@ export const Team = [
   },
   {
     id: 7,
-    name: "Alex Zamora",
+    name: " Alexandro Zamora",
     title: "Illustrator",
     image: "/images/Alex Zamora_2765.png",
     about:
-      "Alex has large catalog of work painting portriats & wild erire creatures.  He brings to the team a years of experience and creative input.  Inspired by the greats of our time, Alex recently dove into his craft as an artist full time.  Expect creepy alien hands and sharp teeth in the AOTAverse thanks to him.",
+      "Alex has large catalog of work painting portraits & wild erire creatures.  He brings to the team years of experience and creative input.  Inspired by the greats of our time, Alex recently dove into his craft as an artist full time.  Expect creepy alien hands and sharp teeth in the AOTAverse thanks to him.",
   },
   {
     id: 8,

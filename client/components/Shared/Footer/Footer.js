@@ -1,9 +1,7 @@
 //Footer Component
 import Image from "next/image";
-import Link from "next/link";
 import { useState } from "react";
 import styles from "./Footer.module.css";
-import FooterCol from "./FooterCol";
 
 function Footer() {
   const [active, setActive] = useState(null);
@@ -138,14 +136,14 @@ function Footer() {
                 <h6>ALIENS ON THE AVE</h6>
                 <p>We respect your privacy.</p>
                 <p>
-                  *The proceeds from the promotion will benefit GivePower
-                  Foundation, located at 500 2nd Street. 1st Floor, San
-                  Francisco, CA 94107, a 501(c)(3) charity. The donation is tax
-                  deductible by Aliens On The Ave. not the customer. GivePower's
-                  annual report and more infformation are available at
-                  www.givepower.org Registration with any regulatory agency does
-                  not imply endorsement. © 2022 Aliens On The Ave *
-                </p>
+                  *The proceeds from the promotion will benefit GivePower Foundation, located at 500 2nd Street. 1st Floor,
+                  San Francisco, CA 94107, a 501(c)(3) charity.  The donation is tax deductible by Aliens On The Ave.  not the
+                  customer.</p>
+                <p> <small>GivePower's annual report and more information are available at 
+                  <a href="https://www.givepower.org/"> www.givepower.org</a> Registration with any
+                    regulatory agency does not imply endorsement. </small> </p>
+                  <p> © 2022 Aliens On The Ave  </p>
+
               </div>
             </div>
           </div>
