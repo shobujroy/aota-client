@@ -1,14 +1,9 @@
-import React, { useContext } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import Styles from "./Navbar.module.css";
-import Web3 from "web3";
-import WalletConnectProvider from "@walletconnect/web3-provider";
-import Web3Modal from "web3modal";
-import { useState, useEffect } from "react";
 import { useRouter } from "next/router";
+import React, { useContext, useEffect, useState } from "react";
+import Styles from "./Navbar.module.css";
 
-import AOTA from "../../../contracts/AOTA.json";
 import { MintContext } from "./../../../context/MintContext";
 
 function Navbar({ BorderBottom, wallet }) {
@@ -161,18 +156,18 @@ function Navbar({ BorderBottom, wallet }) {
                       </a>
                     </li>
                   </Link>
-                  <Link href={"/mainfesto"}>
+                  <Link href={"/manifesto"}>
                     <li className="nav-item ms-md-4">
                       <a
                         className={
-                          router.pathname == "/mainfesto"
+                          router.pathname == "/manifesto"
                             ? Styles.navLinkActive
                             : "nav-link " + Styles.navLink
                         }
                         aria-current="page"
                         href="#"
                       >
-                        Mainfesto
+                        Manifesto
                       </a>
                     </li>
                   </Link>

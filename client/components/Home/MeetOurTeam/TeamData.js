@@ -21,7 +21,7 @@ export const Team = [
     title: "Mindfulness Coach",
     image: "/images/Joseph Flores_1578.png",
     about:
-      "Joseph brings mindfulness to the AOTAverse.  His teachings ",
+      "Joseph brings Mindfulness  Coach to the AOTAverse.  His teachings ",
   },
   {
     id: 4,

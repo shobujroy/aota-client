@@ -7,7 +7,7 @@
   font-size: 56px;
   line-height: 100px;
   text-align: center;
-  font-family: 'futura-bold';
+  font-family: "futura-bold";
   text-transform: uppercase;
   font-weight: 600;
   color: #75ba87;
@@ -21,52 +21,47 @@
 }
 
 .PartnerBrangerine {
-  background-image: url('../../../public/images/PartnerLogos/Brangerine_symbol (1) 1.svg');
+  background-image: url("../../../public/images/PartnerLogos/Brangerine_symbol (1) 1.svg");
   background-position: center;
   background-size: 71% 60%;
   background-repeat: no-repeat;
   width: 100%;
   height: 200px;
   cursor: pointer;
-  
- 
 }
 
 .PartnerOneTree {
-  background-image: url('../../../public/images/PartnerLogos/One Tree Planted_symbol (1) 1.svg');
+  background-image: url("../../../public/images/PartnerLogos/One Tree Planted_symbol (1) 1.svg");
   background-position: center;
   background-size: 71% 60%;
   background-repeat: no-repeat;
   width: 100%;
   height: 200px;
   cursor: pointer;
-  
 }
 
 .PartnerBikeRentals {
-  background-image: url('../../../public/images/PartnerLogos/BakersfieldBikeRentals_symbol (1) 1.svg');
+  background-image: url("../../../public/images/PartnerLogos/BakersfieldBikeRentals_symbol (1) 1.svg");
   background-position: center;
   background-size: 71% 60%;
   background-repeat: no-repeat;
   width: 100%;
   height: 200px;
   cursor: pointer;
-  
 }
 
 .PartnerGivepower {
-  background-image: url('../../../public/images/PartnerLogos/givepower_symbol (1) 1.svg');
+  background-image: url("../../../public/images/PartnerLogos/givepower_symbol (1) 1.svg");
   background-position: center;
   background-size: 71% 60%;
   background-repeat: no-repeat;
   width: 100%;
   height: 200px;
   cursor: pointer;
-  
 }
 
 .PartnerBrangerine:hover {
-  background-image: url('../../../public/images/PartnerLogos/Brangerine (1) 1.svg');
+  background-image: url("../../../public/images/PartnerLogos/Brangerine (1) 1.svg");
   background-position: center;
   background-size: 71% 100%;
   background-repeat: no-repeat;
@@ -75,7 +70,7 @@
 }
 
 .PartnerOneTree:hover {
-  background-image: url('../../../public/images/PartnerLogos/BakersfieldBikeRentals (1) 1.svg');
+  background-image: url("../../../public/images/PartnerLogos/One Tree Planted (1) 1.svg");
   background-position: center;
   background-size: 71% 100%;
   background-repeat: no-repeat;
@@ -84,7 +79,7 @@
 }
 
 .PartnerBikeRentals:hover {
-  background-image: url('../../../public/images/PartnerLogos/BakersfieldBikeRentals (1) 1.svg');
+  background-image: url("../../../public/images/PartnerLogos/BakersfieldBikeRentals (1) 1.svg");
   background-position: center;
   background-size: 71% 100%;
   background-repeat: no-repeat;
@@ -93,7 +88,7 @@
 }
 
 .PartnerGivepower:hover {
-  background-image: url('../../../public/images/PartnerLogos/givepower (1) 1.svg');
+  background-image: url("../../../public/images/PartnerLogos/givepower (1) 1.svg");
   background-position: center;
   background-size: 71% 100%;
   background-repeat: no-repeat;
