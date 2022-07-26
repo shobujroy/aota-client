@@ -151,7 +151,9 @@
 }
 
 .connectWalletBtnS:hover {
-  color: #e2dd96;
+  background: #e2dd96;
+  color: #1a1a1a;
+  border: 1px solid #e2dd96;
 }
 
 /* Media Query for Mobile Devices */
