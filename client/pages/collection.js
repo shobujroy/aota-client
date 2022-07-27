@@ -13,15 +13,15 @@ function Collection() {
     myNFTs();
   }, [isConnected, hasMetamask, sign]);
   return (
-    <div style={{ backgroundColor: "#051509"}}>
+    <div style={{ backgroundColor: "#051509" }}>
       <Navbar BorderBottom={true} wallet={true} />
       <div className="container pt-3 pb-5">
         <div className="row">
-        <h6 style={{color: "#FFFFFF"}} className="d-flex flex-row align-items-center">
+          <h6 style={{ color: "#FFFFFF" }} className="d-flex flex-row align-items-center">
             <i className="fa-solid fa-arrow-left-long me-2"></i>
-             <Link  href={"/"} >Back</Link>  
+            <Link href={"/"} >Back</Link>
           </h6>
-          <h1 style={{color: "#FFFFFF"}} className="fw-bold">Collection</h1>
+          <h1 style={{ color: "#FFFFFF" }} className="fw-bold">Collection</h1>
           <div className="mt-3 d-flex justify-content-between flex-wrap justify-content-sm-center">
             {collection.map((item, index) => {
               return <NFTcard api={item} />;

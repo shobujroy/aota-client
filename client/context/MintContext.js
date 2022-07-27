@@ -226,7 +226,6 @@ export const MintProvider = ({ children }) => {
             disconnectwallet, 
             connectwallet, 
             reserve, 
-            withdraw, 
             pubPrice,
             priPrice, 
             nftTransfer }}>
