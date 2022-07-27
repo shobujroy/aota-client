@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import styles from "./OurPartners.module.css";
 
 const OurPartners = () => {
@@ -10,10 +10,15 @@ const OurPartners = () => {
           <div className={`col-md-12 mt-0 ${styles.OurPartners}`}>
             <h1>Partners</h1>
             <div className={styles.Partner}>
-              <div className={styles.PartnerBrangerine}></div>
-              <div className={styles.PartnerOneTree}></div>
-              <div className={styles.PartnerBikeRentals}></div>
-              <div className={styles.PartnerGivepower}></div>
+              <a href="https://www.brangerine.com/" target="_blank" className={styles.PartnerBrangerine}>
+              </a>
+
+
+
+
+              <a href="https://onetreeplanted.org/" target="_blank" className={styles.PartnerOneTree}></a>
+              <a href="https://www.instagram.com/bakersfieldbikerentals/" target="_blank" className={styles.PartnerBikeRentals}></a>
+              <a href="https://www.givepower.org/" target="_blank" className={styles.PartnerGivepower}></a>
             </div>
           </div>
         </div>
