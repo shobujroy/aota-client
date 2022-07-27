@@ -21,7 +21,7 @@ export const Team = [
     title: "Mindfulness Coach",
     image: "/images/Joseph Flores_1578.png",
     about:
-      "Joseph brings Mindfulness  Coach to the AOTAverse.  His teachings ",
+      "Joseph brings mindfulness to the AOTAverse.   I have a Associates and Bachelors in Psychology and am currently finishing up my Masters in School Psychology. I have a Certificate in Project Management and currently am working for the State of California. I have had many occupations that have had a primary focus on Social Services and or Human Services. My passion has always been to support the development and resiliency of my neighbors in the community. One of those tools I use to support that development is Mindfulness. Please join me in that journey to a healthier and higher minded well-being. Thank you ",
   },
   {
     id: 4,

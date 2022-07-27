@@ -1,14 +1,15 @@
-import React from "react";
-import Link from "next/link";
-import styles from "./TheAveBanner.module.css";
 import Image from "next/image";
+import Link from "next/link";
+import React from "react";
+import styles from "./TheAveBanner.module.css";
 
 import Footer from "../../Shared/Footer/Footer";
+import TheAveSlider from "../TheAveSlider/TheAveSlider";
 
 const TheAveBanner = () => {
   return (
     <div className={styles.AveBanner}>
-      <div className="container pb-4 pt-4">
+      {/* <div className="container pb-4 pt-4">
         <div className="row">
           <div className={`col-md-12  col-sm-12 ${styles.AveBannerText}`}>
             <h3>Creative Haven-yoga-Meditation-common-space</h3>
@@ -28,11 +29,13 @@ const TheAveBanner = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
+
+      <TheAveSlider/>
 
       <div className={styles.TheAve}>
         <div className="container pb-4 pt-4">
-          <div className="row">
+          {/* <div className="row">
             <div className={`col-md-12 ${styles.TheAveText}`}>
               <h1>The Ave</h1>
               <h4>AOTA keys to unlocking your creativity</h4>
@@ -45,24 +48,10 @@ const TheAveBanner = () => {
               <p>We see lush green &amp; natural havens.</p>
               <p>We see a sence of harmony &amp; zen.</p>
               <p>We see ideas flourishing &amp; music playing.</p>
-
-              {/* <p>
-
-
-                You’ve been through it, we all have. But you, no you’re
-                different, you’re here still standing like unaffected despite
-                all chances to give up. You’ve been working on yourself, staying
-                in your lane. Building an empire, we see your efforts, we elieve
-                the world needs you. Shit we need each other.Together we’ll
-                grow. Learn from our Creative Team, collaborate with a member,
-                get a yoga session in, meditate, get inspired, participate in a
-                creative challenge to win real money. Kick it on the Ave, we’re
-                just getting started.{" "}
-              </p> */}
             </div>
-          </div>
+          </div> */}
 
-          <div className="row">
+          <div className="row d-flex justify-content-center align-items-center">
             <Link href={"/creativehaven"}>
               <div
                 className={`col-md-6 col-lg-6 col-sm-12 h-full ${styles.TheAveImage}`}
@@ -72,30 +61,27 @@ const TheAveBanner = () => {
                 </div>
               </div>
             </Link>
-
-            <div
-              className={`col-md-6 col-sm-12 col-lg-6 h-full ${styles.TheAvePhoto}`}
-            >
               <Link href={"/onlineclasses"}>
+            <div
+              className={`col-md-6 col-lg-6 col-sm-12 h-full ${styles.TheAvePhoto}`}
+            >
+              
                 <div className={styles.AvePhoto}>
-                  {/* <div className={styles.yoga}>                 
-                </div> */}
                   <div className={styles.AveTextOne}>
                     <h1>Yoga with River</h1>
                   </div>
                 </div>
-              </Link>
+              
 
-              <Link href={"/coching"}>
+              {/* <Link href={"/coching"}>
                 <div className={styles.AveThePhoto}>
-                  {/* <div className={styles.yoga}>                 
-                </div> */}
                   <div className={styles.AveTextOne}>
                     <h1>Creators Challenge</h1>
                   </div>
                 </div>
+              </Link> */}
+              </div>
               </Link>
-            </div>
           </div>
         </div>
       </div>
