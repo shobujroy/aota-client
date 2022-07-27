@@ -110,6 +110,12 @@
   margin-top: 20px;
   text-transform: uppercase;
   margin-left: 10px;
+  transition: all linear 0.4s;
+}
+
+.resetButton:hover {
+  background: #e2dd96;
+  border: 1px solid #e2dd96;
 }
 
 .filterOption .ImageAndIcon {

@@ -21,7 +21,7 @@ export const Team = [
     title: "Mindfulness Coach",
     image: "/images/Joseph Flores_1578.png",
     about:
-      "Joseph brings mindfulness to the AOTAverse.  His teachings ",
+      "Joseph brings mindfulness to the AOTAverse.   I have a Associates and Bachelors in Psychology and am currently finishing up my Masters in School Psychology. I have a Certificate in Project Management and currently am working for the State of California. I have had many occupations that have had a primary focus on Social Services and or Human Services. My passion has always been to support the development and resiliency of my neighbors in the community. One of those tools I use to support that development is Mindfulness. Please join me in that journey to a healthier and higher minded well-being. Thank you ",
   },
   {
     id: 4,
@@ -49,11 +49,11 @@ export const Team = [
   },
   {
     id: 7,
-    name: "Alex Zamora",
+    name: " Alexandro Zamora",
     title: "Illustrator",
     image: "/images/Alex Zamora_2765.png",
     about:
-      "Alex has large catalog of work painting portriats & wild erire creatures.  He brings to the team a years of experience and creative input.  Inspired by the greats of our time, Alex recently dove into his craft as an artist full time.  Expect creepy alien hands and sharp teeth in the AOTAverse thanks to him.",
+      "Alex has large catalog of work painting portraits & wild erire creatures.  He brings to the team years of experience and creative input.  Inspired by the greats of our time, Alex recently dove into his craft as an artist full time.  Expect creepy alien hands and sharp teeth in the AOTAverse thanks to him.",
   },
   {
     id: 8,

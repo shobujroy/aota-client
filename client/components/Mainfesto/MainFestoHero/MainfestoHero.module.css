@@ -38,12 +38,13 @@
   color: #a3a3a3;
   font-weight: 400;
   font-size: 16px;
-  margin-top: 20px;
+  /* margin-top: 20px; */
+  margin: 4px !important;
 }
 
 @media screen and (max-width: 1040px) {
   .mainfestoHero {
-    width: 780px;
+    width: 765px;
     height: 577px;
   }
   .maiFestoHeroLeft {
@@ -108,7 +109,6 @@
     display: none !important;
   }
 }
-
 
 @media screen and (max-width: 320px) {
   .mainFestoHeroRight p {

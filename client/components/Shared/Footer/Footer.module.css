@@ -31,6 +31,14 @@
   color: #fff;
 }
 
+.FooterLastText p a {
+  color: #e2dd96;
+}
+
+.FooterLastText p small {
+  font-size: 11px;
+}
+
 /* Media Query for Mobile Devices */
 @media (max-width: 600px) {
   .footerContectWrapper {
@@ -73,7 +81,7 @@
   border: none;
   padding: 18px 16px;
   font-size: 16px;
-  font-family: 'Montserrat-Regular';
+  font-family: "Montserrat-Regular";
   font-weight: 500;
   margin-bottom: 20px;
   margin-top: 20px;
@@ -90,7 +98,7 @@
   height: 58px;
   width: 130px;
   margin-top: 20px;
-  font-family: 'Montserrat-Regular';
+  font-family: "Montserrat-Regular";
 }
 
 .btnSubmit:hover {
@@ -101,7 +109,7 @@
   color: #ffffff;
   font-size: 24px;
   font-weight: 500;
-  font-family: 'Montserrat-Regular';
+  font-family: "Montserrat-Regular";
   line-height: 24px;
 }
 
@@ -113,7 +121,7 @@
   font-size: 24px;
   font-weight: 500;
   line-height: 30px;
-  font-family: 'Montserrat-Regular';
+  font-family: "Montserrat-Regular";
   color: #ffffff;
   margin: 0px;
 }
@@ -125,7 +133,7 @@
   width: 700px;
   color: #a3a3a3;
   margin-top: 16px;
-  font-family: 'Montserrat-Regular';
+  font-family: "Montserrat-Regular";
 }
 
 .FooterMain {
@@ -149,15 +157,14 @@
 }
 
 /* Media Query for low resolution  Tablets, Ipads */
-@media (min-width: 769px) and (max-width: 1080px){
+@media (min-width: 769px) and (max-width: 1080px) {
   .FooterLastText p {
     width: 450px;
   }
 }
 
-
 /* Media Query for low resolution  Tablets, Ipads */
-@media (min-width: 638px) and (max-width: 768px){
+@media (min-width: 638px) and (max-width: 768px) {
   .FooterLastText p {
     width: 300px;
   }
@@ -165,7 +172,7 @@
 
 /* Media Query for Mobile Devices */
 @media (max-width: 637px) {
-  .emailInput{
+  .emailInput {
     width: 170px;
   }
 

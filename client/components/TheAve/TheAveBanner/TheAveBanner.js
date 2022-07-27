@@ -1,13 +1,16 @@
-import React from "react";
-import Link from "next/link";
-import styles from "./TheAveBanner.module.css";
 import Image from "next/image";
+import Link from "next/link";
+import React from "react";
+import styles from "./TheAveBanner.module.css";
 
 import Footer from "../../Shared/Footer/Footer";
+import TheAveSlider from "../TheAveSlider/TheAveSlider";
 
 const TheAveBanner = () => {
   return (
     <div className={styles.AveBanner}>
+
+      <>
       <div className="container pb-4 pt-4">
         <div className="row">
           <div className={`col-md-7 col-sm-12 col-lg-7 ${styles.AveHeroText}`}>
@@ -29,6 +32,7 @@ const TheAveBanner = () => {
               ustectune stontee.
             </p>
           </div>
+          
 
           <div
             className={`col-md-5 col-lg-5 col-sm-12  ${styles.AveHeroImage}`}
@@ -41,6 +45,10 @@ const TheAveBanner = () => {
           </div>
         </div>
       </div>
+
+    
+      </>
+      <TheAveSlider/>
 
       <>
         <div
@@ -105,7 +113,62 @@ const TheAveBanner = () => {
             >
               <Image layout="fill" objectFit="cover" src={"/images/Halo.png"} />
             </div>
+</div>
+</div>
+</>
+
+<>
+      <div className={styles.TheAve}>
+        <div className="container pb-4 pt-4">
+          {/* <div className="row">
+            <div className={`col-md-12 ${styles.TheAveText}`}>
+              <h1>The Ave</h1>
+              <h4>AOTA keys to unlocking your creativity</h4>
+
+              <p> We see co-working spaces differently.</p>
+              <p>
+                We see them as a hub to get inspired in. A place where
+                imagination will thrive &amp; creativity is the very essence of
+              it’s environment.</p>
+              <p>We see lush green &amp; natural havens.</p>
+              <p>We see a sence of harmony &amp; zen.</p>
+              <p>We see ideas flourishing &amp; music playing.</p>
+            </div>
+          </div> */}
+
+          <div className="row d-flex justify-content-center align-items-center">
+            <Link href={"/creativehaven"}>
+              <div
+                className={`col-md-6 col-lg-6 col-sm-12 h-full ${styles.TheAveImage}`}
+              >
+                <div className={styles.AveTextOne}>
+                  <h1>Creative Haven</h1>
+                </div>
+              </div>
+            </Link>
+              <Link href={"/onlineclasses"}>
+            <div
+              className={`col-md-6 col-lg-6 col-sm-12 h-full ${styles.TheAvePhoto}`}
+            >
+              
+                <div className={styles.AvePhoto}>
+                  <div className={styles.AveTextOne}>
+                    <h1>Yoga with River</h1>
+                  </div>
+                </div>
+              
+
+              {/* <Link href={"/coching"}>
+                <div className={styles.AveThePhoto}>
+                  <div className={styles.AveTextOne}>
+                    <h1>Creators Challenge</h1>
+                  </div>
+                </div>
+              </Link> */}
+              </div>
+              </Link>
           </div>
+        </div>
         </div>
       </>
 
@@ -145,6 +208,8 @@ const TheAveBanner = () => {
 
       <Footer />
     </div>
+   
+  
   );
 };
 
