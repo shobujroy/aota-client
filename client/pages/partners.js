@@ -7,6 +7,7 @@ const partners = () => {
         <div style={{overflowX: "hidden"}}>
             <Navbar />
             <TheAveBanner />
+            
         </div>
     );
 };
