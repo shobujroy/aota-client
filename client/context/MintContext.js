@@ -3,15 +3,10 @@ import Web3 from "web3";
 import WalletConnectProvider from "@walletconnect/web3-provider";
 import Web3Modal from "web3modal";
 import swal from 'sweetalert';
-
-export const MintContext = React.createContext();
-
-let web3Modal;
-
-const add = "0x9BD8716cf1905991aeE24da610cb537Ef5866c62";
-
 import AOTA from '../contracts/AOTA.json';
-
+export const MintContext = React.createContext();
+let web3Modal;
+const add = "0x2A8427cE6B2695A4BF965606d1A9De02a577AF4f";
 const providerOptions = {
     walletconnect: {
         package: WalletConnectProvider,
@@ -28,28 +23,24 @@ export const MintProvider = ({ children }) => {
             providerOptions,
         });
     }
-
     const [isConnected, setIsConnected] = useState(false);
     const [hasMetamask, setHasMetamask] = useState(false);
     const [sign, setSign] = useState(undefined);
-    const [pubPrice, setPubPrice] = useState(0.07);
-    const [trxHash, setTrxHash] = useState('0x60fab96fec783a370d544209cf4b33b27daa01f5571a16c3761f4bd1c4b1b59e');
+    const [pubPrice, setPubPrice] = useState(0.09);
+    const [priPrice, setPriPrice] = useState(0.07);
+    const [trxHash, setTrxHash] = useState('');
     const [collection, setCollection] = useState([]);
 
     // connect wallet
     async function connectwallet() {
-        
         if (typeof window.ethereum !== "undefined") {
             try {
                 const provider = await web3Modal.connect();
-
                 const web3 = new Web3(provider);
-
                 setIsConnected(true);
-
                 setSign((await web3.eth.getAccounts())[0]);
             } catch (e) {
-                
+                console.log(e);
             }
         } else {
             setIsConnected(false);
@@ -61,12 +52,7 @@ export const MintProvider = ({ children }) => {
         await web3Modal.clearCachedProvider();
         setSign(undefined);
         //setSign(undefined);
-        
-        
-
         setIsConnected(false);
-        
-        
         //setHasMetamask(false);
     }
 
@@ -88,10 +74,8 @@ export const MintProvider = ({ children }) => {
             try {
                 await Cont.methods.mintPubNFTs(count).send({ from: sign, value: total }, function (err, txHash) {
                     if (err) {
-                        
-                        
+                        console.log(err);
                     } else {
-                        
                         setTrxHash(txHash);
                         swal({
                             title: "You have minted successfully!",
@@ -101,11 +85,10 @@ export const MintProvider = ({ children }) => {
                     }
                 });
             } catch (error) {
-                
-                
+                console.log(error);
             }
         } else {
-            
+            console.log("install metamask");
         }
     }
 
@@ -119,31 +102,29 @@ export const MintProvider = ({ children }) => {
             });
             const provider = await web3Modal.connect();
             const web3 = new Web3(provider);
-
             const Cont = new web3.eth.Contract(AOTA.abi, add, sign);
-
             const PRI_PRICE = await Cont.methods.priPrice().call();
-
             let total = count * PRI_PRICE
-
             let price = web3.utils.fromWei(total.toString(), "ether");
-
+            setPriPrice(price);
             try {
                 await Cont.methods.mintPriNFTs(count).send({ from: sign, value: total }, function (err, txHash) {
                     if (err) {
-                        
-                        
+                        console.log(err);
                     } else {
-                        
                         setTrxHash(txHash);
+                        swal({
+                            title: "You have minted successfully!",
+                            text: `This is your hash of transaction: ${ txHash }`,
+                            icon: "success",
+                        });
                     }
                 });
             } catch (error) {
-                
-                
+                console.log(error);
             }
         } else {
-            
+            console.log("install metamask");
         }
     }
 
@@ -155,17 +136,14 @@ export const MintProvider = ({ children }) => {
                 providerOptions,
             });
             const provider = await web3Modal.connect();
-
             const web3 = new Web3(provider);
-
             const Cont = new web3.eth.Contract(AOTA.abi, add, sign);
-
             try {
                 await Cont.methods.reserveNFTs().send({ from: sign }, function (err, txHash) {
                     if (err) {
-                        
-                        
+                        console.log(err);
                     } else {
+                        setTrxHash(txHash);
                         // swal
                         swal({
                             title: "You have minted successfully!",
@@ -175,43 +153,10 @@ export const MintProvider = ({ children }) => {
                     }
                 });
             } catch (error) {
-                
-                
+                console.log(error);
             }
         } else {
-            
-        }
-    }
-
-    // withdraw
-    async function withdraw() {
-        if (typeof window.ethereum !== "undefined") {
-            web3Modal = new Web3Modal({
-                cacheProvider: true,
-                providerOptions,
-            });
-            const provider = await web3Modal.connect();
-
-            const web3 = new Web3(provider);
-
-            const Cont = new web3.eth.Contract(AOTA.abi, add, sign);
-
-            try {
-                await Cont.methods.withdraw().send({ from: sign }, function (err, txHash) {
-                    if (err) {
-                        
-                        
-                    } else {
-                        
-                        
-                    }
-                });
-            } catch (error) {
-                
-                
-            }
-        } else {
-            
+            console.log("install metamask");
         }
     }
 
@@ -224,27 +169,21 @@ export const MintProvider = ({ children }) => {
                 providerOptions,
             });
             const provider = await web3Modal.connect();
-
             const web3 = new Web3(provider);
-
             const Cont = new web3.eth.Contract(AOTA.abi, add, sign);
-
             try {
                 await Cont.methods.safeTransfer(reciverAdd, tokenId).send({ from: sign }, function (err, txHash) {
                     if (err) {
-                        
-                        
+                        console.log(err);
                     } else {
-                        
                         setTrxHash(txHash);
                     }
                 });
             } catch (error) {
-                
-                
+                console.log(error);
             }
         } else {
-            
+            console.log("install metamask");
         }
     }
 
@@ -257,18 +196,16 @@ export const MintProvider = ({ children }) => {
                 providerOptions,
             });
             const provider = await web3Modal.connect();
-
             const web3 = new Web3(provider);
-
             const Cont = new web3.eth.Contract(AOTA.abi, add, sign);
-
             try {
                 const nftURI = await Cont.methods.getMyNFTs().call({ from: sign });
-                
                 setCollection(nftURI)
             } catch (error) {
-                
+                console.log(error);
             }
+        } else {
+            console.log("install metamask");
         };
     }
 
@@ -278,7 +215,21 @@ export const MintProvider = ({ children }) => {
         }
     }, [hasMetamask]);
     return (
-        <MintContext.Provider value={{ myNFTs, collection, trxHash, isConnected, hasMetamask, sign, pubMint, disconnectwallet, connectwallet, reserve, withdraw, pubPrice }}>
+        <MintContext.Provider value={{ 
+            myNFTs, 
+            collection, 
+            trxHash, 
+            isConnected, 
+            hasMetamask, 
+            sign, 
+            pubMint, 
+            disconnectwallet, 
+            connectwallet, 
+            reserve, 
+            withdraw, 
+            pubPrice,
+            priPrice, 
+            nftTransfer }}>
             {children}
         </MintContext.Provider>
     )
