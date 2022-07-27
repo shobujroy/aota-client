@@ -4,6 +4,8 @@ import WalletConnectProvider from "@walletconnect/web3-provider";
 import Web3Modal from "web3modal";
 import swal from 'sweetalert';
 import AOTA from '../contracts/AOTA.json';
+
+
 export const MintContext = React.createContext();
 let web3Modal;
 const add = "0x2A8427cE6B2695A4BF965606d1A9De02a577AF4f";
