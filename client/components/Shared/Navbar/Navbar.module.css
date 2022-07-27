@@ -148,6 +148,12 @@
   height: 55px;
   margin-top: 0px;
   text-transform: uppercase;
+  transition: all linear .4s;
+}
+
+
+.connectWalletBtnS:hover{
+  color: red;
 }
 
 /* Media Query for Mobile Devices */

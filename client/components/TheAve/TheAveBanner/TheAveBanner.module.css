@@ -3,26 +3,86 @@
   padding: 50px 0px 0px;
 }
 
-.AveBannerText h3 {
+/* .AveHeroImage{
+  background-image: url('../../../public/images/Floating\ ETH.png');
+  height: 400px;
+  width: 40%;  
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: right top;
+} */
+
+.AveHeroImage{
+  position: relative;
+  height: 400px;  
+  width: 550px;
+}
+
+
+#CreativeHavenText{
+  margin-top: 100px;
+}
+
+#YogaMeditationText{
+  margin-top: 50px;
+}
+
+.CreativeHavenImage{
+  position: relative;
+  height: 430px;
+  width: 520px;
+}
+
+
+.YogaMeditationImage{
+  position: relative;
+  height: 430px;
+  width: 520px;
+}
+
+
+
+.AveHeroText h3 {
+  font-size: 32px;
+  font-family: "Montserrat-Medium";
+    text-transform: uppercase;
+    font-weight: 500;
+    line-height: 40px;
+    color: #75ba87;
+    margin-bottom: 20px;
+}
+
+
+.AveHeroText h1 {
   font-size: 48px;
   font-weight: 500;
   font-family: "futura-bold";
   text-transform: uppercase;
-  line-height: 60px;
-  color: #ffffff;
-  letter-spacing: 0.2em;
+  line-height: 40px;
+  color: #ffffff;  
+  margin-bottom: 20px;
 }
 
-.AveBannerText p {
-  font-size: 16px;
+
+.AveHeroText h2 {
+  font-size: 32px;
   font-weight: 400;
   font-family: "Montserrat-Medium";
   text-transform: uppercase;
+  line-height: 30px;
+  color: #969696;
+  margin-bottom: 20px;
+}
 
-  line-height: 20px;
-  color: #75ba87;
-  margin-bottom: 53px;
-  margin-top: 15px;
+
+.AveHeroText p {
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #a3a3a3;
+  font-family: "Montserrat-Regular";
+  line-height: 24px;
 }
 
 .AveBannerImage {
@@ -511,6 +571,29 @@
   .TheAvePhoto .AveThePhoto {
     margin-left: 0px !important;
   }
+
+  .AveHeroImage{
+    position: relative;
+    height: 250px;
+  }
+
+  .YogaMeditationImage{
+    position: relative;
+    height: 250px;
+  }
+
+  .CreativeHavenImage{
+    position: relative;
+    height: 300px;
+  }
+
+  .AveHeroText h1 {
+    font-size: 32px;
+  }
+
+  .AveHeroText h2 {
+    font-size: 24px;
+  }
 }
 
 /* Media Query for Mobile Devices */
@@ -527,6 +610,12 @@
   }
   .CoWorkingPart {
     width: 87%;
+  }
+  .AveHeroText h1 {
+    font-size: 40px;
+  }
+  .AveHeroText h2 {
+    font-size: 24px;
   }
 }
 
@@ -723,6 +812,34 @@
     height: 250px !important;
   }
 
+
+  .AveHeroImage{
+    position: relative;
+    width: 400px;
+    height: 450px;
+  }
+
+  .YogaMeditationImage{
+    position: relative;
+    width: 400px;
+    height: 450px;
+  }
+
+  .CreativeHavenImage{
+    position: relative;
+    width: 400px;
+    height: 450px;
+  }
+ 
+
+  .AveHeroText h1 {
+    font-size: 32px;
+  }
+
+  .AveHeroText h2 {
+    font-size: 24px;
+  }
+
   /* .CoWorkingImage {
     width: 40%;
     height: 302px;
@@ -739,6 +856,70 @@
     margin-top: 0px;
     overflow: hidden;
     margin-left: -46px;
+  }
+
+  .AveHeroImage{
+    position: relative;
+    width: 300px;
+    height: 440px;
+    margin-top: 70px;
+  }
+
+  .YogaMeditationImage{
+    position: relative;
+    width: 300px;
+    height: 440px;
+    margin-top: 70px;
+  }
+
+  .CreativeHavenImage{
+    position: relative;
+    width: 300px;
+    height: 320px;
+    margin-top: 70px;
+  }
+
+ 
+  .AveHeroText h1 {
+    font-size: 32px;
+  }
+
+  .AveHeroText h2 {
+    font-size: 24px;
+  }
+  
+}
+
+
+@media (min-width: 820px) and (max-width: 1180px) {
+  .AveHeroImage{
+    position: relative;
+    width: 300px;
+    height: 440px;
+    margin-top: 70px;
+  }
+
+  .YogaMeditationImage{
+    position: relative;
+    width: 300px;
+    height: 440px;
+    margin-top: 70px;
+  }
+
+
+  .CreativeHavenImage{
+    position: relative;
+    width: 300px;
+    height: 320px;
+    margin-top: 70px;
+  }
+
+  .AveHeroText h1 {
+    font-size: 40px;
+  }
+
+  .AveHeroText h2 {
+    font-size: 24px;
   }
 }
 

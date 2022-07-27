@@ -5,102 +5,101 @@ import Image from "next/image";
 
 import Footer from "../../Shared/Footer/Footer";
 
+
 const TheAveBanner = () => {
   return (
     <div className={styles.AveBanner}>
       <div className="container pb-4 pt-4">
         <div className="row">
-          <div className={`col-md-12  col-sm-12 ${styles.AveBannerText}`}>
-            <h3>Creative Haven-yoga-Meditation-common-space</h3>
-            <p>CREATIVE HAVEN - Y0GA - MEDITATION - COMMON SPACE</p>
+          <div className={`col-md-7 col-sm-12 col-lg-7 ${styles.AveHeroText}`}>
 
-            <div className="row">
-              <div
-                className={`col-md-12 col-sm-12  col-lg-6 ${styles.AveBannerImage}`}
-              >
-                <Image width={750} height={700} src={"/images/Frame 174.png"} />
-              </div>
+            <h3>CREATIVE HAVEN | YOGA | MEDITATION</h3>
+            <h1>THE AVE</h1>
+            <h2>UNLOCKING YOUR CREATIVITY</h2>
 
-              <div className={`col-md-12 col-lg-6 ${styles.AveBannerPhoto}`}>
-                <div className={`${styles.PhotoOne}`}></div>
-                <div className={styles.PhotoTwo}></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+            <p>You've been through it, we all have. But you, no you're different, you're here still
+standing unaffected despite all chances to give up. You've been working on yourselt,
+Stavine in Vour lane. building an empire, we see vour elions, we pelleve ne world
+needs you, Shit we need eachother</p>
+            <p>Together we'll grow. Learn from our Creative Team, collaborate with a member, get a
+Voda session in, mediate, dedinspired, DalICiDate In a Creative Challendes. KICk ton
+une Ave. were ustectune stontee.</p>
 
-      <div className={styles.TheAve}>
-        <div className="container pb-4 pt-4">
+          
+             </div>
+
+             <div className={`col-md-5 col-lg-5 col-sm-12  ${styles.AveHeroImage}`}>
+             <Image layout="fill" objectFit="cover" src={"/images/Floating ETH.png"} />
+             </div>
+</div>
+</div>
+
+
+<>
+<div
+          style={{ marginBottom: "50px" }}
+          className={`container ${styles.CreativeHaven}`}
+        >
           <div className="row">
-            <div className={`col-md-12 ${styles.TheAveText}`}>
-              <h1>The Ave</h1>
-              <h4>AOTA keys to unlocking your creativity</h4>
-
-              <p> We see co-working spaces differently.</p>
-              <p>
-                We see them as a hub to get inspired in. A place where
-                imagination will thrive &amp; creativity is the very essence of
-              it’s environment.</p>
-              <p>We see lush green &amp; natural havens.</p>
-              <p>We see a sence of harmony &amp; zen.</p>
-              <p>We see ideas flourishing &amp; music playing.</p>
-
-              {/* <p>
-
-
-                You’ve been through it, we all have. But you, no you’re
-                different, you’re here still standing like unaffected despite
-                all chances to give up. You’ve been working on yourself, staying
-                in your lane. Building an empire, we see your efforts, we elieve
-                the world needs you. Shit we need each other.Together we’ll
-                grow. Learn from our Creative Team, collaborate with a member,
-                get a yoga session in, meditate, get inspired, participate in a
-                creative challenge to win real money. Kick it on the Ave, we’re
-                just getting started.{" "}
-              </p> */}
-            </div>
+          <div className={`col-md-5 col-lg-5 col-sm-12 ${styles.CreativeHavenImage}`}>
+          <Image layout="fill" objectFit="cover" src={"/images/VR Headsets.png"} />
           </div>
 
+          <div className={`col-md-7 col-sm-12 col-lg-7 ${styles.AveHeroText}`} id={styles.CreativeHavenText}>
+          <h3>CREATORS CHALLENGE | CO-WORKING</h3>
+            <h1>CREATIVE HAVEN</h1>
+            <h2>UNLOCKING YOUR CREATIVITY</h2>
+
+            <p>We see co-working spaces differently. We see them as a hub to get inspired in. A
+place where imagination will thrive &#38; creativity is the very essence of it's
+cnvironmentWe sce lush green &#38; natural havens We see a sense ofharmony 8
+zen. We see ideas flourishina &#38; music plaving.</p>
+            
+</div>
+
+          </div>
+
+
+          </div>
+
+</>    
+
+
+
+
+
+<>
+<div
+          style={{ marginBottom: "50px" }}
+          className={`container ${styles.YogaMeditation}`}
+        >
           <div className="row">
-            <Link href={"/creativehaven"}>
-              <div
-                className={`col-md-6 col-lg-6 col-sm-12 h-full ${styles.TheAveImage}`}
-              >
-                <div className={styles.AveTextOne}>
-                  <h1>Creative Haven</h1>
-                </div>
-              </div>
-            </Link>
 
-            <div
-              className={`col-md-6 col-sm-12 col-lg-6 h-full ${styles.TheAvePhoto}`}
-            >
-              <Link href={"/onlineclasses"}>
-                <div className={styles.AvePhoto}>
-                  {/* <div className={styles.yoga}>                 
-                </div> */}
-                  <div className={styles.AveTextOne}>
-                    <h1>Yoga with River</h1>
-                  </div>
-                </div>
-              </Link>
+          <div className={`col-md-7 col-sm-12 col-lg-7 ${styles.AveHeroText}`} id={styles.YogaMeditationText}>
+          <h3>YOGA WITH RIVER | MINDFUL MEDITATION</h3>
+            <h1>YOGA &#38; MEDITATION</h1>
+            <h2>HEALTHY BODY &#38; HEALTHY MIND</h2>
 
-              <Link href={"/coching"}>
-                <div className={styles.AveThePhoto}>
-                  {/* <div className={styles.yoga}>                 
-                </div> */}
-                  <div className={styles.AveTextOne}>
-                    <h1>Creators Challenge</h1>
-                  </div>
-                </div>
-              </Link>
-            </div>
+            <p>We see co working spaces differently. We see them as a hub to get inspired in.
+A place where imagination will thrive &#38; creativity is the very essence of it's
+enuronment. We see lush green 8 natural havens, We see a sence of harmon &#38; zen. We see ideas flourishing &#38; music playing. </p>
+            
+</div>
+          <div className={`col-md-5 col-lg-5 col-sm-12 ${styles.YogaMeditationImage}`}>
+          <Image layout="fill" objectFit="cover" src={"/images/Halo.png"} />
           </div>
-        </div>
-      </div>
 
+         
+
+          </div>
+
+
+          </div>
+
+</>  
+    
       <>
+
         <div
           style={{ marginBottom: "50px" }}
           className={`container ${styles.CoWorking}`}
@@ -135,6 +134,7 @@ const TheAveBanner = () => {
       </>
 
       <Footer />
+     
     </div>
   );
 };
