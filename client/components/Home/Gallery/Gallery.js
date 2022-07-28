@@ -7,7 +7,7 @@ import styles from './Gallery.module.css';
 
 function Gallery() {
     const router = useRouter()
-    const [scrollValue, setscrollValue] = useState(0);
+    const [scrollValue, setScrollValue] = useState(0);
 
     useEffect(() => {
         document.getElementById("gallery1").scrollBy(0, 0);
@@ -16,9 +16,9 @@ function Gallery() {
     }, []);
 
     useEffect(() => {
-        if (router.asPath === '/') {
+        if (router.asPath === '/the-ave') {
             const handleSet = () => {
-                setscrollValue(window.scrollY);
+                setScrollValue(window.scrollY);
             }
             handleSet();
             window.addEventListener("scroll", handleSet);
@@ -27,15 +27,15 @@ function Gallery() {
 
     useEffect(() => {
         console.log(router, 'router');
-        if (router.asPath === '/') {
+        if (router.asPath === '/the-ave') {
             const handleScroll = () => {
-                if (window.scrollY > scrollValue && window.scrollY > 2500 && window.scrollY < 5000) {
+                if (window.scrollY > scrollValue && window.scrollY > 500 && window.scrollY < 1000) {
                     document.getElementById("gallery1").scrollBy(500, 0);
                     document.getElementById("gallery2").scrollBy(-500, 0);
                     // document.getElementById("gallery3").scrollBy(500, 0);
                 }
 
-                console.log(scrollValue);
+                console.log(scrollValue, "scroll");
                 if (window.scrollY < scrollValue) {
                     document.getElementById("gallery1").scrollBy(-500, 0);
                     document.getElementById("gallery2").scrollBy(500, 0);
@@ -46,7 +46,6 @@ function Gallery() {
             handleScroll();
 
             window.addEventListener("scroll", handleScroll);
-
             return () => {
                 window.removeEventListener("scroll", handleScroll);
             };

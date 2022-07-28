@@ -19,7 +19,7 @@ function Footer() {
         <div className="container pt-3 pb-2">
           <div className="row">
             <div
-              className={`d-flex flex-wrap justify-content-between align-items-center ${styles.footerContectWrapper}`}
+              className={`d-flex flex-wrap justify-content-between align-items-center ${ styles.footerContectWrapper }`}
             >
               <div style={{ width: "23rem" }}>
                 <h5 className={styles.InputText}>Join the AOTAVERSE</h5>
@@ -27,9 +27,9 @@ function Footer() {
                   <input
                     type="email"
                     placeholder="Email Address"
-                    className={`form-control ${styles.emailInput}`}
+                    className={`form-control ${ styles.emailInput }`}
                   />
-                  <button className={`btn ${styles.btnSubmit}`}>Sign Up</button>
+                  <button className={`btn ${ styles.btnSubmit }`}>Sign Up</button>
                 </div>
 
                 <div className="d-flex flex-row ">
@@ -132,17 +132,16 @@ function Footer() {
                   </span>
                 </div>
               </div>
-              <div className={`fn-futura text-end ${styles.FooterLastText}`}>
+              <div className={`fn-futura text-end ${ styles.FooterLastText }`}>
                 <h6>ALIENS ON THE AVE</h6>
                 <p>We respect your privacy.</p>
                 <p>
-                  *The proceeds from the promotion will benefit GivePower Foundation, located at 500 2nd Street. 1st Floor,
-                  San Francisco, CA 94107, a 501(c)(3) charity.  The donation is tax deductible by Aliens On The Ave.  not the
-                  customer.</p>
-                <p> <small>GivePower's annual report and more information are available at 
+                  GivePower Foundation, located at 500 2nd Street. 1st Floor, San Francisco, <br /> CA 94107, a 501(c)(3) charity. The donation is tax deductible by Aliens On The Ave.
+                </p>
+                <p> <small>GivePower's annual report and more information are available at
                   <a href="https://www.givepower.org/"> www.givepower.org</a> Registration with any
-                    regulatory agency does not imply endorsement. </small> </p>
-                  <p> © 2022 Aliens On The Ave  </p>
+                  regulatory agency does not imply endorsement. </small> </p>
+                <p> © 2022 Aliens On The Ave  </p>
 
               </div>
             </div>

@@ -144,11 +144,11 @@ function Navbar({ BorderBottom, wallet }) {
                       </a>
                     </li>
                   </Link>
-                  <Link href={"/roadMap"}>
+                  <Link href={"/roadmap"}>
                     <li className="nav-item ms-md-4">
                       <a
                         className={
-                          router.pathname == "/roadMap"
+                          router.pathname == "/roadmap"
                             ? Styles.navLinkActive
                             : "nav-link " + Styles.navLink
                         }
@@ -174,11 +174,11 @@ function Navbar({ BorderBottom, wallet }) {
                       </a>
                     </li>
                   </Link>
-                  <Link href={"/partners"}>
+                  <Link href={"/the-ave"}>
                     <li className="nav-item ms-md-4">
                       <a
                         className={
-                          router.pathname == "/partners"
+                          router.pathname == "/the-ave"
                             ? Styles.navLinkActive
                             : "nav-link " + Styles.navLink
                         }
