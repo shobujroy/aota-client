@@ -16,7 +16,7 @@ function Footer() {
       </div>
 
       <footer className={`footer-area  clear-both`}>
-        <div className="container pt-5 pb-5">
+        <div className="container pt-3 pb-2">
           <div className="row">
             <div
               className={`d-flex flex-wrap justify-content-between align-items-center ${styles.footerContectWrapper}`}
