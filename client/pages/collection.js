@@ -1,4 +1,4 @@
-import React, { useContext, useEffect } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { MintContext } from "./../context/MintContext";
 import Navbar from "./../components/Shared/Navbar/Navbar";
 import Footer from "./../components/Shared/Footer/Footer";
@@ -6,12 +6,14 @@ import NFTcard from "./../components/Collection/NFTcard";
 import Link from "next/link";
 
 function Collection() {
+  const [dep, setDep] = useState(Math.random());
   const { myNFTs, collection, isConnected, hasMetamask, sign } =
     useContext(MintContext);
 
   useEffect(() => {
+    console.log("rendaring")
     myNFTs();
-  }, [isConnected, hasMetamask, sign]);
+  }, [isConnected, hasMetamask, sign, dep]);
   return (
     <div style={{ backgroundColor: "#051509" }}>
       <Navbar BorderBottom={true} wallet={true} />
@@ -24,7 +26,7 @@ function Collection() {
           <h1 style={{ color: "#FFFFFF" }} className="fw-bold">Collection</h1>
           <div className="mt-3 d-flex justify-content-between flex-wrap justify-content-sm-center">
             {collection.map((item, index) => {
-              return <NFTcard api={item} />;
+              return <NFTcard api={item} setDep={setDep} />;
             })}
           </div>
         </div>

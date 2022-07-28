@@ -32,6 +32,7 @@ export const MintProvider = ({ children }) => {
     const [priPrice, setPriPrice] = useState(0.07);
     const [trxHash, setTrxHash] = useState('');
     const [collection, setCollection] = useState([]);
+    const [dep, setDep] = useState(Math.random());
 
     // connect wallet
     async function connectwallet() {
@@ -181,6 +182,7 @@ export const MintProvider = ({ children }) => {
                         setTrxHash(txHash);
                     }
                 });
+                setDep(Math.random());
             } catch (error) {
                 console.log(error);
             }
@@ -217,20 +219,22 @@ export const MintProvider = ({ children }) => {
         }
     }, [hasMetamask]);
     return (
-        <MintContext.Provider value={{ 
-            myNFTs, 
-            collection, 
-            trxHash, 
-            isConnected, 
-            hasMetamask, 
-            sign, 
-            pubMint, 
-            disconnectwallet, 
-            connectwallet, 
-            reserve, 
+        <MintContext.Provider value={{
+            myNFTs,
+            collection,
+            trxHash,
+            isConnected,
+            hasMetamask,
+            sign,
+            pubMint,
+            disconnectwallet,
+            connectwallet,
+            reserve,
             pubPrice,
-            priPrice, 
-            nftTransfer }}>
+            priPrice,
+            nftTransfer,
+            dep
+        }}>
             {children}
         </MintContext.Provider>
     )
