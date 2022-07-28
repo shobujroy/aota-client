@@ -17,7 +17,9 @@
   position: relative;
   height: 400px;  
   width: 550px;
+  cursor: pointer;
 }
+
 
 
 #CreativeHavenText{
@@ -32,6 +34,7 @@
   position: relative;
   height: 430px;
   width: 520px;
+  cursor: pointer;
 }
 
 
@@ -39,6 +42,7 @@
   position: relative;
   height: 430px;
   width: 520px;
+  cursor: pointer;
 }
 
 
@@ -62,6 +66,7 @@
   line-height: 40px;
   color: #ffffff;  
   margin-bottom: 20px;
+  cursor: pointer;
 }
 
 
@@ -141,6 +146,7 @@
   color: #ffff;
   font-family: "futura-bold";
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 .TheAveText h4 {
@@ -173,6 +179,7 @@
   background-position: right top;
   height: 600px;
   margin-top: 50px;
+  cursor: pointer;
 }
 
 .AvePhoto {
@@ -184,6 +191,7 @@
   background-size: 80% 100%;
   background-position: center;
   height: 575px;
+  cursor: pointer;
 }
 
 .AveThePhoto {
@@ -195,6 +203,7 @@
   background-size: 100% 100%;
   background-position: right top;
   height: 400px;
+  cursor: pointer;
 }
 
 .TheAveImage:hover {
@@ -319,6 +328,7 @@
 
 .CoWorkingImage {
   width: 30%;
+  transform: rotatey(180deg);
 }
 
 .row {

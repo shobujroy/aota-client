@@ -4,20 +4,7 @@ import Styles from "./MainfestoHero.module.css";
 const MainfestoHero = () => {
   return (
     <div className={Styles.mainfestoHero}>
-      <div className={Styles.maiFestoHeroLeft}>
-        <Image
-          src={"/images/Blue Crystal.png"}
-          layout="fill"
-          objectFit="cover"
-          className={Styles.maniFestoImage1 }
-        ></Image>
-         <Image
-          src={"/images/Afrojack 1.png"}
-          layout="fill"
-          objectFit="cover"
-           className={Styles.maniFestoImage2 }
-        ></Image>
-      </div>
+      
       <div className={Styles.mainFestoHeroRight}>
         <h6>Manifesto</h6>
         <h1>
@@ -37,6 +24,22 @@ const MainfestoHero = () => {
         <p>
           If we grow, you grow, we go together welcome to the creative Haven.
         </p>
+      </div>
+
+
+      <div className={Styles.maiFestoHeroLeft}>
+        <Image
+          src={"/images/Blue Crystal.png"}
+          layout="fill"
+          objectFit="cover"
+          className={Styles.maniFestoImage1 }
+        ></Image>
+         <Image
+          src={"/images/Afrojack 1.png"}
+          layout="fill"
+          objectFit="cover"
+           className={Styles.maniFestoImage2 }
+        ></Image>
       </div>
     </div>
   );

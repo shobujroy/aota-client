@@ -7,16 +7,19 @@
   align-items: center;
   justify-content: space-between;
 }
+
 .maiFestoHeroLeft {
   width: 573px;
   height: 620px;
   position: relative;
   margin-top: -32px;
 }
+
 .mainFestoHeroRight {
   width: 575px;
   height: auto;
 }
+
 .mainFestoHeroRight h6 {
   font-family: "Montserrat-Medium";
   text-transform: uppercase;
@@ -25,6 +28,7 @@
   font-weight: 800;
   font-size: 18px;
 }
+
 .mainFestoHeroRight h1 {
   font-family: "futura-bold";
   text-transform: uppercase;
@@ -33,6 +37,7 @@
   color: #e3f1e7;
   margin-top: 20px;
 }
+
 .mainFestoHeroRight p {
   font-family: "Montserrat-Regular";
   color: #a3a3a3;
@@ -46,6 +51,7 @@
   .mainfestoHero {
     width: 765px;
     height: 577px;
+    padding: 20px;
   }
   .maiFestoHeroLeft {
     width: 405px;
@@ -81,10 +87,10 @@
   .maiFestoHeroLeft {
     width: 354px;
     height: 384px;
-    margin-top: 215px;
+    margin-top: 15px;
   }
   .mainFestoHeroRight {
-    margin-top: 30px;
+    margin-top: 0px;
     height: 350px !important;
   }
   .maniFestoImage1 {
@@ -92,6 +98,10 @@
   }
   .maniFestoImage2 {
     display: none !important;
+  }
+
+  .mainfestoHero{
+    flex-direction: column-reverse;
   }
 }
 
@@ -112,10 +122,10 @@
 
 @media screen and (max-width: 320px) {
   .mainFestoHeroRight p {
-    margin-right: 50px;
+    margin-right: 50px !important;
   }
 
   .maiFestoHeroLeft {
-    margin-top: 270px;
+    margin-top: 20px;
   }
 }

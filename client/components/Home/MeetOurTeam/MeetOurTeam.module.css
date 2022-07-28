@@ -8,7 +8,7 @@
 .MemberProfil {
   background: #1a2a1e;
   width: 500px;
-  height: 785px;
+  padding: 0px 0px 20px;
   text-align: center;
   position: relative;
 }
@@ -303,7 +303,7 @@
   }
   .cardSlider {
     width: 90vw;
-    height: 574px;
+    height: auto;
     background: #1a2a1e;
     margin-left: 5vw;
     display: flex;
@@ -384,8 +384,7 @@
 
   .MemberProfil {
     background: #1a2a1e;
-    width: 347px !important;
-    height: 721px;
+    width: 347px !important;    
     text-align: center;
     position: relative;
     margin: 0 auto;
@@ -560,7 +559,6 @@
   .MemberProfil {
     background: #1a2a1e;
     width: 500px;
-    height: 797px;
     text-align: center;
     position: relative;
   }
@@ -602,7 +600,6 @@
   .MemberProfil {
     background: #1a2a1e;
     width: 377px;
-    height: 735px !important;
     text-align: center;
     position: relative;
     margin-top: 147px;
