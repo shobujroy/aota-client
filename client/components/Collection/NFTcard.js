@@ -1,10 +1,16 @@
 import axios from 'axios';
 import Image from 'next/image';
 import React, { useEffect, useState } from 'react';
+import { MintContext } from './../../context/MintContext';
+import swal from 'sweetalert';
+import { useContext } from 'react';
 
-function NFTcard({ api, src, title }) {
+function NFTcard({ api, src, title, setDep }) {
+    const { nftTransfer } =
+        useContext(MintContext);
     const [nft, setNft] = useState(null);
     const [imgNull, setImgNull] = useState(false);
+    const [address, setAddress] = useState('');
 
     const getData = async (api) => {
         console.log("working", api)
@@ -21,6 +27,13 @@ function NFTcard({ api, src, title }) {
         } catch (e) {
             console.log(e);
         }
+    }
+
+    const handleTransferNFT = async () => {
+        const something = api.split('/');
+        await nftTransfer(address, something[3]);
+        swal("Success", "NFT transferred successfully", "success");
+        setDep(Math.random());
     }
 
     useEffect(() => {
@@ -56,17 +69,18 @@ function NFTcard({ api, src, title }) {
                     <div className="card-body">
                         <h5 className="card-title title-nft-name">{nft.name}</h5>
                     </div>
-                    
-                        <div class="input-group mb-3">
-                            <input type="text" class="form-control" placeholder="" aria-label="" aria-describedby="basic-addon2" />
-                            <div class="input-group-append">
-                            <button class="btn btn-outline-secondary" type="button">Send</button>
-                            </div>
+                    <div class="input-group mb-3">
+                        <input
+                            onChange={(e) => setAddress(e.target.value)}
+                            type="text" class="form-control" placeholder="" aria-label="" aria-describedby="basic-addon2" />
+                        <div class="input-group-append">
+                            <button
+                                onClick={() => handleTransferNFT()}
+                                class="btn btn-outline-secondary" type="button">Send</button>
                         </div>
+                    </div>
                 </div>
-                
             )}
-            
         </>
     )
 }
