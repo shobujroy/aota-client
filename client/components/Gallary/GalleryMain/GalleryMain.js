@@ -1,9 +1,8 @@
-import Styles from "./GalleryMain.module.css";
 import Image from "next/image";
-import { data } from "../data";
 import { useState } from "react";
-import Switch from "@mui/material/Switch";
+import { data } from "../data";
 import { Item } from "./GallaryImage";
+import Styles from "./GalleryMain.module.css";
 
 const label = { inputProps: { "aria-label": "Switch demo" } };
 
@@ -122,11 +121,6 @@ const GalleryMain = () => {
         <div className={Styles.gallaryBanner}>
           <div className={Styles.bannerText}>
             <h1>Gallery</h1>
-            {/* <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
-              amet diam pharetra dui, venenatis adipiscing diam.
-            </p>
-            <button>Pair Now</button> */}
           </div>
         </div>
         <div className={Styles.galleryItem}>

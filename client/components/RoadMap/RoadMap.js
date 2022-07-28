@@ -1,5 +1,5 @@
-import React from "react";
 import Image from "next/image";
+import React from "react";
 import styles from "./RoadMap.module.css";
 
 import { useState } from "react";
@@ -29,9 +29,10 @@ const RoadMap = () => {
             </div>
 
             <div
-              className={`col-lg-6 col-md-12 col-sm-12 ${styles.MapWrapper}`}
+              className={`col-lg-6 col-md-12 col-sm-12 ${styles.MapWrapper}`
+              }
             >
-              <div className={styles.imageWrapper}>
+              <div className={styles.imageWrapper} data-aos="zoom-in">
                 
               </div>
             </div>

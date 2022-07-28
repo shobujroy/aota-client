@@ -31,7 +31,7 @@ function Navbar({ BorderBottom, wallet }) {
           </Link>
 
           <button
-            className={`navbar-toggler ${Styles.MobileNabButton}`}
+            className={`navbar-toggler collapsed ${Styles.MobileNabButton}`}
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarSupportedContent"
@@ -39,12 +39,15 @@ function Navbar({ BorderBottom, wallet }) {
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <Image
+            {/* <Image
               src={"/image/Menu (2 lines).svg"}
               width={20}
               height={15}
               className="navbar-toggler-icon text-white"
-            />
+            /> */}
+             <span class="toggler-icon top-bar"></span>
+        <span class="toggler-icon middle-bar"></span>
+        <span class="toggler-icon bottom-bar"></span>
           </button>
         </div>
 

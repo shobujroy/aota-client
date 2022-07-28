@@ -1,6 +1,6 @@
 import axios from 'axios';
-import Image from 'next/image'
-import React, { useState, useEffect } from 'react'
+import Image from 'next/image';
+import React, { useEffect, useState } from 'react';
 
 function NFTcard({ api, src, title }) {
     const [nft, setNft] = useState(null);
@@ -29,7 +29,7 @@ function NFTcard({ api, src, title }) {
     return (
         <>
             {nft && (
-                <div className="card" style={{ width: "18rem", margin: "5px" }}>
+                <div className="card card-container" style={{ width: "18rem", margin: "5px" }}>
                     {
                         imgNull
                             ? (
@@ -54,10 +54,19 @@ function NFTcard({ api, src, title }) {
                             )
                     }
                     <div className="card-body">
-                        <h5 className="card-title">{nft.name}</h5>
+                        <h5 className="card-title title-nft-name">{nft.name}</h5>
                     </div>
+                    
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" placeholder="" aria-label="" aria-describedby="basic-addon2" />
+                            <div class="input-group-append">
+                            <button class="btn btn-outline-secondary" type="button">Send</button>
+                            </div>
+                        </div>
                 </div>
+                
             )}
+            
         </>
     )
 }

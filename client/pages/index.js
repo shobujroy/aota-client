@@ -29,6 +29,7 @@ function Home() {
       <OurPartners />
       <FaqAota />
       <Footer bg={"bg-main"} />
+      {/* <Gallery/> */}
 
       {/* 
       <Faq /> 

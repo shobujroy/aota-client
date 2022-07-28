@@ -29,12 +29,14 @@ const MainfestoHero = () => {
 
       <div className={Styles.maiFestoHeroLeft}>
         <Image
+          data-aos="zoom-in"
           src={"/images/Blue Crystal.png"}
           layout="fill"
           objectFit="cover"
           className={Styles.maniFestoImage1 }
         ></Image>
-         <Image
+        <Image
+          data-aos="zoom-in"
           src={"/images/Afrojack 1.png"}
           layout="fill"
           objectFit="cover"

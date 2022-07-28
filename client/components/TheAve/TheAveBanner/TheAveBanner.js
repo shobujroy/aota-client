@@ -3,52 +3,54 @@ import Link from "next/link";
 import React from "react";
 import styles from "./TheAveBanner.module.css";
 
+import Gallery from "../../Home/Gallery/Gallery";
 import Footer from "../../Shared/Footer/Footer";
-import TheAveSlider from "../TheAveSlider/TheAveSlider";
 
 const TheAveBanner = () => {
   return (
     <div className={styles.AveBanner}>
 
       <>
-      <div className="container pb-4 pt-4">
-        <div className="row">
-          <div className={`col-md-7 col-sm-12 col-lg-7 ${styles.AveHeroText}`}>
-            <h3>CREATIVE HAVEN | YOGA | MEDITATION</h3>
-            <h1>THE AVE</h1>
-            <h2>UNLOCKING YOUR CREATIVITY</h2>
+        <div className="container pb-4 pt-4">
+          <div className="row">
+            <div className={`col-md-7 col-sm-12 col-lg-7 ${styles.AveHeroText}`}>
+              <h3>CREATIVE HAVEN | YOGA | MEDITATION</h3>
+              <h1>THE AVE</h1>
+              <h2>UNLOCKING YOUR CREATIVITY</h2>
 
-            <p>
-              You've been through it, we all have. But you, no you're different,
-              you're here still standing unaffected despite all chances to give
-              up. You've been working on yourselt, Stavine in Vour lane.
-              building an empire, we see vour elions, we pelleve ne world needs
-              you, Shit we need eachother
-            </p>
-            <p>
-              Together we'll grow. Learn from our Creative Team, collaborate
-              with a member, get a Voda session in, mediate, dedinspired,
-              DalICiDate In a Creative Challendes. KICk ton une Ave. were
-              ustectune stontee.
-            </p>
-          </div>
-          
+              <p>
+                You've been through it, we all have. But you, no you're different,
+                you're here still standing unaffected despite all chances to give
+                up. You've been working on yourself, staying in your lane.
+                Building an empire, we see your efforts, we believe the world needs
+                you. Shit we need eachother.
+              </p>
+              <p>
+                Together we'll grow. Learn from our Creative Team, collaborate
+                with a member, get a Voda session in, mediate, dedinspired,
+                DalICiDate In a Creative Challendes. KICk ton une Ave. were
+                ustectune stontee.
+              </p>
+            </div>
 
-          <div
-            className={`col-md-5 col-lg-5 col-sm-12  ${styles.AveHeroImage}`}
-          >
-            <Image
-              layout="fill"
-              objectFit="cover"
-              src={"/images/Floating ETH.png"}
-            />
+
+            <div
+              className={`col-md-5 col-lg-5 col-sm-12  ${styles.AveHeroImage}`}
+            >
+              <Image
+                data-aos="zoom-in"
+                layout="fill"
+                objectFit="cover"
+                src={"/images/Floating ETH.png"}
+              />
+            </div>
           </div>
         </div>
-      </div>
 
-    
+
       </>
-      <TheAveSlider/>
+      <Gallery/>
+      {/* <TheAveSlider /> */}
 
       <>
         <div
@@ -59,27 +61,36 @@ const TheAveBanner = () => {
             <div
               className={`col-md-5 col-lg-5 col-sm-12 ${styles.CreativeHavenImage}`}
             >
-              <Image
+              <Link href={"/creativehaven"} style={{cursor: "pointer"}}>
+                <Image
+                  data-aos="zoom-in"
                 layout="fill"
                 objectFit="cover"
-                src={"/images/VR Headsets.png"}
-              />
+                  src={"/images/VR Headsets.png"}
+                  className={ styles.CreativeHavenImg}
+                />
+                
+                </Link>
             </div>
+            
 
             <div
               className={`col-md-7 col-sm-12 col-lg-7 ${styles.AveHeroText}`}
               id={styles.CreativeHavenText}
             >
               <h3>CREATORS CHALLENGE | CO-WORKING</h3>
-              <h1>CREATIVE HAVEN</h1>
+              <Link href={"/creativehaven"} style={{cursor: "pointer"}}>
+                <h1>CREATIVE HAVEN</h1>
+              </Link>
+              
               <h2>UNLOCKING YOUR CREATIVITY</h2>
 
               <p>
                 We see co-working spaces differently. We see them as a hub to
                 get inspired in. A place where imagination will thrive &#38;
-                creativity is the very essence of it's cnvironmentWe sce lush
-                green &#38; natural havens We see a sense ofharmony 8 zen. We
-                see ideas flourishina &#38; music plaving.
+                creativity is the very essence of it's environment. We see lush
+                green &#38; natural havens. We see a sense of harmony &#38; zen. We
+                see ideas flourishing &#38; music playing.
               </p>
             </div>
           </div>
@@ -97,25 +108,30 @@ const TheAveBanner = () => {
               id={styles.YogaMeditationText}
             >
               <h3>YOGA WITH RIVER | MINDFUL MEDITATION</h3>
-              <h1>YOGA &#38; MEDITATION</h1>
+              <Link href={"/onlineclasses"}>
+                <h1>YOGA &#38; MEDITATION</h1>
+               </Link>
+              
               <h2>HEALTHY BODY &#38; HEALTHY MIND</h2>
               
               <p>
                 We see co working spaces differently. We see them as a hub to
                 get inspired in. A place where imagination will thrive &#38;
-                creativity is the very essence of it's enuronment. We see lush
-                green 8 natural havens, We see a sence of harmon &#38; zen. We
-                see ideas flourishing &#38; music playing.{" "}
+                creativity is the very essence of it's environment. We see lush
+                green &#38; natural havens. We see a sense of harmony &#38; zen. We
+                see ideas flourishing &#38; music playing.
               </p>
             </div>
             <div
               className={`col-md-5 col-lg-5 col-sm-12 ${styles.YogaMeditationImage}`}
             >
-              <Image layout="fill" objectFit="cover" src={"/images/Halo.png"} />
+              <Link href={"/onlineclasses"}>
+                <Image data-aos="zoom-in" layout="fill" objectFit="cover" src={"/images/Halo.png"} className={styles.CreativeHavenImg} />
+                </Link>
             </div>
-</div>
-</div>
-</>
+          </div>
+        </div>
+      </>
 
 
 {/* 
@@ -138,27 +154,20 @@ const TheAveBanner = () => {
             </div>
           </div> 
 
-          <div className="row d-flex justify-content-center align-items-center">
-            <Link href={"/creativehaven"}>
-              <div
-                className={`col-md-6 col-lg-6 col-sm-12 h-full ${styles.TheAveImage}`}
-              >
-                <div className={styles.AveTextOne}>
-                  <h1>Creative Haven</h1>
-                </div>
-              </div>
-            </Link>
-              <Link href={"/onlineclasses"}>
-            <div
-              className={`col-md-6 col-lg-6 col-sm-12 h-full ${styles.TheAvePhoto}`}
-            >
-              
-                <div className={styles.AvePhoto}>
+            <div className="row d-flex justify-content-center align-items-center">
+              <Link href={"/creativehaven"}>
+                <div
+                  className={`col-md-6 col-lg-6 col-sm-12 h-full ${styles.TheAveImage}`}
+                >
                   <div className={styles.AveTextOne}>
-                    <h1>Yoga with River</h1>
+                    <h1>Creative Haven</h1>
                   </div>
                 </div>
-              
+              </Link>
+              <Link href={"/onlineclasses"}>
+                <div
+                  className={`col-md-6 col-lg-6 col-sm-12 h-full ${styles.TheAvePhoto}`}
+                >
 
             <Link href={"/coching"}>
                 <div className={styles.AveThePhoto}>
@@ -169,6 +178,9 @@ const TheAveBanner = () => {
               </Link> 
               </div>
               </Link>
+                </div>
+              </Link>
+            </div>
           </div>
         </div>
         </div>
@@ -195,7 +207,7 @@ const TheAveBanner = () => {
 
             <div className={`${styles.CoWorkingPart}`}>
               <div className={styles.BackIcon}>
-                <Image layout="fill" objectFit="cover" src={"/images/“.png"} />
+                <Image  layout="fill" objectFit="cover" src={"/images/“.png"} />
               </div>
 
               <p>
@@ -215,8 +227,8 @@ const TheAveBanner = () => {
 
       <Footer />
     </div>
-   
-  
+
+
   );
 };
 

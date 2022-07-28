@@ -1,6 +1,6 @@
 .MeetOurTeam {
   background: #051509;
-  padding: 100px 0px;
+  padding: 95px 0px;
 }
 .meetOurTeamMobile {
   display: none;
@@ -261,6 +261,7 @@
 }
 
 /* Media Query for Mobile Devices */
+
 @media (max-width: 390px) {
   .cardSLiderTwo {
     height: 26vh;
@@ -299,11 +300,11 @@
     line-height: 20px;
     color: #fafafa !important;
     text-align: center;
-    margin: 40px 20px;
+    margin: 0px 20px;
   }
   .cardSlider {
     width: 90vw;
-    height: auto;
+    height: 65vh !important;
     background: #1a2a1e;
     margin-left: 5vw;
     display: flex;
@@ -325,7 +326,7 @@
     line-height: 20px;
     color: white;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 2px;
   }
   /* .cardSLiderOne {
     width: 57vw;
@@ -342,10 +343,10 @@
   }
 
   .cardSLiderTwo {
-    width: 16vh;
+    width: 14vh;
     height: auto;
     background: #4a574d;
-    padding: 18px 8px 12px 8px;
+    padding: 11px 11px 4px 11px;
     margin-left: 2.5vw;
     margin-top: 2.5vw;
     margin: auto;
@@ -384,7 +385,7 @@
 
   .MemberProfil {
     background: #1a2a1e;
-    width: 347px !important;    
+    width: 347px !important;
     text-align: center;
     position: relative;
     margin: 0 auto;
@@ -493,6 +494,12 @@
   } */
 }
 
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .MeetOurTeam {
+    padding: 20px 0px 24px 0px;
+  }
+}
+
 @media screen and (min-width: 768px) and (max-width: 1039px) {
   .carousleItemElement {
     display: grid;
@@ -509,9 +516,7 @@
   .meetOurTeamSliderButtonArea {
     /* display: none; */
   }
-  .MeetOurTeam {
-    padding: 20px 0px 40px 0px;
-  }
+
   .meetOurTeamTab {
     display: none;
   }
@@ -739,5 +744,25 @@
     width: 90%;
     position: absolute;
     right: 0;
+  }
+}
+
+@media (max-width: 320px) {
+  .cardSlider {
+    width: 90vw;
+    height: 73vh !important;
+    background: #1a2a1e;
+    margin-left: 5vw;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0px;
+  }
+  .meetOurTeamMobile {
+    height: 788px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    display: block;
+    background: #051509;
   }
 }

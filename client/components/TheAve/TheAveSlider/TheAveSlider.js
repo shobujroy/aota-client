@@ -23,7 +23,11 @@ const TheAveSlider = () => {
                 keyboard={{
                     enabled: true,
                 }}
-                autoplay={true}
+                // autoplay={true}
+                    autoplay={{
+          delay: 2500,
+          disableOnInteraction: false,
+        }}
                 breakpoints={{
                     320: {
                         slidesPerView: 3,
