@@ -38,6 +38,7 @@ const TheAveBanner = () => {
               className={`col-md-5 col-lg-5 col-sm-12  ${styles.AveHeroImage}`}
             >
               <Image
+                data-aos="zoom-in"
                 layout="fill"
                 objectFit="cover"
                 src={"/images/Floating ETH.png"}
@@ -61,7 +62,8 @@ const TheAveBanner = () => {
               className={`col-md-5 col-lg-5 col-sm-12 ${styles.CreativeHavenImage}`}
             >
               <Link href={"/creativehaven"} style={{cursor: "pointer"}}>
-              <Image
+                <Image
+                  data-aos="zoom-in"
                 layout="fill"
                 objectFit="cover"
                   src={"/images/VR Headsets.png"}
@@ -111,7 +113,7 @@ const TheAveBanner = () => {
                </Link>
               
               <h2>HEALTHY BODY &#38; HEALTHY MIND</h2>
-
+              
               <p>
                 We see co working spaces differently. We see them as a hub to
                 get inspired in. A place where imagination will thrive &#38;
@@ -124,17 +126,19 @@ const TheAveBanner = () => {
               className={`col-md-5 col-lg-5 col-sm-12 ${styles.YogaMeditationImage}`}
             >
               <Link href={"/onlineclasses"}>
-                <Image layout="fill" objectFit="cover" src={"/images/Halo.png"} className={styles.CreativeHavenImg} />
+                <Image data-aos="zoom-in" layout="fill" objectFit="cover" src={"/images/Halo.png"} className={styles.CreativeHavenImg} />
                 </Link>
             </div>
           </div>
         </div>
       </>
 
-      {/* <>
-        <div className={styles.TheAve}>
-          <div className="container pb-4 pt-4">
-            <div className="row">
+
+{/* 
+<>
+      <div className={styles.TheAve}>
+        <div className="container pb-4 pt-4">
+          <div className="row">
             <div className={`col-md-12 ${styles.TheAveText}`}>
               <h1>The Ave</h1>
               <h4>AOTA keys to unlocking your creativity</h4>
@@ -148,7 +152,7 @@ const TheAveBanner = () => {
               <p>We see a sence of harmony &amp; zen.</p>
               <p>We see ideas flourishing &amp; music playing.</p>
             </div>
-          </div>
+          </div> 
 
             <div className="row d-flex justify-content-center align-items-center">
               <Link href={"/creativehaven"}>
@@ -165,26 +169,24 @@ const TheAveBanner = () => {
                   className={`col-md-6 col-lg-6 col-sm-12 h-full ${styles.TheAvePhoto}`}
                 >
 
-                  <div className={styles.AvePhoto}>
-                    <div className={styles.AveTextOne}>
-                      <h1>Yoga with River</h1>
-                    </div>
-                  </div>
-
-
-                  <Link href={"/coching"}>
+            <Link href={"/coching"}>
                 <div className={styles.AveThePhoto}>
                   <div className={styles.AveTextOne}>
                     <h1>Creators Challenge</h1>
                   </div>
                 </div>
+              </Link> 
+              </div>
               </Link>
                 </div>
               </Link>
             </div>
           </div>
         </div>
+        </div>
       </> */}
+
+      
 
       <>
         <div
@@ -192,9 +194,20 @@ const TheAveBanner = () => {
           className={`container ${styles.CoWorking}`}
         >
           <div className={`col-lg-12 col-sm-12- col-md-12 ${styles.row}`}>
+            
+
+            <div className={`${styles.CoWorkingImage}`}>
+              <Image
+                width={400}
+                height={425}
+                src={"/images/Photographer 2@2x.png"}
+              />
+            </div>
+
+
             <div className={`${styles.CoWorkingPart}`}>
               <div className={styles.BackIcon}>
-                <Image layout="fill" objectFit="cover" src={"/images/“.png"} />
+                <Image  layout="fill" objectFit="cover" src={"/images/“.png"} />
               </div>
 
               <p>
@@ -207,14 +220,6 @@ const TheAveBanner = () => {
               <div className={styles.Pasicon}>
                 <Image layout="fill" objectFit="cover" src={"/images/”.png"} />
               </div>
-            </div>
-
-            <div className={`${styles.CoWorkingImage}`}>
-              <Image
-                width={400}
-                height={425}
-                src={"/images/Photographer 2@2x.png"}
-              />
             </div>
           </div>
         </div>

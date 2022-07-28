@@ -1,6 +1,7 @@
+
+import Image from "next/image";
 import React from "react";
 import styles from "./PerksUtility.module.css";
-import Image from "next/image";
 
 const PerksUtility = () => {
   return (
@@ -26,6 +27,7 @@ helping to plant trees, provide water, &amp; enegy to regions all over the world
                     width={64}
                     height={64}
                     className={styles.CardImg}
+                    
                   />
                   <h3>Ethereum Airdrops</h3>
                 </div>
@@ -108,9 +110,10 @@ be the center of attention.  Unique just like you.
               </div>
 
               <div className={styles.UtilityImage}>
-              <div className={styles.UtilityReverse}>
-                <div className={styles.ChildImg}>
+              <div className={styles.UtilityReverse} data-aos="zoom-in">
+                <div className={styles.ChildImg} >
                   <Image
+                  
                     src={"/images/image 337.png"}
                     width={352}
                     height={194}
@@ -131,7 +134,7 @@ be the center of attention.  Unique just like you.
               style={{ marginTop: "100px" }}
               className={styles.UtilityAllText}
             >
-              <div className={styles.UtilityImage}>
+              <div className={styles.UtilityImage} data-aos="zoom-in">
                 <div className={styles.ChildImg}>
                   <Image
                     src={"/images/image 339.png"}

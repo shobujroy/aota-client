@@ -28,7 +28,7 @@
 
 .mainFesot {
   width: 100%;
-  height: 900px;
+  min-height: 100vh;
   background-color: #051509;
   background-image: url("../../public/images/Ellipse\ 3.png");
   background-size: 454px 454px;
