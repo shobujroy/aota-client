@@ -760,12 +760,12 @@
 
   .CoWorkingPart {
     width: 70%;
-    height: 250px;
+    height: auto;
     margin-top: 25px;
   }
 
   .CoWorkingPart p {
-    font-size: 16.5px;
+    font-size: 15px;
     font-weight: 500;
     line-height: 30px;
     font-family: "Montserrat-Regular";
@@ -799,7 +799,6 @@
   }
 
   .CoWorkingImage img {
-    /* height: 270px !important; */
     height: 100% !important;
     width: 100% !important;
   }
@@ -807,6 +806,7 @@
   .CoWorking {
     margin: 0 auto !important;
     margin-bottom: 50px !important;
+    padding-bottom: 20px;
   }
 
   .PhotoOne {
@@ -866,10 +866,10 @@
 @media (min-width: 456px) and (max-width: 768px) {
   .CoWorkingImage {
     width: 40%;
-    height: 302px;
-    margin-top: 0px;
+    height: auto;
+    margin-top: 20px;
     overflow: hidden;
-    margin-left: -46px;
+    margin-left: 0px;
   }
 
   .AveHeroImage {
@@ -936,7 +936,7 @@
 @media (min-width: 769px) and (max-width: 1040px) {
   .CoWorkingImage {
     width: 30%;
-    height: 302px;
+    height: auto;
     margin-top: 0px;
     overflow: hidden;
     margin-left: 0px;
@@ -1029,18 +1029,18 @@
 
   .CoWorkingPart {
     width: 70%;
-    height: 330px;
+    height: auto;
   }
 
   .CoWorkingPart p {
-    font-size: 18px;
+    font-size: 27px;
     font-weight: 500;
     line-height: 40px;
     font-family: "Montserrat-Regular";
     color: #ffffff;
-    width: 550px;
+    width: auto;
     margin: auto;
-    padding: 20px;
+    padding: 40px;
   }
 
   .CoWorkingPart .Pasicon {
@@ -1071,11 +1071,11 @@
   .CoWorking {
     margin: 0 auto !important;
     margin-bottom: 50px !important;
+    padding: 30px 0px;
   }
 
   .CoWorkingImage {
-    width: 30%;
-    height: 169px;
-    margin-top: -50px;
+    width: 40%;
+    height: auto;
   }
 }
