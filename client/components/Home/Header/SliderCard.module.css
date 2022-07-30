@@ -17,7 +17,6 @@
 .carouselItem {
   width: 100vw;
   height: 100vh;
-
   position: relative;
   background: url("../../../public/images/banner.png");
   background-size: 80vw 100vh;
@@ -256,33 +255,34 @@
   }
   .carouselItem {
     width: 100vw;
-    height: 124vh;
+    height: 85vh;
     position: relative;
-    background: url("../../../public/images/Guitarist.png");
-    background-size: 90vw 90%;
+    background: url("../../../public/images/banner.png");
+    background-size: 72vw 70%;
     background-position: right top;
     background-repeat: no-repeat;
     font-family: "Montserrat-Regular";
     background-position-x: 300px;
+    margin-top: 30px;
   }
   .carousleItemTwo {
-    width: 100vw;
-    height: 150vh;
+    width: 105vw;
+    height: 80vh;
     display: flex;
     justify-content: center;
     align-items: end;
     background: url("../../../public/images/Merch.png");
-    background-size: 215% 90%;
-    background-position: right top;
+    background-size: 90vw 90%;
+    background-position: center;
     background-repeat: no-repeat;
     font-family: "Montserrat-Regular";
   }
   .carouselItemThree {
     width: 99vw;
-    height: 85vh;
+    height: 80vh;
     position: relative;
     background: url("../../../public/images/creativehaven.png");
-    background-size: 70vw 90%;
+    background-size: 50vw 75%;
     background-position: right top;
     background-repeat: no-repeat;
     font-family: "Montserrat-Regular";
@@ -291,10 +291,10 @@
   }
   .carouselItemFour {
     width: 100vw;
-    height: 85vh;
+    height: 80vh;
     position: relative;
     background: url("../../../public/images/Yoga_River.png");
-    background-size: 55vw 90%;
+    background-size: 43vw 80%;
     background-position: right top;
     background-repeat: no-repeat;
     font-family: "Montserrat-Regular";

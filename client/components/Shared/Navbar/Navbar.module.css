@@ -372,7 +372,7 @@
 
   .menuAll {
     display: flex !important;
-    width: 550px !important;
+    width: 420px !important;
     margin-top: 0px !important;
   }
 
@@ -396,7 +396,7 @@
 @media (min-width: 1070px) and (max-width: 1350px) {
   .menuAll {
     display: flex !important;
-    width: 100% !important;
+    width: 540px !important;
     justify-content: end !important;
   }
 }
