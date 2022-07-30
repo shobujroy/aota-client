@@ -259,7 +259,7 @@
     height: 124vh;
     position: relative;
     background: url("../../../public/images/Guitarist.png");
-    background-size: 100vw 100%;
+    background-size: 90vw 90%;
     background-position: right top;
     background-repeat: no-repeat;
     font-family: "Montserrat-Regular";
@@ -272,7 +272,7 @@
     justify-content: center;
     align-items: end;
     background: url("../../../public/images/Merch.png");
-    background-size: 216% 93%;
+    background-size: 215% 90%;
     background-position: right top;
     background-repeat: no-repeat;
     font-family: "Montserrat-Regular";
@@ -282,20 +282,23 @@
     height: 85vh;
     position: relative;
     background: url("../../../public/images/creativehaven.png");
-    background-size: 100vw 100%;
+    background-size: 70vw 90%;
     background-position: right top;
     background-repeat: no-repeat;
     font-family: "Montserrat-Regular";
+    margin-top: 10px;
+
   }
   .carouselItemFour {
     width: 100vw;
     height: 85vh;
     position: relative;
     background: url("../../../public/images/Yoga_River.png");
-    background-size: 60vw 100%;
+    background-size: 55vw 90%;
     background-position: right top;
     background-repeat: no-repeat;
     font-family: "Montserrat-Regular";
+    margin-top: 10px;
   }
 
   .carouselItem p {

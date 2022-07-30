@@ -1,6 +1,6 @@
 .mainfestoHero {
   width: 1180px;
-  height: 820px;
+  height: auto;
   margin: 0 auto;
   position: relative;
   display: flex;
@@ -12,7 +12,7 @@
   width: 573px;
   height: 620px;
   position: relative;
-  margin-top: -32px;
+  margin-top: 40px;
 }
 
 .mainFestoHeroRight {
