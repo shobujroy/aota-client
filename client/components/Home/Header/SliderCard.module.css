@@ -408,10 +408,10 @@
     background-size: contain;
     background-position: center;
     height: auto;
-    width: 100%;
+    width: 80%;
     display: flex;
     justify-content: center;
-    margin-top: -150px;
+    margin-top: -115px;
   }
   .slider {
     display: none !important;
@@ -521,3 +521,21 @@
     background-position-x: -1100px;
   }
 }
+
+
+@media screen and (max-width: 320px) {
+  .heroMob {
+    background: url(../../../public/images/MobileBanner\ png.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: auto;
+    width: 95%;
+    display: flex;
+    justify-content: center;
+    margin-top: -115px;
+  }
+}
+
+
