@@ -181,7 +181,6 @@
   .carouselItem {
     width: 100vw;
     height: 100vh;
-
     position: relative;
     background: url("../../../public/images/banner.png");
     background-size: 80vw 80%;
@@ -369,19 +368,21 @@
 @media screen and (max-width: 637px) {
   .mobConnectwallbutton {
     width: 200px;
-    height: 56px;
-    background: #75ba87;
+    height: 56px;    
     font-weight: 700;
     color: white;
     margin-top: 83vh;
     transition: all linear 0.4s;
-    /* margin-left: 22%;  */
-    /* margin-right: auto; */
+    margin-left: 22%;  
+    margin-right: auto; 
     z-index: 5555;
   }
   .mobConnectwallbutton:hover {
     background: #e2dd96;
   }
+
+
+
   .mobConnectwallbutton button {
     background: #75ba87;
     color: #1a1a1a;
@@ -396,6 +397,7 @@
     text-transform: uppercase;
     transition: all linear 0.4s;
   }
+
 
   .mobileSLide {
     width: 100%;
@@ -542,5 +544,4 @@
     margin-top: -115px;
   }
 }
-
 
