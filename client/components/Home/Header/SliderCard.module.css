@@ -377,9 +377,7 @@
     margin-right: auto; 
     z-index: 5555;
   }
-  .mobConnectwallbutton:hover {
-    background: #e2dd96;
-  }
+ 
 
 
 
@@ -398,6 +396,10 @@
     transition: all linear 0.4s;
   }
 
+
+  .mobConnectwallbutton button:hover {
+    background: #e2dd96;
+  }
 
   .mobileSLide {
     width: 100%;
