@@ -20,7 +20,7 @@ const RoadMap = () => {
   return (
     <>
       <div className={styles.RoadMapMain}>
-        <div className="container pt-5 pb-5">
+        <div className="container">
           <div className="row">
             <div
               className={`col-lg-6 col-md-12 col-sm-12 ${styles.RoadWrapper}`}

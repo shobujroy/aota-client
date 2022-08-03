@@ -15,9 +15,9 @@ function Navbar({ BorderBottom, wallet }) {
   const [active, setActive] = useState(null);
   return (
     <nav
-      style={{ display: "block", padding: "20px 20px" }}
+      style={{ display: "block", padding: "20px 20px 0px" }}
       className={`navbar navbar-expand-lg fn-Montserrat-Regular ${wallet ? "navbar-light" : "navbar-dark"
-        } bg-primary pb-3`}
+        } bg-primary`}
     >
       <div className={`${wallet}  ${BorderBottom && Styles.BorderBottom}`}>
         <div className={Styles.MobileLogoButton}>
