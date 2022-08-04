@@ -8,14 +8,14 @@ const PerksUtility = () => {
     <div className={styles.PerksAndUtility}>
       <div className="container pt-5 pb-5">
         <div className="row">
-          <div className={`col-lg-12 col-sm-12 col-md-12 ${styles.Perks}`}>
+          <div className={`col-lg-12 col-sm-12 col-md-12 ${ styles.Perks }`}>
             <h1> Perks &#38; Utility</h1>
             <p>
-            
 
-When you buy an AOTA. You’re not Simply buying a rare pice of Art. You’re gaining 
-membership access to the Aotaverse with the following benefits. Additonally you are 
-helping to plant trees, provide water, &amp; enegy to regions all over the world."
+
+              When you buy an AOTA. You’re not Simply buying a rare pice of Art. You’re gaining
+              membership access to the Aotaverse with the following benefits. Additonally you are
+              helping to plant trees, provide water, &amp; enegy to regions all over the world."
 
             </p>
 
@@ -27,14 +27,14 @@ helping to plant trees, provide water, &amp; enegy to regions all over the world
                     width={64}
                     height={64}
                     className={styles.CardImg}
-                    
+
                   />
                   <h3>Ethereum Airdrops</h3>
                 </div>
 
                 <p>
-                AOTA holders will receive free airdrops (just cover the gas) for as long as they hold. Our team is
-actively exploring ways to expand the AOTAverse.
+                  AOTA holders will receive free airdrops (just cover the gas) for as long as they hold. Our team is
+                  actively exploring ways to expand the AOTAverse.
                 </p>
               </div>
 
@@ -50,7 +50,7 @@ actively exploring ways to expand the AOTAverse.
                   <h3 id={styles.creativeHeaven}>CREATIVE <span>HAVEN</span> </h3>
                 </div>
                 <p>
-                AOTA will grant access to The Creative Haven a creative coworking space built for the creators of the cosmos.
+                  AOTA will grant access to The Creative Haven a creative coworking space built for the creators of the cosmos.
                 </p>
               </div>
 
@@ -61,13 +61,13 @@ actively exploring ways to expand the AOTAverse.
                     width={64}
                     height={64}
                     className={styles.CardImg}
-                   
+
                   />
                   <h3>EXCLUSIVE MERCH</h3>
                 </div>
                 <p>
-                Members will have access to merch exclusive to the community.  Various products to show off, designed to 
-be the center of attention.  Unique just like you.
+                  Members will have access to merch exclusive to the community.  Various products to show off, designed to
+                  be the center of attention.  Unique just like you.
                 </p>
               </div>
 
@@ -82,15 +82,33 @@ be the center of attention.  Unique just like you.
                   <h3>COMMERCIAL USAGE</h3>
                 </div>
                 <p>
-                Commericial rights are directly granted to holders.  Your NFT is yours to use for for as long as you own it.  
+                  Commericial rights are directly granted to holders.  Your NFT is yours to use for for as long as you own it.
                 </p>
               </div>
             </div>
           </div>
 
-          <div className={`col-lg-12 col-sm-12 col-md-12 ${styles.Utilitys}`}>
+          <div className={`col-lg-12 col-sm-12 col-md-12 ${ styles.Utilitys }`}>
             <h1>Non- Profit Donations</h1>
             <div className={styles.UtilityAllText}>
+              <div className={styles.UtilityImage}>
+                <div className={styles.UtilityReverse} data-aos="zoom-in">
+                  <div className={styles.ChildImg} >
+                    <Image
+                      src={"/images/image 337.png"}
+                      width={352}
+                      height={194}
+                    />
+                  </div>
+                  <div className={styles.HomeImg}>
+                    <Image
+                      src={"/images/image 336.png"}
+                      width={338}
+                      height={189}
+                    />
+                  </div>
+                </div>
+              </div>
               <div className={styles.UtilityText}>
                 <h2>THE GIVE POWER FOUNDATION</h2>
                 <p>
@@ -108,48 +126,11 @@ be the center of attention.  Unique just like you.
                   person access to safe drinking water for at least 20 years
                 </p>
               </div>
-
-              <div className={styles.UtilityImage}>
-              <div className={styles.UtilityReverse} data-aos="zoom-in">
-                <div className={styles.ChildImg} >
-                  <Image
-                  
-                    src={"/images/image 337.png"}
-                    width={352}
-                    height={194}
-                  />
-                </div>
-                <div className={styles.HomeImg}>
-                  <Image
-                    src={"/images/image 336.png"}
-                    width={338}
-                    height={189}
-                  />
-                </div>
-              </div>
-              </div>
-
             </div>
+
             <div
               style={{ marginTop: "100px" }}
-              className={styles.UtilityAllText}
-            >
-              <div className={styles.UtilityImage} data-aos="zoom-in">
-                <div className={styles.ChildImg}>
-                  <Image
-                    src={"/images/image 339.png"}
-                    width={352}
-                    height={194}
-                  />
-                </div>
-                <div className={styles.HomeImg}>
-                  <Image
-                    src={"/images/image 338.png"}
-                    width={338}
-                    height={189}
-                  />
-                </div>
-              </div>
+              className={styles.UtilityAllText}>
               <div className={styles.UtilityText}>
                 <h2 className={styles.MarginTop}>ONE TREE PLANTED</h2>
                 <p>
@@ -168,12 +149,25 @@ be the center of attention.  Unique just like you.
                   one tree.
                 </p>
               </div>
+
+              <div className={styles.UtilityImage} data-aos="zoom-in">
+                <div className={styles.ChildImg}>
+                  <Image
+                    src={"/images/image 339.png"}
+                    width={352}
+                    height={194}
+                  />
+                </div>
+                <div className={styles.HomeImg}>
+                  <Image
+                    src={"/images/image 338.png"}
+                    width={338}
+                    height={189}
+                  />
+                </div>
+              </div>
             </div>
-
-
           </div>
-
-
         </div>
       </div>
     </div>
