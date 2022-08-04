@@ -139,7 +139,8 @@ function Footer() {
                   GivePower Foundation, located at 500 2nd Street. 1st Floor, San Francisco, <br /> CA 94107, a 501(c)(3) charity. The donation is tax deductible by Aliens On The Ave.
                   </small> </p>
                 <p> <small>GivePower's annual report and more information are available at
-                  <a href="https://www.givepower.org/"> www.givepower.org</a> Registration with any
+                  <a href="https://www.givepower.org/"> www.givepower.org</a> <br />
+                  Registration with any
                   regulatory agency does not imply endorsement. </small> </p>
                 <p> © 2022 Aliens On The Ave  </p>
 
