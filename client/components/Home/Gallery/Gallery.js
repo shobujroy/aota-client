@@ -194,9 +194,9 @@ function Gallery() {
                         </div> */}
                     </div>
                     <div id='gallery2' className={styles.galleryImageWrapper}>
-                       <div className={styles.galleryImage}>
+                    <div className={styles.galleryImage}>
                             <Image
-                                src="/images/aveslider/1005.png"
+                                src="/images/aveslider/4083.png"
                                 alt="Gallery Image"
                                 width={250}
                                 height={250}
@@ -205,7 +205,7 @@ function Gallery() {
                         </div>
                         <div className={styles.galleryImage}>
                             <Image
-                                src="/images/aveslider/1090.png"
+                                src="/images/aveslider/4138.png"
                                 alt="Gallery Image"
                                 width={250}
                                 height={250}
@@ -214,7 +214,7 @@ function Gallery() {
                         </div>
                         <div className={styles.galleryImage}>
                             <Image
-                                src="/images/aveslider/1118.png"
+                                src="/images/aveslider/5267.png"
                                 alt="Gallery Image"
                                 width={250}
                                 height={250}
@@ -223,7 +223,7 @@ function Gallery() {
                         </div>
                         <div className={styles.galleryImage}>
                             <Image
-                                src="/images/aveslider/1158.png"
+                                src="/images/aveslider/5293.png"
                                 alt="Gallery Image"
                                 width={250}
                                 height={250}
@@ -232,7 +232,7 @@ function Gallery() {
                         </div>
                         <div className={styles.galleryImage}>
                             <Image
-                                src="/images/aveslider/1171.png"
+                                src="/images/aveslider/5396.png"
                                 alt="Gallery Image"
                                 width={250}
                                 height={250}
@@ -241,7 +241,7 @@ function Gallery() {
                         </div>
                         <div className={styles.galleryImage}>
                             <Image
-                                src="/images/aveslider/4007.png"
+                                src="/images/aveslider/6522.png"
                                 alt="Gallery Image"
                                 width={250}
                                 height={250}
@@ -250,7 +250,7 @@ function Gallery() {
                         </div>
                         <div className={styles.galleryImage}>
                             <Image
-                                src="/images/aveslider/4014.png"
+                                src="/images/aveslider/6759.png"
                                 alt="Gallery Image"
                                 width={250}
                                 height={250}
@@ -259,7 +259,7 @@ function Gallery() {
                         </div>
                         <div className={styles.galleryImage}>
                             <Image
-                                src="/images/aveslider/4032.png"
+                                src="/images/aveslider/6816.png"
                                 alt="Gallery Image"
                                 width={250}
                                 height={250}
@@ -268,7 +268,7 @@ function Gallery() {
                         </div>
                         <div className={styles.galleryImage}>
                             <Image
-                                src="/images/aveslider/4035.png"
+                                src="/images/aveslider/6833.png"
                                 alt="Gallery Image"
                                 width={250}
                                 height={250}
@@ -277,7 +277,7 @@ function Gallery() {
                         </div>
                         <div className={styles.galleryImage}>
                             <Image
-                                src="/images/aveslider/4036.png"
+                                src="/images/aveslider/6837.png"
                                 alt="Gallery Image"
                                 width={250}
                                 height={250}
@@ -286,7 +286,7 @@ function Gallery() {
                         </div>
                         <div className={styles.galleryImage}>
                             <Image
-                                src="/images/aveslider/4080.png"
+                                src="/images/aveslider/6909.png"
                                 alt="Gallery Image"
                                 width={250}
                                 height={250}
@@ -294,7 +294,6 @@ function Gallery() {
                             />
                         </div>
                     </div>
-                    
                 </div>
             </div>
         </div>
