@@ -11,7 +11,7 @@ const TheAveBanner = () => {
     <div className={styles.AveBanner}>
 
       <>
-        <div className="container pb-4 pt-4">
+        <div className="container">
           <div className="row">
             <div className={`col-md-7 col-sm-12 col-lg-7 ${styles.AveHeroText}`}>
               <h3>CREATIVE HAVEN | YOGA | MEDITATION</h3>
@@ -41,7 +41,7 @@ const TheAveBanner = () => {
                 data-aos="zoom-in"
                 layout="fill"
                 objectFit="cover"
-                src={"/images/Floating ETH.png"}
+                src={"/images/Floating ETH 1.svg"}
               />
             </div>
           </div>
@@ -66,7 +66,7 @@ const TheAveBanner = () => {
                   data-aos="zoom-in"
                 layout="fill"
                 objectFit="cover"
-                  src={"/images/VR Headsets.png"}
+                  src={"/images/VR Headsets 1.svg"}
                   className={ styles.CreativeHavenImg}
                 />
                 
@@ -126,7 +126,7 @@ const TheAveBanner = () => {
               className={`col-md-5 col-lg-5 col-sm-12 ${styles.YogaMeditationImage}`}
             >
               <Link href={"/onlineclasses"}>
-                <Image data-aos="zoom-in" layout="fill" objectFit="cover" src={"/images/Halo.png"} className={styles.CreativeHavenImg} />
+                <Image data-aos="zoom-in" layout="fill" objectFit="cover" src={"/images/Halo.svg"} className={styles.CreativeHavenImg} />
                 </Link>
             </div>
           </div>

@@ -28,7 +28,7 @@ function PressAbout() {
           <div
             className={`col-md-6 flex-column d-flex justify-content-center ${styles.AboutText}`}
           >
-            <h6 className="text-primary">Unlock your Creativity</h6>
+            <h3 className="text-primary">Unlock your Creativity</h3>
             <h1>What is AOTA?</h1>
             <p>
               Aliens on the Ave is a collection of 7146 unique Aliens living on

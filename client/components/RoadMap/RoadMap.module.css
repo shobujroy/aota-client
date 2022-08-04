@@ -8,17 +8,17 @@
   min-height: 300px;
   width: 100%;
   overflow: hidden;
+  margin-top: -2px;
 }
 
 .MapWrapper .imageWrapper {
-  background: url(../../public/images/Crystal.png);
+  background: url(../../public/images/Crystal.svg);
   background-position: center;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat;  
   background-size: contain;
-  background-position: center;
-  height: 500px;
+  height: 370px;
   width: 100%;
-  margin-top: -100px;
+  margin-top: 50px;
 }
 
 .RoadMapSlider {
@@ -28,7 +28,7 @@
     rgba(5, 21, 9, 1) 51%,
     rgba(23, 47, 29, 1) 100%
   ) !important;
-  padding: 50px 0px;
+  padding: 10px 0px;
   width: 100%;
 }
 
@@ -69,6 +69,7 @@
 
 .rideMapWrapper {
   position: relative;
+  margin-top: -2px;
 }
 
 .sliderPreviousBtn {
@@ -239,7 +240,7 @@
     left: 60px;
   }
   .RoadMapMain {
-    height: 541px;
+    height: auto;
     overflow: hidden;
   }
 
@@ -271,7 +272,7 @@
   }
 
   .MapWrapper .imageWrapper {
-    margin-top: -100px;
+    margin-top: 0px;
   }
 }
 /* Media Query for low resolution  Tablets, Ipads */
@@ -304,7 +305,7 @@
   }
 
   .RoadMapMain {
-    height: 700px;
+    height: 445px;
   }
 
   .RoadWrapper h1 {
@@ -330,18 +331,18 @@
 
   .sliderPreviousBtn {
     position: absolute;
-
     cursor: pointer;
+    top: 10em;
   }
 
   .sliderNextBtn {
     position: absolute;
-
     cursor: pointer;
+    top: 10em;
   }
 
   .MapWrapper .imageWrapper {
-    margin-top: -100px;
+    margin-top: 0px;
   }
 }
 
@@ -381,25 +382,26 @@
     font-family: "futura-bold";
     text-transform: uppercase;
     color: #fafafa;
-    margin-top: 50px;
+    margin-top: 20px;
     width: 488px;
   }
 
   .RoadMapMain {
-    height: 600px !important;
+    height: 350px !important;
   }
 }
 @media (min-width: 1024px) and (max-width: 1725px) {
   .sliderPreviousBtn {
     position: absolute;
-    top: 12.3rem;
+    top: 10rem;
     cursor: pointer;
+    left: 183px;
   }
 
   .sliderNextBtn {
     position: absolute;
-    top: 12.6rem;
-    right: 0;
+    top: 10rem;
+    right: 92px;
     cursor: pointer;
   }
 }
