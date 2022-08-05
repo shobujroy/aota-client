@@ -19,18 +19,9 @@ const TheAveBanner = () => {
               <h2>UNLOCKING YOUR CREATIVITY</h2>
 
               <p>
-                You've been through it, we all have. But you, no you're different,
-                you're here still standing unaffected despite all chances to give
-                up. You've been working on yourself, staying in your lane.
-                Building an empire, we see your efforts, we believe the world needs
-                you. Shit we need eachother.
+              Together we'll grow.  Learn from our Creative Team, collaborate with a member, get a yoga session in, mediate, get inspired, participate in a Creative Challenge. Kick it on Ave.  This is only the beginning, we’re just getting started.
               </p>
-              <p>
-                Together we'll grow. Learn from our Creative Team, collaborate
-                with a member, get a Voda session in, mediate, dedinspired,
-                DalICiDate In a Creative Challendes. KICk ton une Ave. were
-                ustectune stontee.
-              </p>
+             
             </div>
 
 
@@ -115,11 +106,7 @@ const TheAveBanner = () => {
               <h2>HEALTHY BODY &#38; HEALTHY MIND</h2>
               
               <p>
-                We see co working spaces differently. We see them as a hub to
-                get inspired in. A place where imagination will thrive &#38;
-                creativity is the very essence of it's environment. We see lush
-                green &#38; natural havens. We see a sense of harmony &#38; zen. We
-                see ideas flourishing &#38; music playing.
+              Creativity is the expression of one’s self.  A healthy mind, body, &#38; soul allow for creative energy to flow like a River.  Tune into a practice with certified instructors.
               </p>
             </div>
             <div

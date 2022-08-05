@@ -401,7 +401,7 @@
   .sliderNextBtn {
     position: absolute;
     top: 10rem;
-    right: 92px;
+    right: 180px;
     cursor: pointer;
   }
 }
