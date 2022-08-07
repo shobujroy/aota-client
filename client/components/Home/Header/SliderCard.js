@@ -29,11 +29,12 @@ function SliderCard() {
             </div>
           </Carousel.Item>
           <Carousel.Item className={Styles.two}>
-            <div className={Styles.carousleItemTwo}></div>
-               {/* <h1>
+            <div className={Styles.carousleItemTwo}>
+               <h1>
                 We’re Aliens on <br /> the ave
               </h1>
-              <p>EXCLUSIVE MERCH Show off the Ave in style</p> */}
+              <p>EXCLUSIVE MERCH Show off the Ave in style</p>
+              </div>
           </Carousel.Item>
           <Carousel.Item className={Styles.two}>
             <div className={Styles.carouselItemThree}>
