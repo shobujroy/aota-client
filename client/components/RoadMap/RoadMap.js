@@ -33,7 +33,7 @@ const RoadMap = () => {
               }
             >
               <div className={styles.imageWrapper} data-aos="zoom-in">
-                
+                {/* <img src="/images/roadmap/Crystal.png" alt="" /> */}
               </div>
             </div>
           </div>

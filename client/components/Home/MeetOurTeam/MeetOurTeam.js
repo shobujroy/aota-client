@@ -21,6 +21,9 @@ const MeetOurTeam = () => {
   const [image, setImage] = useState("");
   const [title, setTitle] = useState("");
   const [description, setDescription] = useState("");
+  const [insta, setInsta] = useState("");
+  const [twitter, setTwitter] = useState("");
+  const [linkedIn, setLinkedIn] = useState("");
   const [active, setActive] = useState(null);
   let changeInfo = () => {};
   console.log(image.length);
@@ -81,13 +84,14 @@ const MeetOurTeam = () => {
                           />
                         )}
                     </a>
-                    
-                     <a
+
+                    {
+                      insta < 2 ? <a
                         onMouseOver={() => setActive(0)}
                         onMouseOut={() => setActive(null)}
                         // className={"nav-link " + Styles.socialIcon}
                         aria-current="page"
-                        href="http://instagram.com/aliensontheave"
+                        href="https://www.instagram.com/jake.flores"
                         target="_blank"
                       >
                         {active === 0 ? (
@@ -103,9 +107,32 @@ const MeetOurTeam = () => {
                             height={24}
                           />
                         )}
-                    </a>
-
-                     <a
+                    </a> : <a
+                        onMouseOver={() => setActive(0)}
+                        onMouseOut={() => setActive(null)}
+                        // className={"nav-link " + Styles.socialIcon}
+                        aria-current="page"
+                        href={insta}
+                        target="_blank"
+                      >
+                        {active === 0 ? (
+                          <Image
+                            src="/images/navbar/instagram.svg"
+                            width={24}
+                            height={24}
+                          />
+                        ) : (
+                          <Image
+                            src="/images/icons/instagram.svg"
+                            width={24}
+                            height={24}
+                          />
+                        )}
+                    </a> 
+                   }
+                    
+                     
+                    {twitter < 2 ?  <a
                         onMouseOver={() => setActive(2)}
                         onMouseOut={() => setActive(null)}
                         // className={"nav-link " + Styles.socialIcon}
@@ -126,9 +153,30 @@ const MeetOurTeam = () => {
                             height={24}
                           />
                         )}
-                    </a>
-                    
-                     <a
+                    </a>:  <a
+                        onMouseOver={() => setActive(2)}
+                        onMouseOut={() => setActive(null)}
+                        // className={"nav-link " + Styles.socialIcon}
+                        aria-current="page"
+                        href={twitter}
+                        target="_blank"
+                      >
+                        {active === 2 ? (
+                          <Image
+                            src="/images/navbar/twitter.svg"
+                            width={24}
+                            height={24}
+                          />
+                        ) : (
+                          <Image
+                            src="/images/icons/twitter.svg"
+                            width={24}
+                            height={24}
+                          />
+                        )}
+                    </a> }
+
+                    {linkedIn < 2 ? <a
                         onMouseOver={() => setActive(3)}
                         onMouseOut={() => setActive(null)}
                         // className={"nav-link " + Styles.socialIcon}
@@ -149,7 +197,31 @@ const MeetOurTeam = () => {
                             height={24}
                           />
                         )}
-                    </a>
+                    </a>:  <a
+                        onMouseOver={() => setActive(3)}
+                        onMouseOut={() => setActive(null)}
+                        // className={"nav-link " + Styles.socialIcon}
+                        aria-current="page"
+                        href={linkedIn}
+                        target="_blank"
+                      >
+                        {active === 3 ? (
+                          <Image
+                            src="/images/navbar/linkedin.svg"
+                            width={24}
+                            height={24}
+                          />
+                        ) : (
+                          <Image
+                            src="/images/icons/linkedin (3).svg"
+                            width={24}
+                            height={24}
+                          />
+                        )}
+                    </a> }
+                    
+                    
+                    
                     
                     
 
@@ -224,6 +296,9 @@ const MeetOurTeam = () => {
                                 setImage(item.image);
                                 setTitle(item.title);
                                 setDescription(item.about);
+                                setInsta(item.insta);
+                                setTwitter(item.twitter);
+                                setLinkedIn(item.linkedin);
                                 setImgActive(i);
                               }}
                             >
@@ -261,6 +336,9 @@ const MeetOurTeam = () => {
                                 setImage(item.image);
                                 setTitle(item.title);
                                 setDescription(item.about);
+                                 setInsta(item.insta);
+                                setTwitter(item.twitter);
+                                setLinkedIn(item.linkedin);
                                 setImgActive(i);
                               }}
                             >
@@ -526,7 +604,7 @@ const MeetOurTeam = () => {
                         onMouseOut={() => setActive(null)}
                         // className={"nav-link " + Styles.socialIcon}
                         aria-current="page"
-                        href="http://instagram.com/aliensontheave"
+                        href={data.insta}
                         target="_blank"
                       >
                         {active === 0 ? (
@@ -549,7 +627,7 @@ const MeetOurTeam = () => {
                         onMouseOut={() => setActive(null)}
                         // className={"nav-link " + Styles.socialIcon}
                         aria-current="page"
-                        href="http://twitter.com/AOTAnft/"
+                        href={data.twitter}
                         target="_blank"
                       >
                         {active === 2 ? (
@@ -572,7 +650,7 @@ const MeetOurTeam = () => {
                         onMouseOut={() => setActive(null)}
                         // className={"nav-link " + Styles.socialIcon}
                         aria-current="page"
-                        href="#"
+                        href={data.linkedin}
                         target="_blank"
                       >
                         {active === 3 ? (

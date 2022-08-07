@@ -36,7 +36,6 @@
   top: 40px;
 }
 
-
 .carousleItemTwo h1 {
   font-family: "futura-bold";
   text-transform: uppercase;
@@ -49,7 +48,6 @@
   top: 40px;
 }
 
-
 .carousleItemTwo p {
   font-family: "Montserrat-Regular";
   font-weight: 700;
@@ -59,8 +57,6 @@
   top: 180px;
 }
 
-
-
 .carouselItem p {
   font-family: "Montserrat-Regular";
   font-weight: 700;
@@ -69,8 +65,6 @@
   left: 30px;
   top: 200px;
 }
-
-
 
 .carousleButton {
   width: 200px;
@@ -317,7 +311,6 @@
     background-repeat: no-repeat;
     font-family: "Montserrat-Regular";
     margin-top: 10px;
-
   }
   .carouselItemFour {
     width: 100vw;
@@ -399,18 +392,19 @@
 @media screen and (max-width: 637px) {
   .mobConnectwallbutton {
     width: 200px;
-    height: 56px;    
+    height: 56px;
     font-weight: 700;
     color: white;
     margin-top: 83vh;
     transition: all linear 0.4s;
-    margin-left: 22%;  
-    margin-right: auto; 
+    /* margin-left: 22%;
+    margin-right: auto; */
     z-index: 5555;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
   }
- 
-
-
 
   .mobConnectwallbutton button {
     background: #75ba87;
@@ -427,7 +421,6 @@
     transition: all linear 0.4s;
   }
 
-
   .mobConnectwallbutton button:hover {
     background: #e2dd96;
   }
@@ -442,13 +435,13 @@
   }
 
   .heroMob {
-    background: url(../../../public/images/MobileBanner\ png.png);
+    background: url("../../../public/images/Afrojack 1.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
     height: auto;
-    width: 80%;
+    width: 100%;
     display: flex;
     justify-content: center;
     margin-top: -115px;
@@ -562,19 +555,17 @@
   }
 }
 
-
 @media screen and (max-width: 320px) {
   .heroMob {
-    background: url(../../../public/images/MobileBanner\ png.png);
+    background: url("../../../public/images/Afrojack 1.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
     height: auto;
-    width: 95%;
+    width: 100%;
     display: flex;
     justify-content: center;
     margin-top: -115px;
   }
 }
-

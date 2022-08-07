@@ -1,21 +1,22 @@
 .imageWrapper {
   position: relative;
-  height: 600px;
+  /* height: 600px; */
+  width: 100%;
 }
 
-.imageWrapper::after {
-  content: '';
+/* .imageWrapper::after {
+  content: "";
   position: absolute;
   top: 150px;
   left: 200px;
   width: 300px;
   height: 400px;
-  background-image: url('../../../public/images/gallery/6.PNG');
+  background-image: url("../../../public/images/gallery/6.PNG");
   object-fit: cover;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-}
+} */
 
 .AboutText h3 {
   font-family: "Montserrat-Medium";
@@ -24,17 +25,15 @@
   color: #75ba87;
   font-weight: 800;
   font-size: 18px;
-
-
 }
 
 .AboutText p {
   color: #a3a3a3 !important;
-  font-family: 'Montserrat-Regular';
+  font-family: "Montserrat-Regular";
 }
 
 .AboutText h1 {
-  font-family: 'futura-bold';
+  font-family: "futura-bold";
   text-transform: uppercase;
   margin-bottom: 20px;
 }
@@ -42,11 +41,15 @@
 /* Media Query for Mobile Devices */
 @media (max-width: 637px) {
   .imageWrapper img {
-    width: 220px !important;
+    /* width: 220px !important; */
   }
 
-  .imageWrapper::after {
-    content: '';
+  .imageWrapper {
+    margin-bottom: 20px;
+  }
+
+  /* .imageWrapper::after {
+    content: "";
     position: absolute;
     top: 130px;
     left: 110px;
@@ -58,16 +61,16 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-  }
+  } */
 }
 
-@media (max-width: 768px) and (max-width: 1040px) {
+@media (min-width: 768px) and (max-width: 1040px) {
   .imageWrapper img {
-    width: 220px !important;
-    margin-top: 78px !important;
+    /* width: 220px !important; */
+    margin-top: 80px !important;
   }
 
-  .imageWrapper::after {
+  /* .imageWrapper::after {
     content: '';
     position: absolute;
     top: 210px;
@@ -80,17 +83,17 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-  }
+  } */
 }
 
 @media (min-width: 640px) and (max-width: 1040px) {
   .imageWrapper img {
-    width: 220px !important;
-    margin-top: 78px !important;
+    /* width: 220px !important;
+    margin-top: 78px !important; */
   }
 
-  .imageWrapper::after {
-    content: '';
+  /* .imageWrapper::after {
+    content: "";
     position: absolute;
     top: 210px;
     left: 90px;
@@ -102,5 +105,5 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-  }
+  } */
 }
