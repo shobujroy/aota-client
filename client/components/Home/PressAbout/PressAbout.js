@@ -1,7 +1,6 @@
 import "animate.css";
 import Aos from "aos";
 import "aos/dist/aos.css";
-import Image from "next/image";
 import React, { useEffect } from "react";
 import styles from "./PressAbout.module.css";
 
@@ -16,13 +15,14 @@ function PressAbout() {
         <div className="row">
           <div className="col-md-6">
             <div className={styles.imageWrapper} data-aos="zoom-in">
-              <Image
+              <img  src={"/images/site.png"} alt="" className={`img-fit img-fluid ${styles.image}`} />
+              {/* <Image
                 
-                src={"/images/gallery/4.png"}
+                src={"/images/site.png"}
                 width={300}
                 height={400}
                 className={`img-fit img-fluid ${styles.image}`}
-              />
+              /> */}
             </div>
           </div>
           <div

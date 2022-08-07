@@ -127,10 +127,6 @@
   z-index: 2 !important;
 }
 
-
-
-
-
 @media (min-width: 640px) and (max-width: 1040px) {
   .Perks .PerksCards {
     display: grid;
@@ -219,9 +215,6 @@
   }
 }
 
-
-
-
 /* Media Query for Mobile Devices */
 @media (max-width: 637px) {
   .Perks .PerksCards {
@@ -233,7 +226,7 @@
 
   .UtilityImage {
     position: relative !important;
-    height: 330px !important;
+    height: 390px !important;
   }
 
   .CardItam .mobileRespon {
@@ -348,15 +341,11 @@
   }
 }
 
-
-
 /* Media Query for Mobile Devices */
 @media (max-width: 320px) {
-
   .CardItam h3 {
     font-size: 13px !important;
     font-family: "Montserrat-Regular" !important;
     letter-spacing: 0.1em;
   }
-  
-  }
+}

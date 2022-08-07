@@ -12,11 +12,11 @@
 }
 
 .MapWrapper .imageWrapper {
-  background: url(../../public/images/Crystal.svg);
+  background: url("/images/roadmap/Crystal.png");
   background-position: center;
-  background-repeat: no-repeat;  
+  background-repeat: no-repeat;
   background-size: contain;
-  height: 370px;
+  height: 550px;
   width: 100%;
   margin-top: 50px;
 }
@@ -28,7 +28,7 @@
     rgba(5, 21, 9, 1) 51%,
     rgba(23, 47, 29, 1) 100%
   ) !important;
-  padding: 10px 0px;
+  padding: 10px 0px 130px 0px;
   width: 100%;
 }
 
@@ -272,7 +272,8 @@
   }
 
   .MapWrapper .imageWrapper {
-    margin-top: 0px;
+    margin-top: -150px;
+    height: 430px;
   }
 }
 /* Media Query for low resolution  Tablets, Ipads */
@@ -342,7 +343,7 @@
   }
 
   .MapWrapper .imageWrapper {
-    margin-top: 0px;
+    margin-top: -160px;
   }
 }
 
