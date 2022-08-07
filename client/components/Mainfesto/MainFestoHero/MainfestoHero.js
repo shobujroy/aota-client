@@ -4,7 +4,7 @@ import Styles from "./MainfestoHero.module.css";
 const MainfestoHero = () => {
   return (
     <div className={Styles.mainfestoHero}>
-      
+
       <div className={Styles.mainFestoHeroRight}>
         <h6>Manifesto</h6>
         <h1>
@@ -33,14 +33,14 @@ const MainfestoHero = () => {
           src={"/images/Blue Crystal.png"}
           layout="fill"
           objectFit="cover"
-          className={Styles.maniFestoImage1 }
+          className={Styles.maniFestoImage1}
         ></Image>
         <Image
           data-aos="zoom-in"
           src={"/images/Afrojack 1.png"}
           layout="fill"
           objectFit="cover"
-           className={Styles.maniFestoImage2 }
+          className={Styles.maniFestoImage2}
         ></Image>
       </div>
     </div>

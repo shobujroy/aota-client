@@ -6,7 +6,6 @@ const MainFesto = () => {
     <div className={Styles.mainFesot}>
       <Navbar />
       <MainfestoHero />
-      {/* <Footer bg={"bg-main"} /> */}
     </div>
   );
 };
