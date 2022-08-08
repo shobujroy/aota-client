@@ -289,13 +289,13 @@
 
   .Utilitys {
     border-top: 1px solid #d1d1d1;
-    margin: 0px 0px 50px;
+    margin: 0px 0px 20px;
   }
 
   .Utilitys .UtilityAllText {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    gap: 48px;
+    gap: 20px;
   }
 
   .HomeImg {
@@ -325,13 +325,13 @@
   }
 
   .UtilityAllText:last-child {
-    margin-top: 100px !important;
+    margin-top: 10px !important;
     display: flex;
     flex-direction: column-reverse;
   }
 
   .UtilityText .MarginTop {
-    margin-top: 50px !important;
+    margin-top: 0px !important;
   }
 
   .CardItam h3 {
@@ -347,5 +347,10 @@
     font-size: 13px !important;
     font-family: "Montserrat-Regular" !important;
     letter-spacing: 0.1em;
+  }
+  .Utilitys .UtilityAllText {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 0px;
   }
 }

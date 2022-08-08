@@ -45,7 +45,7 @@ const RoadMap = () => {
           <div className={styles.sliderMain}>
             <div className={styles.SliderMainFirst}>
               <h2>Discovery</h2>
-              <li>Lanch 7146 Aliens on the ethereuem blockchain</li>
+              <li>Launch 7146 Aliens on the ethereum blockchain</li>
               <li>Whitelist Price 0.07 ETH</li>
               <li>Public Price 0.09 ETH</li>
               <div className={styles.numbers}>
@@ -81,7 +81,7 @@ const RoadMap = () => {
               </div>
               <h2>Establish Communication</h2>
               <li>Develop Storyline</li>
-              <li>Aquire Land in Sandbox</li>
+              <li>Acquire Land in Sandbox</li>
               <li>Airdrop 1</li>
             </div>
             <div className={styles.SliderMainFirst}>

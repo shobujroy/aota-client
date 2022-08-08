@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Link from "next/link";
 import React from "react";
 import styles from "./TheAveBanner.module.css";
 
@@ -52,7 +51,7 @@ const TheAveBanner = () => {
             <div
               className={`col-md-5 col-lg-5 col-sm-12 ${styles.CreativeHavenImage}`}
             >
-              <Link href={"/creativehaven"} style={{cursor: "pointer"}}>
+              {/* <Link href={"/creativehaven"} style={{cursor: "pointer"}}> */}
                 <Image
                   data-aos="zoom-in"
                 layout="fill"
@@ -61,7 +60,7 @@ const TheAveBanner = () => {
                   className={ styles.CreativeHavenImg}
                 />
                 
-                </Link>
+                {/* </Link> */}
             </div>
             
 
@@ -70,9 +69,9 @@ const TheAveBanner = () => {
               id={styles.CreativeHavenText}
             >
               <h3>CREATORS CHALLENGE | CO-WORKING</h3>
-              <Link href={"/creativehaven"} style={{cursor: "pointer"}}>
+              {/* <Link href={"/creativehaven"} style={{cursor: "pointer"}}> */}
                 <h1>CREATIVE HAVEN</h1>
-              </Link>
+              {/* </Link> */}
               
               <h2>UNLOCKING YOUR CREATIVITY</h2>
 
@@ -99,9 +98,9 @@ const TheAveBanner = () => {
               id={styles.YogaMeditationText}
             >
               <h3>YOGA WITH RIVER | MINDFUL MEDITATION</h3>
-              <Link href={"/onlineclasses"}>
+              {/* <Link href={"/onlineclasses"}> */}
                 <h1>YOGA &#38; MEDITATION</h1>
-               </Link>
+               {/* </Link> */}
               
               <h2>HEALTHY BODY &#38; HEALTHY MIND</h2>
               
@@ -112,9 +111,9 @@ const TheAveBanner = () => {
             <div
               className={`col-md-5 col-lg-5 col-sm-12 ${styles.YogaMeditationImage}`}
             >
-              <Link href={"/onlineclasses"}>
+              {/* <Link href={"/onlineclasses"}> */}
                 <Image data-aos="zoom-in" layout="fill" objectFit="cover" src={"/images/Halo.svg"} className={styles.CreativeHavenImg} />
-                </Link>
+                {/* </Link> */}
             </div>
           </div>
         </div>

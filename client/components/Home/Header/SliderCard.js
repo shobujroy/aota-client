@@ -1,9 +1,8 @@
-import Image from "next/image";
-import React, { useContext } from "react";
-import Styles from "./SliderCard.module.css";
-import { Carousel } from "react-bootstrap";
 import Link from "next/link";
+import React, { useContext } from "react";
+import { Carousel } from "react-bootstrap";
 import { MintContext } from "./../../../context/MintContext";
+import Styles from "./SliderCard.module.css";
 const directionButtons = (direction) => {
   return (
     <span
@@ -31,9 +30,9 @@ function SliderCard() {
           <Carousel.Item className={Styles.two}>
             <div className={Styles.carousleItemTwo}>
                <h1>
-                We’re Aliens on <br /> the ave
+                Exclusive <br/> Merch 
               </h1>
-              <p>EXCLUSIVE MERCH Show off the Ave in style</p>
+              <p>AOTA holders gain access to limited edition gear</p>
               </div>
           </Carousel.Item>
           <Carousel.Item className={Styles.two}>
