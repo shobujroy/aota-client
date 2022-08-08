@@ -6,7 +6,7 @@ import styles from "./PerksUtility.module.css";
 const PerksUtility = () => {
   return (
     <div className={styles.PerksAndUtility}>
-      <div className="container pt-5 pb-5">
+      <div className="container pt-4 pb-4">
         <div className="row">
           <div className={`col-lg-12 col-sm-12 col-md-12 ${ styles.Perks }`}>
             <h1> Perks &#38; Utility</h1>

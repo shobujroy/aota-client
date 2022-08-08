@@ -17,10 +17,9 @@
   position: relative;
   height: 400px;
   width: 400px;
-  cursor: pointer;
+  /* cursor: pointer; */
   margin-left: 130px;
   margin-bottom: 20px;
-
 }
 
 #CreativeHavenText {
@@ -35,7 +34,7 @@
   position: relative;
   height: 400px;
   width: 540px;
-  cursor: pointer;
+  /* cursor: pointer; */
   margin-top: 50px;
 }
 
@@ -44,7 +43,7 @@
   position: relative;
   height: 330px;
   width: 520px;
-  cursor: pointer;
+  /* cursor: pointer; */
   margin-top: -40px;
 }
 
@@ -67,7 +66,7 @@
   line-height: 40px;
   color: #ffffff;
   margin-bottom: 20px;
-  cursor: pointer;
+  /* cursor: pointer; */
 }
 
 .AveHeroText h2 {
@@ -97,7 +96,7 @@
 }
 
 .CreativeHavenImg {
-  cursor: pointer;
+  /* cursor: pointer; */
 }
 
 /* .TheAvePhoto .AvePhoto .yoga {
@@ -365,8 +364,7 @@
 }
 /* Media Query for Mobile Devices */
 @media screen and (max-width: 637px) {
-
-  #CreativeHavenText{
+  #CreativeHavenText {
     margin-top: 20px;
   }
 
@@ -894,12 +892,11 @@
     margin-top: 130px;
   }
 
-  .YogaMeditationImage {   
+  .YogaMeditationImage {
     position: relative;
     width: 270px;
     height: 230px;
     margin-top: 70px;
-
   }
 
   .CreativeHavenImage {
@@ -928,12 +925,6 @@
   }
 }
 
-
-
-
-
-
-
 @media (min-width: 820px) and (max-width: 1180px) {
   .AveHeroImage {
     position: relative;
@@ -948,7 +939,7 @@
     width: 300px;
     height: 200px;
     margin-top: 0px;
-    margin-left: 0px ;
+    margin-left: 0px;
   }
 
   .CreativeHavenImage {
@@ -966,9 +957,6 @@
     font-size: 24px;
   }
 }
-
-
-
 
 @media (min-width: 1480px) and (max-width: 2800px) {
   .CoWorking {
