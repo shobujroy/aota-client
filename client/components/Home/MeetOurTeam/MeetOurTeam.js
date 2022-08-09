@@ -49,6 +49,7 @@ const MeetOurTeam = () => {
                       alt="Picture of the author"
                       width={388}
                       height={388}
+                      priority
                     />
                   </div>
                 </div>
