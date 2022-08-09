@@ -206,13 +206,13 @@ function Navbar({ BorderBottom, wallet }) {
                 >
                   {active === 0 ? (
                     <Image
-                      src="/images/navbar/instagram.svg"
+                      src="/images/navbar/insta Yellow.svg"
                       width={24}
                       height={24}
                     />
                   ) : (
                     <Image
-                      src="/images/icons/instagram.svg"
+                      src="/images/navbar/insta gray.svg"
                       width={24}
                       height={24}
                     />
@@ -230,13 +230,13 @@ function Navbar({ BorderBottom, wallet }) {
                 >
                   {active === 1 ? (
                     <Image
-                      src="/images/navbar/Discord.svg"
+                      src="/images/navbar/Discordd.svg"
                       width={24}
                       height={24}
                     />
                   ) : (
                     <Image
-                      src="/images/icons/Discord.svg"
+                      src="/images/navbar/Discord-1.svg"
                       width={24}
                       height={24}
                     />
