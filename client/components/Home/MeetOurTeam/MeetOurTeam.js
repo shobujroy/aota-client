@@ -22,7 +22,9 @@ const MeetOurTeam = () => {
   const [title, setTitle] = useState("");
   const [description, setDescription] = useState("");
   const [insta, setInsta] = useState("");
+  
   const [twitter, setTwitter] = useState("");
+
   const [linkedIn, setLinkedIn] = useState("");
   const [active, setActive] = useState(null);
   let changeInfo = () => {};
@@ -62,7 +64,7 @@ const MeetOurTeam = () => {
 
                   <div className={styles.MemberCardIcons}>
 
-                    <a
+                    {/* <a
                         onMouseOver={() => setActive(1)}
                         onMouseOut={() => setActive(null)}
                         // className={"nav-link " + Styles.socialIcon}
@@ -83,15 +85,15 @@ const MeetOurTeam = () => {
                             height={24}
                           />
                         )}
-                    </a>
+                    </a> */}
 
                     {
-                      insta < 2 ? <a
+                      !insta === true ? <a
                         onMouseOver={() => setActive(0)}
                         onMouseOut={() => setActive(null)}
                         // className={"nav-link " + Styles.socialIcon}
                         aria-current="page"
-                        href="https://www.instagram.com/jake.flores"
+                        href="#"
                         target="_blank"
                       >
                         {active === 0 ? (
@@ -132,7 +134,7 @@ const MeetOurTeam = () => {
                    }
                     
                      
-                    {twitter < 2 ?  <a
+                    {twitter === true ?  <a
                         onMouseOver={() => setActive(2)}
                         onMouseOut={() => setActive(null)}
                         // className={"nav-link " + Styles.socialIcon}
@@ -176,7 +178,7 @@ const MeetOurTeam = () => {
                         )}
                     </a> }
 
-                    {linkedIn < 2 ? <a
+                    {linkedIn === true ? <a
                         onMouseOver={() => setActive(3)}
                         onMouseOut={() => setActive(null)}
                         // className={"nav-link " + Styles.socialIcon}
