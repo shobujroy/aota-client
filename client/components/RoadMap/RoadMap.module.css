@@ -12,11 +12,11 @@
 }
 
 .MapWrapper .imageWrapper {
-  background: url("/images/roadmap/Crystal.png");
+  background: url("../../public/images/roadmap/Crystal\ \(4\).png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
-  height: 550px;
+  height: 400px;
   width: 100%;
   margin-top: 50px;
 }
@@ -204,6 +204,16 @@
 }
 /* Media Query for Mobile Devices */
 @media (max-width: 637px) {
+  .imageWrapper2 {
+    position: relative;
+    width: 320px;
+    height: 320px;
+    margin: 0px auto;
+  }
+
+  .imageWrapper {
+    display: none !important;
+  }
   .sliderMain {
     width: 504%;
   }
@@ -273,11 +283,14 @@
 
   .MapWrapper .imageWrapper {
     margin-top: -150px;
-    height: 430px;
+    height: 540px;
   }
 }
 /* Media Query for low resolution  Tablets, Ipads */
 @media (min-width: 640px) and (max-width: 1040px) {
+  .roadmapImg {
+    display: none !important;
+  }
   .sliderMain {
     width: 286%;
   }
@@ -343,11 +356,15 @@
   }
 
   .MapWrapper .imageWrapper {
-    margin-top: -160px;
+    margin-top: 0px;
+    height: 335px;
   }
 }
 
 @media (min-width: 2000px) and (max-width: 2800px) {
+  .imageWrapper2 {
+    display: none !important;
+  }
   .MapWrapper .imageWrapper::after {
     position: absolute;
     top: 350px;
@@ -370,6 +387,9 @@
 
 /* Media Query for low resolution  Tablets, Ipads */
 @media (min-width: 896px) and (max-width: 1024px) {
+  .imageWrapper2 {
+    display: none !important;
+  }
   .Roadimage {
     position: absolute;
     top: 430px;
@@ -404,5 +424,8 @@
     top: 10rem;
     right: 180px;
     cursor: pointer;
+  }
+  .imageWrapper2 {
+    display: none !important;
   }
 }
