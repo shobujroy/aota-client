@@ -44,13 +44,13 @@ function Footer() {
                     >
                       {active === 0 ? (
                         <Image
-                          src="/images/navbar/instagram.svg"
+                          src="/images/navbar/insta Yellow.svg"
                           width={30}
                           height={30}
                         />
                       ) : (
                         <Image
-                          src="/images/icons/instagram.svg"
+                          src="/images/navbar/insta gray.svg"
                           width={30}
                           height={30}
                         />
@@ -68,13 +68,13 @@ function Footer() {
                     >
                       {active === 1 ? (
                         <Image
-                          src="/images/navbar/Discord.svg"
+                          src="/images/navbar/Discord-5.svg"
                           width={30}
                           height={30}
                         />
                       ) : (
                         <Image
-                          src="/images/icons/Discord.svg"
+                          src="/images/navbar/Discord-4.svg"
                           width={30}
                           height={30}
                         />

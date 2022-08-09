@@ -148,13 +148,13 @@ const MeetOurTeam = () => {
                       >
                         {active === 0 ? (
                           <Image
-                            src="/images/navbar/instagram.svg"
+                            src="/images/navbar/insta Yellow.svg"
                             width={24}
                             height={24}
                           />
                         ) : (
                           <Image
-                            src="/images/icons/instagram.svg"
+                            src="/images/navbar/insta gray.svg"
                             width={24}
                             height={24}
                           />
@@ -710,13 +710,13 @@ const MeetOurTeam = () => {
                       >
                         {active === 0 ? (
                           <Image
-                            src="/images/navbar/instagram.svg"
+                            src="/images/navbar/insta Yellow.svg"
                             width={24}
                             height={24}
                           />
                         ) : (
                           <Image
-                            src="/images/icons/instagram.svg"
+                            src="/images/navbar/insta gray.svg"
                             width={24}
                             height={24}
                           />
