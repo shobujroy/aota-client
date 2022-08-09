@@ -11,12 +11,7 @@ const PerksUtility = () => {
           <div className={`col-lg-12 col-sm-12 col-md-12 ${ styles.Perks }`}>
             <h1> Perks &#38; Utility</h1>
             <p>
-
-
-              When you buy an AOTA. You’re not Simply buying a rare pice of Art. You’re gaining
-              membership access to the Aotaverse with the following benefits. Additonally you are
-              helping to plant trees, provide water, &amp; enegy to regions all over the world."
-
+              {`When you buy an AOTA, you’re not simply buying a rare piece of art.  You’re gaining membership access to the AOTAverse with the following benefits.  Additionally you are helping to plant trees, provide water, & energy to regions all over the world.`}
             </p>
 
             <div className={styles.PerksCards}>
@@ -82,7 +77,7 @@ const PerksUtility = () => {
                   <h3>COMMERCIAL USAGE</h3>
                 </div>
                 <p>
-                  Commericial rights are directly granted to holders.  Your NFT is yours to use for for as long as you own it.
+                  Commercial rights are directly granted to holders.  Your NFT is yours to use for as long as you own it.
                 </p>
               </div>
             </div>
