@@ -12,7 +12,7 @@
 }
 
 .MapWrapper .imageWrapper {
-  background: url("/images/roadmap/Crystal.png");
+  background: url("../../public/images/roadmap/Crystal\ 1.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;

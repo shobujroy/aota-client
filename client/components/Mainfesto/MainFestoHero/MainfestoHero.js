@@ -3,7 +3,7 @@ import Styles from "./MainfestoHero.module.css";
 
 const MainfestoHero = () => {
   return (
-    <div className={Styles.mainfestoHero}>
+    <div className={`container ${ Styles.mainfestoHero }`}>
 
       <div className={Styles.mainFestoHeroRight}>
         <h6>Manifesto</h6>
