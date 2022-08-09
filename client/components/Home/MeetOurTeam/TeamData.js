@@ -19,12 +19,13 @@ export const Team = [
     title: "Photographer/ Videographer",
     image: "/images/Damian_Castruita.png",
     about:
-      `Dame volunteered to bring positive vibes to the AOTA team with his huge background in conceptual photography & documentary style videos he fits right in.  As a full time photographer capturing 
-      weddings & engagements.  His humor keeps meetings fun & challenges the team to see all angles.
-      `,
-    insta: "https://www.instagram.com/shot_by_dame",
-    twitter: "#",
-    linkedin: "#"
+
+      "Dame volunteered to bring positive vibes to the AOTA team with his huge background in conceptual photography & documentary style videos he fits right in.  As a full time photographer capturing weddings & engagements.  His humor keeps meetings fun & challenges the team to see all angles.",
+     insta: "https://www.instagram.com/shot_by_dame",
+    // twitter: "#",
+    // linkedin:"#"
+
+
   },
   {
     id: 3,
@@ -33,9 +34,12 @@ export const Team = [
     image: "/images/Joseph Flores_1578.png",
     about:
       "Joseph brings mindfulness to the AOTAverse.   I have a Associates and Bachelors in Psychology and am currently finishing up my Masters in School Psychology. I have a Certificate in Project Management and currently am working for the State of California. I have had many occupations that have had a primary focus on Social Services and or Human Services. My passion has always been to support the development and resiliency of my neighbors in the community. One of those tools I use to support that development is Mindfulness. Please join me in that journey to a healthier and higher minded well-being. Thank you ",
-    insta: "#",
-    twitter: "#",
-    linkedin: "#"
+
+    //  insta: "#",
+    // twitter: "#",
+    // linkedin:"#"
+
+
   },
   {
     id: 4,
@@ -43,13 +47,14 @@ export const Team = [
     title: "Business Consultant",
     image: "/images/Eric Rivera.png",
     about:
-      `Eric has been an entrepreneur for as long as he can remember.  He has made a significant impact on the 
-      youth of his community & has since founded multiple cash flow positive businesses.  His most recent 
-      venture Bakersfield Bike Rentals has quickly become a staple in the city.  He brings positive high energy to AOTA team. 
-      `,
-    insta: "https://www.instagram.com/evera08",
-    twitter: "#",
-    linkedin: "#"
+
+      "Eric has been an entrepreneur for as long as he can remember.  He has made a significant impact on the youth of his community & has since founded multiple cash flow positive businesses.  His most recent  venture Bakersfield Bike Rentals has quickly become a staple in the city.  He brings positive high energy to AOTA team.",
+     insta: "https://www.instagram.com/evera08",
+    // twitter: "#",
+    // linkedin:"#"
+
+    
+
   },
   {
     id: 5,
@@ -63,7 +68,7 @@ export const Team = [
      `,
     insta: "https://www.instagram.com/neo.nepantla",
     twitter: "https://twitter.com/neonepantla",
-    linkedin: "https://www.brittneyludwig.com/"
+    website: "https://www.brittneyludwig.com/"
   },
   {
     id: 6,
@@ -71,12 +76,12 @@ export const Team = [
     title: "Certified Yoga Instructor",
     image: "/images/River Galindo.png",
     about:
-      `River is a dedicated Yogi of 10 years. Teaching Vinyasa flow class coined River Flow Yoga. River brings 
-      his practice to the AOTAverse.  His passion for the wellbeing of others on mother Earth fit right in the AOTA Team.
-      `,
-    insta: "https://www.instagram.com/riveryogaflow",
-    twitter: "#",
-    linkedin: "https://www.rivershima.com"
+
+      "River is a dedicated Yogi of 10 years. Teaching Vinyasa flow class coined River Flow Yoga. River brings his practice to the AOTAverse.  His passion for the wellbeing of others on mother Earth fit right in the AOTA team.",
+     insta: "https://www.instagram.com/riveryogaflow",
+    website:"https://www.rivershima.com"
+
+     
   },
   {
     id: 7,
@@ -84,13 +89,12 @@ export const Team = [
     title: "Illustrator",
     image: "/images/Alex Zamora_2765.png",
     about:
-      `Alex has a large catalog of work painting portraits & wild eerie creatures.  He brings to the team a years of 
-      experience and creative input.  Inspired by the greats of our time, Alex recently dove into his craft as an 
-      artist full time.  Expect creepy alien hands and sharp teeth in the AOTAverse thanks to him.
-      `,
-    insta: "https://www.instagram.com/artofalexz",
-    twitter: "#",
-    linkedin: "#"
+
+      "Alex has large catalog of work painting portraits & wild erire creatures.  He brings to the team years of experience and creative input.  Inspired by the greats of our time, Alex recently dove into his craft as an artist full time.  Expect creepy alien hands and sharp teeth in the AOTAverse thanks to him.",
+     insta: "https://www.instagram.com/artofalexz",
+    // twitter: "#",
+    // linkedin:"#"
+
   },
   {
     id: 8,
@@ -98,11 +102,11 @@ export const Team = [
     title: "Copywriter",
     image: "/images/Joe Rivas.png",
     about:
-      `Joe has a background in sales and financial leadership alongside creative writing & a wide gamma of 
-      musical interest.  He keeps the playlist flavorful & grammar clean.  
-      `,
-    insta: "https://www.instagram.com/joerivas2881",
-    twitter: "#",
-    linkedin: "#"
+
+      "Joe has a background in sales and financial leadership alongside creative writing & a wide gamma of musical interest.  He keeps the playlist flavorful & grammar clean",
+     insta: "https://www.instagram.com/joerivas2881",
+    // twitter: "#",
+    // linkedin:"#"
+
   },
 ];
