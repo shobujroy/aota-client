@@ -230,13 +230,13 @@ function Navbar({ BorderBottom, wallet }) {
                 >
                   {active === 1 ? (
                     <Image
-                      src="/images/navbar/Discordd.svg"
+                      src="/images/navbar/Discord-5.svg"
                       width={24}
                       height={24}
                     />
                   ) : (
                     <Image
-                      src="/images/navbar/Discord-1.svg"
+                      src="/images/navbar/Discord-4.svg"
                       width={24}
                       height={24}
                     />
