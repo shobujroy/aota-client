@@ -55,7 +55,7 @@
   font-family: "futura-bold";
   text-transform: uppercase;
   color: #fafafa;
-  margin-top: 30px;
+  margin-top: 20px;
   width: 488px;
 }
 
@@ -121,6 +121,25 @@
   font-family: "Montserrat-Regular";
   margin-bottom: 20px;
   letter-spacing: 0.2em;
+}
+
+.RoadWrapper h6 {
+  font-family: "Montserrat-Medium";
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: #75ba87;
+  font-weight: 800;
+  font-size: 18px;
+  padding-top: 30px;
+}
+
+.RoadWrapper p {
+  font-family: "Montserrat-Regular";
+  color: #a3a3a3;
+  font-weight: 400;
+  font-size: 16px;
+
+  margin: 4px !important;
 }
 
 .CarouselItam ul li {
@@ -261,7 +280,7 @@
     font-family: "futura-bold";
     text-transform: uppercase;
     color: #fafafa;
-    margin-top: 40px;
+    margin-top: 20px;
     width: 100% !important;
   }
 
@@ -283,7 +302,11 @@
 
   .MapWrapper .imageWrapper {
     margin-top: -150px;
+    margin-top: -90px;
     height: 540px;
+  }
+  .RoadWrapper p {
+    font-size: 14px;
   }
 }
 /* Media Query for low resolution  Tablets, Ipads */
@@ -319,7 +342,7 @@
   }
 
   .RoadMapMain {
-    height: 445px;
+    height: 525px;
   }
 
   .RoadWrapper h1 {
