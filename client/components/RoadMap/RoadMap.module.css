@@ -212,7 +212,7 @@
   }
 
   .imageWrapper {
-    display: none !important;
+    display: block !important;
   }
   .sliderMain {
     width: 504%;
@@ -261,7 +261,7 @@
     font-family: "futura-bold";
     text-transform: uppercase;
     color: #fafafa;
-    margin-top: 0px;
+    margin-top: 40px;
     width: 100% !important;
   }
 
