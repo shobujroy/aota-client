@@ -68,13 +68,13 @@ function Footer() {
                     >
                       {active === 1 ? (
                         <Image
-                          src="/images/navbar/Discord-5.svg"
+                          src="/images/navbar/Discord.svg"
                           width={30}
                           height={30}
                         />
                       ) : (
                         <Image
-                          src="/images/navbar/Discord-4.svg"
+                          src="/images/navbar/Discord 2.svg"
                           width={30}
                           height={30}
                         />
