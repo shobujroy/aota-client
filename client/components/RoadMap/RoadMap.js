@@ -36,8 +36,8 @@ const RoadMap = () => {
                 {/* <img src="/images/roadmap/Crystal.png" alt="" /> */}
                 
               </div>
-              <div className={styles.imageWrapper2} data-aos="zoom-in">
-                {/* <img src="/images/roadmap/Crystal.png" alt="" /> */}
+              {/* <div className={styles.imageWrapper2} data-aos="zoom-in">
+                
                 <Image
           data-aos="zoom-in"
           src={"/images/Blue Crystal.png"}
@@ -45,7 +45,7 @@ const RoadMap = () => {
           objectFit="cover"
           className={styles.roadmapImg}
         ></Image>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
