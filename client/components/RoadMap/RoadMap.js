@@ -24,8 +24,11 @@ const RoadMap = () => {
           <div className="row">
             <div
               className={`col-lg-6 col-md-12 col-sm-12 ${styles.RoadWrapper}`}
+
             >
+              <h6 >The AOTAVERSE</h6>
               <h1>ROADMAP</h1>
+              <p>We are bringing creative coworking into the metaverse.  A place out of this word</p>
             </div>
 
             <div
