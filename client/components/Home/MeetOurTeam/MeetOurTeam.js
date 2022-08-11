@@ -48,7 +48,7 @@ const MeetOurTeam = () => {
                 <div className={styles.MemberCardOne}>
                   <div className={styles.MemberCardTwo}>
                     <Image
-                      src={image.length < 2 ? "/images/Frame 184.png" : image}
+                      src={image.length < 2 ? "/images/Jacob Flores.png" : image}
                       alt="Picture of the author"
                       width={388}
                       height={388}
