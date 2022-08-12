@@ -31,7 +31,7 @@ const TheAveBanner = () => {
                 data-aos="zoom-in"
                 layout="fill"
                 objectFit="cover"
-                src={"/images/Floating ETH 1.svg"}
+                src={"/images/Floating ETH (1).png"}
               />
             </div>
           </div>
@@ -56,7 +56,7 @@ const TheAveBanner = () => {
                   data-aos="zoom-in"
                 layout="fill"
                 objectFit="cover"
-                  src={"/images/VR Headsets 1.svg"}
+                  src={"/images/VR Headsets (1).png"}
                   className={ styles.CreativeHavenImg}
                 />
                 
@@ -112,7 +112,7 @@ const TheAveBanner = () => {
               className={`col-md-5 col-lg-5 col-sm-12 ${styles.YogaMeditationImage}`}
             >
               {/* <Link href={"/onlineclasses"}> */}
-                <Image data-aos="zoom-in" layout="fill" objectFit="cover" src={"/images/Halo.svg"} className={styles.CreativeHavenImg} />
+                <Image data-aos="zoom-in" layout="fill" objectFit="cover" src={"/images/Halo (1).png"} className={styles.CreativeHavenImg} />
                 {/* </Link> */}
             </div>
           </div>

@@ -22,7 +22,7 @@
   font-family: "Montserrat-Medium";
   text-transform: uppercase;
   letter-spacing: 0.2em;
-  color: #75ba87;
+  color: #75ba87 !important;
   font-weight: 800;
   font-size: 18px;
 }
@@ -36,6 +36,7 @@
   font-family: "futura-bold";
   text-transform: uppercase;
   margin-bottom: 20px;
+  color: #e3f1e7;
 }
 
 /* Media Query for Mobile Devices */
