@@ -94,12 +94,13 @@
 .carousleItemTwo {
   width: 100vw;
   height: 100vh;
-  margin-top: -50px;
+  /* margin-top: -50px; */
   display: flex;
   justify-content: center;
   align-items: end;
   background: url("../../../public/images/Merch.png");
-  background-size: 100% 100%;
+  /* background-size: 100% 100%; */
+  background-size: 97% 97%;
   background-position: right top;
   background-repeat: no-repeat;
   font-family: "Montserrat-Regular";
@@ -136,10 +137,11 @@
 .carouselItemThree {
   width: 100vw;
   height: 100vh;
-  margin-top: -50px;
+  /* margin-top: -50px; */
   position: relative;
   background: url("../../../public/images/creativehaven.png");
-  background-size: 60vw 100vh;
+  /* background-size: 60vw 100vh; */
+  background-size: 51vw 82vh;
   background-position: right top;
   background-repeat: no-repeat;
   font-family: "Montserrat-Regular";
@@ -169,11 +171,12 @@
   height: 100vh;
   position: relative;
   background: url("../../../public/images/Yoga_River.png");
-  background-size: 60vw 100vh;
+  /* background-size: 60vw 100vh; */
+  background-size: 52vw 85vh;
   background-position: right top;
   background-repeat: no-repeat;
   font-family: "Montserrat-Regular";
-  margin-top: -50px;
+  /* margin-top: -50px; */
 }
 
 .carouselItemFour h1 {
@@ -195,7 +198,7 @@
   top: 160px;
 }
 .slider {
-  padding-bottom: 50px;
+  /* padding-bottom: 50px; */
   margin-top: -10px;
 }
 
