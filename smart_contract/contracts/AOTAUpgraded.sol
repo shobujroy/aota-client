@@ -30,13 +30,22 @@ contract AOTAUpgraded is ERC721r, Ownable {
 
     mapping(address => uint256[]) public userTokens;
 
-    constructor(string memory baseURI, string memory mockImageLink)
-        ERC721r("Aliens On The Ave", "AOTA", 7146)
-    {
+    constructor(
+        string memory baseURI,
+        string memory mockImageLink,
+        address[] memory listOfUsers
+    ) ERC721r("Aliens On The Ave", "AOTA", 7146) {
+        require(listOfUsers.length != 0, "list of whitelist users is empty");
         setBaseURI(baseURI);
         _mockImageLink = mockImageLink;
         _deployBlockTimestamp = block.timestamp;
         salesStatus = SalesStatus.NULL;
+        for (uint256 i; i < listOfUsers.length; i++) {
+            if (listOfUsers[i] != address(0)) {
+                whitelist.push(listOfUsers[i]);
+                isWhitelisted[listOfUsers[i]] = true;
+            }
+        }
     }
 
     function pubPrice() public pure returns (uint256) {
@@ -121,5 +130,20 @@ contract AOTAUpgraded is ERC721r, Ownable {
 
     function setSalesStatus(SalesStatus status) public onlyOwner {
         salesStatus = status;
+    }
+
+    function addUsersToWhitelist(address[] memory listOfUsers)
+        public
+        onlyOwner
+    {
+        require(listOfUsers.length != 0, "list of whitelist users is empty");
+        for (uint256 i; i < listOfUsers.length; i++) {
+            if (
+                listOfUsers[i] != address(0) && !isWhitelisted[listOfUsers[i]]
+            ) {
+                whitelist.push(listOfUsers[i]);
+                isWhitelisted[listOfUsers[i]] = true;
+            }
+        }
     }
 }
