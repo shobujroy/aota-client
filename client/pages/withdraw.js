@@ -22,20 +22,28 @@ function withdraw() {
   return (
     <><div>
       <Navbar BorderBottom={true} wallet={true} />
-      <div className="container pt-3 pb-5">
+      <div className={`bg-secondary ${styles.adminPage}`}>
+
+     
+      <div className={`container pt-3 pb-5`}>
         <div className="row">
           <div className='mt-3 d-flex justify-content-center'>
             {
-              sign === '0x0D8444f2d3f93AB117392d461e84D22F2A638C12'
+              sign !== '0x0D8444f2d3f93AB117392d461e84D22F2A638C12'
                 ? (
                   <div className={styles.card}>
                     <h1 className="text-center fs-3">Admin Pannel</h1>
                     <p className="text-center"><a href='https://testnets.opensea.io/collection/aliens-on-the-ave-v3'>View Collection on OpenSea</a></p>
 
                     <div className='text-center pt-5'>
-                      <button className={`btn ${ styles.mintBtn }`} onClick={() => reserve()}>Reserve Mint</button>
+                      <button className={`${ styles.mintBtn }`} onClick={() => reserve()}>Close Sale</button>
                       <br />
-                      {/* <button className={`btn ${ styles.withdrawBtn } mt-3`} onClick={() => withdraw()}>Withdraw Fund</button> */}
+                      <button className={`${ styles.mintBtn }`} onClick={() => reserve()}>Private Sale</button>
+                      <br />
+                      <button className={`${ styles.mintBtn }`} onClick={() => reserve()}>Public Sale</button>
+                     
+                     
+                      
                     </div>
                     <div className="mt-5">
                       <p className={styles.statusBar}>see transaction: https://rinkeby.etherscan.io/tx/{trxHash}</p>
@@ -48,6 +56,7 @@ function withdraw() {
             }
           </div>
         </div>
+      </div>
       </div>
       <Footer bg={'footer-bg-secondary'} />
     </div></>

@@ -1,10 +1,11 @@
-.card {
-    filter: drop-shadow(16px 16px 89px rgba(0, 0, 0, 0.12));
-    background: #fcfbfb;
-    border-radius: 16px;
+.card {   
+    background: inherit;
+    border-radius: 0px;
     padding: 50px 50px;
     width: 100%;
-    max-width: 600px;
+    max-width: auto;
+    border: 1px solid #91C89F;
+    margin-top: 100px;
 }
 
 .imageWrapper {
@@ -30,10 +31,17 @@
 }
 
 .mintBtn {
-    background: #7a5ea7;
-    padding: 10px 52px;
-    color: #fff;
+    background: #75BA87;
+    padding: 18px 260px;
+    color: rgb(0, 0, 0);
     border-radius: 0px;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 500;
+    font-family: "Montserrat-Medium";
+    text-align: center;
+    width: 650px;
+    margin-bottom: 20px;
 }
 
 .withdrawBtn {
@@ -48,4 +56,26 @@
     border-radius: 35px;
     padding: 10px 15px;
     color: #fff;
+}
+
+
+@media (max-width: 630px) {
+    .card{
+        width: auto !important;
+        padding: 50px 0px !important;
+    }
+
+
+    .mintBtn{
+        width: 250px !important;
+        padding: 20px 20px;
+    }
+}
+
+/* Media Query for low resolution  Tablets, Ipads */
+@media (min-width: 640px) and (max-width: 1040px) {
+    .mintBtn{
+        width: 400px !important;
+        padding: 20px 20px;
+    }
 }
