@@ -14,13 +14,20 @@ import { MintContext } from '../../../context/MintContext';
 function ProductCard({ }) {
   const [pubPrice, setPubPrice] = useState(0.07);
   const [quantity, setQuantity] = useState(1);
-  const { pubMint, isConnected, hasMetamask, sign, trxHash } = useContext(MintContext);
+  const { pubMint, isConnected, hasMetamask, sign, trxHash, checkStatus, status } = useContext(MintContext);
 
+  useEffect(() => {
+    checkStatus();
+  }, []);
 
   return (
     <>
       <div className={styles.card}>
-        <h1 className="text-center fs-3">Public Sale</h1>
+        <h1 className="text-center fs-3">
+          {
+            status == 0 ? "Sale Closed!" : (status == 1 ? "Privet Sale" : "Public Sale")
+          }
+        </h1>
         <p className="text-center"><a href='https://testnets.opensea.io/collection/aliens-on-the-ave-v3'>View Collection on OpenSea</a></p>
 
         <div className={`d-flex justify-content-between flex-wrap flex-row pt-5 ${styles.mobileResp}`}>
@@ -49,7 +56,7 @@ function ProductCard({ }) {
               }}><i className="fa-solid fa-minus"></i></span>
             </div>
             <h5 className='fw-bold mt-3'>Total</h5>
-            <h3 className='fw-bold fs-2'> {(quantity * pubPrice)?.toFixed(4) } ETH</h3>
+            <h3 className='fw-bold fs-2'> {(quantity * pubPrice)?.toFixed(4)} ETH</h3>
             {isConnected ? <button className={`btn ${styles.mintBtn}`} onClick={() => pubMint(quantity)}>MINT</button>
               : "Please connect wallet"}
           </div>

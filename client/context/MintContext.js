@@ -32,7 +32,7 @@ export const MintProvider = ({ children }) => {
     const [priPrice, setPriPrice] = useState(0.07);
     const [trxHash, setTrxHash] = useState('');
     const [collection, setCollection] = useState([]);
-    const [status, setStatus] = useState([]);
+    const [status, setStatus] = useState(0);
     const [dep, setDep] = useState(Math.random());
 
     // connect wallet
@@ -257,8 +257,8 @@ export const MintProvider = ({ children }) => {
             const web3 = new Web3(provider);
             const Cont = new web3.eth.Contract(AOTA.abi, add, sign);
             try {
-                const status = await Cont.methods.checkStatus().call({ from: sign });
-                setStatus(status);
+                const data = await Cont.methods.checkStatus().call({ from: sign });
+                setStatus(data);
             } catch (error) {
                 console.log(error);
             }
