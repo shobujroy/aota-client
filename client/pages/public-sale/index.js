@@ -17,7 +17,7 @@ function Index() {
         <div className="row">
           <h6 className={`d-flex flex-row align-items-center ${styles.text}`}>
             <i className="fa-solid fa-arrow-left-long me-2"></i>
-             <Link  href={"/"} >Back</Link>  
+            <Link href={"/"} >Back</Link>
           </h6>
           <div className="mt-3 d-flex justify-content-center">
             <ProductCard />
