@@ -44,6 +44,7 @@ const FaqAota = () => {
       a: "You own the commercial rights to your AOTA",
       b: " after purchase for as long as you retain ownership.",
     },
+   
   ];
 
   const [collapsed, setCollapsed] = useState(false);
