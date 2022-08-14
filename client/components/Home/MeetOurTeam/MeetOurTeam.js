@@ -24,6 +24,8 @@ const MeetOurTeam = () => {
   const [insta, setInsta] = useState("");
   
   const [twitter, setTwitter] = useState("");
+  const [discord, setDiscord] = useState("");
+
 
   const [linkedIn, setLinkedIn] = useState("");
   const [website, setWebsite] = useState("");
@@ -155,6 +157,30 @@ const MeetOurTeam = () => {
                         ) : (
                           <Image
                             src="/images/navbar/insta gray.svg"
+                            width={24}
+                            height={24}
+                          />
+                        )}
+
+                    </a> 
+                   }
+                      {discord?.length > 2 && <a
+                        onMouseOver={() => setActive(0)}
+                        onMouseOut={() => setActive(null)}
+                        // className={"nav-link " + Styles.socialIcon}
+                        aria-current="page"
+                        href={insta}
+                        target="_blank"
+                      >
+                        {active === 0 ? (
+                          <Image
+                            src="/images/navbar/Discord.svg"
+                            width={24}
+                            height={24}
+                          />
+                        ) : (
+                          <Image
+                            src="/images/navbar/Discord 2.svg"
                             width={24}
                             height={24}
                           />
@@ -386,7 +412,7 @@ const MeetOurTeam = () => {
                   >
                     <Carousel.Item>
                       <div className={styles.carousleItemElement}>
-                        {Team.slice(0, 8).map((item, i) => {
+                        {Team.slice(0, 6).map((item, i) => {
                           return (
                             <div
                               className={styles.teamMemberContainer}
@@ -398,7 +424,8 @@ const MeetOurTeam = () => {
                                 setInsta(item.insta);
                                 setTwitter(item.twitter);
                                 setLinkedIn(item.linkedin);
-                                 setWebsite(item.website);
+                                setWebsite(item.website);
+                                setDiscord(item.discord);
                                 setImgActive(i);
                               }}
                             >
@@ -427,7 +454,7 @@ const MeetOurTeam = () => {
 
                     <Carousel.Item>
                       <div className={styles.carousleItemElement}>
-                        {Team.slice(0, 8).map((item, i) => {
+                        {Team.slice(6,9).map((item, i) => {
                           return (
                             <div
                               className={styles.teamMemberContainer}
@@ -440,6 +467,7 @@ const MeetOurTeam = () => {
                                 setTwitter(item.twitter);
                                 setLinkedIn(item.linkedin);
                                 setWebsite(item.website);
+                                setDiscord(item.discord);
                                 setImgActive(i);
                               }}
                             >
@@ -502,35 +530,7 @@ const MeetOurTeam = () => {
                       
                     </Carousel.Item> */}
 
-                    {/* <Carousel.Item>
-                    <img
-                      className="d-block w-100"
-                      src="holder.js/800x400?text=Second slide&bg=282c34"
-                      alt="Second slide"
-                    />
-
-                    <Carousel.Caption>
-                      <h3>Second slide label</h3>
-                      <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      </p>
-                    </Carousel.Caption>
-                  </Carousel.Item>
-                  <Carousel.Item>
-                    <img
-                      className="d-block w-100"
-                      src="holder.js/800x400?text=Third slide&bg=20232a"
-                      alt="Third slide"
-                    />
-
-                    <Carousel.Caption>
-                      <h3>Third slide label</h3>
-                      <p>
-                        Praesent commodo cursus magna, vel scelerisque nisl
-                        consectetur.
-                      </p>
-                    </Carousel.Caption>
-                  </Carousel.Item> */}
+                  
                   </Carousel>
                 </div>
               </div>
@@ -788,6 +788,28 @@ const MeetOurTeam = () => {
                       ) : (
                         <Image
                           src="/images/icons/Website (1).svg"
+                          width={24}
+                          height={24}
+                        />
+                      )}
+                    </a>}
+                     {data.discord?.length > 2 && <a
+                      onMouseOver={() => setActive(3)}
+                      onMouseOut={() => setActive(null)}
+                      // className={"nav-link " + Styles.socialIcon}
+                      aria-current="page"
+                      href={linkedIn}
+                      target="_blank"
+                    >
+                      {active === 3 ? (
+                        <Image
+                          src="/images/navbar/Discord.svg"
+                          width={24}
+                          height={24}
+                        />
+                      ) : (
+                        <Image
+                          src="/images/navbar/Discord 2.svg"
                           width={24}
                           height={24}
                         />
