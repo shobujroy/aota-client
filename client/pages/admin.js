@@ -104,9 +104,9 @@ function Admin() {
                       <div className="text-center pt-5">
                         <button className={`${styles.mintBtn}`} onClick={() => reserve()}>Reserve Mint</button>
                       </div>
-                      <div className="mt-5">
+                      {/* <div className="mt-5">
                         <p className={styles.statusBar}>see transaction: https://rinkeby.etherscan.io/tx/{trxHash}</p>
-                      </div>
+                      </div> */}
                     </div>
                   )
                   : (
