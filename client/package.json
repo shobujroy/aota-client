@@ -28,6 +28,7 @@
     "react-grid-carousel": "^1.0.1",
     "react-horizontal-timeline": "^1.5.3",
     "react-slick": "^0.29.0",
+    "react-tag-input": "^6.8.0",
     "slick-carousel": "^1.8.1",
     "styled-components": "^5.3.5",
     "sweetalert": "^2.1.2",

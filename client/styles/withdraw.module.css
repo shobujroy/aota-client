@@ -32,7 +32,7 @@
 
 .mintBtn {
     background: #75BA87;
-    padding: 18px 260px;
+    padding: 18px 222px;
     color: rgb(0, 0, 0);
     border-radius: 0px;
     font-size: 16px;
@@ -56,6 +56,10 @@
     border-radius: 35px;
     padding: 10px 15px;
     color: #fff;
+}
+
+.addressInput{
+    display: block;
 }
 
 
