@@ -157,6 +157,12 @@ export const MintProvider = ({ children }) => {
                     }
                 });
             } catch (error) {
+                // swal
+                swal({
+                    title: "Something wrong!",
+                    text: `${error}`,
+                    icon: "error",
+                });
                 console.log(error);
             }
         } else {
