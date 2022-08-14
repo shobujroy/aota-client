@@ -8,7 +8,7 @@ import AOTA from '../contracts/AOTAUpgraded.json';
 
 export const MintContext = React.createContext();
 let web3Modal;
-const add = "0xd9145CCE52D386f254917e481eB44e9943F39138";
+const add = "0x795C0413089923d426Dc7A80032e65DeDc919Aec";
 const providerOptions = {
     walletconnect: {
         package: WalletConnectProvider,
@@ -32,6 +32,7 @@ export const MintProvider = ({ children }) => {
     const [priPrice, setPriPrice] = useState(0.07);
     const [trxHash, setTrxHash] = useState('');
     const [collection, setCollection] = useState([]);
+    const [status, setStatus] = useState([]);
     const [dep, setDep] = useState(Math.random());
 
     // connect wallet
@@ -245,6 +246,27 @@ export const MintProvider = ({ children }) => {
         }
     }
 
+    async function checkStatus() {
+        setTrxHash('');
+        if (typeof window.ethereum !== "undefined") {
+            web3Modal = new Web3Modal({
+                cacheProvider: true,
+                providerOptions,
+            });
+            const provider = await web3Modal.connect();
+            const web3 = new Web3(provider);
+            const Cont = new web3.eth.Contract(AOTA.abi, add, sign);
+            try {
+                const status = await Cont.methods.checkStatus().call({ from: sign });
+                setStatus(status);
+            } catch (error) {
+                console.log(error);
+            }
+        } else {
+            console.log("install metamask");
+        };
+    }
+
     // NFTs for gallery
     async function myNFTs() {
         setTrxHash('');
@@ -289,6 +311,8 @@ export const MintProvider = ({ children }) => {
             nftTransfer,
             setSalesStatus,
             addUsersToWhitelist,
+            checkStatus,
+            status,
             dep
         }}>
             {children}
