@@ -3,12 +3,12 @@ import Web3 from "web3";
 import WalletConnectProvider from "@walletconnect/web3-provider";
 import Web3Modal from "web3modal";
 import swal from 'sweetalert';
-import AOTA from '../contracts/AOTA.json';
+import AOTA from '../contracts/AOTAUpgraded.json';
 
 
 export const MintContext = React.createContext();
 let web3Modal;
-const add = "0x2A8427cE6B2695A4BF965606d1A9De02a577AF4f";
+const add = "0xd9145CCE52D386f254917e481eB44e9943F39138";
 const providerOptions = {
     walletconnect: {
         package: WalletConnectProvider,
@@ -75,7 +75,7 @@ export const MintProvider = ({ children }) => {
             let price = web3.utils.fromWei(total.toString(), "ether");
             setPubPrice(price);
             try {
-                await Cont.methods.mintPubNFTs(count).send({ from: sign, value: total }, function (err, txHash) {
+                await Cont.methods.mint(count).send({ from: sign, value: total }, function (err, txHash) {
                     if (err) {
                         console.log(err);
                     } else {
@@ -96,40 +96,40 @@ export const MintProvider = ({ children }) => {
     }
 
     // private mint
-    async function priMint(count) {
-        setTrxHash('');
-        if (typeof window.ethereum !== "undefined") {
-            web3Modal = new Web3Modal({
-                cacheProvider: true,
-                providerOptions,
-            });
-            const provider = await web3Modal.connect();
-            const web3 = new Web3(provider);
-            const Cont = new web3.eth.Contract(AOTA.abi, add, sign);
-            const PRI_PRICE = await Cont.methods.priPrice().call();
-            let total = count * PRI_PRICE
-            let price = web3.utils.fromWei(total.toString(), "ether");
-            setPriPrice(price);
-            try {
-                await Cont.methods.mintPriNFTs(count).send({ from: sign, value: total }, function (err, txHash) {
-                    if (err) {
-                        console.log(err);
-                    } else {
-                        setTrxHash(txHash);
-                        swal({
-                            title: "You have minted successfully!",
-                            text: `This is your hash of transaction: ${ txHash }`,
-                            icon: "success",
-                        });
-                    }
-                });
-            } catch (error) {
-                console.log(error);
-            }
-        } else {
-            console.log("install metamask");
-        }
-    }
+    // async function priMint(count) {
+    //     setTrxHash('');
+    //     if (typeof window.ethereum !== "undefined") {
+    //         web3Modal = new Web3Modal({
+    //             cacheProvider: true,
+    //             providerOptions,
+    //         });
+    //         const provider = await web3Modal.connect();
+    //         const web3 = new Web3(provider);
+    //         const Cont = new web3.eth.Contract(AOTA.abi, add, sign);
+    //         const PRI_PRICE = await Cont.methods.priPrice().call();
+    //         let total = count * PRI_PRICE
+    //         let price = web3.utils.fromWei(total.toString(), "ether");
+    //         setPriPrice(price);
+    //         try {
+    //             await Cont.methods.mintPriNFTs(count).send({ from: sign, value: total }, function (err, txHash) {
+    //                 if (err) {
+    //                     console.log(err);
+    //                 } else {
+    //                     setTrxHash(txHash);
+    //                     swal({
+    //                         title: "You have minted successfully!",
+    //                         text: `This is your hash of transaction: ${ txHash }`,
+    //                         icon: "success",
+    //                     });
+    //                 }
+    //             });
+    //         } catch (error) {
+    //             console.log(error);
+    //         }
+    //     } else {
+    //         console.log("install metamask");
+    //     }
+    // }
 
     // reserve mint
     async function reserve() {
@@ -191,6 +191,60 @@ export const MintProvider = ({ children }) => {
         }
     }
 
+    async function setSalesStatus(status) {
+        setTrxHash('');
+        if (typeof window.ethereum !== "undefined") {
+            web3Modal = new Web3Modal({
+                cacheProvider: true,
+                providerOptions,
+            });
+            const provider = await web3Modal.connect();
+            const web3 = new Web3(provider);
+            const Cont = new web3.eth.Contract(AOTA.abi, add, sign);
+            try {
+                await Cont.methods.setSalesStatus(status).send({ from: sign }, function (err, txHash) {
+                    if (err) {
+                        console.log(err);
+                    } else {
+                        setTrxHash(txHash);
+                    }
+                });
+                setDep(Math.random());
+            } catch (error) {
+                console.log(error);
+            }
+        } else {
+            console.log("install metamask");
+        }
+    }
+
+    async function addUsersToWhitelist(add) {
+        setTrxHash('');
+        if (typeof window.ethereum !== "undefined") {
+            web3Modal = new Web3Modal({
+                cacheProvider: true,
+                providerOptions,
+            });
+            const provider = await web3Modal.connect();
+            const web3 = new Web3(provider);
+            const Cont = new web3.eth.Contract(AOTA.abi, add, sign);
+            try {
+                await Cont.methods.addUsersToWhitelist(add).send({ from: sign }, function (err, txHash) {
+                    if (err) {
+                        console.log(err);
+                    } else {
+                        setTrxHash(txHash);
+                    }
+                });
+                setDep(Math.random());
+            } catch (error) {
+                console.log(error);
+            }
+        } else {
+            console.log("install metamask");
+        }
+    }
+
     // NFTs for gallery
     async function myNFTs() {
         setTrxHash('');
@@ -233,6 +287,8 @@ export const MintProvider = ({ children }) => {
             pubPrice,
             priPrice,
             nftTransfer,
+            setSalesStatus,
+            addUsersToWhitelist,
             dep
         }}>
             {children}
