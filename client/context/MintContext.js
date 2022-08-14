@@ -83,7 +83,7 @@ export const MintProvider = ({ children }) => {
                         setTrxHash(txHash);
                         swal({
                             title: "You have minted successfully!",
-                            text: `This is your hash of transaction: ${ txHash }`,
+                            text: `This is your hash of transaction: ${txHash}`,
                             icon: "success",
                         });
                     }
@@ -151,12 +151,18 @@ export const MintProvider = ({ children }) => {
                         // swal
                         swal({
                             title: "You have minted successfully!",
-                            text: `This is your hash of transaction: ${ txHash }`,
+                            text: `This is your hash of transaction: ${txHash}`,
                             icon: "success",
                         });
                     }
                 });
             } catch (error) {
+                // swal
+                swal({
+                    title: "Something wrong!",
+                    text: `${error}`,
+                    icon: "error",
+                });
                 console.log(error);
             }
         } else {
@@ -219,7 +225,8 @@ export const MintProvider = ({ children }) => {
         }
     }
 
-    async function addUsersToWhitelist(add) {
+    async function addUsersToWhitelist(addresses) {
+        console.log(addresses)
         setTrxHash('');
         if (typeof window.ethereum !== "undefined") {
             web3Modal = new Web3Modal({
@@ -230,15 +237,31 @@ export const MintProvider = ({ children }) => {
             const web3 = new Web3(provider);
             const Cont = new web3.eth.Contract(AOTA.abi, add, sign);
             try {
-                await Cont.methods.addUsersToWhitelist(add).send({ from: sign }, function (err, txHash) {
+                await Cont.methods.addUsersToWhitelist(addresses).send({ from: sign }, function (err, txHash) {
                     if (err) {
-                        console.log(err);
+                        // return this err
+                        swal({
+                            title: "Something wrong!",
+                            text: `Try again after sometimes!`,
+                            icon: "error",
+                        });
                     } else {
+                        console.log(txHash);
+                        swal({
+                            title: "You have added successfully!",
+                            text: `You have added ${addresses.length} users to whitelist.`,
+                            icon: "success",
+                        });
                         setTrxHash(txHash);
                     }
                 });
                 setDep(Math.random());
             } catch (error) {
+                swal({
+                    title: "Something wrong!",
+                    text: `Try again after sometimes!`,
+                    icon: "error",
+                });
                 console.log(error);
             }
         } else {

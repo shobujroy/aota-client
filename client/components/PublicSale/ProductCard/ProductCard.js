@@ -18,6 +18,7 @@ function ProductCard({ }) {
 
   useEffect(() => {
     checkStatus();
+    status == 0 ? setPubPrice(0.00) : (status == 1 ? setPubPrice(0.07) : setPubPrice(0.09))
   }, []);
 
   return (
@@ -56,7 +57,7 @@ function ProductCard({ }) {
               }}><i className="fa-solid fa-minus"></i></span>
             </div>
             <h5 className='fw-bold mt-3'>Total</h5>
-            <h3 className='fw-bold fs-2'> {(quantity * pubPrice)?.toFixed(4)} ETH</h3>
+            <h3 className='fw-bold fs-2'> {(quantity * pubPrice)?.toFixed(2)} ETH</h3>
             {isConnected ? <button className={`btn ${styles.mintBtn}`} onClick={() => pubMint(quantity)}>MINT</button>
               : "Please connect wallet"}
           </div>
@@ -64,7 +65,7 @@ function ProductCard({ }) {
 
         </div>
         <div className="mt-5">
-          <button className={`btn ${styles.statusBtn}`}>Status Minting</button>
+          {/* <button className={`btn ${styles.statusBtn}`}>Status Minting</button> */}
           {/* <p className={styles.statusBar}>{trxHash.slice(0, 30)} <br /> {trxHash.slice(31, 150)}</p> */}
         </div>
       </div></>

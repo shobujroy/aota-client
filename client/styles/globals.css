@@ -212,3 +212,34 @@ a {
   background-image: none;
   box-shadow: none !important;
 }
+
+/* for admin address input */
+input.ReactTags__tagInputField {
+  padding: 16px 17px;
+  color: rgb(0, 0, 0);
+  border-radius: 0px;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 500;
+  font-family: "Montserrat-Medium";
+  text-align: center;
+  width: 650px;
+  margin-bottom: 20px;
+}
+
+span.tag-wrapper.ReactTags__tag {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 500;
+    font-family: "Montserrat-Medium";
+    text-align: center;
+    width: 650px;
+    margin: 0px auto;
+    display: block;
+    text-align: center;
+    padding: 5px 0px;
+}
+
+.ReactTags__selected {
+    text-align: center;
+}

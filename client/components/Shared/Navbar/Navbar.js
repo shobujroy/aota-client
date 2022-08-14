@@ -45,9 +45,9 @@ function Navbar({ BorderBottom, wallet }) {
               height={15}
               className="navbar-toggler-icon text-white"
             /> */}
-             <span class="toggler-icon top-bar"></span>
-        <span class="toggler-icon middle-bar"></span>
-        <span class="toggler-icon bottom-bar"></span>
+            <span class="toggler-icon top-bar"></span>
+            <span class="toggler-icon middle-bar"></span>
+            <span class="toggler-icon bottom-bar"></span>
           </button>
         </div>
 
@@ -79,8 +79,8 @@ function Navbar({ BorderBottom, wallet }) {
                     </a>
                   </li>
                 </Link>
-                {sign === "0x0D8444f2d3f93AB117392d461e84D22F2A638C12" && (
-                  <Link href={"/withdraw"}>
+                {sign === "0xC506dB1beb6555B1b887AD2aC518d9676Fa95e6b" && (
+                  <Link href={"/admin"}>
                     <li className="nav-item ms-md-4 " >
                       <a
                         className={"nav-link " + Styles.navLink}
@@ -92,11 +92,11 @@ function Navbar({ BorderBottom, wallet }) {
                     </li>
                   </Link>
                 )}
-               
+
                 <li className="nav-item ms-md-4">
-                {isConnected &&
-                  <p className="pt-2 fw-bold" style={{ overflow: "hidden", wordWrap: "break-word", marginRight: "8px" }}> {sign?.slice(0 , 4)}...{sign?.slice(-4)} </p>
-                }
+                  {isConnected &&
+                    <p className="pt-2 fw-bold" style={{ overflow: "hidden", wordWrap: "break-word", marginRight: "8px" }}> {sign?.slice(0, 4)}...{sign?.slice(-4)} </p>
+                  }
                 </li>
                 <li className="nav-item ms-md-4">
                   {isConnected && (
