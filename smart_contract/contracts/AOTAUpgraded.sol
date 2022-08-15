@@ -33,7 +33,7 @@ contract AOTAUpgraded is ERC721r, Ownable {
     bool reserveMinted;
 
     constructor(string memory baseURI, string memory mockImageLink)
-        ERC721r("Aliens On The Ave", "AOTA", 7146)
+        ERC721r("Aliens On The Ave", "AOTA", 7147)
     {
         address[14] memory listOfUsers = [
             0x819EEc2c66A512Ef94F3A9ac3f7F5D0FDbC2cC64,
@@ -222,7 +222,8 @@ contract AOTAUpgraded is ERC721r, Ownable {
             177,
             144,
             62,
-            12
+            12,
+            0
         ];
         for (uint256 i; i < listOfReservedTokens.length; i++) {
             _mintAtIndex(msg.sender, listOfReservedTokens[i]);
