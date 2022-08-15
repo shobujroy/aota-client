@@ -228,14 +228,16 @@
   height: 550px;
 
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   /* gap: 15px; */
   /* flex-wrap: wrap; */
 }
+
 .teamImage {
   position: relative;
   width: 92%;
-  height: 63%;
+  height: 200px;
+  /* height: 108%; */
 }
 
 .teamMemberContainer {
@@ -536,10 +538,8 @@
     transform: rotate(180deg);
     height: 48px;
     cursor: pointer;
-    /* margin-top: -500px;
-    margin-left: 400px; */
-    margin-top: -630px;
-    margin-left: 605px;
+    margin-top: -351px;
+    margin-left: 600px;
     padding: 20px;
   }
   .leftArrow {
@@ -576,7 +576,7 @@
   }
   .carousleItemElement {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     /* gap: 5px; */
     /* flex-wrap: wrap; */
   }
@@ -588,8 +588,8 @@
   }
   .teamImage {
     position: relative;
-    width: 90%;
-    height: 40%;
+    width: 92%;
+    height: 59%;
   }
   .meetMemberPara {
     border: 2px solid transparent;
@@ -698,7 +698,7 @@
     width: 48px;
     height: 48px;
     cursor: pointer;
-    margin-top: -912px;
+    margin-top: -810px;
     margin-right: 60px;
     padding: 20px;
     margin-left: 10px;
@@ -706,13 +706,9 @@
   .rightArrow {
     position: relative;
     width: 200px;
-
     height: 48px;
     cursor: pointer;
-    /* margin-top: -500px;
-    margin-left: 400px; */
-    margin-top: -912px;
-
+    margin-top: -570px;
     margin-left: 494px;
     padding: 20px;
   }
@@ -729,7 +725,7 @@
   .teamMemberContainer {
     width: 40%;
     margin-left: 10px;
-    height: 200px;
+    height: 238px;
     cursor: pointer;
   }
 }
