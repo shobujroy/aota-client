@@ -70,7 +70,7 @@ function Admin() {
                 sign === '0xC506dB1beb6555B1b887AD2aC518d9676Fa95e6b'
                   ? (
                     <div className={styles.card}>
-                      <h1 className="text-center fs-3">Admin Pannel</h1>
+                      <h1 className="text-center fs-3">Admin Panel</h1>
                       <p className="text-center"><a href='https://testnets.opensea.io/collection/aliens-on-the-ave-v3'>View Collection on OpenSea</a></p>
                       <div className="text-center">
                         <ReactTags
@@ -87,15 +87,15 @@ function Admin() {
                       <div className='text-center pt-5'>
                         <h1 className="text-center fs-3 pb-3">
                           {
-                            status == 0 ? "Sale Closed!" : (status == 1 ? "Privet Sale" : "Public Sale")
+                            status == 0 ? "Sale Closed!" : (status == 1 ? "Private Sale" : "Public Sale")
                           }
                         </h1>
                         {
-                          status != 0 && <button className={`${styles.mintBtn}`} onClick={() => setSalesStatus(0)}>Set CLosed</button>
+                          status != 0 && <button className={`${styles.mintBtn}`} onClick={() => setSalesStatus(0)}>Set Closed</button>
                         }
                         <br />
                         {
-                          status != 1 && <button className={`${styles.mintBtn}`} onClick={() => setSalesStatus(1)}>Set Privet</button>
+                          status != 1 && <button className={`${styles.mintBtn}`} onClick={() => setSalesStatus(1)}>Set Private</button>
                         }
                         <br />
                         {
