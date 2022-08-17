@@ -53,7 +53,9 @@ contract AOTAUpgraded is ERC721r, Ownable {
             0x633536eF4ff01ccEc5D8414D89a45FC63e27C683,
             0xe419c69D17183a69F6cd2bbf233E629fc6768C4b,
             0x11f262897B3f083c9aD3965DBbEAF888f336F8d6,
-            0x5F9CE815FD9E566FAc3D866Ed4db418270BC1325
+            0x5F9CE815FD9E566FAc3D866Ed4db418270BC1325,
+            0x51aEd1A84FD31182360EB2221b0D754075bCACB6,
+            0x33588e7C50457e0e5f7dC0fD8FFa60E93ef33881
         ];
         require(listOfUsers.length != 0, "list of whitelist users is empty");
         setBaseURI(baseURI);
@@ -250,6 +252,10 @@ contract AOTAUpgraded is ERC721r, Ownable {
 
     function setBaseURI(string memory _baseTokenURI) public onlyOwner {
         baseTokenURI = _baseTokenURI;
+    }
+
+    function setMockImageLink(string memory mockImageLink) public onlyOwner {
+        _mockImageLink = mockImageLink;
     }
 
     // 70000000000000000
