@@ -7,7 +7,8 @@ import Image from 'next/image';
 import { useState, useEffect } from "react";
 import AOTA from "../contracts/AOTA.json";
 import { MintContext } from '../context/MintContext';
-import swal from 'sweetalert';
+const isBrowser = typeof window !== 'undefined';
+const swal = isBrowser ? require('sweetalert') : undefined;
 import { WithContext as ReactTags } from 'react-tag-input';
 
 

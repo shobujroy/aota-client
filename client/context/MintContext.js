@@ -2,7 +2,8 @@ import React, { useState, useEffect } from "react";
 import Web3 from "web3";
 import WalletConnectProvider from "@walletconnect/web3-provider";
 import Web3Modal from "web3modal";
-import swal from 'sweetalert';
+const isBrowser = typeof window !== 'undefined';
+const swal = isBrowser ? require('sweetalert') : undefined;
 import AOTA from '../contracts/AOTAUpgraded.json';
 
 
