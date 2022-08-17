@@ -2,9 +2,27 @@
 import Image from "next/image";
 import { useState } from "react";
 import styles from "./Footer.module.css";
+import { emailSub } from './../../../api/email';
+import swal from 'sweetalert';
 
 function Footer() {
   const [active, setActive] = useState(null);
+  const [email, setEmail] = useState('');
+
+  const handleEmailSub = async () => {
+    if (email === '') {
+      swal("Oops!", "Please enter your email address", "error");
+    } else {
+      try {
+        const data = await emailSub({ email });
+        // swal success
+        swal("Success!", "You have successfully joined to our AOTAVERSE.", "success");
+      } catch (error) {
+        // swal error
+        swal("Error!", error.response.data.msg, "error");
+      }
+    };
+  }
   return (
     <div className={styles.FooterMain}>
       <div className={styles.FooterShapOne}>
@@ -19,7 +37,7 @@ function Footer() {
         <div className="container pt-3 pb-2">
           <div className="row">
             <div
-              className={`d-flex flex-wrap justify-content-between align-items-center ${ styles.footerContectWrapper }`}
+              className={`d-flex flex-wrap justify-content-between align-items-center ${styles.footerContectWrapper}`}
             >
               <div style={{ width: "23rem" }}>
                 <h5 className={styles.InputText}>Join the AOTAVERSE</h5>
@@ -27,9 +45,10 @@ function Footer() {
                   <input
                     type="email"
                     placeholder="Email Address"
-                    className={`form-control ${ styles.emailInput }`}
+                    onChange={(e) => setEmail(e.target.value)}
+                    className={`form-control ${styles.emailInput}`}
                   />
-                  <button className={`btn ${ styles.btnSubmit }`}>Sign Up</button>
+                  <button onClick={() => handleEmailSub()} className={`btn ${styles.btnSubmit}`}>Sign Up</button>
                 </div>
 
                 <div className="d-flex flex-row ">
@@ -132,12 +151,12 @@ function Footer() {
                   </span>
                 </div>
               </div>
-              <div className={`fn-futura text-end ${ styles.FooterLastText }`}>
+              <div className={`fn-futura text-end ${styles.FooterLastText}`}>
                 <h6>ALIENS ON THE AVE</h6>
                 <p>We respect your privacy.</p>
                 <p><small>
                   GivePower Foundation, located at 500 2nd Street. 1st Floor, San Francisco, <br /> CA 94107, a 501(c)(3) charity. The donation is tax deductible by Aliens On The Ave.
-                  </small> </p>
+                </small> </p>
                 <p> <small>GivePower's annual report and more information are available at
                   <a href="https://www.givepower.org/"> www.givepower.org</a> <br />
                   Registration with any
