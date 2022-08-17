@@ -11,7 +11,7 @@ function Collection() {
     useContext(MintContext);
 
   useEffect(() => {
-    console.log("rendaring")
+    console.log(collection, "rendaring")
     myNFTs();
   }, [isConnected, hasMetamask, sign, dep]);
   return (
