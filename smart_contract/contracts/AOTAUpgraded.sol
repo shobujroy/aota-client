@@ -4,6 +4,7 @@ pragma solidity ^0.8.4;
 import "./ERC721r.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
 import "@openzeppelin/contracts/utils/math/SafeMath.sol";
+import "@openzeppelin/contracts/utils/Strings.sol";
 
 contract AOTAUpgraded is ERC721r, Ownable {
     using SafeMath for uint256;
