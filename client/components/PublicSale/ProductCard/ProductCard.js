@@ -26,7 +26,7 @@ function ProductCard({ }) {
       <div className={styles.card}>
         <h1 className="text-center fs-3">
           {
-            status == 0 ? "Sale Closed!" : (status == 1 ? "Privet Sale" : "Public Sale")
+            status == 0 ? "Sale Closed!" : (status == 1 ? "Private Sale" : "Public Sale")
           }
         </h1>
         <p className="text-center"><a href='https://testnets.opensea.io/collection/aliens-on-the-ave-v3'>View Collection on OpenSea</a></p>
