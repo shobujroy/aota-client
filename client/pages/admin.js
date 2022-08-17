@@ -26,7 +26,7 @@ function Admin() {
   }, []);
 
   // fot tag input
-  const [address, setAddress] = useState([{ id: '0', text: '0x0' }]);
+  const [address, setAddress] = useState([]);
 
   const handleDelete = i => {
     setAddress(address.filter((add, index) => index !== i));
