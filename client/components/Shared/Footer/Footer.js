@@ -131,7 +131,7 @@ function Footer() {
                       onMouseOut={() => setActive(null)}
                       className={"nav-link " + styles.socialIcon}
                       aria-current="page"
-                      href="http://opensea.io/Aliensontheave/"
+                      href="https://opensea.io/collection/aota-genesis"
                       target="_blank"
                     >
                       {active === 3 ? (

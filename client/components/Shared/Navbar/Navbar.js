@@ -275,7 +275,7 @@ function Navbar({ BorderBottom, wallet }) {
                   onMouseOut={() => setActive(null)}
                   className={"nav-link " + Styles.socialIcon}
                   aria-current="page"
-                  href="http://opensea.io/Aliensontheave/"
+                  href="https://opensea.io/collection/aota-genesis"
                   target="_blank"
                 >
                   {active === 3 ? (
