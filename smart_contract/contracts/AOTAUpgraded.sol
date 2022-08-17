@@ -70,6 +70,10 @@ contract AOTAUpgraded is ERC721r, Ownable {
         }
     }
 
+    function checkStatus() public view returns (SalesStatus) {
+        return salesStatus;
+    }
+
     function pubPrice() public pure returns (uint256) {
         return PUB_PRICE;
     }
