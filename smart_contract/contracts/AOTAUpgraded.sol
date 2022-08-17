@@ -39,7 +39,7 @@ contract AOTAUpgraded is ERC721r, Ownable {
     constructor(string memory baseURI, string memory mockImageLink)
         ERC721r("Aliens On The Ave", "AOTA", 7147)
     {
-        address[14] memory listOfUsers = [
+        address[16] memory listOfUsers = [
             0x819EEc2c66A512Ef94F3A9ac3f7F5D0FDbC2cC64,
             0x16653D0fC9a2DA314B2733511556113DDb23A87C,
             0xB087Df8742909dde2A73C88bf197237c33ba71ED,
