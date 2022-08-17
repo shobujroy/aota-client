@@ -67,7 +67,7 @@ function Admin() {
           <div className="row">
             <div className='mt-3 d-flex justify-content-center'>
               {
-                sign === '0xC506dB1beb6555B1b887AD2aC518d9676Fa95e6b'
+                sign === '0x33588e7C50457e0e5f7dC0fD8FFa60E93ef33881'
                   ? (
                     <div className={styles.card}>
                       <h1 className="text-center fs-3">Admin Panel</h1>
