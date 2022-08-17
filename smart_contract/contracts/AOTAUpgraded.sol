@@ -4,13 +4,16 @@ pragma solidity ^0.8.4;
 import "./ERC721r.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
 import "@openzeppelin/contracts/utils/math/SafeMath.sol";
+import "@openzeppelin/contracts/utils/Strings.sol";
 
 contract AOTAUpgraded is ERC721r, Ownable {
     using SafeMath for uint256;
+    using Strings for uint256;
+
     string private _mockImageLink;
     uint256 private _deployBlockTimestamp;
 
-    uint256 public constant MAX_SUPPLY = 7146;
+    uint256 public constant MAX_SUPPLY = 7147;
     uint256 public constant PUB_PRICE = 0.09 ether;
     uint256 public constant PRI_PRICE = 0.07 ether;
     uint256 public constant MAX_PER_MINT = 146;
@@ -19,6 +22,7 @@ contract AOTAUpgraded is ERC721r, Ownable {
     mapping(address => bool) public isWhitelisted;
 
     string public baseTokenURI;
+    string public baseExtension = ".json";
 
     enum SalesStatus {
         NULL,
@@ -76,7 +80,7 @@ contract AOTAUpgraded is ERC721r, Ownable {
 
     function reserveNFTs() public onlyOwner {
         require(!reserveMinted, "Reserve has already been minted!");
-        uint16[146] memory listOfReservedTokens = [
+        uint16[147] memory listOfReservedTokens = [
             7053,
             7003,
             6970,
@@ -313,5 +317,30 @@ contract AOTAUpgraded is ERC721r, Ownable {
                 isWhitelisted[listOfUsers[i]] = true;
             }
         }
+    }
+
+    function tokenURI(uint256 tokenId)
+        public
+        view
+        virtual
+        override
+        returns (string memory)
+    {
+        require(
+            _exists(tokenId),
+            "ERC721Metadata: URI query for nonexistent token"
+        );
+
+        string memory currentBaseURI = _baseURI();
+        return
+            bytes(currentBaseURI).length > 0
+                ? string(
+                    abi.encodePacked(
+                        currentBaseURI,
+                        tokenId.toString(),
+                        baseExtension
+                    )
+                )
+                : "";
     }
 }
