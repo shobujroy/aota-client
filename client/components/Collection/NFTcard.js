@@ -2,8 +2,7 @@ import axios from 'axios';
 import Image from 'next/image';
 import React, { useEffect, useState } from 'react';
 import { MintContext } from './../../context/MintContext';
-const isBrowser = typeof window !== 'undefined';
-const swal = isBrowser ? require('sweetalert') : undefined;
+import swal from '@sweetalert/with-react'
 import { useContext } from 'react';
 
 function NFTcard({ api, src, title, setDep }) {

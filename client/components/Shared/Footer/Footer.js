@@ -3,8 +3,7 @@ import Image from "next/image";
 import { useState } from "react";
 import styles from "./Footer.module.css";
 import { emailSub } from './../../../api/email';
-const isBrowser = typeof window !== 'undefined';
-const swal = isBrowser ? require('sweetalert') : undefined;
+import swal from '@sweetalert/with-react'
 
 function Footer() {
   const [active, setActive] = useState(null);
