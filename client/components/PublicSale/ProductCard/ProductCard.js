@@ -29,7 +29,7 @@ function ProductCard({ }) {
             status == 0 ? "Sale Closed!" : (status == 1 ? "Private Sale" : "Public Sale")
           }
         </h1>
-        <p className="text-center"><a href='https://testnets.opensea.io/collection/aliens-on-the-ave-v3'>View Collection on OpenSea</a></p>
+        <p className="text-center"><a href='https://opensea.io/collection/aota-genesis'>View Collection on OpenSea</a></p>
 
         <div className={`d-flex justify-content-between flex-wrap flex-row pt-5 ${styles.mobileResp}`}>
           <div className={styles.imageRespn}>

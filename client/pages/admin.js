@@ -71,7 +71,7 @@ function Admin() {
                   ? (
                     <div className={styles.card}>
                       <h1 className="text-center fs-3">Admin Panel</h1>
-                      <p className="text-center"><a href='https://testnets.opensea.io/collection/aliens-on-the-ave-v3'>View Collection on OpenSea</a></p>
+                      <p className="text-center"><a href='https://opensea.io/collection/aota-genesis'>View Collection on OpenSea</a></p>
                       <div className="text-center">
                         <ReactTags
                           tags={address}
