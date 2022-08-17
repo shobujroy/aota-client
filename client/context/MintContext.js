@@ -9,7 +9,7 @@ import AOTA from '../contracts/AOTAUpgraded.json';
 
 export const MintContext = React.createContext();
 let web3Modal;
-const add = "0x795C0413089923d426Dc7A80032e65DeDc919Aec";
+const add = "0xbE35C4CcE60B16f25c2De86e35ed5Fc3850Df5D9";
 const providerOptions = {
     walletconnect: {
         package: WalletConnectProvider,
