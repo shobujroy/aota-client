@@ -19,7 +19,7 @@ function ProductCard({ }) {
   useEffect(() => {
     checkStatus();
     status == 0 ? setPubPrice(0.00) : (status == 1 ? setPubPrice(0.07) : setPubPrice(0.09))
-  }, []);
+  }, [status]);
 
   return (
     <>
