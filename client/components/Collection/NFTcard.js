@@ -14,15 +14,11 @@ function NFTcard({ api, src, title, setDep }) {
     const [address, setAddress] = useState('');
 
     const getData = async (api) => {
-        console.log("working", api)
         const something = api.split('/');
-        console.log(`https://ipfs.io/ipfs/${ something[2] }/${ something[3] }`)
+        console.log("working", something)
+        console.log(`https://ipfs.io/ipfs/${something[2]}/${something[3]}`)
         try {
-            const { data } = await axios.get(`https://ipfs.io/ipfs/${ something[2] }/${ something[3] }`);
-            const img = data.image.split("/");
-            if (img[img.length - 1] === "") {
-                setImgNull(true);
-            }
+            const { data } = await axios.get(`https://ipfs.io/ipfs/${something[2]}/${something[3]}`);
             setNft(data);
             console.log(data, 'data');
         } catch (e) {
@@ -31,10 +27,14 @@ function NFTcard({ api, src, title, setDep }) {
     }
 
     const handleTransferNFT = async () => {
-        const something = api.split('/');
-        await nftTransfer(address, something[3]);
-        swal("Success", "NFT transferred successfully", "success");
-        setDep(Math.random());
+        if (address === "") {
+            swal("Oops!", "Please enter your address", "error");
+        } else {
+            const something = api.split('/');
+            await nftTransfer(address, something[3].split('.')[0]);
+            swal("Success", "NFT transferred successfully", "success");
+            setDep(Math.random());
+        }
     }
 
     useEffect(() => {
@@ -44,29 +44,14 @@ function NFTcard({ api, src, title, setDep }) {
         <>
             {nft && (
                 <div className="card card-container" style={{ width: "18rem", margin: "5px" }}>
-                    {
-                        imgNull
-                            ? (
-                                <Image
-                                    src={`/images/Skin_&_Background_.PNG`}
-                                    width={300}
-                                    height={300}
-                                    className="card-img-top img-fit"
-                                    alt={title}
-                                    priority
-                                />
-                            )
-                            : (
-                                <Image
-                                    src={`https://ipfs.io/ipfs/${ nft.image.split('/')[2] }/${ nft.image.split('/')[3] }`}
-                                    width={300}
-                                    height={300}
-                                    className="card-img-top img-fit"
-                                    alt={title}
-                                    priority
-                                />
-                            )
-                    }
+                    <Image
+                        src={`https://ipfs.io/ipfs/${nft.image.split('/')[2]}/${nft.image.split('/')[3]}`}
+                        width={300}
+                        height={300}
+                        className="card-img-top img-fit"
+                        alt={title}
+                        priority
+                    />
                     <div className="card-body">
                         <h5 className="card-title title-nft-name">{nft.name}</h5>
                     </div>
