@@ -97,41 +97,41 @@ export const MintProvider = ({ children }) => {
         }
     }
 
-    // private mint
-    // async function priMint(count) {
-    //     setTrxHash('');
-    //     if (typeof window.ethereum !== "undefined") {
-    //         web3Modal = new Web3Modal({
-    //             cacheProvider: true,
-    //             providerOptions,
-    //         });
-    //         const provider = await web3Modal.connect();
-    //         const web3 = new Web3(provider);
-    //         const Cont = new web3.eth.Contract(AOTA.abi, add, sign);
-    //         const PRI_PRICE = await Cont.methods.priPrice().call();
-    //         let total = count * PRI_PRICE
-    //         let price = web3.utils.fromWei(total.toString(), "ether");
-    //         setPriPrice(price);
-    //         try {
-    //             await Cont.methods.mintPriNFTs(count).send({ from: sign, value: total }, function (err, txHash) {
-    //                 if (err) {
-    //                     console.log(err);
-    //                 } else {
-    //                     setTrxHash(txHash);
-    //                     MySwal.fire({
-    //                         title: "You have minted successfully!",
-    //                         text: `This is your hash of transaction: ${ txHash }`,
-    //                         icon: "success",
-    //                     });
-    //                 }
-    //             });
-    //         } catch (error) {
-    //             console.log(error);
-    //         }
-    //     } else {
-    //         console.log("install metamask");
-    //     }
-    // }
+    //private mint
+    async function priMint(count) {
+        setTrxHash('');
+        if (typeof window.ethereum !== "undefined") {
+            web3Modal = new Web3Modal({
+                cacheProvider: true,
+                providerOptions,
+            });
+            const provider = await web3Modal.connect();
+            const web3 = new Web3(provider);
+            const Cont = new web3.eth.Contract(AOTA.abi, add, sign);
+            const PRI_PRICE = await Cont.methods.priPrice().call();
+            let total = count * PRI_PRICE
+            let price = web3.utils.fromWei(total.toString(), "ether");
+            setPriPrice(price);
+            try {
+                await Cont.methods.mint(count).send({ from: sign, value: total }, function (err, txHash) {
+                    if (err) {
+                        console.log(err);
+                    } else {
+                        setTrxHash(txHash);
+                        MySwal.fire({
+                            title: "You have minted successfully!",
+                            text: `This is your hash of transaction: ${ txHash }`,
+                            icon: "success",
+                        });
+                    }
+                });
+            } catch (error) {
+                console.log(error);
+            }
+        } else {
+            console.log("install metamask");
+        }
+    }
 
     // reserve mint
     async function reserve() {
@@ -327,6 +327,7 @@ export const MintProvider = ({ children }) => {
             hasMetamask,
             sign,
             pubMint,
+            priMint,
             disconnectwallet,
             connectwallet,
             reserve,
