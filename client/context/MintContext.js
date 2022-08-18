@@ -9,6 +9,7 @@ import withReactContent from 'sweetalert2-react-content'
 export const MintContext = React.createContext();
 let web3Modal;
 const add = "0x4679b2d03C4dF92E2cA6a9d3ed216eAc00572C3B";
+// const add = "0xbE35C4CcE60B16f25c2De86e35ed5Fc3850Df5D9";
 const providerOptions = {
     walletconnect: {
         package: WalletConnectProvider,
@@ -120,7 +121,7 @@ export const MintProvider = ({ children }) => {
                         setTrxHash(txHash);
                         MySwal.fire({
                             title: "You have minted successfully!",
-                            text: `This is your hash of transaction: ${ txHash }`,
+                            text: `This is your hash of transaction: ${txHash}`,
                             icon: "success",
                         });
                     }
