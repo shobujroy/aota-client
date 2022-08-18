@@ -19,9 +19,11 @@ function Footer() {
         const data = await emailSub({ email });
         // swal success
         MySwal.fire("Success!", "You have successfully joined to our AOTAVERSE.", "success");
+        setEmail("");
       } catch (error) {
         // swal error
         MySwal.fire("Error!", error.response.data.msg, "error");
+        setEmail("");
       }
     };
   }
