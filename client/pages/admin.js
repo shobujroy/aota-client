@@ -7,8 +7,11 @@ import Image from 'next/image';
 import { useState, useEffect } from "react";
 import AOTA from "../contracts/AOTA.json";
 import { MintContext } from '../context/MintContext';
-import swal from '@sweetalert/with-react'
 import { WithContext as ReactTags } from 'react-tag-input';
+import Swal from 'sweetalert2'
+import withReactContent from 'sweetalert2-react-content'
+
+const MySwal = withReactContent(Swal);
 
 
 function Admin() {

@@ -3,23 +3,25 @@ import Image from "next/image";
 import { useState } from "react";
 import styles from "./Footer.module.css";
 import { emailSub } from './../../../api/email';
-import swal from '@sweetalert/with-react'
+import Swal from 'sweetalert2'
+import withReactContent from 'sweetalert2-react-content'
 
 function Footer() {
+  const MySwal = withReactContent(Swal)
   const [active, setActive] = useState(null);
   const [email, setEmail] = useState('');
 
   const handleEmailSub = async () => {
     if (email === '') {
-      swal("Oops!", "Please enter your email address", "error");
+      MySwal.fire("Oops!", "Please enter your email address", "error");
     } else {
       try {
         const data = await emailSub({ email });
         // swal success
-        swal("Success!", "You have successfully joined to our AOTAVERSE.", "success");
+        MySwal.fire("Success!", "You have successfully joined to our AOTAVERSE.", "success");
       } catch (error) {
         // swal error
-        swal("Error!", error.response.data.msg, "error");
+        MySwal.fire("Error!", error.response.data.msg, "error");
       }
     };
   }
