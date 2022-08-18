@@ -14,7 +14,7 @@ import { MintContext } from '../../../context/MintContext';
 function ProductCard({ }) {
   const [pubPrice, setPubPrice] = useState(0.07);
   const [quantity, setQuantity] = useState(1);
-  const { pubMint, isConnected, hasMetamask, sign, trxHash, checkStatus, status } = useContext(MintContext);
+  const { pubMint, priMint, isConnected, hasMetamask, sign, trxHash, checkStatus, status } = useContext(MintContext);
 
   useEffect(() => {
     checkStatus();
@@ -58,8 +58,7 @@ function ProductCard({ }) {
             </div>
             <h5 className='fw-bold mt-3'>Total</h5>
             <h3 className='fw-bold fs-2'> {(quantity * pubPrice)?.toFixed(2)} ETH</h3>
-            {isConnected ? <button className={`btn ${styles.mintBtn}`} onClick={() => pubMint(quantity)}>MINT</button>
-              : "Please connect wallet"}
+            {isConnected ? (status == 0 ? "Sale Closed" : (status == 1 ? <button className={`btn ${styles.mintBtn}`} onClick={() => priMint(quantity)}>MINT</button> : <button className={`btn ${styles.mintBtn}`} onClick={() => pubMint(quantity)}>MINT</button>)) : "Please connect to Metamask"}
           </div>
 
 
