@@ -2,10 +2,14 @@ import axios from 'axios';
 import Image from 'next/image';
 import React, { useEffect, useState } from 'react';
 import { MintContext } from './../../context/MintContext';
-import swal from '@sweetalert/with-react'
 import { useContext } from 'react';
+import Swal from 'sweetalert2'
+import withReactContent from 'sweetalert2-react-content'
+
+
 
 function NFTcard({ api, src, title, setDep }) {
+    const MySwal = withReactContent(Swal)
     const { nftTransfer } =
         useContext(MintContext);
     const [nft, setNft] = useState(null);
@@ -27,11 +31,11 @@ function NFTcard({ api, src, title, setDep }) {
 
     const handleTransferNFT = async () => {
         if (address === "") {
-            swal("Oops!", "Please enter your address", "error");
+            MySwal.fire("Oops!", "Please enter your address", "error");
         } else {
             const something = api.split('/');
             await nftTransfer(address, something[3].split('.')[0]);
-            swal("Success", "NFT transferred successfully", "success");
+            MySwal.fire("Success", "NFT transferred successfully", "success");
             setDep(Math.random());
         }
     }

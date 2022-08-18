@@ -2,9 +2,9 @@ import React, { useState, useEffect } from "react";
 import Web3 from "web3";
 import WalletConnectProvider from "@walletconnect/web3-provider";
 import Web3Modal from "web3modal";
-import swal from '@sweetalert/with-react'
 import AOTA from '../contracts/AOTAUpgraded.json';
-
+import Swal from 'sweetalert2'
+import withReactContent from 'sweetalert2-react-content'
 
 export const MintContext = React.createContext();
 let web3Modal;
@@ -19,6 +19,7 @@ const providerOptions = {
 };
 
 export const MintProvider = ({ children }) => {
+    const MySwal = withReactContent(Swal)
     if (typeof window !== "undefined") {
         web3Modal = new Web3Modal({
             cacheProvider: true,
@@ -81,7 +82,7 @@ export const MintProvider = ({ children }) => {
                         console.log(err);
                     } else {
                         setTrxHash(txHash);
-                        swal({
+                        MySwal.fire({
                             title: "You have minted successfully!",
                             text: `This is your hash of transaction: ${txHash}`,
                             icon: "success",
@@ -117,7 +118,7 @@ export const MintProvider = ({ children }) => {
     //                     console.log(err);
     //                 } else {
     //                     setTrxHash(txHash);
-    //                     swal({
+    //                     MySwal.fire({
     //                         title: "You have minted successfully!",
     //                         text: `This is your hash of transaction: ${ txHash }`,
     //                         icon: "success",
@@ -149,7 +150,7 @@ export const MintProvider = ({ children }) => {
                     } else {
                         setTrxHash(txHash);
                         // swal
-                        swal({
+                        MySwal.fire({
                             title: "You have minted successfully!",
                             text: `This is your hash of transaction: ${txHash}`,
                             icon: "success",
@@ -158,7 +159,7 @@ export const MintProvider = ({ children }) => {
                 });
             } catch (error) {
                 // swal
-                swal({
+                MySwal.fire({
                     title: "Something wrong!",
                     text: `${error}`,
                     icon: "error",
@@ -240,14 +241,14 @@ export const MintProvider = ({ children }) => {
                 await Cont.methods.addUsersToWhitelist(addresses).send({ from: sign }, function (err, txHash) {
                     if (err) {
                         // return this err
-                        swal({
+                        MySwal.fire({
                             title: "Something wrong!",
                             text: `Try again after sometimes!`,
                             icon: "error",
                         });
                     } else {
                         console.log(txHash);
-                        swal({
+                        MySwal.fire({
                             title: "You have added successfully!",
                             text: `You have added ${addresses.length} users to whitelist.`,
                             icon: "success",
@@ -257,7 +258,7 @@ export const MintProvider = ({ children }) => {
                 });
                 setDep(Math.random());
             } catch (error) {
-                swal({
+                MySwal.fire({
                     title: "Something wrong!",
                     text: `Try again after sometimes!`,
                     icon: "error",
