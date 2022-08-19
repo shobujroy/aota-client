@@ -1,7 +1,5 @@
 import React, { useContext } from "react";
 import SliderCard from "./SliderCard";
-import Carousel from "react-grid-carousel";
-import Navbar from "../../Shared/Navbar/Navbar";
 import styles from "./Header.module.css";
 import { MintContext } from "./../../../context/MintContext";
 import Link from "next/link";

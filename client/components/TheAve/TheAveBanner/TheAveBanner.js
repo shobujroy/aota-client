@@ -1,7 +1,6 @@
 import Image from "next/image";
 import React from "react";
 import styles from "./TheAveBanner.module.css";
-
 import Gallery from "../../Home/Gallery/Gallery";
 import Footer from "../../Shared/Footer/Footer";
 
