@@ -8,7 +8,6 @@ import Link from "next/link";
 import Image from "next/image";
 
 function Header() {
-  const { isConnected, connectwallet } = useContext(MintContext);
   return (
     <div className="bg-primary">
       <div className="fn-Montserrat-Regular">

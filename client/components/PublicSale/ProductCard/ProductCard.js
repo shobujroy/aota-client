@@ -14,12 +14,16 @@ import { MintContext } from '../../../context/MintContext';
 function ProductCard({ }) {
   const [pubPrice, setPubPrice] = useState(0.07);
   const [quantity, setQuantity] = useState(1);
-  const { pubMint, priMint, isConnected, hasMetamask, sign, trxHash, checkStatus, status } = useContext(MintContext);
+  const { pubMint, priMint, isConnected, hasMetamask, web3, trxHash, checkStatus, status } = useContext(MintContext);
+
+  const statusCheck = async () => {
+    await checkStatus();
+  }
 
   useEffect(() => {
-    checkStatus();
+    statusCheck();
     status == 0 ? setPubPrice(0.00) : (status == 1 ? setPubPrice(0.07) : setPubPrice(0.09))
-  }, [status]);
+  }, [status, web3]);
 
   return (
     <>

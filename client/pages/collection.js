@@ -7,12 +7,12 @@ import Link from "next/link";
 
 function Collection() {
   const [dep, setDep] = useState(Math.random());
-  const { myNFTs, collection, isConnected, hasMetamask, sign } =
+  const { myNFTs, collection, isConnected, hasMetamask, sign, web3 } =
     useContext(MintContext);
 
   useEffect(() => {
     myNFTs();
-  }, [isConnected, hasMetamask, sign, dep]);
+  }, [isConnected, hasMetamask, sign, dep, web3]);
   return (
     <div style={{ backgroundColor: "#051509" }}>
       <Navbar BorderBottom={true} wallet={true} />

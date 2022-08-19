@@ -7,7 +7,7 @@ import Swal from 'sweetalert2'
 import withReactContent from 'sweetalert2-react-content'
 
 export const MintContext = React.createContext();
-let web3Modal;
+
 const add = "0x4679b2d03C4dF92E2cA6a9d3ed216eAc00572C3B";
 // const add = "0xbE35C4CcE60B16f25c2De86e35ed5Fc3850Df5D9";
 const providerOptions = {
@@ -21,12 +21,7 @@ const providerOptions = {
 
 export const MintProvider = ({ children }) => {
     const MySwal = withReactContent(Swal)
-    if (typeof window !== "undefined") {
-        web3Modal = new Web3Modal({
-            cacheProvider: true,
-            providerOptions,
-        });
-    }
+
     const [isConnected, setIsConnected] = useState(false);
     const [hasMetamask, setHasMetamask] = useState(false);
     const [sign, setSign] = useState(undefined);
@@ -36,282 +31,180 @@ export const MintProvider = ({ children }) => {
     const [collection, setCollection] = useState([]);
     const [status, setStatus] = useState(0);
     const [dep, setDep] = useState(Math.random());
-
-    // connect wallet
-    async function connectwallet() {
-        if (typeof window.ethereum !== "undefined") {
-            try {
-                const provider = await web3Modal.connect();
-                const web3 = new Web3(provider);
-                setIsConnected(true);
-                setSign((await web3.eth.getAccounts())[0]);
-            } catch (e) {
-                console.log(e);
-            }
-        } else {
-            setIsConnected(false);
-        }
-    }
-
-    // disconnect wallet
-    async function disconnectwallet() {
-        await web3Modal.clearCachedProvider();
-        setSign(undefined);
-        //setSign(undefined);
-        setIsConnected(false);
-        //setHasMetamask(false);
-    }
+    const [web3Modal, setWeb3Modal] = useState(null);
+    const [web3, setWeb3] = useState(null);
+    const [chainId, setChainId] = useState("");
 
     // public mint
     async function pubMint(count) {
         setTrxHash('');
-        if (typeof window.ethereum !== "undefined") {
-            web3Modal = new Web3Modal({
-                cacheProvider: true,
-                providerOptions,
-            });
-            const provider = await web3Modal.connect();
-            const web3 = new Web3(provider);
+        try {
             const Cont = new web3.eth.Contract(AOTA.abi, add, sign);
             const PUB_PRICE = await Cont.methods.pubPrice().call();
             let total = count * PUB_PRICE
             let price = web3.utils.fromWei(total.toString(), "ether");
             setPubPrice(price);
-            try {
-                await Cont.methods.mint(count).send({ from: sign, value: total }, function (err, txHash) {
-                    if (err) {
-                        console.log(err);
-                    } else {
-                        setTrxHash(txHash);
-                        MySwal.fire({
-                            title: "You have minted successfully!",
-                            text: `This is your hash of transaction: ${txHash}`,
-                            icon: "success",
-                        });
-                    }
-                });
-            } catch (error) {
-                console.log(error);
-            }
-        } else {
-            console.log("install metamask");
+            await Cont.methods.mint(count).send({ from: sign, value: total }, function (err, txHash) {
+                if (err) {
+                    console.log(err);
+                } else {
+                    setTrxHash(txHash);
+                    MySwal.fire({
+                        title: "You have minted successfully!",
+                        text: `This is your hash of transaction: ${txHash}`,
+                        icon: "success",
+                    });
+                }
+            });
+        } catch (error) {
+            console.log(error);
         }
     }
 
     //private mint
     async function priMint(count) {
         setTrxHash('');
-        if (typeof window.ethereum !== "undefined") {
-            web3Modal = new Web3Modal({
-                cacheProvider: true,
-                providerOptions,
-            });
-            const provider = await web3Modal.connect();
-            const web3 = new Web3(provider);
+        try {
             const Cont = new web3.eth.Contract(AOTA.abi, add, sign);
             const PRI_PRICE = await Cont.methods.priPrice().call();
             let total = count * PRI_PRICE
             let price = web3.utils.fromWei(total.toString(), "ether");
             setPriPrice(price);
-            try {
-                await Cont.methods.mint(count).send({ from: sign, value: total }, function (err, txHash) {
-                    if (err) {
-                        console.log(err);
-                    } else {
-                        setTrxHash(txHash);
-                        MySwal.fire({
-                            title: "You have minted successfully!",
-                            text: `This is your hash of transaction: ${txHash}`,
-                            icon: "success",
-                        });
-                    }
-                });
-            } catch (error) {
-                console.log(error);
-            }
-        } else {
-            console.log("install metamask");
+            await Cont.methods.mint(count).send({ from: sign, value: total }, function (err, txHash) {
+                if (err) {
+                    console.log(err);
+                } else {
+                    setTrxHash(txHash);
+                    MySwal.fire({
+                        title: "You have minted successfully!",
+                        text: `This is your hash of transaction: ${txHash}`,
+                        icon: "success",
+                    });
+                }
+            });
+        } catch (error) {
+            console.log(error);
         }
     }
 
     // reserve mint
     async function reserve() {
-        if (typeof window.ethereum !== "undefined") {
-            web3Modal = new Web3Modal({
-                cacheProvider: true,
-                providerOptions,
-            });
-            const provider = await web3Modal.connect();
-            const web3 = new Web3(provider);
+        try {
             const Cont = new web3.eth.Contract(AOTA.abi, add, sign);
-            try {
-                await Cont.methods.reserveNFTs().send({ from: sign }, function (err, txHash) {
-                    if (err) {
-                        console.log(err);
-                    } else {
-                        setTrxHash(txHash);
-                        // swal
-                        MySwal.fire({
-                            title: "You have minted successfully!",
-                            text: `This is your hash of transaction: ${txHash}`,
-                            icon: "success",
-                        });
-                    }
-                });
-            } catch (error) {
-                // swal
-                MySwal.fire({
-                    title: "Something wrong!",
-                    text: `${error}`,
-                    icon: "error",
-                });
-                console.log(error);
-            }
-        } else {
-            console.log("install metamask");
+            await Cont.methods.reserveNFTs().send({ from: sign }, function (err, txHash) {
+                if (err) {
+                    console.log(err);
+                } else {
+                    setTrxHash(txHash);
+                    // swal
+                    MySwal.fire({
+                        title: "You have minted successfully!",
+                        text: `This is your hash of transaction: ${txHash}`,
+                        icon: "success",
+                    });
+                }
+            });
+        } catch (error) {
+            // swal
+            MySwal.fire({
+                title: "Something wrong!",
+                text: `${error}`,
+                icon: "error",
+            });
+            console.log(error);
         }
     }
 
     // wallet to wallet transfer
     async function nftTransfer(reciverAdd, tokenId) {
         setTrxHash('');
-        if (typeof window.ethereum !== "undefined") {
-            web3Modal = new Web3Modal({
-                cacheProvider: true,
-                providerOptions,
-            });
-            const provider = await web3Modal.connect();
-            const web3 = new Web3(provider);
+        try {
             const Cont = new web3.eth.Contract(AOTA.abi, add, sign);
-            try {
-                await Cont.methods.safeTransfer(reciverAdd, tokenId).send({ from: sign }, function (err, txHash) {
-                    if (err) {
-                        console.log(err);
-                    } else {
-                        setTrxHash(txHash);
-                    }
-                });
-                setDep(Math.random());
-            } catch (error) {
-                console.log(error);
-            }
-        } else {
-            console.log("install metamask");
+            await Cont.methods.safeTransfer(reciverAdd, tokenId).send({ from: sign }, function (err, txHash) {
+                if (err) {
+                    console.log(err);
+                } else {
+                    setTrxHash(txHash);
+                }
+            });
+            setDep(Math.random());
+        } catch (error) {
+            console.log(error);
         }
     }
 
     async function setSalesStatus(status) {
         setTrxHash('');
-        if (typeof window.ethereum !== "undefined") {
-            web3Modal = new Web3Modal({
-                cacheProvider: true,
-                providerOptions,
-            });
-            const provider = await web3Modal.connect();
-            const web3 = new Web3(provider);
+        try {
             const Cont = new web3.eth.Contract(AOTA.abi, add, sign);
-            try {
-                await Cont.methods.setSalesStatus(status).send({ from: sign }, function (err, txHash) {
-                    if (err) {
-                        console.log(err);
-                    } else {
-                        setTrxHash(txHash);
-                    }
-                });
-                setDep(Math.random());
-            } catch (error) {
-                console.log(error);
-            }
-        } else {
-            console.log("install metamask");
+            await Cont.methods.setSalesStatus(status).send({ from: sign }, function (err, txHash) {
+                if (err) {
+                    console.log(err);
+                } else {
+                    setTrxHash(txHash);
+                }
+            });
+            setDep(Math.random());
+        } catch (error) {
+            console.log(error);
         }
     }
 
     async function addUsersToWhitelist(addresses) {
-        console.log(addresses)
         setTrxHash('');
-        if (typeof window.ethereum !== "undefined") {
-            web3Modal = new Web3Modal({
-                cacheProvider: true,
-                providerOptions,
-            });
-            const provider = await web3Modal.connect();
-            const web3 = new Web3(provider);
+        try {
             const Cont = new web3.eth.Contract(AOTA.abi, add, sign);
-            try {
-                await Cont.methods.addUsersToWhitelist(addresses).send({ from: sign }, function (err, txHash) {
-                    if (err) {
-                        // return this err
-                        MySwal.fire({
-                            title: "Something wrong!",
-                            text: `Try again after sometimes!`,
-                            icon: "error",
-                        });
-                    } else {
-                        console.log(txHash);
-                        MySwal.fire({
-                            title: "You have added successfully!",
-                            text: `You have added ${addresses.length} users to whitelist.`,
-                            icon: "success",
-                        });
-                        setTrxHash(txHash);
-                    }
-                });
-                setDep(Math.random());
-            } catch (error) {
-                MySwal.fire({
-                    title: "Something wrong!",
-                    text: `Try again after sometimes!`,
-                    icon: "error",
-                });
-                console.log(error);
-            }
-        } else {
-            console.log("install metamask");
+            await Cont.methods.addUsersToWhitelist(addresses).send({ from: sign }, function (err, txHash) {
+                if (err) {
+                    // return this err
+                    MySwal.fire({
+                        title: "Something wrong!",
+                        text: `Try again after sometimes!`,
+                        icon: "error",
+                    });
+                } else {
+                    console.log(txHash);
+                    MySwal.fire({
+                        title: "You have added successfully!",
+                        text: `You have added ${addresses.length} users to whitelist.`,
+                        icon: "success",
+                    });
+                    setTrxHash(txHash);
+                }
+            });
+            setDep(Math.random());
+        } catch (error) {
+            MySwal.fire({
+                title: "Something wrong!",
+                text: `Try again after sometimes!`,
+                icon: "error",
+            });
+            console.log(error);
         }
     }
 
     async function checkStatus() {
         setTrxHash('');
-        if (typeof window.ethereum !== "undefined") {
-            web3Modal = new Web3Modal({
-                cacheProvider: true,
-                providerOptions,
-            });
-            const provider = await web3Modal.connect();
-            const web3 = new Web3(provider);
+        console.log(web3, "asdfasdf")
+        try {
             const Cont = new web3.eth.Contract(AOTA.abi, add, sign);
-            try {
-                const data = await Cont.methods.checkStatus().call({ from: sign });
-                setStatus(data);
-            } catch (error) {
-                console.log(error);
-            }
-        } else {
-            console.log("install metamask");
-        };
+            const data = await Cont.methods.checkStatus().call({ from: sign });
+            setStatus(data);
+        } catch (error) {
+            console.log(error);
+        }
     }
 
     // NFTs for gallery
     async function myNFTs() {
         setTrxHash('');
-        if (typeof window.ethereum !== "undefined") {
-            web3Modal = new Web3Modal({
-                cacheProvider: true,
-                providerOptions,
-            });
-            const provider = await web3Modal.connect();
-            const web3 = new Web3(provider);
+        try {
             const Cont = new web3.eth.Contract(AOTA.abi, add, sign);
-            try {
-                const nftURI = await Cont.methods.getMyNFTs().call({ from: sign });
-                setCollection(nftURI)
-            } catch (error) {
-                console.log(error);
-            }
-        } else {
-            console.log("install metamask");
-        };
+            const nftURI = await Cont.methods.getMyNFTs().call({ from: sign });
+            setCollection(nftURI)
+        } catch (error) {
+            console.log(error);
+        }
     }
 
     useEffect(() => {
@@ -329,8 +222,6 @@ export const MintProvider = ({ children }) => {
             sign,
             pubMint,
             priMint,
-            disconnectwallet,
-            connectwallet,
             reserve,
             pubPrice,
             priPrice,
@@ -339,7 +230,14 @@ export const MintProvider = ({ children }) => {
             addUsersToWhitelist,
             checkStatus,
             status,
-            dep
+            dep,
+            setIsConnected,
+            setWeb3Modal,
+            setWeb3,
+            web3Modal,
+            setSign,
+            setChainId,
+            web3
         }}>
             {children}
         </MintContext.Provider>
