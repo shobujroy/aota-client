@@ -1,10 +1,10 @@
 //Footer Component
 import Image from "next/image";
 import { useState } from "react";
-import styles from "./Footer.module.css";
+import Swal from 'sweetalert2';
+import withReactContent from 'sweetalert2-react-content';
 import { emailSub } from './../../../api/email';
-import Swal from 'sweetalert2'
-import withReactContent from 'sweetalert2-react-content'
+import styles from "./Footer.module.css";
 
 function Footer() {
   const MySwal = withReactContent(Swal)
@@ -165,7 +165,7 @@ function Footer() {
                   <a href="https://www.givepower.org/"> www.givepower.org</a> <br />
                   Registration with any
                   regulatory agency does not imply endorsement. </small> </p>
-                <p> © 2022 Aliens On The Ave  </p>
+                <p> © 2022 Aliens On The Ave || Developed by ApexDv  </p>
 
               </div>
             </div>
