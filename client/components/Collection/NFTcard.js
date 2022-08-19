@@ -10,7 +10,7 @@ import withReactContent from 'sweetalert2-react-content'
 
 function NFTcard({ api, src, title, setDep }) {
     const MySwal = withReactContent(Swal)
-    const { nftTransfer } =
+    const { nftTransfer, web3 } =
         useContext(MintContext);
     const [nft, setNft] = useState(null);
     const [imgNull, setImgNull] = useState(false);
@@ -42,7 +42,7 @@ function NFTcard({ api, src, title, setDep }) {
 
     useEffect(() => {
         getData(api);
-    }, [])
+    }, [web3])
     return (
         <>
             {nft && (

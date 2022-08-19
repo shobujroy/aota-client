@@ -3,14 +3,122 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import React, { useContext, useEffect, useState } from "react";
 import Styles from "./Navbar.module.css";
+import Web3Modal from "web3modal";
+import WalletConnectProvider from "@walletconnect/web3-provider";
+import Web3 from "web3";
 
 import { MintContext } from "./../../../context/MintContext";
 
 function Navbar({ BorderBottom, wallet }) {
-  const { connectwallet, disconnectwallet, isConnected, hasMetamask, sign } =
+  const {
+    isConnected,
+    hasMetamask,
+    sign,
+    web3Modal,
+    web3,
+    setIsConnected,
+    setWeb3Modal,
+    setSign,
+    setWeb3,
+    setChainId
+  } =
     useContext(MintContext);
 
-  useEffect(() => { }, [isConnected, hasMetamask]);
+
+  // connect to wallet start
+
+  useEffect(() => {
+    // initiate web3modal
+    const providerOptions = {
+      walletconnect: {
+        package: WalletConnectProvider,
+        options: {
+          infuraId: "29a4aa8775aa42caace0437559c37bb4",
+        },
+      },
+    };
+
+    const newWeb3Modal = new Web3Modal({
+      cacheProvider: true, // very important
+      network: "",
+      providerOptions,
+    });
+
+    setWeb3Modal(newWeb3Modal);
+  }, []);
+
+  useEffect(() => {
+    // connect automatically and without a popup if user is already connected
+    if (web3Modal && web3Modal.cachedProvider) {
+      connectWallet();
+    }
+  }, [web3Modal]);
+
+  // connect to wallet end
+  async function connectWallet() {
+    let provider;
+    try {
+      provider = await web3Modal.connect();
+    } catch (e) {
+      console.log("Could not get a wallet connection", e);
+      return;
+    }
+    console.log("HERE", provider);
+
+    await addListeners(provider);
+
+    const web3Instance = new Web3(provider);
+    const signer = (await web3Instance.eth.getAccounts())[0];
+    const chainId = await web3Instance.eth.getChainId();
+    console.log(web3Instance, "dfasdf");
+    setWeb3(web3Instance);
+    setSign(signer);
+    setChainId(chainId);
+    setIsConnected(true);
+  }
+
+  // reset web3 and signer when disconnecting
+  async function resetApp() {
+    if (web3 && web3.currentProvider && web3.currentProvider.close) {
+      await web3.currentProvider.close();
+    }
+    await web3Modal.clearCachedProvider();
+    setWeb3(null);
+    setChainId("");
+    setSign("");
+    setIsConnected(false);
+  }
+
+  // disconnect from wallet end
+  async function disconnectWallet() {
+    await web3Modal.clearCachedProvider();
+    setWeb3(null);
+    setChainId("");
+    setSign("");
+    setIsConnected(false);
+  }
+
+  async function addListeners(web3ModalProvider) {
+    if (!web3ModalProvider.on) {
+      return;
+    }
+    web3ModalProvider.on("close", () => resetApp());
+
+    web3ModalProvider.on("accountsChanged", async (accounts) => {
+      setConnectedAddress(accounts[0]);
+      window.location.reload();
+    });
+
+    // Subscribe to chainId change
+    web3ModalProvider.on("chainChanged", async (chainId) => {
+      setChainId(chainId);
+      window.location.reload();
+    });
+  }
+
+  // connect to wallet end 
+
+  useEffect(() => { }, [isConnected, web3]);
   const router = useRouter();
   const [active, setActive] = useState(null);
   return (
@@ -55,13 +163,6 @@ function Navbar({ BorderBottom, wallet }) {
           className={`collapse navbar-collapse ${Styles.NavbarItam}`}
           id="navbarSupportedContent"
         >
-          {/* <form className="d-flex ms-md-4">
-                        <input className={`form-control me-2 ${ Styles.searchInput }`}
-                            type="search"
-                            placeholder="search item here..."
-                            aria-label="Search" />
-                        <button className="btn btn-outline-success" type="submit">Search</button>
-                    </form> */}
           <ul
             style={{ lineHeight: "40px" }}
             className="navbar-nav me-auto mb-2 mb-lg-0"
@@ -102,7 +203,7 @@ function Navbar({ BorderBottom, wallet }) {
                   {isConnected && (
                     <button
                       className={"btn " + Styles.disWalletBtn}
-                      onClick={() => disconnectwallet()}
+                      onClick={() => disconnectWallet()}
                       aria-current="page"
                       href="#"
                     >
@@ -312,7 +413,7 @@ function Navbar({ BorderBottom, wallet }) {
                   </Link>
                 ) : (
                   <button
-                    onClick={() => connectwallet()}
+                    onClick={() => connectWallet()}
                     className={`${Styles.connectWalletBtnS}`}
                   >
                     CONNECT WALLET

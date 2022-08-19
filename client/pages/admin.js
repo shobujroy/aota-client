@@ -15,17 +15,14 @@ const MySwal = withReactContent(Swal);
 
 
 function Admin() {
-  const { isConnected, hasMetamask, sign, reserve, withdraw, trxHash, addUsersToWhitelist, checkStatus, status, setSalesStatus } = useContext(MintContext);
+  const { isConnected, hasMetamask, sign, reserve, withdraw, trxHash, addUsersToWhitelist, checkStatus, status, setSalesStatus, web3 } = useContext(MintContext);
 
   useEffect(() => {
-    console.log("isConnected and hasMetamask from useEffect of product card");
-    console.log(isConnected);
-    console.log(hasMetamask);
   }, [hasMetamask, isConnected, sign]);
 
   useEffect(() => {
     checkStatus();
-  }, []);
+  }, [web3]);
 
   // fot tag input
   const [address, setAddress] = useState([]);

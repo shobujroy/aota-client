@@ -3,13 +3,10 @@ import Navbar from "../../components/Shared/Navbar/Navbar";
 import Footer from "../../components/Shared/Footer/Footer";
 import ProductCard from "../../components/PublicSale/ProductCard/ProductCard";
 import { useState, useEffect } from "react";
-import { MintContext } from "./../../context/MintContext";
 import Link from "next/link";
 import styles from './Public-sale.module.css';
 
 function Index() {
-  const { isConnected, hasMetamask, sign } = useContext(MintContext);
-
   return (
     <div style={{ backgroundColor: "#051509" }}>
       <Navbar BorderBottom={true} wallet={true} />
