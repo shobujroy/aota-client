@@ -131,10 +131,6 @@
   cursor: pointer;
 }
 
-.MobileButton {
-  display: none;
-}
-
 .connectWalletBtnS {
   background: #75ba87;
   color: #1a1a1a;
@@ -167,7 +163,7 @@
 }
 
 /* Media Query for Mobile Devices */
-@media (max-width: 600px) {
+@media (max-width: 992px) {
   .MobileLogoButton {
     display: block;
     display: flex;
@@ -266,13 +262,7 @@
     display: none !important;
   }
 }
-@media (min-width: 640px) and (max-width: 1080px) {
-  .MobileLogoButton {
-    display: block;
-    display: flex;
-    height: 30px !important;
-  }
-
+@media (min-width: 991px) and (max-width: 1080px) {
   .menuAll {
     display: block !important;
     width: 100% !important;
@@ -280,6 +270,8 @@
 
   .MobileButton {
     display: block !important;
+    display: flex;
+    height: 30px !important;
   }
 
   .SocailMedIcon {
@@ -362,10 +354,6 @@
 }
 
 @media (min-width: 825px) and (max-width: 1180px) {
-  .MobileLogoButton {
-    display: none !important;
-  }
-
   .LogoImage {
     display: block !important;
   }
