@@ -331,7 +331,7 @@
   }
 
   .LogoImage {
-    display: none;
+    display: none !important;
   }
 
   .NavbarItam ul li {
@@ -353,7 +353,7 @@
   }
 }
 
-@media (min-width: 825px) and (max-width: 1180px) {
+@media (min-width: 992px) and (max-width: 1180px) {
   .LogoImage {
     display: block !important;
   }
