@@ -25,10 +25,15 @@
   .headerContent h1 {
     font-size: 60px !important;
   }
-  
 }
 
-@media (max-width: 900px) {
+@media (max-width: 992px) {
+  .BannerShap {
+    z-index: -1 !important;
+  }
+}
+
+@media screen and (max-width: 900px) {
   .headerContentWrapper {
     background-image: url("../../../public/images/Banners/ipad\ header.png");
     background-size: 100% 100%;
@@ -57,7 +62,7 @@
     text-align: center !important;
     line-height: 97px;
     font-weight: 600;
-    font-family: 'futura-bold';
+    font-family: "futura-bold";
     color: #e3f1e7;
   }
 
@@ -83,7 +88,7 @@
   text-align: center !important;
   line-height: 97px;
   font-weight: 600;
-  font-family: 'futura-bold';
+  font-family: "futura-bold";
   color: #e3f1e7;
   margin-bottom: 30px;
 }
