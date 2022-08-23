@@ -1,5 +1,6 @@
 //Footer Component
 import Image from "next/image";
+import Link from "next/link";
 import { useState } from "react";
 import Swal from 'sweetalert2';
 import withReactContent from 'sweetalert2-react-content';
@@ -165,8 +166,7 @@ function Footer() {
                   <a href="https://www.givepower.org/"> www.givepower.org</a> <br />
                   Registration with any
                   regulatory agency does not imply endorsement. </small> </p>
-                <p> © 2022 Aliens On The Ave || Developed by ApexDv  </p>
-
+                <p> © 2022 Aliens On The Ave || Developed by <Link href="https://apexdv.com/"><a target="_blank" rel="noopener noreferrer">ApexDv</a></Link>  </p>
               </div>
             </div>
           </div>

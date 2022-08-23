@@ -19,7 +19,7 @@ export const Team = [
     title: "Blockchain Developers",
     image: "/images/apexdv.png",
     about: "ApexDv is a leading Blockchain Development Company which provides top notch technological and development services. We established on 2016 to provide a 360-solution to customers for development and enhancement of their company. We believe in making Blockchain accessible, affordable and convenient for all. Our technological backbone is very strong, having an omnichannel communication and operations.",
-    insta: "https://www.instagram.com/apexdv.nft/",
+    website: "https://apexdv.com/",
     twitter: "https://twitter.com/apexdv_nft",
     linkedin: "https://www.linkedin.com/company/apexdv/"
   },

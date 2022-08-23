@@ -22,7 +22,7 @@ const MeetOurTeam = () => {
   const [title, setTitle] = useState("");
   const [description, setDescription] = useState("");
   const [insta, setInsta] = useState("");
-  
+
   const [twitter, setTwitter] = useState("");
   const [discord, setDiscord] = useState("");
 
@@ -45,7 +45,7 @@ const MeetOurTeam = () => {
       <div className={styles.MeetOurTeam}>
         <div className="container pt-0 pb-5">
           <div className="row">
-            <div className={`col-md-5 mt-0 ${ styles.MeetMember }`}>
+            <div className={`col-md-5 mt-0 ${styles.MeetMember}`}>
               <div className={styles.MemberProfil}>
                 <div className={styles.MemberCardOne}>
                   <div className={styles.MemberCardTwo}>
@@ -140,56 +140,56 @@ const MeetOurTeam = () => {
                         </a>
                     } */}
 
-                      {insta?.length > 2 && <a
-                        onMouseOver={() => setActive(0)}
-                        onMouseOut={() => setActive(null)}
-                        // className={"nav-link " + Styles.socialIcon}
-                        aria-current="page"
-                        href={insta}
-                        target="_blank"
-                      >
-                        {active === 0 ? (
-                          <Image
-                            src="/images/navbar/insta Yellow.svg"
-                            width={24}
-                            height={24}
-                          />
-                        ) : (
-                          <Image
-                            src="/images/navbar/insta gray.svg"
-                            width={24}
-                            height={24}
-                          />
-                        )}
+                    {insta?.length > 2 && <a
+                      onMouseOver={() => setActive(0)}
+                      onMouseOut={() => setActive(null)}
+                      // className={"nav-link " + Styles.socialIcon}
+                      aria-current="page"
+                      href={insta}
+                      target="_blank"
+                    >
+                      {active === 0 ? (
+                        <Image
+                          src="/images/navbar/insta Yellow.svg"
+                          width={24}
+                          height={24}
+                        />
+                      ) : (
+                        <Image
+                          src="/images/navbar/insta gray.svg"
+                          width={24}
+                          height={24}
+                        />
+                      )}
 
-                    </a> 
-                   }
-                      {discord?.length > 2 && <a
-                        onMouseOver={() => setActive(0)}
-                        onMouseOut={() => setActive(null)}
-                        // className={"nav-link " + Styles.socialIcon}
-                        aria-current="page"
-                        href={insta}
-                        target="_blank"
-                      >
-                        {active === 0 ? (
-                          <Image
-                            src="/images/navbar/Discord.svg"
-                            width={24}
-                            height={24}
-                          />
-                        ) : (
-                          <Image
-                            src="/images/navbar/Discord 2.svg"
-                            width={24}
-                            height={24}
-                          />
-                        )}
+                    </a>
+                    }
+                    {discord?.length > 2 && <a
+                      onMouseOver={() => setActive(0)}
+                      onMouseOut={() => setActive(null)}
+                      // className={"nav-link " + Styles.socialIcon}
+                      aria-current="page"
+                      href={insta}
+                      target="_blank"
+                    >
+                      {active === 0 ? (
+                        <Image
+                          src="/images/navbar/Discord.svg"
+                          width={24}
+                          height={24}
+                        />
+                      ) : (
+                        <Image
+                          src="/images/navbar/Discord 2.svg"
+                          width={24}
+                          height={24}
+                        />
+                      )}
 
-                    </a> 
-                   }
-                    
-                     
+                    </a>
+                    }
+
+
                     {/* {twitter === true ?  <a
                         onMouseOver={() => setActive(2)}
                         onMouseOut={() => setActive(null)}
@@ -277,7 +277,7 @@ const MeetOurTeam = () => {
                           />
                         )}
                     </a> } */}
-                  
+
 
 
                     {twitter?.length > 2 && <a
@@ -327,21 +327,21 @@ const MeetOurTeam = () => {
                     </a>}
 
                     {website?.length > 2 && <a
-                      onMouseOver={() => setActive(3)}
+                      onMouseOver={() => setActive(4)}
                       onMouseOut={() => setActive(null)}
                       // className={"nav-link " + Styles.socialIcon}
                       aria-current="page"
                       href={website}
                       target="_blank"
                     >
-                      {active === 3 ? (
+                      {active === 4 ? (
                         <Image
                           src="/images/icons/Website-3.svg"
                           width={24}
                           height={24}
                         />
                       ) : (
-                       <Image
+                        <Image
                           src="/images/icons/Website (1).svg"
                           width={24}
                           height={24}
@@ -373,7 +373,7 @@ const MeetOurTeam = () => {
               </div>
             </div>
 
-            <div className={`col-md-6 mt-0 ${ styles.MeetMemberRight }`}>
+            <div className={`col-md-6 mt-0 ${styles.MeetMemberRight}`}>
               <h1>Team</h1>
               {/* <p className={styles.meetMemberPara}>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nec
@@ -454,7 +454,7 @@ const MeetOurTeam = () => {
 
                     <Carousel.Item>
                       <div className={styles.carousleItemElement}>
-                        {Team.slice(6,9).map((item, i) => {
+                        {Team.slice(6, 9).map((item, i) => {
                           return (
                             <div
                               className={styles.teamMemberContainer}
@@ -530,7 +530,7 @@ const MeetOurTeam = () => {
                       
                     </Carousel.Item> */}
 
-                  
+
                   </Carousel>
                 </div>
               </div>
@@ -664,7 +664,7 @@ const MeetOurTeam = () => {
                   <div className={styles.cardSLiderOne}>
                     <div className={styles.cardSLiderTwo}>
                       <Image
-                        src={`${ data.image }`}
+                        src={`${data.image}`}
                         alt="Picture of the author"
                         width={"320px"}
                         height={"320px"}
@@ -700,32 +700,32 @@ const MeetOurTeam = () => {
                       )}
                     </a> */}
 
-                     {data.insta?.length > 2 && <a
-                        onMouseOver={() => setActive(0)}
-                        onMouseOut={() => setActive(null)}
-                        // className={"nav-link " + Styles.socialIcon}
-                        aria-current="page"
-                        href={insta}
-                        target="_blank"
-                      >
-                        {active === 0 ? (
-                          <Image
-                            src="/images/navbar/insta Yellow.svg"
-                            width={24}
-                            height={24}
-                          />
-                        ) : (
-                          <Image
-                            src="/images/navbar/insta gray.svg"
-                            width={24}
-                            height={24}
-                          />
-                        )}
+                    {data.insta?.length > 2 && <a
+                      onMouseOver={() => setActive(0)}
+                      onMouseOut={() => setActive(null)}
+                      // className={"nav-link " + Styles.socialIcon}
+                      aria-current="page"
+                      href={insta}
+                      target="_blank"
+                    >
+                      {active === 0 ? (
+                        <Image
+                          src="/images/navbar/insta Yellow.svg"
+                          width={24}
+                          height={24}
+                        />
+                      ) : (
+                        <Image
+                          src="/images/navbar/insta gray.svg"
+                          width={24}
+                          height={24}
+                        />
+                      )}
 
-                    </a> 
-                   }
+                    </a>
+                    }
 
-                   { data.twitter?.length > 2 && <a
+                    {data.twitter?.length > 2 && <a
                       onMouseOver={() => setActive(2)}
                       onMouseOut={() => setActive(null)}
                       // className={"nav-link " + Styles.socialIcon}
@@ -771,7 +771,7 @@ const MeetOurTeam = () => {
                       )}
                     </a>}
 
-                     {data.website?.length > 2 && <a
+                    {data.website?.length > 2 && <a
                       onMouseOver={() => setActive(3)}
                       onMouseOut={() => setActive(null)}
                       // className={"nav-link " + Styles.socialIcon}
@@ -793,7 +793,7 @@ const MeetOurTeam = () => {
                         />
                       )}
                     </a>}
-                     {data.discord?.length > 2 && <a
+                    {data.discord?.length > 2 && <a
                       onMouseOver={() => setActive(3)}
                       onMouseOut={() => setActive(null)}
                       // className={"nav-link " + Styles.socialIcon}
