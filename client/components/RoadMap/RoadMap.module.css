@@ -431,7 +431,7 @@
   }
 
   .RoadMapMain {
-    height: 350px !important;
+    height: 525px !important;
   }
 }
 @media (min-width: 1024px) and (max-width: 1725px) {
