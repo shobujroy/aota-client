@@ -5,11 +5,12 @@ import Web3Modal from "web3modal";
 import AOTA from '../contracts/AOTAUpgraded.json';
 import Swal from 'sweetalert2'
 import withReactContent from 'sweetalert2-react-content'
+import Router from "next/router";
 
 export const MintContext = React.createContext();
 
-const add = "0x4679b2d03C4dF92E2cA6a9d3ed216eAc00572C3B";
-// const add = "0xbE35C4CcE60B16f25c2De86e35ed5Fc3850Df5D9";
+// const add = "0x4679b2d03C4dF92E2cA6a9d3ed216eAc00572C3B";
+const add = "0xbE35C4CcE60B16f25c2De86e35ed5Fc3850Df5D9";
 const providerOptions = {
     walletconnect: {
         package: WalletConnectProvider,
@@ -49,11 +50,12 @@ export const MintProvider = ({ children }) => {
                     console.log(err);
                 } else {
                     setTrxHash(txHash);
-                    MySwal.fire({
-                        title: "You have minted successfully!",
-                        text: `This is your hash of transaction: ${txHash}`,
-                        icon: "success",
-                    });
+                    Router.push("/success");
+                    // MySwal.fire({
+                    //     title: "You have minted successfully!",
+                    //     text: `This is your hash of transaction: ${txHash}`,
+                    //     icon: "success",
+                    // });
                 }
             });
         } catch (error) {
@@ -75,11 +77,12 @@ export const MintProvider = ({ children }) => {
                     console.log(err);
                 } else {
                     setTrxHash(txHash);
-                    MySwal.fire({
-                        title: "You have minted successfully!",
-                        text: `This is your hash of transaction: ${txHash}`,
-                        icon: "success",
-                    });
+                    Router.push("/success");
+                    // MySwal.fire({
+                    //     title: "You have minted successfully!",
+                    //     text: `This is your hash of transaction: ${txHash}`,
+                    //     icon: "success",
+                    // });
                 }
             });
         } catch (error) {
