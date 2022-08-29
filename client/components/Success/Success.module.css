@@ -1,12 +1,12 @@
-.Success{
-   background-image: linear-gradient(#0c1f11, #051509);
-   padding: 50px 0px 100px;
+.Success {
+    background-image: linear-gradient(#0c1f11, #051509);
+    padding: 50px 0px 100px;
 }
 
 
-.SuccessMain{
+.SuccessMain {
     border: 1px solid #91C89F;
-    width: 1180px;
+    width: 100%;
     height: 722px;
     margin: auto;
     text-align: center;
@@ -14,9 +14,16 @@
 }
 
 
+.message {
+    font-family: 'Swiss 721';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 170%;
+    text-transform: capitalize;
+}
 
-
-.SuccessMain h2{
+.SuccessMain h2 {
     font-size: 48px;
     font-weight: 500;
     font-family: "Montserrat-Regular";
@@ -24,12 +31,12 @@
     color: #FFFFFF;
     margin-top: 32px;
     margin-bottom: 45px;
-    
+
 }
 
 
 
-.SuccessMain p{
+.SuccessMain p {
     font-size: 24px;
     font-weight: 500;
     font-family: "Montserrat-Regular";
@@ -41,7 +48,7 @@
 
 
 
-.SuccessButton{
+.SuccessButton {
     padding: 18px 174px;
     background: #75BA87;
     border: none !important;
@@ -51,13 +58,21 @@
     font-family: "Jost";
     line-height: 20px;
     text-align: center;
-             
+
 }
 
+.message
 
-
-.SuccessButton:hover{
+.SuccessButton:hover {
     background: inherit;
     border: 2px solid #75BA87 !important;
     color: #FFFFFF;
+}
+@media (max-width: 600px){
+    .SuccessButton {
+        padding: 20px;
+    }
+    .SuccessMain{
+        width: 90%;
+    }
 }

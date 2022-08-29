@@ -5,6 +5,7 @@ import Web3Modal from "web3modal";
 import AOTA from '../contracts/AOTAUpgraded.json';
 import Swal from 'sweetalert2'
 import withReactContent from 'sweetalert2-react-content'
+import Router from "next/router";
 
 export const MintContext = React.createContext();
 
@@ -49,11 +50,12 @@ export const MintProvider = ({ children }) => {
                     console.log(err);
                 } else {
                     setTrxHash(txHash);
-                    MySwal.fire({
-                        title: "You have minted successfully!",
-                        text: `This is your hash of transaction: ${txHash}`,
-                        icon: "success",
-                    });
+                    Router.push("/success");
+                    // MySwal.fire({
+                    //     title: "You have minted successfully!",
+                    //     text: `This is your hash of transaction: ${txHash}`,
+                    //     icon: "success",
+                    // });
                 }
             });
         } catch (error) {
@@ -75,11 +77,12 @@ export const MintProvider = ({ children }) => {
                     console.log(err);
                 } else {
                     setTrxHash(txHash);
-                    MySwal.fire({
-                        title: "You have minted successfully!",
-                        text: `This is your hash of transaction: ${txHash}`,
-                        icon: "success",
-                    });
+                    Router.push("/success");
+                    // MySwal.fire({
+                    //     title: "You have minted successfully!",
+                    //     text: `This is your hash of transaction: ${txHash}`,
+                    //     icon: "success",
+                    // });
                 }
             });
         } catch (error) {

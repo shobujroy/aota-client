@@ -16,6 +16,7 @@ function ProductCard({ }) {
   const [quantity, setQuantity] = useState(1);
   const { pubMint, priMint, isConnected, hasMetamask, web3, trxHash, checkStatus, status } = useContext(MintContext);
 
+  console.log(trxHash,"HASH++++++++++")
   const statusCheck = async () => {
     await checkStatus();
   }
