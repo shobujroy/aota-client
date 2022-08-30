@@ -29,6 +29,19 @@ export default function Document() {
                         style={{ display: "none", visibility: "hidden" }}
                     ></iframe>
                 </noscript>
+
+                {/* <!-- Google tag (gtag.js) --> */}
+                <script async src="https://www.googletagmanager.com/gtag/js?id=G-71QYXQDNWF"></script>
+                <script
+                    id="GoogleTagManager2"
+                    dangerouslySetInnerHTML={{
+                        __html: `window.dataLayer = window.dataLayer || [];
+                        function gtag(){dataLayer.push(arguments);}
+                        gtag('js', new Date());
+                        
+                        gtag('config', 'G-71QYXQDNWF');`,
+                    }}
+                ></script>
             </body>
         </Html>
     )
