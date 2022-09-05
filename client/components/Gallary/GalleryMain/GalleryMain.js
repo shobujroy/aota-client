@@ -128,7 +128,7 @@ const GalleryMain = () => {
             return (
               <div className={Styles.galleryImages}>
                 <Image
-                  src={data.item}
+                  src={`https://aota.mypinata.cloud/ipfs/QmVHwDN3qUE8AvPPktW7sP8aNLwbFVNYFcEzggZD22YTYv/${data}.png`}
                   layout="fill"
                   objectFit="cover"
                   alt=""
