@@ -7,8 +7,6 @@ import axios from 'axios'
 
 const label = { inputProps: { "aria-label": "Switch demo" } };
 
-
-
 const GalleryMain = () => {
   const [filter,setFilter] = useState({})
   const [galleryData,setGalleryData] = useState([]);
@@ -46,7 +44,6 @@ const GalleryMain = () => {
     }
   }
   async function handleReset(){
-    console.log("SAMAA")
     setGalleryData(await fetchData())
   }
 
