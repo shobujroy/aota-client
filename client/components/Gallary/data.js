@@ -214,7 +214,7 @@ export const data = [
   },
   {
     id: 7,
-    name: "Eyeware",
+    name: "Eyewear",
     image: '/images/gallery/image 30.png',
     options: [
       "AR Glasses",

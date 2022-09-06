@@ -1,20 +1,64 @@
 import Image from "next/image";
-import { useState } from "react";
+import { useState,useEffect } from "react";
 import { data } from "../data";
 import { Item } from "./GallaryImage";
 import Styles from "./GalleryMain.module.css";
+import axios from 'axios'
 
 const label = { inputProps: { "aria-label": "Switch demo" } };
 
 const GalleryMain = () => {
+  const [filter,setFilter] = useState({})
+  const [galleryData,setGalleryData] = useState([]);
   const [info, setInfo] = useState(data);
   const [modalOpen, setModalOpen] = useState(null);
+  async function fetchData(){
+    const allData= await Promise.all(
+      Item.map(async item => {
+        const {data} = await axios.get(`https://aota.mypinata.cloud/ipfs/QmNd9KBk8NAqrZuCZjysmnoX5Hb9h26cSZVX86KecfGFNY/${item}.json`)
+        return data
+      })
+    )
+    return allData
+  }
+  function handleFilter({name},option){
+    const newCat = {}
+    newCat[`${name}`] = option
+    setFilter((prevState) => ({
+      ...prevState, 
+      ...newCat
+    }))
+  }
+  async function filterData(filter){
+    const filteredContent = []
+    const originalData = await fetchData()
+    originalData.forEach(dataSet =>{
+      dataSet.attributes.forEach(attr => {
+        if(attr.trait_type in filter && filter[`${attr.trait_type}`] === attr.value){
+          filteredContent.push(dataSet)
+        }
+      })
+    })
+    if (filteredContent.length){
+      setGalleryData(filteredContent)
+    }
+  }
+  async function handleReset(){
+    setGalleryData(await fetchData())
+  }
+
+  useEffect(() => {
+    (async () => setGalleryData(await fetchData()))()
+  },[])
+  //Needed this effect cause state concurrency is a bitch, but there is a room for improvement
+  useEffect(() => {
+    filterData(filter)
+  },[filter])
 
   const toggle = (i) => {
     if (modalOpen === i) {
       return setModalOpen(null);
     }
-
     setModalOpen(i);
   };
 
@@ -63,16 +107,16 @@ const GalleryMain = () => {
           ></Image>
         </div>
 
-        {/* <div className={Styles.GoldenOption}>
+        <div className={Styles.GoldenOption}>
           <Image width={24} height={24} src={"/images/gallery/goldbean.png"} />
           <h3>Golden Mode</h3>
-          <Switch {...label} />
-        </div> */}
+          {/* <Switch {...label} /> */}
+        </div>
 
-        {/* <div className={Styles.SearcOption}>
+        <div className={Styles.SearcOption}>
           <Image width={24} height={24} src={"/images/gallery/Search.png"} />
           <input placeholder="Sort by serial..." id="searchbyid" type="text" />
-        </div> */}
+        </div>
 
         <div className={Styles.optionArea}>
           {info.map((data, i) => {
@@ -85,7 +129,7 @@ const GalleryMain = () => {
                   </div>
 
                   <div className={Styles.plusIcon} onClick={() => toggle(i)}>
-                    {/* {modalOpen === i ? (
+                    {modalOpen === i ? (
                       <Image
                         src={"/images/x.svg"}
                         layout="fill"
@@ -99,22 +143,21 @@ const GalleryMain = () => {
                         objectFit="cover"
                         alt=""
                       ></Image>
-                    )} */}
+                    )}
                   </div>
                 </div>
-
-                {/* {modalOpen === i ? (
+                {modalOpen === i ? (
                   <div className={Styles.options}>
                     {data.options.map((option) => {
-                      return <p>{option}</p>;
+                      return <p onClick={() => handleFilter(data,option)}>{option}</p>;
                     })}
                   </div>
-                ) : null} */}
+                ) : null}
               </>
             );
           })}
         </div>
-        <button className={Styles.resetButton}>Reset</button>
+        <button className={Styles.resetButton} onClick={() => handleReset()}>Reset</button>
       </div>
 
       <div className={`col-md-9 ${Styles.gallaryRight}`}>
@@ -124,11 +167,12 @@ const GalleryMain = () => {
           </div>
         </div>
         <div className={Styles.galleryItem}>
-          {Item.map((data, i) => {
+          {galleryData.map((data, i) => {
+            const imageLink = data.image.slice(7,data.image.length)
             return (
-              <div className={Styles.galleryImages}>
+              <div className={Styles.galleryImages} key={i}>
                 <Image
-                  src={`https://aota.mypinata.cloud/ipfs/QmVHwDN3qUE8AvPPktW7sP8aNLwbFVNYFcEzggZD22YTYv/${data}.png`}
+                  src={`https://aota.mypinata.cloud/ipfs/${imageLink}`}
                   layout="fill"
                   objectFit="cover"
                   alt=""
