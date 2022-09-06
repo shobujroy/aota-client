@@ -1,12 +1,10 @@
+import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 import styles from "./OnlineClasses.module.css";
-import Link from "next/link";
-import Image from "next/image";
 
-import KeyboardArrowLeftIcon from "@mui/icons-material/KeyboardArrowLeft";
-import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
 
-const OnlineClasses = () => {
+const OnlineClasses = () => { 
   return (
     <>
       <div className={styles.OnlineClassesBanner}>

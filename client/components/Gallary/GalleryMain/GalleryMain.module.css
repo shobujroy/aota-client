@@ -7,9 +7,11 @@
   display: flex;
   justify-content: space-between;
 }
+
 .filterMOBVErsion {
   display: none;
 }
+
 .filerArea {
   height: 580px;
   background: linear-gradient(180deg, #081a0c 0%, #06170a 100%);
@@ -20,9 +22,11 @@
   left: 20px;
   display: block;
 }
+
 .filterHello {
   margin-left: 20px;
 }
+
 .filerArea h1 {
   font-weight: 800;
   font-size: 32px;
@@ -31,12 +35,14 @@
   font-family: "futura-bold";
   text-transform: uppercase;
 }
+
 .plusIcon {
   height: 20px;
   width: 20px;
   position: relative;
   cursor: pointer;
 }
+
 .filterOption {
   width: 90%;
   padding: px 0px;
@@ -46,6 +52,7 @@
   justify-content: space-between;
   margin-top: 0px;
 }
+
 .filterOption p {
   font-weight: 800;
   font-size: 16px;
@@ -53,6 +60,7 @@
   margin-top: 5px;
   font-family: "Montserrat-Regular";
 }
+
 .galleryItem {
   width: 70vw;
   position: absolute;
@@ -64,13 +72,16 @@
   overflow-y: scroll;
   top: 220px;
 }
+
 .options {
-  width: 96%;
+  width: 90%;
   height: 450px;
   margin-bottom: 0;
   background: #07190b;
-  height: max-content !important;
+  height: 200px !important;
+  overflow-y: scroll !important;
 }
+
 .options p {
   margin-left: 30px;
   font-weight: 800;
@@ -80,14 +91,17 @@
   margin-top: 20px;
   font-family: "Montserrat-Regular";
 }
+
 .options p:hover {
   color: white;
 }
+
 .optionArea {
   width: 100%;
   margin-left: 16px;
   overflow-y: scroll;
 }
+
 .galleryImages {
   width: 23%;
   height: 30%;
@@ -97,6 +111,7 @@
   margin-bottom: 20px;
   margin-right: 0;
 }
+
 .resetButton {
   background: #75ba87;
   color: #1a1a1a;
@@ -124,6 +139,7 @@
   height: 30px;
   margin: 5px 0px;
 }
+
 .ImageAndIcon p {
   font-family: "Montserrat-Regular";
   font-weight: 800;
@@ -198,17 +214,20 @@
   background-position: left top;
   background-repeat: no-repeat;
 }
+
 .bannerImage {
   width: 240px;
   height: 200px;
   position: relative;
 }
+
 .bannerText {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
 .bannerText h1 {
   font-family: "futura-bold";
   text-transform: uppercase;
@@ -219,6 +238,7 @@
   margin-left: 20px;
   margin-top: 10px;
 }
+
 .bannerText p {
   font-family: "Montserrat-Regular";
   font-style: normal;
@@ -247,12 +267,14 @@
 .bannerText button:hover {
   background-color: #e2dd96 !important;
 }
+
 .gallaryDemoIMage {
   height: 100%;
   width: 100%;
   position: relative;
   margin-left: 10px;
 }
+
 .filterMob {
   display: none;
 }
@@ -268,6 +290,7 @@
     margin-right: 0;
   }
 }
+
 @media screen and (min-width: 1024px) and (max-width: 1430px) {
   .galleryImages {
     width: 23%;
@@ -279,6 +302,7 @@
     margin-right: 0;
   }
 }
+
 @media screen and (min-width: 1440px) and (max-width: 1871px) {
   .galleryImages {
     width: 23%;
@@ -295,9 +319,11 @@
   .resetButton {
     width: 96%;
   }
+
   .filerArea {
     left: 0;
   }
+
   .galleryMain {
     width: 100%;
     height: 1104px;
@@ -307,6 +333,7 @@
     display: flex;
     justify-content: space-between;
   }
+
   .galleryItem {
     width: 542px;
     position: absolute;
@@ -315,6 +342,7 @@
     display: flex;
     flex-wrap: wrap;
   }
+
   .galleryImages {
     width: 162px;
     height: 160px;
@@ -322,18 +350,22 @@
     margin-left: 10px;
     margin-top: 0px;
   }
+
   .bannerText h1 {
     font-size: 43px;
     font-family: "futura-bold";
   }
 }
+
 @media screen and (max-width: 637px) {
   .filterHello {
     display: none;
   }
+
   .filterIcons {
     display: flex;
   }
+
   .filterIMAG {
     width: 30px;
     height: 30px;
@@ -342,6 +374,7 @@
     margin-top: -15px;
     cursor: pointer;
   }
+
   .filterMob {
     width: 90%;
     height: auto;
@@ -349,6 +382,7 @@
     justify-content: space-between;
     align-items: center;
   }
+
   .filterQuan p {
     font-family: "Montserrat-Regular";
     font-style: normal;
@@ -357,12 +391,14 @@
     color: #dbdadf;
     margin-top: 0;
   }
+
   .gallaryDemoIMage {
     height: 20%;
     width: 90%;
     position: relative;
     margin-left: 22px;
   }
+
   .galleryMain {
     width: 100%;
     height: 1868px !important;
@@ -376,6 +412,7 @@
     align-items: center;
     left: 0;
   }
+
   .filerArea {
     width: 90vw;
     height: 580px;
@@ -390,6 +427,7 @@
     position: none;
     z-index: 55555;
   }
+
   .galleryItem {
     width: 100%;
     position: none;
@@ -405,11 +443,13 @@
     z-index: 0;
     padding: 0px 10px 0px 0px;
   }
+
   .galleryImages {
     width: 46%;
     height: 200px;
     position: relative;
   }
+
   .gallaryBanner {
     width: 94vw;
     right: 10px;
@@ -429,9 +469,11 @@
     height: 100%;
     position: relative;
   }
+
   .bannerText {
     width: 100%;
   }
+
   .bannerText h1 {
     font-family: "futura-bold";
     font-style: normal;
@@ -441,6 +483,7 @@
     margin-left: 20px;
     margin-top: 10px;
   }
+
   .bannerText p {
     font-family: "Montserrat-Regular";
     font-style: normal;
@@ -449,22 +492,28 @@
     color: #dbdadf;
     margin: 20px;
   }
+
   .filterOption {
     width: 82%;
     margin-left: 6%;
   }
+
   .resetButton {
     margin-left: 21px;
   }
+
   .filerArea h1 {
     margin-left: 40px;
   }
+
   .options {
     width: 71%;
   }
+
   .xIcon {
     margin-top: 50px;
   }
+
   .filterMOBVErsion {
     width: 90%;
     display: flex;
