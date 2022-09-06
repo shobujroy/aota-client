@@ -69,6 +69,7 @@
   height: 450px;
   margin-bottom: 0;
   background: #07190b;
+  height: max-content !important;
 }
 .options p {
   margin-left: 30px;
