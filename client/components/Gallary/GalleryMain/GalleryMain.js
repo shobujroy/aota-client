@@ -10,7 +10,7 @@ const label = { inputProps: { "aria-label": "Switch demo" } };
 
 
 const GalleryMain = () => {
-  
+  const [filter,setFilter] = useState({})
   const [galleryData,setGalleryData] = useState([]);
   const [info, setInfo] = useState(data);
   const [modalOpen, setModalOpen] = useState(null);
@@ -23,8 +23,17 @@ const GalleryMain = () => {
     )
     setGalleryData(allData)
   }
-  function filterData(){
-    
+  function handleFilter({name},option){
+    const newCat = {}
+    newCat[`${name}`] = option
+    setFilter((prevState) => ({
+      ...prevState, 
+      ...newCat
+    }))
+    filterData(filter,galleryData)
+  }
+  function filterData(filter,data){
+    console.log(filter)
   }
 
   useEffect(() => {
@@ -82,16 +91,16 @@ const GalleryMain = () => {
           ></Image>
         </div>
 
-        {/* <div className={Styles.GoldenOption}>
+        <div className={Styles.GoldenOption}>
           <Image width={24} height={24} src={"/images/gallery/goldbean.png"} />
           <h3>Golden Mode</h3>
-          <Switch {...label} />
-        </div> */}
+          {/* <Switch {...label} /> */}
+        </div>
 
-        {/* <div className={Styles.SearcOption}>
+        <div className={Styles.SearcOption}>
           <Image width={24} height={24} src={"/images/gallery/Search.png"} />
           <input placeholder="Sort by serial..." id="searchbyid" type="text" />
-        </div> */}
+        </div>
 
         <div className={Styles.optionArea}>
           {info.map((data, i) => {
@@ -104,7 +113,7 @@ const GalleryMain = () => {
                   </div>
 
                   <div className={Styles.plusIcon} onClick={() => toggle(i)}>
-                    {/* {modalOpen === i ? (
+                    {modalOpen === i ? (
                       <Image
                         src={"/images/x.svg"}
                         layout="fill"
@@ -118,17 +127,17 @@ const GalleryMain = () => {
                         objectFit="cover"
                         alt=""
                       ></Image>
-                    )} */}
+                    )}
                   </div>
                 </div>
 
-                {/* {modalOpen === i ? (
+                {modalOpen === i ? (
                   <div className={Styles.options}>
                     {data.options.map((option) => {
-                      return <p>{option}</p>;
+                      return <p onClick={() => handleFilter(data,option)}>{option}</p>;
                     })}
                   </div>
-                ) : null} */}
+                ) : null}
               </>
             );
           })}
