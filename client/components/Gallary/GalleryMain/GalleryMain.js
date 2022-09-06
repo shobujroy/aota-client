@@ -1,20 +1,39 @@
 import Image from "next/image";
-import { useState } from "react";
+import { useState,useEffect } from "react";
 import { data } from "../data";
 import { Item } from "./GallaryImage";
 import Styles from "./GalleryMain.module.css";
+import axios from 'axios'
 
 const label = { inputProps: { "aria-label": "Switch demo" } };
 
+
+
 const GalleryMain = () => {
+  
+  const [galleryData,setGalleryData] = useState([]);
   const [info, setInfo] = useState(data);
   const [modalOpen, setModalOpen] = useState(null);
+  async function fetchData(){
+    const allData= await Promise.all(
+      Item.map(async item => {
+        const {data} = await axios.get(`https://aota.mypinata.cloud/ipfs/QmNd9KBk8NAqrZuCZjysmnoX5Hb9h26cSZVX86KecfGFNY/${item}.json`)
+        return data
+      })
+    )
+    setGalleryData(allData)
+  }
+  function filterData(){
+    
+  }
 
+  useEffect(() => {
+    (async () => await fetchData())()
+  },[])
   const toggle = (i) => {
     if (modalOpen === i) {
       return setModalOpen(null);
     }
-
     setModalOpen(i);
   };
 
@@ -124,11 +143,12 @@ const GalleryMain = () => {
           </div>
         </div>
         <div className={Styles.galleryItem}>
-          {Item.map((data, i) => {
+          {galleryData.map((data, i) => {
+            const imageLink = data.image.slice(7,data.image.length)
             return (
-              <div className={Styles.galleryImages}>
+              <div className={Styles.galleryImages} key={i}>
                 <Image
-                  src={`https://aota.mypinata.cloud/ipfs/QmVHwDN3qUE8AvPPktW7sP8aNLwbFVNYFcEzggZD22YTYv/${data}.png`}
+                  src={`https://aota.mypinata.cloud/ipfs/${imageLink}`}
                   layout="fill"
                   objectFit="cover"
                   alt=""
