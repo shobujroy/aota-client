@@ -21,7 +21,7 @@ const GalleryMain = () => {
         return data
       })
     )
-    setGalleryData(allData)
+    return allData
   }
   function handleFilter({name},option){
     const newCat = {}
@@ -30,15 +30,34 @@ const GalleryMain = () => {
       ...prevState, 
       ...newCat
     }))
-    filterData(filter,galleryData)
   }
-  function filterData(filter,data){
-    console.log(filter)
+  async function filterData(filter){
+    const filteredContent = []
+    const originalData = await fetchData()
+    originalData.forEach(dataSet =>{
+      dataSet.attributes.forEach(attr => {
+        if(attr.trait_type in filter && filter[`${attr.trait_type}`] === attr.value){
+          filteredContent.push(dataSet)
+        }
+      })
+    })
+    if (filteredContent.length){
+      setGalleryData(filteredContent)
+    }
+  }
+  async function handleReset(){
+    console.log("SAMAA")
+    setGalleryData(await fetchData())
   }
 
   useEffect(() => {
-    (async () => await fetchData())()
+    (async () => setGalleryData(await fetchData()))()
   },[])
+  //Needed this effect cause state concurrency is a bitch, but there is a room for improvement
+  useEffect(() => {
+    filterData(filter)
+  },[filter])
+
   const toggle = (i) => {
     if (modalOpen === i) {
       return setModalOpen(null);
@@ -130,7 +149,6 @@ const GalleryMain = () => {
                     )}
                   </div>
                 </div>
-
                 {modalOpen === i ? (
                   <div className={Styles.options}>
                     {data.options.map((option) => {
@@ -142,7 +160,7 @@ const GalleryMain = () => {
             );
           })}
         </div>
-        <button className={Styles.resetButton}>Reset</button>
+        <button className={Styles.resetButton} onClick={() => handleReset()}>Reset</button>
       </div>
 
       <div className={`col-md-9 ${Styles.gallaryRight}`}>
