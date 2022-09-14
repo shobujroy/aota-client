@@ -1,9 +1,9 @@
+import axios from "axios";
 import Image from "next/image";
-import { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
 import { data } from "../data";
 import { Item } from "./GallaryImage";
 import Styles from "./GalleryMain.module.css";
-import axios from "axios";
 
 const label = { inputProps: { "aria-label": "Switch demo" } };
 
@@ -127,7 +127,7 @@ const GalleryMain = () => {
           {info.map((data, i) => {
             return (
               <>
-                <div className={Styles.filterOption}>
+                <div className={Styles.filterOption} onClick={() => toggle(i)}>
                   <div className={Styles.ImageAndIcon}>
                     <Image width={20} height={15} src={data.image} />
                     <p>{data.name}</p>
